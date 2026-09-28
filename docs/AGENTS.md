@@ -35,6 +35,7 @@ The root `AGENTS.md` owns repository-wide rules.
 - Before a build handoff, verify that every required asset is either already present in the project or explicitly listed as a prerequisite.
 - Verify that the final build document does not depend on unapproved placeholder or custom-modeled environment geometry.
 - Before implementation, verify Epic UEFN MCP and Power Tools are reachable from Codex in the actual Scrapline UEFN project.
+- If Omni-Verse is part of the Verse workflow, verify its authentication and command/sync activation before relying on it for fixes or web sync.
 
 ## Child DOX Index
 
