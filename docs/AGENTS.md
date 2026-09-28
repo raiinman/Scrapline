@@ -1,0 +1,38 @@
+# Documentation DOX
+
+## Purpose
+
+Own durable design, asset, planning, and build-specification documentation for Scrapline.
+
+## Ownership
+
+This folder owns:
+- project briefs and design intent
+- approved asset records
+- map-layout and combat-flow specifications
+- future one-shot build instructions and implementation handoff documents
+
+The root `AGENTS.md` owns repository-wide rules.
+
+## Local Contracts
+
+- Documentation must separate confirmed decisions from ideas still under consideration.
+- External assets must include their source URL and intended role before they are treated as approved.
+- Do not claim an asset is available in the UEFN project until it has been confirmed by the user or implementation tooling.
+- The final one-shot build specification must use the frozen asset manifest rather than silently inventing replacement geometry.
+- Keep implementation-facing instructions concrete enough that another agent can execute without reconstructing prior chat context.
+
+## Work Guidance
+
+- Prefer concise operational documents over brainstorming transcripts.
+- When a design decision changes, update the owning document instead of appending contradictory history.
+- Mark unapproved candidates clearly.
+
+## Verification
+
+- Before a build handoff, verify that every required asset is either already present in the project or explicitly listed as a prerequisite.
+- Verify that the final build document does not depend on unapproved placeholder or custom-modeled environment geometry.
+
+## Child DOX Index
+
+No child DOX documents yet.
