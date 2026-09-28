@@ -78,6 +78,21 @@ Default section order:
 
 When the user requests a durable behavior change, record it here or in the relevant child AGENTS.md
 
+## Scrapline UEFN Execution Contract
+
+- The UEFN project is the implementation workspace for Scrapline.
+- Before implementation, read this file, `docs/AGENTS.md`, `docs/PROJECT_BRIEF.md`, `docs/ASSET_MANIFEST.md`, `docs/MAP_DESIGN.md`, and `docs/TOOLING.md`.
+- Treat the approved Fab/library content as the environment construction kit. Inspect available assets before creating substitutes.
+- Do not build the visible environment from primitive cubes, blank greybox geometry, or newly modeled stand-ins when a suitable approved asset exists.
+- Terrain generation is allowed and expected. Use UEFN Landscape tools, generated heightmaps, splines, or other supported terrain workflows when appropriate.
+- Use Epic's `unreal-mcp` first for supported first-party editor operations and `powertools` for bulk inspection, editing, diagnostics, dependency/material/texture checks, and Verse diagnostics.
+- Preserve Lore revision control. Do not delete or reset `.lore`, replace project history, or modify unrelated UEFN projects.
+- The primary implementation goal is a complete playable FFA in one focused build pass. Avoid exploratory rebuild loops and unnecessary tool calls.
+- Testing belongs after the primary construction pass unless a blocking editor/runtime error prevents meaningful progress.
+- Do not install additional experimental AI/editor bridges during the one-shot unless a demonstrated capability gap requires one.
+- Keep terrain, gameplay devices, Verse, asset placement, lighting, and final polish coherent with the Scrapline design documents.
+- Run the DOX closeout after meaningful changes and keep durable documentation synchronized with implemented reality.
+
 ## Child DOX Index
 
 - `docs/AGENTS.md` — owns durable design, asset, planning, and implementation-handoff documentation under `docs/`.
