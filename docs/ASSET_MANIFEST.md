@@ -29,6 +29,18 @@ This means the Fab Library work succeeded as acquisition, but **Library ownershi
 - Intended use: scrapyard architecture, rusted industrial structures, cover, elevation pieces, junkyard dressing, and large visual anchors.
 
 Everything else must visually belong beside this pack.
+
+## Rejected / Do Not Re-Add
+
+### LookoutTower
+
+- Verse path: `/tj_v@fortnite.com/LookoutTower`
+- Project reference previously created: `References/LookoutTower_de8fd42e20af5226830d2090e3182367.uref`
+- Status: **Rejected / removed from Scrapline**
+- Reason: adding the referenced content caused UEFN to load hundreds of GameFeature plugins, repeatedly rebuild Verse digests, consume large amounts of memory, and produce `GameFeaturePlugin.StateMachine.Canceled` failures.
+- Recovery: the `.uref` was removed from the Scrapline project and quarantined outside the project. The generated Verse/workspace cache was rebuilt cleanly.
+- Rule: **Do not add LookoutTower back to Scrapline unless its packaging changes and it is explicitly re-tested in an isolated project first.**
+
 ## Immediate Easy-Import Queue
 
 These are the first Fab items to add directly to the **Scrapline** project because they were selected specifically for UEFN/referenced-content use during research.
