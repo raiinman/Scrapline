@@ -2,7 +2,7 @@
 
 ## Status
 
-The external Codex-side tools are installed on the development machine. Project-side UEFN activation waits until the Scrapline UEFN project exists and is open.
+The Scrapline toolchain is installed, activated, and verified against the live Scrapline editor session. Epic Unreal MCP is responding to real editor reads, Python is enabled, and Trashbyrd Power Tools reports `status=running`, `level_name=Scrapline`, and a nonzero actor count. No Codex build credits were used for this verification.
 
 ## Required Build Stack
 
@@ -20,9 +20,10 @@ The external Codex-side tools are installed on the development machine. Project-
 - Codex server key: `powertools`.
 - Use it alongside Epic's MCP, never instead of it.
 - Primary value: bulk actor operations, asset/material/texture inspection, project health checks, moderation scans, dependency scans, Niagara inspection, and Verse diagnostics.
-- Project-side Python bridge must be copied into:
-  `Plugins/<ScraplinePlugin>/Content/Python/`
-- After opening the project in UEFN, start the bridge from the Python console with:
+- This Scrapline project uses its root plugin layout, so the Python bridge is installed at:
+  `Content/Python/`
+- `UEFN_PROJECTS_ROOT` is configured to the parent folder that contains Scrapline.
+- After restarting UEFN and opening Scrapline, start the bridge from the Python console with:
   `import pt`
 
 ### UEFN Central Verse Examples
@@ -49,14 +50,15 @@ The external Codex-side tools are installed on the development machine. Project-
 
 ## Project Activation Checklist
 
-When the Scrapline UEFN project is created:
+Current state:
 
-1. Enable **Python Editor Scripting**.
-2. Enable **UEFN MCP Toolsets**.
-3. Restart UEFN if requested.
-4. Copy the Power Tools Python bridge into the project's plugin `Content/Python` folder.
-5. Open Scrapline in UEFN.
-6. Run `import pt` in UEFN's Python console.
-7. Verify `unreal-mcp` is reachable.
-8. Verify Power Tools with `uefn_status`; success must return the real level and a nonzero actor count.
-9. Only then begin the one-shot build.
+1. **Done:** Python Editor Scripting is enabled in `Scrapline.uefnproject`.
+2. **Done:** UEFN MCP Toolsets are enabled in `Scrapline.uefnproject`.
+3. **Done:** Power Tools Python bridge is installed in `Content/Python`.
+4. **Done:** Codex has global `unreal-mcp` and `powertools` server entries.
+5. **Done:** `UEFN_PROJECTS_ROOT` is configured for this project location.
+6. **Done:** UEFN was restarted and Scrapline reopened with the project settings active.
+7. **Done:** the project startup script started the Power Tools bridge automatically.
+8. **Verified:** Epic Unreal MCP successfully returned the live Scrapline viewport camera transform.
+9. **Verified:** Power Tools `uefn_status` returned `level_name=Scrapline` with 12 actors.
+10. **Ready:** toolchain activation is no longer a blocker for the one-shot build.
