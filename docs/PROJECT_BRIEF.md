@@ -2,9 +2,9 @@
 
 ## Status
 
-Pre-production / brainstorming.
+Pre-production specification.
 
-No final one-shot Codex build prompt has been approved yet.
+The macro map design and first-alpha gameplay baseline are locked. The UEFN/Codex toolchain is live and verified. The remaining pre-build gate is confirming which claimed Fab assets are actually available inside the Scrapline project, freezing the usable asset manifest, and writing the final Codex one-shot prompt.
 
 ## Objective
 
@@ -23,11 +23,11 @@ Scrapline should be:
 - vertically layered without allowing one dominant camping position
 - visually coherent as a post-apocalyptic scrapyard / industrial combat zone
 
-## Initial Player-Space Direction
+## Player-Space Direction
 
-Working target: approximately 8–16 players.
+Primary target: **12-player FFA**.
 
-The exact player count remains open until the final map dimensions, spawn count, and combat pacing are locked.
+The arena is physically designed to support up to **16 players** if post-build testing shows sufficient spawn safety and combat space. The locked playable footprint is approximately **140 m x 140 m**, within an approximately **170 m x 170 m** terrain/scenic envelope.
 
 ## Non-Negotiable Construction Rule
 
@@ -55,14 +55,11 @@ https://www.fab.com/listings/c584020d-fcae-453d-b496-fce46d90c97b
 
 This is the current visual foundation for Scrapline.
 
-## Open Decisions
+## Remaining Pre-Build Decisions
 
-- exact map footprint
-- final supported player count
-- weapon/loadout rules
-- respawn behavior
-- score / win condition
-- final lighting and time-of-day treatment
-- approved supplemental Fab assets
-- centerpiece landmark
-- exact number and placement strategy for spawn points
+- confirm which claimed Fab packs/assets are actually available inside the Scrapline project
+- freeze the usable supplemental asset manifest
+- choose the exact hero landmark from assets present in-project
+- choose final lighting/time-of-day treatment during environment composition
+- refine exact spawn transforms after structures and cover are placed
+- assemble and approve the final Codex one-shot build prompt
