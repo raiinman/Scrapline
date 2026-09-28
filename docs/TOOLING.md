@@ -71,4 +71,5 @@ Current state:
 8. **Verified:** Epic Unreal MCP successfully returned the live Scrapline viewport camera transform.
 9. **Verified:** Power Tools `uefn_status` returned `level_name=Scrapline` with 12 actors.
 10. **Verified:** Omni-Verse 0.4.3 is installed, activated, authenticated, and its sync manager/commands are healthy in the Scrapline VS Code workspace.
-11. **Ready:** toolchain activation is no longer a blocker for the one-shot build.
+11. **Done:** the Scrapline VS Code workspace is trusted and no longer running in Restricted Mode.
+12. **Ready:** toolchain activation is no longer a blocker for the one-shot build.
