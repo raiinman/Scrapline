@@ -25,4 +25,5 @@ The map layout, combat rules, spawn structure, asset manifest, and final one-sho
 - `docs/PROJECT_BRIEF.md` — product intent and non-negotiable build rules
 - `docs/ASSET_MANIFEST.md` — approved asset sources and intended usage
 - `docs/MAP_DESIGN.md` — current combat-space and layout direction
+- `docs/TOOLING.md` — approved Codex/UEFN build toolchain and activation checklist
 - `AGENTS.md` — repository-wide DOX contract
