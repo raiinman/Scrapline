@@ -16,14 +16,17 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 
 ## Current Stage
 
-Pre-production and asset curation.
+Pre-production specification is nearly complete.
 
-The map layout, combat rules, spawn structure, asset manifest, and final one-shot Codex build instructions are being locked before implementation begins.
+The macro map design and first-alpha gameplay baseline are locked, the UEFN/Codex toolchain is verified live, and the remaining pre-build work is to expose the claimed Fab asset pool to Scrapline, freeze the usable asset manifest, and assemble the final one-shot Codex build prompt.
 
 ## Documentation
 
 - `docs/PROJECT_BRIEF.md` — product intent and non-negotiable build rules
 - `docs/ASSET_MANIFEST.md` — approved asset sources and intended usage
-- `docs/MAP_DESIGN.md` — current combat-space and layout direction
+- `docs/MAP_DESIGN.md` — locked macro combat-space and layout direction
+- `docs/TERRAIN_ENVIRONMENT_SPEC.md` — implementation-facing terrain and environment plan
+- `docs/GAMEPLAY_SPEC.md` — first-alpha FFA gameplay baseline
+- `docs/UEFN_CENTRAL_PROMPT.md` — prepared Verse Project Generator request
 - `docs/TOOLING.md` — approved Codex/UEFN build toolchain and activation checklist
 - `AGENTS.md` — repository-wide DOX contract
