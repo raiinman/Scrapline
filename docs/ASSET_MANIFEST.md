@@ -2,21 +2,32 @@
 
 ## Status
 
-Asset research is substantially complete, but the manifest is **not frozen** because most claimed Fab content is still only in the user's Fab Library and has not yet been added to the Scrapline UEFN project.
+Asset research is substantially complete. The first referenced-content wave is now mounted in Scrapline and verified by the live editor, but the manifest is **not frozen** because the larger bulk Fab reserve has not yet been selectively added.
 
 Only assets verified by the live Scrapline project may be treated as implementation-ready.
 
 ## Live Scrapline Asset Audit
 
-Power Tools scanned the live Scrapline project after the macro/gameplay design was locked.
+The live editor currently loads **15 enabled Fab reference files**. Fourteen are useful/planned Scrapline content references; one is an unrelated Old West pack that should remain out of the final visual palette.
 
-Current /Scrapline asset registry result:
-- **14 total project assets**.
-- The current project contains the base world, HLOD layer, Island Settings, grid planes, two Player Spawn devices, Verse digest, and project metadata.
-- **No curated Fab environment pack is currently present in Scrapline.**
-- Project-only asset sweep reported no imported environment assets to audit.
+Verified mounted references:
+- Post-Apocalyptic Scrapyard Pack
+- Deserted: Domination Props
+- Deserted: Domination VFX
+- Talisman VFX
+- Concrete Rubble Pile
+- Concrete Rubble Pile 2
+- Cement Rubble
+- Broken Concrete Slab
+- Metal Barricade
+- Rusty Electrical Box
+- Industrial Junkyard Crate Metal
+- Industrial Junkyard Propane Tank
+- Mine Cart
+- Metal Manhole Cover
+- OldWest Vol. 6 — mounted but **not approved for Scrapline art direction**
 
-This means the Fab Library work succeeded as acquisition, but **Library ownership is not the same thing as project availability**.
+The clean project reopen completed with these references loading successfully and without LookoutTower. Native asset search confirms mounted production content from the Scrapyard, rubble, barricade, electrical, junkyard, mine-cart, and Old West references.
 
 ## Visual Authority
 
@@ -24,7 +35,7 @@ This means the Fab Library work succeeded as acquisition, but **Library ownershi
 
 - Source: Fab
 - URL: https://www.fab.com/listings/c584020d-fcae-453d-b496-fce46d90c97b
-- Status: **Approved visual authority / claimed in Fab Library / not yet verified in Scrapline project**
+- Status: **Approved / mounted and verified in Scrapline**
 - Role: primary environment kit
 - Intended use: scrapyard architecture, rusted industrial structures, cover, elevation pieces, junkyard dressing, and large visual anchors.
 
@@ -41,36 +52,70 @@ Everything else must visually belong beside this pack.
 - Recovery: the `.uref` was removed from the Scrapline project and quarantined outside the project. The generated Verse/workspace cache was rebuilt cleanly.
 - Rule: **Do not add LookoutTower back to Scrapline unless its packaging changes and it is explicitly re-tested in an isolated project first.**
 
-## Immediate Easy-Import Queue
+## Mounted Easy-Import Wave
 
-These are the first Fab items to add directly to the **Scrapline** project because they were selected specifically for UEFN/referenced-content use during research.
+The original direct/easy-import queue is complete. All planned items from that wave are mounted in the live Scrapline project and load successfully.
 
-1. **Post-Apocalyptic Scrapyard Pack** — core architecture and identity.
-2. **Deserted: Domination Props** — containers, barrels, boxes, industrial filler.
-3. **Deserted: Domination VFX** — restrained dust/fire/industrial atmosphere.
-4. **Talisman VFX** — steam, sparks, dust-type effects where stylistically appropriate.
-5. **Metal Barricade** — lane shaping / cover.
-6. **Concrete Rubble Pile** — large destruction/cover piece.
-7. **Cement Rubble** — smaller rubble dressing.
-8. **Broken Concrete Slab** — ground/destruction variation.
-9. **Industrial Junkyard Crate Metal** — scrapyard detail.
-10. **Industrial Junkyard Propane Tank** — industrial detail.
-11. **Rusty Electrical Box** — utility/electrical dressing.
-12. **Mine Cart** — salvage/industrial prop.
-13. **Metal Manhole Cover** — ground detail.
+This gives the one-shot immediate access to:
+- the full Art Bully scrapyard visual family,
+- barriers and fencing,
+- rubble and broken concrete,
+- industrial junkyard details,
+- electrical/utility dressing,
+- mine/salvage props,
+- two VFX families,
+- Deserted industrial props.
 
-After these are added, run another live asset scan before adding more complexity.
+Do not add more individual one-off Fab assets unless a specific design gap remains after the bulk reserve is evaluated.
 
 ## Claimed Fab Reserve Pool
 
-The user also claimed many larger free/bulk Fab packs during research, including factory, warehouse, junkyard, street-prop, construction, vehicle, rubble, garage, abandoned-building, and city-sample collections.
+The user explicitly confirmed adding the following larger free/bulk Fab packs to the Fab Library. These are **owned/claimed**, not yet all mounted in Scrapline.
 
-These reserve packs are useful, but several are Unreal Engine/FBX-style packages rather than direct UEFN referenced content.
+High-value reserve:
+- Junkyard — 96-asset Quixel junkyard collection
+- Factory Environment Collection
+- Factory Pack Vol. 1
+- City Street Props
+- Modular Industrial Pipe Set
+- City Sample Buildings
+- City Sample Vehicles
+- Quixel Warehouse
+- Garage
+- Unfinished Building
+- Old Mine
+- Derelict Corridor Megascans Sample
 
-Rule:
-- **Do not block the first one-shot on migrating every reserve pack.**
-- Use the direct/easy-import queue first.
-- Add reserve packs only when they import cleanly and materially fill a design gap.
+Vehicles:
+- Abandoned & Junk Car
+- Doomsday Pickup Truck
+- Vehicle Variety Pack
+- Vehicle Variety Pack Volume 2
+- City Sample Vehicles
+
+Industrial / construction / warehouse:
+- Wasteland Props — Free Pack
+- Industry Props Pack 6
+- Street Props Pack Vol. 1
+- Street Props Pack Vol. 2
+- Mega Street Props Pack
+- Construction Site VOL. 1 — Supply and Material Props
+- Construction Site VOL. 2 — Tools, Parts, and Machine Props
+- Free Sample Warehouse & Storage Vol. 01
+- Warehouse Essentials Pack
+- Power Generator
+- FREE Post Apocalypse Survivor Environment Kitbash Set
+
+Debris / dressing / signage:
+- Warning Signs Decals Vol. 1
+- Rubble Pack
+- Industrial Rubble
+- Urban Garbage and Debris
+- Gas Cylinder 03 — Propane Tank
+- London Street Props (Free)
+
+Several reserve packs use Unreal Engine project/FBX delivery rather than direct UEFN referenced content. They remain optional reserves: add only the bulk packs that import cleanly and fill a real gap in vehicles, machinery, architecture, pipes, signage, or debris.
+
 ## Required Asset Families Before Freeze
 
 The one-shot needs enough verified in-project choices for:
@@ -92,11 +137,11 @@ The exact hero asset remains unlocked until the live asset inventory can compare
 
 Before the Codex one-shot:
 
-1. Add the immediate easy-import queue to Scrapline.
-2. Re-run Power Tools asset inventory tools.
-3. Confirm usable asset families and their actual content-browser paths.
-4. Record the strongest project-visible families here.
-5. Add reserve packs only if a required family is still weak.
+1. Keep the mounted easy-import wave intact and do not re-add LookoutTower.
+2. Evaluate the live mounted pool against the required asset families.
+3. Add only the highest-value bulk reserve packs needed to fill weak families.
+4. Re-run live asset inventory after each bulk addition.
+5. Confirm usable asset families and their actual project-visible asset paths.
 6. Select the central hero landmark from assets actually present.
 7. Mark this manifest **Frozen for One-Shot**.
 
