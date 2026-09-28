@@ -26,6 +26,15 @@ The Scrapline toolchain is installed, activated, and verified against the live S
 - After restarting UEFN and opening Scrapline, start the bridge from the Python console with:
   `import pt`
 
+### UEFN Central Omni-Verse
+
+- VS Code extension installed: `UEFNCentral.omni-verse` version `0.4.3`.
+- Epic's Verse and URC VS Code extensions are also installed.
+- Omni-Verse activation has been verified from the VS Code extension log: authentication, API client, sync manager, status bar, fix command, command registration, and URI handler all report OK.
+- Use Omni-Verse for compiler-aware Verse fixes, offline diagnostics, Project Brain workspace context, and web-to-VS-Code sync.
+- Do not use Omni-Verse to author terrain or environment layout; it is a Verse support tool.
+- Keep live-sync auto-apply disabled so incoming web code requires review before it changes local files.
+
 ### UEFN Central Verse Examples
 
 - Local reference library cloned from:
@@ -61,4 +70,5 @@ Current state:
 7. **Done:** the project startup script started the Power Tools bridge automatically.
 8. **Verified:** Epic Unreal MCP successfully returned the live Scrapline viewport camera transform.
 9. **Verified:** Power Tools `uefn_status` returned `level_name=Scrapline` with 12 actors.
-10. **Ready:** toolchain activation is no longer a blocker for the one-shot build.
+10. **Verified:** Omni-Verse 0.4.3 is installed, activated, authenticated, and its sync manager/commands are healthy in the Scrapline VS Code workspace.
+11. **Ready:** toolchain activation is no longer a blocker for the one-shot build.
