@@ -11,6 +11,7 @@ This folder owns:
 - approved asset records
 - map-layout and combat-flow specifications
 - future one-shot build instructions and implementation handoff documents
+- build toolchain and editor-integration requirements
 
 The root `AGENTS.md` owns repository-wide rules.
 
@@ -21,6 +22,7 @@ The root `AGENTS.md` owns repository-wide rules.
 - Do not claim an asset is available in the UEFN project until it has been confirmed by the user or implementation tooling.
 - The final one-shot build specification must use the frozen asset manifest rather than silently inventing replacement geometry.
 - Keep implementation-facing instructions concrete enough that another agent can execute without reconstructing prior chat context.
+- The approved one-shot toolchain is documented in `TOOLING.md`; do not silently replace or remove an installed integration.
 
 ## Work Guidance
 
@@ -32,6 +34,7 @@ The root `AGENTS.md` owns repository-wide rules.
 
 - Before a build handoff, verify that every required asset is either already present in the project or explicitly listed as a prerequisite.
 - Verify that the final build document does not depend on unapproved placeholder or custom-modeled environment geometry.
+- Before implementation, verify Epic UEFN MCP and Power Tools are reachable from Codex in the actual Scrapline UEFN project.
 
 ## Child DOX Index
 
