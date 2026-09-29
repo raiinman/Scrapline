@@ -6,9 +6,13 @@
 
 The macro map design, spatial contract, terrain specification, first-alpha gameplay baseline, implementation toolchain, physical-fit verification, and production asset pool are locked or verified. Selective reserve/donor intake is complete and the intake stop rule has fired.
 
-Remaining gates:
+Active gate:
 - generate and validate the small Verse gameplay package,
-- finalize the Astra one-shot prompt with the frozen spatial contract, asset paths, and validated device/Verse wiring,
+- resolve exact Creative-device and @editable wiring,
+- finalize the Astra one-shot prompt with the frozen spatial contract, asset paths, and validated gameplay wiring,
+- run the final contradiction/confusion check.
+
+Still gated until explicit one-shot authorization:
 - execute the primary build,
 - test and repair after the primary pass unless a blocking runtime/editor issue appears earlier.
 
@@ -74,7 +78,7 @@ Completed:
 3. Selectively import useful FBX and Unreal Engine donor content.
 4. Re-scan the live asset pool, choose the hero landmark, and freeze the asset manifest.
 
-Next:
+Next — active now:
 5. Generate and validate the Verse gameplay package through UEFN Central / Omni-Verse.
 6. Assemble the final Astra implementation specification from the frozen spatial contract, asset manifest, physical-fit record, and validated gameplay wiring.
 7. Execute the one-shot build.
