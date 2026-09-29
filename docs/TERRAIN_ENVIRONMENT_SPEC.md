@@ -15,13 +15,20 @@ The goal is a believable, compact industrial scrapyard arena built directly from
 
 ## Heightmap / Landscape Baseline
 
-Preferred generated-landscape route:
+**Generated and staged for review.**
 
-- Generate a **253 x 253** heightmap.
-- Preferred format: **16-bit grayscale PNG**.
+Current files:
+- `Resources/Terrain/Scrapline_Terrain_v1_253x253_16bit.png` — importable 16-bit grayscale heightmap.
+- `Resources/Terrain/Scrapline_Terrain_v1_preview.png` — quick visual preview.
+- `Resources/Terrain/Scrapline_Terrain_v1.json` — generation/import metadata.
+
+Generation constants:
+- Resolution: **253 x 253**.
 - Target physical span: approximately **170 m x 170 m**.
 - Starting X/Y Landscape scale: approximately **67.46 cm per quad** (252 quads across ~170 m).
 - Starting Z scale: approximately **4.0**, providing roughly 20.48 m total vertical range.
+- Generated elevation range: approximately **-2.45 m to +4.79 m**.
+- The heightmap includes the shallow central basin, broad district pads, irregular perimeter shoulders, service-road gaps, shallow drainage cuts, and low sightline-breaking berms.
 - Preserve adequate vertical headroom above and below the working yard elevation.
 
 Epic documents 253 x 253 as a recommended Landscape size and supports 16-bit grayscale PNG heightmaps.
