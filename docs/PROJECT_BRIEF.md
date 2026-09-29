@@ -9,8 +9,9 @@ The macro map design, spatial contract, terrain specification, first-alpha gamep
 The first-alpha gameplay layer is validated as native-device only: Island Settings + 19 Player Spawn Pads + one Item Granter + one Tracker. No production custom Verse or `@editable` wiring is required.
 
 Current gate:
-- run the final contradiction/confusion closeout,
 - obtain explicit user authorization before Astra executes the primary construction pass.
+
+The final contradiction/confusion closeout has passed.
 
 Still gated until explicit one-shot authorization:
 - execute the primary build,
@@ -92,7 +93,6 @@ The map skeleton no longer has open design decisions.
 
 Remaining execution preparation:
 - resolve final spawn transforms **inside the frozen spawn regions** after real cover/collision exists,
-- perform the final contradiction/confusion closeout,
 - obtain explicit user authorization before the Astra one-shot begins.
 
 Exact gameplay/device wiring is finalized in `VERSE_GAMEPLAY_INTEGRATION.md` and integrated into `ONE_SHOT_PROMPT_DRAFT.md`.
