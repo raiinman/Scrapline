@@ -76,7 +76,9 @@ Default section order:
 
 ## User Preferences
 
-When the user requests a durable behavior change, record it here or in the relevant child AGENTS.md
+- Before resuming Scrapline work in a new or continued session, refresh the current repository state from GitHub instead of relying on chat memory alone.
+- Treat the GitHub `main` branch as the durable source of truth for Scrapline planning/status documentation, and sync meaningful verified project-state changes back to the repository.
+- When the user requests another durable behavior change, record it here or in the relevant child AGENTS.md
 
 ## Scrapline UEFN Execution Contract
 
