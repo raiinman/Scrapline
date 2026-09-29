@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Translate the frozen asset manifest into district-level placement guidance without generating new art or importing reserve packs. `ASSET_MANIFEST.md` remains the approval/source authority.
+Translate the frozen asset manifest into district-level art/composition guidance without generating new art or importing reserve packs. `ASSET_MANIFEST.md` remains the approval/source authority and `SPATIAL_CONTRACT.md` controls the map skeleton, major anchors, orientation, routes, and tolerances.
 
 ## Global visual rule
 
@@ -22,7 +22,7 @@ Support:
 - IndustrialPipesSource pieces
 - concrete rubble and Metal Barricade reference
 
-Real staged captures show that the Factory crane is a long horizontal industrial gantry/bridge assembly, not a tall skyline construction crane. Preserve the shared pivots of `SM_Crane01`, `SM_CraneCabin01`, and `SM_CraneCable01`; do not independently ground those pieces. Place the assembly slightly off geometric center and use its long horizontal silhouette to frame movement through the basin. Keep playable access controlled so the gantry does not become an uncontested elevated lane.
+Real staged captures show that the Factory crane is a long horizontal industrial gantry/bridge assembly, not a tall skyline construction crane. Preserve the shared pivots of `SM_Crane01`, `SM_CraneCabin01`, and `SM_CraneCable01`; do not independently ground those pieces. Place the assembly at the frozen center/orientation in `SPATIAL_CONTRACT.md` (target center about `(-250,+250)`, long axis NW↔SE). Keep playable access controlled so the gantry does not become an uncontested elevated lane.
 
 ## Northwest — Scrap / Wreck Yard
 
@@ -62,7 +62,7 @@ Interior / traversal:
 - Scrapyard fuse boxes, hanging wires, barrels, garbage bins, window/door parts
 - selected warning decals and restrained graffiti
 
-Real staged captures confirm that `SM_Garage_1` and `SM_Garage_1_roof` are a shared assembly. Preserve their original relative pivots before grounding/placing them. The shell is compact, so build district identity outward with service clutter, stairs, railings, signage, exterior cover, and Scrapyard grime rather than expecting the shell alone to fill the southeast district. Keep clutter off combat paths and preserve sprint-speed readability.
+Real staged captures confirm that `SM_Garage_1` and `SM_Garage_1_roof` are a shared assembly. Preserve their original relative pivots before grounding/placing them. Use the southeast target placement/orientation from `SPATIAL_CONTRACT.md`, with the primary open/service face toward the northwest/center-side service court. The shell is compact, so build district identity outward with service clutter, stairs, railings, signage, exterior cover, and Scrapyard grime rather than expecting the shell alone to fill the southeast district. Keep clutter off combat paths and preserve sprint-speed readability.
 
 ## Southwest — Machinery / Power Yard
 
