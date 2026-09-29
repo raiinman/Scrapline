@@ -133,23 +133,50 @@ The following packs are physically present under `Content/Fab` and were confirme
 
 The live project-only sweep currently sees 58 assets total. Several production assets are marked `likely_unused` because construction has not started; do not treat that as permission to delete them before the one-shot.
 
-## FBX Import Pilot
+## Curated FBX Content
 
 ### African Slate Quarry
 
 - Source: Fab / Quixel Megascans
 - URL: https://www.fab.com/listings/578d0ceb-5ccb-425f-abd5-e791a21551b6
-- Status: **Downloaded High quality / full import+material pilot verified / not yet bulk-approved**
-- Source package observed on disk: High tier, approximately 1.62 GB extracted.
-- Package inventory observed: 82 top-level asset folders, 129 FBX files including supplied LOD/variation files, and 752 JPG texture files.
-- Fab listing advertises 82 assets with FBX + JPG and 1K/2K/4K/8K textures.
-- Pilot mesh imported successfully to `/Scrapline/Imported/AfricanSlateQuarry/Pilot/ASQ_xb5ebhf`.
-- Pilot verification: roughly 30,012 triangles at LOD0, 3 LODs detected, believable ~2.4 m local footprint, Nanite off by default.
-- FBX import alone did not automatically wire the external texture maps, so a controlled material pipeline was created and tested.
-- Verified master material: `/Scrapline/Imported/AfricanSlateQuarry/Materials/M_ASQ_Master` with parameterized BaseColor, Normal, Roughness, and AO inputs.
-- Verified pilot material instance uses the imported 4K maps, the pilot mesh has the material assigned, the material recompiles cleanly, and Nanite was enabled on the pilot mesh.
-- Bulk-import rule: preserve the downloaded High/4K source, import only useful mesh variants rather than every supplied LOD file, and reduce per-asset texture resolution later through UEFN settings when performance/memory requires it.
-- Intended role: quarry rock, slate, gravel, cliff/terrain dressing, perimeter earthwork, and industrial excavation detail. It is supplemental environment dressing, not a replacement for the Art Bully scrapyard identity.
+- Status: **High-quality source preserved / 18-asset production subset imported and verified**
+- Source package: approximately 1.62 GB extracted, 82 source asset folders, 129 FBX files including supplied variations/LODs, and 752 JPG textures.
+- Production destination: `/Scrapline/Imported/AfricanSlateQuarry/Curated/`.
+- Imported production content: **18 meshes + 18 material instances + 72 selected 4K texture maps**.
+- Curated project footprint: approximately **155.7 MB**.
+- Every curated mesh uses the verified `M_ASQ_Master` BaseColor/Normal/Roughness/AO material workflow.
+- All 18 meshes were individually verified with a material slot, all four texture parameters populated, and Nanite enabled.
+- Conservative convex collision was generated for the curated meshes.
+- Temporary selection-scan and pilot assets were deleted after verification.
+- The High/4K Fab source remains outside Scrapline so shipping resolution can be reduced later without losing source quality.
+
+Curated roles:
+
+**Ground / gravel / low breakup**
+- `ASQ_xb5ebhf`
+- `ASQ_xb5gfgm`
+- `ASQ_xbnhajp`
+- `ASQ_xbtefbk`
+- `ASQ_xbtgah3`
+
+**Medium boulders / slate / fractured rock**
+- `ASQ_xb5gbjo`
+- `ASQ_xbkgcc1`
+- `ASQ_xbkgdbu`
+- `ASQ_xbkndhe`
+- `ASQ_xblhegj`
+- `ASQ_xbrgfjp`
+- `ASQ_xckjajs`
+
+**Large ledges / cliffs / vertical rock**
+- `ASQ_xbnjbc3`
+- `ASQ_xbrdfck`
+- `ASQ_xcdeajb`
+- `ASQ_xcghcfe`
+- `ASQ_xckifaf`
+- `ASQ_xckjagi`
+
+Intended use: perimeter earthwork, quarry cuts, drainage/service-road transitions, industrial excavation dressing, sightline termination, and selective natural breakup around the scrapyard. These assets supplement the Art Bully visual authority; they do not redefine Scrapline as a wilderness map.
 
 ## Required Asset Families Before Freeze
 
