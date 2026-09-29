@@ -4,7 +4,7 @@
 
 **Macro layout locked for the first one-shot build.**
 
-The playable envelope, player-density target, combat districts, route philosophy, terrain profile, verticality, and spawn philosophy are approved. Exact prop choices and fine placement remain implementation decisions after the project asset pool is inspected.
+The playable envelope, player-density target, combat districts, route network, terrain profile, verticality, spawn regions, and major anchor placements are approved. `SPATIAL_CONTRACT.md` is the implementation authority for exact major-placement/orientation rules and allowed tolerances. Only micro-prop dressing and small fit adjustments remain implementation choices.
 
 ## Locked Design Constants
 
@@ -49,8 +49,8 @@ The center is the most recognizable combat space and should pull players into fi
 
 - Approximately 42 m across.
 - Slightly depressed relative to the surrounding districts.
-- Contains one large industrial landmark composition.
-- Landmark direction: damaged crane, gantry, processing machine, or equivalent heavy-industry silhouette combined with wreckage/scrap.
+- Contains the frozen Factory crane shared-pivot assembly (`SM_Crane01` + cabin + cable) as the large industrial landmark.
+- The gantry orientation and placement are frozen by `SPATIAL_CONTRACT.md`; do not select a different hero during implementation.
 - Must have multiple entrances and exits.
 - Must contain meaningful hard cover.
 - Must not provide uncontested high ground over the entire map.
@@ -155,16 +155,14 @@ The library is a selection pool, not a command to place every asset.
 
 Prefer coherent asset families, reuse where visually natural, use HLOD/streaming appropriately, and avoid dense micro-prop spam that adds cost without improving combat readability.
 
-## Still Flexible During Implementation
+## Implementation Tuning — Limited
 
-The following are intentionally not frozen until Codex inspects the available project assets:
+The build agent may tune only within the boundaries in `SPATIAL_CONTRACT.md`:
 
-- exact hero landmark asset,
-- exact building/prop variants,
-- exact cover transforms,
-- exact spawn transforms,
-- final lighting/time of day,
-- optional traversal aids,
-- fine terrain sculpting around placed structures.
+- micro-prop and small-cover transforms that preserve required route widths,
+- exact spawn transforms inside the locked candidate regions after LOS/collision checks,
+- approved clutter/decal/VFX choices within each district,
+- fine terrain blending around real asset footprints,
+- lighting intensity/exposure within the frozen overcast late-afternoon treatment.
 
-These decisions may move within the locked macro design without reopening the overall layout.
+The hero landmark, district assignments, major anchor roles, route connectivity, catwalk budget, Garage roof treatment, container-stack ceiling, and time-of-day concept are **not implementation choices**.
