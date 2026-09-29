@@ -92,7 +92,7 @@ Verified on disk:
 
 | Product | ScrapStage56 content folder | Approx. size | Verified assets |
 |---|---|---:|---:|
-| Landscape Material | MW Landscape Auto Material | `MWLandscapeAutoMaterial` | 0.685 GB | 97 uassets / 3 umaps |
+| MW Landscape Auto Material | `MWLandscapeAutoMaterial` | 0.685 GB | 97 uassets / 3 umaps |
 | Modular Industrial Pipe Set | `IndustrialPipesM` | 0.218 GB | 42 uassets / 1 umap |
 | Warning Signs Decals Vol. 1 | `FD_WarningSigns_V1` | 2.218 GB | 243 uassets / 1 umap |
 | Garage | `GaragePack` | 1.652 GB | 557 uassets / 5 umaps |
