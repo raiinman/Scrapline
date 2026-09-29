@@ -209,6 +209,20 @@ The prepared Project Generator request was evaluated during this phase. Current 
 
 No generated custom package is required after the native-device resolution above. `UEFN_CENTRAL_PROMPT.md` is retained as a future fallback if a later feature proves a real custom-logic need.
 
+## Environment ownership prohibition
+
+Even if custom Verse is reopened later, Verse must **not** own:
+- terrain,
+- map layout,
+- asset placement,
+- spawn coordinates,
+- lighting,
+- VFX placement,
+- asset discovery,
+- environment construction.
+
+Those responsibilities remain with the frozen spatial/environment handoff and native editor construction workflow.
+
 ## Phase exit
 
 **PASS.**
