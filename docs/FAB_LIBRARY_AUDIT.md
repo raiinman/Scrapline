@@ -151,6 +151,10 @@ Owned tools that may help production but should not become new one-shot dependen
 - Old West VOL. 6 — removed from active project due art-direction mismatch/noise.
 - Generic medieval, palace, museum and overt sci-fi content should not be used merely because it is owned.
 
+## Recovery Cross-Check
+
+`ASSET_RECOVERY.md` is authoritative for whether a listed Fab product is actually on disk, recovered from cache, or only represented by a manifest stub. Do not treat library ownership as download completion.
+
 ## Stop Rule
 
 Asset acquisition is complete when the final staging wave has been selectively curated and the live UEFN scan confirms:
