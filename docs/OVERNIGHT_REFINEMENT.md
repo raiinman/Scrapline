@@ -2,7 +2,7 @@
 
 ## Status
 
-The asset-acquisition question is closed. Current refinement is selection, physical-fit validation, and implementation guidance only.
+The asset-acquisition, visual-selection, and physical-fit questions are closed. Current refinement is implementation guidance only while the pre-build hold remains active.
 
 The current user hold remains in force: no UEFN Central generation, Verse generation, one-shot generation, synthetic image generation, bulk reserve import, or irreversible map construction.
 
@@ -114,11 +114,20 @@ Public source documentation reduces collision/scale risk without replacing edito
 
 These facts support the frozen choices but do not prove exact local dimensions after migration/reference mounting.
 
-## Remaining verification
+## Physical-fit verification — closed
 
-The only important asset question not yet closed is physical fit: editor-local bounds and collision geometry for the Factory crane assembly, Garage assembly, Box Truck, Campervan, primary containers, and representative catwalk modules.
+Read-only local-bound/collision probes are complete for the Factory crane assembly, Garage assembly, Box Truck, Campervan, Factory containers, and representative metal/wooden Scrapyard catwalk modules.
 
-A read-only staging probe can retrieve Static Mesh local bounds without spawning or modifying the live Scrapline level. Use that method or direct editor inspection; do not invent dimensions from screenshots.
+Key outcomes:
+- live UEFN and UE 5.6 staging measurements matched exactly for all curated imported finalists,
+- the Factory crane remains the primary hero at a shared-pivot envelope of approximately **5.685 × 26.895 × 5.448 m**,
+- the Garage remains the compact workshop shell at approximately **16.541 × 9.375 × 7.970 m**,
+- vehicles and containers fit their intended full-cover roles but must not be used as accidental narrow-route plugs,
+- metal catwalk rise modules naturally reach the +4–6 m traversal band; long chained elevated runs remain restricted,
+- wooden catwalks remain rare Wreck Yard accents,
+- no referenced-content promotion is required.
+
+See `PHYSICAL_FIT_VERIFICATION.md` for exact bounds, collision primitive counts, LOD/Nanite notes, and gameplay implications.
 
 ## Intake rule
 
