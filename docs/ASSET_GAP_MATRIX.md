@@ -11,7 +11,7 @@ Track only the asset families that matter to the locked map design so reserve-pa
 | Scrapyard architecture | Strong | Post-Apocalyptic Scrapyard Pack, Warehouse Essentials | No urgent gap |
 | Fencing / hard barriers | Strong | Scrapyard modular fences, Metal Barricade, rubble | No urgent gap |
 | Concrete / rubble / destruction | Strong | Concrete rubble variants, Cement Rubble, Broken Slab, Industrial Rubble, Rubble Pack | Dark Ruins may add a few premium structural pieces |
-| Terrain rocks / perimeter dressing | Strong pipeline | African Slate Quarry pilot + generated heightmap | Bulk-select useful Quarry assets; do not import all variants blindly |
+| Terrain rocks / perimeter dressing | Strong | 18 curated African Slate Quarry production meshes + generated heightmap | No further rock-pack intake needed before the one-shot |
 | Utility / electrical detail | Medium-strong | Electrical Box, lamps, water pump, tanks, canisters | Add only if a donor offers visibly better large infrastructure |
 | Ambient VFX | Strong | Deserted VFX, Talisman VFX | No urgent gap |
 | Vehicles / wreck forms | Medium | Abandoned Junk Car + scrapyard content | One bulk vehicle pack would improve variety |
