@@ -139,7 +139,7 @@ Still gated:
 ## Remaining Build Gates
 
 ### Pre-Astra gate
-1. Complete the final contradiction/confusion closeout against `SPATIAL_CONTRACT.md`.
+1. Final contradiction/confusion closeout against `SPATIAL_CONTRACT.md`: **PASS**.
 2. Stop and obtain explicit user authorization for the one-shot.
 
 ### After explicit Astra one-shot authorization
@@ -162,6 +162,6 @@ Still gated:
 
 ## Immediate Next Step
 
-**Run the final contradiction/confusion closeout, then stop.**
+**STOP before construction.**
 
-If that audit passes, Scrapline is ready for explicit user authorization of the Astra one-shot. Do not begin construction automatically.
+Scrapline is ready for explicit user authorization of the Astra one-shot. Do not begin construction automatically.
