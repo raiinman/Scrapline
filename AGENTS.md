@@ -80,6 +80,7 @@ Default section order:
 - Treat the GitHub `main` branch as the durable source of truth for Scrapline planning/status documentation, and sync meaningful verified project-state changes back to the repository.
 - When the user requests another durable behavior change, record it here or in the relevant child AGENTS.md
 - Current pre-build hold: do not trigger UEFN Central generation, Verse generation, one-shot build generation, or synthetic image generation until the user explicitly lifts the hold. During this hold, keep Scrapline refinement read-only or narrowly reversible and document verified findings.
+- Before approving the Astra one-shot handoff, run a contradiction/confusion audit and leave no meaningful macro-layout, major-anchor, route-network, verticality, or time-of-day decision for the implementation model to invent. `docs/SPATIAL_CONTRACT.md` is the placement authority for the frozen one-shot skeleton.
 
 ## Scrapline UEFN Execution Contract
 
