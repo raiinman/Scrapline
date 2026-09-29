@@ -91,4 +91,4 @@ Asset intake may reopen only when:
 2. the primary build exposes a concrete missing family that cannot be solved from the frozen manifest or suitable built-in Fortnite content,
 3. the replacement is narrowly scoped to that failure.
 
-Physical-fit/selection verification is now complete and recorded in `PHYSICAL_FIT_VERIFICATION.md`. During the current pre-build hold, continue only read-only or narrowly reversible documentation/inspection work. Do not proceed to Verse, UEFN Central generation, synthetic image generation, or the one-shot until the user explicitly lifts the hold.
+Physical-fit/selection verification is complete and recorded in `PHYSICAL_FIT_VERIFICATION.md`. The pre-build hold was later lifted for gameplay integration and the UEFN Central comparison; both are now complete. **Asset intake remains closed.** Synthetic image generation, bulk reserve import, and Astra/irreversible environment construction remain separately gated unless the user explicitly authorizes them.
