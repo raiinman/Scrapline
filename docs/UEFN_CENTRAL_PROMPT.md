@@ -1,10 +1,20 @@
 # Scrapline — UEFN Central Project Generator Prompt
 
+## Status
+
+**REFERENCE / FALLBACK — not required for the locked first-alpha gameplay package.**
+
+On 2026-09-29, the prepared generator path was evaluated during gameplay integration. The current Project Generator is an authenticated web flow, while the installed Omni-Verse 0.4.3 integration exposes repair/sync tooling rather than a supported headless Project Generator command. No stored credential was extracted or exposed to bypass that boundary.
+
+Current Epic Island Settings and native devices cover Scrapline's entire locked first-alpha gameplay baseline, including 50-point elimination sustain, 30-elimination round end, JIP, respawn/immunity, loadout-on-spawn, and elimination HUD tracking. The live Scrapline project also compiles with zero Verse diagnostics after removing the now-redundant optional siphon file.
+
+Retain the prompt below only as a future fallback if playtesting or a reopened feature proves a specific custom-logic requirement.
+
 ## Use
 
-Paste the prompt below into UEFN Central's **Project Generator** after the Scrapline environment/device plan is ready.
+Do **not** run this request merely to create code for its own sake. Reopen it only when `VERSE_GAMEPLAY_INTEGRATION.md` records a demonstrated native-device gap.
 
-Do not ask UEFN Central to generate terrain, map geometry, or environment art. Its job is the small, robust Verse/gameplay layer.
+If reopened, do not ask UEFN Central to generate terrain, map geometry, or environment art. Its job remains the smallest robust Verse/gameplay layer necessary to close that specific gap.
 
 ## Prompt
 
