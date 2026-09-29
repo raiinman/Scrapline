@@ -4,7 +4,7 @@
 
 Scrapline is **design-frozen, asset-complete, physical-fit verified, and gameplay-integration complete**.
 
-The map design, spatial contract, gameplay baseline, terrain specification, toolchain, production asset pool, real-asset reference pass, physical-fit gate, gameplay/device package, and Astra confusion audit are locked or verified. The asset manifest is frozen and the intake stop rule has fired. The first-alpha gameplay implementation is resolved as native-device only and the live UEFN Verse build is clean with no production custom Verse files. Astra one-shot construction remains gated on explicit user authorization.
+The map design, spatial contract, gameplay baseline, terrain specification, toolchain, production asset pool, real-asset reference pass, physical-fit gate, gameplay/device package, UEFN Central generator comparison, and Astra confusion audit are locked or verified. The asset manifest is frozen and the intake stop rule has fired. The first-alpha gameplay implementation is resolved as native-device only; the generated five-file alternative was marked **Not validated** and rejected, and the live UEFN Verse build is clean with no production custom Verse files. Astra one-shot construction remains gated on explicit user authorization.
 
 ## Ready
 
@@ -14,7 +14,7 @@ The map design, spatial contract, gameplay baseline, terrain specification, tool
 - Epic UEFN MCP is configured and verified.
 - Trashbyrd UEFN Power Tools bridge is installed and verified.
 - Omni-Verse is installed, authenticated, and the VS Code workspace is trusted.
-- UEFN Central Studio/Omni-Verse tooling was evaluated for the integration phase; the current Project Generator path is authenticated-web only and was not bypassed. Native UEFN devices eliminated the need for generated custom Verse.
+- UEFN Central Project Generator was run through the authenticated browser as agreed. Its successful result was marked **Not validated**, fully captured in `UEFN_CENTRAL_GENERATOR_RESULT.md`, and rejected after comparison with the native control. Native UEFN devices remain the final gameplay architecture.
 - Macro map layout is locked.
 - `SPATIAL_CONTRACT.md` freezes major anchor positions/orientations, route topology, verticality/catwalk limits, spawn-region distribution, outer-flank behavior, and the daylight concept.
 - `ASTRA_CONFUSION_AUDIT.md` records the ambiguity attack and confirms stale hero/lighting/selection flexibility has been removed from the handoff set.
@@ -107,6 +107,7 @@ Latest live checks:
 - Exact native gameplay wiring is finalized in `VERSE_GAMEPLAY_INTEGRATION.md` and embedded in `ONE_SHOT_PROMPT_DRAFT.md`.
 - Current live device catalog confirmed Player Spawn Pad, Item Granter, and Tracker identities.
 - Optional local siphon Verse candidate was removed after native `Health Granted on Elimination = 50` was validated as the simpler supported path.
+- UEFN Central run `6e9b9891-1848-5b65-8289-50521fc26c9b` completed but was marked **Not validated**; its five generated files were audited and quarantined rather than staged into Scrapline.
 
 ## Asset Intake — Closed
 
@@ -128,6 +129,7 @@ Validated first-alpha architecture:
 - production custom Verse: **none**.
 - `@editable` wiring: **none**.
 - live UEFN `VerseToolset.BuildAll` after removing the redundant siphon candidate: **0 diagnostics**.
+- generator comparison: **native control retained**; no generated Verse was accepted, so no candidate compile/repair loop was triggered.
 
 Still gated:
 - Astra one-shot environment construction,
@@ -139,7 +141,7 @@ Still gated:
 ## Remaining Build Gates
 
 ### Pre-Astra gate
-1. Final contradiction/confusion closeout against `SPATIAL_CONTRACT.md`: **PASS**.
+1. Final contradiction/confusion closeout against `SPATIAL_CONTRACT.md` and the rejected generator package: **PASS**.
 2. Stop and obtain explicit user authorization for the one-shot.
 
 ### After explicit Astra one-shot authorization
