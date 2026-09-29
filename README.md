@@ -16,18 +16,18 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 
 ## Current Stage
 
-**Design/asset freeze complete; Verse/gameplay integration active; Astra construction still gated.**
+**Design/asset/gameplay integration complete; Astra construction ready for explicit authorization and still gated.**
 
-The macro map design, spatial skeleton, terrain specification, first-alpha gameplay baseline, implementation toolchain, and production environment kit are locked or verified. The grounded real-asset visual pass and read-only physical-fit verification are complete. The Astra confusion audit removed stale design flexibility and `SPATIAL_CONTRACT.md` now freezes major anchors, orientation, routes, verticality, spawn regions, and lighting intent.
+The macro map design, spatial skeleton, terrain specification, first-alpha gameplay baseline, implementation toolchain, production environment kit, grounded real-asset visual pass, physical-fit verification, and gameplay-device package are locked or verified. `SPATIAL_CONTRACT.md` freezes major anchors, orientation, routes, verticality, spawn regions, and lighting intent.
 
-No map-design or asset-fit blocker remains. The user lifted the pre-build hold for Verse/gameplay integration, so UEFN Central/Verse generation and validation are now authorized. Astra one-shot construction, synthetic image generation, bulk reserve import, and irreversible map construction remain gated.
+The validated first-alpha gameplay layer is native-device only: Island Settings + 19 Player Spawn Pads + `IG_Loadout` Item Granter + `TR_Eliminations` Tracker. The live UEFN Verse build passes with no production custom Verse files. Astra one-shot construction, synthetic image generation, bulk reserve import, and irreversible map construction remain gated until explicitly authorized.
 
 ## Documentation
 
 - `docs/PROJECT_BRIEF.md` — product intent and non-negotiable build rules
 - `docs/ASSET_MANIFEST.md` — **frozen** approved asset sources and implementation-visible paths
 - `docs/ASSET_GAP_MATRIX.md` — final required-family coverage and closed intake decision
-- `docs/VERSE_GAMEPLAY_INTEGRATION.md` — **active gameplay/Verse integration phase and exit gate**
+- `docs/VERSE_GAMEPLAY_INTEGRATION.md` — **validated native gameplay package, exact device settings/wiring, and compiler record**
 - `docs/SPATIAL_CONTRACT.md` — **frozen one-shot spatial skeleton and placement authority**
 - `docs/ASTRA_CONFUSION_AUDIT.md` — ambiguity attack/closeout for the Astra handoff
 - `docs/ENVIRONMENT_COMPOSITION_BOARD.md` — district-level real-asset art/composition guidance
@@ -36,11 +36,11 @@ No map-design or asset-fit blocker remains. The user lifted the pre-build hold f
 - `docs/MAP_DESIGN.md` — locked macro combat-space and layout direction
 - `docs/TERRAIN_ENVIRONMENT_SPEC.md` — implementation-facing terrain and environment plan
 - `docs/GAMEPLAY_SPEC.md` — first-alpha FFA gameplay baseline
-- `docs/UEFN_CENTRAL_PROMPT.md` — prepared Verse Project Generator request, currently on hold
+- `docs/UEFN_CENTRAL_PROMPT.md` — retained fallback Project Generator request if a future native-device gap requires custom Verse
 - `docs/TOOLING.md` — approved Codex/UEFN build toolchain and activation checklist
 - `docs/ASSET_PIPELINE.md` — referenced/FBX/donor-project intake workflow and safety rules
 - `docs/FAB_LIBRARY_AUDIT.md` — 160-product ownership audit and final intake disposition
 - `docs/ASSET_RECOVERY.md` — recovered Fab payloads and repaired UE 5.6 staging workflow
-- `docs/BUILD_READINESS.md` — current pre-build readiness snapshot
-- `docs/ONE_SHOT_PROMPT_DRAFT.md` — finalize after the hold is lifted and generation/validation is permitted
+- `docs/BUILD_READINESS.md` — current pre-Astra readiness snapshot
+- `docs/ONE_SHOT_PROMPT_DRAFT.md` — hardened Astra handoff, ready for explicit one-shot authorization
 - `AGENTS.md` — repository-wide DOX contract
