@@ -16,6 +16,7 @@ This folder owns:
 - asset intake / donor-project workflow documentation
 - one-shot readiness and build-gate status
 - blocked/final implementation handoff prompt documentation
+- UEFN Central generator experiment capture, audit, and native-vs-generated disposition
 
 The root `AGENTS.md` owns repository-wide rules.
 
@@ -30,7 +31,7 @@ The root `AGENTS.md` owns repository-wide rules.
 - The approved one-shot toolchain is documented in `TOOLING.md`; do not silently replace or remove an installed integration.
 - `SPATIAL_CONTRACT.md` is the implementation authority for macro layout, major anchor placement/orientation, route connectivity, verticality limits, spawn-region distribution, and lighting concept. Softer older prose must not override it.
 - Before final one-shot approval, run the Astra confusion audit and remove or narrow stale wording that asks the implementation model to re-select a frozen design decision.
-- For the locked first alpha, gameplay implementation authority is `VERSE_GAMEPLAY_INTEGRATION.md`: use native Island Settings + Player Spawn Pads + `IG_Loadout` Item Granter + `TR_Eliminations` Tracker. Do not reintroduce a custom Verse manager, siphon device, End Game path, or other duplicate gameplay authority unless a specific live test proves the native baseline inadequate.
+- For the locked first alpha, gameplay implementation authority is `VERSE_GAMEPLAY_INTEGRATION.md`: use native Island Settings + Player Spawn Pads + `IG_Loadout` Item Granter + `TR_Eliminations` Tracker. The completed UEFN Central output in `UEFN_CENTRAL_GENERATOR_RESULT.md` is quarantined evidence, not build authority. Do not reintroduce its custom Verse manager, siphon logic, End Game/Timer path, or any other duplicate gameplay authority unless a specific live test proves the native baseline inadequate.
 
 ## Work Guidance
 
