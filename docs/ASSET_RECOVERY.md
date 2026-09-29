@@ -1,56 +1,55 @@
 # Scrapline — Asset Recovery Status
 
-## Why Fab appeared to lose files
+## Status
 
-Two separate failures overlapped:
+**Recovery complete. Priority donor curation complete.**
 
-1. The first UE 5.6 staging project was exposed to Epic through a **whole-project junction to D:**. Unreal logged a Content directory watcher failure through that layout, and direct write tests showed D: is dramatically slower than C: for small writes. Large Fab copies into that redirected project could therefore stall or time out.
-2. Epic Online Services became unavailable during the same intake wave. Several UE-format products acquired only their Fab manifest/metadata and never completed an asset payload install.
+The Fab/Epic staging failure is no longer a build blocker. The repaired UE 5.6 staging project works, the priority UE-only payloads were recovered/downloaded, and the production subset needed by Scrapline has been migrated and verified inside live UEFN.
 
-A Fab manifest or a nonzero advertised cache size does **not** prove that the payload exists locally.
+## Original Failure
 
-## Staging project repair
+Two problems overlapped:
 
-The staging project has been rebuilt as a physical local project under:
+1. The first UE 5.6 staging project used a whole-project junction to D:. Unreal logged directory-watcher failures through that layout, and direct write tests showed D: was dramatically slower than C: for small writes.
+2. Epic Online Services became unavailable during the same intake wave. Several UE products acquired only Fab manifest metadata and never completed their payload install.
+
+A Fab manifest or advertised cache size did not prove that the payload existed locally.
+
+## Repaired Staging Project
+
+Physical local receiver:
 
 `C:\Users\mikea\OneDrive\Documents\Unreal Projects\Scrapline_UE56_Staging\ScrapStage56.uproject`
 
-Changes:
-- short project name: **ScrapStage56**,
-- Content / Saved / Intermediate / DerivedDataCache are now physical C: folders, not D: junctions,
-- stale old staging project records were removed from Unreal recent-project metadata,
-- Epic Launcher now discovers the corrected `ScrapStage56.uproject`,
-- the obsolete D:-redirected staging tree was quarantined instead of deleted.
+Rules:
+- physical C: Content/Saved/Intermediate/DDC folders
+- no whole-project D: redirect
+- staging is a donor/curation workspace, not shipping Scrapline content
+- never bulk-migrate sample projects into Scrapline
 
-The repaired local receiver is working. The original priority UE-only retry wave has now completed successfully. Keep using ScrapStage56 as a temporary donor/curation project rather than treating all staged content as shipping Scrapline content.
-
-## Recovered content
+## Recovered Content
 
 ### Wasteland Props - Free Pack
 
-Fab had actually downloaded the complete UE payload into:
-
-`C:\ProgramData\Epic\EpicGamesLauncher\VaultCache\Wastelan3111d46318b7V1\data\Content`
+Complete UE payload recovered from Epic cache.
 
 Verified:
-- approximately **2.97 GB**,
-- **268 .uasset files**,
-- **1 .umap**.
+- approximately **2.97 GB**
+- **268 .uasset files**
+- **1 .umap**
 
-The full payload is also present in the repaired ScrapStage56 receiver under `Content/FreeWastelandProps_Meshingun`.
+The recovered source remains reserve-only after the final asset freeze.
 
 ### Construction Site VOL. 1
 
-Fab downloaded the Unity package instead of UE content. The Unity package was not wasted: it contains the original source FBX and texture files.
-
-Recovered to:
+Recovered from the downloaded Unity package to:
 
 `C:\Users\mikea\Documents\FabRecovered\ConstructionSiteVol1`
 
-Verified recovery:
-- **70 FBX**,
-- **114 texture files**,
-- approximately **1.24 GB** recovered source content.
+Verified:
+- **70 FBX**
+- **114 texture files**
+- approximately **1.24 GB**
 
 ### Construction Site VOL. 2
 
@@ -58,81 +57,110 @@ Recovered to:
 
 `C:\Users\mikea\Documents\FabRecovered\ConstructionSiteVol2`
 
-Verified recovery:
-- **45 FBX**,
-- **92 texture files**,
-- approximately **0.95 GB** recovered source content.
+Verified:
+- **45 FBX**
+- **92 texture files**
+- approximately **0.95 GB**
 
-These two construction packs can now enter the same curated FBX pipeline used for African Slate Quarry; they do not need to be downloaded again.
+Both construction packs are now reserve-only; Garage filled the live workshop gap without requiring another FBX import wave.
 
-## Complete donor projects already available
+## Complete Donor / Source Libraries
 
-- Dark Ruins Megascans Sample — ~25.7 GB / 13,717 uassets.
-- Factory Environment Collection — ~8.7 GB / 2,116 uassets.
-- Derelict Corridor Megascans — ~4.7 GB / 5,808 uassets.
-- Vehicle Variety Pack Volume 2 — ~1.31 GB / 153 uassets.
-- Wasteland Props — recovered directly from Fab cache and also present in ScrapStage56.
+Still available if a specific post-freeze failure requires them:
 
-## Complete exchange/source downloads already available
+- Dark Ruins Megascans Sample
+- Factory Environment Collection
+- Derelict Corridor Megascans
+- Vehicle Variety Pack Volume 2
+- Wasteland Props
+- African Slate Quarry High FBX
+- Junkyard High FBX
+- Unfinished Building High FBX
+- Old Mine FBX
+- Post Apocalypse Survivor Kitbash FBX
+- London Street Props FBX
+- Urban Garbage and Debris FBX
+- Construction Site Vol. 1 / 2 recovered FBX source
 
-- African Slate Quarry — High FBX; curated production subset already in Scrapline.
-- Junkyard — High FBX.
-- Unfinished Building — High FBX.
-- Old Mine — FBX source.
-- FREE Post Apocalypse Survivor Environment Kitbash — FBX source.
-- London Street Props — FBX source.
-- Urban Garbage and Debris — FBX source.
-- Construction Site Vol. 1/2 — recovered source from Unity packages.
+## Completed UE-Only Downloads
 
-## Completed priority UE-only staging installs
+The former manifest-only priority products successfully materialized into ScrapStage56:
 
-The products that previously existed only as Fab manifest stubs have now materialized as real UE 5.6 assets inside ScrapStage56.
+- MW Landscape Auto Material
+- Modular Industrial Pipe Set
+- Warning Signs Decals Vol. 1
+- Garage
+- City Street Props
 
-Verified on disk:
+Epic Launcher install history confirmed all five.
 
-| Product | ScrapStage56 content folder | Approx. size | Verified assets |
-|---|---|---:|---:|
-| MW Landscape Auto Material | `MWLandscapeAutoMaterial` | 0.685 GB | 97 uassets / 3 umaps |
-| Modular Industrial Pipe Set | `IndustrialPipesM` | 0.218 GB | 42 uassets / 1 umap |
-| Warning Signs Decals Vol. 1 | `FD_WarningSigns_V1` | 2.218 GB | 243 uassets / 1 umap |
-| Garage | `GaragePack` | 1.652 GB | 557 uassets / 5 umaps |
-| City Street Props | `Deko_MatrixDemo` | 5.732 GB | 749 uassets / 2 umaps |
+Current staging paths for curated/renamed sources:
 
-Epic Launcher install history also records successful installs for all five products.
+- Garage: `/Game/Imported/GarageSource/`
+- Modular Industrial Pipes: `/Game/Imported/IndustrialPipesSource/`
+- Warning Signs: `/Game/Imported/WarningSignsSource/`
+- Factory curated donor subset: `/Game/Imported/FactoryCurated/`
+- Vehicle Variety V2 curated donor subset: `/Game/Imported/VehicleVarietyV2Curated/`
 
-At the latest verification, ScrapStage56 contained approximately **13.54 GB**, **1,956 uassets**, and **6 staged top-level content families** including Wasteland Props. C: had approximately **33.25 GB free** after the completed intake.
+Unneeded full sources such as City Street Props and MW Landscape remain staging/reserve content, not live Scrapline dependencies.
 
-## Still manifest-only / reserve downloads not required for the priority wave
+## Production Curation Completed
 
-Several owned UE-format reserve products may still have Fab manifests without local payload paths, including:
-- Free Sample Warehouse & Storage Vol. 01,
-- Industry Props Pack 6,
-- Street Props Pack Vol. 1,
-- Street Props Pack Vol. 2,
-- Vehicle Variety Pack,
-- City Sample Vehicles,
-- City Sample Buildings,
-- Soul: City / Soul: Cave and other reserve environments.
+Verified live UEFN promotion:
 
-Do not treat those as available unless their real payload is verified. They are no longer prerequisites for the current priority staging wave unless the live Scrapline gap scan justifies them.
+### Factory
 
-## Curation rule
+`/Scrapline/Imported/FactoryCurated/`
 
-Do **not** re-download the five completed priority UE-only packs.
+- 121 live assets
+- 14 selected StaticMeshes
+- crane / machinery / forklift / assembly / container / electrical vocabulary
 
-Next:
-1. inspect their real assets in ScrapStage56,
-2. curate only pieces that fill the locked Scrapline asset gaps,
-3. migrate approved subsets into the live Scrapline UEFN project,
-4. verify the final project-visible paths,
-5. clear temporary staged bulk content when no longer needed,
-6. freeze the asset manifest only after the live project gap scan passes.
+### Vehicles
 
-Priority curation order:
-1. Garage,
-2. Modular Industrial Pipe Set,
-3. Warning Signs Decals,
-4. City Street Props selective utility/sign/barrier content,
-5. MW Landscape Auto Material only if its terrain workflow proves compatible and useful.
+`/Scrapline/Imported/VehicleVarietyV2Curated/`
 
-Do not re-download assets already recovered above.
+- 71 live assets
+- Box Truck + Campervan StaticMeshes
+
+### Garage
+
+`/Scrapline/Imported/GarageSource/`
+
+- 61 live assets
+- 12 selected StaticMeshes
+- donor demo/ThirdPerson Blueprints excluded
+
+The Garage donor emits legacy demo Blueprint errors in UE5.6 because its bundled ThirdPerson sample references obsolete XR/input nodes. Those errors are confined to the donor demo and are not present in the migrated production subset.
+
+### Pipes
+
+`/Scrapline/Imported/IndustrialPipesSource/`
+
+- 32 live assets
+- 28 StaticMeshes
+
+### Warning Signs
+
+`/Scrapline/Imported/WarningSignsSource/`
+
+- 52 live assets
+- 12 selected decal MaterialInstanceConstants
+
+## Live Verification
+
+After promotion:
+
+- UEFN opens Scrapline successfully.
+- Map Check: **0 errors / 0 warnings**.
+- Power Tools Project Health: **0 errors / 3 warnings**.
+- The 3 warnings are pre-existing oversized propane-tank textures.
+- Factory crane/forklift/recycling machinery, vehicle meshes, Garage workbench, pipe valve, and a selected Warning Sign material were all loaded successfully through the live UEFN bridge.
+
+## Recovery / Intake Rule Going Forward
+
+Do not re-download or re-stage the completed priority packs.
+
+The asset manifest is frozen. Reserve content should remain untouched unless a specific implementation failure forces the asset-gap process to reopen.
+
+Once temporary staging space is no longer useful for the one-shot repair window, it may be cleaned to recover C: space; preserve the live Scrapline project and any source package explicitly intended as a durable archive.
