@@ -80,8 +80,8 @@ When the user requests a durable behavior change, record it here or in the relev
 
 ## Scrapline UEFN Execution Contract
 
-- The UEFN project is the implementation workspace for Scrapline.
-- Before implementation, read this file, `docs/AGENTS.md`, `docs/PROJECT_BRIEF.md`, `docs/ASSET_MANIFEST.md`, `docs/MAP_DESIGN.md`, and `docs/TOOLING.md`.
+- This local UEFN project is the implementation workspace for Scrapline.
+- Before implementation, read this file, `docs/AGENTS.md`, `docs/PROJECT_BRIEF.md`, `docs/BUILD_READINESS.md`, `docs/ASSET_MANIFEST.md`, `docs/ASSET_PIPELINE.md`, `docs/MAP_DESIGN.md`, and `docs/TOOLING.md`.
 - Treat the approved Fab/library content as the environment construction kit. Inspect available assets before creating substitutes.
 - Do not build the visible environment from primitive cubes, blank greybox geometry, or newly modeled stand-ins when a suitable approved asset exists.
 - Terrain generation is allowed and expected. Use UEFN Landscape tools, generated heightmaps, splines, or other supported terrain workflows when appropriate.
