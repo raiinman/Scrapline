@@ -27,7 +27,11 @@ The map design, gameplay baseline, terrain specification, toolchain, and product
 - Final donor curation is complete.
 - `ASSET_MANIFEST.md` is **Frozen for One-Shot**.
 - `ENVIRONMENT_COMPOSITION_BOARD.md` maps the frozen kit to district, traversal, and atmosphere roles.
-- Hero landmark is frozen to the Factory crane composition.
+- `REAL_ASSET_VISUAL_STUDIES.md` records the grounded real-asset visual pass and read-only referenced-content rule.
+- Exact staged visual captures cover the frozen Factory, Vehicle V2, Garage, Pipe, and Warning Sign choices.
+- Representative live UEFN captures cover Scrapyard and Deserted Props referenced-content vocabulary.
+- Talisman / Deserted VFX systems are inventoried through live Niagara browse and represented with real-source reference media.
+- Hero landmark is frozen to the Factory crane composition, now understood as a long horizontal industrial gantry assembly rather than a tall skyline crane.
 
 ## Final Curated Live Imports
 
@@ -96,6 +100,7 @@ Latest live checks:
 - Health scanner saw approximately **504 files / 2.60 GB**.
 - The only warnings are three pre-existing oversized Gas Cylinder / Propane Tank texture files.
 - Representative Factory, Vehicle, Garage, Pipe, and Warning Sign assets all load successfully through the UEFN Asset Registry/Power Tools bridge.
+- Read-only badges on Fab Referenced Content are expected source-lock behavior, not an asset failure. Those assets remain valid for placement.
 
 ## Asset Intake — Closed
 
@@ -121,7 +126,7 @@ Allowed work is read-only inspection, comparison, documentation, reference/conta
 
 ### Before the hold is lifted
 1. Verify physical fit/bounds/collision geometry for the Factory crane, Garage shell, Box Truck, Campervan, primary containers, and representative catwalk modules using a read-only method.
-2. Keep the frozen manifest, gap matrix, composition board, and build-readiness docs internally consistent.
+2. Keep the frozen manifest, gap matrix, composition board, visual-study record, and build-readiness docs internally consistent.
 3. Preserve reserve fallbacks only for named failures; do not reopen acquisition.
 
 ### After the hold is lifted
@@ -148,6 +153,6 @@ Allowed work is read-only inspection, comparison, documentation, reference/conta
 
 ## Immediate Next Step
 
-**Read-only physical-fit verification and documentation synchronization.**
+**Read-only physical-fit verification.**
 
-The asset hunt is over. Generation remains intentionally paused.
+The real-asset visual-reference pass is now grounded enough to select and measure finalists. The asset hunt remains closed and generation remains intentionally paused.
