@@ -2,9 +2,9 @@
 
 ## Current State
 
-Scrapline is **ready to move from asset preparation into Verse/final one-shot handoff work**.
+Scrapline is **asset-complete and in pre-build refinement hold**.
 
-The map design, gameplay baseline, terrain specification, toolchain, and production asset pool are locked or verified. The asset manifest is frozen and the intake stop rule has fired.
+The map design, gameplay baseline, terrain specification, toolchain, and production asset pool are locked or verified. The asset manifest is frozen and the intake stop rule has fired. Generation and irreversible construction remain paused until the user explicitly lifts the hold.
 
 ## Ready
 
@@ -14,7 +14,7 @@ The map design, gameplay baseline, terrain specification, toolchain, and product
 - Epic UEFN MCP is configured and verified.
 - Trashbyrd UEFN Power Tools bridge is installed and verified.
 - Omni-Verse is installed, authenticated, and the VS Code workspace is trusted.
-- UEFN Central Studio access is available.
+- UEFN Central Studio access is available, but generation is currently on hold.
 - Macro map layout is locked.
 - Terrain/environment specification is locked.
 - First-alpha FFA gameplay baseline is locked.
@@ -23,8 +23,10 @@ The map design, gameplay baseline, terrain specification, toolchain, and product
 - African Slate Quarry is curated and verified.
 - Scrapline terrain heightmap v1 is staged under `Resources/Terrain/`.
 - LookoutTower is removed/blacklisted.
+- Warehouse Essentials is quarantined and excluded from required coverage.
 - Final donor curation is complete.
 - `ASSET_MANIFEST.md` is **Frozen for One-Shot**.
+- `ENVIRONMENT_COMPOSITION_BOARD.md` maps the frozen kit to district, traversal, and atmosphere roles.
 - Hero landmark is frozen to the Factory crane composition.
 
 ## Final Curated Live Imports
@@ -103,12 +105,30 @@ Do not import Junkyard, City Street Props, Construction Site, Wasteland, Dark Ru
 
 The intake may reopen only for a specific demonstrated implementation failure.
 
+## Current Pre-Build Hold
+
+Until the user explicitly lifts the hold:
+- do not run UEFN Central Project Generator,
+- do not generate Verse,
+- do not run the one-shot build,
+- do not use synthetic image generation,
+- do not bulk-import reserve packs,
+- do not begin irreversible map construction.
+
+Allowed work is read-only inspection, comparison, documentation, reference/contact-sheet review from existing assets, and narrowly reversible curation.
+
 ## Remaining Build Gates
 
+### Before the hold is lifted
+1. Verify physical fit/bounds/collision geometry for the Factory crane, Garage shell, Box Truck, Campervan, primary containers, and representative catwalk modules using a read-only method.
+2. Keep the frozen manifest, gap matrix, composition board, and build-readiness docs internally consistent.
+3. Preserve reserve fallbacks only for named failures; do not reopen acquisition.
+
+### After the hold is lifted
 1. Run the prepared UEFN Central Project Generator request.
 2. Validate generated Verse with Omni-Verse / Epic compiler tooling.
-3. Update the gameplay/device paths and wiring in `ONE_SHOT_PROMPT_DRAFT.md`.
-4. Finalize the one-shot prompt against the frozen asset manifest.
+3. Update gameplay/device paths and wiring in `ONE_SHOT_PROMPT_DRAFT.md`.
+4. Finalize the one-shot prompt against the frozen asset manifest and composition board.
 5. Run the primary build pass.
 6. Test and repair after the primary construction pass unless blocked earlier.
 
@@ -123,10 +143,11 @@ The intake may reopen only for a specific demonstrated implementation failure.
 - frozen production asset pool
 - asset-first visual construction rule
 - no visible greybox substitute art
+- controlled verticality budget
 - LookoutTower rejection
 
 ## Immediate Next Step
 
-**Verse generation and validation.**
+**Read-only physical-fit verification and documentation synchronization.**
 
-The asset hunt is over. Do not spend one-shot time browsing Fab or staging more packs.
+The asset hunt is over. Generation remains intentionally paused.
