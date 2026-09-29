@@ -57,6 +57,7 @@ Use the rise to:
 - create believable scrapyard berms and service roads.
 
 Do not create continuous high-ground firing positions around the perimeter.
+
 ### Drainage / Service Cuts
 
 Add several shallow industrial drainage or runoff cuts:
@@ -87,6 +88,7 @@ Allow district assets to bleed across these boundaries so the map reads as one f
 - Interior / service connectors: approximately **3–5 m** where believable.
 - Elevated catwalks: use real asset widths; avoid artificially scaling thin walkways into implausible platforms.
 - Outer flank sections: approximately **10–14 m** including cover and terrain transitions.
+
 ## Sightline Rules
 
 - Intentional long sightlines should generally terminate around **50–65 m**.
@@ -124,6 +126,7 @@ Preferred classes:
 Build supporting wreckage and cover around it rather than leaving it isolated on an empty floor.
 
 The landmark should be recognizable from most districts but should not itself become an unbeatable firing perch.
+
 ## Candidate Spawn Bands
 
 Plan **18–20** spawn locations. Initial candidate zones may be distributed around these approximate anchors, then shifted to real cover:
@@ -146,6 +149,7 @@ Before placing environment art:
 4. Prefer real asset dimensions over arbitrary scaling.
 5. Do not create visible substitute boxes when a suitable asset is available.
 6. Keep unrelated visual styles out even if they are technically available.
+
 ## One-Shot Environment Sequence
 
 1. Inspect project assets and identify the strongest asset families.
