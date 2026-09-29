@@ -2,20 +2,23 @@
 
 ## Status
 
-**REFERENCE / FALLBACK — not required for the locked first-alpha gameplay package.**
+**EXPERIMENT COMPLETED 2026-09-29 — retained for provenance and future gap-specific reuse.**
 
-On 2026-09-29, the prepared generator path was evaluated during gameplay integration. The current Project Generator is an authenticated web flow, while the installed Omni-Verse 0.4.3 integration exposes repair/sync tooling rather than a supported headless Project Generator command. No stored credential was extracted or exposed to bypass that boundary.
+The agreed authenticated-browser Project Generator experiment was completed after the native control baseline had been validated.
 
-Current Epic Island Settings and native devices cover Scrapline's entire locked first-alpha gameplay baseline, including 50-point elimination sustain, 30-elimination round end, JIP, respawn/immunity, loadout-on-spawn, and elimination HUD tracking. The live Scrapline project also compiles with zero Verse diagnostics after removing the now-redundant optional siphon file.
+- first attempt `4b6861de-6c4d-5292-9a65-ad6f7eb0ee1d`: failed during planning with no completed output,
+- successful attempt `6e9b9891-1848-5b65-8289-50521fc26c9b`: completed, generated five Verse files, and was marked **Not validated** by UEFN Central,
+- full output and independent audit: `UEFN_CENTRAL_GENERATOR_RESULT.md`.
 
-Retain the prompt below only as a future fallback if playtesting or a reopened feature proves a specific custom-logic requirement.
+The generated architecture did not provide a concrete reliability advantage and introduced compiler/API defects, lifecycle gaps, duplicate score/end authority, extra wiring, and a 16-spawn-pad contradiction. It was rejected without being copied into the live project.
 
-## Use
+Current native Island Settings and devices cover Scrapline's locked first-alpha gameplay baseline, including 50-point elimination sustain, 30-elimination round end, JIP, respawn/immunity, loadout-on-spawn, and elimination HUD tracking. The live Scrapline project compiles with zero Verse diagnostics after removing the redundant optional siphon file.
 
-Do **not** run this request merely to create code for its own sake. Reopen it only when `VERSE_GAMEPLAY_INTEGRATION.md` records a demonstrated native-device gap.
+## Reuse rule
 
-If reopened, do not ask UEFN Central to generate terrain, map geometry, or environment art. Its job remains the smallest robust Verse/gameplay layer necessary to close that specific gap.
+Do **not** rerun this full request merely to create code for its own sake. Reopen generator work only when `VERSE_GAMEPLAY_INTEGRATION.md` records a demonstrated native-device gap, and ask for the smallest code needed to close that specific gap.
 
+If reopened, do not ask UEFN Central to generate terrain, map geometry, environment art, spawn coordinates, or other frozen construction responsibilities.
 ## Prompt
 
 Build a production-quality but intentionally small Verse gameplay package for a UEFN project named **Scrapline**.
@@ -130,3 +133,49 @@ Do NOT put these in Verse:
 Optimize for reliability, simplicity, multiplayer correctness, and easy integration by Codex through Epic UEFN MCP.
 
 Do not invent additional game mechanics.
+
+## Experiment control overlay used on 2026-09-29
+
+The following instructions were appended verbatim to the base prompt above for the completed experiment:
+
+---
+
+Scrapline already has a validated native-device baseline using Island Settings, 19 Player Spawn Pads, one Item Granter, and one Tracker, with zero production custom Verse.
+
+Do not generate Verse merely because this is a Verse generator.
+
+Treat the native baseline as the control case.
+
+Only introduce custom Verse where it provides a concrete reliability, multiplayer-lifecycle, join-in-progress, scoring, loadout, HUD, spawn, or device-wiring advantage over native Creative behavior.
+
+For every custom Verse responsibility you propose, explicitly state:
+
+1. What native device/settings alternative exists.
+2. Why the Verse implementation is materially better or more reliable.
+3. What @editable references it requires.
+4. How player join, leave, respawn, and join-in-progress are handled.
+5. Whether any event can be subscribed more than once.
+6. What happens if a player leaves while state exists for them.
+7. What happens at the 30-elimination win condition and the 10-minute timeout.
+8. Whether the implementation creates a second competing scoring or end-game authority.
+
+Prefer the smallest architecture possible.
+
+A one-file solution is preferable to 3–8 files if it safely satisfies the requirements.
+
+Do not make Verse own:
+
+- terrain
+- map layout
+- spawn coordinates
+- asset placement
+- environment construction
+- lighting
+- VFX placement
+- asset discovery
+
+At the end include:
+
+NATIVE BASELINE VS GENERATED ARCHITECTURE
+
+Compare the generated solution directly against the native Island Settings + Player Spawn Pad + Item Granter + Tracker implementation and state which architecture you would actually ship for this specific simple FFA.
