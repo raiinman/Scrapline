@@ -20,7 +20,7 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 
 The macro map design, spatial skeleton, terrain specification, first-alpha gameplay baseline, implementation toolchain, production environment kit, grounded real-asset visual pass, physical-fit verification, and gameplay-device package are locked or verified. `SPATIAL_CONTRACT.md` freezes major anchors, orientation, routes, verticality, spawn regions, and lighting intent.
 
-The validated first-alpha gameplay layer is native-device only: Island Settings + 19 Player Spawn Pads + `IG_Loadout` Item Granter + `TR_Eliminations` Tracker. The live UEFN Verse build passes with no production custom Verse files. Astra one-shot construction, synthetic image generation, bulk reserve import, and irreversible map construction remain gated until explicitly authorized.
+The validated first-alpha gameplay layer is native-device only: Island Settings + 19 Player Spawn Pads + `IG_Loadout` Item Granter + `TR_Eliminations` Tracker. The agreed UEFN Central Project Generator experiment is complete; its five-file result was marked **Not validated** and rejected after direct comparison with the native control. The live UEFN Verse build remains clean with no production custom Verse files. Astra one-shot construction, synthetic image generation, bulk reserve import, and irreversible map construction remain gated until explicitly authorized.
 
 ## Documentation
 
@@ -36,7 +36,8 @@ The validated first-alpha gameplay layer is native-device only: Island Settings 
 - `docs/MAP_DESIGN.md` — locked macro combat-space and layout direction
 - `docs/TERRAIN_ENVIRONMENT_SPEC.md` — implementation-facing terrain and environment plan
 - `docs/GAMEPLAY_SPEC.md` — first-alpha FFA gameplay baseline
-- `docs/UEFN_CENTRAL_PROMPT.md` — retained fallback Project Generator request if a future native-device gap requires custom Verse
+- `docs/UEFN_CENTRAL_GENERATOR_RESULT.md` — full completed Project Generator capture, independent audit, and rejection decision
+- `docs/UEFN_CENTRAL_PROMPT.md` — exact generator request/control overlay retained for provenance and future gap-specific reuse
 - `docs/TOOLING.md` — approved Codex/UEFN build toolchain and activation checklist
 - `docs/ASSET_PIPELINE.md` — referenced/FBX/donor-project intake workflow and safety rules
 - `docs/FAB_LIBRARY_AUDIT.md` — 160-product ownership audit and final intake disposition
