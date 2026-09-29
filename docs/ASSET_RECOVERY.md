@@ -157,6 +157,20 @@ After promotion:
 - The 3 warnings are pre-existing oversized propane-tank textures.
 - Factory crane/forklift/recycling machinery, vehicle meshes, Garage workbench, pipe valve, and a selected Warning Sign material were all loaded successfully through the live UEFN bridge.
 
+## Post-Freeze Staging Cleanup
+
+After the live production pool was frozen and verified, three no-longer-required staging payloads were removed from ScrapStage56 to preserve C: headroom:
+
+- City Street Props (`Deko_MatrixDemo`) — approximately **5.73 GB**
+- MW Landscape Auto Material — approximately **0.68 GB**
+- duplicate staged Wasteland Props — approximately **2.97 GB**
+
+The Wasteland source remains verified intact in Epic's VaultCache at **268 .uasset files / 269 total files**.
+
+The curated `Content/Imported` staging tree remains in place as a repair source for the frozen Factory, Vehicle, Garage, Pipes, and Warning Signs imports.
+
+After cleanup, C: free space was approximately **38.19 GB**.
+
 ## Recovery / Intake Rule Going Forward
 
 Do not re-download or re-stage the completed priority packs.
