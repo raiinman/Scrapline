@@ -12,6 +12,8 @@ This folder owns:
 - map-layout and combat-flow specifications
 - future one-shot build instructions and implementation handoff documents
 - build toolchain and editor-integration requirements
+- asset intake / donor-project workflow documentation
+- one-shot readiness and build-gate status
 
 The root `AGENTS.md` owns repository-wide rules.
 
