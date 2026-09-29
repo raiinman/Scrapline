@@ -42,6 +42,13 @@ The Scrapline toolchain is installed, activated, and verified against the live S
 - Treat this as implementation reference material, not project source.
 - Prefer compiler-verified examples when choosing Verse API patterns.
 
+### Unreal Engine Donor Staging
+
+- Unreal Engine 5.8 is installed for general donor/staging work.
+- Unreal Engine 5.6 is being installed because some Fab sample projects expose creation only for their packaged engine version.
+- Donor projects are source libraries only; do not treat their demo maps, Blueprints, cinematics, or project settings as Scrapline content.
+- The durable donor/FBX/referenced-content workflow is documented in `ASSET_PIPELINE.md`.
+
 ### Built-in UEFN Tools
 
 - Modeling Mode is permitted for collision fixes, UV/LOD cleanup, terrain integration, and small corrections.
