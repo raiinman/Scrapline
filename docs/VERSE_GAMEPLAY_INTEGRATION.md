@@ -232,6 +232,6 @@ Those responsibilities remain with the frozen spatial/environment handoff and na
 - Multiplayer/JIP/leave lifecycle: accounted for natively.
 - Exact native devices and wiring: resolved.
 - `@editable` wiring: none.
-- One-shot gameplay placeholder: must be replaced by this validated native package.
-- Final contradiction/confusion audit: required before Astra authorization.
+- One-shot gameplay placeholder: replaced with this validated native package.
+- Final contradiction/confusion audit: **pass**.
 - Astra construction remains gated pending explicit user authorization.
