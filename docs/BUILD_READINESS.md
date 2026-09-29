@@ -39,8 +39,9 @@ Before Quarry curation, Power Tools saw 58 project assets. After curation, the p
 
 ## In Progress
 
-- Dark Ruins Megascans Sample download / donor-project creation.
-- Full Fab library audit complete: 160 owned products / 77 3D. Final staging wave is defined in `FAB_LIBRARY_AUDIT.md` and now includes Junkyard, Factory Environment Collection, Construction Site VOL. 2, Warehouse, Garage, pipes, street props, signage, wasteland filler, power, and curated vehicles.
+- Full Fab library audit complete: 160 owned products / 77 3D.
+- Asset recovery pass complete for the stalled intake wave: Wasteland is recovered as a UE donor, Construction Site Vol. 1/2 source is extracted, and `ScrapStage56` is repaired as a local one-pack-at-a-time staging project.
+- Final staging wave is defined in `FAB_LIBRARY_AUDIT.md`; manifest-only UE products are tracked in `ASSET_RECOVERY.md` and must not be counted as downloaded until real payload files exist.
 
 ## Remaining Build Gates
 
@@ -69,18 +70,19 @@ Before Quarry curation, Power Tools saw 58 project assets. After curation, the p
 
 Run the **final staging wave** from `FAB_LIBRARY_AUDIT.md` rather than continuing broad asset hunting.
 
-Start with the highest-leverage packs:
+Start with the highest-leverage content that is already real on disk:
 1. Junkyard.
 2. Factory Environment Collection.
-3. Construction Site VOL. 2.
-4. Warehouse.
-5. Garage.
-6. Modular Industrial Pipe Set.
-7. City Street Props.
-8. Warning signs decals Vol. 1.
-9. Wasteland Props - Free Pack.
-10. Power Generator.
-11. Vehicle Variety Pack Volume 2.
-12. Selective Unfinished Building / Old Mine / Dark Ruins / Derelict Corridor donors already on disk.
+3. Recovered Construction Site VOL. 2 FBX source.
+4. Wasteland Props recovered donor.
+5. Vehicle Variety Pack Volume 2.
+6. Selective Unfinished Building / Old Mine / Dark Ruins / Derelict Corridor / Post Apocalypse Kitbash sources.
+
+After Epic Online Services is stable, retry only the missing UE-only payloads through `ScrapStage56` one pack at a time:
+7. MW Landscape Auto Material.
+8. Modular Industrial Pipe Set.
+9. Warning Signs Decals Vol. 1.
+10. Garage.
+11. City Street Props only if the live gap still justifies its size.
 
 Then re-scan live UEFN, select the hero landmark, freeze the manifest, and stop asset acquisition.
