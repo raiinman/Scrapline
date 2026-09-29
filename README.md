@@ -30,6 +30,7 @@ The macro map design, terrain specification, first-alpha gameplay baseline, and 
 - `docs/UEFN_CENTRAL_PROMPT.md` — prepared Verse Project Generator request
 - `docs/TOOLING.md` — approved Codex/UEFN build toolchain and activation checklist
 - `docs/ASSET_PIPELINE.md` — referenced/FBX/donor-project intake workflow and safety rules
+- `docs/FAB_LIBRARY_AUDIT.md` — full 160-product Fab library audit and one-shot staging wave
 - `docs/ASSET_GAP_MATRIX.md` — current coverage by required asset family and intake stop rule
 - `docs/BUILD_READINESS.md` — current build gates and one-shot readiness snapshot
 - `docs/ONE_SHOT_PROMPT_DRAFT.md` — blocked Codex handoff draft; finalize only after asset/Verse freeze
