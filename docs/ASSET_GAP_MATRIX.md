@@ -2,63 +2,87 @@
 
 ## Purpose
 
-Track only the asset families that matter to the locked map design so reserve-pack intake stops when the one-shot is adequately covered.
+Track the production-asset families required by the locked map design and enforce the intake stop rule.
 
-## Current Coverage
+## Status
 
-| Asset family | Status | Current sources | What is still useful |
+**CLOSED — freeze threshold satisfied.**
+
+The final live UEFN curation pass eliminated the remaining weak categories. Broad Fab/library acquisition is no longer part of the one-shot path.
+
+## Final Coverage
+
+| Asset family | Status | Frozen sources | One-shot disposition |
 |---|---|---|---|
-| Scrapyard architecture | Strong | Post-Apocalyptic Scrapyard Pack, Warehouse Essentials | No urgent gap |
-| Fencing / hard barriers | Strong | Scrapyard modular fences, Metal Barricade, rubble | No urgent gap |
-| Concrete / rubble / destruction | Strong | Concrete rubble variants, Cement Rubble, Broken Slab, Industrial Rubble, Rubble Pack | Dark Ruins may add a few premium structural pieces |
-| Terrain rocks / perimeter dressing | Strong | 18 curated African Slate Quarry production meshes + generated heightmap | No further rock-pack intake needed before the one-shot |
-| Utility / electrical detail | Medium-strong | Electrical Box, lamps, water pump, tanks, canisters | Add only if a donor offers visibly better large infrastructure |
-| Ambient VFX | Strong | Deserted VFX, Talisman VFX | No urgent gap |
-| Vehicles / wreck forms | Medium | Abandoned Junk Car + scrapyard content | One bulk vehicle pack would improve variety |
-| Loading / warehouse vocabulary | Medium | Deserted Props, Warehouse Essentials | More pallets/containers/loading structures are useful but not mandatory |
-| Workshop interiors | Medium | Warehouse Essentials + general scrapyard props | Tools/shelving/garage equipment would improve the southeast district |
-| Heavy machinery / power infrastructure | Weak-medium | pumps, water tower, ventilators, propane tank | Strong generator/tank/machine/crane assets still desirable |
-| Modular industrial pipes | Weak | limited current pipe vocabulary | Modular Industrial Pipe Set remains high-value |
-| Signage / decals | Medium | scrapyard message board and misc props | Warning Signs Decals would noticeably improve authored detail |
-| Hero landmark | Not frozen | water tower/guardpost candidates exist | Prefer one stronger crane/gantry/processing-machine silhouette if available |
-| Ruined structural shells | Medium | scrapyard structures, Warehouse Essentials | Dark Ruins donor is expected to strengthen this category |
+| Scrapyard architecture | Strong | Post-Apocalyptic Scrapyard Pack, Warehouse Essentials | Frozen |
+| Fencing / hard barriers | Strong | Scrapyard modular fences, Metal Barricade, rubble | Frozen |
+| Concrete / rubble / destruction | Strong | Concrete rubble variants, Cement Rubble, Broken Slab, Industrial Rubble, Rubble Pack | Frozen |
+| Terrain rocks / perimeter dressing | Strong | 18 curated African Slate Quarry meshes + generated heightmap | Frozen |
+| Utility / electrical detail | Strong | Electrical Box + Factory electrical panel/switchboard + pumps/tanks/canisters | Frozen |
+| Ambient VFX | Strong | Deserted VFX, Talisman VFX | Frozen |
+| Vehicles / wreck forms | Strong | Abandoned Junk Car, Box Truck, Campervan, scrapyard content | Frozen |
+| Loading / warehouse vocabulary | Strong | Warehouse Essentials, Factory containers, Garage pallet/cart, Deserted Props | Frozen |
+| Workshop interiors | Strong | Garage structure/workbench/shelves/cart/stairs/railings + existing warehouse/scrapyard props | Frozen |
+| Heavy machinery / power infrastructure | Strong | Factory crane, recycling machine, engine/container, forklift, assembly line, electrical equipment | Frozen |
+| Modular industrial pipes | Strong | 28 verified Modular Industrial Pipe Set StaticMeshes | Frozen |
+| Signage / decals | Strong | 12 selected Warning Signs decal instances + existing scrapyard signage | Frozen |
+| Hero landmark | **Frozen** | Factory crane composition | `SM_Crane01` primary |
+| Ruined structural shells | Adequate/Strong | Scrapyard structures + Garage + Warehouse Essentials | No additional donor required |
 
-## Intake Stop Rule
+## Frozen Hero Landmark
 
-The full Fab library audit now confirms **160 owned products**, including **77 3D assets**. The one-shot should use that ownership more aggressively, but only through selective curation.
+Primary:
+`/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_Crane01`
 
-Before the manifest freeze, stage/curate the following owned packs:
+Supporting pieces:
+- `SM_CraneCabin01`
+- `SM_CraneCable01`
 
-1. **Junkyard** — primary salvage/wreckage expansion.
-2. **Factory Environment Collection** — primary heavy-machinery, crane and hero-landmark source.
-3. **Construction Site VOL. 2** — workshop tools, ladders, benches and machine props.
-4. **Warehouse** — loading/storage vocabulary.
-5. **Garage** — workshop/service-area props.
-6. **Modular Industrial Pipe Set** — pipe vocabulary.
-7. **City Street Props** — cherry-pick utility, sign, barrier and street-industrial details.
-8. **Warning signs decals Vol. 1** — signage polish.
-9. **Wasteland Props - Free Pack** — rusty wasteland filler.
-10. **Power Generator** — dedicated power asset.
-11. **Vehicle Variety Pack Volume 2** — curated vehicle/wreck silhouettes.
-12. **Worn Metal Shipping Container** / **Military Cargo Container** — only if loading-yard container variety remains weak.
-13. **FREE Post Apocalypse Survivor Environment Kitbash set** — inspect only for strong industrial/wire/tower silhouette pieces.
+Secondary industrial anchors:
+- `SM_RecyclingMachine01`
+- `SM_EngineWithContainer`
 
-Already on disk and available for selective curation:
-- **Unfinished Building** — High FBX source.
-- **Old Mine** — High FBX source.
-- **Derelict Corridor Megascans Sample**.
-- **Dark Ruins Megascans Sample** — UE 5.6 donor.
-- **African Slate Quarry** — already curated and complete.
+The crane composition belongs in the central kill yard but must not become an uncontested full-map high-ground position.
 
-Do not bulk-migrate City Sample Buildings, Soul: City, Soul: Cave, medieval/village packs, museum/palace samples, or other stylistically unrelated content merely because it is owned.
+## Intake Stop Rule — Triggered
 
-Full ownership and disposition are recorded in `FAB_LIBRARY_AUDIT.md`.
+The freeze threshold required:
 
-## Freeze Threshold
+- no required category at Weak — **met**
+- a project-visible hero landmark — **met**
+- at least two vehicle/wreck silhouettes — **met**
+- distinct large-scale Machinery/Power vocabulary — **met**
+- all selected donor/imported content verified inside UEFN — **met**
 
-The manifest is ready to freeze when:
-- no required category is Weak,
-- a hero landmark is selected from a verified project-visible asset,
-- at least two vehicle/wreck silhouettes are available,
-- the Machinery/Power district has enough large-scale industrial vocabulary to look distinct from the other districts,
-- all selected donor/imported content has been verified inside UEFN.
+Latest verification:
+- Scrapline Map Check: **0 errors / 0 warnings**
+- Power Tools Project Health: **0 errors**
+- 3 warnings remain for pre-existing oversized propane-tank textures only
+
+## Reserve Disposition
+
+Do **not** pull these into the live project before the one-shot unless implementation demonstrates a specific failure in the frozen pool:
+
+- Junkyard
+- Construction Site Vol. 1 / 2
+- City Street Props
+- Wasteland Props
+- MW Landscape Auto Material
+- Dark Ruins
+- Derelict Corridor
+- Unfinished Building
+- Old Mine
+- Post Apocalypse Survivor Kitbash
+- City Sample Buildings / Vehicles
+- additional warehouse/street/vehicle packs
+
+Availability is no longer a reason to import content.
+
+## Reopen Rule
+
+Asset intake may reopen only when:
+1. a frozen asset fails UEFN validation or cannot perform its documented role,
+2. the primary build exposes a concrete missing family that cannot be solved from the frozen manifest or suitable built-in Fortnite content,
+3. the replacement is narrowly scoped to that failure.
+
+Otherwise, proceed to Verse and the one-shot.
