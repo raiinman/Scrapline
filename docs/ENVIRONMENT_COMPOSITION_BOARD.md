@@ -102,6 +102,16 @@ Live UEFN captures confirm that Scrapyard and Deserted Props referenced assets a
 
 See `REAL_ASSET_VISUAL_STUDIES.md` for the grounded visual evidence and representative captured assets.
 
-## Remaining fit gate
+## Verified physical-fit constraints
 
-Before final placement guidance, verify local bounds and collision for the Factory crane, Garage shell, Box Truck, Campervan, primary containers, and representative metal/wooden catwalk modules. Do not infer exact dimensions from screenshots or naming.
+The read-only physical-fit gate is complete; exact measurements and primitive counts are recorded in `PHYSICAL_FIT_VERIFICATION.md`.
+
+Implementation constraints now frozen from those measurements:
+- Factory crane shared-pivot envelope: approximately **5.685 × 26.895 × 5.448 m**. Preserve the three-part pivot relationship, do not ground from the lower cable bound, and do not allow a safe full-length elevated firing lane.
+- Garage shared-pivot envelope: approximately **16.541 × 9.375 × 7.970 m**. Keep it as a compact workshop shell; roof access is intentional/rare rather than default traversal.
+- Box Truck and Campervan: approximately **2.6–2.7 m wide / 2.87–2.88 m tall**. Use as full-cover vehicle masses and avoid precision traversal assumptions around their one-convex collision.
+- Factory containers: approximately **6.0 × 2.8 × 3.0 m**. Avoid accidental secondary-route plugs; double stacks reach the +6 m upper mid-band.
+- Representative metal catwalk flats are approximately **5.12 × 2.56 m** with a ~1.15 m rail/deck envelope; rise modules span ~4.9 m vertically. Metal remains the primary elevated kit, but long chained runs are not permitted to become uncontested runways.
+- Wooden catwalk modules occupy equal or greater space than the metal family and remain rare Wreck Yard accents.
+
+No physical-fit result requires reopening asset intake or promoting referenced content.
