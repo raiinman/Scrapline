@@ -2,9 +2,9 @@
 
 ## Current State
 
-Scrapline is **asset-complete and in pre-build refinement hold**.
+Scrapline is **asset-complete, physical-fit verified, and in pre-build refinement hold**.
 
-The map design, gameplay baseline, terrain specification, toolchain, and production asset pool are locked or verified. The asset manifest is frozen and the intake stop rule has fired. Generation and irreversible construction remain paused until the user explicitly lifts the hold.
+The map design, gameplay baseline, terrain specification, toolchain, production asset pool, real-asset reference pass, and physical-fit gate are locked or verified. The asset manifest is frozen and the intake stop rule has fired. Generation and irreversible construction remain paused until the user explicitly lifts the hold.
 
 ## Ready
 
@@ -32,6 +32,7 @@ The map design, gameplay baseline, terrain specification, toolchain, and product
 - Representative live UEFN captures cover Scrapyard and Deserted Props referenced-content vocabulary.
 - Talisman / Deserted VFX systems are inventoried through live Niagara browse and represented with real-source reference media.
 - Hero landmark is frozen to the Factory crane composition, now understood as a long horizontal industrial gantry assembly rather than a tall skyline crane.
+- Read-only physical-fit verification is complete for the Factory crane assembly, Garage assembly, Box Truck, Campervan, Factory containers, and representative metal/wood Scrapyard catwalk modules. Live UEFN and UE 5.6 staged measurements matched exactly for the curated imported meshes.
 
 ## Final Curated Live Imports
 
@@ -125,9 +126,9 @@ Allowed work is read-only inspection, comparison, documentation, reference/conta
 ## Remaining Build Gates
 
 ### Before the hold is lifted
-1. Verify physical fit/bounds/collision geometry for the Factory crane, Garage shell, Box Truck, Campervan, primary containers, and representative catwalk modules using a read-only method.
-2. Keep the frozen manifest, gap matrix, composition board, visual-study record, and build-readiness docs internally consistent.
-3. Preserve reserve fallbacks only for named failures; do not reopen acquisition.
+1. Keep the frozen manifest, gap matrix, composition board, visual-study record, physical-fit record, and build-readiness docs internally consistent.
+2. Preserve reserve fallbacks only for named failures; do not reopen acquisition.
+3. Do not add another asset gate unless implementation exposes a specific documented failure.
 
 ### After the hold is lifted
 1. Run the prepared UEFN Central Project Generator request.
@@ -153,6 +154,6 @@ Allowed work is read-only inspection, comparison, documentation, reference/conta
 
 ## Immediate Next Step
 
-**Read-only physical-fit verification.**
+**Hold remains active; no asset-fit gate remains.**
 
-The real-asset visual-reference pass is now grounded enough to select and measure finalists. The asset hunt remains closed and generation remains intentionally paused.
+The physical-fit verification is complete and recorded in `PHYSICAL_FIT_VERIFICATION.md`. The asset hunt remains closed. The next implementation step is only to lift the current hold and resume the prepared generation/build sequence when explicitly approved.
