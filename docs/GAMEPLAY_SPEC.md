@@ -32,6 +32,7 @@ Keep the alpha simple. Do not add teams, classes, objectives, economy, persisten
 - Mantling: **On**.
 - Crouching: **On**.
 - Fall damage: **Off** to support fast drops from the limited elevated routes.
+
 ## Respawn
 
 - Respawn delay: approximately **3 seconds**.
@@ -66,6 +67,7 @@ No mobility consumables or healing inventory in the first alpha. The environment
 Target a **50-point health/shield restoration on elimination**, capped by the player's normal health + shield maximum.
 
 Prefer a supported native device or current Verse API that compiles cleanly. If this introduces unnecessary complexity, the alpha may temporarily ship without siphon rather than using brittle code.
+
 ## Scoring / HUD
 
 - Elimination = **+1 score**.
@@ -103,6 +105,7 @@ Likely responsibilities:
 - clean up subscriptions/state when players leave.
 
 Do not make Verse responsible for terrain, asset placement, spawn transforms, weapon asset discovery, or environment construction.
+
 ## Alpha Exclusions
 
 Do not add these during the one-shot unless explicitly reopened later:
