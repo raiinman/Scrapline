@@ -112,7 +112,7 @@ Latest live checks:
 - Current live device catalog confirmed Player Spawn Pad, Item Granter, and Tracker identities.
 - Optional local siphon Verse candidate was removed after native `Health Granted on Elimination = 50` was validated as the simpler supported path.
 - UEFN Central run `6e9b9891-1848-5b65-8289-50521fc26c9b` completed but was marked **Not validated**; its five generated files were audited and quarantined rather than staged into Scrapline.
-- Feature Freeze v2 Armory core candidate now exists as one Verse file and passes live `ValkyrieToolset.VerseToolset.BuildAll` with **0 diagnostics** after repairing initial effect-context errors. UI/cart interaction and runtime device wiring/tests remain pending.
+- Feature Freeze v2 Armory candidate now exists as one Verse file with the interactive buy/sell UI, Rebuy, Next Loadout queue, phase countdowns, catalog metadata, economy state, and lifecycle gates. The full current file passes live `ValkyrieToolset.VerseToolset.BuildAll` with **0 diagnostics**. Runtime device-reference wiring and lifecycle/multiplayer tests remain pending.
 
 ## Asset Intake — Closed
 

@@ -3,11 +3,10 @@ using { /Fortnite.com/Characters }
 using { /Fortnite.com/UI }
 using { /Verse.org/Simulation }
 using { /Verse.org/Colors }
-using { /UnrealEngine.com/Temporary/Diagnostics }
 using { /UnrealEngine.com/Temporary/UI }
 using { /UnrealEngine.com/Temporary/SpatialMath }
 
-ArmoryText<localizes>(Value:string):message = "{Value}"
+ArmoryText<localizes>(Text:string):message = "{Text}"
 
 armory_catalog_item := class<concrete>:
     @editable
@@ -38,13 +37,6 @@ armory_catalog_item := class<concrete>:
     @editable
     SortOrder:int = 0
 
-armory_ui_state := class:
-    Root:canvas
-    BankText:text_block
-    CartText:text_block
-    StatusText:text_block
-    ClosedEvent:event() = event(){}
-
 armory_player_state := class:
     var Bank:int = 3000
     var DeathStreak:int = 0
@@ -66,8 +58,20 @@ armory_player_state := class:
     var HoldForShop:logic = true
     var MinimumOpeningReady:logic = true
     var ShopReason:int = 0
-    var ReadyAtOpening:logic = false
-    var UI:?armory_ui_state = false
+    var ShopDeadline:float = 0.0
+
+armory_ui_state := class:
+    Root:canvas
+    BankText:text_block
+    PrimaryText:text_block
+    SecondaryText:text_block
+    SidearmText:text_block
+    TotalText:text_block
+    CountdownText:text_block
+    StatusText:text_block
+    ReadyButton:button_loud
+    RebuyButton:button_loud
+    ClosedEvent:event() = event(){}
 
 scrapline_armory_device := class(creative_device):
 
@@ -106,9 +110,12 @@ scrapline_armory_device := class(creative_device):
     DeathShopSeconds:float = 8.0
 
     var OpeningPhaseActive:logic = true
+    var OpeningPhaseEndsAt:float = 0.0
     var PlayerStates:[player]armory_player_state = map{}
+    var PlayerUIs:[player]armory_ui_state = map{}
 
     OnBegin<override>()<suspends>:void=
+        set OpeningPhaseEndsAt = GetSimulationElapsedTime() + OpeningPhaseSeconds
         ArmoryInput.Enable()
 
         for (Player : GetPlayspace().GetPlayers()):
@@ -139,22 +146,28 @@ scrapline_armory_device := class(creative_device):
 
         if (PresentAtStart?):
             set State.MinimumOpeningReady = true
+            set State.ShopDeadline = OpeningPhaseEndsAt
         else:
             set State.MinimumOpeningReady = false
+            if (OpeningPhaseActive?):
+                PersonalMinimum := GetSimulationElapsedTime() + JipBuySeconds
+                if (PersonalMinimum > OpeningPhaseEndsAt):
+                    set State.ShopDeadline = PersonalMinimum
+                else:
+                    set State.ShopDeadline = OpeningPhaseEndsAt
+            else:
+                set State.ShopReason = 3
+                set State.ShopDeadline = GetSimulationElapsedTime() + JipBuySeconds
 
         if (set PlayerStates[Player] = State):
             ArmoryInput.Register(Player)
             HoldPlayer(Player)
+            spawn{OpenArmorySoon(Player)}
 
-            if (PresentAtStart?):
-                ShowArmory(Player, 1)
-            else:
+            if (not PresentAtStart?):
                 if (OpeningPhaseActive?):
-                    ShowArmory(Player, 1)
                     spawn{OpeningJipMinimum(Player)}
                 else:
-                    set State.ShopReason = 3
-                    ShowArmory(Player, 3)
                     spawn{ActiveJipTimeout(Player)}
 
     OnPlayerAdded(Player:player):void=
@@ -173,10 +186,7 @@ scrapline_armory_device := class(creative_device):
         if (Player := player[Agent], State := PlayerStates[Player]):
             if (State.HoldForShop?):
                 HoldPlayer(Player)
-                if (ExistingUI := State.UI?):
-                    RefreshArmoryUI(Player)
-                else if (State.ShopReason > 0):
-                    ShowArmory(Player, State.ShopReason)
+                spawn{OpenArmorySoon(Player)}
             else if (State.NeedsGrant?):
                 GrantCommittedLoadout(Player, State)
 
@@ -189,27 +199,31 @@ scrapline_armory_device := class(creative_device):
     OnEliminated(Agent:agent):void=
         if (Player := player[Agent], State := PlayerStates[Player]):
             AddDeathRecovery(State)
+
+            HadQueued := State.HasQueued
             PrepareDeathCart(State)
+
+            if (HadQueued?):
+                QueuedCommit := CommitPending(Player, State)
+                if (QueuedCommit?):
+                    return
+
             set State.HoldForShop = true
             set State.ShopReason = 2
-            ShowArmory(Player, 2)
+            set State.ShopDeadline = GetSimulationElapsedTime() + DeathShopSeconds
+            spawn{OpenArmorySoon(Player)}
             spawn{DeathShopTimeout(Player)}
 
     OnArmoryPressed(Agent:agent):void=
         if (Player := player[Agent], State := PlayerStates[Player]):
             if (OpeningPhaseActive?):
-                set State.ReadyAtOpening = false
                 set State.ShopReason = 1
-                ShowArmory(Player, 1)
-            else if (State.ShopReason = 2):
-                ShowArmory(Player, 2)
-            else if (State.ShopReason = 3):
-                ShowArmory(Player, 3)
             else:
                 # During combat this edits NEXT LOADOUT only.
                 PrepareNextCart(State)
                 set State.ShopReason = 4
-                ShowArmory(Player, 4)
+                set State.ShopDeadline = 0.0
+            OpenArmory(Player)
 
     OpeningPhaseTimer()<suspends>:void=
         Sleep(OpeningPhaseSeconds)
@@ -281,7 +295,6 @@ scrapline_armory_device := class(creative_device):
             set State.PendingSidearm = State.PreviousSidearm
 
     CommitOrFallback(Player:player, State:armory_player_state):void=
-        RemoveArmoryUI(Player)
         FirstCommit := CommitPending(Player, State)
         if (FirstCommit?):
             return
@@ -294,9 +307,11 @@ scrapline_armory_device := class(creative_device):
         if (FallbackCommit?):
             return
 
-        # Final fail-safe: enter empty rather than grant a wrong catalog item.
+        # Final fail-safe: never grant the wrong item when catalog configuration is invalid.
         set State.HoldForShop = false
         set State.ShopReason = 0
+        set State.ShopDeadline = 0.0
+        RemoveArmoryUI(Player)
         ReleasePlayer(Player)
 
     CommitPending(Player:player, State:armory_player_state):logic=
@@ -319,6 +334,9 @@ scrapline_armory_device := class(creative_device):
         set State.NeedsGrant = true
         set State.HoldForShop = false
         set State.ShopReason = 0
+        set State.ShopDeadline = 0.0
+
+        RemoveArmoryUI(Player)
 
         if (Player.GetFortCharacter[]):
             GrantCommittedLoadout(Player, State)
@@ -342,7 +360,6 @@ scrapline_armory_device := class(creative_device):
             if (not SidearmValid?):
                 return false
 
-        # At least one weapon is required.
         if (State.PendingPrimary < 0, State.PendingSecondary < 0, State.PendingSidearm < 0):
             return false
 
@@ -362,6 +379,11 @@ scrapline_armory_device := class(creative_device):
             return Entry.Price
         return 0
 
+    GetCatalogName(CatalogIndex:int):string=
+        if (CatalogIndex >= 0, Entry := Catalog[CatalogIndex], Entry.Enabled?):
+            return Entry.DisplayName
+        return "—"
+
     GrantCommittedLoadout(Player:player, State:armory_player_state):void=
         GrantCatalogSelection(Player, State.PreviousPrimary)
         GrantCatalogSelection(Player, State.PreviousSecondary)
@@ -371,335 +393,6 @@ scrapline_armory_device := class(creative_device):
     GrantCatalogSelection(Player:player, CatalogIndex:int):void=
         if (CatalogIndex >= 0, Entry := Catalog[CatalogIndex], Entry.Enabled?, Entry.ItemIndex >= 0):
             ArmoryGranter.GrantItemIndex(Player, Entry.ItemIndex)
-
-    ShowArmory(Player:player, Reason:int):void=
-        if (State := PlayerStates[Player], PlayerUI := GetPlayerUI[Player]):
-            RemoveArmoryUI(Player)
-            set State.ShopReason = Reason
-
-            UI := CreateArmoryUI(Player, State, Reason)
-            PlayerUI.AddWidget(UI.Root, player_ui_slot{InputMode := ui_input_mode.All, ZOrder := 50})
-            set State.UI = option{UI}
-            RefreshArmoryUI(Player)
-
-    RemoveArmoryUI(Player:player):void=
-        if (State := PlayerStates[Player]):
-            if (UI := State.UI?):
-                UI.ClosedEvent.Signal()
-                if (PlayerUI := GetPlayerUI[Player]):
-                    PlayerUI.RemoveWidget(UI.Root)
-                set State.UI = false
-
-    CreateArmoryUI(Player:player, State:armory_player_state, Reason:int):armory_ui_state=
-        TitleText := text_block:
-            DefaultText := ArmoryText(GetArmoryTitle(Reason))
-            DefaultTextColor := NamedColors.White
-
-        BankText := text_block:
-            DefaultText := ArmoryText("SCRAP")
-            DefaultTextColor := NamedColors.White
-
-        CartText := text_block:
-            DefaultText := ArmoryText("LOADOUT")
-            DefaultTextColor := NamedColors.White
-
-        StatusText := text_block:
-            DefaultText := ArmoryText(GetReasonHelp(Reason))
-            DefaultTextColor := NamedColors.White
-
-        MainStack := stack_box:
-            Orientation := orientation.Vertical
-
-        MainStack.AddWidget(stack_box_slot{Widget := TitleText, HorizontalAlignment := horizontal_alignment.Center, Padding := margin{Bottom := 10.0}})
-        MainStack.AddWidget(stack_box_slot{Widget := BankText, HorizontalAlignment := horizontal_alignment.Center, Padding := margin{Bottom := 8.0}})
-        MainStack.AddWidget(stack_box_slot{Widget := CartText, HorizontalAlignment := horizontal_alignment.Center, Padding := margin{Bottom := 12.0}})
-        MainStack.AddWidget(stack_box_slot{Widget := StatusText, HorizontalAlignment := horizontal_alignment.Center, Padding := margin{Bottom := 12.0}})
-
-        Root := canvas:
-            Slots := array:
-                canvas_slot:
-                    Anchors := anchors{Minimum := vector2{X := 0.5, Y := 0.5}, Maximum := vector2{X := 0.5, Y := 0.5}}
-                    Offsets := margin{Left := 0.0, Top := 0.0, Right := 820.0, Bottom := 900.0}
-                    Alignment := vector2{X := 0.5, Y := 0.5}
-                    SizeToContent := false
-                    Widget := overlay:
-                        Slots := array:
-                            overlay_slot:
-                                Widget := color_block{
-                                    DefaultColor := NamedColors.Black,
-                                    DefaultOpacity := 0.92,
-                                    DefaultDesiredSize := vector2{X := 820.0, Y := 900.0}
-                                }
-                            overlay_slot:
-                                Padding := margin{Left := 24.0, Top := 24.0, Right := 24.0, Bottom := 24.0}
-                                Widget := MainStack
-
-        UI := armory_ui_state{
-            Root := Root,
-            BankText := BankText,
-            CartText := CartText,
-            StatusText := StatusText
-        }
-
-        for (CatalogIndex -> Entry : Catalog):
-            if (Entry.Enabled?):
-                SelectButton := button_loud{DefaultText := ArmoryText("SELECT")}
-                ItemLabel := text_block{
-                    DefaultText := ArmoryText(GetCatalogRowLabel(Entry)),
-                    DefaultTextColor := NamedColors.White
-                }
-
-                MainStack.AddWidget(
-                    stack_box_slot:
-                        Widget := stack_box:
-                            Orientation := orientation.Horizontal
-                            Slots := array:
-                                stack_box_slot:
-                                    Widget := ItemLabel
-                                    Distribution := option{1.0}
-                                stack_box_slot:
-                                    Widget := SelectButton
-                                    Padding := margin{Left := 12.0}
-                        Padding := margin{Top := 3.0, Bottom := 3.0}
-                )
-                spawn{AwaitCatalogSelection(Player, UI, SelectButton, CatalogIndex)}
-
-        ClearPrimaryButton := button_loud{DefaultText := ArmoryText("CLEAR PRIMARY")}
-        ClearSecondaryButton := button_loud{DefaultText := ArmoryText("CLEAR SECONDARY")}
-        ClearSidearmButton := button_loud{DefaultText := ArmoryText("CLEAR SIDEARM")}
-        RebuyButton := button_loud{DefaultText := ArmoryText("REBUY")}
-        ReadyButton := button_loud{DefaultText := ArmoryText(GetReadyLabel(Reason))}
-        CloseButton := button_loud{DefaultText := ArmoryText("CLOSE")}
-
-        MainStack.AddWidget(
-            stack_box_slot:
-                Widget := stack_box:
-                    Orientation := orientation.Horizontal
-                    Slots := array:
-                        stack_box_slot{Widget := ClearPrimaryButton, Padding := margin{Right := 4.0}}
-                        stack_box_slot{Widget := ClearSecondaryButton, Padding := margin{Left := 4.0, Right := 4.0}}
-                        stack_box_slot{Widget := ClearSidearmButton, Padding := margin{Left := 4.0}}
-                Padding := margin{Top := 14.0}
-        )
-
-        MainStack.AddWidget(
-            stack_box_slot:
-                Widget := stack_box:
-                    Orientation := orientation.Horizontal
-                    Slots := array:
-                        stack_box_slot{Widget := RebuyButton, Padding := margin{Right := 6.0}}
-                        stack_box_slot{Widget := ReadyButton, Padding := margin{Left := 6.0, Right := 6.0}}
-                        stack_box_slot{Widget := CloseButton, Padding := margin{Left := 6.0}}
-                HorizontalAlignment := horizontal_alignment.Center
-                Padding := margin{Top := 12.0}
-        )
-
-        spawn{AwaitArmoryAction(Player, UI, ClearPrimaryButton, 1)}
-        spawn{AwaitArmoryAction(Player, UI, ClearSecondaryButton, 2)}
-        spawn{AwaitArmoryAction(Player, UI, ClearSidearmButton, 3)}
-        spawn{AwaitArmoryAction(Player, UI, RebuyButton, 4)}
-        spawn{AwaitArmoryAction(Player, UI, ReadyButton, 5)}
-        spawn{AwaitArmoryAction(Player, UI, CloseButton, 6)}
-
-        return UI
-
-    AwaitCatalogSelection(Player:player, UI:armory_ui_state, Button:button_loud, CatalogIndex:int)<suspends>:void=
-        race:
-            UI.ClosedEvent.Await()
-            loop:
-                Button.OnClick().Await()
-                SelectCatalogItem(Player, CatalogIndex)
-
-    AwaitArmoryAction(Player:player, UI:armory_ui_state, Button:button_loud, Action:int)<suspends>:void=
-        race:
-            UI.ClosedEvent.Await()
-            loop:
-                Button.OnClick().Await()
-                HandleArmoryAction(Player, Action)
-
-    SelectCatalogItem(Player:player, CatalogIndex:int):void=
-        if (State := PlayerStates[Player], Entry := Catalog[CatalogIndex], Entry.Enabled?):
-            if (Entry.Category = 0):
-                set State.PendingPrimary = CatalogIndex
-            else if (Entry.Category = 1):
-                set State.PendingSecondary = CatalogIndex
-            else if (Entry.Category = 2):
-                set State.PendingSidearm = CatalogIndex
-            else:
-                SetArmoryStatus(Player, "INVALID CATEGORY")
-                return
-
-            set State.ReadyAtOpening = false
-            RefreshArmoryUI(Player)
-
-    HandleArmoryAction(Player:player, Action:int):void=
-        if (State := PlayerStates[Player]):
-            if (Action = 1):
-                set State.PendingPrimary = -1
-                set State.ReadyAtOpening = false
-                RefreshArmoryUI(Player)
-            else if (Action = 2):
-                set State.PendingSecondary = -1
-                set State.ReadyAtOpening = false
-                RefreshArmoryUI(Player)
-            else if (Action = 3):
-                set State.PendingSidearm = -1
-                set State.ReadyAtOpening = false
-                RefreshArmoryUI(Player)
-            else if (Action = 4):
-                HandleRebuy(Player, State)
-            else if (Action = 5):
-                HandleReady(Player, State)
-            else if (Action = 6):
-                HandleClose(Player, State)
-
-    HandleRebuy(Player:player, State:armory_player_state):void=
-        if (State.PreviousPrimary < 0, State.PreviousSecondary < 0, State.PreviousSidearm < 0):
-            SetArmoryStatus(Player, "NO PREVIOUS LOADOUT")
-            return
-
-        set State.PendingPrimary = State.PreviousPrimary
-        set State.PendingSecondary = State.PreviousSecondary
-        set State.PendingSidearm = State.PreviousSidearm
-
-        if (State.ShopReason = 4):
-            Queued := QueuePending(State)
-            if (Queued?):
-                RemoveArmoryUI(Player)
-            else:
-                SetArmoryStatus(Player, "REBUY LOADOUT INVALID")
-        else if (State.ShopReason = 2):
-            Committed := CommitPending(Player, State)
-            if (Committed?):
-                RemoveArmoryUI(Player)
-            else:
-                SetArmoryStatus(Player, "NOT ENOUGH SCRAP FOR REBUY")
-        else if (State.ShopReason = 3):
-            Committed := CommitPending(Player, State)
-            if (Committed?):
-                RemoveArmoryUI(Player)
-            else:
-                SetArmoryStatus(Player, "NOT ENOUGH SCRAP FOR REBUY")
-        else:
-            RefreshArmoryUI(Player)
-
-    HandleReady(Player:player, State:armory_player_state):void=
-        if (State.ShopReason = 1):
-            Valid := CanCommitPending(State)
-            if (Valid?):
-                set State.ReadyAtOpening = true
-                RemoveArmoryUI(Player)
-            else:
-                SetArmoryStatus(Player, "LOADOUT INVALID OR OVER BUDGET")
-        else if (State.ShopReason = 4):
-            Queued := QueuePending(State)
-            if (Queued?):
-                RemoveArmoryUI(Player)
-            else:
-                SetArmoryStatus(Player, "NEXT LOADOUT INVALID")
-        else:
-            Committed := CommitPending(Player, State)
-            if (Committed?):
-                RemoveArmoryUI(Player)
-            else:
-                SetArmoryStatus(Player, "LOADOUT INVALID OR OVER BUDGET")
-
-    HandleClose(Player:player, State:armory_player_state):void=
-        if (State.ShopReason = 2, State.HoldForShop?):
-            SetArmoryStatus(Player, "CHOOSE A LOADOUT OR WAIT FOR FALLBACK")
-        else if (State.ShopReason = 3, State.HoldForShop?):
-            SetArmoryStatus(Player, "CHOOSE A LOADOUT OR WAIT FOR FALLBACK")
-        else:
-            RemoveArmoryUI(Player)
-
-    QueuePending(State:armory_player_state):logic=
-        Valid := IsValidCart(State)
-        if (not Valid?):
-            return false
-
-        set State.QueuedPrimary = State.PendingPrimary
-        set State.QueuedSecondary = State.PendingSecondary
-        set State.QueuedSidearm = State.PendingSidearm
-        set State.HasQueued = true
-        set State.ShopReason = 0
-        return true
-
-    CanCommitPending(State:armory_player_state):logic=
-        Valid := IsValidCart(State)
-        if (not Valid?):
-            return false
-        PendingTotal := GetPendingTotal(State)
-        if (PendingTotal > State.Bank):
-            return false
-        return true
-
-    RefreshArmoryUI(Player:player):void=
-        if (State := PlayerStates[Player], UI := State.UI?):
-            Total := GetPendingTotal(State)
-            Projected := State.Bank - Total
-
-            UI.BankText.SetText(ArmoryText("SCRAP: {State.Bank} / {BankCap}"))
-            UI.CartText.SetText(
-                ArmoryText(
-                    "PRIMARY: {GetCatalogName(State.PendingPrimary)} | SECONDARY: {GetCatalogName(State.PendingSecondary)} | SIDEARM: {GetCatalogName(State.PendingSidearm)} | TOTAL: {Total} | AFTER: {Projected}"
-                )
-            )
-
-    SetArmoryStatus(Player:player, Text:string):void=
-        if (State := PlayerStates[Player], UI := State.UI?):
-            UI.StatusText.SetText(ArmoryText(Text))
-
-    GetCatalogName(CatalogIndex:int):string=
-        if (CatalogIndex >= 0, Entry := Catalog[CatalogIndex], Entry.Enabled?):
-            return Entry.DisplayName
-        return "EMPTY"
-
-    GetCatalogRowLabel(Entry:armory_catalog_item):string=
-        var Prefix:string = GetCategoryName(Entry.Category)
-        var Feature:string = ""
-        if (Entry.Featured?):
-            set Feature = " [FEATURED]"
-        if (Entry.SeasonalTag <> ""):
-            return "{Prefix} | {Entry.DisplayName} | {Entry.Price} SCRAP | {Entry.SeasonalTag}{Feature}"
-        return "{Prefix} | {Entry.DisplayName} | {Entry.Price} SCRAP{Feature}"
-
-    GetCategoryName(Category:int):string=
-        if (Category = 0):
-            return "PRIMARY"
-        if (Category = 1):
-            return "SECONDARY"
-        if (Category = 2):
-            return "SIDEARM"
-        return "INVALID"
-
-    GetArmoryTitle(Reason:int):string=
-        if (Reason = 1):
-            return "SCRAPLINE ARMORY // OPENING BUY"
-        if (Reason = 2):
-            return "SCRAPLINE ARMORY // NEXT LIFE"
-        if (Reason = 3):
-            return "SCRAPLINE ARMORY // JOIN IN PROGRESS"
-        if (Reason = 4):
-            return "SCRAPLINE ARMORY // QUEUE NEXT LOADOUT"
-        return "SCRAPLINE ARMORY"
-
-    GetReasonHelp(Reason:int):string=
-        if (Reason = 1):
-            return "BUY PHASE // READY LOCKS YOUR CART // PRESS ARMORY INPUT TO REOPEN"
-        if (Reason = 2):
-            return "CHANGE LOADOUT OR REBUY // HARD LIMIT 8 SECONDS"
-        if (Reason = 3):
-            return "FIRST LOADOUT // UP TO 12 SECONDS"
-        if (Reason = 4):
-            return "CHANGES APPLY NEXT LIFE // YOU REMAIN VULNERABLE"
-        return ""
-
-    GetReadyLabel(Reason:int):string=
-        if (Reason = 1):
-            return "READY"
-        if (Reason = 4):
-            return "SAVE NEXT"
-        return "BUY & SPAWN"
 
     HoldPlayer(Player:player):void=
         if (FortChar := Player.GetFortCharacter[]):
@@ -714,3 +407,310 @@ scrapline_armory_device := class(creative_device):
         if (FortChar := Player.GetFortCharacter[]):
             FortChar.ReleaseFromStasis()
             FortChar.SetVulnerability(true)
+
+    OpenArmorySoon(Player:player)<suspends>:void=
+        Sleep(0.0)
+        OpenArmory(Player)
+
+    OpenArmory(Player:player):void=
+        if (State := PlayerStates[Player], PlayerUI := GetPlayerUI[Player]):
+            RemoveArmoryUI(Player)
+
+            UI := CreateArmoryUI(Player, State)
+            PlayerUI.AddWidget(UI.Root, player_ui_slot{InputMode := ui_input_mode.All})
+
+            if (set PlayerUIs[Player] = UI):
+                RefreshArmoryUI(Player)
+                spawn{AwaitReady(Player, UI)}
+                spawn{AwaitRebuy(Player, UI)}
+                spawn{RunCountdown(Player, UI)}
+
+    RemoveArmoryUI(Player:player):void=
+        if (UI := PlayerUIs[Player]):
+            UI.ClosedEvent.Signal()
+
+            if (PlayerUI := GetPlayerUI[Player]):
+                PlayerUI.RemoveWidget(UI.Root)
+
+            var NewUIs:[player]armory_ui_state = map{}
+            for (Key -> Value : PlayerUIs, Key <> Player):
+                set NewUIs = ConcatenateMaps(NewUIs, map{Key => Value})
+            set PlayerUIs = NewUIs
+
+    CreateArmoryUI(Player:player, State:armory_player_state):armory_ui_state=
+        BankText := text_block{DefaultText := ArmoryText("SCRAP")}
+        PrimaryText := text_block{DefaultText := ArmoryText("PRIMARY")}
+        SecondaryText := text_block{DefaultText := ArmoryText("SECONDARY")}
+        SidearmText := text_block{DefaultText := ArmoryText("SIDEARM")}
+        TotalText := text_block{DefaultText := ArmoryText("CART")}
+        CountdownText := text_block{DefaultText := ArmoryText("")}
+        StatusText := text_block{DefaultText := ArmoryText(GetReasonText(State.ShopReason))}
+
+        ReadyLabel := if (State.ShopReason = 4) then "QUEUE NEXT LOADOUT" else if (State.ShopReason = 1) then "READY" else "DEPLOY"
+        ReadyButton := button_loud{DefaultText := ArmoryText(ReadyLabel)}
+        RebuyButton := button_loud{DefaultText := ArmoryText("REBUY LAST LOADOUT")}
+
+        PrimaryList := stack_box{Orientation := orientation.Vertical}
+        SecondaryList := stack_box{Orientation := orientation.Vertical}
+        SidearmList := stack_box{Orientation := orientation.Vertical}
+
+        PrimaryList.AddWidget(stack_box_slot{Widget := text_block{DefaultText := ArmoryText("PRIMARY")}})
+        SecondaryList.AddWidget(stack_box_slot{Widget := text_block{DefaultText := ArmoryText("SECONDARY")}})
+        SidearmList.AddWidget(stack_box_slot{Widget := text_block{DefaultText := ArmoryText("SIDEARM")}})
+
+        Categories := stack_box:
+            Orientation := orientation.Horizontal
+            Slots := array:
+                stack_box_slot:
+                    Widget := PrimaryList
+                    Padding := margin{Right := 24.0}
+                stack_box_slot:
+                    Widget := SecondaryList
+                    Padding := margin{Left := 24.0, Right := 24.0}
+                stack_box_slot:
+                    Widget := SidearmList
+                    Padding := margin{Left := 24.0}
+
+        Summary := stack_box:
+            Orientation := orientation.Vertical
+            Slots := array:
+                stack_box_slot{Widget := BankText}
+                stack_box_slot{Widget := PrimaryText}
+                stack_box_slot{Widget := SecondaryText}
+                stack_box_slot{Widget := SidearmText}
+                stack_box_slot{Widget := TotalText}
+                stack_box_slot{Widget := CountdownText}
+                stack_box_slot{Widget := StatusText}
+
+        Actions := stack_box:
+            Orientation := orientation.Horizontal
+            Slots := array:
+                stack_box_slot:
+                    Widget := ReadyButton
+                    Padding := margin{Right := 10.0}
+                stack_box_slot:
+                    Widget := RebuyButton
+                    Padding := margin{Left := 10.0}
+
+        MainStack := stack_box:
+            Orientation := orientation.Vertical
+            Slots := array:
+                stack_box_slot:
+                    Widget := text_block{DefaultText := ArmoryText("SCRAPLINE // ARMORY")}
+                    HorizontalAlignment := horizontal_alignment.Center
+                    Padding := margin{Bottom := 14.0}
+                stack_box_slot:
+                    Widget := Summary
+                    Padding := margin{Bottom := 16.0}
+                stack_box_slot:
+                    Widget := Categories
+                    Padding := margin{Bottom := 18.0}
+                stack_box_slot:
+                    Widget := Actions
+                    HorizontalAlignment := horizontal_alignment.Center
+
+        Backdrop := color_block:
+            DefaultColor := NamedColors.Black
+            DefaultOpacity := 0.88
+            DefaultDesiredSize := vector2{X := 1220.0, Y := 760.0}
+
+        Panel := overlay:
+            Slots := array:
+                overlay_slot:
+                    Widget := Backdrop
+                overlay_slot:
+                    Widget := MainStack
+                    Padding := margin{Left := 36.0, Top := 28.0, Right := 36.0, Bottom := 28.0}
+
+        Root := canvas:
+            Slots := array:
+                canvas_slot:
+                    Widget := Panel
+                    Anchors := anchors{
+                        Minimum := vector2{X := 0.5, Y := 0.5},
+                        Maximum := vector2{X := 0.5, Y := 0.5}
+                    }
+                    Alignment := vector2{X := 0.5, Y := 0.5}
+                    SizeToContent := true
+
+        UI := armory_ui_state:
+            Root := Root
+            BankText := BankText
+            PrimaryText := PrimaryText
+            SecondaryText := SecondaryText
+            SidearmText := SidearmText
+            TotalText := TotalText
+            CountdownText := CountdownText
+            StatusText := StatusText
+            ReadyButton := ReadyButton
+            RebuyButton := RebuyButton
+
+        for (CatalogIndex -> Entry : Catalog, Entry.Enabled?):
+            ButtonPrefix := if (Entry.Featured?) then "FEATURED // " else ""
+            ItemButton := button_loud{DefaultText := ArmoryText("{ButtonPrefix}{Entry.DisplayName} — {Entry.Price} SCRAP")}
+
+            if (Entry.Category = 0):
+                PrimaryList.AddWidget(stack_box_slot{Widget := ItemButton, Padding := margin{Top := 4.0, Bottom := 4.0}})
+                spawn{AwaitCatalogSelection(Player, UI, ItemButton, CatalogIndex)}
+            else if (Entry.Category = 1):
+                SecondaryList.AddWidget(stack_box_slot{Widget := ItemButton, Padding := margin{Top := 4.0, Bottom := 4.0}})
+                spawn{AwaitCatalogSelection(Player, UI, ItemButton, CatalogIndex)}
+            else if (Entry.Category = 2):
+                SidearmList.AddWidget(stack_box_slot{Widget := ItemButton, Padding := margin{Top := 4.0, Bottom := 4.0}})
+                spawn{AwaitCatalogSelection(Player, UI, ItemButton, CatalogIndex)}
+
+        return UI
+
+    AwaitCatalogSelection(Player:player, UI:armory_ui_state, Button:button_loud, CatalogIndex:int)<suspends>:void=
+        race:
+            UI.ClosedEvent.Await()
+            loop:
+                Message := Button.OnClick().Await()
+                if (Message.Player = Player):
+                    ToggleCatalogSelection(Player, CatalogIndex)
+
+    AwaitReady(Player:player, UI:armory_ui_state)<suspends>:void=
+        race:
+            UI.ClosedEvent.Await()
+            loop:
+                Message := UI.ReadyButton.OnClick().Await()
+                if (Message.Player = Player):
+                    HandleReady(Player)
+                    return
+
+    AwaitRebuy(Player:player, UI:armory_ui_state)<suspends>:void=
+        race:
+            UI.ClosedEvent.Await()
+            loop:
+                Message := UI.RebuyButton.OnClick().Await()
+                if (Message.Player = Player):
+                    HandleRebuy(Player)
+                    return
+
+    RunCountdown(Player:player, UI:armory_ui_state)<suspends>:void=
+        race:
+            UI.ClosedEvent.Await()
+            loop:
+                if (State := PlayerStates[Player]):
+                    if (State.ShopDeadline > 0.0):
+                        Remaining := State.ShopDeadline - GetSimulationElapsedTime()
+                        if (Remaining <= 0.0):
+                            UI.CountdownText.SetText(ArmoryText("TIME: 0"))
+                        else:
+                            Seconds := Ceil[Remaining] or 0
+                            UI.CountdownText.SetText(ArmoryText("TIME: {Seconds}s"))
+                    else:
+                        UI.CountdownText.SetText(ArmoryText(""))
+                Sleep(1.0)
+
+    ToggleCatalogSelection(Player:player, CatalogIndex:int):void=
+        if (State := PlayerStates[Player], Entry := Catalog[CatalogIndex], Entry.Enabled?):
+            var Removed:logic = false
+
+            if (Entry.Category = 0):
+                if (State.PendingPrimary = CatalogIndex):
+                    set State.PendingPrimary = -1
+                    set Removed = true
+                else:
+                    set State.PendingPrimary = CatalogIndex
+            else if (Entry.Category = 1):
+                if (State.PendingSecondary = CatalogIndex):
+                    set State.PendingSecondary = -1
+                    set Removed = true
+                else:
+                    set State.PendingSecondary = CatalogIndex
+            else if (Entry.Category = 2):
+                if (State.PendingSidearm = CatalogIndex):
+                    set State.PendingSidearm = -1
+                    set Removed = true
+                else:
+                    set State.PendingSidearm = CatalogIndex
+
+            if (Removed?):
+                SetArmoryStatus(Player, "SOLD / REMOVED {Entry.DisplayName} — uncommitted purchases refund 100%")
+            else:
+                SetArmoryStatus(Player, "SELECTED {Entry.DisplayName}")
+
+            RefreshArmoryUI(Player)
+
+    HandleReady(Player:player):void=
+        if (State := PlayerStates[Player]):
+            CartValid := IsValidCart(State)
+            if (not CartValid?):
+                SetArmoryStatus(Player, "Select at least one valid weapon.")
+                return
+
+            if (State.ShopReason = 1):
+                Total := GetPendingTotal(State)
+                if (Total > State.Bank):
+                    SetArmoryStatus(Player, "OVER BUDGET — adjust your cart before the buy phase ends.")
+                    return
+
+                SetArmoryStatus(Player, "READY — loadout will lock when the opening phase ends.")
+                RemoveArmoryUI(Player)
+                return
+
+            if (State.ShopReason = 4):
+                set State.QueuedPrimary = State.PendingPrimary
+                set State.QueuedSecondary = State.PendingSecondary
+                set State.QueuedSidearm = State.PendingSidearm
+                set State.HasQueued = true
+                RemoveArmoryUI(Player)
+                return
+
+            Committed := CommitPending(Player, State)
+            if (not Committed?):
+                SetArmoryStatus(Player, "Cannot deploy: loadout is invalid or costs more Scrap than you have.")
+
+    HandleRebuy(Player:player):void=
+        if (State := PlayerStates[Player]):
+            if (State.PreviousPrimary < 0, State.PreviousSecondary < 0, State.PreviousSidearm < 0):
+                SetArmoryStatus(Player, "No previous loadout to rebuy.")
+                return
+
+            set State.PendingPrimary = State.PreviousPrimary
+            set State.PendingSecondary = State.PreviousSecondary
+            set State.PendingSidearm = State.PreviousSidearm
+
+            if (State.ShopReason = 4):
+                set State.QueuedPrimary = State.PreviousPrimary
+                set State.QueuedSecondary = State.PreviousSecondary
+                set State.QueuedSidearm = State.PreviousSidearm
+                set State.HasQueued = true
+                RemoveArmoryUI(Player)
+                return
+
+            if (State.ShopReason = 1):
+                SetArmoryStatus(Player, "No previous-life purchase exists during the opening phase.")
+                RefreshArmoryUI(Player)
+                return
+
+            Committed := CommitPending(Player, State)
+            if (not Committed?):
+                SetArmoryStatus(Player, "You cannot afford your previous loadout. Change the cart.")
+
+    RefreshArmoryUI(Player:player):void=
+        if (State := PlayerStates[Player], UI := PlayerUIs[Player]):
+            Total := GetPendingTotal(State)
+            Projected := State.Bank - Total
+
+            UI.BankText.SetText(ArmoryText("SCRAP: {State.Bank}"))
+            UI.PrimaryText.SetText(ArmoryText("PRIMARY: {GetCatalogName(State.PendingPrimary)}"))
+            UI.SecondaryText.SetText(ArmoryText("SECONDARY: {GetCatalogName(State.PendingSecondary)}"))
+            UI.SidearmText.SetText(ArmoryText("SIDEARM: {GetCatalogName(State.PendingSidearm)}"))
+            UI.TotalText.SetText(ArmoryText("CART: {Total} // AFTER PURCHASE: {Projected}"))
+
+    SetArmoryStatus(Player:player, Text:string):void=
+        if (UI := PlayerUIs[Player]):
+            UI.StatusText.SetText(ArmoryText(Text))
+
+    GetReasonText(Reason:int):string=
+        if (Reason = 1):
+            return "OPENING BUY PHASE — click a selected weapon again to sell/remove it."
+        if (Reason = 2):
+            return "NEXT LIFE — adapt, rebuy, or deploy a cheaper save."
+        if (Reason = 3):
+            return "JOIN IN PROGRESS — build your first loadout."
+        if (Reason = 4):
+            return "NEXT LOADOUT — current-life weapons do not change and no Scrap is charged yet."
+        return "ARMORY"
