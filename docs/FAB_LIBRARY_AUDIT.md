@@ -30,7 +30,7 @@ The stop rule has fired. The live Scrapline project now has verified coverage fo
 - URL: https://www.fab.com/listings/2ee66462-8c2b-4303-892c-83f7fc0d9b3e
 - Selectively migrated into `/Scrapline/Imported/FactoryCurated/`
 - 14 approved StaticMeshes plus dependencies
-- supplies crane/hero landmark, recycling machinery, forklift, engine, assembly-line pieces, containers, and electrical equipment
+- supplies the horizontal gantry/hero landmark, recycling machinery, forklift, engine, assembly-line pieces, containers, and electrical equipment
 
 ### Vehicle Variety Pack Volume 2
 
@@ -67,12 +67,23 @@ The stop rule has fired. The live Scrapline project now has verified coverage fo
 Already-live content remains approved:
 
 - Post-Apocalyptic Scrapyard Pack — primary visual authority
-- Warehouse Essentials Pack
 - Abandoned Junk Car
 - Gas Cylinder / Propane Tank
 - Industrial Rubble
 - Rubble Pack
 - 14 mounted referenced-content products covering barriers, rubble, electrical/junkyard props, mine cart, manhole, and VFX
+
+### Warehouse Essentials — Quarantined
+
+Warehouse Essentials is owned and physically present but is **not** approved production coverage.
+
+Its single live mesh requests five missing material packages (`Materials/_1` through `Materials/_5`). No required Scrapline role depends on it. Do not repair or count it during the one-shot unless it is explicitly revalidated.
+
+## Referenced-content handling
+
+Fab Referenced Content is valid for placement even when its source editor is read-only.
+
+Do not duplicate or promote an entire referenced pack merely to make it editable. Promote only a specific asset when implementation proves that its material, collision, Nanite/static-mesh settings, geometry, or another source property must change.
 
 ## Reserve Pool — Do Not Import Before One-Shot
 
@@ -115,7 +126,7 @@ Required conditions:
 - distinct heavy-machinery/power kit — **yes**
 - modular pipe vocabulary — **yes**
 - industrial signage/decals — **yes**
-- strong hero-landmark candidate — **yes, Factory crane**
+- strong hero-landmark candidate — **yes, Factory horizontal gantry/crane assembly**
 - no weak required category — **yes**
 
 Therefore:
