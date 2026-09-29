@@ -67,4 +67,14 @@ Before Quarry curation, Power Tools saw 58 project assets. After curation, the p
 
 ## Immediate Next Step
 
-Finish the UE 5.6 donor setup, inspect Dark Ruins rather than migrating it wholesale, then perform one final asset-family gap check before freezing the manifest.
+Finish the final asset intake in this order:
+
+1. Curate/import a small Unfinished Building subset for Ruined Workshop / Loading Yard.
+2. Curate/import a small Old Mine subset for rail/timber/salvage support.
+3. Migrate only a generic structural subset from Dark Ruins; skip its rocks/cliffs because Quarry already covers terrain dressing.
+4. Add Factory Environment Collection as the primary heavy-machinery / crane / hero-landmark donor.
+5. Add Modular Industrial Pipe Set.
+6. Add Warning Signs Decals Vol. 1.
+7. Re-scan live UEFN. Only add another vehicle pack if fewer than two useful vehicle/wreck silhouettes are available.
+
+Then freeze the manifest. No further broad asset hunting before the one-shot.
