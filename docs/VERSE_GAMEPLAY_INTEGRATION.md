@@ -8,7 +8,9 @@ The pre-build hold was lifted for this phase. The gameplay baseline is now resol
 
 A local optional siphon Verse candidate was compiler-valid in the live Scrapline project, but it was removed after current Epic settings confirmed that `Health Granted on Elimination = 50` provides the exact required health-then-shield sustain behavior. The project was compiled again after removal with zero live Verse diagnostics.
 
-Astra environment construction is still **not authorized**. This phase only closes the gameplay-integration gate.
+The agreed UEFN Central Project Generator experiment was then completed in the authenticated browser. Its successful run was marked **Not validated**, generated five custom Verse files plus extra Timer/End Game wiring, and failed the native-control comparison. The generated package was preserved as evidence in `UEFN_CENTRAL_GENERATOR_RESULT.md` but was not staged into the live project.
+
+Astra environment construction is still **not authorized**. This phase only closes the gameplay-integration and generator-comparison gates.
 
 ## Governing authorities
 
@@ -205,9 +207,26 @@ A separate headless `verse-lsp` probe produced thousands of errors in Epic-gener
 
 ## UEFN Central Project Generator disposition
 
-The prepared Project Generator request was evaluated during this phase. Current Project Generator access is an authenticated web flow, while the installed Omni-Verse 0.4.3 integration exposes repair/sync commands rather than a headless Project Generator command. No stored credential was extracted or exposed to bypass that boundary.
+The agreed Project Generator experiment was completed on **2026-09-29** through the authenticated UEFN Central web app.
 
-No generated custom package is required after the native-device resolution above. `UEFN_CENTRAL_PROMPT.md` is retained as a future fallback if a later feature proves a real custom-logic need.
+Run record:
+- `4b6861de-6c4d-5292-9a65-ad6f7eb0ee1d` — failed during planning at 10%; no output.
+- `6e9b9891-1848-5b65-8289-50521fc26c9b` — completed; UEFN Central history badge **Not validated**; generated five Verse files plus setup guidance.
+- full generated code, setup text, metadata, omissions, and independent audit: `UEFN_CENTRAL_GENERATOR_RESULT.md`.
+
+The generated architecture was rejected before production staging because it did not demonstrate a concrete advantage over the native control. Among the blocking findings:
+- generated `creative_device` declaration/callback code does not match current documented Verse patterns and references an undefined elimination `Result`,
+- respawn re-subscription and player-leave score cleanup are not implemented,
+- its Verse `ScoreMap` + native eliminations Tracker + `Tracker.Increment` creates a competing/double-scoring risk,
+- its separate End Game + Timer path duplicates the native Island Settings end authority,
+- its setup says 16 spawn pads instead of the frozen 19,
+- it says Infinite Ammo instead of the required Infinite Reserve Ammo / normal-magazine behavior,
+- it provides no evidence for its claimed simultaneous-elimination or JIP reliability advantages,
+- it omits the requested lifecycle/test matrix and explicit per-responsibility comparison.
+
+No generated Verse was accepted as a production candidate. Therefore the conditional repair/live-compile loop for accepted custom Verse was **not triggered**; copying known-invalid, non-advantageous code into the live UEFN project solely to make it compile would violate the decision rule.
+
+The native control remains the final first-alpha architecture. Its existing live `ValkyrieToolset.VerseToolset.BuildAll` result after removing the redundant siphon candidate is **0 diagnostics**.
 
 ## Environment ownership prohibition
 
@@ -228,6 +247,7 @@ Those responsibilities remain with the frozen spatial/environment handoff and na
 **PASS.**
 
 - Verse/toolchain validation: pass.
+- UEFN Central generator experiment + native-control comparison: pass; generated custom package rejected.
 - Production custom Verse requirement: none.
 - Multiplayer/JIP/leave lifecycle: accounted for natively.
 - Exact native devices and wiring: resolved.
