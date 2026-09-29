@@ -2,11 +2,11 @@
 
 ## Status
 
-**PASS — design ambiguity purge complete for the frozen pre-build skeleton.**
+**PASS — final pre-Astra contradiction/confusion audit complete 2026-09-29.**
 
 This audit asks a hostile question: *If Astra wanted to misunderstand the design while technically following the docs, where could it do so?*
 
-The audit is limited to map-design/handoff clarity. It does not lift the current pre-build hold and does not authorize Verse generation or construction.
+The original design ambiguity purge remains valid, and the post-gameplay-integration sweep also passes. This document does **not** authorize Astra construction; explicit user authorization is still required.
 
 ## Authority created
 
@@ -89,17 +89,36 @@ After the first rewrite pass, the governing handoff/design documents were search
 
 No remaining matches were found in the audited handoff/design set.
 
-## Remaining blocker is not map design
+## Final gameplay-integration contradiction sweep
 
-The map-design ambiguity gate is closed.
+After the native gameplay package was integrated, the hardened one-shot was checked again against `SPATIAL_CONTRACT.md`.
 
-The one-shot prompt remains **blocked only by execution preparation**:
-1. current user pre-build hold,
-2. UEFN Central/Omni-Verse gameplay package generation and compiler validation after that hold is lifted,
-3. insertion of exact device/Verse wiring into `ONE_SHOT_PROMPT_DRAFT.md`,
-4. final read-through ensuring the generated gameplay layer did not reintroduce a spatial contradiction.
+Pass conditions:
+- playable envelope still reads **140 m × 140 m**,
+- scenic envelope still reads **170 m × 170 m**,
+- all four district anchor coordinates match the frozen contract,
+- gantry target center remains approximately **(-250, +250)**,
+- gantry orientation remains **NW ↔ SE**,
+- Garage target remains approximately **(+4000, -3900)**,
+- uninterrupted elevated runs remain capped at roughly **15 m**,
+- all **19** frozen candidate spawn regions remain authoritative,
+- gameplay wiring does not introduce or move spawn coordinates,
+- gameplay wiring does not own terrain, map layout, asset placement, lighting, VFX placement, asset discovery, or environment construction,
+- the gameplay placeholder is gone,
+- the prompt explicitly records **Production custom Verse package: empty**,
+- Island Settings is the sole authoritative 30-elimination / 10-minute end-condition path,
+- `TR_Eliminations` is HUD feedback only and cannot create a competing end-game path,
+- `IG_Loadout` is triggered only by native Player Spawn Pad spawn events.
 
-Do not reopen map design merely because Verse/device wiring is still pending.
+The automated constant/stale-wording sweep passed all frozen spatial constants. One stale hold reference remained in this audit itself and was removed in this closeout.
+
+## Remaining blocker
+
+No design, asset-fit, gameplay-wiring, Verse-compiler, or handoff-clarity blocker remains.
+
+The only remaining gate is **explicit user authorization to let Astra execute the one-shot construction pass**.
+
+Do not reopen map design or custom Verse merely because construction has not started yet.
 
 ## Final handoff rule
 
