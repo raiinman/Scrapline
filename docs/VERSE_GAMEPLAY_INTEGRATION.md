@@ -326,7 +326,10 @@ That rejected package remains historical evidence. Do not use it as the Armory i
 - current Epic digests were queried live for `GrantItemIndex`, Elimination Manager events, playspace lifecycle, spawn events, stasis, and player UI APIs,
 - first compile exposed six Verse effect-context errors only; those were repaired,
 - live `ValkyrieToolset.VerseToolset.BuildAll` after repair: **0 diagnostics**,
-- UI/cart interaction code and runtime device wiring remain pending, so this is **not yet production-authoritative**.
+- functional Verse UI/cart interaction is now implemented in the same one-file candidate: dynamic catalog rows, per-slot replacement/clear, Rebuy, Ready, queued Next Loadout, input-trigger reopen, per-player UI cleanup, and input focus,
+- the UI pass produced one additional effect-context diagnostic; it was repaired,
+- live `ValkyrieToolset.VerseToolset.BuildAll` after the UI repair: **0 diagnostics**,
+- runtime device references, first-release catalog registration/index wiring, visible countdown polish, and multiplayer runtime tests remain pending, so this is **not yet production-authoritative**.
 
 The verified text mirror is tracked in `verse/scrapline_armory_device.verse`.
 
