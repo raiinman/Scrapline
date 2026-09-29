@@ -41,7 +41,7 @@ Power Tools currently sees 58 project assets. Several are reported as `likely_un
 
 - Unreal Engine 5.6 installation for older Fab donor projects.
 - Dark Ruins Megascans Sample donor-project creation.
-- Selective evaluation of the remaining Fab reserve pool.
+- Selective evaluation of the remaining Fab reserve pool using `ASSET_GAP_MATRIX.md`; current priority is heavy machinery/power, pipes, one more vehicle family, signage, and hero landmark.
 - Bulk selection/import of useful African Slate Quarry assets.
 
 ## Remaining Build Gates
