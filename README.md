@@ -16,9 +16,9 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 
 ## Current Stage
 
-Pre-production specification is nearly complete.
+Final pre-build preparation.
 
-The macro map design and first-alpha gameplay baseline are locked, the UEFN/Codex toolchain is verified live, and the remaining pre-build work is to expose the claimed Fab asset pool to Scrapline, freeze the usable asset manifest, and assemble the final one-shot Codex build prompt.
+The macro map design, terrain specification, first-alpha gameplay baseline, and UEFN/Codex toolchain are locked or verified. The first referenced-content wave and several modifiable Fab packs are in-project, and the African Slate Quarry FBX/material pipeline is proven. Remaining work is selective donor/reserve intake, asset-manifest freeze, Verse generation, and the final Codex one-shot handoff.
 
 ## Documentation
 
@@ -29,4 +29,6 @@ The macro map design and first-alpha gameplay baseline are locked, the UEFN/Code
 - `docs/GAMEPLAY_SPEC.md` — first-alpha FFA gameplay baseline
 - `docs/UEFN_CENTRAL_PROMPT.md` — prepared Verse Project Generator request
 - `docs/TOOLING.md` — approved Codex/UEFN build toolchain and activation checklist
+- `docs/ASSET_PIPELINE.md` — referenced/FBX/donor-project intake workflow and safety rules
+- `docs/BUILD_READINESS.md` — current build gates and one-shot readiness snapshot
 - `AGENTS.md` — repository-wide DOX contract
