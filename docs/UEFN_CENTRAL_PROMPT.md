@@ -25,6 +25,7 @@ Target the **current UEFN / Verse API** available to your validator. Do not use 
 - Building off.
 - Harvesting off.
 - Environment destruction should remain disabled through island/editor settings, not custom Verse.
+
 ### Player rules
 
 - 100 health.
@@ -58,6 +59,7 @@ Disable dropped-item accumulation through native settings where possible.
 On an elimination, restore a total of 50 health/shield points to the eliminator, capped at the normal 100 health + 100 shield maximum.
 
 Prefer a current supported device or Verse implementation that validates cleanly. Keep this isolated so it can be disabled without affecting the rest of the game if needed.
+
 ### Score and HUD
 
 - Each elimination adds 1.
@@ -89,6 +91,7 @@ The system must:
 - avoid persistent storage and external services.
 
 Expose required devices as @editable references with clear names.
+
 ### Editor-owned responsibilities
 
 Do NOT put these in Verse:
