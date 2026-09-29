@@ -40,7 +40,7 @@ Before Quarry curation, Power Tools saw 58 project assets. After curation, the p
 ## In Progress
 
 - Dark Ruins Megascans Sample download / donor-project creation.
-- Selective evaluation of the remaining Fab reserve pool using `ASSET_GAP_MATRIX.md`; current priority is heavy machinery/power, pipes, one more vehicle family, signage, and hero landmark.
+- Full Fab library audit complete: 160 owned products / 77 3D. Final staging wave is defined in `FAB_LIBRARY_AUDIT.md` and now includes Junkyard, Factory Environment Collection, Construction Site VOL. 2, Warehouse, Garage, pipes, street props, signage, wasteland filler, power, and curated vehicles.
 
 ## Remaining Build Gates
 
@@ -67,14 +67,20 @@ Before Quarry curation, Power Tools saw 58 project assets. After curation, the p
 
 ## Immediate Next Step
 
-Finish the final asset intake in this order:
+Run the **final staging wave** from `FAB_LIBRARY_AUDIT.md` rather than continuing broad asset hunting.
 
-1. Curate/import a small Unfinished Building subset for Ruined Workshop / Loading Yard.
-2. Curate/import a small Old Mine subset for rail/timber/salvage support.
-3. Migrate only a generic structural subset from Dark Ruins; skip its rocks/cliffs because Quarry already covers terrain dressing.
-4. Add Factory Environment Collection as the primary heavy-machinery / crane / hero-landmark donor.
-5. Add Modular Industrial Pipe Set.
-6. Add Warning Signs Decals Vol. 1.
-7. Re-scan live UEFN. Only add another vehicle pack if fewer than two useful vehicle/wreck silhouettes are available.
+Start with the highest-leverage packs:
+1. Junkyard.
+2. Factory Environment Collection.
+3. Construction Site VOL. 2.
+4. Warehouse.
+5. Garage.
+6. Modular Industrial Pipe Set.
+7. City Street Props.
+8. Warning signs decals Vol. 1.
+9. Wasteland Props - Free Pack.
+10. Power Generator.
+11. Vehicle Variety Pack Volume 2.
+12. Selective Unfinished Building / Old Mine / Dark Ruins / Derelict Corridor donors already on disk.
 
-Then freeze the manifest. No further broad asset hunting before the one-shot.
+Then re-scan live UEFN, select the hero landmark, freeze the manifest, and stop asset acquisition.
