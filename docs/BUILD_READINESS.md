@@ -2,9 +2,9 @@
 
 ## Current State
 
-Scrapline is **asset-complete, physical-fit verified, and in pre-build refinement hold**.
+Scrapline is **design-frozen, asset-complete, physical-fit verified, and in pre-build hold**.
 
-The map design, gameplay baseline, terrain specification, toolchain, production asset pool, real-asset reference pass, and physical-fit gate are locked or verified. The asset manifest is frozen and the intake stop rule has fired. Generation and irreversible construction remain paused until the user explicitly lifts the hold.
+The map design, spatial contract, gameplay baseline, terrain specification, toolchain, production asset pool, real-asset reference pass, physical-fit gate, and Astra confusion audit are locked or verified. The asset manifest is frozen and the intake stop rule has fired. Generation and irreversible construction remain paused until the user explicitly lifts the hold.
 
 ## Ready
 
@@ -16,6 +16,8 @@ The map design, gameplay baseline, terrain specification, toolchain, production 
 - Omni-Verse is installed, authenticated, and the VS Code workspace is trusted.
 - UEFN Central Studio access is available, but generation is currently on hold.
 - Macro map layout is locked.
+- `SPATIAL_CONTRACT.md` freezes major anchor positions/orientations, route topology, verticality/catwalk limits, spawn-region distribution, outer-flank behavior, and the daylight concept.
+- `ASTRA_CONFUSION_AUDIT.md` records the ambiguity attack and confirms stale hero/lighting/selection flexibility has been removed from the handoff set.
 - Terrain/environment specification is locked.
 - First-alpha FFA gameplay baseline is locked.
 - 14 approved Fab referenced-content items are present.
@@ -126,15 +128,15 @@ Allowed work is read-only inspection, comparison, documentation, reference/conta
 ## Remaining Build Gates
 
 ### Before the hold is lifted
-1. Keep the frozen manifest, gap matrix, composition board, visual-study record, physical-fit record, and build-readiness docs internally consistent.
-2. Preserve reserve fallbacks only for named failures; do not reopen acquisition.
-3. Do not add another asset gate unless implementation exposes a specific documented failure.
+1. Keep the frozen spatial contract, manifest, composition board, visual-study record, physical-fit record, Astra audit, and build-readiness docs internally consistent.
+2. Preserve reserve fallbacks only for named failures; do not reopen acquisition or map-design selection.
+3. Do not add another asset/design gate unless implementation exposes a specific documented failure.
 
 ### After the hold is lifted
 1. Run the prepared UEFN Central Project Generator request.
 2. Validate generated Verse with Omni-Verse / Epic compiler tooling.
 3. Update gameplay/device paths and wiring in `ONE_SHOT_PROMPT_DRAFT.md`.
-4. Finalize the one-shot prompt against the frozen asset manifest and composition board.
+4. Re-run the final confusion check against `SPATIAL_CONTRACT.md`, then finalize the Astra one-shot prompt against the frozen spatial contract, asset manifest, physical-fit record, and composition guidance.
 5. Run the primary build pass.
 6. Test and repair after the primary construction pass unless blocked earlier.
 
@@ -154,6 +156,6 @@ Allowed work is read-only inspection, comparison, documentation, reference/conta
 
 ## Immediate Next Step
 
-**Hold remains active; no asset-fit gate remains.**
+**Hold remains active; no map-design or asset-fit gate remains.**
 
-The physical-fit verification is complete and recorded in `PHYSICAL_FIT_VERIFICATION.md`. The asset hunt remains closed. The next implementation step is only to lift the current hold and resume the prepared generation/build sequence when explicitly approved.
+The spatial contract and Astra confusion audit are complete, the physical-fit verification is recorded in `PHYSICAL_FIT_VERIFICATION.md`, and the asset hunt remains closed. Once the hold is explicitly lifted, the next execution-prep step is to generate/validate the small Verse package, insert exact device wiring into the hardened Astra prompt, perform one final contradiction check, and only then authorize the one-shot.
