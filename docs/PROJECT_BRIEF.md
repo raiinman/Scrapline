@@ -2,13 +2,13 @@
 
 ## Status
 
-**Final pre-build / asset manifest frozen.**
+**Final pre-build / design and asset freeze.**
 
-The macro map design, terrain specification, first-alpha gameplay baseline, UEFN/Codex toolchain, and production asset pool are locked or verified. Selective reserve/donor intake is complete and the intake stop rule has fired.
+The macro map design, spatial contract, terrain specification, first-alpha gameplay baseline, implementation toolchain, physical-fit verification, and production asset pool are locked or verified. Selective reserve/donor intake is complete and the intake stop rule has fired.
 
 Remaining gates:
 - generate and validate the small Verse gameplay package,
-- finalize the Codex one-shot prompt with frozen asset paths/device wiring,
+- finalize the Astra one-shot prompt with the frozen spatial contract, asset paths, and validated device/Verse wiring,
 - execute the primary build,
 - test and repair after the primary pass unless a blocking runtime/editor issue appears earlier.
 
@@ -16,7 +16,7 @@ Remaining gates:
 
 Create a simple, polished Free For All map in UEFN using a deliberately curated set of real Fab/UEFN assets.
 
-Scrapline is intentionally testing an asset-first one-shot workflow: research and lock the environment kit first, then give Codex a sufficiently complete specification to assemble the playable map without falling back to blank boxes or improvised placeholder art.
+Scrapline is intentionally testing an asset-first one-shot workflow: research and lock the environment kit and spatial skeleton first, then give the implementation agent a sufficiently explicit specification to assemble the playable map without redesigning the arena or falling back to blank boxes/improvised placeholder art.
 
 ## Core Experience
 
@@ -76,15 +76,20 @@ Completed:
 
 Next:
 5. Generate and validate the Verse gameplay package through UEFN Central / Omni-Verse.
-6. Assemble the final implementation specification for Codex.
+6. Assemble the final Astra implementation specification from the frozen spatial contract, asset manifest, physical-fit record, and validated gameplay wiring.
 7. Execute the one-shot build.
 8. Test after the primary build pass unless a blocking editor/runtime failure requires earlier validation.
 
 ## Remaining Pre-Build Decisions
 
-- choose final lighting/time-of-day treatment during environment composition
-- refine exact spawn transforms after structures and cover are placed
-- generate/validate the Verse package
-- finalize and approve the Codex one-shot build prompt
+The map skeleton no longer has open design decisions.
+
+Remaining execution preparation:
+- resolve final spawn transforms **inside the frozen spawn regions** after real cover/collision exists,
+- generate/validate the small Verse package after the current hold is lifted,
+- integrate exact device/Verse wiring into the Astra one-shot prompt,
+- perform the final contradiction/confusion check before approving the one-shot.
+
+Lighting/time-of-day concept, hero landmark, district placement, route network, verticality budget, major traversal rules, and major asset roles are frozen in `SPATIAL_CONTRACT.md`.
 
 Do **not** reopen broad Fab/library acquisition unless implementation proves a specific frozen category is unusable.
