@@ -2,9 +2,11 @@
 
 ## Status
 
-**Baseline locked for the first one-shot alpha.**
+**Baseline locked and gameplay integration validated for the first one-shot alpha.**
 
-These values are derived from the locked ~140 m x 140 m arena and 12-player density target. Testing may tune numbers later, but Codex and UEFN Central should build the first playable version to this baseline rather than inventing their own rules.
+These values are derived from the locked ~140 m × 140 m arena and 12-player density target. Testing may tune numbers later, but Astra should build the first playable version to this baseline rather than inventing new rules.
+
+The first-alpha implementation is intentionally **native-device first**. No production custom Verse is required; see `VERSE_GAMEPLAY_INTEGRATION.md` for the exact validated settings and wiring.
 
 ## Match Structure
 
@@ -14,102 +16,159 @@ These values are derived from the locked ~140 m x 140 m arena and 12-player dens
 - Building: **Off**.
 - Harvesting: **Off**.
 - Environment destruction: **Off where practical** so combat cover and routes remain stable.
-- Join in progress: **Allowed**.
+- Join in progress: **Allowed / Spawn**.
 - Round count: **1**.
 - Match time limit: **10 minutes**.
 - Primary win condition: **first player to 30 eliminations**.
-- Time-limit fallback: highest elimination score when the timer expires.
+- Time-limit fallback: **most eliminations** through the native Round Win Condition.
 
 Keep the alpha simple. Do not add teams, classes, objectives, economy, persistence, or progression systems.
 
 ## Player Baseline
 
-- Health: **100**.
-- Shield: **100**.
-- Overshield: **Off** for the first alpha.
+- Health: **100**, starting full.
+- Shield: **100**, starting full.
+- Overshield: **Off**.
 - Sprinting: **On**.
 - Sliding: **On**.
 - Mantling: **On**.
-- Crouching: **On**.
-- Fall damage: **Off** to support fast drops from the limited elevated routes.
+- Crouching: preserve normal Fortnite crouch input.
+- Fall damage: **Off**.
+- Health recharge: **Off**.
+- Shield recharge: **Off**.
 
 ## Respawn
 
-- Respawn delay: approximately **3 seconds**.
-- Spawn immunity: approximately **2 seconds**.
-- Spawn selection should primarily use **18–20 placed Player Spawn devices** and native spawn safety/enemy-range behavior.
-- Do not write a complex custom Verse spawn solver unless playtesting proves native spawn behavior inadequate.
-- Players should respawn with the full standard loadout.
-- No dropped inventory should accumulate around death locations.
+- Respawn delay: **3 seconds**.
+- Spawn immunity: **2 seconds** with Island Settings override enabled.
+- Spawn Location: **Spawn Pads**.
+- Spawn Pad Selection: **Random**.
+- Respawn Type: **Individual**.
+- Spawn Limit: **Infinite**.
+- Only Allow Respawn if Spawn Pads Found: **On**.
+- Join in Progress: **Spawn**.
+- Use **19 placed Player Spawn Pad devices**, one per frozen candidate region.
+- Native spawn behavior owns actual selection. Do not write a custom spawn solver.
+- Exact pad transforms may move only inside the frozen region/local-fit tolerance unless a documented safety failure requires otherwise.
+- Players receive the full standard loadout on every initial spawn, respawn, and JIP spawn.
+- Eliminated inventory is deleted and manual item dropping is disabled so dropped-item accumulation cannot build up.
 
-## Loadout Philosophy
+## Loadout
 
-Use a fixed, readable FFA loadout rather than random weapons in the first alpha.
+Use one native Item Granter named `IG_Loadout`.
 
-Target roles:
+Register exactly three current Fortnite weapons in order:
 1. one close-range shotgun-class weapon,
 2. one medium-range rifle-class weapon,
-3. one SMG or sidearm-class weapon.
+3. one SMG- or sidearm-class weapon.
 
-Do not hard-code seasonal weapon asset names in Verse.
+Do not hard-code seasonal weapon asset names in Verse or durable gameplay logic.
 
-Use editable Item Granter/device references so the exact current Fortnite weapons can be configured in UEFN without rewriting the gameplay manager.
+`IG_Loadout`:
+- Receiving Players: **Triggering Player**.
+- On Grant Action: **Clear Items**.
+- Grant: **All Items**.
+- Grant Condition: **Always**.
+- Equip Granted Item: **First Item**.
+- Drop Items at Player Location: **Never**.
+
+For every Player Spawn Pad, wire:
+**On Player Spawned → IG_Loadout / Grant Item**.
 
 Ammo:
-- infinite reserve ammo is acceptable,
-- preserve normal magazine/reload behavior,
-- do not use infinite magazine unless testing strongly favors it.
-
-No mobility consumables or healing inventory in the first alpha. The environment and basic movement should define traversal.
+- Infinite Reserve Ammo: **On**.
+- Infinite Magazine Ammo: **Off**.
+- Preserve normal magazine/reload behavior.
+- No mobility consumables or healing inventory in the first alpha.
 
 ## Elimination Sustain
 
-Target a **50-point health/shield restoration on elimination**, capped by the player's normal health + shield maximum.
+Use the native Island Setting:
 
-Prefer a supported native device or current Verse API that compiles cleanly. If this introduces unnecessary complexity, the alpha may temporarily ship without siphon rather than using brittle code.
+- **Health Granted on Elimination: 50**.
+
+Current Epic behavior grants health up to max health and then applies any excess to shields, which matches Scrapline's required 50-point total health/shield sustain under the 100 health / 100 shield caps.
+
+Do not add a siphon Verse device or restoration device for the baseline.
 
 ## Scoring / HUD
 
-- Elimination = **+1 score**.
-- Death = no score penalty.
-- Goal = **30 eliminations**.
-- Show the player's current elimination count and the target score using the simplest reliable native Tracker/HUD approach.
-- The scoreboard should prioritize eliminations and deaths.
-- Avoid custom animated UI for the alpha.
+Island Settings owns the authoritative win condition:
+- Eliminations to End: **30**.
+- Round Win Condition: **Eliminations**.
+- Time Limit: **10 minutes**.
 
-## Native Devices First
+Use one Tracker named `TR_Eliminations` for HUD feedback:
+- Stat to Track: **Eliminations**.
+- Target Value: **30**.
+- Starting Value: **0**.
+- Valid Team: **Any**.
+- Assign on Game Start: **On**.
+- Assign When Joining in Progress: **On**.
+- Sharing: **Individual**.
+- Target Team: **Any**.
+- Target Class: **Any**.
+- When Target Is Reached: **Do Nothing**.
+- Show on HUD: **Detailed**.
+- Use Persistence: **Off**.
 
-Use Creative devices for stable editor-owned behavior whenever they already solve the problem cleanly.
+The Tracker must not also end the round; that would create two competing end-game paths.
 
-Expected device categories may include:
-- Player Spawn Pads,
-- Item Granters,
-- Tracker device,
+The scoreboard should prioritize eliminations and deaths. Avoid custom animated UI for the alpha.
+
+## Native Device Set
+
+Required:
+- Island Settings,
+- 19 × Player Spawn Pad,
+- 1 × Item Granter (`IG_Loadout`),
+- 1 × Tracker (`TR_Eliminations`).
+
+Not required:
 - End Game device,
-- HUD Message device if needed,
-- health/shield restoration device if useful,
-- Island Settings / Experience Settings.
-
-Verse should orchestrate behavior that genuinely benefits from code rather than reimplementing every device.
+- Elimination Manager device,
+- HUD Message device,
+- Class Designer,
+- Team Settings & Inventory,
+- health/shield restoration device,
+- custom Verse creative_device.
 
 ## Verse Responsibilities
 
-The Verse layer should remain small and multiplayer-safe.
+**None for the locked first alpha.**
 
-Likely responsibilities:
-- subscribe to player join/leave events,
-- track or observe eliminations if native Tracker behavior is insufficient,
-- trigger the win/end-game condition,
-- apply elimination sustain if required,
-- coordinate a minimal score HUD if native devices cannot meet the requirement,
-- clean up subscriptions/state when players leave.
+The live Scrapline project compiler passes with no custom Verse files. This is deliberate, not an omission.
 
-Do not make Verse responsible for terrain, asset placement, spawn transforms, weapon asset discovery, or environment construction.
+Do not add Verse for:
+- elimination sustain,
+- score tracking,
+- match end,
+- JIP handling,
+- player-leave cleanup,
+- loadout granting,
+- spawn selection,
+- terrain,
+- asset placement,
+- spawn transforms,
+- lighting,
+- VFX,
+- asset discovery,
+- environment construction.
+
+Only reopen custom Verse after a specific playtest demonstrates a requirement that the validated native path cannot satisfy.
+
+## Multiplayer Lifecycle
+
+The native setup accounts for multiplayer lifecycle without custom state:
+- game-start players receive the Tracker automatically,
+- JIP players spawn and receive the Tracker automatically,
+- every spawn event grants the fixed loadout to the spawning player,
+- departing players leave no Verse subscriptions/state/tasks to clean up,
+- duplicate event-subscription risk is zero.
 
 ## Alpha Exclusions
 
 Do not add these during the one-shot unless explicitly reopened later:
-
 - Gun Game progression,
 - random loadouts,
 - kill streak rewards,
@@ -125,19 +184,17 @@ Do not add these during the one-shot unless explicitly reopened later:
 - complex power-up rotations,
 - bespoke mobility mechanics.
 
-The first one-shot succeeds if Scrapline is visually strong, immediately readable, and produces reliable repeated FFA fights.
-
 ## Validation Targets
 
 After the primary construction pass:
-
 - 12-player target has enough spawn coverage.
 - Typical respawn reaches meaningful cover quickly.
 - No single roof/perch controls the arena.
 - 30 eliminations is achievable within roughly the 10-minute match window by the leading player in an active lobby.
 - Close-, medium-, and limited long-range combat all occur.
 - Spawn immunity does not become exploitable.
-- Elimination sustain improves flow without making the leader effectively unkillable.
-- Device/Verse behavior remains correct for join-in-progress and player leave events.
+- Native 50-point elimination sustain improves flow without making the leader effectively unkillable.
+- JIP players receive Tracker + loadout correctly.
+- Leaving players do not disturb active scoring/end conditions.
 
 Tune only after these observations exist; do not preemptively add complexity.
