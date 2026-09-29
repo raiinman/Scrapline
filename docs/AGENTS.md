@@ -24,6 +24,7 @@ The root `AGENTS.md` owns repository-wide rules.
 - Documentation must separate confirmed decisions from ideas still under consideration.
 - External assets must include their source URL and intended role before they are treated as approved.
 - Do not claim an asset is available in the UEFN project until it has been confirmed by the user or implementation tooling.
+- Fab Referenced Content may remain read-only when Scrapline only needs to place/use it. Do not duplicate or promote a referenced pack just to make it editable; promote only a specific asset that implementation proves must be modified.
 - The final one-shot build specification must use the frozen asset manifest rather than silently inventing replacement geometry.
 - Keep implementation-facing instructions concrete enough that another agent can execute without reconstructing prior chat context.
 - The approved one-shot toolchain is documented in `TOOLING.md`; do not silently replace or remove an installed integration.
