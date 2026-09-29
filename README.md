@@ -16,11 +16,11 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 
 ## Current Stage
 
-**Asset manifest frozen; pre-build refinement hold active.**
+**Asset manifest frozen; physical-fit gate verified; pre-build hold active.**
 
-The macro map design, terrain specification, first-alpha gameplay baseline, UEFN/Codex toolchain, and production environment kit are locked or verified. The grounded real-asset visual pass is complete enough to guide placement, including exact staged Factory/Garage/Vehicle/Pipe captures and representative live Scrapyard/Deserted/VFX references.
+The macro map design, terrain specification, first-alpha gameplay baseline, UEFN/Codex toolchain, and production environment kit are locked or verified. The grounded real-asset visual pass and read-only physical-fit verification are complete. Live UEFN measurements confirm the curated Factory/Garage/Vehicle/container meshes match their UE 5.6 staging dimensions exactly, and representative read-only Scrapyard catwalk modules fit the controlled verticality budget.
 
-The current next gate is read-only physical-fit verification of the selected anchors. UEFN Central generation, Verse generation, the one-shot build, synthetic image generation, bulk reserve import, and irreversible map construction remain paused until the hold is explicitly lifted.
+No asset-fit blocker remains. UEFN Central generation, Verse generation, the one-shot build, synthetic image generation, bulk reserve import, and irreversible map construction remain paused until the hold is explicitly lifted.
 
 ## Documentation
 
@@ -29,6 +29,7 @@ The current next gate is read-only physical-fit verification of the selected anc
 - `docs/ASSET_GAP_MATRIX.md` — final required-family coverage and closed intake decision
 - `docs/ENVIRONMENT_COMPOSITION_BOARD.md` — district-level real-asset placement guidance
 - `docs/REAL_ASSET_VISUAL_STUDIES.md` — grounded visual-study findings and read-only referenced-content rule
+- `docs/PHYSICAL_FIT_VERIFICATION.md` — verified local bounds, collision, LOD/Nanite, gameplay fit, and restrictions
 - `docs/MAP_DESIGN.md` — locked macro combat-space and layout direction
 - `docs/TERRAIN_ENVIRONMENT_SPEC.md` — implementation-facing terrain and environment plan
 - `docs/GAMEPLAY_SPEC.md` — first-alpha FFA gameplay baseline
