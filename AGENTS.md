@@ -79,6 +79,7 @@ Default section order:
 - Before resuming Scrapline work in a new or continued session, refresh the current repository state from GitHub instead of relying on chat memory alone.
 - Treat the GitHub `main` branch as the durable source of truth for Scrapline planning/status documentation, and sync meaningful verified project-state changes back to the repository.
 - When the user requests another durable behavior change, record it here or in the relevant child AGENTS.md
+- Current pre-build hold: do not trigger UEFN Central generation, Verse generation, one-shot build generation, or synthetic image generation until the user explicitly lifts the hold. During this hold, keep Scrapline refinement read-only or narrowly reversible and document verified findings.
 
 ## Scrapline UEFN Execution Contract
 
