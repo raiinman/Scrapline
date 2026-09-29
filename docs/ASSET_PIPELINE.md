@@ -60,7 +60,11 @@ Process:
 Current donor tooling:
 - Unreal Engine 5.8 is installed.
 - Unreal Engine 5.6 is installed for donor products that are packaged for 5.6.
-- Dark Ruins Megascans Sample is the first planned donor-project test and is currently downloading.
+- The repaired UE-only staging project is `ScrapStage56` under the normal C: Unreal Projects root.
+- Use the staging project one pack at a time; do not redirect the whole project to D:.
+- Wasteland Props was recovered directly from the completed Fab cache without duplicating its payload.
+- Construction Site Vol. 1/2 were recovered from their downloaded Unity packages into usable FBX/texture source.
+- Exact recovery and manifest-only status is documented in `ASSET_RECOVERY.md`.
 
 ## Fab Reliability Rules
 
