@@ -6,7 +6,7 @@
 
 This audit asks a hostile question: *If Astra wanted to misunderstand the design while technically following the docs, where could it do so?*
 
-The original design ambiguity purge remains valid, and the post-gameplay-integration sweep also passes. This document does **not** authorize Astra construction; explicit user authorization is still required.
+The original design ambiguity purge remains valid, and the post-gameplay-integration / post-generator sweep also passes. The completed UEFN Central result is quarantined as comparison evidence and does not modify the native gameplay handoff. This document does **not** authorize Astra construction; explicit user authorization is still required.
 
 ## Authority created
 
@@ -48,6 +48,7 @@ The final Astra prompt must read it before the softer composition/design documen
 | Fallback behavior was vague | Agent could substitute a major structure for convenience | Emergency fallback hierarchy requires an actual technical failure and reporting |
 | Implementation freedom was not bounded | “Artistic judgment” could mutate combat geometry | Allowed micro choices and forbidden macro redesign are listed separately |
 | Handoff draft still spoke to Codex generically | Model-specific execution intent was unclear | One-shot draft now addresses Astra as the implementation model |
+| UEFN Central generated 16 spawn pads + five Verse files + Timer/End Game paths | Astra could mix a rejected architecture into the validated native package | Generator result is quarantined as evidence; final handoff explicitly keeps 19 pads, no production Verse, and Island Settings as sole end authority |
 
 ## Spatial decisions Astra no longer owns
 
@@ -89,9 +90,9 @@ After the first rewrite pass, the governing handoff/design documents were search
 
 No remaining matches were found in the audited handoff/design set.
 
-## Final gameplay-integration contradiction sweep
+## Final gameplay / generator contradiction sweep
 
-After the native gameplay package was integrated, the hardened one-shot was checked again against `SPATIAL_CONTRACT.md`.
+After the native gameplay package was integrated and the UEFN Central experiment was completed, the hardened one-shot was checked again against `SPATIAL_CONTRACT.md` and the rejected generator output.
 
 Pass conditions:
 - playable envelope still reads **140 m × 140 m**,
@@ -108,9 +109,12 @@ Pass conditions:
 - the prompt explicitly records **Production custom Verse package: empty**,
 - Island Settings is the sole authoritative 30-elimination / 10-minute end-condition path,
 - `TR_Eliminations` is HUD feedback only and cannot create a competing end-game path,
-- `IG_Loadout` is triggered only by native Player Spawn Pad spawn events.
+- `IG_Loadout` is triggered only by native Player Spawn Pad spawn events,
+- the rejected generator's **16-pad** instruction does not appear as active build guidance,
+- no Timer Device, End Game Device, Verse `ScoreMap`, manual Tracker increment, or generated `@editable` spawn array appears in the active one-shot gameplay package,
+- **Infinite Reserve Ammo = On / Infinite Magazine Ammo = Off** remains explicit, so the generator's looser “Infinite Ammo” wording cannot replace normal reload behavior.
 
-The automated constant/stale-wording sweep passed all frozen spatial constants. One stale hold reference remained in this audit itself and was removed in this closeout.
+The automated constant/stale-wording sweep passes the frozen spatial/gameplay constants. Rejected generator terms remain only in clearly labeled evidence/audit text where needed to explain what must not be built.
 
 ## Remaining blocker
 
