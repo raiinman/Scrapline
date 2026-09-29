@@ -25,22 +25,34 @@ Track only the asset families that matter to the locked map design so reserve-pa
 
 ## Intake Stop Rule
 
-Do not keep collecting assets for categories already marked **Strong**.
+The full Fab library audit now confirms **160 owned products**, including **77 3D assets**. The one-shot should use that ownership more aggressively, but only through selective curation.
 
-Before the one-shot, prioritize only:
-1. **Factory Environment Collection** donor content for heavy machinery/power and hero-landmark candidates,
-2. **Modular Industrial Pipe Set** donor content for the Machinery/Power district,
-3. **Warning Signs Decals Vol. 1** for industrial signage/polish,
-4. one additional vehicle family only if the final live project scan still lacks two distinct vehicle/wreck silhouettes.
+Before the manifest freeze, stage/curate the following owned packs:
 
-Already on disk and ready for curation/import:
-- **Unfinished Building** — High FBX source, about 0.88 GB, 38 FBX files / 646 JPG textures.
-- **Old Mine** — High FBX source, about 1.70 GB, 90 FBX files / 559 JPG textures.
-- **Dark Ruins Megascans Sample** — UE 5.6 donor project, about 25.46 GB / 13,717 uassets; migrate only a very small generic structural subset.
+1. **Junkyard** — primary salvage/wreckage expansion.
+2. **Factory Environment Collection** — primary heavy-machinery, crane and hero-landmark source.
+3. **Construction Site VOL. 2** — workshop tools, ladders, benches and machine props.
+4. **Warehouse** — loading/storage vocabulary.
+5. **Garage** — workshop/service-area props.
+6. **Modular Industrial Pipe Set** — pipe vocabulary.
+7. **City Street Props** — cherry-pick utility, sign, barrier and street-industrial details.
+8. **Warning signs decals Vol. 1** — signage polish.
+9. **Wasteland Props - Free Pack** — rusty wasteland filler.
+10. **Power Generator** — dedicated power asset.
+11. **Vehicle Variety Pack Volume 2** — curated vehicle/wreck silhouettes.
+12. **Worn Metal Shipping Container** / **Military Cargo Container** — only if loading-yard container variety remains weak.
+13. **FREE Post Apocalypse Survivor Environment Kitbash set** — inspect only for strong industrial/wire/tower silhouette pieces.
 
-Do not continue collecting more rocks, rubble, generic warehouse filler, or giant city packs before the one-shot.
+Already on disk and available for selective curation:
+- **Unfinished Building** — High FBX source.
+- **Old Mine** — High FBX source.
+- **Derelict Corridor Megascans Sample**.
+- **Dark Ruins Megascans Sample** — UE 5.6 donor.
+- **African Slate Quarry** — already curated and complete.
 
-Dark Ruins should be inspected mainly for ruined structural shells, rock/cliff transitions, rubble, retaining-wall-like pieces, and materials. It is not expected to solve the heavy-machinery or vehicle gaps.
+Do not bulk-migrate City Sample Buildings, Soul: City, Soul: Cave, medieval/village packs, museum/palace samples, or other stylistically unrelated content merely because it is owned.
+
+Full ownership and disposition are recorded in `FAB_LIBRARY_AUDIT.md`.
 
 ## Freeze Threshold
 
