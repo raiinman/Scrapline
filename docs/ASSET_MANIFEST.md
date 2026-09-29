@@ -2,7 +2,7 @@
 
 ## Status
 
-Asset research is substantially complete. The first referenced-content wave and several modifiable Fab packs are now in Scrapline and verified by tooling, but the manifest is **not frozen** because the larger reserve/donor pool has not yet been selectively finalized.
+Asset research is substantially complete. The full Fab library audit now covers all 160 owned products, the first referenced-content wave and several modifiable Fab packs are in Scrapline, and African Slate Quarry is curated. The manifest is **not frozen** until the final owned-library staging wave in `FAB_LIBRARY_AUDIT.md` is selectively brought into the project and verified.
 
 Only assets verified by the live Scrapline project may be treated as implementation-ready.
 
