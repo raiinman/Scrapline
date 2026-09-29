@@ -59,8 +59,8 @@ Process:
 
 Current donor tooling:
 - Unreal Engine 5.8 is installed.
-- Unreal Engine 5.6 is being installed for donor products that are packaged for 5.6.
-- Dark Ruins Megascans Sample is the first planned donor-project test.
+- Unreal Engine 5.6 is installed for donor products that are packaged for 5.6.
+- Dark Ruins Megascans Sample is the first planned donor-project test and is currently downloading.
 
 ## Fab Reliability Rules
 
