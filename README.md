@@ -16,17 +16,18 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 
 ## Current Stage
 
-**Design/asset freeze complete; Astra spatial contract hardened; pre-build hold active.**
+**Design/asset freeze complete; Verse/gameplay integration active; Astra construction still gated.**
 
 The macro map design, spatial skeleton, terrain specification, first-alpha gameplay baseline, implementation toolchain, and production environment kit are locked or verified. The grounded real-asset visual pass and read-only physical-fit verification are complete. The Astra confusion audit removed stale design flexibility and `SPATIAL_CONTRACT.md` now freezes major anchors, orientation, routes, verticality, spawn regions, and lighting intent.
 
-No map-design or asset-fit blocker remains. UEFN Central generation, Verse generation, the one-shot build, synthetic image generation, bulk reserve import, and irreversible map construction remain paused until the hold is explicitly lifted.
+No map-design or asset-fit blocker remains. The user lifted the pre-build hold for Verse/gameplay integration, so UEFN Central/Verse generation and validation are now authorized. Astra one-shot construction, synthetic image generation, bulk reserve import, and irreversible map construction remain gated.
 
 ## Documentation
 
 - `docs/PROJECT_BRIEF.md` — product intent and non-negotiable build rules
 - `docs/ASSET_MANIFEST.md` — **frozen** approved asset sources and implementation-visible paths
 - `docs/ASSET_GAP_MATRIX.md` — final required-family coverage and closed intake decision
+- `docs/VERSE_GAMEPLAY_INTEGRATION.md` — **active gameplay/Verse integration phase and exit gate**
 - `docs/SPATIAL_CONTRACT.md` — **frozen one-shot spatial skeleton and placement authority**
 - `docs/ASTRA_CONFUSION_AUDIT.md` — ambiguity attack/closeout for the Astra handoff
 - `docs/ENVIRONMENT_COMPOSITION_BOARD.md` — district-level real-asset art/composition guidance
