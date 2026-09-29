@@ -1,6 +1,6 @@
 # Scrapline
 
-Scrapline is a compact post-apocalyptic free-for-all map for Unreal Editor for Fortnite (UEFN), built from curated Fab assets.
+Scrapline is a compact post-apocalyptic free-for-all map for Unreal Editor for Fortnite (UEFN), built from a deliberately curated Fab/UEFN production-asset pool.
 
 ## Project Goal
 
@@ -16,23 +16,25 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 
 ## Current Stage
 
-Final pre-build preparation.
+**Asset manifest frozen for the one-shot.**
 
-The macro map design, terrain specification, first-alpha gameplay baseline, and UEFN/Codex toolchain are locked or verified. The first referenced-content wave and several modifiable Fab packs are in-project, and the African Slate Quarry FBX/material pipeline is proven. Remaining work is selective donor/reserve intake, asset-manifest freeze, Verse generation, and the final Codex one-shot handoff.
+The macro map design, terrain specification, first-alpha gameplay baseline, UEFN/Codex toolchain, and production environment kit are now locked or verified. The final live curation pass added Factory machinery/hero pieces, two vehicle silhouettes, Garage/workshop assets, a complete modular pipe vocabulary, and a restrained industrial warning-decal subset.
+
+The next gates are Verse generation/validation, finalizing the Codex one-shot handoff, executing the primary build, and then testing/repair.
 
 ## Documentation
 
 - `docs/PROJECT_BRIEF.md` — product intent and non-negotiable build rules
-- `docs/ASSET_MANIFEST.md` — approved asset sources and intended usage
+- `docs/ASSET_MANIFEST.md` — **frozen** approved asset sources and implementation-visible paths
+- `docs/ASSET_GAP_MATRIX.md` — final required-family coverage and closed intake decision
 - `docs/MAP_DESIGN.md` — locked macro combat-space and layout direction
 - `docs/TERRAIN_ENVIRONMENT_SPEC.md` — implementation-facing terrain and environment plan
 - `docs/GAMEPLAY_SPEC.md` — first-alpha FFA gameplay baseline
 - `docs/UEFN_CENTRAL_PROMPT.md` — prepared Verse Project Generator request
 - `docs/TOOLING.md` — approved Codex/UEFN build toolchain and activation checklist
 - `docs/ASSET_PIPELINE.md` — referenced/FBX/donor-project intake workflow and safety rules
-- `docs/FAB_LIBRARY_AUDIT.md` — full 160-product Fab library audit and one-shot staging wave
-- `docs/ASSET_RECOVERY.md` — recovered/stalled Fab payloads and repaired UE 5.6 staging workflow
-- `docs/ASSET_GAP_MATRIX.md` — current coverage by required asset family and intake stop rule
-- `docs/BUILD_READINESS.md` — current build gates and one-shot readiness snapshot
-- `docs/ONE_SHOT_PROMPT_DRAFT.md` — blocked Codex handoff draft; finalize only after asset/Verse freeze
+- `docs/FAB_LIBRARY_AUDIT.md` — 160-product ownership audit and final intake disposition
+- `docs/ASSET_RECOVERY.md` — recovered Fab payloads and repaired UE 5.6 staging workflow
+- `docs/BUILD_READINESS.md` — current one-shot readiness snapshot
+- `docs/ONE_SHOT_PROMPT_DRAFT.md` — finalize after Verse generation/validation
 - `AGENTS.md` — repository-wide DOX contract
