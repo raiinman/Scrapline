@@ -30,6 +30,7 @@ The root `AGENTS.md` owns repository-wide rules.
 - The approved one-shot toolchain is documented in `TOOLING.md`; do not silently replace or remove an installed integration.
 - `SPATIAL_CONTRACT.md` is the implementation authority for macro layout, major anchor placement/orientation, route connectivity, verticality limits, spawn-region distribution, and lighting concept. Softer older prose must not override it.
 - Before final one-shot approval, run the Astra confusion audit and remove or narrow stale wording that asks the implementation model to re-select a frozen design decision.
+- For the locked first alpha, gameplay implementation authority is `VERSE_GAMEPLAY_INTEGRATION.md`: use native Island Settings + Player Spawn Pads + `IG_Loadout` Item Granter + `TR_Eliminations` Tracker. Do not reintroduce a custom Verse manager, siphon device, End Game path, or other duplicate gameplay authority unless a specific live test proves the native baseline inadequate.
 
 ## Work Guidance
 
@@ -42,7 +43,7 @@ The root `AGENTS.md` owns repository-wide rules.
 - Before a build handoff, verify that every required asset is either already present in the project or explicitly listed as a prerequisite.
 - Verify that the final build document does not depend on unapproved placeholder or custom-modeled environment geometry.
 - Before implementation, verify Epic UEFN MCP and Power Tools are reachable from Codex in the actual Scrapline UEFN project.
-- If Omni-Verse is part of the Verse workflow, verify its authentication and command/sync activation before relying on it for fixes or web sync.
+- If custom Verse is reopened later, verify live UEFN compiler results before trusting standalone digest/LSP diagnostics; the current first-alpha baseline intentionally has no production custom Verse.
 
 ## Child DOX Index
 
