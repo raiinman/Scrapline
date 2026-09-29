@@ -22,7 +22,7 @@ Changes:
 - Epic Launcher now discovers the corrected `ScrapStage56.uproject`,
 - the obsolete D:-redirected staging tree was quarantined instead of deleted.
 
-Because C: space is limited, use ScrapStage56 as a **one-pack-at-a-time staging project**, harvest/migrate the useful subset, then clear that pack before adding the next large UE-only product.
+The repaired local receiver is working. The original priority UE-only retry wave has now completed successfully. Keep using ScrapStage56 as a temporary donor/curation project rather than treating all staged content as shipping Scrapline content.
 
 ## Recovered content
 
@@ -37,7 +37,7 @@ Verified:
 - **268 .uasset files**,
 - **1 .umap**.
 
-A lightweight donor descriptor `WastelandRecovered.uproject` was added beside the cached Content tree and successfully opened in UE 5.6. No duplicate 3 GB copy was required.
+The full payload is also present in the repaired ScrapStage56 receiver under `Content/FreeWastelandProps_Meshingun`.
 
 ### Construction Site VOL. 1
 
@@ -71,7 +71,7 @@ These two construction packs can now enter the same curated FBX pipeline used fo
 - Factory Environment Collection — ~8.7 GB / 2,116 uassets.
 - Derelict Corridor Megascans — ~4.7 GB / 5,808 uassets.
 - Vehicle Variety Pack Volume 2 — ~1.31 GB / 153 uassets.
-- Wasteland Props — recovered directly from Fab cache as described above.
+- Wasteland Props — recovered directly from Fab cache and also present in ScrapStage56.
 
 ## Complete exchange/source downloads already available
 
@@ -84,41 +84,55 @@ These two construction packs can now enter the same curated FBX pipeline used fo
 - Urban Garbage and Debris — FBX source.
 - Construction Site Vol. 1/2 — recovered source from Unity packages.
 
-## Manifest-only / not actually downloaded
+## Completed priority UE-only staging installs
 
-The following UE-format products have Fab metadata/manifests but **no local payload path**. They cannot be recovered from disk because their asset data never completed downloading:
+The products that previously existed only as Fab manifest stubs have now materialized as real UE 5.6 assets inside ScrapStage56.
 
-- Landscape Material | MW Landscape Auto Material — ~0.69 GB advertised payload.
-- Modular Industrial Pipe Set — ~0.22 GB.
-- Warning Signs Decals Vol. 1 — ~2.22 GB.
-- Garage — ~1.65 GB.
-- City Street Props — ~5.73 GB.
-- Free Sample Warehouse & Storage Vol. 01 — ~0.58 GB.
-- Industry Props Pack 6 — ~0.18 GB.
-- Street Props Pack Vol. 1 — ~1.45 GB.
-- Street Props Pack Vol. 2 — ~1.04 GB.
-- Vehicle Variety Pack — ~1.37 GB.
-- City Sample Vehicles — ~7.40 GB.
-- City Sample Buildings — ~14.29 GB.
-- Soul: City / Soul: Cave and several other reserve environments.
+Verified on disk:
 
-Do not mistake these manifest stubs for completed downloads.
+| Product | ScrapStage56 content folder | Approx. size | Verified assets |
+|---|---|---:|---:|
+| Landscape Material | MW Landscape Auto Material | `MWLandscapeAutoMaterial` | 0.685 GB | 97 uassets / 3 umaps |
+| Modular Industrial Pipe Set | `IndustrialPipesM` | 0.218 GB | 42 uassets / 1 umap |
+| Warning Signs Decals Vol. 1 | `FD_WarningSigns_V1` | 2.218 GB | 243 uassets / 1 umap |
+| Garage | `GaragePack` | 1.652 GB | 557 uassets / 5 umaps |
+| City Street Props | `Deko_MatrixDemo` | 5.732 GB | 749 uassets / 2 umaps |
 
-## Retry rule
+Epic Launcher install history also records successful installs for all five products.
 
-After Epic Online Services is stable:
+At the latest verification, ScrapStage56 contained approximately **13.54 GB**, **1,956 uassets**, and **6 staged top-level content families** including Wasteland Props. C: had approximately **33.25 GB free** after the completed intake.
 
-1. add **one UE-only product at a time** to `ScrapStage56`,
-2. verify real `.uasset` files appear under its Content folder,
-3. inspect/curate,
-4. migrate only the approved subset to Scrapline,
-5. remove the staged source pack before starting another large UE-only install.
+## Still manifest-only / reserve downloads not required for the priority wave
 
-Priority retry order:
-1. MW Landscape Auto Material,
+Several owned UE-format reserve products may still have Fab manifests without local payload paths, including:
+- Free Sample Warehouse & Storage Vol. 01,
+- Industry Props Pack 6,
+- Street Props Pack Vol. 1,
+- Street Props Pack Vol. 2,
+- Vehicle Variety Pack,
+- City Sample Vehicles,
+- City Sample Buildings,
+- Soul: City / Soul: Cave and other reserve environments.
+
+Do not treat those as available unless their real payload is verified. They are no longer prerequisites for the current priority staging wave unless the live Scrapline gap scan justifies them.
+
+## Curation rule
+
+Do **not** re-download the five completed priority UE-only packs.
+
+Next:
+1. inspect their real assets in ScrapStage56,
+2. curate only pieces that fill the locked Scrapline asset gaps,
+3. migrate approved subsets into the live Scrapline UEFN project,
+4. verify the final project-visible paths,
+5. clear temporary staged bulk content when no longer needed,
+6. freeze the asset manifest only after the live project gap scan passes.
+
+Priority curation order:
+1. Garage,
 2. Modular Industrial Pipe Set,
 3. Warning Signs Decals,
-4. Garage,
-5. only then City Street Props if the live asset gap still justifies its size.
+4. City Street Props selective utility/sign/barrier content,
+5. MW Landscape Auto Material only if its terrain workflow proves compatible and useful.
 
 Do not re-download assets already recovered above.
