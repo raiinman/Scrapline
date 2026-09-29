@@ -2,15 +2,15 @@
 
 ## Status
 
-**Final pre-build / design and asset freeze.**
+**Pre-build integration complete; ready for explicit Astra one-shot authorization.**
 
-The macro map design, spatial contract, terrain specification, first-alpha gameplay baseline, implementation toolchain, physical-fit verification, and production asset pool are locked or verified. Selective reserve/donor intake is complete and the intake stop rule has fired.
+The macro map design, spatial contract, terrain specification, first-alpha gameplay baseline, implementation toolchain, physical-fit verification, production asset pool, and gameplay/device integration are locked or verified. Selective reserve/donor intake is complete and the intake stop rule has fired.
 
-Active gate:
-- generate and validate the small Verse gameplay package,
-- resolve exact Creative-device and @editable wiring,
-- finalize the Astra one-shot prompt with the frozen spatial contract, asset paths, and validated gameplay wiring,
-- run the final contradiction/confusion check.
+The first-alpha gameplay layer is validated as native-device only: Island Settings + 19 Player Spawn Pads + one Item Granter + one Tracker. No production custom Verse or `@editable` wiring is required.
+
+Current gate:
+- run the final contradiction/confusion closeout,
+- obtain explicit user authorization before Astra executes the primary construction pass.
 
 Still gated until explicit one-shot authorization:
 - execute the primary build,
@@ -78,9 +78,11 @@ Completed:
 3. Selectively import useful FBX and Unreal Engine donor content.
 4. Re-scan the live asset pool, choose the hero landmark, and freeze the asset manifest.
 
-Next — active now:
-5. Generate and validate the Verse gameplay package through UEFN Central / Omni-Verse.
-6. Assemble the final Astra implementation specification from the frozen spatial contract, asset manifest, physical-fit record, and validated gameplay wiring.
+Completed:
+5. Resolve and validate the first-alpha gameplay package. Current Epic native settings/devices cover the baseline; no production custom Verse is required.
+6. Assemble the Astra implementation specification from the frozen spatial contract, asset manifest, physical-fit record, and exact native gameplay wiring.
+
+Next — gated on explicit user authorization:
 7. Execute the one-shot build.
 8. Test after the primary build pass unless a blocking editor/runtime failure requires earlier validation.
 
@@ -90,9 +92,10 @@ The map skeleton no longer has open design decisions.
 
 Remaining execution preparation:
 - resolve final spawn transforms **inside the frozen spawn regions** after real cover/collision exists,
-- generate/validate the small Verse package after the current hold is lifted,
-- integrate exact device/Verse wiring into the Astra one-shot prompt,
-- perform the final contradiction/confusion check before approving the one-shot.
+- perform the final contradiction/confusion closeout,
+- obtain explicit user authorization before the Astra one-shot begins.
+
+Exact gameplay/device wiring is finalized in `VERSE_GAMEPLAY_INTEGRATION.md` and integrated into `ONE_SHOT_PROMPT_DRAFT.md`.
 
 Lighting/time-of-day concept, hero landmark, district placement, route network, verticality budget, major traversal rules, and major asset roles are frozen in `SPATIAL_CONTRACT.md`.
 
