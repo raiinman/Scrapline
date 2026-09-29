@@ -1,6 +1,6 @@
 # Scrapline — Astra One-Shot Prompt Draft
 
-> **READY FOR USER AUTHORIZATION — DO NOT EXECUTE WITHOUT EXPLICIT AUTHORIZATION.** The map/design/asset freeze and gameplay integration are complete. The first-alpha gameplay layer is validated as native-device only; no production custom Verse is required.
+> **READY FOR USER AUTHORIZATION — DO NOT EXECUTE WITHOUT EXPLICIT AUTHORIZATION.** The map/design/asset freeze, gameplay integration, and UEFN Central generator comparison are complete. The first-alpha gameplay layer is validated as native-device only; no production custom Verse is required. The generator's rejected five-file package is evidence only and must not be imported.
 
 ## Mission
 
@@ -224,6 +224,8 @@ If the skeleton fails an acceptance check, fix it before proceeding to micro-pro
 ## Validated gameplay / device integration
 
 The locked first-alpha gameplay package is **native-device only**. Do not generate or place a Verse creative_device for the baseline.
+
+The completed UEFN Central comparison does **not** alter this package. `UEFN_CENTRAL_GENERATOR_RESULT.md` preserves the rejected result only as evidence. Do not import its five generated Verse files, do not switch to its 16-spawn-pad variant, and do not add its Timer Device, End Game Device, Verse `ScoreMap`, manual Tracker increment, or `@editable` spawn-pad array. Those paths failed the control comparison and would create extra lifecycle/wiring/authority risk.
 
 ### Required gameplay objects
 
