@@ -21,6 +21,7 @@ The map design, gameplay baseline, terrain specification, toolchain, and first p
 - 14 approved Fab referenced-content items are present in the project reference set.
 - Direct/modifiable Fab content is present under `Content/Fab`.
 - African Slate Quarry High-quality source is downloaded and the full FBX + material pilot pipeline is verified.
+- Scrapline terrain heightmap v1 is generated and staged under `Resources/Terrain/` for import review.
 - LookoutTower has been removed and blacklisted.
 - Generated Python cache and the obsolete pilot import material have been cleaned up.
 
@@ -51,7 +52,7 @@ Power Tools currently sees 58 project assets. Several are reported as `likely_un
 4. Mark `ASSET_MANIFEST.md` **Frozen for One-Shot**.
 5. Run the prepared UEFN Central Project Generator prompt.
 6. Validate generated Verse with Omni-Verse / Epic compiler tooling.
-7. Assemble the final Codex one-shot implementation prompt.
+7. Finalize the existing `ONE_SHOT_PROMPT_DRAFT.md` with the frozen asset paths and validated Verse/device wiring.
 8. Run the primary build pass.
 9. Test and repair only after the primary construction pass unless blocked.
 
