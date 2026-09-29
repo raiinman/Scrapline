@@ -48,9 +48,19 @@ Scrapline must read as one accumulated industrial scrapyard, not four asset-pack
 
 Keep the Factory crane slightly off geometric center and surround it with lower machinery/rubble so the basin and drainage/service cuts remain legible movement lines.
 
+## Source-level fit assurance
+
+Public source documentation reduces collision/scale risk without replacing editor-local measurements:
+
+- Epic's Factory Environment Collection release states the full collection contains over 850 meshes **with LODs and collision** and was intentionally built to feel large-scale.
+- Vehicle Variety Pack Volume 2 documentation reports **Collision: Yes** for its four unique vehicles.
+- Epic's original UEFN Fab content announcement says the Post-Apocalyptic Scrapyard pack was **collision-ready, optimized for Fortnite budgets, and scaled to Fortnite units**; the current Fab listing also states that its 206 assets are compatible with the Fortnite grid.
+
+These facts support the frozen choices but do not prove exact local dimensions after migration/reference mounting.
+
 ## Remaining verification
 
-The only important asset question not yet closed is physical fit: editor-local bounds and collision for the Factory crane, Garage shell, Box Truck, Campervan, primary containers, and selected catwalk modules.
+The only important asset question not yet closed is physical fit: editor-local bounds and collision geometry for the Factory crane, Garage shell, Box Truck, Campervan, primary containers, and selected catwalk modules.
 
 The current read-only bridge command set exposes asset loading/properties but not explicit StaticMesh bounding boxes or collision metrics. Do not invent those dimensions. Verify them in-editor or through a read-only mesh-metrics probe before final placement guidance.
 
