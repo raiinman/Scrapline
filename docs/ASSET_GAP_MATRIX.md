@@ -23,10 +23,10 @@ The final live UEFN curation pass eliminated the remaining weak categories. Broa
 | Vehicles / wreck forms | Strong | Abandoned Junk Car, Box Truck, Campervan, Scrapyard ruined cars | Frozen |
 | Loading / warehouse vocabulary | Strong | Factory containers/forklift, Garage pallet/cart, Scrapyard containers, Deserted Props | Frozen |
 | Workshop interiors | Strong | Garage structure/workbench/shelves/cart/stairs/railings + Scrapyard repair clutter | Frozen |
-| Heavy machinery / power infrastructure | Strong | Factory crane, recycling machine, engine/container, forklift, assembly line, electrical equipment | Frozen |
+| Heavy machinery / power infrastructure | Strong | Factory gantry/crane assembly, recycling machine, engine/container, forklift, assembly line, electrical equipment | Frozen |
 | Modular industrial pipes | Strong | 28 verified IndustrialPipesSource StaticMeshes + mounted Scrapyard/Deserted fallbacks | Frozen |
 | Signage / decals | Strong | 12 selected Warning Signs instances + Scrapyard signage/graffiti | Frozen |
-| Hero landmark | **Frozen** | Factory crane composition | `SM_Crane01` primary |
+| Hero landmark | **Frozen** | Factory horizontal gantry/crane composition | `SM_Crane01` primary |
 | Ruined structural shells | Strong | Scrapyard structures + Garage | No additional donor required |
 | Elevated traversal | Strong / controlled | Scrapyard metal catwalk family primary; wooden catwalks rare | Budgeted, not filler |
 
@@ -41,11 +41,13 @@ Supporting pieces:
 - `SM_CraneCabin01`
 - `SM_CraneCable01`
 
+Real staged captures confirm that this is a long horizontal industrial gantry/bridge assembly rather than a tall skyline construction crane. Preserve the shared pivots of the three crane pieces.
+
 Secondary industrial anchors:
 - `SM_RecyclingMachine01`
 - `SM_EngineWithContainer`
 
-The crane composition belongs slightly off geometric center in the central kill yard and must not become an uncontested full-map high-ground position.
+The gantry composition belongs slightly off geometric center in the central kill yard and must not become an uncontested full-map elevated lane.
 
 ## Intake Stop Rule — Triggered
 
