@@ -16,25 +16,27 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 
 ## Current Stage
 
-**Asset manifest frozen for the one-shot.**
+**Asset manifest frozen; pre-build refinement hold active.**
 
-The macro map design, terrain specification, first-alpha gameplay baseline, UEFN/Codex toolchain, and production environment kit are now locked or verified. The final live curation pass added Factory machinery/hero pieces, two vehicle silhouettes, Garage/workshop assets, a complete modular pipe vocabulary, and a restrained industrial warning-decal subset.
+The macro map design, terrain specification, first-alpha gameplay baseline, UEFN/Codex toolchain, and production environment kit are locked or verified. The grounded real-asset visual pass is complete enough to guide placement, including exact staged Factory/Garage/Vehicle/Pipe captures and representative live Scrapyard/Deserted/VFX references.
 
-The next gates are Verse generation/validation, finalizing the Codex one-shot handoff, executing the primary build, and then testing/repair.
+The current next gate is read-only physical-fit verification of the selected anchors. UEFN Central generation, Verse generation, the one-shot build, synthetic image generation, bulk reserve import, and irreversible map construction remain paused until the hold is explicitly lifted.
 
 ## Documentation
 
 - `docs/PROJECT_BRIEF.md` — product intent and non-negotiable build rules
 - `docs/ASSET_MANIFEST.md` — **frozen** approved asset sources and implementation-visible paths
 - `docs/ASSET_GAP_MATRIX.md` — final required-family coverage and closed intake decision
+- `docs/ENVIRONMENT_COMPOSITION_BOARD.md` — district-level real-asset placement guidance
+- `docs/REAL_ASSET_VISUAL_STUDIES.md` — grounded visual-study findings and read-only referenced-content rule
 - `docs/MAP_DESIGN.md` — locked macro combat-space and layout direction
 - `docs/TERRAIN_ENVIRONMENT_SPEC.md` — implementation-facing terrain and environment plan
 - `docs/GAMEPLAY_SPEC.md` — first-alpha FFA gameplay baseline
-- `docs/UEFN_CENTRAL_PROMPT.md` — prepared Verse Project Generator request
+- `docs/UEFN_CENTRAL_PROMPT.md` — prepared Verse Project Generator request, currently on hold
 - `docs/TOOLING.md` — approved Codex/UEFN build toolchain and activation checklist
 - `docs/ASSET_PIPELINE.md` — referenced/FBX/donor-project intake workflow and safety rules
 - `docs/FAB_LIBRARY_AUDIT.md` — 160-product ownership audit and final intake disposition
 - `docs/ASSET_RECOVERY.md` — recovered Fab payloads and repaired UE 5.6 staging workflow
-- `docs/BUILD_READINESS.md` — current one-shot readiness snapshot
-- `docs/ONE_SHOT_PROMPT_DRAFT.md` — finalize after Verse generation/validation
+- `docs/BUILD_READINESS.md` — current pre-build readiness snapshot
+- `docs/ONE_SHOT_PROMPT_DRAFT.md` — finalize after the hold is lifted and generation/validation is permitted
 - `AGENTS.md` — repository-wide DOX contract
