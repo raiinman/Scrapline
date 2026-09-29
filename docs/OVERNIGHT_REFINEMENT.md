@@ -12,3 +12,16 @@ Verified notes for the pre-build review.
 - Warehouse Essentials currently appears as one live StaticMesh and needs an editor modularity check.
 - Warning Sign IDs still need visual mapping.
 - Mounted Scrapyard and atmosphere packs still need internal asset-name enumeration.
+
+## Composition direction
+
+- Center: Factory crane with recycling/engine mass and low rubble.
+- Northwest: junk car, Campervan, Scrapyard content, barriers, rubble.
+- Northeast: Box Truck, containers, forklift, pallet/cart, Deserted props.
+- Southeast: Garage shell, workbench, shelves, stairs/railings, ventilation.
+- Southwest: Factory machinery/electrical assets and the full industrial pipe set.
+- Perimeter: staged heightmap, African Slate Quarry, rubble, service detail.
+
+## Next pass
+
+Enumerate mounted reference contents, map sign IDs, enumerate atmosphere effects, and verify major-asset dimensions/collision without importing reserve content.
