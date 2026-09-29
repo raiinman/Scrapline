@@ -2,9 +2,9 @@
 
 ## Status
 
-The asset-acquisition, visual-selection, and physical-fit questions are closed. Current refinement is implementation guidance only while the pre-build hold remains active.
+The overnight refinement phase is complete. It closed the asset-acquisition, visual-selection, and physical-fit questions and produced implementation guidance for the frozen design.
 
-The current user hold remains in force: no UEFN Central generation, Verse generation, one-shot generation, synthetic image generation, bulk reserve import, or irreversible map construction.
+The pre-build hold documented during this phase was lifted on 2026-09-29 for gameplay integration and the agreed UEFN Central comparison; those later phases are now complete. This historical refinement record does **not** authorize Astra construction, synthetic image generation, bulk reserve import, or irreversible map construction.
 
 ## Verified live state
 
