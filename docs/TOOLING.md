@@ -34,6 +34,7 @@ The Scrapline toolchain is installed, activated, and verified against the live S
 - Use Omni-Verse for compiler-aware Verse fixes, offline diagnostics, Project Brain workspace context, and web-to-VS-Code sync.
 - Do not use Omni-Verse to author terrain or environment layout; it is a Verse support tool.
 - Keep live-sync auto-apply disabled so incoming web code requires review before it changes local files.
+- The authenticated browser Project Generator experiment was completed on 2026-09-29. Its successful five-file result was marked **Not validated** and is quarantined in `UEFN_CENTRAL_GENERATOR_RESULT.md`; it is not approved production code or a replacement for live UEFN validation.
 
 ### UEFN Central Verse Examples
 
