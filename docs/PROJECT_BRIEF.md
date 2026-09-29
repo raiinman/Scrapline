@@ -2,9 +2,9 @@
 
 ## Status
 
-Pre-production specification.
+Final pre-build preparation.
 
-The macro map design and first-alpha gameplay baseline are locked. The UEFN/Codex toolchain is live and verified. The remaining pre-build gate is confirming which claimed Fab assets are actually available inside the Scrapline project, freezing the usable asset manifest, and writing the final Codex one-shot prompt.
+The macro map design, terrain specification, and first-alpha gameplay baseline are locked. The UEFN/Codex toolchain is live and verified. The first production asset wave is in-project and the FBX import pipeline is proven. Remaining gates are selective reserve/donor intake, asset-manifest freeze, Verse generation/validation, and the final Codex one-shot prompt.
 
 ## Objective
 
@@ -39,13 +39,14 @@ Temporary technical helpers may be used only when required by UEFN gameplay/devi
 
 ## Workflow
 
-1. Research free UEFN-compatible Fab content.
-2. Curate and approve the asset kit.
-3. Freeze the asset manifest.
-4. Lock map layout, flow, spawn philosophy, verticality, and gameplay rules.
-5. Write a single implementation specification for Codex.
-6. Execute the one-shot build.
-7. Test only after the primary build pass is complete unless a blocking editor/runtime failure requires earlier validation.
+1. Lock map layout, terrain philosophy, spawn structure, verticality, and alpha gameplay rules.
+2. Mount the approved UEFN referenced-content wave.
+3. Selectively import useful FBX/GLTF packs and Unreal Engine donor content.
+4. Re-scan the live asset pool, choose the hero landmark, and freeze the asset manifest.
+5. Generate and validate the small Verse gameplay package through UEFN Central / Omni-Verse.
+6. Assemble one final implementation specification for Codex.
+7. Execute the one-shot build.
+8. Test only after the primary build pass is complete unless a blocking editor/runtime failure requires earlier validation.
 
 ## Current Known Asset
 
@@ -57,9 +58,10 @@ This is the current visual foundation for Scrapline.
 
 ## Remaining Pre-Build Decisions
 
-- confirm which claimed Fab packs/assets are actually available inside the Scrapline project
-- freeze the usable supplemental asset manifest
+- finish selective reserve/donor intake without bloating the project
+- freeze the usable asset manifest
 - choose the exact hero landmark from assets present in-project
 - choose final lighting/time-of-day treatment during environment composition
 - refine exact spawn transforms after structures and cover are placed
+- generate/validate the Verse package
 - assemble and approve the final Codex one-shot build prompt
