@@ -22,7 +22,7 @@ Support:
 - IndustrialPipesSource pieces
 - concrete rubble and Metal Barricade reference
 
-Place the crane slightly off geometric center. Keep its playable access controlled; its silhouette may dominate the composition, but its top may not dominate combat.
+Real staged captures show that the Factory crane is a long horizontal industrial gantry/bridge assembly, not a tall skyline construction crane. Preserve the shared pivots of `SM_Crane01`, `SM_CraneCabin01`, and `SM_CraneCable01`; do not independently ground those pieces. Place the assembly slightly off geometric center and use its long horizontal silhouette to frame movement through the basin. Keep playable access controlled so the gantry does not become an uncontested elevated lane.
 
 ## Northwest — Scrap / Wreck Yard
 
@@ -62,7 +62,7 @@ Interior / traversal:
 - Scrapyard fuse boxes, hanging wires, barrels, garbage bins, window/door parts
 - selected warning decals and restrained graffiti
 
-Keep clutter off combat paths. The workshop must remain readable at sprint speed.
+Real staged captures confirm that `SM_Garage_1` and `SM_Garage_1_roof` are a shared assembly. Preserve their original relative pivots before grounding/placing them. The shell is compact, so build district identity outward with service clutter, stairs, railings, signage, exterior cover, and Scrapyard grime rather than expecting the shell alone to fill the southeast district. Keep clutter off combat paths and preserve sprint-speed readability.
 
 ## Southwest — Machinery / Power Yard
 
@@ -94,7 +94,13 @@ Preferred:
 - falling/burst sparks
 - restrained lingering/rising/spray steam
 
-Use Deserted fire/dust/storm spectacle only when a specific composition needs it. Scrapline should feel abandoned and dangerous, not actively exploding everywhere.
+Live Niagara inventory confirms Talisman `NS_Dustmotes_01`, five spark systems, and seven steam systems. Deserted VFX provides `N_LandscapeStorm`, `NS_AA_Fire`, `NS_AA_Fire_constant`, `NS_AnitiAircraftExplosions`, and `NS_JetFlyByDust`. Use Deserted fire/dust/storm spectacle only when a specific composition needs it. Scrapline should feel abandoned and dangerous, not actively exploding everywhere.
+
+## Referenced-content handling
+
+Live UEFN captures confirm that Scrapyard and Deserted Props referenced assets are usable production content even when their source editors are read-only. Do not duplicate a referenced pack merely to make it editable. Promote only a specific asset that implementation proves must be modified.
+
+See `REAL_ASSET_VISUAL_STUDIES.md` for the grounded visual evidence and representative captured assets.
 
 ## Remaining fit gate
 
