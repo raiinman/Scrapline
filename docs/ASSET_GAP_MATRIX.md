@@ -28,11 +28,17 @@ Track only the asset families that matter to the locked map design so reserve-pa
 Do not keep collecting assets for categories already marked **Strong**.
 
 Before the one-shot, prioritize only:
-1. heavy machinery / power,
-2. industrial pipes,
-3. one additional vehicle family,
-4. signage/decals,
-5. a stronger hero-landmark candidate if available.
+1. **Factory Environment Collection** donor content for heavy machinery/power and hero-landmark candidates,
+2. **Modular Industrial Pipe Set** donor content for the Machinery/Power district,
+3. **Warning Signs Decals Vol. 1** for industrial signage/polish,
+4. one additional vehicle family only if the final live project scan still lacks two distinct vehicle/wreck silhouettes.
+
+Already on disk and ready for curation/import:
+- **Unfinished Building** — High FBX source, about 0.88 GB, 38 FBX files / 646 JPG textures.
+- **Old Mine** — High FBX source, about 1.70 GB, 90 FBX files / 559 JPG textures.
+- **Dark Ruins Megascans Sample** — UE 5.6 donor project, about 25.46 GB / 13,717 uassets; migrate only a very small generic structural subset.
+
+Do not continue collecting more rocks, rubble, generic warehouse filler, or giant city packs before the one-shot.
 
 Dark Ruins should be inspected mainly for ruined structural shells, rock/cliff transitions, rubble, retaining-wall-like pieces, and materials. It is not expected to solve the heavy-machinery or vehicle gaps.
 
