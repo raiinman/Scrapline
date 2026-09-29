@@ -9,7 +9,7 @@ Own durable design, asset, planning, and build-specification documentation for S
 This folder owns:
 - project briefs and design intent
 - approved asset records
-- owned Fab library audits, staging priorities, and asset-family coverage / intake-stop decisions
+- owned Fab library audits, staging priorities, asset recovery state, and asset-family coverage / intake-stop decisions
 - map-layout and combat-flow specifications
 - future one-shot build instructions and implementation handoff documents
 - build toolchain and editor-integration requirements
