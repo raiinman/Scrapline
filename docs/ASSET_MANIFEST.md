@@ -163,21 +163,21 @@ Role: Machinery / Power Yard, service infrastructure, lane framing, sightline br
 - Live namespace: `/Scrapline/Imported/WarningSignsSource/`
 - Live inventory: **52 assets total / 12 selected MaterialInstanceConstants**
 
-Approved decal instances:
-- `MI_WarningSign_V1_11`
-- `MI_WarningSign_V1_12`
-- `MI_WarningSign_V1_14`
-- `MI_WarningSign_V1_30`
-- `MI_WarningSign_V1_31`
-- `MI_WarningSign_V1_34`
-- `MI_WarningSign_V1_35`
-- `MI_WarningSign_V1_36`
-- `MI_WarningSign_V1_37`
-- `MI_WarningSign_V1_40`
-- `MI_WarningSign_V1_51`
-- `MI_WarningSign_V1_54`
+Approved decal instances and verified visual meaning:
+- `MI_WarningSign_V1_11` — biohazard
+- `MI_WarningSign_V1_12` — radiation
+- `MI_WarningSign_V1_14` — POISON / skull
+- `MI_WarningSign_V1_30` — TOXIC / skull
+- `MI_WarningSign_V1_31` — TOXIC / biohazard
+- `MI_WarningSign_V1_34` — biohazard symbol
+- `MI_WarningSign_V1_35` — radiation
+- `MI_WarningSign_V1_36` — left arrow
+- `MI_WarningSign_V1_37` — right arrow
+- `MI_WarningSign_V1_40` — CRASH
+- `MI_WarningSign_V1_51` — machinery/explosion-style hazard
+- `MI_WarningSign_V1_54` — skull-and-crossbones warning
 
-Selection rule: industrial hazard, toxic/biohazard/radiation/explosion, directional, and crash language only. The novelty filler from the 60-decal donor set is not part of the one-shot pool.
+Each selected instance has its matching Albedo, Normal, and ORM texture set present in the live project. Selection rule: industrial hazard, toxic/biohazard/radiation/explosion, directional, and crash language only. The novelty filler from the 60-decal donor set is not part of the one-shot pool.
 
 ## Existing Local Modifiable Fab Content
 
@@ -187,9 +187,12 @@ Verified under `Content/Fab`:
 - Gas Cylinder 03 / Propane Tank
 - Industrial Rubble
 - Rubble Pack
-- Warehouse Essentials Pack
 
 These remain approved production content. The oversized propane source textures are the only current Project Health warnings.
+
+### Warehouse Essentials — Quarantined
+
+Warehouse Essentials is physically present but is **not approved for the one-shot**. Current UEFN logs show its single live mesh requesting five missing material packages (`Materials/_1` through `Materials/_5`). Those packages do not exist in the live project. Do not use or repair this asset during the one-shot unless it is explicitly revalidated; no required Scrapline role depends on it.
 
 ## African Slate Quarry
 
