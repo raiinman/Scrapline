@@ -79,13 +79,13 @@ Default section order:
 - Before resuming Scrapline work in a new or continued session, refresh the current repository state from GitHub instead of relying on chat memory alone.
 - Treat the GitHub `main` branch as the durable source of truth for Scrapline planning/status documentation, and sync meaningful verified project-state changes back to the repository.
 - When the user requests another durable behavior change, record it here or in the relevant child AGENTS.md
-- Current pre-build hold: do not trigger UEFN Central generation, Verse generation, one-shot build generation, or synthetic image generation until the user explicitly lifts the hold. During this hold, keep Scrapline refinement read-only or narrowly reversible and document verified findings.
+- Pre-build hold lifted by the user on 2026-09-29. Current active phase: **Verse/gameplay integration**. UEFN Central/Verse generation and validation are now authorized. The Astra one-shot construction pass remains gated until the generated gameplay package is compiler-validated, exact device wiring is integrated into `ONE_SHOT_PROMPT_DRAFT.md`, and the final contradiction/confusion check passes. Asset acquisition, synthetic image generation, bulk reserve import, and irreversible map construction remain closed unless separately authorized.
 - Before approving the Astra one-shot handoff, run a contradiction/confusion audit and leave no meaningful macro-layout, major-anchor, route-network, verticality, or time-of-day decision for the implementation model to invent. `docs/SPATIAL_CONTRACT.md` is the placement authority for the frozen one-shot skeleton.
 
 ## Scrapline UEFN Execution Contract
 
 - This local UEFN project is the implementation workspace for Scrapline.
-- Before implementation, read this file, `docs/AGENTS.md`, `docs/PROJECT_BRIEF.md`, `docs/SPATIAL_CONTRACT.md`, `docs/MAP_DESIGN.md`, `docs/TERRAIN_ENVIRONMENT_SPEC.md`, `docs/ENVIRONMENT_COMPOSITION_BOARD.md`, `docs/PHYSICAL_FIT_VERIFICATION.md`, `docs/GAMEPLAY_SPEC.md`, `docs/BUILD_READINESS.md`, `docs/FAB_LIBRARY_AUDIT.md`, `docs/ASSET_RECOVERY.md`, `docs/ASSET_MANIFEST.md`, `docs/ASSET_PIPELINE.md`, and `docs/TOOLING.md`.
+- Before implementation, read this file, `docs/AGENTS.md`, `docs/PROJECT_BRIEF.md`, `docs/VERSE_GAMEPLAY_INTEGRATION.md`, `docs/SPATIAL_CONTRACT.md`, `docs/MAP_DESIGN.md`, `docs/TERRAIN_ENVIRONMENT_SPEC.md`, `docs/ENVIRONMENT_COMPOSITION_BOARD.md`, `docs/PHYSICAL_FIT_VERIFICATION.md`, `docs/GAMEPLAY_SPEC.md`, `docs/BUILD_READINESS.md`, `docs/FAB_LIBRARY_AUDIT.md`, `docs/ASSET_RECOVERY.md`, `docs/ASSET_MANIFEST.md`, `docs/ASSET_PIPELINE.md`, and `docs/TOOLING.md`.
 - Treat the approved Fab/library content as the environment construction kit. Inspect available assets before creating substitutes.
 - Do not build the visible environment from primitive cubes, blank greybox geometry, or newly modeled stand-ins when a suitable approved asset exists.
 - Terrain generation is allowed and expected. Use UEFN Landscape tools, generated heightmaps, splines, or other supported terrain workflows when appropriate.
