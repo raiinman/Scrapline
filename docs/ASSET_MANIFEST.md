@@ -26,6 +26,18 @@ Latest live UEFN checks:
   - Industrial pipe valve
   - Warning-sign material instance
 
+## Physical Fit — Verified
+
+Read-only live UEFN bounds/collision probes are complete. Exact measurements and gameplay implications are recorded in `PHYSICAL_FIT_VERIFICATION.md`.
+
+Durable selection results:
+- Factory crane assembly remains the primary hero at approximately **5.685 × 26.895 × 5.448 m** shared-pivot envelope. Preserve shared pivots; the cable has no simple collision and extends below the main crane's lowest bound, so do not ground the assembly from the cable minimum.
+- Garage shell/roof remains the Ruined Workshop anchor at approximately **16.541 × 9.375 × 7.970 m**. Roof access is intentional/rare, not default traversal.
+- Box Truck and Campervan remain approved full-cover vehicle forms; each uses one convex simple-collision primitive, so do not depend on fine wheel-well/undercarriage traversal.
+- Factory containers remain approved at approximately **6.0 × 2.8 × 3.0 m**. `SM_Container01_01` uses one box primitive and is preferred for routine gameplay cover; `_02` uses one convex primitive as the visual variant.
+- Representative Scrapyard metal catwalk modules fit the +4–6 m traversal budget and remain the primary elevated kit. Wooden catwalks remain rare Wreck Yard accents.
+- No physical-fit result requires replacement, reserve intake, or promotion of read-only referenced content.
+
 ## Mounted Referenced Content
 
 The project contains **14 approved Fab reference files**:
