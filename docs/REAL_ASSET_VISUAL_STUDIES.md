@@ -97,8 +97,10 @@ Do not duplicate or promote an entire referenced pack just to make it editable.
 
 Promote an individual referenced asset into curated editable project content only when implementation proves that Scrapline must modify its material, collision, Nanite/static-mesh settings, geometry, or another source property.
 
-## Next gate
+## Physical-fit closeout
 
-The asset-visual question is no longer the blocker.
+The asset-visual question and physical-fit question are both closed.
 
-Next pre-build gate is read-only physical-fit verification for the chosen anchors: exact local bounds, collision, and practical cover/traversal fit for the Factory crane assembly, Garage assembly, Box Truck, Campervan, primary containers, and representative catwalk modules.
+Read-only live UEFN measurements verified the chosen Factory crane assembly, Garage assembly, Box Truck, Campervan, Factory containers, and representative metal/wooden Scrapyard catwalk modules. Curated imported meshes matched the UE 5.6 staging measurements exactly, so no migration scale drift was found. The full measurements, collision counts, LOD/Nanite notes, gameplay implications, and restrictions are recorded in `PHYSICAL_FIT_VERIFICATION.md`.
+
+No result requires replacing a frozen finalist or promoting a referenced asset. The current pre-build hold remains the only gate before generation/build work resumes.
