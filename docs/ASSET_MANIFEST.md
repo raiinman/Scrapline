@@ -47,6 +47,8 @@ The project contains **14 approved Fab reference files**:
 
 The previously mounted OldWest Vol. 6 reference remains outside the active project.
 
+Referenced Content may remain read-only when Scrapline only needs to place/use it. Do not duplicate or promote a referenced pack merely to make it editable. Promote only an individual asset that implementation proves must be modified.
+
 ## Visual Authority
 
 ### Post-Apocalyptic Scrapyard Pack
@@ -97,7 +99,9 @@ Roles:
 Primary central landmark:
 `/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_Crane01`
 
-Compose it with the verified cabin/cable pieces and surrounding scrap/industrial cover. It must not become an uncontested full-map perch.
+Real staged captures show that the hero crane is a long horizontal industrial gantry/bridge assembly, not a tall skyline construction crane.
+
+Compose it with `SM_CraneCabin01` and `SM_CraneCable01` while preserving the assembly's original shared pivots. Do not independently ground those parts. Use the gantry's long horizontal silhouette to frame central movement and keep its playable access controlled so it does not become an uncontested full-map elevated lane.
 
 Secondary hero/support anchors:
 - `SM_RecyclingMachine01`
@@ -140,6 +144,8 @@ Approved meshes:
 - `Meshes/SM_Wheel`
 
 Role: Ruined Workshop structure, repair/workbench dressing, shelving, traversal pieces, and workshop identity.
+
+Real staged captures confirm that `SM_Garage_1` and `SM_Garage_1_roof` are a shared assembly. Preserve their original relative pivots when grounding or placing them.
 
 The donor's bundled ThirdPerson demo/gameplay content is explicitly **not approved** and was not migrated.
 
