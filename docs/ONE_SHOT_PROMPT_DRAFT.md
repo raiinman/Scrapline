@@ -1,6 +1,6 @@
 # Scrapline — Astra One-Shot Prompt Draft
 
-> **DO NOT RUN YET.** The map/design/asset freeze is complete, but the current pre-build hold remains active and the validated Verse/device package has not yet been integrated into this draft.
+> **READY FOR USER AUTHORIZATION — DO NOT EXECUTE WITHOUT EXPLICIT AUTHORIZATION.** The map/design/asset freeze and gameplay integration are complete. The first-alpha gameplay layer is validated as native-device only; no production custom Verse is required.
 
 ## Mission
 
@@ -23,10 +23,11 @@ Read these before changing anything:
 7. `docs/ENVIRONMENT_COMPOSITION_BOARD.md`
 8. `docs/PHYSICAL_FIT_VERIFICATION.md`
 9. `docs/GAMEPLAY_SPEC.md`
-10. `docs/ASSET_MANIFEST.md` — **asset-approval authority**
-11. `docs/ASSET_PIPELINE.md`
-12. `docs/TOOLING.md`
-13. `docs/BUILD_READINESS.md`
+10. `docs/VERSE_GAMEPLAY_INTEGRATION.md` — **gameplay/device-wiring authority**
+11. `docs/ASSET_MANIFEST.md` — **asset-approval authority**
+12. `docs/ASSET_PIPELINE.md`
+13. `docs/TOOLING.md`
+14. `docs/BUILD_READINESS.md`
 
 If softer or older prose conflicts with `SPATIAL_CONTRACT.md`, the spatial contract wins for layout, orientation, route, verticality, and placement tolerance. Do not use ambiguity as permission to redesign.
 
@@ -192,7 +193,7 @@ Tune exposure/intensity for player readability.
 11. Place spawn devices inside the frozen candidate regions and validate LOS/cover.
 12. Add secondary props, debris, utilities, signs, restrained VFX, and cross-district Scrapyard glue.
 13. Apply the frozen daylight treatment and tune readability.
-14. Wire gameplay devices and the validated Verse package.
+14. Wire the validated native gameplay package from `VERSE_GAMEPLAY_INTEGRATION.md`; do not add custom Verse unless a specific blocking native-device failure is demonstrated.
 15. Run health/collision/dependency/material/performance checks.
 16. Save and perform the DOX closeout.
 
@@ -217,14 +218,132 @@ If the skeleton fails an acceptance check, fix it before proceeding to micro-pro
 - Fixed three-role editor-configurable loadout: shotgun, rifle, SMG/sidearm.
 - Infinite reserve ammo acceptable; normal magazines/reloads remain.
 - No dropped-item accumulation.
-- Target 50-point elimination sustain, isolated so it can be disabled if unreliable.
-- Prefer native Tracker/HUD/End Game behavior over unnecessary custom Verse.
+- Native **Health Granted on Elimination = 50**.
+- Use native Island Settings + Tracker + Item Granter + Player Spawn Pads; no End Game device or custom Verse is required for the baseline.
 
-## Verse
+## Validated gameplay / device integration
 
-**BLOCKED UNTIL FINAL HANDOFF:** replace this section with the validated UEFN Central / Omni-Verse package and exact device wiring before running the one-shot.
+The locked first-alpha gameplay package is **native-device only**. Do not generate or place a Verse creative_device for the baseline.
 
-Verse must stay small, multiplayer-safe, and limited to behavior that benefits from code. It does not own terrain, asset placement, spawn coordinates, environment layout, lighting, or VFX.
+### Required gameplay objects
+
+- Island Settings.
+- **19 × Player Spawn Pad**, one per frozen candidate spawn region.
+- **1 × Item Granter**, rename `IG_Loadout`.
+- **1 × Tracker**, rename `TR_Eliminations`.
+
+Current live UEFN catalog identities verified on 2026-09-29:
+- Player Spawn Pad: `/CRD_PlayerSpawn/ItemDefinitions/PID_Device_PlayerSpawnPad.PID_Device_PlayerSpawnPad`
+- Item Granter: `/CreativeCoreDevices/SetupAssets/PID_Device_ItemGranter.PID_Device_ItemGranter`
+- Tracker: `/CreativeCoreDevices/SetupAssets/PID_Device_Tracker.PID_Device_Tracker`
+
+Do **not** add an End Game device, Elimination Manager, health-restoration device, HUD Message device, Class Designer, Team Settings & Inventory device, or custom Verse manager unless a blocking test proves the native baseline cannot work.
+
+### Island Settings
+
+Set:
+- Max Players: **16**; intended fill target remains 12.
+- Teams: **Free for All**.
+- Total Rounds: **1**.
+- Time Limit: **10 Minutes**.
+- Eliminations to End: **30**.
+- Round Win Condition: **Eliminations**.
+- Last Standing Ends Game: **Off**.
+- Spawn Location: **Spawn Pads**.
+- Spawn Pad Selection: **Random**.
+- Respawn Type: **Individual**.
+- Respawn Time: **3 Seconds**.
+- Override Spawn Immunity Time: **Yes**.
+- Spawn Immunity Time: **2 Seconds**.
+- Only Allow Respawn if Spawn Pads Found: **On**.
+- Spawn Limit: **Infinite**.
+- Join in Progress: **Spawn**.
+- Starting Health Percentage: **100%**.
+- Max Health: **100**.
+- Allow Health Recharge: **Off**.
+- Starting Shield Percentage: **100%**.
+- Max Shields: **100**.
+- Allow Shield Recharge: **Off**.
+- Allow Overshield: **Off**.
+- Locomotion Preset: **Custom**.
+- Fall Damage: **Off**.
+- Allow Mantling: **On**.
+- Allow Sprinting: **On**.
+- Allow Sliding: **On**.
+- Preserve normal crouch input; do not disable it.
+- Allow Building: **None**.
+- Maximum Building Resources: **0**.
+- Infinite Building Resources: **Off**.
+- Infinite Reserve Ammo: **On**.
+- Infinite Magazine Ammo: **Off**.
+- Infinite Consumables: **Off**.
+- Allow Item Drop: **No**.
+- Maximum Equipment Slots: **3**.
+- Start with Pickaxe: **No**.
+- Eliminated Player's Items: **Delete**.
+- Environment Damage: **Off**.
+- Structure Damage: **None**.
+- Weapon Destruction: **None**.
+- Pickaxe Destruction: **None**.
+- Health Granted on Elimination: **50**.
+- Wood/Stone/Metal/Gold Granted on Elimination: **0**.
+- Max Trackers on HUD: **1**.
+- Show Elimination Feed: **Yes**.
+
+This native configuration owns authoritative match end, timer fallback, respawn rules, JIP, ammo behavior, drop cleanup, destruction rules, and the 50-point health-then-shield elimination sustain.
+
+### `IG_Loadout`
+
+Register exactly three current Fortnite weapons in this order:
+1. shotgun-class,
+2. rifle-class,
+3. SMG- or sidearm-class.
+
+Set:
+- Enabled on Game Start: **Yes**.
+- Receiving Players: **Triggering Player**.
+- On Grant Action: **Clear Items**.
+- Grant: **All Items**.
+- Grant Condition: **Always**.
+- Equip Granted Item: **First Item**.
+- Drop Items at Player Location: **Never**.
+
+Do not hard-code seasonal weapon asset IDs.
+
+### `TR_Eliminations`
+
+Set:
+- Stat to Track: **Eliminations**.
+- Target Value: **30**.
+- Starting Value: **0**.
+- Valid Team: **Any**.
+- Assign on Game Start: **On**.
+- Assign When Joining in Progress: **On**.
+- Sharing: **Individual**.
+- Target Team: **Any**.
+- Target Class: **Any**.
+- When Target Is Reached: **Do Nothing**.
+- Show on HUD: **Detailed**.
+- Use Persistence: **Off**.
+
+The Tracker is HUD feedback only. Island Settings ends the round; do not create a second end-game path.
+
+### Direct event binding
+
+For **each of the 19 Player Spawn Pads**:
+- **On Player Spawned → IG_Loadout / Grant Item**.
+
+The spawning player is the instigator; `Receiving Players = Triggering Player` grants only that player's loadout.
+
+### Verse
+
+**Production custom Verse package: empty.**
+
+There are no `@editable` references and no Verse actor to place. The live Scrapline project was compiled through Epic UEFN MCP after removing the redundant local siphon candidate and returned **zero Verse diagnostics**.
+
+This is intentional. Native devices account for initial players, JIP, player leave, eliminations, HUD progress, win condition, sustain, loadout, and respawns without subscription/state cleanup risk.
+
+Verse must not own terrain, asset placement, spawn coordinates, environment layout, lighting, VFX, or any other environment-construction responsibility.
 
 ## Asset authority
 
@@ -244,8 +363,8 @@ The primary pass is complete only when:
 - verticality respects the catwalk/perch budget,
 - no unintended dominant Garage-roof or gantry-top position exists,
 - spawn devices remain distributed through the frozen regions,
-- basic loadout/gameflow is wired,
-- validated Verse is integrated,
+- basic loadout/gameflow is wired exactly as specified above,
+- live Verse build remains clean with no production custom Verse files,
 - the level saves cleanly,
 - available health/dependency/material checks show no blocking errors.
 
