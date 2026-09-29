@@ -2,11 +2,13 @@
 
 ## Status
 
-**PASS — final pre-Astra contradiction/confusion audit complete 2026-09-29.**
+**REOPENED — spatial/design audit still passes; Feature Freeze v2 gameplay audit pending.**
 
 This audit asks a hostile question: *If Astra wanted to misunderstand the design while technically following the docs, where could it do so?*
 
-The original design ambiguity purge remains valid, and the post-gameplay-integration / post-generator sweep also passes. The completed UEFN Central result is quarantined as comparison evidence and does not modify the native gameplay handoff. This document does **not** authorize Astra construction; explicit user authorization is still required.
+The original spatial/design ambiguity purge remains valid. Feature Freeze v2 intentionally changed the gameplay architecture by adding the Scrapline Armory / match economy, so the previous native-only gameplay closeout is no longer final. The new Armory design is frozen in `ARMORY_ECONOMY_SPEC.md`, but the audit cannot return to PASS until accepted Armory code/wiring is live-validated and synchronized into the one-shot handoff.
+
+This document does **not** authorize Astra construction.
 
 ## Authority created
 
@@ -48,7 +50,7 @@ The final Astra prompt must read it before the softer composition/design documen
 | Fallback behavior was vague | Agent could substitute a major structure for convenience | Emergency fallback hierarchy requires an actual technical failure and reporting |
 | Implementation freedom was not bounded | “Artistic judgment” could mutate combat geometry | Allowed micro choices and forbidden macro redesign are listed separately |
 | Handoff draft still spoke to Codex generically | Model-specific execution intent was unclear | One-shot draft now addresses Astra as the implementation model |
-| UEFN Central generated 16 spawn pads + five Verse files + Timer/End Game paths | Astra could mix a rejected architecture into the validated native package | Generator result is quarantined as evidence; final handoff explicitly keeps 19 pads, no production Verse, and Island Settings as sole end authority |
+| UEFN Central generated 16 spawn pads + five Verse files + Timer/End Game paths | Astra could mix a rejected architecture into the active package | Generator result remains quarantined. Feature Freeze v2 authorizes only the narrow Armory Verse boundary; 19 pads and Island Settings score/end authority remain frozen. |
 
 ## Spatial decisions Astra no longer owns
 
@@ -90,45 +92,54 @@ After the first rewrite pass, the governing handoff/design documents were search
 
 No remaining matches were found in the audited handoff/design set.
 
-## Final gameplay / generator contradiction sweep
+## Feature Freeze v2 gameplay contradiction sweep
 
-After the native gameplay package was integrated and the UEFN Central experiment was completed, the hardened one-shot was checked again against `SPATIAL_CONTRACT.md` and the rejected generator output.
+The spatial/design checks above remain valid. The gameplay closeout is now deliberately **pending** until the Armory implementation is real rather than merely designed.
 
-Pass conditions:
-- playable envelope still reads **140 m × 140 m**,
-- scenic envelope still reads **170 m × 170 m**,
-- all four district anchor coordinates match the frozen contract,
-- gantry target center remains approximately **(-250, +250)**,
-- gantry orientation remains **NW ↔ SE**,
-- Garage target remains approximately **(+4000, -3900)**,
-- uninterrupted elevated runs remain capped at roughly **15 m**,
-- all **19** frozen candidate spawn regions remain authoritative,
-- gameplay wiring does not introduce or move spawn coordinates,
-- gameplay wiring does not own terrain, map layout, asset placement, lighting, VFX placement, asset discovery, or environment construction,
-- the gameplay placeholder is gone,
-- the prompt explicitly records **Production custom Verse package: empty**,
-- Island Settings is the sole authoritative 30-elimination / 10-minute end-condition path,
-- `TR_Eliminations` is HUD feedback only and cannot create a competing end-game path,
-- `IG_Loadout` is triggered only by native Player Spawn Pad spawn events,
-- the rejected generator's **16-pad** instruction does not appear as active build guidance,
-- no Timer Device, End Game Device, Verse `ScoreMap`, manual Tracker increment, or generated `@editable` spawn array appears in the active one-shot gameplay package,
-- **Infinite Reserve Ammo = On / Infinite Magazine Ammo = Off** remains explicit, so the generator's looser “Infinite Ammo” wording cannot replace normal reload behavior.
+The next PASS must verify all of the following:
+- playable/scenic envelopes and all frozen anchors remain unchanged,
+- all **19** spawn regions remain authoritative,
+- Armory Verse never chooses spawn coordinates or moves spawn pads,
+- Island Settings remains the sole 30-elimination / timeout winner authority,
+- native combat target is approximately 10 minutes after the frozen 45-second opening Armory gate,
+- `TR_Eliminations` remains HUD feedback only,
+- no manual Tracker increment is used for normal eliminations,
+- no production End Game device or match-authority Timer is introduced,
+- `IG_Armory` replaces the fixed `IG_Loadout` path only after live validation,
+- `EM_Economy` is used only as an eliminator/eliminated event source and drops no economy items,
+- Armory Verse owns only Scrap, catalog/cart/loadout state, UI, buy gates, granting, and cleanup,
+- Armory Verse does not own elimination score, victory, native timeout, spawn selection, sustain, terrain, layout, lighting, VFX, or asset placement,
+- starting Scrap = **3,000**, cap = **5,000**, elimination reward = **150**, recovery ladder = **1,500 / 1,750 / 2,000**,
+- purchases charge once per life and rewards fire once per event,
+- free fallback prevents a player from becoming unable to spawn,
+- JIP / leave / repeated death / UI open-close do not duplicate subscriptions, grants, or currency events,
+- Infinite Reserve Ammo = On / Infinite Magazine Ammo = Off remains explicit,
+- the rejected UEFN Central five-file package appears only as labeled evidence,
+- accepted Armory code compiles with live UEFN at zero diagnostics,
+- exact first-release catalog Item Granter indexes are documented,
+- `ONE_SHOT_PROMPT_DRAFT.md` no longer contains stale native-only fixed-loadout instructions.
 
-The automated constant/stale-wording sweep passes the frozen spatial/gameplay constants. Rejected generator terms remain only in clearly labeled evidence/audit text where needed to explain what must not be built.
+## Current blockers
 
-## Remaining blocker
+Gameplay handoff clarity is intentionally not closed yet.
 
-No design, asset-fit, gameplay-wiring, Verse-compiler, or handoff-clarity blocker remains.
+Before Astra may execute:
+1. implement the smallest Armory candidate,
+2. validate it with live Epic UEFN,
+3. run the critical lifecycle/economy matrix from `ARMORY_ECONOMY_SPEC.md`,
+4. lock the initial catalog/index wiring,
+5. harden the one-shot prompt against the verified implementation,
+6. rerun this audit and return it to **PASS**,
+7. obtain explicit user authorization.
 
-The only remaining gate is **explicit user authorization to let Astra execute the one-shot construction pass**.
-
-Do not reopen map design or custom Verse merely because construction has not started yet.
+Do not reopen the spatial design while closing this gameplay gate.
 
 ## Final handoff rule
 
 Before Astra is allowed to execute the one-shot:
-- read `SPATIAL_CONTRACT.md` first among design documents,
+- read `SPATIAL_CONTRACT.md` first among spatial/design documents,
+- read `ARMORY_ECONOMY_SPEC.md` before gameplay wiring,
 - keep Layer 1 spatial rules separate from Layer 2 art freedom,
-- require Astra to fix skeleton acceptance failures before dressing,
+- keep native match authority separate from Armory Verse authority,
 - require every deviation/fallback to be reported,
-- do not authorize the run if the prompt once again asks Astra to choose a frozen macro-design decision.
+- do not authorize the run while this document remains REOPENED/PENDING.

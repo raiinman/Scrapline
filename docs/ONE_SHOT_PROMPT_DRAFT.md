@@ -1,6 +1,6 @@
 # Scrapline — Astra One-Shot Prompt Draft
 
-> **READY FOR USER AUTHORIZATION — DO NOT EXECUTE WITHOUT EXPLICIT AUTHORIZATION.** The map/design/asset freeze, gameplay integration, and UEFN Central generator comparison are complete. The first-alpha gameplay layer is validated as native-device only; no production custom Verse is required. The generator's rejected five-file package is evidence only and must not be imported.
+> **BLOCKED — DO NOT EXECUTE.** Feature Freeze v2 added the Scrapline Armory / match economy after the previous native-only closeout. The spatial/design/asset freeze remains valid, but the Astra handoff is not executable until the Armory candidate passes live UEFN compile/lifecycle validation and the contradiction/confusion audit returns to PASS. The rejected UEFN Central five-file package remains evidence only and must not be imported.
 
 ## Mission
 
@@ -22,12 +22,13 @@ Read these before changing anything:
 6. `docs/TERRAIN_ENVIRONMENT_SPEC.md`
 7. `docs/ENVIRONMENT_COMPOSITION_BOARD.md`
 8. `docs/PHYSICAL_FIT_VERIFICATION.md`
-9. `docs/GAMEPLAY_SPEC.md`
-10. `docs/VERSE_GAMEPLAY_INTEGRATION.md` — **gameplay/device-wiring authority**
-11. `docs/ASSET_MANIFEST.md` — **asset-approval authority**
-12. `docs/ASSET_PIPELINE.md`
-13. `docs/TOOLING.md`
-14. `docs/BUILD_READINESS.md`
+9. `docs/ARMORY_ECONOMY_SPEC.md` — **Armory/economy authority**
+10. `docs/GAMEPLAY_SPEC.md`
+11. `docs/VERSE_GAMEPLAY_INTEGRATION.md` — **gameplay/device-wiring authority**
+12. `docs/ASSET_MANIFEST.md` — **asset-approval authority**
+13. `docs/ASSET_PIPELINE.md`
+14. `docs/TOOLING.md`
+15. `docs/BUILD_READINESS.md`
 
 If softer or older prose conflicts with `SPATIAL_CONTRACT.md`, the spatial contract wins for layout, orientation, route, verticality, and placement tolerance. Do not use ambiguity as permission to redesign.
 
@@ -193,159 +194,98 @@ Tune exposure/intensity for player readability.
 11. Place spawn devices inside the frozen candidate regions and validate LOS/cover.
 12. Add secondary props, debris, utilities, signs, restrained VFX, and cross-district Scrapyard glue.
 13. Apply the frozen daylight treatment and tune readability.
-14. Wire the validated native gameplay package from `VERSE_GAMEPLAY_INTEGRATION.md`; do not add custom Verse unless a specific blocking native-device failure is demonstrated.
+14. Wire only the **live-validated** Armory/native gameplay package from `ARMORY_ECONOMY_SPEC.md` and `VERSE_GAMEPLAY_INTEGRATION.md`. Do not execute this step while those documents still mark Armory validation pending.
 15. Run health/collision/dependency/material/performance checks.
 16. Save and perform the DOX closeout.
 
 If the skeleton fails an acceptance check, fix it before proceeding to micro-props, VFX, lighting polish, or gameplay wiring.
 
-## Gameplay baseline
+## Gameplay — Feature Freeze v2
 
+**Do not execute this section while Armory validation is pending.** The final implementation must match the live-validated package recorded in `ARMORY_ECONOMY_SPEC.md` and `VERSE_GAMEPLAY_INTEGRATION.md`.
+
+Locked player-facing target:
 - FFA.
 - 12-player primary target; correct up to 16.
-- One 10-minute round.
-- First to 30 eliminations wins.
+- **45-second opening Armory phase**.
+- Native round clock **10:45**, leaving approximately 10 minutes of combat.
+- First to 30 eliminations wins through native Island Settings.
 - Join in progress allowed.
-- Building off.
-- Harvesting off.
-- Destruction off where practical.
-- 100 health / 100 shield.
-- Overshield off.
-- Sprint, slide, mantle, crouch on.
-- Fall damage off.
-- Respawn ~3 seconds.
-- Spawn immunity ~2 seconds.
-- Fixed three-role editor-configurable loadout: shotgun, rifle, SMG/sidearm.
-- Infinite reserve ammo acceptable; normal magazines/reloads remain.
-- No dropped-item accumulation.
-- Native **Health Granted on Elimination = 50**.
-- Use native Island Settings + Tracker + Item Granter + Player Spawn Pads; no End Game device or custom Verse is required for the baseline.
+- Building/harvesting/destruction off as already specified.
+- 100 health / 100 shield; overshield off.
+- Sprint, slide, mantle, crouch on; fall damage off.
+- Native ~3-second respawn and ~2-second immunity remain.
+- Native **Health Granted on Elimination = 50** remains.
+- Infinite Reserve Ammo on; Infinite Magazine Ammo off.
+- Eliminated items delete; manual item dropping remains disabled.
 
-## Validated gameplay / device integration
+### Armory economy
 
-The locked first-alpha gameplay package is **native-device only**. Do not generate or place a Verse creative_device for the baseline.
+`ARMORY_ECONOMY_SPEC.md` is authoritative.
 
-The completed UEFN Central comparison does **not** alter this package. `UEFN_CENTRAL_GENERATOR_RESULT.md` preserves the rejected result only as evidence. Do not import its five generated Verse files, do not switch to its 16-spawn-pad variant, and do not add its Timer Device, End Game Device, Verse `ScoreMap`, manual Tracker increment, or `@editable` spawn-pad array. Those paths failed the control comparison and would create extra lifecycle/wiring/authority risk.
+Alpha economy:
+- currency: **Scrap**,
+- starting bank: **3,000**,
+- bank cap: **5,000**,
+- elimination reward: **+150**,
+- death recovery: **1,500 → 1,750 → 2,000 cap** across consecutive deaths without an elimination,
+- any elimination resets that player's recovery tier,
+- purchases are for one life,
+- an uncommitted cart refunds 100%,
+- committed life purchases are non-refundable,
+- a free fallback sidearm is always available,
+- players may queue a Next Loadout while alive,
+- JIP receives a protected first-buy opportunity.
 
-### Required gameplay objects
+The catalog must remain editor-configurable/data-driven so seasonal weapons, price changes, featured rotations, and future reward hooks do not require rewriting the economy state machine.
 
-- Island Settings.
-- **19 × Player Spawn Pad**, one per frozen candidate spawn region.
-- **1 × Item Granter**, rename `IG_Loadout`.
-- **1 × Tracker**, rename `TR_Eliminations`.
+### Production authority split
 
-Current live UEFN catalog identities verified on 2026-09-29:
-- Player Spawn Pad: `/CRD_PlayerSpawn/ItemDefinitions/PID_Device_PlayerSpawnPad.PID_Device_PlayerSpawnPad`
-- Item Granter: `/CreativeCoreDevices/SetupAssets/PID_Device_ItemGranter.PID_Device_ItemGranter`
-- Tracker: `/CreativeCoreDevices/SetupAssets/PID_Device_Tracker.PID_Device_Tracker`
+Native UEFN owns:
+- score,
+- 30-elimination victory,
+- round timeout,
+- spawn coordinates/selection,
+- health/shield and 50-point sustain,
+- respawn rules,
+- movement/destruction/ammo/drop rules.
 
-Do **not** add an End Game device, Elimination Manager, health-restoration device, HUD Message device, Class Designer, Team Settings & Inventory device, or custom Verse manager unless a blocking test proves the native baseline cannot work.
+The narrow Armory Verse may own only:
+- Scrap balances and recovery tiers,
+- catalog/loadout/cart state,
+- buy/sell/refund math,
+- Armory UI,
+- 45-second opening buy gate,
+- JIP first-buy gate,
+- temporary legitimate shop protection,
+- granting committed catalog items,
+- player UI/state cleanup.
 
-### Island Settings
+Do not create a custom FFA score manager, End Game path, match Timer authority, spawn solver, or custom siphon.
 
-Set:
-- Max Players: **16**; intended fill target remains 12.
-- Teams: **Free for All**.
-- Total Rounds: **1**.
-- Time Limit: **10 Minutes**.
-- Eliminations to End: **30**.
-- Round Win Condition: **Eliminations**.
-- Last Standing Ends Game: **Off**.
-- Spawn Location: **Spawn Pads**.
-- Spawn Pad Selection: **Random**.
-- Respawn Type: **Individual**.
-- Respawn Time: **3 Seconds**.
-- Override Spawn Immunity Time: **Yes**.
-- Spawn Immunity Time: **2 Seconds**.
-- Only Allow Respawn if Spawn Pads Found: **On**.
-- Spawn Limit: **Infinite**.
-- Join in Progress: **Spawn**.
-- Starting Health Percentage: **100%**.
-- Max Health: **100**.
-- Allow Health Recharge: **Off**.
-- Starting Shield Percentage: **100%**.
-- Max Shields: **100**.
-- Allow Shield Recharge: **Off**.
-- Allow Overshield: **Off**.
-- Locomotion Preset: **Custom**.
-- Fall Damage: **Off**.
-- Allow Mantling: **On**.
-- Allow Sprinting: **On**.
-- Allow Sliding: **On**.
-- Preserve normal crouch input; do not disable it.
-- Allow Building: **None**.
-- Maximum Building Resources: **0**.
-- Infinite Building Resources: **Off**.
-- Infinite Reserve Ammo: **On**.
-- Infinite Magazine Ammo: **Off**.
-- Infinite Consumables: **Off**.
-- Allow Item Drop: **No**.
-- Maximum Equipment Slots: **3**.
-- Start with Pickaxe: **No**.
-- Eliminated Player's Items: **Delete**.
-- Environment Damage: **Off**.
-- Structure Damage: **None**.
-- Weapon Destruction: **None**.
-- Pickaxe Destruction: **None**.
-- Health Granted on Elimination: **50**.
-- Wood/Stone/Metal/Gold Granted on Elimination: **0**.
-- Max Trackers on HUD: **1**.
-- Show Elimination Feed: **Yes**.
+### Candidate gameplay objects
 
-This native configuration owns authoritative match end, timer fallback, respawn rules, JIP, ammo behavior, drop cleanup, destruction rules, and the 50-point health-then-shield elimination sustain.
+The currently frozen candidate architecture is:
+- Island Settings,
+- **19 × Player Spawn Pad**,
+- **1 × `TR_Eliminations` Tracker** for HUD only,
+- **1 × `IG_Armory` Item Granter** containing catalog weapons in stable index order,
+- **1 × `EM_Economy` Elimination Manager** used only as eliminator/eliminated event source,
+- **1 × `scrapline_armory_device` Verse device**.
 
-### `IG_Loadout`
+`IG_Armory` should grant exact selected items by registered index. `EM_Economy` must not drop reward items. `TR_Eliminations` must not increment manually or end the round.
 
-Register exactly three current Fortnite weapons in this order:
-1. shotgun-class,
-2. rifle-class,
-3. SMG- or sidearm-class.
+The old fixed `IG_Loadout` + direct Spawn Pad → Grant Item path is retired only after the Armory implementation validates.
 
-Set:
-- Enabled on Game Start: **Yes**.
-- Receiving Players: **Triggering Player**.
-- On Grant Action: **Clear Items**.
-- Grant: **All Items**.
-- Grant Condition: **Always**.
-- Equip Granted Item: **First Item**.
-- Drop Items at Player Location: **Never**.
+### Validation prerequisite
 
-Do not hard-code seasonal weapon asset IDs.
+Before this prompt may become executable, the accepted Armory implementation must:
+- compile with live Epic UEFN `ValkyrieToolset.VerseToolset.BuildAll` at zero diagnostics,
+- pass the opening-phase, rebuy, next-loadout, recovery, JIP, leave, duplicate-subscription, invalid-catalog, simultaneous-elimination, and 12/16-player tests in `ARMORY_ECONOMY_SPEC.md`,
+- document exact catalog Item Granter indexes and editor wiring,
+- preserve Island Settings as sole score/end authority.
 
-### `TR_Eliminations`
-
-Set:
-- Stat to Track: **Eliminations**.
-- Target Value: **30**.
-- Starting Value: **0**.
-- Valid Team: **Any**.
-- Assign on Game Start: **On**.
-- Assign When Joining in Progress: **On**.
-- Sharing: **Individual**.
-- Target Team: **Any**.
-- Target Class: **Any**.
-- When Target Is Reached: **Do Nothing**.
-- Show on HUD: **Detailed**.
-- Use Persistence: **Off**.
-
-The Tracker is HUD feedback only. Island Settings ends the round; do not create a second end-game path.
-
-### Direct event binding
-
-For **each of the 19 Player Spawn Pads**:
-- **On Player Spawned → IG_Loadout / Grant Item**.
-
-The spawning player is the instigator; `Receiving Players = Triggering Player` grants only that player's loadout.
-
-### Verse
-
-**Production custom Verse package: empty.**
-
-There are no `@editable` references and no Verse actor to place. The live Scrapline project was compiled through Epic UEFN MCP after removing the redundant local siphon candidate and returned **zero Verse diagnostics**.
-
-This is intentional. Native devices account for initial players, JIP, player leave, eliminations, HUD progress, win condition, sustain, loadout, and respawns without subscription/state cleanup risk.
-
-Verse must not own terrain, asset placement, spawn coordinates, environment layout, lighting, VFX, or any other environment-construction responsibility.
+The rejected UEFN Central five-file package remains comparison evidence only and must not be imported.
 
 ## Asset authority
 
@@ -365,8 +305,8 @@ The primary pass is complete only when:
 - verticality respects the catwalk/perch budget,
 - no unintended dominant Garage-roof or gantry-top position exists,
 - spawn devices remain distributed through the frozen regions,
-- basic loadout/gameflow is wired exactly as specified above,
-- live Verse build remains clean with no production custom Verse files,
+- gameplay/economy wiring matches the **live-validated** Armory/native package,
+- accepted Armory Verse code compiles with zero live UEFN diagnostics,
 - the level saves cleanly,
 - available health/dependency/material checks show no blocking errors.
 

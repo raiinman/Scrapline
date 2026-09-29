@@ -2,11 +2,11 @@
 
 ## Status
 
-**Baseline locked and gameplay integration validated for the first one-shot alpha.**
+**Feature Freeze v2 locked; Armory implementation validation pending.**
 
-These values are derived from the locked ~140 m × 140 m arena and 12-player density target. Testing may tune numbers later, but Astra should build the first playable version to this baseline rather than inventing new rules.
+These values are derived from the locked ~140 m × 140 m arena and 12-player density target. Testing may tune economy numbers later, but implementation must use the frozen alpha rules rather than inventing new mechanics.
 
-The first-alpha implementation is intentionally **native-device first**. No production custom Verse is required; see `VERSE_GAMEPLAY_INTEGRATION.md` for the exact validated settings and wiring. The completed UEFN Central comparison did not change this decision: its five-file generated package was marked **Not validated** and failed the lifecycle/authority audit recorded in `UEFN_CENTRAL_GENERATOR_RESULT.md`.
+The gameplay architecture is now **native-authority + narrow custom Armory Verse**. Island Settings remains authoritative for scoring, match end, spawning rules, health/shield, sustain, movement, destruction, and inventory cleanup. `ARMORY_ECONOMY_SPEC.md` authorizes custom Verse only for match-local Scrap, buy/sell UI, catalog/loadout state, Armory phase gating, JIP buy handling, loadout grants, and cleanup. The rejected UEFN Central five-file package remains evidence only.
 
 ## Match Structure
 
@@ -18,11 +18,13 @@ The first-alpha implementation is intentionally **native-device first**. No prod
 - Environment destruction: **Off where practical** so combat cover and routes remain stable.
 - Join in progress: **Allowed / Spawn**.
 - Round count: **1**.
-- Match time limit: **10 minutes**.
+- Native round time limit: **10 minutes 45 seconds**.
+- Opening Armory phase: **45 seconds**.
+- Intended combat window after the opening phase: approximately **10 minutes**.
 - Primary win condition: **first player to 30 eliminations**.
 - Time-limit fallback: **most eliminations** through the native Round Win Condition.
 
-Keep the alpha simple. Do not add teams, classes, objectives, economy, persistence, or progression systems.
+Keep the alpha focused. Do not add teams, objective modes, persistent wallets, permanent unlock trees, or progression systems.
 
 ## Player Baseline
 
@@ -50,35 +52,41 @@ Keep the alpha simple. Do not add teams, classes, objectives, economy, persisten
 - Use **19 placed Player Spawn Pad devices**, one per frozen candidate region.
 - Native spawn behavior owns actual selection. Do not write a custom spawn solver.
 - Exact pad transforms may move only inside the frozen region/local-fit tolerance unless a documented safety failure requires otherwise.
-- Players receive the full standard loadout on every initial spawn, respawn, and JIP spawn.
+- Players receive the committed Armory loadout for the current life.
 - Eliminated inventory is deleted and manual item dropping is disabled so dropped-item accumulation cannot build up.
+- Native spawn selection remains untouched; the Armory only reacts after a player has spawned.
 
-## Loadout
+## Armory / Loadout Economy
 
-Use one native Item Granter named `IG_Loadout`.
+`ARMORY_ECONOMY_SPEC.md` is authoritative for the full economy contract.
 
-Register exactly three current Fortnite weapons in order:
-1. one close-range shotgun-class weapon,
-2. one medium-range rifle-class weapon,
-3. one SMG- or sidearm-class weapon.
+Locked alpha summary:
+- currency: **Scrap**,
+- starting bank: **3,000**,
+- bank cap: **5,000**,
+- elimination reward: **+150**,
+- death recovery: **+1,500**, then **+1,750**, then **+2,000 cap** across consecutive deaths without an elimination,
+- any elimination resets that player's recovery tier,
+- 45-second global opening buy phase,
+- match-local currency only,
+- loadout purchase is for one life,
+- 100% refund while editing an uncommitted cart,
+- no refund after the life begins,
+- free fallback sidearm always available,
+- next-life loadout may be queued while alive,
+- JIP gets a protected first-buy opportunity.
 
-Do not hard-code seasonal weapon asset names in Verse or durable gameplay logic.
+Use one Item Granter named `IG_Armory` with catalog weapons registered in a stable order. Verse grants exact selections with the current Item Granter index API rather than hard-coding seasonal weapon asset IDs.
 
-`IG_Loadout`:
-- Receiving Players: **Triggering Player**.
-- On Grant Action: **Clear Items**.
-- Grant: **All Items**.
-- Grant Condition: **Always**.
-- Equip Granted Item: **First Item**.
-- Drop Items at Player Location: **Never**.
+The three alpha equipment slots are:
+1. Primary,
+2. Secondary,
+3. Sidearm.
 
-For every Player Spawn Pad, wire:
-**On Player Spawned → IG_Loadout / Grant Item**.
-
-Ammo:
+Ammo remains:
 - Infinite Reserve Ammo: **On**.
 - Infinite Magazine Ammo: **Off**.
-- Preserve normal magazine/reload behavior.
+- Preserve normal magazines and reloads.
 - No mobility consumables or healing inventory in the first alpha.
 
 ## Elimination Sustain
@@ -96,7 +104,7 @@ Do not add a siphon Verse device or restoration device for the baseline.
 Island Settings owns the authoritative win condition:
 - Eliminations to End: **30**.
 - Round Win Condition: **Eliminations**.
-- Time Limit: **10 minutes**.
+- Time Limit: **10 minutes 45 seconds total**, including the 45-second non-combat Armory phase.
 
 Use one Tracker named `TR_Eliminations` for HUD feedback:
 - Stat to Track: **Eliminations**.
@@ -116,55 +124,59 @@ The Tracker must not also end the round; that would create two competing end-gam
 
 The scoreboard should prioritize eliminations and deaths. Avoid custom animated UI for the alpha.
 
-## Native Device Set
+## Production Device Set
 
 Required:
 - Island Settings,
 - 19 × Player Spawn Pad,
-- 1 × Item Granter (`IG_Loadout`),
-- 1 × Tracker (`TR_Eliminations`).
+- 1 × Item Granter (`IG_Armory`) containing the active catalog in stable index order,
+- 1 × Tracker (`TR_Eliminations`),
+- 1 × Elimination Manager (`EM_Economy`) as an economy event source only,
+- 1 × Verse creative device (`scrapline_armory_device`).
 
-Not required:
+Not required for match authority:
 - End Game device,
-- Elimination Manager device,
-- HUD Message device,
-- Class Designer,
-- Team Settings & Inventory,
-- health/shield restoration device,
-- custom Verse creative_device.
+- Timer device,
+- custom Verse score manager,
+- health/shield restoration device.
 
 ## Verse Responsibilities
 
-**None for the locked first alpha.**
+Custom Verse is authorized **only** for the Armory/economy boundary frozen in `ARMORY_ECONOMY_SPEC.md`.
 
-The live Scrapline project compiler passes with no custom Verse files. This is deliberate, not an omission. Do not treat the quarantined UEFN Central generator files as implementation input; they are preserved only as comparison evidence.
+It may own:
+- match-local Scrap,
+- recovery tiers,
+- current/previous/queued loadout state,
+- catalog validation,
+- buy/sell/refund math,
+- Armory UI,
+- the 45-second opening buy gate,
+- JIP first-buy gating,
+- post-spawn loadout granting,
+- temporary legitimate shop stasis/visibility/vulnerability protection,
+- player UI/state cleanup on leave.
 
-Do not add Verse for:
+It must not own:
+- elimination score,
+- 30-elimination victory,
+- native match timeout/end,
+- spawn coordinates/selection,
 - elimination sustain,
-- score tracking,
-- match end,
-- JIP handling,
-- player-leave cleanup,
-- loadout granting,
-- spawn selection,
-- terrain,
-- asset placement,
-- spawn transforms,
-- lighting,
-- VFX,
-- asset discovery,
-- environment construction.
+- terrain or environment construction.
 
-Only reopen custom Verse after a specific playtest demonstrates a requirement that the validated native path cannot satisfy.
+The rejected UEFN Central five-file manager package remains quarantined and is not a starting point.
 
 ## Multiplayer Lifecycle
 
-The native setup accounts for multiplayer lifecycle without custom state:
-- game-start players receive the Tracker automatically,
-- JIP players spawn and receive the Tracker automatically,
-- every spawn event grants the fixed loadout to the spawning player,
-- departing players leave no Verse subscriptions/state/tasks to clean up,
-- duplicate event-subscription risk is zero.
+The Armory lifecycle must:
+- initialize all players already present when the Verse device begins,
+- subscribe once to playspace PlayerAddedEvent / PlayerRemovedEvent,
+- subscribe once to the 19 Player Spawn Pad SpawnedEvent sources,
+- use `EM_Economy` Eliminator/Eliminated events instead of per-character respawn-sensitive elimination subscriptions,
+- provide protected first-buy handling for JIP,
+- remove player UI and match-local economy/loadout state on leave,
+- prevent duplicate grants/rewards across repeated death, respawn, JIP, and UI-open cycles.
 
 ## Alpha Exclusions
 
@@ -178,8 +190,8 @@ Do not add these during the one-shot unless explicitly reopened later:
 - bosses,
 - vehicles as gameplay,
 - persistent stats,
+- persistent Scrap wallets or permanent weapon unlocks,
 - XP/accolade farming systems,
-- economy/currency,
 - custom matchmaking,
 - complex power-up rotations,
 - bespoke mobility mechanics.
@@ -194,7 +206,12 @@ After the primary construction pass:
 - Close-, medium-, and limited long-range combat all occur.
 - Spawn immunity does not become exploitable.
 - Native 50-point elimination sustain improves flow without making the leader effectively unkillable.
-- JIP players receive Tracker + loadout correctly.
-- Leaving players do not disturb active scoring/end conditions.
+- JIP players receive Tracker + protected first-buy + correct committed loadout.
+- Scrap charges/rewards happen exactly once and respect the 0–5,000 bounds.
+- Recovery tiers step 1,500 → 1,750 → 2,000 and reset after an elimination.
+- Rebuy and queued Next Loadout behave correctly across death/respawn.
+- The 45-second opening phase leaves approximately 10 minutes of combat.
+- Leaving players clean up Armory state without disturbing native scoring/end conditions.
+- No Armory event path can create a second score or end-game authority.
 
-Tune only after these observations exist; do not preemptively add complexity.
+Economy tuning should follow observation; architecture must remain data-driven rather than hard-coding seasonal weapon identities.

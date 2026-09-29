@@ -79,13 +79,13 @@ Default section order:
 - Before resuming Scrapline work in a new or continued session, refresh the current repository state from GitHub instead of relying on chat memory alone.
 - Treat the GitHub `main` branch as the durable source of truth for Scrapline planning/status documentation, and sync meaningful verified project-state changes back to the repository.
 - When the user requests another durable behavior change, record it here or in the relevant child AGENTS.md
-- Pre-build hold was lifted by the user on 2026-09-29 for gameplay integration, including the agreed authenticated-browser UEFN Central Project Generator experiment. That work is now complete: the generator result was marked **Not validated**, its five-file custom Verse architecture was rejected after audit, and the locked first-alpha package remains native Island Settings + 19 Player Spawn Pads + one Item Granter + one Tracker with no production custom Verse or `@editable` wiring. The post-generator contradiction/confusion closeout passes. The Astra one-shot construction pass is ready for handoff but remains gated until the user explicitly authorizes construction. Asset acquisition, synthetic image generation, bulk reserve import, and irreversible map construction remain closed unless separately authorized.
+- Feature Freeze v2 was opened by the user on 2026-09-29 before Astra construction to add the Scrapline Armory / match economy. The spatial/asset freeze remains intact. The previously validated native gameplay package is still the control for spawning, scoring, match end, sustain, movement, and destruction, but a narrowly scoped custom Verse layer is now authorized for match-local Scrap, buy/sell UI, adaptive next-life loadouts, catalog configuration, JIP buy gating, and economy cleanup. `docs/ARMORY_ECONOMY_SPEC.md` owns the frozen mechanic. Astra construction is blocked again until the Armory candidate passes live UEFN compile/lifecycle validation and the final contradiction/confusion audit returns to PASS. Asset acquisition, synthetic image generation, bulk reserve import, and irreversible map construction remain closed unless separately authorized.
 - Before approving the Astra one-shot handoff, run a contradiction/confusion audit and leave no meaningful macro-layout, major-anchor, route-network, verticality, or time-of-day decision for the implementation model to invent. `docs/SPATIAL_CONTRACT.md` is the placement authority for the frozen one-shot skeleton.
 
 ## Scrapline UEFN Execution Contract
 
 - This local UEFN project is the implementation workspace for Scrapline.
-- Before implementation, read this file, `docs/AGENTS.md`, `docs/PROJECT_BRIEF.md`, `docs/VERSE_GAMEPLAY_INTEGRATION.md`, `docs/SPATIAL_CONTRACT.md`, `docs/MAP_DESIGN.md`, `docs/TERRAIN_ENVIRONMENT_SPEC.md`, `docs/ENVIRONMENT_COMPOSITION_BOARD.md`, `docs/PHYSICAL_FIT_VERIFICATION.md`, `docs/GAMEPLAY_SPEC.md`, `docs/BUILD_READINESS.md`, `docs/FAB_LIBRARY_AUDIT.md`, `docs/ASSET_RECOVERY.md`, `docs/ASSET_MANIFEST.md`, `docs/ASSET_PIPELINE.md`, and `docs/TOOLING.md`.
+- Before implementation, read this file, `docs/AGENTS.md`, `docs/PROJECT_BRIEF.md`, `docs/ARMORY_ECONOMY_SPEC.md`, `docs/VERSE_GAMEPLAY_INTEGRATION.md`, `docs/SPATIAL_CONTRACT.md`, `docs/MAP_DESIGN.md`, `docs/TERRAIN_ENVIRONMENT_SPEC.md`, `docs/ENVIRONMENT_COMPOSITION_BOARD.md`, `docs/PHYSICAL_FIT_VERIFICATION.md`, `docs/GAMEPLAY_SPEC.md`, `docs/BUILD_READINESS.md`, `docs/FAB_LIBRARY_AUDIT.md`, `docs/ASSET_RECOVERY.md`, `docs/ASSET_MANIFEST.md`, `docs/ASSET_PIPELINE.md`, and `docs/TOOLING.md`.
 - Treat the approved Fab/library content as the environment construction kit. Inspect available assets before creating substitutes.
 - Do not build the visible environment from primitive cubes, blank greybox geometry, or newly modeled stand-ins when a suitable approved asset exists.
 - Terrain generation is allowed and expected. Use UEFN Landscape tools, generated heightmaps, splines, or other supported terrain workflows when appropriate.
@@ -100,4 +100,5 @@ Default section order:
 ## Child DOX Index
 
 - `docs/AGENTS.md` — owns durable design, asset, planning, and implementation-handoff documentation under `docs/`.
+- `verse/AGENTS.md` — owns reviewable custom Verse source mirrors synchronized from the live Scrapline UEFN project.
 - `README.md` remains governed by this root contract.
