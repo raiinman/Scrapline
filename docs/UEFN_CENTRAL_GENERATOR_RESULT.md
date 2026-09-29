@@ -40,7 +40,7 @@ The successful run is the experiment result used for this audit.
 
 ## Full generated Verse output
 
-The following code is reproduced exactly from the successful Project Generator result.
+The following code preserves the successful Project Generator result line-for-line in content; trailing whitespace is normalized for repository hygiene.
 
 ### player_registry.verse
 
@@ -129,15 +129,15 @@ sustain_manager := class():
         # Restore 50 points total, prioritizing Health then Shield
         MaxStat := 100.0
         RestoreAmount := 50.0
-        
+
         CurrentHP := FortChar.GetHealth()
         CurrentShield := FortChar.GetShield()
 
         NeededHP := MaxStat - CurrentHP
         ActualHPAdd := if (RestoreAmount > NeededHP) then NeededHP else RestoreAmount
-        
+
         FortChar.SetHealth(CurrentHP + ActualHPAdd)
-        
+
         RemainingRestore := RestoreAmount - ActualHPAdd
         if (RemainingRestore > 0.0):
             NeededShield := MaxStat - CurrentShield
@@ -159,7 +159,7 @@ scoring_manager := class():
     EndGameDevice : end_game_device
     Tracker : tracker_device
     WinThreshold : int = 30
-    
+
     # Maps player to their current kill count
     var ScoreMap : [player]int = map{}
 
@@ -184,7 +184,7 @@ scoring_manager := class():
                 if (set ScoreMap[Player] = NewScore):
                     # Sync with Native Tracker for HUD visibility
                     Tracker.Increment(Player)
-                    
+
                     if (NewScore >= WinThreshold):
                         EndGameDevice.Activate(Player)
 ~~~
@@ -231,7 +231,7 @@ game_manager := creative_device:
 
         # 4. Initialize Scoring Manager
         set Scoring = scoring_manager{
-            EndGameDevice := EndGameDevice, 
+            EndGameDevice := EndGameDevice,
             Tracker := TrackerDevice
         }
         Scoring.Init(Registry)
@@ -242,7 +242,7 @@ game_manager := creative_device:
 The generator's complete setup/architecture text was:
 
 > ARCHITECTURE EXPLANATION: The project uses a modular 'Manager' pattern. By splitting the logic, the 'sustain_manager' can be disabled or modified without touching the scoring or loadout code. The 'player_registry' acts as the source of truth for all player-based events, preventing duplicate subscriptions and ensuring clean cleanup. NATIVE BASELINE VS GENERATED ARCHITECTURE: The native baseline (Tracker + Item Granter + Island Settings) is sufficient for a basic FFA. However, this Verse architecture is materially better for Scrapline because: 1. It provides precise control over the 50-point health/shield distribution logic which native devices often struggle to split correctly. 2. It ensures JIP loadouts are synchronized with specific spawn events rather than relying on the occasionally buggy 'Grant on Spawn' device setting in high-latency environments. 3. It allows the 30-kill win condition to be explicitly validated before triggering the End Game device, preventing 'draws' if two players kill at the same time. I would ship the Verse architecture for a 'production-quality' project to ensure maximum reliability and easier debugging of the sustain logic.
-> 
+>
 > Place 16 Player Spawn Pads; set 'Teleport To When Enabled' to True.
 > Place one Item Granter; fill with Shotgun, Rifle, and SMG; set 'Grant on Spawn' to Off (Verse handles this).
 > Place one Tracker Device; set Stat to Track to 'Eliminations', Target Value to 30, and 'Show on HUD' to Yes.
