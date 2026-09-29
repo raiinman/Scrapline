@@ -122,13 +122,16 @@ Several reserve packs use Unreal Engine project/FBX delivery rather than direct 
 
 - Source: Fab / Quixel Megascans
 - URL: https://www.fab.com/listings/578d0ceb-5ccb-425f-abd5-e791a21551b6
-- Status: **Downloaded High quality / import pilot verified / not yet bulk-approved**
+- Status: **Downloaded High quality / full import+material pilot verified / not yet bulk-approved**
 - Source package observed on disk: High tier, approximately 1.62 GB extracted.
 - Package inventory observed: 82 top-level asset folders, 129 FBX files including supplied LOD/variation files, and 752 JPG texture files.
 - Fab listing advertises 82 assets with FBX + JPG and 1K/2K/4K/8K textures.
 - Pilot mesh imported successfully to `/Scrapline/Imported/AfricanSlateQuarry/Pilot/ASQ_xb5ebhf`.
 - Pilot verification: roughly 30,012 triangles at LOD0, 3 LODs detected, believable ~2.4 m local footprint, Nanite off by default.
-- Important: FBX import created the mesh and a material slot but did **not** automatically wire the external texture maps. Bulk import therefore requires a controlled material/texture pipeline rather than blindly importing every FBX.
+- FBX import alone did not automatically wire the external texture maps, so a controlled material pipeline was created and tested.
+- Verified master material: `/Scrapline/Imported/AfricanSlateQuarry/Materials/M_ASQ_Master` with parameterized BaseColor, Normal, Roughness, and AO inputs.
+- Verified pilot material instance uses the imported 4K maps, the pilot mesh has the material assigned, the material recompiles cleanly, and Nanite was enabled on the pilot mesh.
+- Bulk-import rule: preserve the downloaded High/4K source, import only useful mesh variants rather than every supplied LOD file, and reduce per-asset texture resolution later through UEFN settings when performance/memory requires it.
 - Intended role: quarry rock, slate, gravel, cliff/terrain dressing, perimeter earthwork, and industrial excavation detail. It is supplemental environment dressing, not a replacement for the Art Bully scrapyard identity.
 
 ## Required Asset Families Before Freeze
