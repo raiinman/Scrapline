@@ -9,6 +9,7 @@ Own durable design, asset, planning, and build-specification documentation for S
 This folder owns:
 - project briefs and design intent
 - approved asset records
+- asset-family coverage and intake-stop decisions
 - map-layout and combat-flow specifications
 - future one-shot build instructions and implementation handoff documents
 - build toolchain and editor-integration requirements
