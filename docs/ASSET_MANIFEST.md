@@ -2,13 +2,13 @@
 
 ## Status
 
-Asset research is substantially complete. The first referenced-content wave is now mounted in Scrapline and verified by the live editor, but the manifest is **not frozen** because the larger bulk Fab reserve has not yet been selectively added.
+Asset research is substantially complete. The first referenced-content wave and several modifiable Fab packs are now in Scrapline and verified by tooling, but the manifest is **not frozen** because the larger reserve/donor pool has not yet been selectively finalized.
 
 Only assets verified by the live Scrapline project may be treated as implementation-ready.
 
 ## Live Scrapline Asset Audit
 
-The live editor currently loads **15 enabled Fab reference files**. Fourteen are useful/planned Scrapline content references; one is an unrelated Old West pack that should remain out of the final visual palette.
+The project now contains **14 approved Fab reference files**. The previously mounted OldWest Vol. 6 reference was removed from the active project during housekeeping because it was outside the approved art direction.
 
 Verified mounted references:
 - Post-Apocalyptic Scrapyard Pack
@@ -25,9 +25,8 @@ Verified mounted references:
 - Industrial Junkyard Propane Tank
 - Mine Cart
 - Metal Manhole Cover
-- OldWest Vol. 6 — mounted but **not approved for Scrapline art direction**
 
-The clean project reopen completed with these references loading successfully and without LookoutTower. Native asset search confirms mounted production content from the Scrapyard, rubble, barricade, electrical, junkyard, mine-cart, and Old West references.
+A clean project reopen previously completed with the approved reference wave loading successfully and without LookoutTower. Native asset search confirms mounted production content from the Scrapyard, rubble, barricade, electrical, junkyard, and mine-cart references.
 
 ## Visual Authority
 
@@ -41,7 +40,7 @@ The clean project reopen completed with these references loading successfully an
 
 Everything else must visually belong beside this pack.
 
-## Rejected / Do Not Re-Add
+## Rejected / Removed from Active Project
 
 ### LookoutTower
 
@@ -51,6 +50,12 @@ Everything else must visually belong beside this pack.
 - Reason: adding the referenced content caused UEFN to load hundreds of GameFeature plugins, repeatedly rebuild Verse digests, consume large amounts of memory, and produce `GameFeaturePlugin.StateMachine.Canceled` failures.
 - Recovery: the `.uref` was removed from the Scrapline project and quarantined outside the project. The generated Verse/workspace cache was rebuilt cleanly.
 - Rule: **Do not add LookoutTower back to Scrapline unless its packaging changes and it is explicitly re-tested in an isolated project first.**
+
+### OldWest Vol. 6
+
+- Status: **Removed from active Scrapline reference set / quarantined outside the project**
+- Reason: not required by the locked visual direction and generated substantial Content Browser alias noise.
+- Rule: only restore it if a specific generic industrial asset is proven necessary and cannot be sourced from the approved pool.
 
 ## Mounted Easy-Import Wave
 
@@ -115,6 +120,18 @@ Debris / dressing / signage:
 - London Street Props (Free)
 
 Several reserve packs use Unreal Engine project/FBX delivery rather than direct UEFN referenced content. They remain optional reserves: add only the bulk packs that import cleanly and fill a real gap in vehicles, machinery, architecture, pipes, signage, or debris.
+
+## Local Modifiable Fab Content
+
+The following packs are physically present under `Content/Fab` and were confirmed by the project asset sweep:
+
+- Abandoned Junk Car — 9 project files, about 57.9 MB.
+- Gas Cylinder 03 / Propane Tank — 5 project files, about 308.6 MB.
+- Industrial Rubble — 5 project files, about 4.9 MB.
+- Rubble Pack — 5 project files, about 6.3 MB.
+- Warehouse Essentials Pack — 21 project files, about 52.7 MB.
+
+The live project-only sweep currently sees 58 assets total. Several production assets are marked `likely_unused` because construction has not started; do not treat that as permission to delete them before the one-shot.
 
 ## FBX Import Pilot
 
