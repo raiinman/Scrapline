@@ -2,15 +2,34 @@
 
 ## Status
 
-Asset research is substantially complete. The full Fab library audit now covers all 160 owned products, the first referenced-content wave and several modifiable Fab packs are in Scrapline, and African Slate Quarry is curated. The manifest is **not frozen** until the final owned-library staging wave in `FAB_LIBRARY_AUDIT.md` is selectively brought into the project and verified.
+**FROZEN FOR ONE-SHOT — 2026-09-29**
 
-Only assets verified by the live Scrapline project may be treated as implementation-ready.
+The live UEFN project now satisfies every required production-asset family in `ASSET_GAP_MATRIX.md`. The final donor curation wave was verified through the live UEFN Asset Registry / Power Tools bridge.
 
-## Live Scrapline Asset Audit
+Do not resume broad asset acquisition before the one-shot. Add or replace content only if implementation proves a specific frozen asset is unusable.
 
-The project now contains **14 approved Fab reference files**. The previously mounted OldWest Vol. 6 reference was removed from the active project during housekeeping because it was outside the approved art direction.
+## Final Live Verification
 
-Verified mounted references:
+Latest live UEFN checks:
+
+- Scrapline project opens successfully.
+- Map Check: **0 errors / 0 warnings**.
+- Power Tools Project Health: **0 errors / 3 warnings**.
+- The 3 health warnings are pre-existing oversized Gas Cylinder / Propane Tank textures; they are not failures in the new curated imports.
+- Health scan saw approximately **504 project files / 2.60 GB**.
+- Representative new assets were loaded individually inside UEFN with no unreadable properties/errors:
+  - Factory crane
+  - Factory forklift
+  - Vehicle box truck
+  - Vehicle campervan
+  - Garage workbench
+  - Industrial pipe valve
+  - Warning-sign material instance
+
+## Mounted Referenced Content
+
+The project contains **14 approved Fab reference files**:
+
 - Post-Apocalyptic Scrapyard Pack
 - Deserted: Domination Props
 - Deserted: Domination VFX
@@ -26,7 +45,7 @@ Verified mounted references:
 - Mine Cart
 - Metal Manhole Cover
 
-A clean project reopen previously completed with the approved reference wave loading successfully and without LookoutTower. Native asset search confirms mounted production content from the Scrapyard, rubble, barricade, electrical, junkyard, and mine-cart references.
+The previously mounted OldWest Vol. 6 reference remains outside the active project.
 
 ## Visual Authority
 
@@ -34,184 +53,223 @@ A clean project reopen previously completed with the approved reference wave loa
 
 - Source: Fab
 - URL: https://www.fab.com/listings/c584020d-fcae-453d-b496-fce46d90c97b
-- Status: **Approved / mounted and verified in Scrapline**
-- Role: primary environment kit
-- Intended use: scrapyard architecture, rusted industrial structures, cover, elevation pieces, junkyard dressing, and large visual anchors.
+- Status: **Approved / mounted / verified**
+- Role: primary visual authority, scrapyard architecture, rusted structures, cover, elevation, junkyard dressing, and large visual anchors.
 
 Everything else must visually belong beside this pack.
 
-## Rejected / Removed from Active Project
+## Frozen Curated Donor Content
 
-### LookoutTower
+### Factory Environment Collection
 
-- Verse path: `/tj_v@fortnite.com/LookoutTower`
-- Project reference previously created: `References/LookoutTower_de8fd42e20af5226830d2090e3182367.uref`
-- Status: **Rejected / removed from Scrapline**
-- Reason: adding the referenced content caused UEFN to load hundreds of GameFeature plugins, repeatedly rebuild Verse digests, consume large amounts of memory, and produce `GameFeaturePlugin.StateMachine.Canceled` failures.
-- Recovery: the `.uref` was removed from the Scrapline project and quarantined outside the project. The generated Verse/workspace cache was rebuilt cleanly.
-- Rule: **Do not add LookoutTower back to Scrapline unless its packaging changes and it is explicitly re-tested in an isolated project first.**
+- Source: Fab
+- URL: https://www.fab.com/listings/2ee66462-8c2b-4303-892c-83f7fc0d9b3e
+- Status: **Approved / selectively migrated / live-verified**
+- Live namespace: `/Scrapline/Imported/FactoryCurated/`
+- Live inventory: **121 assets total / 14 StaticMeshes**
+- Approximate live footprint: **604 MB**
 
-### OldWest Vol. 6
+Approved static meshes:
+- `Meshes/Crane/SM_Crane01`
+- `Meshes/Crane/SM_CraneCabin01`
+- `Meshes/Crane/SM_CraneCable01`
+- `Meshes/SM_RecyclingMachine01`
+- `Meshes/SM_EngineWithContainer`
+- `Meshes/SM_ForkLift`
+- `Meshes/SM_AssemblyLine01`
+- `Meshes/SM_AssemblyLine02`
+- `Meshes/SM_AssemblyLineControl01`
+- `Meshes/SM_AssemblyLineTable01`
+- `Meshes/SM_Container01_01`
+- `Meshes/SM_Container01_02`
+- `Meshes/SM_ElectricalPanel_01`
+- `Meshes/SM_ElectricalSupply_Switchboard01`
 
-- Status: **Removed from active Scrapline reference set / quarantined outside the project**
-- Reason: not required by the locked visual direction and generated substantial Content Browser alias noise.
-- Rule: only restore it if a specific generic industrial asset is proven necessary and cannot be sourced from the approved pool.
+Roles:
+- Machinery / Power Yard
+- Loading Yard
+- central industrial landmark
+- electrical/infrastructure dressing
+- hard-cover machinery silhouettes
 
-## Mounted Easy-Import Wave
+### Hero Landmark — Frozen
 
-The original direct/easy-import queue is complete. All planned items from that wave are mounted in the live Scrapline project and load successfully.
+Primary central landmark:
+`/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_Crane01`
 
-This gives the one-shot immediate access to:
-- the full Art Bully scrapyard visual family,
-- barriers and fencing,
-- rubble and broken concrete,
-- industrial junkyard details,
-- electrical/utility dressing,
-- mine/salvage props,
-- two VFX families,
-- Deserted industrial props.
+Compose it with the verified cabin/cable pieces and surrounding scrap/industrial cover. It must not become an uncontested full-map perch.
 
-Do not add more individual one-off Fab assets unless a specific design gap remains after the bulk reserve is evaluated.
+Secondary hero/support anchors:
+- `SM_RecyclingMachine01`
+- `SM_EngineWithContainer`
 
-## Claimed Fab Reserve Pool
+### Vehicle Variety Pack Volume 2
 
-The user explicitly confirmed adding the following larger free/bulk Fab packs to the Fab Library. These are **owned/claimed**, not yet all mounted in Scrapline.
+- Source: Fab
+- URL: https://www.fab.com/listings/591e3b3f-9d49-4cd2-8e28-d471c1a10cab
+- Status: **Approved / selectively migrated / live-verified**
+- Live namespace: `/Scrapline/Imported/VehicleVarietyV2Curated/`
+- Live inventory: **71 assets total / 2 StaticMeshes**
 
-High-value reserve:
-- Junkyard — 96-asset Quixel junkyard collection
-- Factory Environment Collection
-- Factory Pack Vol. 1
-- City Street Props
-- Modular Industrial Pipe Set
-- City Sample Buildings
-- City Sample Vehicles
-- Quixel Warehouse
-- Garage
-- Unfinished Building
-- Old Mine
-- Derelict Corridor Megascans Sample
+Approved vehicle silhouettes:
+- `Meshes/SM_BoxTruck_01a`
+- `Meshes/SM_Campervan_01a`
 
-Vehicles:
-- Abandoned & Junk Car
-- Doomsday Pickup Truck
-- Vehicle Variety Pack
-- Vehicle Variety Pack Volume 2
-- City Sample Vehicles
+Use as static wreck/vehicle forms unless implementation has a specific reason to preserve vehicle behavior. They supplement the already-live Abandoned Junk Car.
 
-Industrial / construction / warehouse:
-- Wasteland Props — Free Pack
-- Industry Props Pack 6
-- Street Props Pack Vol. 1
-- Street Props Pack Vol. 2
-- Mega Street Props Pack
-- Construction Site VOL. 1 — Supply and Material Props
-- Construction Site VOL. 2 — Tools, Parts, and Machine Props
-- Free Sample Warehouse & Storage Vol. 01
-- Warehouse Essentials Pack
-- Power Generator
-- FREE Post Apocalypse Survivor Environment Kitbash Set
+### Garage
 
-Debris / dressing / signage:
-- Warning Signs Decals Vol. 1
-- Rubble Pack
+- Source: Fab
+- URL: https://www.fab.com/listings/b225b181-1eae-4df5-ad7c-4d49eeb7a6e8
+- Status: **Approved / selectively migrated / live-verified**
+- Live namespace: `/Scrapline/Imported/GarageSource/`
+- Live inventory: **61 assets total / 12 StaticMeshes**
+
+Approved meshes:
+- `Meshes/SM_Garage_1`
+- `Meshes/SM_Garage_1_roof`
+- `Meshes/SM_Workbench`
+- `Meshes/SM_Shelf`
+- `Meshes/SM_Shelf_1`
+- `Meshes/SM_Cart`
+- `Meshes/SM_Pallet`
+- `Meshes/SM_Stairs`
+- `Meshes/SM_Railings`
+- `Meshes/SM_Illuminator`
+- `Meshes/SM_Ventilation`
+- `Meshes/SM_Wheel`
+
+Role: Ruined Workshop structure, repair/workbench dressing, shelving, traversal pieces, and workshop identity.
+
+The donor's bundled ThirdPerson demo/gameplay content is explicitly **not approved** and was not migrated.
+
+### Modular Industrial Pipe Set
+
+- Source: Fab
+- URL: https://www.fab.com/listings/bc2c6167-f00a-4564-9b9e-98f599fa6a65
+- Status: **Approved / curated system migrated / live-verified**
+- Live namespace: `/Scrapline/Imported/IndustrialPipesSource/`
+- Live inventory: **32 assets total / 28 StaticMeshes**
+
+Use the model family as the frozen modular pipe vocabulary: straight lengths, turns, T-joints, connectors, valves, and bracing.
+
+Role: Machinery / Power Yard, service infrastructure, lane framing, sightline breakup, and visual overlap between districts.
+
+### Warning Signs Decals Vol. 1
+
+- Source: Fab
+- URL: https://www.fab.com/listings/8064dbb6-85f3-4ec1-8390-7c8eb8f4cd96
+- Status: **Approved / selectively migrated / live-verified**
+- Live namespace: `/Scrapline/Imported/WarningSignsSource/`
+- Live inventory: **52 assets total / 12 selected MaterialInstanceConstants**
+
+Approved decal instances:
+- `MI_WarningSign_V1_11`
+- `MI_WarningSign_V1_12`
+- `MI_WarningSign_V1_14`
+- `MI_WarningSign_V1_30`
+- `MI_WarningSign_V1_31`
+- `MI_WarningSign_V1_34`
+- `MI_WarningSign_V1_35`
+- `MI_WarningSign_V1_36`
+- `MI_WarningSign_V1_37`
+- `MI_WarningSign_V1_40`
+- `MI_WarningSign_V1_51`
+- `MI_WarningSign_V1_54`
+
+Selection rule: industrial hazard, toxic/biohazard/radiation/explosion, directional, and crash language only. The novelty filler from the 60-decal donor set is not part of the one-shot pool.
+
+## Existing Local Modifiable Fab Content
+
+Verified under `Content/Fab`:
+
+- Abandoned Junk Car
+- Gas Cylinder 03 / Propane Tank
 - Industrial Rubble
-- Urban Garbage and Debris
-- Gas Cylinder 03 — Propane Tank
-- London Street Props (Free)
+- Rubble Pack
+- Warehouse Essentials Pack
 
-Several reserve packs use Unreal Engine project/FBX delivery rather than direct UEFN referenced content. They remain optional reserves: add only the bulk packs that import cleanly and fill a real gap in vehicles, machinery, architecture, pipes, signage, or debris.
+These remain approved production content. The oversized propane source textures are the only current Project Health warnings.
 
-## Local Modifiable Fab Content
-
-The following packs are physically present under `Content/Fab` and were confirmed by the project asset sweep:
-
-- Abandoned Junk Car — 9 project files, about 57.9 MB.
-- Gas Cylinder 03 / Propane Tank — 5 project files, about 308.6 MB.
-- Industrial Rubble — 5 project files, about 4.9 MB.
-- Rubble Pack — 5 project files, about 6.3 MB.
-- Warehouse Essentials Pack — 21 project files, about 52.7 MB.
-
-The live project-only sweep currently sees 58 assets total. Several production assets are marked `likely_unused` because construction has not started; do not treat that as permission to delete them before the one-shot.
-
-## Curated FBX Content
-
-### African Slate Quarry
+## African Slate Quarry
 
 - Source: Fab / Quixel Megascans
 - URL: https://www.fab.com/listings/578d0ceb-5ccb-425f-abd5-e791a21551b6
-- Status: **High-quality source preserved / 18-asset production subset imported and verified**
-- Source package: approximately 1.62 GB extracted, 82 source asset folders, 129 FBX files including supplied variations/LODs, and 752 JPG textures.
-- Production destination: `/Scrapline/Imported/AfricanSlateQuarry/Curated/`.
-- Imported production content: **18 meshes + 18 material instances + 72 selected 4K texture maps**.
-- Curated project footprint: approximately **155.7 MB**.
-- Every curated mesh uses the verified `M_ASQ_Master` BaseColor/Normal/Roughness/AO material workflow.
-- All 18 meshes were individually verified with a material slot, all four texture parameters populated, and Nanite enabled.
-- Conservative convex collision was generated for the curated meshes.
-- Temporary selection-scan and pilot assets were deleted after verification.
-- The High/4K Fab source remains outside Scrapline so shipping resolution can be reduced later without losing source quality.
+- Status: **Approved / curated / verified**
+- Live destination: `/Scrapline/Imported/AfricanSlateQuarry/Curated/`
+- Production content: **18 meshes + 18 material instances + 72 selected 4K texture maps**
+- Approximate footprint: **155.7 MB**
+- Every curated mesh uses the verified `M_ASQ_Master` material workflow.
+- All 18 meshes were individually verified; Nanite and conservative collision were configured.
 
-Curated roles:
+Roles:
+- perimeter earthwork
+- quarry cuts
+- drainage/service-road transitions
+- sightline termination
+- restrained natural breakup
 
-**Ground / gravel / low breakup**
-- `ASQ_xb5ebhf`
-- `ASQ_xb5gfgm`
-- `ASQ_xbnhajp`
-- `ASQ_xbtefbk`
-- `ASQ_xbtgah3`
+## Required Family Coverage
 
-**Medium boulders / slate / fractured rock**
-- `ASQ_xb5gbjo`
-- `ASQ_xbkgcc1`
-- `ASQ_xbkgdbu`
-- `ASQ_xbkndhe`
-- `ASQ_xblhegj`
-- `ASQ_xbrgfjp`
-- `ASQ_xckjajs`
+The frozen pool now has verified choices for:
 
-**Large ledges / cliffs / vertical rock**
-- `ASQ_xbnjbc3`
-- `ASQ_xbrdfck`
-- `ASQ_xcdeajb`
-- `ASQ_xcghcfe`
-- `ASQ_xckifaf`
-- `ASQ_xckjagi`
+- rusty scrapyard architecture
+- wreck / vehicle forms
+- fencing / hard barriers
+- containers / loading props
+- workshop structures and dressing
+- heavy machinery / power infrastructure
+- modular industrial pipes
+- concrete / rubble
+- utility / electrical props
+- industrial signage / decals
+- ambient VFX
+- terrain/perimeter rocks
+- central hero landmark
 
-Intended use: perimeter earthwork, quarry cuts, drainage/service-road transitions, industrial excavation dressing, sightline termination, and selective natural breakup around the scrapyard. These assets supplement the Art Bully visual authority; they do not redefine Scrapline as a wilderness map.
+No required category remains weak.
 
-## Required Asset Families Before Freeze
+## Reserves — Do Not Add Before One-Shot
 
-The one-shot needs enough verified in-project choices for:
+These are owned/recovered/on disk but are now **reserve only** because the intake stop rule has fired:
 
-- primary rusty scrapyard architecture,
-- wrecks / vehicle forms,
-- fencing and barriers,
-- containers / loading-yard props,
-- heavy machinery / power infrastructure,
-- concrete/rubble,
-- utility/electrical props,
-- signage/detail,
-- restrained ambient VFX,
-- one strong industrial centerpiece class.
+- Junkyard
+- Construction Site Vol. 1 / Vol. 2
+- City Street Props
+- Wasteland Props
+- MW Landscape Auto Material
+- Dark Ruins
+- Derelict Corridor
+- Unfinished Building
+- Old Mine
+- Post Apocalypse Survivor Kitbash
+- additional vehicle packs
+- City Sample Buildings / Vehicles
+- Soul: City / Cave and unrelated large environment packs
 
-The exact hero asset remains unlocked until the live asset inventory can compare real candidates.
+Do not import them merely because they are available.
 
-## Freeze Procedure
+## Rejected / Removed
 
-Before the Codex one-shot:
+### LookoutTower
 
-1. Keep the mounted easy-import wave intact and do not re-add LookoutTower.
-2. Evaluate the live mounted pool against the required asset families.
-3. Add only the highest-value bulk reserve packs needed to fill weak families.
-4. Re-run live asset inventory after each bulk addition.
-5. Confirm usable asset families and their actual project-visible asset paths.
-6. Select the central hero landmark from assets actually present.
-7. Mark this manifest **Frozen for One-Shot**.
+Status: **Rejected / blacklisted.**
+
+It previously caused severe GameFeature/Verse loading thrash and was removed from Scrapline. Do not re-add without isolated re-testing after a packaging change.
+
+### OldWest Vol. 6
+
+Status: **Removed / quarantined.**
+
+It does not belong to the locked art direction and generated unnecessary Content Browser noise.
 
 ## Hard Rule
 
 Codex must not silently replace a missing environment family with visible primitive geometry.
 
-If a required production asset is absent, it must either:
-- select another verified production asset already present,
-- use a built-in Fortnite/UEFN production asset that fits the style,
-- or report the specific missing dependency rather than fabricating a greybox substitute.
+If a frozen production asset cannot be used, Codex must:
+- choose another verified production asset from this manifest,
+- use a suitable built-in Fortnite/UEFN production asset,
+- or report the exact dependency/problem.
+
+Do not restart asset hunting during the primary one-shot build.
