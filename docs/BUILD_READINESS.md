@@ -4,7 +4,7 @@
 
 Scrapline is in **final pre-build preparation**.
 
-The map design, gameplay baseline, terrain specification, toolchain, and first production-asset wave are established. The remaining work is asset curation/freeze, Verse generation, and the final Codex one-shot handoff.
+The map design, gameplay baseline, terrain specification, toolchain, and first production-asset wave are established. The priority UE-only Fab retry wave has now completed successfully. The remaining work is selective asset curation/migration, live-project verification/freeze, Verse generation, and the final Codex one-shot handoff.
 
 ## Ready
 
@@ -24,10 +24,11 @@ The map design, gameplay baseline, terrain specification, toolchain, and first p
 - Scrapline terrain heightmap v1 is generated and staged under `Resources/Terrain/` for import review.
 - LookoutTower has been removed and blacklisted.
 - Generated Python cache and the obsolete pilot import material have been cleaned up.
+- The repaired UE 5.6 ScrapStage56 receiver successfully completed the priority retry wave for MW Landscape, Modular Industrial Pipes, Warning Signs, Garage, and City Street Props.
 
 ## Current Local Modifiable Asset Packs
 
-Verified under `Content/Fab`:
+Verified under `Content/Fab` in the live Scrapline project:
 
 - Abandoned Junk Car — 9 project files, about 57.9 MB.
 - Gas Cylinder 03 / Propane Tank — 5 project files, about 308.6 MB.
@@ -37,16 +38,32 @@ Verified under `Content/Fab`:
 
 Before Quarry curation, Power Tools saw 58 project assets. After curation, the project contains **166 Content .uasset files / about 586.2 MB of Content**. A full post-curation Power Tools asset sweep exceeded the bridge's 30-second response window, so final verification used targeted live checks for all 18 Quarry meshes plus filesystem/package counts. Several production assets may still appear unused until level construction begins; that is not a cleanup signal.
 
+## ScrapStage56 Intake State
+
+The repaired staging receiver currently contains approximately **13.54 GB / 1,956 uassets** across these verified families:
+
+- Wasteland Props — 268 uassets.
+- MW Landscape Auto Material — 97 uassets.
+- Modular Industrial Pipe Set — 42 uassets.
+- Warning Signs Decals Vol. 1 — 243 uassets.
+- Garage — 557 uassets.
+- City Street Props — 749 uassets.
+
+These assets are **staged donors**, not automatically approved live Scrapline content. Only selectively migrated and verified assets count toward the final manifest.
+
+C: had approximately **33.25 GB free** at the latest verification. Avoid additional bulk UE-only downloads until the staged material has been curated and temporary bulk content can be cleared.
+
 ## In Progress
 
 - Full Fab library audit complete: 160 owned products / 77 3D.
-- Asset recovery pass complete for the stalled intake wave: Wasteland is recovered as a UE donor, Construction Site Vol. 1/2 source is extracted, and `ScrapStage56` is repaired as a local one-pack-at-a-time staging project.
-- Final staging wave is defined in `FAB_LIBRARY_AUDIT.md`; manifest-only UE products are tracked in `ASSET_RECOVERY.md` and must not be counted as downloaded until real payload files exist.
+- Recovery work is complete for the original stalled intake wave.
+- Final curation remains for the highest-value donor/source pools: Junkyard, Factory Environment Collection, recovered Construction Site Vol. 2, Wasteland Props, Vehicle Variety Pack Volume 2, Garage, Industrial Pipes, Warning Signs, and selective City Street Props.
+- The live Scrapline project still needs a final project-visible asset scan after curation.
 
 ## Remaining Build Gates
 
-1. Fill any weak asset families: vehicles/wrecks, heavy machinery/power, loading/warehouse architecture, pipes, signage, and hero landmark candidates.
-2. Re-scan the final project-visible asset pool.
+1. Curate/migrate the strongest pieces needed for vehicles/wrecks, heavy machinery/power, loading/warehouse architecture, pipes, signage, workshop dressing, and hero-landmark candidates.
+2. Re-scan the final live Scrapline project-visible asset pool.
 3. Select the central hero landmark.
 4. Mark `ASSET_MANIFEST.md` **Frozen for One-Shot**.
 5. Run the prepared UEFN Central Project Generator prompt.
@@ -68,21 +85,18 @@ Before Quarry curation, Power Tools saw 58 project assets. After curation, the p
 
 ## Immediate Next Step
 
-Run the **final staging wave** from `FAB_LIBRARY_AUDIT.md` rather than continuing broad asset hunting.
+**Stop broad Fab downloading and curate what is already real on disk.**
 
-Start with the highest-leverage content that is already real on disk:
-1. Junkyard.
-2. Factory Environment Collection.
-3. Recovered Construction Site VOL. 2 FBX source.
-4. Wasteland Props recovered donor.
-5. Vehicle Variety Pack Volume 2.
-6. Selective Unfinished Building / Old Mine / Dark Ruins / Derelict Corridor / Post Apocalypse Kitbash sources.
+Highest-leverage curation order:
+1. Factory Environment Collection — machinery/crane/hero candidates.
+2. Junkyard — salvage/wreckage expansion.
+3. Garage — workshop/service-area dressing.
+4. Recovered Construction Site VOL. 2 — tools, ladders, benches, machine props.
+5. Modular Industrial Pipe Set — coherent pipe vocabulary.
+6. Warning Signs Decals — authored signage polish.
+7. Wasteland Props — rusty filler and small industrial dressing.
+8. Vehicle Variety Pack Volume 2 — select only the strongest wreck/vehicle silhouettes.
+9. City Street Props — cherry-pick utility/sign/barrier pieces; do not migrate all 749 assets.
+10. Selective Unfinished Building / Old Mine / Dark Ruins / Derelict Corridor / Post Apocalypse Kitbash sources.
 
-After Epic Online Services is stable, retry only the missing UE-only payloads through `ScrapStage56` one pack at a time:
-7. MW Landscape Auto Material.
-8. Modular Industrial Pipe Set.
-9. Warning Signs Decals Vol. 1.
-10. Garage.
-11. City Street Props only if the live gap still justifies its size.
-
-Then re-scan live UEFN, select the hero landmark, freeze the manifest, and stop asset acquisition.
+After that, re-scan live UEFN, select the hero landmark, freeze the manifest, and stop asset acquisition.
