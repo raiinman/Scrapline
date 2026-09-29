@@ -14,6 +14,7 @@ This folder owns:
 - build toolchain and editor-integration requirements
 - asset intake / donor-project workflow documentation
 - one-shot readiness and build-gate status
+- blocked/final implementation handoff prompt documentation
 
 The root `AGENTS.md` owns repository-wide rules.
 
