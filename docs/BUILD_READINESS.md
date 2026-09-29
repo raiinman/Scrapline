@@ -20,7 +20,7 @@ The map design, gameplay baseline, terrain specification, toolchain, and first p
 - First-alpha FFA gameplay baseline is locked.
 - 14 approved Fab referenced-content items are present in the project reference set.
 - Direct/modifiable Fab content is present under `Content/Fab`.
-- African Slate Quarry High-quality source is downloaded and the full FBX + material pilot pipeline is verified.
+- African Slate Quarry High-quality source is preserved and an 18-mesh / 18-material / 72-texture curated production subset is imported and individually verified.
 - Scrapline terrain heightmap v1 is generated and staged under `Resources/Terrain/` for import review.
 - LookoutTower has been removed and blacklisted.
 - Generated Python cache and the obsolete pilot import material have been cleaned up.
@@ -35,14 +35,12 @@ Verified under `Content/Fab`:
 - Rubble Pack — 5 project files, about 6.3 MB.
 - Warehouse Essentials Pack — 21 project files, about 52.7 MB.
 
-Power Tools currently sees 58 project assets. Several are reported as `likely_unused` only because the level has not been built yet; that is not a cleanup signal at this stage.
+Before Quarry curation, Power Tools saw 58 project assets. After curation, the project contains **166 Content .uasset files / about 586.2 MB of Content**. A full post-curation Power Tools asset sweep exceeded the bridge's 30-second response window, so final verification used targeted live checks for all 18 Quarry meshes plus filesystem/package counts. Several production assets may still appear unused until level construction begins; that is not a cleanup signal.
 
 ## In Progress
 
-- Unreal Engine 5.6 installation for older Fab donor projects.
-- Dark Ruins Megascans Sample donor-project creation.
+- Dark Ruins Megascans Sample download / donor-project creation.
 - Selective evaluation of the remaining Fab reserve pool using `ASSET_GAP_MATRIX.md`; current priority is heavy machinery/power, pipes, one more vehicle family, signage, and hero landmark.
-- Bulk selection/import of useful African Slate Quarry assets.
 
 ## Remaining Build Gates
 
