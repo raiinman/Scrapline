@@ -6,7 +6,7 @@
 
 These values are derived from the locked ~140 m × 140 m arena and 12-player density target. Testing may tune numbers later, but Astra should build the first playable version to this baseline rather than inventing new rules.
 
-The first-alpha implementation is intentionally **native-device first**. No production custom Verse is required; see `VERSE_GAMEPLAY_INTEGRATION.md` for the exact validated settings and wiring.
+The first-alpha implementation is intentionally **native-device first**. No production custom Verse is required; see `VERSE_GAMEPLAY_INTEGRATION.md` for the exact validated settings and wiring. The completed UEFN Central comparison did not change this decision: its five-file generated package was marked **Not validated** and failed the lifecycle/authority audit recorded in `UEFN_CENTRAL_GENERATOR_RESULT.md`.
 
 ## Match Structure
 
@@ -137,7 +137,7 @@ Not required:
 
 **None for the locked first alpha.**
 
-The live Scrapline project compiler passes with no custom Verse files. This is deliberate, not an omission.
+The live Scrapline project compiler passes with no custom Verse files. This is deliberate, not an omission. Do not treat the quarantined UEFN Central generator files as implementation input; they are preserved only as comparison evidence.
 
 Do not add Verse for:
 - elimination sustain,
