@@ -28,6 +28,8 @@ The root `AGENTS.md` owns repository-wide rules.
 - The final one-shot build specification must use the frozen asset manifest rather than silently inventing replacement geometry.
 - Keep implementation-facing instructions concrete enough that another agent can execute without reconstructing prior chat context.
 - The approved one-shot toolchain is documented in `TOOLING.md`; do not silently replace or remove an installed integration.
+- `SPATIAL_CONTRACT.md` is the implementation authority for macro layout, major anchor placement/orientation, route connectivity, verticality limits, spawn-region distribution, and lighting concept. Softer older prose must not override it.
+- Before final one-shot approval, run the Astra confusion audit and remove or narrow stale wording that asks the implementation model to re-select a frozen design decision.
 
 ## Work Guidance
 
