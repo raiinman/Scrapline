@@ -31,4 +31,5 @@ The macro map design, terrain specification, first-alpha gameplay baseline, and 
 - `docs/TOOLING.md` — approved Codex/UEFN build toolchain and activation checklist
 - `docs/ASSET_PIPELINE.md` — referenced/FBX/donor-project intake workflow and safety rules
 - `docs/BUILD_READINESS.md` — current build gates and one-shot readiness snapshot
+- `docs/ONE_SHOT_PROMPT_DRAFT.md` — blocked Codex handoff draft; finalize only after asset/Verse freeze
 - `AGENTS.md` — repository-wide DOX contract
