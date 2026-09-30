@@ -12,9 +12,9 @@ All studies in this pass are grounded in one of:
 
 Synthetic image generation is excluded.
 
-## Local visual archive
+## GitHub-backed visual authority
 
-The working visual archive is under `Resources/Reference/RealAssets/` in the current Scrapline output workspace.
+The curated one-shot visual authority is committed to GitHub under `Resources/Reference/RealAssets/` and is available after refreshing the active branch. A larger raw staging archive still exists locally, but Sol does not need that redundant source evidence for the build.
 
 Key boards:
 - `04_REAL_selected_warning_signs_contact_sheet.jpg`
@@ -27,6 +27,8 @@ Key boards:
 - `15_REAL_grounded_Scrapline_concept_board_v2.jpg`
 
 The four district composition studies live under `Resources/Reference/RealAssets/CompositionStudies/`.
+
+**Mandatory execution rule:** GPT-6.1 Sol must actually open the committed mandatory boards/contact sheets and all four composition studies before terrain or major-anchor placement. Reading this document or the image filenames does not satisfy the visual preflight. The studies guide visual massing, silhouette, material/color language, clutter density, and district identity; `SPATIAL_CONTRACT.md` remains authoritative for exact layout/coordinates.
 
 ## Verified visual findings
 
@@ -103,4 +105,4 @@ The asset-visual question and physical-fit question are both closed.
 
 Read-only live UEFN measurements verified the chosen Factory crane assembly, Garage assembly, Box Truck, Campervan, Factory containers, and representative metal/wooden Scrapyard catwalk modules. Curated imported meshes matched the UE 5.6 staging measurements exactly, so no migration scale drift was found. The full measurements, collision counts, LOD/Nanite notes, gameplay implications, and restrictions are recorded in `PHYSICAL_FIT_VERIFICATION.md`.
 
-No result requires replacing a frozen finalist or promoting a referenced asset. The current pre-build hold remains the only gate before generation/build work resumes.
+No result requires replacing a frozen finalist or promoting a referenced asset. The pre-build hold has been lifted and the authorized GPT-6.1 Sol build must use the committed visual authority rather than inventing a visual direction from prose.
