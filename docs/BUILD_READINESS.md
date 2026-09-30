@@ -2,13 +2,13 @@
 
 ## Current State
 
-Scrapline is **design-frozen, asset-complete, physical-fit verified, and ready for explicit Astra construction authorization with Armory presentation/runtime acceptance assigned to the build/post-build pass**.
+Scrapline is **design-frozen, asset-complete, physical-fit verified, red-team GREEN, and explicitly authorized for the Astra one-shot construction pass**. Armory presentation/runtime acceptance remains assigned to construction/post-build.
 
 The map design, spatial contract, terrain specification, toolchain, production asset pool, real-asset reference pass, physical-fit gate, and original UEFN Central comparison remain locked or verified. The asset manifest is frozen and the intake stop rule has fired.
 
 The Scrapline Armory / match economy is frozen in `ARMORY_ECONOMY_SPEC.md`. The custom Armory Verse/device scaffold is live-compiler clean and the approved scalable UX is frozen in `ARMORY_UI_SPEC.md`. The previous native-only package remains the control case and fallback.
 
-Final `WBP_ScraplineArmory` visual polish plus the full lifecycle/economy/multiplayer matrix are intentionally deferred to Astra during the real construction/post-build pass. They are no longer pre-Astra blockers. Astra still requires explicit user authorization.
+Final `WBP_ScraplineArmory` visual polish plus the full lifecycle/economy/multiplayer matrix are intentionally deferred to Astra during the real construction/post-build pass. They are no longer pre-Astra blockers. **User authorization was received on 2026-09-30.**
 
 ## Ready
 
@@ -157,7 +157,7 @@ Assigned to Astra construction/post-build rather than the pre-Astra gate:
 3. Current Armory Verse/UMG scaffold synchronized into the handoff.
 4. One-shot prompt explicitly assigns final Armory UI/runtime acceptance to Astra.
 5. Final contradiction/confusion closeout: **PASS for handoff**.
-6. Stop and obtain explicit user authorization for the one-shot.
+6. **Satisfied 2026-09-30:** user explicitly authorized the Astra one-shot.
 
 ### After explicit Astra one-shot authorization
 1. Run the primary construction pass.
@@ -182,6 +182,6 @@ Assigned to Astra construction/post-build rather than the pre-Astra gate:
 
 ## Immediate Next Step
 
-**READY FOR FINAL HANDOFF CLOSEOUT, THEN EXPLICIT ASTRA AUTHORIZATION.**
+**AUTHORIZED — EXECUTE `docs/ASTRA_ONE_SHOT_PROMPT.md` IN THE DEDICATED ASTRA CONSTRUCTION CHAT.**
 
-Do not continue burning time on final Armory UMG polish in this control mode. Preserve the current compile-clean scaffold and approved UI spec, close the handoff contradiction audit, then stop for explicit user authorization. Astra owns the final Armory presentation and runtime acceptance during the real level build.
+Do not reopen the design phase. Preserve the red-team-hardened compile-clean scaffold and frozen authority contracts. Astra owns the one-shot environment construction, final Armory presentation, repair pass, and runtime acceptance matrix.
