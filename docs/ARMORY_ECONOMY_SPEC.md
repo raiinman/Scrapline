@@ -195,11 +195,14 @@ Required gameplay objects:
 - **1 × Tracker: `TR_Eliminations`** — individual 0/30 HUD feedback only.
 - **1 × Item Granter: `IG_Armory`** — registers the catalog weapons in a stable order.
 - **1 × Elimination Manager: `EM_Economy`** — event source for eliminator/eliminated economy updates; no item drops.
+- **1 × Input Trigger: `IT_Armory`** — Armory open/reopen input only.
 - **1 × Verse creative device: `scrapline_armory_device`** — economy, catalog, Armory UI, loadout commitment/granting, opening phase, JIP, leave cleanup, and temporary shop protection.
 
 The old fixed-loadout `IG_Loadout` production path and the direct **Spawn Pad → IG_Loadout / Grant Item** binding are retired once the Armory implementation validates.
 
 Use `IG_Armory.GrantItemIndex(Agent, ItemIndex)` for specific catalog selections rather than creating one Item Granter per weapon.
+
+The live first-release `IG_Armory` currently has exactly **7** registered weapons at indices **0..6**, matching the Verse catalog. Treat `RegisteredItemCount = 7` as a safety boundary, not a convenience: out-of-range catalog mappings must never reach `GrantItemIndex`. Any future catalog reorder/count change must update both sides and be recompiled/retested.
 
 The Armory Verse may subscribe once to:
 - playspace PlayerAddedEvent,
@@ -207,6 +210,10 @@ The Armory Verse may subscribe once to:
 - EM_Economy EliminationEvent,
 - EM_Economy EliminatedEvent,
 - Armory input/UI widget events.
+
+Production `EM_Economy` must have **Valid on Self-Elimination = On** so self-deaths enter the same death-recovery/protected-buy lifecycle. Runtime acceptance must also verify that self-deaths do not incorrectly earn the +150 eliminator reward/reset.
+
+The three tagged runtime roles `IG_Armory`, `EM_Economy`, and `IT_Armory` are exact-one roles. Reuse the existing tagged live actors or deliberately replace/remove their tags before introducing replacements; duplicate tagged roles cause the Armory device to abort startup.
 
 **Do not bind the Armory to the 19 Player Spawn Pads.** Native Spawn Pads remain the sole spawn-selection authority. The Armory reacts to player/character readiness after native spawning rather than choosing or driving spawn pads.
 
