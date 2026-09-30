@@ -182,24 +182,25 @@ Tune exposure/intensity for player readability.
 
 ## Environment build order
 
-1. Read the full authority chain.
+1. Read the full authority chain and refresh the current GitHub branch before trusting the local documentation copy.
 2. Verify the required frozen assets resolve in the live project; **do not perform a new asset-selection pass**.
-3. Import/create Landscape from the staged heightmap.
-4. Establish the basin, shoulders, district pads, drainage cuts, and service-road contours.
-5. Place the frozen Factory gantry assembly at its locked anchor/orientation.
-6. Place the Garage, Box Truck, Campervan, Factory containers, and major Machinery/Power anchors in their frozen districts.
-7. Establish all required center, neighbor, and broken-flank routes.
-8. Establish controlled vertical routes within the catwalk/height budget.
-9. Run the spatial-contract acceptance check **before** dressing.
-10. Add hard cover and sightline blockers while preserving route widths.
-11. Place spawn devices inside the frozen candidate regions and validate LOS/cover.
-12. Add secondary props, debris, utilities, signs, restrained VFX, and cross-district Scrapyard glue.
-13. Apply the frozen daylight treatment and tune readability.
-14. Integrate the frozen Armory/native gameplay package from `ARMORY_ECONOMY_SPEC.md` and `VERSE_GAMEPLAY_INTEGRATION.md`; preserve native score/end/spawn authority.
-15. Finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md`, using the existing UMG/Verse event scaffold when useful and replacing it when cleaner.
-16. Run the Armory lifecycle/economy/JIP/leave/multiplayer acceptance matrix against the real level/devices.
-17. Run health/collision/dependency/material/performance checks.
-18. Save and perform the DOX closeout.
+3. **Run the Armory preflight before environment construction:** confirm live Verse compiles at zero diagnostics; inventory the existing tagged runtime roles; confirm exactly one `IG_Armory`, one `EM_Economy`, and one `IT_Armory`; confirm the Verse controller is present; reuse those actors instead of placing duplicates. If any exact-one role is missing or duplicated, fix that wiring before continuing.
+4. Import/create Landscape from the staged heightmap.
+5. Establish the basin, shoulders, district pads, drainage cuts, and service-road contours.
+6. Place the frozen Factory gantry assembly at its locked anchor/orientation.
+7. Place the Garage, Box Truck, Campervan, Factory containers, and major Machinery/Power anchors in their frozen districts.
+8. Establish all required center, neighbor, and broken-flank routes.
+9. Establish controlled vertical routes within the catwalk/height budget.
+10. Run the spatial-contract acceptance check **before** dressing.
+11. Add hard cover and sightline blockers while preserving route widths.
+12. Place spawn devices inside the **19 frozen candidate regions** and validate LOS/cover; configure a non-`None` Enemy Range Check and tune it against the real geometry rather than inventing new spawn regions.
+13. Add secondary props, debris, utilities, signs, restrained VFX, and cross-district Scrapyard glue.
+14. Apply the frozen daylight treatment and tune readability.
+15. Integrate the frozen Armory/native gameplay package from `ARMORY_ECONOMY_SPEC.md` and `VERSE_GAMEPLAY_INTEGRATION.md`; preserve native score/end/spawn authority.
+16. Finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md`, using the existing UMG/Verse event scaffold when useful and replacing it when cleaner.
+17. Run the Armory lifecycle/economy/JIP/leave/multiplayer acceptance matrix against the real level/devices.
+18. Run health/collision/dependency/material/performance checks, then run the cooked memory calculation and realistic runtime profiling.
+19. Save and perform the DOX closeout.
 
 If the skeleton fails an acceptance check, fix it before proceeding to micro-props, VFX, lighting polish, or gameplay wiring.
 
@@ -274,6 +275,7 @@ The currently frozen candidate architecture is:
 - **1 × `TR_Eliminations` Tracker** for HUD only,
 - **1 × `IG_Armory` Item Granter** containing catalog weapons in stable index order,
 - **1 × `EM_Economy` Elimination Manager** used only as eliminator/eliminated event source,
+- **1 × `IT_Armory` Input Trigger** used only for Armory open/reopen input,
 - **1 × `scrapline_armory_device` Verse device**.
 
 `IG_Armory` should grant exact selected items by registered index. `EM_Economy` must not drop reward items. `TR_Eliminations` must not increment manually or end the round.
@@ -286,6 +288,11 @@ The current Armory logic/event scaffold is a starting point, not a visual-finish
 
 During this build Astra must:
 - preserve Island Settings as sole score/end authority and native Player Spawn Pads as sole spawn-selection authority,
+- **reuse the existing tagged `IG_Armory`, `EM_Economy`, and `IT_Armory` actors; do not create a second tagged copy of any exact-one role,**
+- verify the live first-release `IG_Armory` still contains exactly 7 registered items at indices 0..6 and keep Verse `RegisteredItemCount = 7` synchronized with that device before testing,
+- set production `EM_Economy` **Valid on Self-Elimination = On**, then test that a self-death enters recovery/protected-buy without incorrectly earning +150 Scrap or resetting recovery,
+- test simultaneous/trade eliminations for one reward, one death payment, and deterministic recovery-tier behavior,
+- verify native ~2-second spawn immunity is not shortened by Armory stasis/vulnerability release,
 - keep the narrow Armory Verse ownership boundary,
 - finish or rebuild `WBP_ScraplineArmory` to the approved scalable browser in `ARMORY_UI_SPEC.md`,
 - use category tabs + an approximately 8-card paged weapon browser + a separate loadout/cart rail,
