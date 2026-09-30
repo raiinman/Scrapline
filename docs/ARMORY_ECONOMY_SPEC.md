@@ -194,9 +194,9 @@ Required gameplay objects:
 - **19 × Player Spawn Pad** — native spawn selection only.
 - **1 × Tracker: `TR_Eliminations`** — individual 0/30 HUD feedback only.
 - **1 × Item Granter: `IG_Armory`** — registers the catalog weapons in a stable order.
-- **1 × Elimination Manager: `EM_Economy`** — event source for eliminator/eliminated economy updates; no item drops.
+- **1 × Elimination Manager: `EM_Economy`** — **eliminator-income event source only**; no item drops; Valid On Self Elimination = Off.
 - **1 × Input Trigger: `IT_Armory`** — Armory open/reopen input only.
-- **1 × Verse creative device: `scrapline_armory_device`** — economy, catalog, Armory UI, loadout commitment/granting, opening phase, JIP, leave cleanup, and temporary shop protection.
+- **1 × Verse creative device: `scrapline_armory_device`** — economy, catalog, Armory UI, one per-player victim/death watcher, loadout commitment/granting, opening phase, JIP, leave cleanup, and temporary shop protection.
 
 The old fixed-loadout `IG_Loadout` production path and the direct **Spawn Pad → IG_Loadout / Grant Item** binding are retired once the Armory implementation validates.
 
@@ -207,17 +207,18 @@ The live first-release `IG_Armory` currently has exactly **7** registered weapon
 The Armory Verse may subscribe once to:
 - playspace PlayerAddedEvent,
 - playspace PlayerRemovedEvent,
-- EM_Economy EliminationEvent,
-- EM_Economy EliminatedEvent,
+- EM_Economy EliminationEvent for eliminator income,
 - Armory input/UI widget events.
 
-Production `EM_Economy` must have **Valid on Self-Elimination = On** so self-deaths enter the same death-recovery/protected-buy lifecycle. Runtime acceptance must also verify that self-deaths do not incorrectly earn the +150 eliminator reward/reset.
+Each initialized player also owns exactly one suspending `fort_character.EliminatedEvent()` watcher for victim death recovery/shop state. It re-arms only after the next native-spawned active character exists.
+
+Production `EM_Economy` must have **Valid On Self Elimination = Off**. Self/manual/environmental deaths are handled by the victim watcher and must never earn the +150 eliminator reward/reset.
 
 The three tagged runtime roles `IG_Armory`, `EM_Economy`, and `IT_Armory` are exact-one roles. Reuse the existing tagged live actors or deliberately replace/remove their tags before introducing replacements; duplicate tagged roles cause the Armory device to abort startup.
 
 **Do not bind the Armory to the 19 Player Spawn Pads.** Native Spawn Pads remain the sole spawn-selection authority. The Armory reacts to player/character readiness after native spawning rather than choosing or driving spawn pads.
 
-Do not subscribe per-respawn to `fort_character.EliminatedEvent` when `EM_Economy` already provides the required global eliminator/eliminated event surface.
+Do not create a fresh subscription stack on every respawn. Use the single long-lived per-player death watcher; `EM_Economy` remains separate and only supplies eliminator income.
 
 ## Verse ownership boundary
 
@@ -279,7 +280,7 @@ UEFN Central's Verse UI Visual Builder may be used to prototype/export layout co
 - Never grant more than the legal slot count.
 - Never allow a negative bank.
 - Clamp bank at 5,000.
-- If a referenced catalog index is invalid, disable that entry and report it rather than granting a different weapon.
+- If a referenced catalog index is invalid **or outside the registered Item Granter range**, disable that entry and report it rather than granting a different weapon.
 - A failed/empty cart must always degrade to the free fallback safely.
 - Leaving the match removes player UI and match-local state.
 - Rejoining starts as JIP with the normal 3,000 first-entry bank in alpha.
@@ -301,9 +302,10 @@ Before this feature becomes production-authoritative, test in live UEFN:
 11. Duplicate subscription attack: repeated deaths/JIP/UI open-close must not multiply rewards or grants.
 12. Double/simultaneous eliminations: economy may award both events; Island Settings remains sole winner authority.
 13. Bank bounds: never negative, never above 5,000.
-14. Invalid catalog index / disabled seasonal entry.
-15. 12-player target and 16-player ceiling smoke test.
-16. Live `ValkyrieToolset.VerseToolset.BuildAll`: zero diagnostics for accepted production code.
+14. Invalid/disabled/out-of-range catalog index never grants a different item.
+15. Self/manual/environmental death receives recovery + next-life handling without +150 self-elimination income.
+16. 12-player target and 16-player ceiling smoke test.
+17. Live `ValkyrieToolset.VerseToolset.BuildAll`: zero diagnostics for accepted production code.
 
 Do not trust UEFN Central or standalone verse-lsp validation over the live Epic UEFN compiler.
 
