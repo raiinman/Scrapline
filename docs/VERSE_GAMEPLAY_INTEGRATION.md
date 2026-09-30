@@ -322,7 +322,7 @@ That rejected package remains historical evidence. Do not use it as the Armory i
 
 2026-09-29 live UEFN:
 - created one candidate file: `/Scrapline/Verse/scrapline_armory_device.verse`,
-- current core covers catalog metadata, match-local bank/recovery state, one-time global subscriptions, 19-pad spawn hooks, JIP/leave cleanup, opening/JIP/death phase gates, indexed Item Granter grants, and stasis/vulnerability release logic,
+- current core covers catalog metadata, match-local bank/recovery state, one-time playspace/economy/input subscriptions, JIP/leave cleanup, opening/JIP/death phase gates, character-ready grant/release logic, indexed Item Granter grants, and stasis/vulnerability handling; native Spawn Pads remain unhooked and authoritative,
 - current Epic digests were queried live for `GrantItemIndex`, Elimination Manager events, playspace lifecycle, spawn events, stasis, and player UI APIs,
 - first compile exposed six Verse effect-context errors only; those were repaired,
 - live `ValkyrieToolset.VerseToolset.BuildAll` after repair: **0 diagnostics**,
@@ -330,7 +330,10 @@ That rejected package remains historical evidence. Do not use it as the Armory i
 - the UI pass produced one additional effect-context diagnostic; it was repaired,
 - live `ValkyrieToolset.VerseToolset.BuildAll` after the UI repair: **0 diagnostics**,
 - visible opening/JIP/death countdowns are now implemented in the same one-file UI candidate,
-- runtime device references, first-release catalog registration/index wiring, and multiplayer runtime tests remain pending, so this is **not yet production-authoritative**.
+- the candidate was refactored to discover the three required classic devices through Verse Tag Markup (`armory_granter_tag`, `armory_economy_tag`, `armory_input_tag`) instead of brittle device `@editable` references; native Spawn Pads remain completely outside Verse ownership,
+- the tag-discovery refactor also passes live `ValkyrieToolset.VerseToolset.BuildAll` with **0 diagnostics**,
+- the testbench `IG_Armory`, `EM_Economy`, and `IT_Armory` actors have the generated tag classes applied and saved,
+- runtime tag discovery, first-release Item Granter registration/index wiring, and multiplayer runtime tests remain pending, so this is **not yet production-authoritative**.
 
 The verified text mirror is tracked in `verse/scrapline_armory_device.verse`.
 

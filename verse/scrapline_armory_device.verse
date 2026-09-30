@@ -2,11 +2,16 @@ using { /Fortnite.com/Devices }
 using { /Fortnite.com/Characters }
 using { /Fortnite.com/UI }
 using { /Verse.org/Simulation }
+using { /Verse.org/Simulation/Tags }
 using { /Verse.org/Colors }
 using { /UnrealEngine.com/Temporary/UI }
 using { /UnrealEngine.com/Temporary/SpatialMath }
 
 ArmoryText<localizes>(Text:string):message = "{Text}"
+
+armory_granter_tag := class(tag){}
+armory_economy_tag := class(tag){}
+armory_input_tag := class(tag){}
 
 armory_catalog_item := class<concrete>:
     @editable
@@ -75,29 +80,30 @@ armory_ui_state := class:
 
 scrapline_armory_device := class(creative_device):
 
-    @editable
-    ArmoryGranter:item_granter_device = item_granter_device{}
+    # Runtime-discovered through Verse Tag Markup. No brittle device @editable wiring.
+    var ArmoryGranter:?item_granter_device = false
+    var EconomyEliminations:?elimination_manager_device = false
+    var ArmoryInput:?input_trigger_device = false
 
     @editable
-    EconomyEliminations:elimination_manager_device = elimination_manager_device{}
+    Catalog:[]armory_catalog_item = array{
+        armory_catalog_item{StableId := "pistol", DisplayName := "Pistol", Category := 2, Price := 0, ItemIndex := 0, SortOrder := 0},
+        armory_catalog_item{StableId := "suppressed_pistol", DisplayName := "Suppressed Pistol", Category := 2, Price := 500, ItemIndex := 1, SortOrder := 1},
+        armory_catalog_item{StableId := "stinger_smg", DisplayName := "Stinger SMG", Category := 1, Price := 1000, ItemIndex := 2, SortOrder := 2},
+        armory_catalog_item{StableId := "thunder_shotgun", DisplayName := "Thunder Shotgun", Category := 0, Price := 1400, ItemIndex := 3, SortOrder := 3},
+        armory_catalog_item{StableId := "assault_rifle", DisplayName := "Assault Rifle", Category := 0, Price := 1700, ItemIndex := 4, SortOrder := 4},
+        armory_catalog_item{StableId := "infantry_rifle", DisplayName := "Infantry Rifle", Category := 0, Price := 2100, ItemIndex := 5, SortOrder := 5},
+        armory_catalog_item{StableId := "bolt_sniper", DisplayName := "Bolt-Action Sniper Rifle", Category := 0, Price := 3800, ItemIndex := 6, Featured := true, SeasonalTag := "PREMIUM", SortOrder := 6}
+    }
 
     @editable
-    ArmoryInput:input_trigger_device = input_trigger_device{}
+    StarterPrimaryCatalogIndex:int = 4
 
     @editable
-    SpawnPads:[]player_spawner_device = array{}
+    StarterSecondaryCatalogIndex:int = 2
 
     @editable
-    Catalog:[]armory_catalog_item = array{}
-
-    @editable
-    StarterPrimaryCatalogIndex:int = -1
-
-    @editable
-    StarterSecondaryCatalogIndex:int = -1
-
-    @editable
-    StarterSidearmCatalogIndex:int = -1
+    StarterSidearmCatalogIndex:int = 0
 
     @editable
     FallbackSidearmCatalogIndex:int = 0
@@ -115,8 +121,16 @@ scrapline_armory_device := class(creative_device):
     var PlayerUIs:[player]armory_ui_state = map{}
 
     OnBegin<override>()<suspends>:void=
+        DevicesReady := DiscoverTaggedDevices()
+        if (not DevicesReady?):
+            Print("SCRAPLINE ARMORY: expected exactly one tagged granter, economy manager, and input trigger")
+            return
+
         set OpeningPhaseEndsAt = GetSimulationElapsedTime() + OpeningPhaseSeconds
-        ArmoryInput.Enable()
+
+        if (Input := ArmoryInput?):
+            Input.Enable()
+            Input.PressedEvent.Subscribe(OnArmoryPressed)
 
         for (Player : GetPlayspace().GetPlayers()):
             InitializePlayer(Player, true)
@@ -124,14 +138,37 @@ scrapline_armory_device := class(creative_device):
         GetPlayspace().PlayerAddedEvent().Subscribe(OnPlayerAdded)
         GetPlayspace().PlayerRemovedEvent().Subscribe(OnPlayerRemoved)
 
-        for (Spawner : SpawnPads):
-            Spawner.SpawnedEvent.Subscribe(OnPlayerSpawned)
-
-        EconomyEliminations.EliminationEvent.Subscribe(OnElimination)
-        EconomyEliminations.EliminatedEvent.Subscribe(OnEliminated)
-        ArmoryInput.PressedEvent.Subscribe(OnArmoryPressed)
+        if (Economy := EconomyEliminations?):
+            Economy.EliminationEvent.Subscribe(OnElimination)
+            Economy.EliminatedEvent.Subscribe(OnEliminated)
 
         spawn{OpeningPhaseTimer()}
+
+    DiscoverTaggedDevices():logic=
+        var GranterCount:int = 0
+        var EconomyCount:int = 0
+        var InputCount:int = 0
+
+        for (Obj : FindCreativeObjectsWithTag(armory_granter_tag), Granter := item_granter_device[Obj]):
+            set ArmoryGranter = option{Granter}
+            set GranterCount += 1
+
+        for (Obj : FindCreativeObjectsWithTag(armory_economy_tag), Economy := elimination_manager_device[Obj]):
+            set EconomyEliminations = option{Economy}
+            set EconomyCount += 1
+
+        for (Obj : FindCreativeObjectsWithTag(armory_input_tag), Input := input_trigger_device[Obj]):
+            set ArmoryInput = option{Input}
+            set InputCount += 1
+
+        if:
+            GranterCount = 1
+            EconomyCount = 1
+            InputCount = 1
+        then:
+            return true
+
+        return false
 
     InitializePlayer(Player:player, PresentAtStart:logic):void=
         if (Existing := PlayerStates[Player]):
@@ -160,8 +197,10 @@ scrapline_armory_device := class(creative_device):
                 set State.ShopDeadline = GetSimulationElapsedTime() + JipBuySeconds
 
         if (set PlayerStates[Player] = State):
-            ArmoryInput.Register(Player)
+            if (Input := ArmoryInput?):
+                Input.Register(Player)
             HoldPlayer(Player)
+            spawn{HoldCharacterWhenReady(Player)}
             spawn{OpenArmorySoon(Player)}
 
             if (not PresentAtStart?):
@@ -174,21 +213,14 @@ scrapline_armory_device := class(creative_device):
         InitializePlayer(Player, false)
 
     OnPlayerRemoved(Player:player):void=
-        ArmoryInput.Unregister(Player)
+        if (Input := ArmoryInput?):
+            Input.Unregister(Player)
         RemoveArmoryUI(Player)
 
         var NewStates:[player]armory_player_state = map{}
         for (Key -> Value : PlayerStates, Key <> Player):
             set NewStates = ConcatenateMaps(NewStates, map{Key => Value})
         set PlayerStates = NewStates
-
-    OnPlayerSpawned(Agent:agent):void=
-        if (Player := player[Agent], State := PlayerStates[Player]):
-            if (State.HoldForShop?):
-                HoldPlayer(Player)
-                spawn{OpenArmorySoon(Player)}
-            else if (State.NeedsGrant?):
-                GrantCommittedLoadout(Player, State)
 
     OnElimination(MaybeAgent:?agent):void=
         if (Agent := MaybeAgent?, Player := player[Agent], State := PlayerStates[Player]):
@@ -211,6 +243,7 @@ scrapline_armory_device := class(creative_device):
             set State.HoldForShop = true
             set State.ShopReason = 2
             set State.ShopDeadline = GetSimulationElapsedTime() + DeathShopSeconds
+            spawn{HoldCharacterWhenReady(Player)}
             spawn{OpenArmorySoon(Player)}
             spawn{DeathShopTimeout(Player)}
 
@@ -337,10 +370,7 @@ scrapline_armory_device := class(creative_device):
         set State.ShopDeadline = 0.0
 
         RemoveArmoryUI(Player)
-
-        if (Player.GetFortCharacter[]):
-            GrantCommittedLoadout(Player, State)
-            ReleasePlayer(Player)
+        spawn{GrantWhenCharacterReady(Player)}
 
         return true
 
@@ -391,8 +421,43 @@ scrapline_armory_device := class(creative_device):
         set State.NeedsGrant = false
 
     GrantCatalogSelection(Player:player, CatalogIndex:int):void=
-        if (CatalogIndex >= 0, Entry := Catalog[CatalogIndex], Entry.Enabled?, Entry.ItemIndex >= 0):
-            ArmoryGranter.GrantItemIndex(Player, Entry.ItemIndex)
+        if:
+            Granter := ArmoryGranter?
+            CatalogIndex >= 0
+            Entry := Catalog[CatalogIndex]
+            Entry.Enabled?
+            Entry.ItemIndex >= 0
+        then:
+            Granter.GrantItemIndex(Player, Entry.ItemIndex)
+
+    HoldCharacterWhenReady(Player:player)<suspends>:void=
+        loop:
+            if (State := PlayerStates[Player]):
+                if (not State.HoldForShop?):
+                    return
+
+                if (FortChar := Player.GetFortCharacter[], FortChar.IsActive[]):
+                    HoldPlayer(Player)
+                    return
+            else:
+                return
+
+            Sleep(0.1)
+
+    GrantWhenCharacterReady(Player:player)<suspends>:void=
+        loop:
+            if (State := PlayerStates[Player]):
+                if (not State.NeedsGrant?):
+                    return
+
+                if (FortChar := Player.GetFortCharacter[], FortChar.IsActive[]):
+                    GrantCommittedLoadout(Player, State)
+                    ReleasePlayer(Player)
+                    return
+            else:
+                return
+
+            Sleep(0.1)
 
     HoldPlayer(Player:player):void=
         if (FortChar := Player.GetFortCharacter[]):
