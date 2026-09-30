@@ -4,7 +4,7 @@
 
 **GREEN — safe for explicit Astra authorization.**
 
-This is a handoff-readiness verdict, not a claim that the finished island is production-accepted. The hostile audit found real pre-Astra defects, repaired the deterministic ones, synchronized the authority documents, and left only runtime/build-stage checks that the project already assigns to Astra construction/post-build.
+This is a handoff-readiness verdict, not a claim that the finished island is production-accepted. The hostile audit found real pre-construction defects, repaired the deterministic ones, synchronized the authority documents, and left only runtime/build-stage checks that the project now assigns to GPT-6.1 Sol construction/post-build.
 
 No finding required reopening the frozen spatial skeleton, asset manifest, economy values, native score authority, native spawn selection, or native match-end authority.
 
