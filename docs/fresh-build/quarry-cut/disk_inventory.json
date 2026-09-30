@@ -1,0 +1,246 @@
+[
+  {
+    "root": "C:\\Users\\mikea\\Documents\\Codex\\2026-09-27\\i-want-to-1-shot-a-3\\outputs\\Scrapline\\Content\\Imported",
+    "exists": true,
+    "counts": {
+      ".uasset": 446
+    },
+    "size_bytes": 2252419665,
+    "families": {
+      "AfricanSlateQuarry": {
+        ".uasset": 109
+      },
+      "FactoryCurated": {
+        ".uasset": 121
+      },
+      "GarageSource": {
+        ".uasset": 61
+      },
+      "IndustrialPipesSource": {
+        ".uasset": 32
+      },
+      "VehicleVarietyV2Curated": {
+        ".uasset": 71
+      },
+      "WarningSignsSource": {
+        ".uasset": 52
+      }
+    }
+  },
+  {
+    "root": "C:\\Users\\mikea\\Documents\\Codex\\2026-09-27\\i-want-to-1-shot-a-3\\outputs\\Scrapline\\Content\\Fab",
+    "exists": true,
+    "counts": {
+      ".uasset": 45
+    },
+    "size_bytes": 451232799,
+    "families": {
+      "Abandoned_junk_Car": {
+        ".uasset": 9
+      },
+      "Gas_Cylinder_03_-_Propane_Tank": {
+        ".uasset": 5
+      },
+      "Industrial_Rubble": {
+        ".uasset": 5
+      },
+      "Rubble_Pack": {
+        ".uasset": 5
+      },
+      "Warehouse_Essentials_Pack_-_Free_3D": {
+        ".uasset": 21
+      }
+    }
+  },
+  {
+    "root": "C:\\Users\\mikea\\Documents\\Codex\\2026-09-27\\i-want-to-1-shot-a-3\\outputs\\Scrapline\\References",
+    "exists": true,
+    "counts": {
+      ".uref": 14
+    },
+    "size_bytes": 2059,
+    "families": {
+      "Broken_Concrete_Slab2_v2_72c0013ca0cc88c63419d5d4494119f4.uref": {
+        ".uref": 1
+      },
+      "Cement_Rubble_v2_052b07fc842b58ff0008256afed755c8.uref": {
+        ".uref": 1
+      },
+      "Concrete_Rubble_Pile2_v2_ff913894e2dae784f9622447b2c1ad7a.uref": {
+        ".uref": 1
+      },
+      "Concrete_Rubble_Pile_v2_902a3204e0b49c2d8799601c6acfd52e.uref": {
+        ".uref": 1
+      },
+      "DesertedProps_063df44b3e1a5dfc06ad449bf0daab19.uref": {
+        ".uref": 1
+      },
+      "DesertedVFX_4c9af5c17891df42f5459ed224a0222b.uref": {
+        ".uref": 1
+      },
+      "Electrical_Box7_v2_b0163aa7e62a94b2f7b14f96a6da6b6a.uref": {
+        ".uref": 1
+      },
+      "IndustrialJunkyardPropaneTank_M_v2_98539fabb6bb0ad9a1d47f0efa29319a.uref": {
+        ".uref": 1
+      },
+      "Industrial_Junkyard_Crate_Metal2_v2_70a37d867cf54ddac429ff4862b32d7d.uref": {
+        ".uref": 1
+      },
+      "Metal_Barricade2_v2_ea350e0234060c1a13fed0d86deac11e.uref": {
+        ".uref": 1
+      },
+      "Metal_Manhole_Cover_v2_c6af008bb5296a6c3e976a5f4466c2de.uref": {
+        ".uref": 1
+      },
+      "Mine_Cart3_v2_03193920e8817839f1002089fbbc9f74.uref": {
+        ".uref": 1
+      },
+      "Scrapyard_eed5d37c922d9b1ff3253b3cbbc52e00.uref": {
+        ".uref": 1
+      },
+      "Talisman_VFX_a06521f831e152bd2b2e42728543c13a.uref": {
+        ".uref": 1
+      }
+    }
+  },
+  {
+    "root": "C:\\Users\\mikea\\OneDrive\\Documents\\Unreal Projects",
+    "exists": true,
+    "counts": {
+      ".uproject": 5,
+      ".umap": 128,
+      ".uasset": 22828,
+      ".png": 4
+    },
+    "size_bytes": 48554316794,
+    "families": {
+      "DarkRuinsMegascansSample": {
+        ".uproject": 1,
+        ".umap": 79,
+        ".uasset": 13717,
+        ".png": 3
+      },
+      "DerelictCorridorMegascans": {
+        ".uproject": 1,
+        ".uasset": 5808,
+        ".umap": 38
+      },
+      "FactoryEnvironmentCollect": {
+        ".uproject": 1,
+        ".uasset": 2116,
+        ".umap": 3
+      },
+      "Scrapline_UE56_Staging": {
+        ".uproject": 1,
+        ".uasset": 1034,
+        ".umap": 7,
+        ".png": 1
+      },
+      "VehicleVarietyPackVolume2": {
+        ".uproject": 1,
+        ".uasset": 153,
+        ".umap": 1
+      }
+    }
+  },
+  {
+    "root": "D:\\UnrealDonors\\Scrapline_SourceVault",
+    "exists": true,
+    "counts": {
+      ".jpg": 53,
+      ".fbx": 86
+    },
+    "size_bytes": 303755656,
+    "families": {
+      "FabExchange": {
+        ".jpg": 53,
+        ".fbx": 86
+      }
+    }
+  },
+  {
+    "root": "C:\\Users\\mikea\\Documents\\FabRecovered",
+    "exists": true,
+    "counts": {
+      ".fbx": 115,
+      ".png": 9,
+      ".exr": 6,
+      ".tga": 197
+    },
+    "size_bytes": 2347349423,
+    "families": {
+      "ConstructionSiteVol1": {
+        ".fbx": 70,
+        ".png": 5,
+        ".exr": 3,
+        ".tga": 109
+      },
+      "ConstructionSiteVol2": {
+        ".fbx": 45,
+        ".png": 4,
+        ".exr": 3,
+        ".tga": 88
+      }
+    }
+  },
+  {
+    "root": "C:\\Users\\mikea\\Documents\\FabExports\\Scrapline",
+    "exists": true,
+    "counts": {},
+    "size_bytes": 0,
+    "families": {}
+  },
+  {
+    "root": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache",
+    "exists": true,
+    "counts": {
+      ".umap": 13,
+      ".uasset": 1956,
+      ".jpg": 3013,
+      ".fbx": 368,
+      ".jpeg": 6,
+      ".png": 22,
+      ".tga": 16,
+      ".zip": 1,
+      ".uproject": 1
+    },
+    "size_bytes": 22967109409,
+    "families": {
+      "CityStreb1b4baf10aceV1": {
+        ".umap": 2,
+        ".uasset": 749
+      },
+      "FabLibrary": {
+        ".jpg": 3013,
+        ".fbx": 368,
+        ".jpeg": 6,
+        ".png": 21,
+        ".tga": 16,
+        ".zip": 1
+      },
+      "Garage3c9230cdbe62V1": {
+        ".uasset": 557,
+        ".umap": 5
+      },
+      "ModularI4031e7b346b7V4": {
+        ".umap": 1,
+        ".uasset": 42
+      },
+      "MWLandsc0bb389159dceV3": {
+        ".uasset": 97,
+        ".umap": 3
+      },
+      "Warnings42e150c0e522V1": {
+        ".uasset": 243,
+        ".umap": 1
+      },
+      "Wastelan3111d46318b7V1": {
+        ".uproject": 1,
+        ".uasset": 268,
+        ".umap": 1,
+        ".png": 1
+      }
+    }
+  }
+]

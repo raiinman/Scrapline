@@ -15,12 +15,12 @@ This folder owns:
 ## Local Contracts
 
 - `Reference/RealAssets/` is visual authority for art direction, asset silhouette, district composition language, material/color vocabulary, clutter density, VFX restraint, and approved signage.
-- Visual references do **not** override `docs/SPATIAL_CONTRACT.md` for coordinates, routes, spawn regions, major-anchor transforms, verticality, or gameplay geometry.
+- Old Reference/RealAssets boards describe asset appearance/history. FreshBuild/QuarryCut and docs/fresh-build/quarry-cut/DESIGN_SPEC.md own the new reference/layout package; old SPATIAL_CONTRACT does not constrain the fresh rebuild.
 - Composition studies are exploratory arrangements built from approved real assets. They are not final map layout.
 - Official Fab gallery images are pack-level context only. Exact UAsset/contact-sheet evidence outranks pack marketing media for asset-specific decisions.
 - Synthetic/generated lookalikes are not part of this authority set.
 - Placement plans are audit evidence, not replay scripts. Effective live readbacks outrank requested values; superseded transforms must be identified rather than silently treated as verified.
-- `Terrain/Scrapline_Terrain_v1_253x253_16bit.png` is the frozen terrain heightmap input referenced by the active one-shot prompt.
+- Terrain/Scrapline_Terrain_v1_253x253_16bit.png is historical. FreshBuild/QuarryCut/QuarryCut_253_16bit.png plus terrain_import.json are the fresh inputs.
 
 ## Work Guidance
 
@@ -37,4 +37,4 @@ This folder owns:
 
 ## Child DOX Index
 
-No child DOX documents yet.
+- `FreshBuild/QuarryCut/AGENTS.md` — owns the new real-asset camera renders, boards, native evidence and independent terrain inputs.

@@ -1,0 +1,22 @@
+{
+  "resolution": [
+    253,
+    253
+  ],
+  "span_m": [
+    230,
+    230
+  ],
+  "xy_scale_cm": 91.26984126984127,
+  "z_scale": 8,
+  "corner_location_cm": [
+    -11500,
+    -11500,
+    0
+  ],
+  "height_encoding": "height_cm=(uint16-32768)*8/128",
+  "row_order": "row 0 y=-115m; column 0 x=-115m; verify orientation in import preview",
+  "sha256": "42772cfb6c19bd3cd3327f447eb532fb44ee5140ed95e40fd4537c9ff2fed788",
+  "min_m": -4.573876275939041,
+  "max_m": 14.387263324200974
+}

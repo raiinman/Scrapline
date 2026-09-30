@@ -1,0 +1,2270 @@
+{
+  "scene": "Quarry Cut fresh reference scene",
+  "units": "metres",
+  "shots": [
+    {
+      "id": "01_establishing",
+      "eye": [
+        -91,
+        -98,
+        84
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "description": "High oblique / complete basin"
+    },
+    {
+      "id": "02_near_overhead",
+      "eye": [
+        0,
+        -15,
+        125
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "description": "Near overhead / lane network"
+    },
+    {
+      "id": "03_dispatch_spawn",
+      "eye": [
+        -55,
+        0,
+        -0.8641142528624932
+      ],
+      "target": [
+        0,
+        0,
+        1
+      ],
+      "description": "West dispatch start toward center"
+    },
+    {
+      "id": "04_receiving_spawn",
+      "eye": [
+        55,
+        7,
+        1.6157985445448848
+      ],
+      "target": [
+        0,
+        0,
+        1
+      ],
+      "description": "East receiving start toward center"
+    },
+    {
+      "id": "05_center_west",
+      "eye": [
+        -20,
+        -3,
+        -0.9077295311507012
+      ],
+      "target": [
+        3,
+        2,
+        3
+      ],
+      "description": "Center from west / machinery rhythm"
+    },
+    {
+      "id": "06_center_east",
+      "eye": [
+        23,
+        -1,
+        -0.1
+      ],
+      "target": [
+        -2,
+        2,
+        2
+      ],
+      "description": "Center from opposing east angle"
+    },
+    {
+      "id": "07_workshop_inward",
+      "eye": [
+        21,
+        34,
+        0.5715565974442127
+      ],
+      "target": [
+        0,
+        0,
+        1
+      ],
+      "description": "North workshop flank toward center"
+    },
+    {
+      "id": "08_workshop_back",
+      "eye": [
+        -8,
+        28,
+        -0.7965165510871894
+      ],
+      "target": [
+        -52,
+        4,
+        1
+      ],
+      "description": "North flank back toward dispatch"
+    },
+    {
+      "id": "09_drain_inward",
+      "eye": [
+        -21,
+        -29,
+        -1.1398027906674166
+      ],
+      "target": [
+        1,
+        0,
+        1
+      ],
+      "description": "South drain flank toward center"
+    },
+    {
+      "id": "10_drain_back",
+      "eye": [
+        16,
+        -28,
+        -1.7017713119980782
+      ],
+      "target": [
+        53,
+        6,
+        1
+      ],
+      "description": "South flank back toward receiving"
+    },
+    {
+      "id": "11_exterior_west",
+      "eye": [
+        -93,
+        -47,
+        9.480690353280005
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "description": "Exterior cut shoulder facing inward"
+    },
+    {
+      "id": "12_exterior_east",
+      "eye": [
+        88,
+        45,
+        10.251082980486082
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "description": "Exterior spoil mound facing inward"
+    },
+    {
+      "id": "13_exterior_north",
+      "eye": [
+        -15,
+        93,
+        12.877170036446277
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "description": "Outer ridge framing entire arena"
+    },
+    {
+      "id": "14_low_loading",
+      "eye": [
+        -36,
+        6,
+        -1.284251676781554
+      ],
+      "target": [
+        -8,
+        0,
+        1
+      ],
+      "description": "Low gameplay / staggered hard cover"
+    },
+    {
+      "id": "15_low_power",
+      "eye": [
+        37,
+        -21,
+        0.18884347412956592
+      ],
+      "target": [
+        8,
+        -7,
+        1
+      ],
+      "description": "Low gameplay / machinery and pipes"
+    },
+    {
+      "id": "16_low_workshop",
+      "eye": [
+        22,
+        17,
+        1.5887979239264614
+      ],
+      "target": [
+        30,
+        28,
+        3
+      ],
+      "description": "Low gameplay / workshop service court"
+    }
+  ],
+  "placements": [
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        0,
+        -12.5,
+        -1.7204640360397518
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        0,
+        12.5,
+        -1.7204640360397518
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Crane01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_Crane01.SM_Crane01",
+      "xyz_m": [
+        0,
+        0,
+        2.8595359639602482
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": true
+    },
+    {
+      "asset": "SM_CraneCabin01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCabin01.SM_CraneCabin01",
+      "xyz_m": [
+        0,
+        0,
+        2.8595359639602482
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": true
+    },
+    {
+      "asset": "SM_CraneCable01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCable01.SM_CraneCable01",
+      "xyz_m": [
+        0,
+        0,
+        2.8595359639602482
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": true
+    },
+    {
+      "asset": "SM_EngineWithContainer",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_EngineWithContainer.SM_EngineWithContainer",
+      "xyz_m": [
+        8,
+        -5,
+        -1.3709443337457292
+      ],
+      "yaw": 28,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_RecyclingMachine01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_RecyclingMachine01.SM_RecyclingMachine01",
+      "xyz_m": [
+        -8,
+        8,
+        -2.1068248540513324
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_ForkLift",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ForkLift.SM_ForkLift",
+      "xyz_m": [
+        14,
+        13,
+        -0.6693030271785566
+      ],
+      "yaw": -50,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_AssemblyLine01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLine01.SM_AssemblyLine01",
+      "xyz_m": [
+        -9,
+        -7,
+        -2.46411048348622
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_AssemblyLineTable01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLineTable01.SM_AssemblyLineTable01",
+      "xyz_m": [
+        7,
+        6,
+        -1.0535139338346273
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Garage_1",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1.SM_Garage_1",
+      "xyz_m": [
+        29,
+        28,
+        0.5095131023129414
+      ],
+      "yaw": 180,
+      "scale": 1,
+      "shared_pivot": true
+    },
+    {
+      "asset": "SM_Garage_1_roof",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1_roof.SM_Garage_1_roof",
+      "xyz_m": [
+        29,
+        28,
+        0.5095131023129414
+      ],
+      "yaw": 180,
+      "scale": 1,
+      "shared_pivot": true
+    },
+    {
+      "asset": "SM_Workbench",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Workbench.SM_Workbench",
+      "xyz_m": [
+        29,
+        22,
+        0.6599976097565775
+      ],
+      "yaw": 180,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Shelf",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Shelf.SM_Shelf",
+      "xyz_m": [
+        35,
+        22,
+        1.2399193660307344
+      ],
+      "yaw": 180,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Cart",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Cart.SM_Cart",
+      "xyz_m": [
+        21,
+        26,
+        -0.5067240918597361
+      ],
+      "yaw": 70,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Pallet",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Pallet.SM_Pallet",
+      "xyz_m": [
+        22,
+        18,
+        -0.11658191193361585
+      ],
+      "yaw": 20,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Stairs",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Stairs.SM_Stairs",
+      "xyz_m": [
+        17,
+        26,
+        -1.0029524409832997
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Railings",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Railings.SM_Railings",
+      "xyz_m": [
+        17,
+        29,
+        -1.2314039392387144
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Wheel",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Wheel.SM_Wheel",
+      "xyz_m": [
+        33,
+        20,
+        1.0040352884000001
+      ],
+      "yaw": 15,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Ventilation",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Ventilation.SM_Ventilation",
+      "xyz_m": [
+        31,
+        33,
+        0.3877782079706651
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_02",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "xyz_m": [
+        -52,
+        -6,
+        -2.287509423290079
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        -49,
+        9,
+        -2.976010750376707
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        -40,
+        13,
+        -3.4227548138153403
+      ],
+      "yaw": 80,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_02",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "xyz_m": [
+        -43,
+        -19,
+        -1.4047072696213156
+      ],
+      "yaw": 10,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        -32,
+        -11,
+        -1.5927896882193575
+      ],
+      "yaw": 80,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        -25,
+        7,
+        -3.001980952964996
+      ],
+      "yaw": 10,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_02",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "xyz_m": [
+        -25,
+        23,
+        -3.314882838224235
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        -14,
+        26,
+        -2.6759096372170976
+      ],
+      "yaw": 100,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        12,
+        25,
+        -1.4121887690520198
+      ],
+      "yaw": 10,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_02",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "xyz_m": [
+        20,
+        8,
+        -0.298224697395611
+      ],
+      "yaw": 80,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        28,
+        -8,
+        -0.46653225503429535
+      ],
+      "yaw": 15,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        43,
+        -14,
+        -0.6830455096615913
+      ],
+      "yaw": 95,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_02",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "xyz_m": [
+        48,
+        5,
+        -0.140709209000086
+      ],
+      "yaw": 10,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        53,
+        18,
+        0.8304244469038173
+      ],
+      "yaw": 85,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        42,
+        32,
+        1.2728783025025066
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_02",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "xyz_m": [
+        -48,
+        33,
+        -4.533028692352013
+      ],
+      "yaw": 15,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        -42,
+        -34,
+        -2.572097998646124
+      ],
+      "yaw": 85,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        -28,
+        -38,
+        -2.805935119895816
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_02",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "xyz_m": [
+        -8,
+        -37,
+        -2.910093600248295
+      ],
+      "yaw": 100,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        17,
+        -36,
+        -2.91132941528168
+      ],
+      "yaw": 15,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "xyz_m": [
+        39,
+        -32,
+        -1.8057890848151206
+      ],
+      "yaw": 85,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_02",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "xyz_m": [
+        -52,
+        -6,
+        0.712490576709921
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_02",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "xyz_m": [
+        -43,
+        -19,
+        1.5952927303786844
+      ],
+      "yaw": 10,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_02",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "xyz_m": [
+        20,
+        8,
+        2.701775302604389
+      ],
+      "yaw": 80,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_02",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "xyz_m": [
+        53,
+        18,
+        3.8304244469038173
+      ],
+      "yaw": 85,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_02",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "xyz_m": [
+        -48,
+        33,
+        -1.533028692352013
+      ],
+      "yaw": 15,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Container01_02",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "xyz_m": [
+        39,
+        -32,
+        1.1942109151848794
+      ],
+      "yaw": 85,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_BoxTruck_01a",
+      "source": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_BoxTruck_01a.SM_BoxTruck_01a",
+      "xyz_m": [
+        -46,
+        -3,
+        -2.215447384688834
+      ],
+      "yaw": 70,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_BoxTruck_01a",
+      "source": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_BoxTruck_01a.SM_BoxTruck_01a",
+      "xyz_m": [
+        -30,
+        30,
+        -3.6821762396901314
+      ],
+      "yaw": -35,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_BoxTruck_01a",
+      "source": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_BoxTruck_01a.SM_BoxTruck_01a",
+      "xyz_m": [
+        45,
+        -25,
+        -1.5637722606422872
+      ],
+      "yaw": 165,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_BoxTruck_01a",
+      "source": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_BoxTruck_01a.SM_BoxTruck_01a",
+      "xyz_m": [
+        47,
+        23,
+        1.4307348470920473
+      ],
+      "yaw": 100,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Campervan_01a",
+      "source": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_Campervan_01a.SM_Campervan_01a",
+      "xyz_m": [
+        -35,
+        -27,
+        -1.8880352107389002
+      ],
+      "yaw": 25,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Campervan_01a",
+      "source": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_Campervan_01a.SM_Campervan_01a",
+      "xyz_m": [
+        -51,
+        22,
+        -3.9210259961594196
+      ],
+      "yaw": 70,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Campervan_01a",
+      "source": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_Campervan_01a.SM_Campervan_01a",
+      "xyz_m": [
+        30,
+        -27,
+        -2.4876586710611326
+      ],
+      "yaw": -20,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_ElectricalPanel_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalPanel_01.SM_ElectricalPanel_01",
+      "xyz_m": [
+        35,
+        -16,
+        -0.8864852521526903
+      ],
+      "yaw": 45,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_ElectricalSupply_Switchboard01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalSupply_Switchboard01.SM_ElectricalSupply_Switchboard01",
+      "xyz_m": [
+        37,
+        -16,
+        -0.8483982415047863
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Pallet",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Pallet.SM_Pallet",
+      "xyz_m": [
+        36,
+        -18,
+        -1.1163983360315435
+      ],
+      "yaw": 15,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_ElectricalPanel_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalPanel_01.SM_ElectricalPanel_01",
+      "xyz_m": [
+        40,
+        -5,
+        -0.40170204217898337
+      ],
+      "yaw": 45,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_ElectricalSupply_Switchboard01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalSupply_Switchboard01.SM_ElectricalSupply_Switchboard01",
+      "xyz_m": [
+        42,
+        -5,
+        -0.4420855860497292
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Pallet",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Pallet.SM_Pallet",
+      "xyz_m": [
+        41,
+        -7,
+        -0.4533963825651595
+      ],
+      "yaw": 15,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_ElectricalPanel_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalPanel_01.SM_ElectricalPanel_01",
+      "xyz_m": [
+        22,
+        -21,
+        -2.3977236067835643
+      ],
+      "yaw": 45,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_ElectricalSupply_Switchboard01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalSupply_Switchboard01.SM_ElectricalSupply_Switchboard01",
+      "xyz_m": [
+        24,
+        -21,
+        -2.2589399362762395
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Pallet",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Pallet.SM_Pallet",
+      "xyz_m": [
+        23,
+        -23,
+        -2.663694778657094
+      ],
+      "yaw": 15,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_ElectricalPanel_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalPanel_01.SM_ElectricalPanel_01",
+      "xyz_m": [
+        13,
+        -25,
+        -3.515231554534037
+      ],
+      "yaw": 45,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_ElectricalSupply_Switchboard01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalSupply_Switchboard01.SM_ElectricalSupply_Switchboard01",
+      "xyz_m": [
+        15,
+        -25,
+        -3.408217444050635
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Pallet",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Pallet.SM_Pallet",
+      "xyz_m": [
+        14,
+        -27,
+        -3.519102025784619
+      ],
+      "yaw": 15,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_ElectricalPanel_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalPanel_01.SM_ElectricalPanel_01",
+      "xyz_m": [
+        -25,
+        15,
+        -3.20259879845273
+      ],
+      "yaw": 45,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_ElectricalSupply_Switchboard01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalSupply_Switchboard01.SM_ElectricalSupply_Switchboard01",
+      "xyz_m": [
+        -23,
+        15,
+        -3.095710260132482
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Pallet",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Pallet.SM_Pallet",
+      "xyz_m": [
+        -24,
+        13,
+        -3.116015689945768
+      ],
+      "yaw": 15,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_ElectricalPanel_01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalPanel_01.SM_ElectricalPanel_01",
+      "xyz_m": [
+        -44,
+        23,
+        -4.052096086596712
+      ],
+      "yaw": 45,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_ElectricalSupply_Switchboard01",
+      "source": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalSupply_Switchboard01.SM_ElectricalSupply_Switchboard01",
+      "xyz_m": [
+        -42,
+        23,
+        -4.035105868559775
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "SM_Pallet",
+      "source": "/Scrapline/Imported/GarageSource/Meshes/SM_Pallet.SM_Pallet",
+      "xyz_m": [
+        -43,
+        21,
+        -3.931310623858543
+      ],
+      "yaw": 15,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "pipe_m_l300_00",
+      "source": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_l300_00.pipe_m_l300_00",
+      "xyz_m": [
+        37,
+        -16,
+        -0.8483982415047863
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "pipe_m_valve_00",
+      "source": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_valve_00.pipe_m_valve_00",
+      "xyz_m": [
+        37,
+        -15,
+        -0.750016579005643
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "pipe_m_l300_00",
+      "source": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_l300_00.pipe_m_l300_00",
+      "xyz_m": [
+        32,
+        -12,
+        -0.5895544839881238
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "pipe_m_valve_00",
+      "source": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_valve_00.pipe_m_valve_00",
+      "xyz_m": [
+        32,
+        -11,
+        -0.5302600740059948
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "pipe_m_l300_00",
+      "source": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_l300_00.pipe_m_l300_00",
+      "xyz_m": [
+        26,
+        -15,
+        -1.0923435994477098
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "pipe_m_valve_00",
+      "source": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_valve_00.pipe_m_valve_00",
+      "xyz_m": [
+        26,
+        -14,
+        -0.9684729882422994
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "pipe_m_l300_00",
+      "source": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_l300_00.pipe_m_l300_00",
+      "xyz_m": [
+        21,
+        -12,
+        -1.0201516638511632
+      ],
+      "yaw": 90,
+      "scale": 1,
+      "shared_pivot": false
+    },
+    {
+      "asset": "pipe_m_valve_00",
+      "source": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_valve_00.pipe_m_valve_00",
+      "xyz_m": [
+        21,
+        -11,
+        -0.9301073335955391
+      ],
+      "yaw": 0,
+      "scale": 1,
+      "shared_pivot": false
+    }
+  ],
+  "raw_source_placements": [
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        73.40628641165038,
+        0.0,
+        0.6151524974917395
+      ],
+      "yaw": 90.0,
+      "scale": 1.2453533841179194,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        78.49660229410198,
+        5.3336194065670055,
+        2.1762195667161777
+      ],
+      "yaw": 94.73684210526315,
+      "scale": 1.0564924555619104,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        69.49551303843246,
+        9.50933504129646,
+        0.47387620729306446
+      ],
+      "yaw": 99.47368421052632,
+      "scale": 1.3545334698422045,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        71.02295725782463,
+        14.74807343884192,
+        1.0900989197522446
+      ],
+      "yaw": 104.21052631578948,
+      "scale": 1.0874758962698252,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        67.99811255591482,
+        19.14190085135668,
+        0.838543019504741
+      ],
+      "yaw": 108.94736842105263,
+      "scale": 1.0638396380790076,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        62.13430515402608,
+        22.348799207914993,
+        0.3984177303039098
+      ],
+      "yaw": 113.6842105263158,
+      "scale": 1.305437725820065,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        70.52873715115105,
+        31.297959943540064,
+        2.2966464475464328
+      ],
+      "yaw": 118.42105263157895,
+      "scale": 1.351050866197264,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        63.449897741996836,
+        33.99218745064241,
+        1.213499409682206
+      ],
+      "yaw": 123.15789473684211,
+      "scale": 1.070037889637821,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        57.10995644652128,
+        36.44937992588735,
+        0.6450611203522266
+      ],
+      "yaw": 127.89473684210526,
+      "scale": 0.9153344161980888,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        56.93644638067588,
+        42.97922681187596,
+        1.0300282184496892
+      ],
+      "yaw": 132.6315789473684,
+      "scale": 1.0371762508494076,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        47.38265991064267,
+        42.20645739168234,
+        0.08208218249945193
+      ],
+      "yaw": 137.3684210526316,
+      "scale": 1.5846025755642423,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        43.47751240881826,
+        45.80512544954885,
+        -0.2150529558283099
+      ],
+      "yaw": 142.10526315789474,
+      "scale": 1.5829790074735384,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        41.29747486254883,
+        51.83260256805334,
+        -0.11832177176641645
+      ],
+      "yaw": 146.8421052631579,
+      "scale": 1.4089255202976794,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        36.01765858092993,
+        54.57493901114749,
+        -0.37871165974877524
+      ],
+      "yaw": 151.57894736842107,
+      "scale": 0.9429480241649847,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        30.97842688466207,
+        57.91143375635194,
+        -0.3802042700725824
+      ],
+      "yaw": 156.31578947368422,
+      "scale": 1.0070153142184897,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        23.35597384704437,
+        55.78757461041923,
+        -1.4810720557271255
+      ],
+      "yaw": 161.05263157894737,
+      "scale": 0.9043728243153986,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        16.200404134727357,
+        52.458638320105294,
+        -2.519600257382991
+      ],
+      "yaw": 165.78947368421052,
+      "scale": 1.094054868719755,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        10.73806659627831,
+        52.766758273218116,
+        -2.9537198912019718
+      ],
+      "yaw": 170.5263157894737,
+      "scale": 1.1081707363471622,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        6.5611264677909515,
+        64.92843728399865,
+        -0.4624874468148076
+      ],
+      "yaw": 175.26315789473682,
+      "scale": 1.5987893760627228,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        4.420352557708113e-15,
+        59.19566522926124,
+        -2.728949512651453
+      ],
+      "yaw": 180.0,
+      "scale": 0.8863178817458116,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        -5.853621113578519,
+        57.92701500619564,
+        -3.1999810921964835
+      ],
+      "yaw": 184.73684210526318,
+      "scale": 0.8510142945866237,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -11.30721345976651,
+        55.56354060813589,
+        -3.6098383385917745
+      ],
+      "yaw": 189.4736842105263,
+      "scale": 1.2970738908866897,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        -18.53077912864442,
+        60.00464136666273,
+        -2.246052888349012
+      ],
+      "yaw": 194.21052631578948,
+      "scale": 0.8250972022210687,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        -23.796801728594847,
+        56.84052656581217,
+        -2.7585318382660393
+      ],
+      "yaw": 198.9473684210526,
+      "scale": 1.138030069425268,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -28.82716054521835,
+        53.88983128529014,
+        -3.0566169669936785
+      ],
+      "yaw": 203.68421052631578,
+      "scale": 0.9079892222382346,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        -34.11932265532388,
+        51.69852862123186,
+        -3.162507798804038
+      ],
+      "yaw": 208.42105263157896,
+      "scale": 0.8818090256316848,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        -41.93146093015359,
+        52.62832065941878,
+        -2.3062708978899953
+      ],
+      "yaw": 213.15789473684214,
+      "scale": 1.3195528417153368,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -46.48909728738466,
+        48.97793860103725,
+        -2.993097536962571
+      ],
+      "yaw": 217.89473684210526,
+      "scale": 1.1259953977446697,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        -55.03964951192308,
+        49.02697793578985,
+        -2.292625777817063
+      ],
+      "yaw": 222.6315789473684,
+      "scale": 1.094987897496229,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        -50.37140405074916,
+        38.023518100430074,
+        -4.634566041188767
+      ],
+      "yaw": 227.3684210526316,
+      "scale": 1.0987193395206907,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -63.53877279837364,
+        40.552453790106654,
+        -2.708151864888608
+      ],
+      "yaw": 232.10526315789474,
+      "scale": 0.9262629856803297,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        -65.28424795825843,
+        34.97490891466806,
+        -2.789862413726717
+      ],
+      "yaw": 236.8421052631579,
+      "scale": 1.5505522904999025,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        -69.90309313234064,
+        31.020323022327684,
+        -1.7689846474565893
+      ],
+      "yaw": 241.57894736842104,
+      "scale": 1.172489922907324,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -66.53235731117256,
+        23.930714131118012,
+        -2.7433753951002426
+      ],
+      "yaw": 246.31578947368422,
+      "scale": 1.4972372776813456,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        -72.8991232081276,
+        20.521566498678222,
+        -0.9801892785713654
+      ],
+      "yaw": 251.0526315789474,
+      "scale": 1.445447909190093,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        -65.94988202978543,
+        13.694638198849182,
+        -2.8424432040157517
+      ],
+      "yaw": 255.78947368421052,
+      "scale": 1.2865661980131304,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -76.49204428906513,
+        10.466696990007794,
+        -0.039883418767450496
+      ],
+      "yaw": 260.52631578947364,
+      "scale": 0.9905887225320785,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        -68.29023170186554,
+        4.640125743523991,
+        -2.619494154902803
+      ],
+      "yaw": 265.2631578947369,
+      "scale": 1.47296633581532,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        -74.65842426358928,
+        7.497276424910755e-15,
+        -1.2533289182476908
+      ],
+      "yaw": 270.0,
+      "scale": 1.1278463323100554,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -73.01014078975125,
+        -4.960830053935521,
+        -1.9351141692982878
+      ],
+      "yaw": 274.7368421052631,
+      "scale": 1.0058169058720214,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        -68.2700297385997,
+        -9.341647506143232,
+        -3.0107356037723547
+      ],
+      "yaw": 279.47368421052636,
+      "scale": 0.8852230141642073,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        -69.63473886059961,
+        -14.459806832354316,
+        -2.794849874137878
+      ],
+      "yaw": 284.2105263157895,
+      "scale": 0.917370845774913,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -75.89781981428348,
+        -21.36571865174182,
+        -0.7789657195882895
+      ],
+      "yaw": 288.9473684210526,
+      "scale": 1.5647403666524302,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        -68.72910291453846,
+        -24.72085133919963,
+        -2.538477966782912
+      ],
+      "yaw": 293.6842105263158,
+      "scale": 0.8722220650360533,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        -66.11473954945288,
+        -29.339196385463527,
+        -2.604437814167827
+      ],
+      "yaw": 298.42105263157896,
+      "scale": 0.9243648001065882,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -59.7034600566449,
+        -31.985098131279464,
+        -3.300223334942292
+      ],
+      "yaw": 303.1578947368421,
+      "scale": 0.9024472961999784,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        -57.96701419296505,
+        -36.99638127840641,
+        -2.939812335432221
+      ],
+      "yaw": 307.8947368421052,
+      "scale": 0.8601778890180339,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        -51.32128303023969,
+        -38.74054676481847,
+        -3.476943683162166
+      ],
+      "yaw": 312.63157894736844,
+      "scale": 0.9868292238467467,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -49.39024775733594,
+        -43.99473122585109,
+        -3.1314841440542285
+      ],
+      "yaw": 317.36842105263156,
+      "scale": 1.5443902473513391,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        -45.96685223899929,
+        -48.42773463049347,
+        -2.704615006533941
+      ],
+      "yaw": 322.10526315789474,
+      "scale": 1.4259396429400923,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        -42.29589188122382,
+        -53.08571919802656,
+        -1.833088266120294
+      ],
+      "yaw": 326.8421052631579,
+      "scale": 1.2248326944388896,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -31.485757501339663,
+        -47.70807884400307,
+        -4.15215194690091
+      ],
+      "yaw": 331.57894736842104,
+      "scale": 0.8465062964326573,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        -27.028571249240155,
+        -50.52752740663536,
+        -4.051721569843757
+      ],
+      "yaw": 336.3157894736843,
+      "scale": 1.213003430717168,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        -22.980135394652866,
+        -54.88985500165587,
+        -3.4021874180415197
+      ],
+      "yaw": 341.0526315789474,
+      "scale": 1.5444540410483416,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -16.789333892392314,
+        -54.36565575598938,
+        -3.491037244733264
+      ],
+      "yaw": 345.7894736842105,
+      "scale": 0.9052784841117024,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        -12.492202427768921,
+        -61.386565253250836,
+        -1.5101154830363255
+      ],
+      "yaw": 350.5263157894737,
+      "scale": 1.2854298653588723,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        -5.442137150748866,
+        -53.85499920142275,
+        -3.0144854147422526
+      ],
+      "yaw": 355.2631578947368,
+      "scale": 1.0753246423883374,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -1.3327940659225007e-14,
+        -59.49422232420341,
+        -1.7970633890166219
+      ],
+      "yaw": 360.0,
+      "scale": 1.4582384069077874,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        6.461340739403664,
+        -63.94096486760224,
+        -0.14181584310969053
+      ],
+      "yaw": 364.7368421052632,
+      "scale": 1.4987822692079589,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        12.197837828565115,
+        -59.94006038097131,
+        -1.1427951097552824
+      ],
+      "yaw": 369.4736842105263,
+      "scale": 1.5503913098925757,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        17.919304974615677,
+        -58.024622768267086,
+        -1.4495858877996102
+      ],
+      "yaw": 374.2105263157895,
+      "scale": 1.0312098737648956,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        21.87795028551559,
+        -52.25719945866001,
+        -2.545447738718841
+      ],
+      "yaw": 378.94736842105266,
+      "scale": 1.4655438916688794,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        30.550881238605726,
+        -57.1121749220803,
+        -0.8882619083423078
+      ],
+      "yaw": 383.6842105263158,
+      "scale": 1.2932641307273691,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        38.85125157336911,
+        -58.86847642689331,
+        0.9499211817590985
+      ],
+      "yaw": 388.42105263157896,
+      "scale": 1.3057037135732994,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        38.43584843057957,
+        -48.24096540282296,
+        -1.934772776185631
+      ],
+      "yaw": 393.1578947368421,
+      "scale": 1.3559345458554621,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        49.59271257805305,
+        -52.24770910675208,
+        1.6651390817734564
+      ],
+      "yaw": 397.89473684210526,
+      "scale": 0.9428516224172174,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        54.88768140153118,
+        -48.89161120905379,
+        2.3551944575693433
+      ],
+      "yaw": 402.63157894736844,
+      "scale": 1.132966403759839,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        49.239593438315104,
+        -37.16915594556965,
+        -1.4353690099794247
+      ],
+      "yaw": 407.36842105263156,
+      "scale": 1.2064833635250247,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        61.77019095903271,
+        -39.42368894062668,
+        1.4479686475339129
+      ],
+      "yaw": 412.1052631578948,
+      "scale": 1.1930425327525165,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        58.24820424472765,
+        -31.205469950498546,
+        -1.0381701671943906
+      ],
+      "yaw": 416.8421052631579,
+      "scale": 1.4139508989342926,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        58.688751697386785,
+        -26.043826586950395,
+        -1.480442109586167
+      ],
+      "yaw": 421.57894736842104,
+      "scale": 1.3369855558027268,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        65.1566255619651,
+        -23.435883577355874,
+        -0.9938794113903289
+      ],
+      "yaw": 426.3157894736842,
+      "scale": 1.2901906810904986,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        69.62798046569995,
+        -19.60071902670326,
+        -0.5657227034277876
+      ],
+      "yaw": 431.05263157894734,
+      "scale": 1.0241436613322579,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjagi\\xckjagi.fbx",
+      "xyz_m": [
+        66.39626382175216,
+        -13.787330360705967,
+        -0.9958571984924511
+      ],
+      "yaw": 435.78947368421046,
+      "scale": 1.4563793641018323,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xb5ebhf\\xb5ebhf.fbx",
+      "xyz_m": [
+        71.77433067875866,
+        -9.821154315555125,
+        -0.19902689548964025
+      ],
+      "yaw": 440.5263157894737,
+      "scale": 1.0270402052755325,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        74.81215231985769,
+        -5.0832715786250455,
+        0.5834931599507394
+      ],
+      "yaw": 445.2631578947368,
+      "scale": 1.4143810203576783,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -22,
+        -13,
+        -2.389699343882161
+      ],
+      "yaw": 32.00596189212575,
+      "scale": 0.5,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -16,
+        16,
+        -2.904475500920845
+      ],
+      "yaw": 164.98343002298856,
+      "scale": 0.5,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        20,
+        17,
+        -0.5439357302531936
+      ],
+      "yaw": 54.809033197144224,
+      "scale": 0.5,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        26,
+        -24,
+        -2.82985056517667
+      ],
+      "yaw": 276.6133176214307,
+      "scale": 0.5,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -41,
+        -23,
+        -1.8731765502596809
+      ],
+      "yaw": 16.336576554567834,
+      "scale": 0.5,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        -43,
+        25,
+        -4.396353067638719
+      ],
+      "yaw": 299.72266072616935,
+      "scale": 0.5,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\African_Slate_Quarry-578d0ceb\\fbx\\high\\south_african_slate_quar_extracted\\xckjajs\\xckjajs.fbx",
+      "xyz_m": [
+        41,
+        10,
+        0.14404281914204292
+      ],
+      "yaw": 201.52894789226963,
+      "scale": 0.5,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\teraccgda\\teraccgda.fbx",
+      "xyz_m": [
+        -46,
+        -24,
+        -2.3013253118032004
+      ],
+      "yaw": 185.82080670120456,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\teufceuda\\teufceuda.fbx",
+      "xyz_m": [
+        -36,
+        -30,
+        -2.2686563437279634
+      ],
+      "yaw": 193.36720957623925,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\tewscfuda\\tewscfuda.fbx",
+      "xyz_m": [
+        -30,
+        -20,
+        -1.9269662272220849
+      ],
+      "yaw": 100.28504887794125,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\teraccgda\\teraccgda.fbx",
+      "xyz_m": [
+        -42,
+        23,
+        -4.285105868559775
+      ],
+      "yaw": 162.77979510473767,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\teufceuda\\teufceuda.fbx",
+      "xyz_m": [
+        -24,
+        20,
+        -3.4686916916008577
+      ],
+      "yaw": 61.25190951776057,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\tewscfuda\\tewscfuda.fbx",
+      "xyz_m": [
+        -10,
+        16,
+        -2.486579461582395
+      ],
+      "yaw": 128.38310997056288,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\teraccgda\\teraccgda.fbx",
+      "xyz_m": [
+        12,
+        -17,
+        -2.56544027298154
+      ],
+      "yaw": 214.50665324301715,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\teufceuda\\teufceuda.fbx",
+      "xyz_m": [
+        23,
+        -22,
+        -2.756160275699168
+      ],
+      "yaw": 220.04710776667562,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\tewscfuda\\tewscfuda.fbx",
+      "xyz_m": [
+        42,
+        16,
+        0.77155794037353
+      ],
+      "yaw": 116.71918241076264,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\teraccgda\\teraccgda.fbx",
+      "xyz_m": [
+        49,
+        27,
+        1.0821491260846807
+      ],
+      "yaw": 221.7811814890074,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\teufceuda\\teufceuda.fbx",
+      "xyz_m": [
+        -52,
+        15,
+        -3.5934935647155895
+      ],
+      "yaw": 282.5226580848363,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\tewscfuda\\tewscfuda.fbx",
+      "xyz_m": [
+        -28,
+        -8,
+        -2.305804813299925
+      ],
+      "yaw": 279.24713655009094,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\teraccgda\\teraccgda.fbx",
+      "xyz_m": [
+        19,
+        12,
+        -0.5837535804309557
+      ],
+      "yaw": 1.1681042401225517,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    },
+    {
+      "source_file": "C:\\ProgramData\\Epic\\EpicGamesLauncher\\VaultCache\\FabLibrary\\Junkyard-a984aac1\\fbx\\high\\junkyard_high_extracted\\teufceuda\\teufceuda.fbx",
+      "xyz_m": [
+        42,
+        -30,
+        -1.940208728251195
+      ],
+      "yaw": 180.22094511829292,
+      "scale": 1,
+      "material": "corresponding source BaseColor/Albedo and Normal"
+    }
+  ],
+  "terrain": {
+    "resolution": 253,
+    "span_m": 230,
+    "function_source": "build_reference_scene.py",
+    "range_m": [
+      -4.573876275939041,
+      14.387263324200974
+    ]
+  }
+}

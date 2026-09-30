@@ -32,7 +32,7 @@ The root `AGENTS.md` owns repository-wide rules.
 - The active Sol one-shot must require visual inspection of the committed real-source boards/contact sheets before environment construction. Written composition guidance does not replace opening the actual reference images.
 - Keep implementation-facing instructions concrete enough that another agent can execute without reconstructing prior chat context.
 - The approved one-shot toolchain is documented in `TOOLING.md`; do not silently replace or remove an installed integration.
-- `SPATIAL_CONTRACT.md` is the implementation authority for macro layout, major anchor placement/orientation, route connectivity, verticality limits, spawn-region distribution, and lighting concept. Softer older prose must not override it.
+- Historical `SPATIAL_CONTRACT.md` owns the old map only. Fresh macro layout, coordinates, terrain and reference cameras are owned by `fresh-build/quarry-cut/DESIGN_SPEC.md`; retain gameplay/Armory authority while replacing old frozen spawn-region coordinates.
 - Before final one-shot approval, run the confusion audit (`ASTRA_CONFUSION_AUDIT.md`, historical filename) and remove or narrow stale wording that asks the implementation model to re-select a frozen design decision.
 - For the locked first alpha, native gameplay authority remains in `VERSE_GAMEPLAY_INTEGRATION.md`, while `ARMORY_ECONOMY_SPEC.md` now owns the authorized match-economy extension. Keep Island Settings authoritative for score, 30-elimination victory, timeout, respawn rules, sustain, and spawn selection. Custom Verse may own only the Armory responsibilities listed in `ARMORY_ECONOMY_SPEC.md`. The completed UEFN Central five-file result in `UEFN_CENTRAL_GENERATOR_RESULT.md` remains quarantined evidence and must not be revived as the implementation architecture.
 
@@ -41,8 +41,8 @@ The root `AGENTS.md` owns repository-wide rules.
 - Prefer concise operational documents over brainstorming transcripts.
 - When a design decision changes, update the owning document instead of appending contradictory history.
 - Mark unapproved candidates clearly.
-- `SOL61_ONE_SHOT_PROMPT.md` is the active authorized execution prompt; `ASTRA_ONE_SHOT_PROMPT.md` is superseded historical handoff material.
-- `BUILD_RUN_STATE.md` is the concise recovery ledger for resuming long runs after transient interruptions.
+- `fresh-build/quarry-cut/SOL61_GAUNTLET.md` is the active fresh-build handoff. Older SOL61/ASTRA prompts remain historical.
+- Fresh execution uses `fresh-build/quarry-cut/BUILD_RUN_STATE.md`; old BUILD_RUN_STATE is historical and must not restart construction of the failed layout.
 
 ## Verification
 
@@ -54,4 +54,4 @@ The root `AGENTS.md` owns repository-wide rules.
 
 ## Child DOX Index
 
-No child DOX documents yet.
+- `fresh-build/quarry-cut/AGENTS.md` — owns the clean-rebuild design, asset reality check, reference index, gauntlet and fresh recovery state.

@@ -1,5 +1,10 @@
 # Scrapline — Asset Recovery Status
 
+
+## Current correction — 2026-09-30
+
+MW Landscape Auto Material was restored to `ScrapStage56/Content/MWLandscapeAutoMaterial` from intact local VaultCache after the user stated they had not approved its earlier removal. Source and restored tree contain 100 files / 735,412,278 bytes; file-by-file SHA256 comparison returned zero mismatches. Staging availability is confirmed; UEFN compatibility/performance remains unverified. Preserve installed/downloaded assets; no housekeeping removal without explicit user approval. See `fresh-build/quarry-cut/ASSET_REALITY_CHECK.md`.
+
 ## Status
 
 **Recovery complete. Priority donor curation complete.**

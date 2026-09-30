@@ -1,5 +1,7 @@
 # Scrapline
 
+**Active work: clean Quarry Cut rebuild.** See [fresh-build package](docs/fresh-build/quarry-cut/README.md) and [Sol 6.1 gauntlet](docs/fresh-build/quarry-cut/SOL61_GAUNTLET.md). The original level and frozen layout below remain historical; the user authorized a fresh design on 2026-09-30.
+
 Scrapline is a compact post-apocalyptic free-for-all map for Unreal Editor for Fortnite (UEFN), built from a deliberately curated Fab/UEFN production-asset pool.
 
 ## Project Goal
@@ -14,7 +16,7 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 - Target feel: fast combat, short downtime, strong landmarks, layered routes, controlled verticality
 - Construction rule: prefer approved UEFN/Fab assets over primitive placeholder geometry or newly modeled substitutes
 
-## Current Stage
+## Historical build stage
 
 **Design/asset/gameplay handoff frozen; GPT-6.1 Sol construction explicitly authorized. Active prompt: `docs/SOL61_ONE_SHOT_PROMPT.md`.**
 
