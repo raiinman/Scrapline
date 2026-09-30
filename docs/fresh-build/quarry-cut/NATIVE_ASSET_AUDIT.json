@@ -1,0 +1,3406 @@
+{
+  "anchors": [
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "bounds": {
+        "min": {
+          "x": -149.47640991210938,
+          "y": -311.2121276855469,
+          "z": -5.141876220703125
+        },
+        "max": {
+          "x": 149.4466552734375,
+          "y": 304.04454040527344,
+          "z": 303.5759582519531
+        },
+        "isValid": true
+      },
+      "slots": [
+        "06 - Default"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_Crane01.SM_Crane01",
+      "bounds": {
+        "min": {
+          "x": -311.68492126464844,
+          "y": -1344.733642578125,
+          "z": -162.5947265625
+        },
+        "max": {
+          "x": 266.48768615722656,
+          "y": 1344.733642578125,
+          "z": 317.1981506347656
+        },
+        "isValid": true
+      },
+      "slots": [
+        "SM_crane_01",
+        "fire"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCabin01.SM_CraneCabin01",
+      "bounds": {
+        "min": {
+          "x": 45.2281494140625,
+          "y": -1130.4234313964844,
+          "z": -147.7958984375
+        },
+        "max": {
+          "x": 271.2648620605469,
+          "y": -901.3443908691406,
+          "z": 119.4681396484375
+        },
+        "isValid": true
+      },
+      "slots": [
+        "SM_CraneCabin01",
+        "04 - Default"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCable01.SM_CraneCable01",
+      "bounds": {
+        "min": {
+          "x": -277.71893310546875,
+          "y": -1333.53515625,
+          "z": -229.9034423828125
+        },
+        "max": {
+          "x": 80.07110595703125,
+          "y": 229.298095703125,
+          "z": 197.21343994140625
+        },
+        "isValid": true
+      },
+      "slots": [
+        "SM_ElectricMotor01"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_EngineWithContainer.SM_EngineWithContainer",
+      "bounds": {
+        "min": {
+          "x": -60.77004051208496,
+          "y": -80.75304794311523,
+          "z": -0.385040283203125
+        },
+        "max": {
+          "x": 60.29984474182129,
+          "y": 81.47558975219727,
+          "z": 93.50552368164062
+        },
+        "isValid": true
+      },
+      "slots": [
+        "ContainerEngine_mtl",
+        "24 - Default",
+        "21 - Default"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_RecyclingMachine01.SM_RecyclingMachine01",
+      "bounds": {
+        "min": {
+          "x": -54.46893501281738,
+          "y": -47.80093765258789,
+          "z": -2.6150665283203125
+        },
+        "max": {
+          "x": 54.46920585632324,
+          "y": 46.6666145324707,
+          "z": 220.33905029296875
+        },
+        "isValid": true
+      },
+      "slots": [
+        "RecyclingMachine01"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ForkLift.SM_ForkLift",
+      "bounds": {
+        "min": {
+          "x": -77.16131591796875,
+          "y": -256.1399154663086,
+          "z": -5.74456787109375
+        },
+        "max": {
+          "x": 74.7491455078125,
+          "y": 120.66629791259766,
+          "z": 347.72186279296875
+        },
+        "isValid": true
+      },
+      "slots": [
+        "ForkLift",
+        "ForkLiftDetails"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLine01.SM_AssemblyLine01",
+      "bounds": {
+        "min": {
+          "x": -126.5402946472168,
+          "y": -45.90497970581055,
+          "z": -0.5358734130859375
+        },
+        "max": {
+          "x": 126.05641555786133,
+          "y": 44.83058547973633,
+          "z": 125.61912536621094
+        },
+        "isValid": true
+      },
+      "slots": [
+        "07 - Default",
+        "Body",
+        "Roll"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLineTable01.SM_AssemblyLineTable01",
+      "bounds": {
+        "min": {
+          "x": -58.34572219848633,
+          "y": -44.879751205444336,
+          "z": -0.6163482666015625
+        },
+        "max": {
+          "x": 59.629337310791016,
+          "y": 49.538461685180664,
+          "z": 107.06522369384766
+        },
+        "isValid": true
+      },
+      "slots": [
+        "07 - Default"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1.SM_Garage_1",
+      "bounds": {
+        "min": {
+          "x": -819.5357971191406,
+          "y": -422.58680725097656,
+          "z": -0.00006103515625
+        },
+        "max": {
+          "x": 832.0013122558594,
+          "y": 422.58128356933594,
+          "z": 499.34814453125
+        },
+        "isValid": true
+      },
+      "slots": [
+        "Material"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1_roof.SM_Garage_1_roof",
+      "bounds": {
+        "min": {
+          "x": -826.4366455078125,
+          "y": -468.76763916015625,
+          "z": 504.1125793457031
+        },
+        "max": {
+          "x": 826.4366455078125,
+          "y": 468.7674560546875,
+          "z": 797.0324401855469
+        },
+        "isValid": true
+      },
+      "slots": [
+        "Material"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Workbench.SM_Workbench",
+      "bounds": {
+        "min": {
+          "x": -28.914766311645508,
+          "y": -129.7889862060547,
+          "z": -0.0454254150390625
+        },
+        "max": {
+          "x": 37.804609298706055,
+          "y": 129.7891387939453,
+          "z": 140.48199462890625
+        },
+        "isValid": true
+      },
+      "slots": [
+        "Material_001"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Shelf.SM_Shelf",
+      "bounds": {
+        "min": {
+          "x": -17.88715934753418,
+          "y": -120.94874572753906,
+          "z": -19.671396255493164
+        },
+        "max": {
+          "x": 20.332361221313477,
+          "y": 120.95028686523438,
+          "z": 19.671396255493164
+        },
+        "isValid": true
+      },
+      "slots": [
+        "Material_001"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Cart.SM_Cart",
+      "bounds": {
+        "min": {
+          "x": -35.7359561920166,
+          "y": -132.39027404785156,
+          "z": -0.3657798767089844
+        },
+        "max": {
+          "x": 35.616628646850586,
+          "y": 49.40208435058594,
+          "z": 61.317508697509766
+        },
+        "isValid": true
+      },
+      "slots": [
+        "Material_001"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Pallet.SM_Pallet",
+      "bounds": {
+        "min": {
+          "x": -97.7978630065918,
+          "y": -94.55501556396484,
+          "z": -14.722714900970459
+        },
+        "max": {
+          "x": 94.7132453918457,
+          "y": 96.3811264038086,
+          "z": 5.765150547027588
+        },
+        "isValid": true
+      },
+      "slots": [
+        "Material"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Stairs.SM_Stairs",
+      "bounds": {
+        "min": {
+          "x": -152.56357955932617,
+          "y": -197.91585540771484,
+          "z": 0.2191162109375
+        },
+        "max": {
+          "x": 62.41969680786133,
+          "y": 119.7040786743164,
+          "z": 285.30133056640625
+        },
+        "isValid": true
+      },
+      "slots": [
+        "Material"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Railings.SM_Railings",
+      "bounds": {
+        "min": {
+          "x": -8.420850276947021,
+          "y": -97.88228607177734,
+          "z": -0.36542510986328125
+        },
+        "max": {
+          "x": 8.510988712310791,
+          "y": 8.420028686523438,
+          "z": 100.2636947631836
+        },
+        "isValid": true
+      },
+      "slots": [
+        "Material"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Wheel.SM_Wheel",
+      "bounds": {
+        "min": {
+          "x": -14.71296739578247,
+          "y": -43.49535369873047,
+          "z": -43.556283950805664
+        },
+        "max": {
+          "x": 14.736239910125732,
+          "y": 43.34929656982422,
+          "z": 43.75382041931152
+        },
+        "isValid": true
+      },
+      "slots": [
+        "ATV_F2"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Ventilation.SM_Ventilation",
+      "bounds": {
+        "min": {
+          "x": -3.017701506614685,
+          "y": -46.643890380859375,
+          "z": -31.96135711669922
+        },
+        "max": {
+          "x": 3.0095707178115845,
+          "y": 46.643890380859375,
+          "z": 31.96135711669922
+        },
+        "isValid": true
+      },
+      "slots": [
+        "Material"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "bounds": {
+        "min": {
+          "x": -149.44668579101562,
+          "y": -311.2106628417969,
+          "z": -5.213531494140625
+        },
+        "max": {
+          "x": 149.47640991210938,
+          "y": 311.2112121582031,
+          "z": 306.53228759765625
+        },
+        "isValid": true
+      },
+      "slots": [
+        "06 - Default"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_BoxTruck_01a.SM_BoxTruck_01a",
+      "bounds": {
+        "min": {
+          "x": -325.6573486328125,
+          "y": -135.7931900024414,
+          "z": -18.425811767578125
+        },
+        "max": {
+          "x": 231.0928955078125,
+          "y": 138.0549545288086,
+          "z": 299.7023620605469
+        },
+        "isValid": true
+      },
+      "slots": [
+        "M_Truck_Interior01",
+        "M_Truck_ExteriorDetailing",
+        "M_Planes",
+        "M_Exterior_01b",
+        "M_Exterior_01a",
+        "M_Exterior_01c",
+        "M_Truck_Interior02"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_Campervan_01a.SM_Campervan_01a",
+      "bounds": {
+        "min": {
+          "x": -302.52166748046875,
+          "y": -129.97659301757812,
+          "z": -13.3006591796875
+        },
+        "max": {
+          "x": 298.52777099609375,
+          "y": 130.3011474609375,
+          "z": 288.4703369140625
+        },
+        "isValid": true
+      },
+      "slots": [
+        "M_InteriorWall",
+        "M_InteriorCarpet",
+        "M_Interior_01a",
+        "M_Campervan_Pieces_01a",
+        "M_Campervan_RearCab_01a",
+        "M_Campervan_Undercarriage_01a",
+        "M_Campervan_Body_01a",
+        "M_Campervan_Windows_01a"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalPanel_01.SM_ElectricalPanel_01",
+      "bounds": {
+        "min": {
+          "x": -52.89007568359375,
+          "y": -55.05561828613281,
+          "z": -79.4153938293457
+        },
+        "max": {
+          "x": 52.89007568359375,
+          "y": 0.00738525390625,
+          "z": 79.41538619995117
+        },
+        "isValid": true
+      },
+      "slots": [
+        "07 - Default"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalSupply_Switchboard01.SM_ElectricalSupply_Switchboard01",
+      "bounds": {
+        "min": {
+          "x": -70.01217269897461,
+          "y": -0.03385162353515625,
+          "z": -0.0000152587890625
+        },
+        "max": {
+          "x": 70.00000381469727,
+          "y": 46.8602294921875,
+          "z": 200.04908752441406
+        },
+        "isValid": true
+      },
+      "slots": [
+        "ElectricalSupply",
+        "ElectricalSupply_Details"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_l300_00.pipe_m_l300_00",
+      "bounds": {
+        "min": {
+          "x": -14.627267837524414,
+          "y": -146.80130004882812,
+          "z": -14.627278327941895
+        },
+        "max": {
+          "x": 14.627266883850098,
+          "y": 146.80130004882812,
+          "z": 14.627278327941895
+        },
+        "isValid": true
+      },
+      "slots": [
+        "01 - Default"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_valve_00.pipe_m_valve_00",
+      "bounds": {
+        "min": {
+          "x": -32.42810249328613,
+          "y": -33.1221866607666,
+          "z": -8.241963386535645
+        },
+        "max": {
+          "x": 32.13424491882324,
+          "y": 32.50473594665527,
+          "z": -0.05620861053466797
+        },
+        "isValid": true
+      },
+      "slots": [
+        "pipes_m"
+      ]
+    }
+  ],
+  "metadata": [
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 3
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_Crane01.SM_Crane01",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_Crane01.SM_Crane01:BodySetup_1"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 3
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCabin01.SM_CraneCabin01",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCabin01.SM_CraneCabin01:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 2
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCable01.SM_CraneCable01",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCable01.SM_CraneCable01:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 3
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_EngineWithContainer.SM_EngineWithContainer",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_EngineWithContainer.SM_EngineWithContainer:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 4
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_RecyclingMachine01.SM_RecyclingMachine01",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_RecyclingMachine01.SM_RecyclingMachine01:BodySetup_1"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 2
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ForkLift.SM_ForkLift",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ForkLift.SM_ForkLift:BodySetup_1"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 3
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLine01.SM_AssemblyLine01",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLine01.SM_AssemblyLine01:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 3
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLineTable01.SM_AssemblyLineTable01",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLineTable01.SM_AssemblyLineTable01:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 3
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1.SM_Garage_1",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1.SM_Garage_1:BodySetup_1"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 1
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1_roof.SM_Garage_1_roof",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1_roof.SM_Garage_1_roof:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 1
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Workbench.SM_Workbench",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Workbench.SM_Workbench:BodySetup_1"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 1
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Shelf.SM_Shelf",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Shelf.SM_Shelf:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 1
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Cart.SM_Cart",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Cart.SM_Cart:BodySetup_2"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 1
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Pallet.SM_Pallet",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Pallet.SM_Pallet:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 1
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Stairs.SM_Stairs",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Stairs.SM_Stairs:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 1
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Railings.SM_Railings",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Railings.SM_Railings:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 1
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Wheel.SM_Wheel",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Wheel.SM_Wheel:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 1
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Ventilation.SM_Ventilation",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Ventilation.SM_Ventilation:BodySetup_1"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 1
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 2
+    },
+    {
+      "path": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_BoxTruck_01a.SM_BoxTruck_01a",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_BoxTruck_01a.SM_BoxTruck_01a:BodySetup_1"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 1
+    },
+    {
+      "path": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_Campervan_01a.SM_Campervan_01a",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_Campervan_01a.SM_Campervan_01a:BodySetup_1"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 1
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalPanel_01.SM_ElectricalPanel_01",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalPanel_01.SM_ElectricalPanel_01:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 1
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalSupply_Switchboard01.SM_ElectricalSupply_Switchboard01",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalSupply_Switchboard01.SM_ElectricalSupply_Switchboard01:BodySetup_1"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 3
+    },
+    {
+      "path": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_l300_00.pipe_m_l300_00",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_l300_00.pipe_m_l300_00:BodySetup_1"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 3
+    },
+    {
+      "path": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_valve_00.pipe_m_valve_00",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_valve_00.pipe_m_valve_00:BodySetup_1"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 5
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs:BodySetup_0"
+        },
+        "lODForCollision": 2,
+        "naniteSettings": {
+          "bEnabled": true,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 3
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi:BodySetup_0"
+        },
+        "lODForCollision": 2,
+        "naniteSettings": {
+          "bEnabled": true,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 3
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf:BodySetup_0"
+        },
+        "lODForCollision": 2,
+        "naniteSettings": {
+          "bEnabled": true,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 3
+    },
+    {
+      "path": "/85827e89-4c9f-09e4-5c37-fbaea2b6811c/SCBK_metal_catwalk_set_01_07_L0.SCBK_metal_catwalk_set_01_07_L0",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/85827e89-4c9f-09e4-5c37-fbaea2b6811c/SCBK_metal_catwalk_set_01_07_L0.SCBK_metal_catwalk_set_01_07_L0:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 0
+    },
+    {
+      "path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0:BodySetup_1"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 0
+    },
+    {
+      "path": "/a7703c69-4651-471d-dcf2-60aa487d93f7/SCBK_metal_catwalk_set_01_04_L0.SCBK_metal_catwalk_set_01_04_L0",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/a7703c69-4651-471d-dcf2-60aa487d93f7/SCBK_metal_catwalk_set_01_04_L0.SCBK_metal_catwalk_set_01_04_L0:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 0
+    },
+    {
+      "path": "/4c7f3e05-4bdc-a0d7-e655-0290a6f5921a/SCBK_metal_catwalk_set_01_01_L0.SCBK_metal_catwalk_set_01_01_L0",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/4c7f3e05-4bdc-a0d7-e655-0290a6f5921a/SCBK_metal_catwalk_set_01_01_L0.SCBK_metal_catwalk_set_01_01_L0:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 0
+    },
+    {
+      "path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 0
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 0
+    },
+    {
+      "path": "/1323a5be-433d-bad0-da94-55a78c147665/SCBK_huge_junk_pile_L0.SCBK_huge_junk_pile_L0",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/1323a5be-433d-bad0-da94-55a78c147665/SCBK_huge_junk_pile_L0.SCBK_huge_junk_pile_L0:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 0
+    },
+    {
+      "path": "/bf512a35-44a0-8840-8c59-f1afb25506d4/SCBK_metal_catwalk_set_01_02_L0.SCBK_metal_catwalk_set_01_02_L0",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/bf512a35-44a0-8840-8c59-f1afb25506d4/SCBK_metal_catwalk_set_01_02_L0.SCBK_metal_catwalk_set_01_02_L0:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 0
+    },
+    {
+      "path": "/ca13d1bc-4489-8ce3-fc89-a4af6ec9a74e/SCBK_metal_catwalk_set_01_03_L0.SCBK_metal_catwalk_set_01_03_L0",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/ca13d1bc-4489-8ce3-fc89-a4af6ec9a74e/SCBK_metal_catwalk_set_01_03_L0.SCBK_metal_catwalk_set_01_03_L0:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 0
+    },
+    {
+      "path": "/b2d10f7a-4964-dca2-1a9f-eeb71321de3c/SCBK_metal_catwalk_set_01_05_L0.SCBK_metal_catwalk_set_01_05_L0",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/b2d10f7a-4964-dca2-1a9f-eeb71321de3c/SCBK_metal_catwalk_set_01_05_L0.SCBK_metal_catwalk_set_01_05_L0:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 0
+    },
+    {
+      "path": "/2e37e66d-43b0-ecd0-040b-9183ef830cad/SCBK_metal_catwalk_set_01_06_L0.SCBK_metal_catwalk_set_01_06_L0",
+      "properties": {
+        "bodySetup": {
+          "refPath": "/2e37e66d-43b0-ecd0-040b-9183ef830cad/SCBK_metal_catwalk_set_01_06_L0.SCBK_metal_catwalk_set_01_06_L0:BodySetup_0"
+        },
+        "lODForCollision": 0,
+        "naniteSettings": {
+          "bEnabled": false,
+          "bExplicitTangents": false,
+          "bLerpUVs": true,
+          "bSeparable": false,
+          "bVoxelNDF": true,
+          "bVoxelOpacity": false,
+          "shapePreservation": "None",
+          "positionPrecision": -2147483648,
+          "normalPrecision": -1,
+          "tangentPrecision": -1,
+          "boneWeightPrecision": -1,
+          "targetMinimumResidencyInKB": 0,
+          "keepPercentTriangles": 1,
+          "trimRelativeError": 0,
+          "generateFallback": "PlatformDefault",
+          "fallbackTarget": "Auto",
+          "fallbackPercentTriangles": 1,
+          "fallbackRelativeError": 1,
+          "maxEdgeLengthFactor": 0,
+          "numRays": 64,
+          "voxelLevel": 0,
+          "rayBackUp": 0,
+          "displacementUVChannel": 0,
+          "displacementMaps": [],
+          "naniteAssemblyData": {
+            "parts": [],
+            "nodes": []
+          }
+        }
+      },
+      "lod_count": 0
+    }
+  ],
+  "collision": [
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 1,
+          "sphylElems": 0,
+          "convexElems": 0,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_Crane01.SM_Crane01",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 19,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCabin01.SM_CraneCabin01",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 1,
+          "sphylElems": 0,
+          "convexElems": 0,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCable01.SM_CraneCable01",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 0,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_EngineWithContainer.SM_EngineWithContainer",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 33,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_RecyclingMachine01.SM_RecyclingMachine01",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 5,
+          "sphylElems": 0,
+          "convexElems": 0,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ForkLift.SM_ForkLift",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 8,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLine01.SM_AssemblyLine01",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 1,
+          "sphylElems": 0,
+          "convexElems": 0,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLineTable01.SM_AssemblyLineTable01",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 1,
+          "sphylElems": 0,
+          "convexElems": 0,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1.SM_Garage_1",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 7,
+          "sphylElems": 0,
+          "convexElems": 0,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1_roof.SM_Garage_1_roof",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Workbench.SM_Workbench",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Shelf.SM_Shelf",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Cart.SM_Cart",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Pallet.SM_Pallet",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Stairs.SM_Stairs",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 18,
+          "sphylElems": 0,
+          "convexElems": 0,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Railings.SM_Railings",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Wheel.SM_Wheel",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/GarageSource/Meshes/SM_Ventilation.SM_Ventilation",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_BoxTruck_01a.SM_BoxTruck_01a",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_Campervan_01a.SM_Campervan_01a",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalPanel_01.SM_ElectricalPanel_01",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 1,
+          "sphylElems": 0,
+          "convexElems": 0,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalSupply_Switchboard01.SM_ElectricalSupply_Switchboard01",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 6,
+          "sphylElems": 0,
+          "convexElems": 0,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_l300_00.pipe_m_l300_00",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_valve_00.pipe_m_valve_00",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 2,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 4,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 4,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 4,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/85827e89-4c9f-09e4-5c37-fbaea2b6811c/SCBK_metal_catwalk_set_01_07_L0.SCBK_metal_catwalk_set_01_07_L0",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 5,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 7,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/a7703c69-4651-471d-dcf2-60aa487d93f7/SCBK_metal_catwalk_set_01_04_L0.SCBK_metal_catwalk_set_01_04_L0",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 5,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/4c7f3e05-4bdc-a0d7-e655-0290a6f5921a/SCBK_metal_catwalk_set_01_01_L0.SCBK_metal_catwalk_set_01_01_L0",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 5,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 6,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/1323a5be-433d-bad0-da94-55a78c147665/SCBK_huge_junk_pile_L0.SCBK_huge_junk_pile_L0",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 15,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/bf512a35-44a0-8840-8c59-f1afb25506d4/SCBK_metal_catwalk_set_01_02_L0.SCBK_metal_catwalk_set_01_02_L0",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 5,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/ca13d1bc-4489-8ce3-fc89-a4af6ec9a74e/SCBK_metal_catwalk_set_01_03_L0.SCBK_metal_catwalk_set_01_03_L0",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 4,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/b2d10f7a-4964-dca2-1a9f-eeb71321de3c/SCBK_metal_catwalk_set_01_05_L0.SCBK_metal_catwalk_set_01_05_L0",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 19,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    },
+    {
+      "path": "/2e37e66d-43b0-ecd0-040b-9183ef830cad/SCBK_metal_catwalk_set_01_06_L0.SCBK_metal_catwalk_set_01_06_L0",
+      "collision": {
+        "collisionTraceFlag": "CTF_UseDefault",
+        "collisionReponse": "BodyCollision_Enabled",
+        "simple_counts": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 19,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      }
+    }
+  ],
+  "quarry": [
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "bounds": {
+        "min": {
+          "x": -71.23055267333984,
+          "y": -146.2205810546875,
+          "z": -14.994186401367188
+        },
+        "max": {
+          "x": 93.09735107421875,
+          "y": 154.2783203125,
+          "z": 36.70417404174805
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "bounds": {
+        "min": {
+          "x": -0.16023124754428864,
+          "y": -212.89280700683594,
+          "z": -1.2771594524383545
+        },
+        "max": {
+          "x": 273.9998779296875,
+          "y": 207.85769653320312,
+          "z": 149.64146423339844
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xcghcfe.ASQ_xcghcfe",
+      "bounds": {
+        "min": {
+          "x": -2.7348685264587402,
+          "y": -264.2669982910156,
+          "z": -2.7177047729492188
+        },
+        "max": {
+          "x": 222.40582275390625,
+          "y": 240.2810821533203,
+          "z": 210.38442993164062
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckifaf.ASQ_xckifaf",
+      "bounds": {
+        "min": {
+          "x": -83.99031066894531,
+          "y": -198.85658264160156,
+          "z": -3.3274805545806885
+        },
+        "max": {
+          "x": 96.62968444824219,
+          "y": 199.59878540039062,
+          "z": 111.56979370117188
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xbtgah3.ASQ_xbtgah3",
+      "bounds": {
+        "min": {
+          "x": -71.71558380126953,
+          "y": -123.36858367919922,
+          "z": -0.26717615127563477
+        },
+        "max": {
+          "x": 80.96570587158203,
+          "y": 112.05652618408203,
+          "z": 23.927446365356445
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xcdeajb.ASQ_xcdeajb",
+      "bounds": {
+        "min": {
+          "x": -0.03759193420410156,
+          "y": -109.58736419677734,
+          "z": -5.77287483215332
+        },
+        "max": {
+          "x": 64.3835220336914,
+          "y": 130.16741943359375,
+          "z": 269.5902404785156
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xbtefbk.ASQ_xbtefbk",
+      "bounds": {
+        "min": {
+          "x": -123.2605209350586,
+          "y": -140.6157684326172,
+          "z": -0.0740918293595314
+        },
+        "max": {
+          "x": 80.14954376220703,
+          "y": 131.6240234375,
+          "z": 15.63231372833252
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xbrgfjp.ASQ_xbrgfjp",
+      "bounds": {
+        "min": {
+          "x": -69.02537536621094,
+          "y": -73.05300903320312,
+          "z": -1.2800222635269165
+        },
+        "max": {
+          "x": 50.00568771362305,
+          "y": 112.23173522949219,
+          "z": 49.89274978637695
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xbnjbc3.ASQ_xbnjbc3",
+      "bounds": {
+        "min": {
+          "x": -72.55169677734375,
+          "y": -179.13108825683594,
+          "z": -4.933524131774902
+        },
+        "max": {
+          "x": 90.00874328613281,
+          "y": 188.94154357910156,
+          "z": 87.75045013427734
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xbrdfck.ASQ_xbrdfck",
+      "bounds": {
+        "min": {
+          "x": -137.22860717773438,
+          "y": -304.08544921875,
+          "z": -1.4507912397384644
+        },
+        "max": {
+          "x": 107.9962387084961,
+          "y": 304.08551025390625,
+          "z": 90.91856384277344
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xbnhajp.ASQ_xbnhajp",
+      "bounds": {
+        "min": {
+          "x": -119.04520416259766,
+          "y": -188.65980529785156,
+          "z": -0.35669994354248047
+        },
+        "max": {
+          "x": 111.6337890625,
+          "y": 175.74270629882812,
+          "z": 13.193099975585938
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xblhegj.ASQ_xblhegj",
+      "bounds": {
+        "min": {
+          "x": -22.293106079101562,
+          "y": -80.14584350585938,
+          "z": -0.3035542964935303
+        },
+        "max": {
+          "x": 46.845848083496094,
+          "y": 79.61512756347656,
+          "z": 58.71369171142578
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xbkndhe.ASQ_xbkndhe",
+      "bounds": {
+        "min": {
+          "x": -74.43487548828125,
+          "y": -125.900146484375,
+          "z": -6.636778831481934
+        },
+        "max": {
+          "x": 64.87482452392578,
+          "y": 110.49240112304688,
+          "z": 57.22088623046875
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xbkgcc1.ASQ_xbkgcc1",
+      "bounds": {
+        "min": {
+          "x": -29.893442153930664,
+          "y": -54.23590087890625,
+          "z": -1.0416522026062012
+        },
+        "max": {
+          "x": 35.0053825378418,
+          "y": 57.143402099609375,
+          "z": 78.80447387695312
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xbkgdbu.ASQ_xbkgdbu",
+      "bounds": {
+        "min": {
+          "x": -60.35535430908203,
+          "y": -67.0328369140625,
+          "z": -2.7573084831237793
+        },
+        "max": {
+          "x": 59.355125427246094,
+          "y": 63.72901153564453,
+          "z": 93.48278045654297
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5gfgm.ASQ_xb5gfgm",
+      "bounds": {
+        "min": {
+          "x": -64.2093505859375,
+          "y": -150.06768798828125,
+          "z": -0.06590239703655243
+        },
+        "max": {
+          "x": 55.824649810791016,
+          "y": 152.0135040283203,
+          "z": 6.36807918548584
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5gbjo.ASQ_xb5gbjo",
+      "bounds": {
+        "min": {
+          "x": -50.36322021484375,
+          "y": -49.887901306152344,
+          "z": -0.5967528820037842
+        },
+        "max": {
+          "x": 50.84382629394531,
+          "y": 51.466217041015625,
+          "z": 72.40998077392578
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "bounds": {
+        "min": {
+          "x": -120.8587875366211,
+          "y": -116.98867797851562,
+          "z": -3.400599241256714
+        },
+        "max": {
+          "x": 120.97389221191406,
+          "y": 117.7595443725586,
+          "z": 24.109010696411133
+        },
+        "isValid": true
+      }
+    }
+  ],
+  "supplements": [
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "bounds": {
+        "min": {
+          "x": -71.23055267333984,
+          "y": -146.2205810546875,
+          "z": -14.994186401367188
+        },
+        "max": {
+          "x": 93.09735107421875,
+          "y": 154.2783203125,
+          "z": 36.70417404174805
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MatID_1"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "bounds": {
+        "min": {
+          "x": -0.16023124754428864,
+          "y": -212.89280700683594,
+          "z": -1.2771594524383545
+        },
+        "max": {
+          "x": 273.9998779296875,
+          "y": 207.85769653320312,
+          "z": 149.64146423339844
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MatID_1"
+      ]
+    },
+    {
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "bounds": {
+        "min": {
+          "x": -120.8587875366211,
+          "y": -116.98867797851562,
+          "z": -3.400599241256714
+        },
+        "max": {
+          "x": 120.97389221191406,
+          "y": 117.7595443725586,
+          "z": 24.109010696411133
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MatID_1"
+      ]
+    },
+    {
+      "path": "/85827e89-4c9f-09e4-5c37-fbaea2b6811c/SCBK_metal_catwalk_set_01_07_L0.SCBK_metal_catwalk_set_01_07_L0",
+      "bounds": {
+        "min": {
+          "x": -256,
+          "y": 0.18310546875,
+          "z": 0
+        },
+        "max": {
+          "x": 256,
+          "y": 256,
+          "z": 114.5199203491211
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MI_metal_catwalk_set_01_2"
+      ]
+    },
+    {
+      "path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "bounds": {
+        "min": {
+          "x": -171.0704116821289,
+          "y": -277.0104522705078,
+          "z": -9.9354248046875
+        },
+        "max": {
+          "x": 140.2777328491211,
+          "y": 250.1108856201172,
+          "z": 222.88555908203125
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MI_old_car_ruin",
+        "MI_old_car_ruin_2",
+        "MI_old_car_ruin_3"
+      ]
+    },
+    {
+      "path": "/a7703c69-4651-471d-dcf2-60aa487d93f7/SCBK_metal_catwalk_set_01_04_L0.SCBK_metal_catwalk_set_01_04_L0",
+      "bounds": {
+        "min": {
+          "x": -256,
+          "y": 0.18310546875,
+          "z": 0
+        },
+        "max": {
+          "x": 256,
+          "y": 256,
+          "z": 114.5199203491211
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MI_metal_catwalk_set_01_2"
+      ]
+    },
+    {
+      "path": "/4c7f3e05-4bdc-a0d7-e655-0290a6f5921a/SCBK_metal_catwalk_set_01_01_L0.SCBK_metal_catwalk_set_01_01_L0",
+      "bounds": {
+        "min": {
+          "x": -256,
+          "y": -256.41819763183594,
+          "z": 0
+        },
+        "max": {
+          "x": 256.4462890625,
+          "y": 256.00001525878906,
+          "z": 490.60076904296875
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MI_metal_catwalk_set_01_2"
+      ]
+    },
+    {
+      "path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+      "bounds": {
+        "min": {
+          "x": -255.99311065673828,
+          "y": -4.002223014831543,
+          "z": -0.00006103515625
+        },
+        "max": {
+          "x": 256.0067672729492,
+          "y": 4.002344131469727,
+          "z": 384
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MI_modular_wire_fence_set_net",
+        "MI_modular_wire_fence_set_2"
+      ]
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "bounds": {
+        "min": {
+          "x": -168.64496612548828,
+          "y": -110.3747673034668,
+          "z": -1.852203369140625
+        },
+        "max": {
+          "x": 122.72283172607422,
+          "y": 113.86641311645508,
+          "z": 82.5055923461914
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MI_junk_pile_2",
+        "MI_junk_pile"
+      ]
+    },
+    {
+      "path": "/1323a5be-433d-bad0-da94-55a78c147665/SCBK_huge_junk_pile_L0.SCBK_huge_junk_pile_L0",
+      "bounds": {
+        "min": {
+          "x": -1190.4728088378906,
+          "y": -1159.596435546875,
+          "z": -131.55279541015625
+        },
+        "max": {
+          "x": 773.4082946777344,
+          "y": 1082.438720703125,
+          "z": 821.7957763671875
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MI_huge_pile",
+        "MI_rubble_01"
+      ]
+    },
+    {
+      "path": "/bf512a35-44a0-8840-8c59-f1afb25506d4/SCBK_metal_catwalk_set_01_02_L0.SCBK_metal_catwalk_set_01_02_L0",
+      "bounds": {
+        "min": {
+          "x": -255.99993896484375,
+          "y": -256.32672119140625,
+          "z": 0
+        },
+        "max": {
+          "x": -0.18853759765625,
+          "y": 256,
+          "z": 490.60076904296875
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MI_metal_catwalk_set_01_2"
+      ]
+    },
+    {
+      "path": "/ca13d1bc-4489-8ce3-fc89-a4af6ec9a74e/SCBK_metal_catwalk_set_01_03_L0.SCBK_metal_catwalk_set_01_03_L0",
+      "bounds": {
+        "min": {
+          "x": -256,
+          "y": 0.18310546875,
+          "z": 0
+        },
+        "max": {
+          "x": 256,
+          "y": 256,
+          "z": 114.5199203491211
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MI_metal_catwalk_set_01_2"
+      ]
+    },
+    {
+      "path": "/b2d10f7a-4964-dca2-1a9f-eeb71321de3c/SCBK_metal_catwalk_set_01_05_L0.SCBK_metal_catwalk_set_01_05_L0",
+      "bounds": {
+        "min": {
+          "x": -256,
+          "y": -256.28318786621094,
+          "z": 0
+        },
+        "max": {
+          "x": 255.184326171875,
+          "y": 256.00001525878906,
+          "z": 504.427734375
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MI_metal_catwalk_set_01_2"
+      ]
+    },
+    {
+      "path": "/2e37e66d-43b0-ecd0-040b-9183ef830cad/SCBK_metal_catwalk_set_01_06_L0.SCBK_metal_catwalk_set_01_06_L0",
+      "bounds": {
+        "min": {
+          "x": -259.2734375,
+          "y": -256.28318786621094,
+          "z": 0
+        },
+        "max": {
+          "x": 256.256591796875,
+          "y": 256.37501525878906,
+          "z": 486.4620666503906
+        },
+        "isValid": true
+      },
+      "slots": [
+        "MI_metal_catwalk_set_01"
+      ]
+    }
+  ]
+}

@@ -24,17 +24,18 @@ This folder owns:
 
 ## Work Guidance
 
-- Before environment construction, inspect the committed visual index and the mandatory boards named in `docs/SOL61_ONE_SHOT_PROMPT.md`.
+- Before environment construction, inspect the committed visual index and the mandatory boards named in `docs/fresh-build/quarry-cut/SOL61_GAUNTLET.md`.
 - Actually open the images; do not infer their content from filenames or prose summaries alone.
-- If an image conflicts with a frozen written spatial/gameplay contract, the written contract wins and the conflict must be reported.
+- Fresh DESIGN_SPEC controls layout and retained gameplay contracts control behavior; report material visual conflicts.
 - Keep this folder lean. Commit curated reference boards and required build inputs, not every redundant raw staging screenshot.
 
 ## Verification
 
 - Confirm every mandatory visual named by the active one-shot prompt exists in GitHub on the active branch.
-- Confirm the frozen terrain heightmap exists and matches the documented path.
+- Confirm the fresh terrain input and any measured refinement derivatives exist and match their documented hashes.
 - Confirm no generated/synthetic concept art is introduced as visual authority.
 
 ## Child DOX Index
 
 - `FreshBuild/QuarryCut/AGENTS.md` — owns the new real-asset camera renders, boards, native evidence and independent terrain inputs.
+
