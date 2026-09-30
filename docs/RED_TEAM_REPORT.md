@@ -207,12 +207,10 @@ Verified fallback: inspect actual source state, edit through the authorized loca
 
 ## One-shot prompt disposition
 
-`docs/ONE_SHOT_PROMPT_DRAFT.md` is **safe to hand to Astra after explicit user authorization**.
+`docs/ASTRA_ONE_SHOT_PROMPT.md` is the frozen **authorized execution prompt**. The user explicitly authorized the Astra one-shot on 2026-09-30 after this red-team closeout.
 
 The prompt distinguishes frozen design from implementation freedom, preserves native authority, names the exact Armory roles, carries the red-team lifecycle/index safeguards, and places unresolved runtime checks in the correct construction/post-build phase.
 
-## Stop condition
+## Authorization addendum
 
-Red-team closeout complete.
-
-**Do not invoke Astra from this chat. Do not begin construction.**
+Red-team closeout completed before construction authorization. The historical stop condition was subsequently satisfied: **the user explicitly authorized the Astra one-shot on 2026-09-30.** Execute only through `docs/ASTRA_ONE_SHOT_PROMPT.md`; the frozen design constraints remain in force.
