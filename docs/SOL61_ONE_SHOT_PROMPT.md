@@ -1,4 +1,4 @@
-# Scrapline — GPT-6.1 Sol One-Shot Execution Prompt
+# Scrapline — GPT-6.1 Sol One-Shot Gauntlet
 
 > **EXECUTION AUTHORIZED BY THE USER — 2026-09-30.** The hostile pre-construction red team is closed GREEN in `docs/RED_TEAM_REPORT.md`. The earlier Astra-specific authorization gate is historical; the active worker is **GPT-6.1 Sol**. Execute the one-shot construction pass described here. Do not reinterpret this authorization as permission to redesign frozen map/gameplay contracts or to reopen broad asset acquisition.
 
@@ -109,13 +109,84 @@ Read these before changing anything:
 11. `docs/GAMEPLAY_SPEC.md`
 12. `docs/VERSE_GAMEPLAY_INTEGRATION.md` — **gameplay/device-wiring authority**
 13. `docs/ASSET_MANIFEST.md` — **asset-approval authority**
-14. `docs/ASSET_PIPELINE.md`
-15. `docs/TOOLING.md`
-16. `docs/BUILD_READINESS.md`
+14. `docs/REAL_ASSET_VISUAL_STUDIES.md` — **visual-evidence interpretation**
+15. `Resources/AGENTS.md` — **resource-use contract**
+16. `Resources/Reference/RealAssets/REAL_ASSET_VISUAL_INDEX.md` — **committed visual authority index**
+17. `docs/ASSET_PIPELINE.md`
+18. `docs/TOOLING.md`
+19. `docs/BUILD_READINESS.md`
 
 If softer or older prose conflicts with `SPATIAL_CONTRACT.md`, the spatial contract wins for layout, orientation, route, verticality, and placement tolerance. Do not use ambiguity as permission to redesign.
 
 Then verify the live UEFN project and the available MCP/Power Tools capabilities before implementation.
+
+## Mandatory real-visual preflight — GATE
+
+**Do not place terrain, the Factory gantry, Garage, district anchors, routes, or dressing until this gate passes.**
+
+The real-source visual authority is committed in GitHub under:
+
+`Resources/Reference/RealAssets/`
+
+Reading filenames, the visual index, or prose summaries is **not enough**. Actually open and inspect the images with the available image/file-viewing capability.
+
+Mandatory images:
+
+1. `03_REAL_exact_curated_meshes_contact_sheet.jpg` — overall exact curated mesh vocabulary.
+2. `04_REAL_selected_warning_signs_contact_sheet.jpg` — approved signage language.
+3. `05_REAL_factory_exact_contact_sheet.jpg` — Factory family and the real horizontal gantry silhouette.
+4. `06_REAL_garage_exact_contact_sheet.jpg` — Garage shell, roof, and workshop dressing vocabulary.
+5. `11_REAL_grounded_Scrapline_concept_board.jpg` — grounded cross-family visual synthesis.
+6. `12_REAL_scrapyard_referenced_contact_sheet.jpg` — primary rusted Scrapyard glue.
+7. `13_REAL_desertedprops_referenced_contact_sheet.jpg` — approved fallback/support vocabulary.
+8. `14_REAL_vfx_reference_contact_sheet.jpg` — ambient VFX language and restraint.
+9. `15_REAL_grounded_Scrapline_concept_board_v2.jpg` — consolidated visual target.
+10. `CompositionStudies/07_REAL_composition_CentralKillYard.png`
+11. `CompositionStudies/08_REAL_composition_LoadingYard.png`
+12. `CompositionStudies/09_REAL_composition_RuinedWorkshop.png`
+13. `CompositionStudies/10_REAL_composition_MachineryPowerYard.png`
+
+Supporting context may also be inspected from the committed `fab_*.jpg` and `local_*.jpg` files.
+
+### What the visual gate controls
+
+Use these images to lock:
+- real asset silhouette and scale relationships,
+- cross-pack material/color compatibility,
+- clutter density and irregularity,
+- district visual identity,
+- how much open ground versus prop mass feels correct,
+- signage style,
+- restrained VFX intensity,
+- the fact that the Factory hero is a **long horizontal industrial gantry**, not a tall skyline crane,
+- the fact that the Garage is a **compact workshop shell**, not a district-sized warehouse.
+
+### What the visual gate does NOT control
+
+The composition studies are not final layout drawings.
+
+They must **not** override:
+- `SPATIAL_CONTRACT.md` coordinates,
+- route topology or widths,
+- the 19 spawn regions,
+- verticality/catwalk limits,
+- gantry/Garage locked transforms,
+- sightline rules,
+- gameplay authority.
+
+Use the visual studies for **massing and art language**, then build that language onto the frozen spatial skeleton.
+
+### Visual gate proof
+
+Before the first environment mutation, write a concise visual-preflight checkpoint into `docs/BUILD_RUN_STATE.md` containing:
+- Factory/center silhouette takeaway,
+- Wreck Yard visual takeaway,
+- Loading Yard visual takeaway,
+- Ruined Workshop visual takeaway,
+- Machinery/Power visual takeaway,
+- global clutter/material/VFX restraint takeaway.
+
+If a mandatory image is missing or cannot be opened, try the verified local workspace copy and inspect the live assets through Power Tools/UEFN. If visual inspection still cannot be completed after the documented fallback, **do not wing the art direction from prose**; treat that as a persistent pre-construction blocker and report it.
 
 ## Layer 1 — Non-negotiable spatial contract
 
@@ -265,25 +336,26 @@ Tune exposure/intensity for player readability.
 ## Environment build order
 
 1. Read the full authority chain and refresh the current GitHub branch before trusting the local documentation copy.
-2. Use Power Tools `uefn_list_assets`, `uefn_inspect_asset`, and/or `uefn_asset_sweep` to verify the required frozen assets resolve in the live project; **do not perform a new asset-selection pass**.
-3. Establish a Power Tools construction baseline: preserve the results of `uefn_get_level_info`, `uefn_list_devices`, `uefn_health_scan`, and relevant asset/device audits before mass placement.
-4. **Run the Armory preflight before environment construction:** confirm live Verse compiles at zero diagnostics; inventory the existing tagged runtime roles; confirm exactly one `IG_Armory`, one `EM_Economy`, and one `IT_Armory`; confirm the Verse controller is present; reuse those actors instead of placing duplicates. If any exact-one role is missing or duplicated, fix that wiring before continuing.
-5. Import/create Landscape from the staged heightmap.
-6. Establish the basin, shoulders, district pads, drainage cuts, and service-road contours.
-7. Place the frozen Factory gantry assembly at its locked anchor/orientation. Use the most reliable editor tool for the anchor, then immediately read back its world transform; use Power Tools batch/location reads to verify related/repeated placements.
-8. Place the Garage, Box Truck, Campervan, Factory containers, and major Machinery/Power anchors in their frozen districts. Use Power Tools spawn/duplicate/transform and batch operations for repeated classic-actor work where reliable instead of serial manual placement.
-9. Establish all required center, neighbor, and broken-flank routes.
-10. Establish controlled vertical routes within the catwalk/height budget.
-11. Run the spatial-contract acceptance check **before** dressing, using Power Tools location/batch/audit reads to catch drift.
-12. Add hard cover and sightline blockers while preserving route widths.
-13. Place spawn devices inside the **19 frozen candidate regions** and validate LOS/cover; configure a non-`None` Enemy Range Check and tune it against the real geometry rather than inventing new spawn regions. Use Power Tools device/location auditing to verify the complete set after placement.
-14. Add secondary props, debris, utilities, signs, restrained VFX, and cross-district Scrapyard glue. Use Power Tools duplication/batch transforms for repeated dressing only when the result still looks intentionally irregular.
-15. Apply the frozen daylight treatment and tune readability.
-16. Integrate the frozen Armory/native gameplay package from `ARMORY_ECONOMY_SPEC.md` and `VERSE_GAMEPLAY_INTEGRATION.md`; preserve native score/end/spawn authority.
-17. Finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md`, using the existing UMG/Verse event scaffold when useful and replacing it when cleaner.
-18. Run the Armory lifecycle/economy/JIP/leave/multiplayer acceptance matrix against the real level/devices.
-19. Run Power Tools `uefn_run_audit`, `uefn_health_scan`, dependency/material/texture/Niagara scans as relevant, then run Epic/UEFN authoritative validation, cooked memory calculation, and realistic runtime profiling.
-20. Save and perform the DOX closeout.
+2. **Pass the mandatory real-visual preflight gate.** Actually open the committed boards/contact sheets and all four composition studies; record the six-line visual takeaway in `BUILD_RUN_STATE.md`.
+3. Use Power Tools `uefn_list_assets`, `uefn_inspect_asset`, and/or `uefn_asset_sweep` to correlate the visual references with the required frozen assets in the live project; **do not perform a new asset-selection pass**.
+4. Establish a Power Tools construction baseline: preserve the results of `uefn_get_level_info`, `uefn_list_devices`, `uefn_health_scan`, and relevant asset/device audits before mass placement.
+5. **Run the Armory preflight before environment construction:** confirm live Verse compiles at zero diagnostics; inventory the existing tagged runtime roles; confirm exactly one `IG_Armory`, one `EM_Economy`, and one `IT_Armory`; confirm the Verse controller is present; reuse those actors instead of placing duplicates. If any exact-one role is missing or duplicated, fix that wiring before continuing.
+6. Import/create Landscape from the staged heightmap.
+7. Establish the basin, shoulders, district pads, drainage cuts, and service-road contours.
+8. Place the frozen Factory gantry assembly at its locked anchor/orientation. Use the most reliable editor tool for the anchor, then immediately read back its world transform; use Power Tools batch/location reads to verify related/repeated placements.
+9. Place the Garage, Box Truck, Campervan, Factory containers, and major Machinery/Power anchors in their frozen districts. Use Power Tools spawn/duplicate/transform and batch operations for repeated classic-actor work where reliable instead of serial manual placement.
+10. Establish all required center, neighbor, and broken-flank routes.
+11. Establish controlled vertical routes within the catwalk/height budget.
+12. Run the spatial-contract acceptance check **before** dressing, using Power Tools location/batch/audit reads to catch drift.
+13. Add hard cover and sightline blockers while preserving route widths.
+14. Place spawn devices inside the **19 frozen candidate regions** and validate LOS/cover; configure a non-`None` Enemy Range Check and tune it against the real geometry rather than inventing new spawn regions. Use Power Tools device/location auditing to verify the complete set after placement.
+15. Add secondary props, debris, utilities, signs, restrained VFX, and cross-district Scrapyard glue. Use Power Tools duplication/batch transforms for repeated dressing only when the result still looks intentionally irregular.
+16. Apply the frozen daylight treatment and tune readability.
+17. Integrate the frozen Armory/native gameplay package from `ARMORY_ECONOMY_SPEC.md` and `VERSE_GAMEPLAY_INTEGRATION.md`; preserve native score/end/spawn authority.
+18. Finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md`, using the existing UMG/Verse event scaffold when useful and replacing it when cleaner.
+19. Run the Armory lifecycle/economy/JIP/leave/multiplayer acceptance matrix against the real level/devices.
+20. Run Power Tools `uefn_run_audit`, `uefn_health_scan`, dependency/material/texture/Niagara scans as relevant, then run Epic/UEFN authoritative validation, cooked memory calculation, and realistic runtime profiling.
+21. Save and perform the DOX closeout.
 
 If the skeleton fails an acceptance check, fix it before proceeding to micro-props, VFX, lighting polish, or gameplay wiring.
 
