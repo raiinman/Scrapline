@@ -15,7 +15,8 @@ Latest live UEFN checks:
 - Scrapline project opens successfully.
 - Map Check: **0 errors / 0 warnings**.
 - Power Tools Project Health: **0 errors / 3 warnings**.
-- The 3 health warnings are pre-existing oversized Gas Cylinder / Propane Tank textures; they are not failures in the new curated imports.
+- The 3 health warnings are pre-existing Gas Cylinder / Propane Tank texture-size warnings; they are not failures in the new curated imports.
+- Live inspection on 2026-09-30 confirmed all three source textures are **8192 × 8192**, `NeverStream = false`, mip generation enabled, and `LODBias = 3`. A fresh UEFN session validation/upload reached successful candidate upload and server/client cooking without a texture-validation rejection. Keep these warnings visible for the finished-map publish/memory pass; do not reopen asset selection merely because Power Tools reports them.
 - Health scan saw approximately **504 project files / 2.60 GB**.
 - Representative new assets were loaded individually inside UEFN with no unreadable properties/errors:
   - Factory crane
@@ -206,7 +207,7 @@ Verified under `Content/Fab`:
 - Industrial Rubble
 - Rubble Pack
 
-These remain approved production content. The oversized propane source textures are the only current Project Health warnings.
+These remain approved production content. The Propane/Gas Cylinder textures are the only current Power Tools Project Health warnings. Their current LOD/streaming configuration survived the 2026-09-30 UEFN validation/upload path, but final cooked memory/publish validation remains required after the finished environment is assembled.
 
 ### Warehouse Essentials — Quarantined
 
