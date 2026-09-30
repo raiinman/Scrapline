@@ -20,6 +20,8 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 
 The macro map design, spatial skeleton, terrain specification, first-alpha gameplay baseline, implementation toolchain, production environment kit, grounded real-asset visual pass, physical-fit verification, and gameplay-device package are locked or verified. `SPATIAL_CONTRACT.md` freezes major anchors, orientation, routes, verticality, spawn regions, and lighting intent.
 
+The curated real-source visual authority is now committed under `Resources/Reference/RealAssets/`, and the frozen terrain heightmap is committed under `Resources/Terrain/`. The active Sol Gauntlet requires actual image inspection before environment construction.
+
 The native gameplay package remains the control for spawn selection, scoring, match end, sustain, movement, and destruction. Feature Freeze v2 adds a narrow compile-clean Armory Verse layer plus the `WBP_ScraplineArmory` UMG scaffold for match-local Scrap, adaptive per-life loadouts, JIP buy handling, and a scalable seasonal catalog. Final Armory visual polish and full lifecycle/multiplayer acceptance testing are assigned to GPT-6.1 Sol during the authorized construction/post-build pass. The rejected UEFN Central five-file package remains evidence only.
 
 ## Documentation
