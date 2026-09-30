@@ -2,28 +2,27 @@
 
 ## Status
 
-**Feature Freeze v2 frozen for handoff — Armory mechanic compile-clean; final presentation/runtime acceptance assigned to Astra build/post-build.**
+**Feature Freeze v2 frozen for handoff — Armory mechanic compile-clean; final presentation/runtime acceptance assigned to GPT-6.1 Sol build/post-build.**
 
-The macro map design, spatial contract, terrain specification, implementation toolchain, physical-fit verification, and production asset pool remain frozen. The user reopened only the gameplay layer before Astra construction to add the Scrapline Armory / match economy defined in `ARMORY_ECONOMY_SPEC.md`.
+The macro map design, spatial contract, terrain specification, implementation toolchain, physical-fit verification, and production asset pool remain frozen. The user reopened only the gameplay layer before construction to add the Scrapline Armory / match economy defined in `ARMORY_ECONOMY_SPEC.md`; that layer is now frozen and GPT-6.1 Sol construction is authorized.
 
 The previously validated native package remains the control for spawn selection, elimination scoring, match end, JIP participation, health/shields, 50-point elimination sustain, movement, destruction, and inventory cleanup. A narrowly scoped custom Verse layer is now authorized only for match-local Scrap, buy/sell UI, adaptive next-life loadouts, catalog configuration, Armory phase gating, JIP first-buy handling, and cleanup.
 
-Current gate:
-- keep the Armory economy/authority contract frozen,
-- keep the current live-compiler-clean Verse/UMG scaffold synchronized in the handoff,
-- complete the contradiction/confusion closeout with the UI work explicitly assigned to Astra,
-- obtain explicit user authorization before Astra executes the primary construction pass.
+Current gate state:
+- Armory economy/authority contract: frozen,
+- live-compiler-clean Verse/UMG scaffold: synchronized,
+- contradiction/confusion closeout: complete,
+- construction authorization: **granted 2026-09-30**,
+- active worker: **GPT-6.1 Sol** using `SOL61_ONE_SHOT_PROMPT.md`.
 
-Still gated until that authorization:
-- Astra environment construction,
-- irreversible map construction,
+Still closed unless separately justified:
 - broad asset acquisition,
-- synthetic image generation,
+- synthetic image generation as an environment substitute,
 - redesign of the frozen spatial contract.
 
-Not a pre-Astra blocker:
+Not a pre-construction blocker:
 - final Armory UMG visual polish,
-- full 19-spawn/JIP/leave/multiplayer economy acceptance testing. Those are now Astra construction/post-build responsibilities.
+- full 19-spawn/JIP/leave/multiplayer economy acceptance testing. Those are now GPT-6.1 Sol construction/post-build responsibilities.
 
 ## Objective
 
