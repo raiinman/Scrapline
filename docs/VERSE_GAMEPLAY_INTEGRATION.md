@@ -166,19 +166,17 @@ Current Epic reference:
 
 ## `EM_Economy`
 
-Use one Elimination Manager only as a stable global economy event source.
+Use one Elimination Manager only as the stable **eliminator-income** source.
 
-Required Verse event surfaces:
+Required Verse event surface:
 - `EliminationEvent` — sends the eliminator agent; award +150 Scrap and reset that player's recovery tier.
-- `EliminatedEvent` — sends the eliminated agent; apply that player's death-recovery payment and advance the recovery tier.
 
 Required production setting:
-- **Valid on Self-Elimination = On.** A self-elimination must still enter the death-recovery / protected-buy lifecycle instead of respawning with native inventory cleanup but no Armory transition.
-- During Astra runtime acceptance, explicitly verify that a self-elimination does **not** incorrectly award the +150 eliminator reward or reset the recovery tier. If the device reports the self-eliminated player through both event surfaces, suppress that reward path without adding a competing score/end system.
+- **Valid On Self Elimination = Off.** Self/manual/environmental deaths are handled by the victim-side character watcher below and must never generate +150 eliminator income.
 
-Do not configure `EM_Economy` to spawn/drop reward items.
+Victim lifecycle is intentionally separate: each initialized player owns exactly one suspending watcher that awaits the current active `fort_character.EliminatedEvent()`, applies death recovery / protected next-life Armory state, then waits for the next native-spawned active character before re-arming. This covers self and non-agent deaths without depending on `EM_Economy.EliminatedEvent`.
 
-This avoids per-character elimination subscriptions that must be recreated after every respawn.
+Do not configure `EM_Economy` to spawn/drop reward items. Production code does not subscribe to `EM_Economy.EliminatedEvent`.
 
 Current Epic reference:
 - https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/elimination_manager_device
@@ -251,13 +249,13 @@ At `OnBegin`:
 - initialize every player already returned by `GetPlayspace().GetPlayers()`,
 - subscribe once to `PlayerAddedEvent`,
 - subscribe once to `PlayerRemovedEvent`,
-- subscribe once to `EM_Economy.EliminationEvent`,
-- subscribe once to `EM_Economy.EliminatedEvent`,
+- subscribe once to `EM_Economy.EliminationEvent` for eliminator income only,
+- start exactly one `WatchPlayerDeaths` coroutine per initialized player,
 - subscribe once to the Armory input and active UMG event surfaces.
 
 **Do not subscribe the Armory to Player Spawn Pad events.** Native Player Spawn Pads remain the sole spawn-selection authority. The Armory waits for the native-spawned character/player state to become ready, then grants/releases the committed loadout.
 
-Do not subscribe a new elimination callback every respawn.
+Do not create a new callback stack every respawn. `WatchPlayerDeaths` is one long-lived coroutine per initialized player; after each awaited elimination it waits until the next active native-spawned character exists before awaiting that character's `EliminatedEvent()`.
 
 Per-player state must be removed when a player leaves:
 - Armory canvas/widget reference,
@@ -390,9 +388,10 @@ Before production adoption, verify in live UEFN:
 13. Leave while UI/queued state exists.
 14. Repeated death/UI cycles do not duplicate subscriptions, charges, rewards, or grants.
 15. Simultaneous eliminations do not create a second winner authority.
-16. Invalid/disabled catalog index fails safe.
-17. 12-player target / 16-player ceiling smoke test.
-18. `ValkyrieToolset.VerseToolset.BuildAll` returns zero diagnostics for accepted code.
+16. Invalid/disabled/out-of-range catalog index fails safe and never grants a different registered item.
+17. Self/manual/environmental death receives victim recovery/shop handling but never +150 self-elimination income.
+18. 12-player target / 16-player ceiling smoke test.
+19. `ValkyrieToolset.VerseToolset.BuildAll` returns zero diagnostics for accepted code.
 
 Standalone verse-lsp or generator validation does not outrank the live Epic compiler.
 
