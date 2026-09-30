@@ -5,6 +5,7 @@ using { /Fortnite.com/UI }
 using { /Verse.org/Simulation }
 using { /Verse.org/Simulation/Tags }
 using { /Verse.org/Colors }
+using { /Verse.org/Assets }
 using { /UnrealEngine.com/Temporary/UI }
 using { /UnrealEngine.com/Temporary/SpatialMath }
 
@@ -48,7 +49,13 @@ armory_catalog_item := class<concrete>:
     @editable
     SortOrder:int = 0
 
+    # Optional catalog art. Existing alpha entries use the widget's native icons.
+    @editable
+    Thumbnail:?texture = false
+
 armory_player_state := class:
+    LeftEvent:event() = event(){}
+    var PlayerNumber:int = 0
     var Bank:int = 3000
     var DeathStreak:int = 0
 
@@ -70,6 +77,11 @@ armory_player_state := class:
     var MinimumOpeningReady:logic = true
     var ShopReason:int = 0
     var ShopDeadline:float = 0.0
+    var ObservedCharacter:?fort_character = false
+    var NativeImmunityUntil:float = 0.0
+    var PendingEliminations:int = 0
+    var PendingDeaths:int = 0
+    var EconomyFlushQueued:logic = false
 
 armory_ui_state := class:
     Shell:UI.WBP_ScraplineArmory
@@ -144,6 +156,7 @@ scrapline_armory_device := class(creative_device):
     var OpeningPhaseEndsAt:float = 0.0
     var PlayerStates:[player]armory_player_state = map{}
     var PlayerUIs:[player]armory_ui_state = map{}
+    var NextPlayerNumber:int = 1
 
     OnBegin<override>()<suspends>:void=
         DevicesReady := DiscoverTaggedDevices()
@@ -202,6 +215,8 @@ scrapline_armory_device := class(creative_device):
             return
 
         State := armory_player_state{}
+        set State.PlayerNumber = NextPlayerNumber
+        set NextPlayerNumber += 1
         set State.Bank = StartingBank
         set State.PendingPrimary = StarterPrimaryCatalogIndex
         set State.PendingSecondary = StarterSecondaryCatalogIndex
@@ -241,6 +256,9 @@ scrapline_armory_device := class(creative_device):
         InitializePlayer(Player, false)
 
     OnPlayerRemoved(Player:player):void=
+        if (State := PlayerStates[Player]):
+            State.LeftEvent.Signal()
+            Print("SCRAPLINE ARMORY: player {State.PlayerNumber} leave cleanup")
         if (Input := ArmoryInput?):
             Input.Unregister(Player)
         RemoveArmoryUI(Player)
@@ -252,25 +270,55 @@ scrapline_armory_device := class(creative_device):
 
     OnElimination(MaybeAgent:?agent):void=
         if (Agent := MaybeAgent?, Player := player[Agent], State := PlayerStates[Player]):
-            AddScrap(State, EliminationReward)
-            set State.DeathStreak = 0
+            set State.PendingEliminations += 1
+            QueueEconomyFlush(Player, State)
+
+    QueueEconomyFlush(Player:player, State:armory_player_state):void=
+        if (not State.EconomyFlushQueued?):
+            set State.EconomyFlushQueued = true
+            spawn{FlushEconomyEvents(Player)}
+
+    FlushEconomyEvents(Player:player)<suspends>:void=
+        # Collect same-update elimination/death notifications before applying
+        # recovery then income. A trade pays the prior recovery tier and finishes
+        # with tier zero regardless of the two native callback orders.
+        Sleep(0.0)
+        if (State := PlayerStates[Player]):
+            Deaths := State.PendingDeaths
+            Eliminations := State.PendingEliminations
+            set State.PendingDeaths = 0
+            set State.PendingEliminations = 0
+            set State.EconomyFlushQueued = false
+            for (Unused := 1..Deaths):
+                AddDeathRecovery(State)
+            if (Eliminations > 0):
+                AddScrap(State, EliminationReward * Eliminations)
+                set State.DeathStreak = 0
+            Print("SCRAPLINE ARMORY: player {State.PlayerNumber} economy deaths={Deaths} kills={Eliminations} bank={State.Bank} tier={State.DeathStreak}")
+            if (Deaths > 0):
+                HandlePlayerDeath(Player)
             RefreshArmoryUI(Player)
 
     WatchPlayerDeaths(Player:player)<suspends>:void=
-        loop:
-            if (PlayerStates[Player]):
-                if (FortChar := Player.GetFortCharacter[], FortChar.IsActive[]):
-                    FortChar.EliminatedEvent().Await()
-                    HandlePlayerDeath(Player)
-                else:
-                    Sleep(0.1)
-            else:
-                return
+        if (InitialState := PlayerStates[Player]):
+            Print("SCRAPLINE ARMORY: player {InitialState.PlayerNumber} watcher started")
+            race:
+                InitialState.LeftEvent.Await()
+                loop:
+                    if (PlayerStates[Player]):
+                        if (FortChar := Player.GetFortCharacter[], FortChar.IsActive[]):
+                            ObserveCharacter(Player, FortChar)
+                            FortChar.EliminatedEvent().Await()
+                            if (State := PlayerStates[Player]):
+                                set State.PendingDeaths += 1
+                                QueueEconomyFlush(Player, State)
+                        else:
+                            Sleep(0.1)
+                    else:
+                        return
 
     HandlePlayerDeath(Player:player):void=
         if (State := PlayerStates[Player]):
-            AddDeathRecovery(State)
-
             HadQueued := State.HasQueued
             PrepareDeathCart(State)
 
@@ -409,6 +457,7 @@ scrapline_armory_device := class(creative_device):
             return false
 
         set State.Bank -= Total
+        Print("SCRAPLINE ARMORY: player {State.PlayerNumber} commit cost={Total} bank={State.Bank}")
         set State.PreviousPrimary = State.PendingPrimary
         set State.PreviousSecondary = State.PendingSecondary
         set State.PreviousSidearm = State.PendingSidearm
@@ -516,6 +565,7 @@ scrapline_armory_device := class(creative_device):
 
     HoldPlayer(Player:player):void=
         if (FortChar := Player.GetFortCharacter[]):
+            ObserveCharacter(Player, FortChar)
             FortChar.SetVulnerability(false)
             FortChar.PutInStasis(stasis_args{
                 AllowTurning := true,
@@ -525,8 +575,24 @@ scrapline_armory_device := class(creative_device):
 
     ReleasePlayer(Player:player):void=
         if (FortChar := Player.GetFortCharacter[]):
+            ObserveCharacter(Player, FortChar)
             FortChar.ReleaseFromStasis()
-            FortChar.SetVulnerability(true)
+            spawn{ReleaseVulnerabilityWhenSafe(Player, FortChar)}
+
+    ObserveCharacter(Player:player, FortChar:fort_character):void=
+        if (State := PlayerStates[Player]):
+            if (Previous := State.ObservedCharacter?, Previous = FortChar):
+                return
+            set State.ObservedCharacter = option{FortChar}
+            set State.NativeImmunityUntil = GetSimulationElapsedTime() + 2.0
+
+    ReleaseVulnerabilityWhenSafe(Player:player, FortChar:fort_character)<suspends>:void=
+        if (State := PlayerStates[Player]):
+            Remaining := State.NativeImmunityUntil - GetSimulationElapsedTime()
+            if (Remaining > 0.0):
+                Sleep(Remaining)
+            if (CurrentState := PlayerStates[Player], not CurrentState.HoldForShop?, Current := CurrentState.ObservedCharacter?, Current = FortChar, FortChar.IsActive[]):
+                FortChar.SetVulnerability(true)
 
     OpenArmorySoon(Player:player)<suspends>:void=
         Sleep(0.0)
@@ -911,6 +977,7 @@ scrapline_armory_device := class(creative_device):
                 set CatalogIndex = FoundIndex
 
             set NewIndices += array{CatalogIndex}
+            RefreshWeaponImage(ArmoryView.Shell, Slot, CatalogIndex)
 
             if (NameText := ArmoryView.CardNameTexts[Slot], PriceText := ArmoryView.CardPriceTexts[Slot]):
                 if (CatalogIndex >= 0, Entry := Catalog[CatalogIndex]):
@@ -940,6 +1007,48 @@ scrapline_armory_device := class(creative_device):
                 CategoryText.SetTextColor(MakeColorFromHex("A9D778"))
             else:
                 CategoryText.SetTextColor(MakeColorFromHex("E8EDF0"))
+
+    RefreshWeaponImage(Shell:UI.WBP_ScraplineArmory, Slot:int, CatalogIndex:int):void=
+        var Icon:texture = Shell.IconPistol
+        var Opacity:float = 0.0
+        if (CatalogIndex >= 0, Entry := Catalog[CatalogIndex]):
+            set Opacity = 1.0
+            if (Custom := Entry.Thumbnail?):
+                set Icon = Custom
+            else if (Entry.ItemIndex = 2):
+                set Icon = Shell.IconSMG
+            else if (Entry.ItemIndex = 3):
+                set Icon = Shell.IconShotgun
+            else if (Entry.ItemIndex = 4):
+                set Icon = Shell.IconAR
+            else if (Entry.ItemIndex = 5):
+                set Icon = Shell.IconRedDot
+            else if (Entry.ItemIndex = 6):
+                set Icon = Shell.IconSniper
+        if (Slot = 0):
+            set Shell.WeaponImage1 = Icon
+            set Shell.WeaponOpacity1 = Opacity
+        else if (Slot = 1):
+            set Shell.WeaponImage2 = Icon
+            set Shell.WeaponOpacity2 = Opacity
+        else if (Slot = 2):
+            set Shell.WeaponImage3 = Icon
+            set Shell.WeaponOpacity3 = Opacity
+        else if (Slot = 3):
+            set Shell.WeaponImage4 = Icon
+            set Shell.WeaponOpacity4 = Opacity
+        else if (Slot = 4):
+            set Shell.WeaponImage5 = Icon
+            set Shell.WeaponOpacity5 = Opacity
+        else if (Slot = 5):
+            set Shell.WeaponImage6 = Icon
+            set Shell.WeaponOpacity6 = Opacity
+        else if (Slot = 6):
+            set Shell.WeaponImage7 = Icon
+            set Shell.WeaponOpacity7 = Opacity
+        else:
+            set Shell.WeaponImage8 = Icon
+            set Shell.WeaponOpacity8 = Opacity
 
     RefreshArmoryUI(Player:player):void=
         if (State := PlayerStates[Player], ArmoryView := PlayerUIs[Player]):

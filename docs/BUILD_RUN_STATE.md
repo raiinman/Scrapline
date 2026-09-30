@@ -2,7 +2,13 @@
 
 ## Current checkpoint — 2026-09-30
 
-- Phase: production environment pass; Armory presentation and runtime acceptance pending.
+- Phase: first cooked session validation; production environment and Armory image pass saved.
+- Latest live count: 369 actors / 312 FortStaticMeshActors / 19 native pads / 19 generated starts / 3 Niagara / 1 decal. Added 34 utility/junk/sign pieces and 20 Quarry foot blends. Corrected inherited olive Landscape slope tint.
+- Latest UMG compile and live Verse BuildAll: zero diagnostics. Eight UMG weapon Image slots use mutable texture/opacity fields and MVVMK2Node_MakeBrushFromSoftTexture. Direct native icon defaults avoid blocked copying/export. TextBlock is prohibited; existing Verse text bridge remains. Runtime appearance/navigation pending.
+- Verse now supports configurable catalog thumbnails, per-character two-second protection deadline, guarded vulnerability release, same-update recovery-then-income batching, cancellable leave/death watcher, and scoped economy diagnostics. Accepted live source mirrored to repository.
+- Correction: aggregate ToyOptions writes reset native actor values. Repaired all 19 pads and tracker via actor properties and verified after save. Pads: enemy range 1000 cm, hidden, priority 1, all phases. Tracker: target 30 / Detailed HUD / no completion action. Never configure these devices by writing playerOptionData. Native_Settings_Verified.json now holds effective readbacks.
+- All 19 standing spawn-to-center collision rays hit nearby cover at 4.25–4.39 m. Remaining route widths, UI behavior, multiplayer, memory and profiling require runtime evidence.
+- Next expensive operation: exactly one StartSession after this saved checkpoint; inspect live status/logs before any retry.
 - Refreshed GitHub branch: automation/overnight-refinement, commit 2beb7af13a6b53e8a6cd9d24fb248ff56f8d230d.
 - Read complete root/docs/Resources/verse DOX and required design/build authorities; live root/docs/Resources DOX also read.
 - Verified live project: C:\Users\mikea\Documents\Codex\2026-09-27\i-want-to-1-shot-a-3\outputs\Scrapline\Scrapline.uefnproject.
