@@ -2,15 +2,15 @@
 
 ## Status
 
-**FEATURE FREEZE V2 — design locked; compile-clean implementation scaffold established; final runtime validation moves into Astra build/post-build.**
+**FEATURE FREEZE V2 — design locked; compile-clean implementation scaffold established; final runtime validation moves into GPT-6.1 Sol build/post-build.**
 
 The Armory is now a core Scrapline mechanic. It intentionally reopens a **small custom Verse surface** because the native fixed-loadout control case cannot provide the desired per-player buy/sell economy and adaptive next-life loadouts cleanly.
 
 This change does **not** reopen map design. `SPATIAL_CONTRACT.md` remains authoritative for terrain, districts, routes, spawn regions, major anchors, verticality, lighting, and environment construction.
 
-The Armory mechanic is no longer a pre-Astra presentation blocker. The current candidate compiles in live UEFN and is documented as the implementation baseline.
+The Armory mechanic is no longer a pre-construction presentation blocker. The current candidate compiles in live UEFN and is documented as the implementation baseline.
 
-When Astra is explicitly authorized to build the level, Astra must:
+GPT-6.1 Sol is explicitly authorized to build the level and must:
 - preserve this frozen economy contract,
 - finish/repair the Armory presentation using `ARMORY_UI_SPEC.md`,
 - wire the final production devices,
