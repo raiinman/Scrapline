@@ -1,0 +1,384 @@
+{
+  "anchors": [
+    {
+      "label": "SL_Center_Gantry",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_Crane01",
+      "location": {
+        "x": -250,
+        "y": 250,
+        "z": 1
+      },
+      "rotation": {
+        "pitch": 0,
+        "yaw": 29.48,
+        "roll": 0
+      }
+    },
+    {
+      "label": "SL_Center_GantryCabin",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCabin01",
+      "location": {
+        "x": -250,
+        "y": 250,
+        "z": 1
+      },
+      "rotation": {
+        "pitch": 0,
+        "yaw": 29.48,
+        "roll": 0
+      }
+    },
+    {
+      "label": "SL_Center_GantryCable",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCable01",
+      "location": {
+        "x": -250,
+        "y": 250,
+        "z": 1
+      },
+      "rotation": {
+        "pitch": 0,
+        "yaw": 29.48,
+        "roll": 0
+      }
+    },
+    {
+      "label": "SL_SE_WorkshopShell",
+      "asset_path": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1",
+      "location": {
+        "x": 4000,
+        "y": -3900,
+        "z": 19.4
+      },
+      "rotation": {
+        "pitch": 0,
+        "yaw": 135,
+        "roll": 0
+      }
+    },
+    {
+      "label": "SL_SE_WorkshopRoof",
+      "asset_path": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1_roof",
+      "location": {
+        "x": 4000,
+        "y": -3900,
+        "z": 19.4
+      },
+      "rotation": {
+        "pitch": 0,
+        "yaw": 135,
+        "roll": 0
+      }
+    },
+    {
+      "label": "SL_NE_BoxTruck",
+      "asset_path": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_BoxTruck_01a",
+      "location": {
+        "x": 4300,
+        "y": 3600,
+        "z": 32.83
+      },
+      "rotation": {
+        "pitch": 0,
+        "yaw": 18,
+        "roll": 0
+      }
+    },
+    {
+      "label": "SL_NW_Campervan",
+      "asset_path": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_Campervan_01a",
+      "location": {
+        "x": -4300,
+        "y": 3600,
+        "z": 29.62
+      },
+      "rotation": {
+        "pitch": 0,
+        "yaw": -24,
+        "roll": 0
+      }
+    },
+    {
+      "label": "SL_SW_RecyclingMachine",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_RecyclingMachine01",
+      "location": {
+        "x": -4100,
+        "y": -3600,
+        "z": 14.18
+      },
+      "rotation": {
+        "pitch": 0,
+        "yaw": 25,
+        "roll": 0
+      }
+    },
+    {
+      "label": "SL_SW_EngineContainer",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_EngineWithContainer",
+      "location": {
+        "x": -3000,
+        "y": -4700,
+        "z": 25.1
+      },
+      "rotation": {
+        "pitch": 0,
+        "yaw": -15,
+        "roll": 0
+      }
+    }
+  ],
+  "massPlan": [
+    {
+      "label": "SL_NW_JunkMass",
+      "asset_path": "/1323a5be-433d-bad0-da94-55a78c147665/SCBK_huge_junk_pile_L0.SCBK_huge_junk_pile_L0",
+      "x": -5600,
+      "y": 3200,
+      "yaw": 18
+    },
+    {
+      "label": "SL_NW_WreckA",
+      "asset_path": "/506cc01b-4757-3eda-7685-9ea806a93751/SCBK_old_car_ruin_blue_L0.SCBK_old_car_ruin_blue_L0",
+      "x": -3300,
+      "y": 2700,
+      "yaw": -12
+    },
+    {
+      "label": "SL_NW_WreckB",
+      "asset_path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "x": -4800,
+      "y": 2000,
+      "yaw": 80
+    },
+    {
+      "label": "SL_NW_WreckC",
+      "asset_path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "x": -3000,
+      "y": 5200,
+      "yaw": 48
+    },
+    {
+      "label": "SL_NW_CornerWallA",
+      "asset_path": "/a81776b6-460f-9380-688b-7b87e7645908/SCBK_metal_wall_clean_L0.SCBK_metal_wall_clean_L0",
+      "x": -5100,
+      "y": 4600,
+      "yaw": 20
+    },
+    {
+      "label": "SL_NW_CornerWallB",
+      "asset_path": "/fb52d314-4460-782e-169b-b8af2d814b3d/SCBK_metal_wall_door_L0.SCBK_metal_wall_door_L0",
+      "x": -4900,
+      "y": 5100,
+      "yaw": 110
+    },
+    {
+      "label": "SL_NW_ServiceWall",
+      "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+      "x": -2800,
+      "y": 2400,
+      "yaw": 125
+    },
+    {
+      "label": "SL_NE_ContainerA",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01",
+      "x": 3100,
+      "y": 3500,
+      "yaw": 10
+    },
+    {
+      "label": "SL_NE_ContainerB",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02",
+      "x": 4800,
+      "y": 4800,
+      "yaw": 80
+    },
+    {
+      "label": "SL_NE_ContainerC",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01",
+      "x": 2400,
+      "y": 5600,
+      "yaw": -15
+    },
+    {
+      "label": "SL_NE_ContainerD",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01",
+      "x": 5700,
+      "y": 2900,
+      "yaw": 15
+    },
+    {
+      "label": "SL_NE_Forklift",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ForkLift",
+      "x": 3650,
+      "y": 4300,
+      "yaw": -40
+    },
+    {
+      "label": "SL_NE_WallA",
+      "asset_path": "/a81776b6-460f-9380-688b-7b87e7645908/SCBK_metal_wall_clean_L0.SCBK_metal_wall_clean_L0",
+      "x": 5700,
+      "y": 5200,
+      "yaw": -12
+    },
+    {
+      "label": "SL_NE_WallB",
+      "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+      "x": 6050,
+      "y": 4850,
+      "yaw": 70
+    },
+    {
+      "label": "SL_SE_ServiceContainer",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01",
+      "x": 5500,
+      "y": -3100,
+      "yaw": 5
+    },
+    {
+      "label": "SL_SE_CourtWreck",
+      "asset_path": "/506cc01b-4757-3eda-7685-9ea806a93751/SCBK_old_car_ruin_blue_L0.SCBK_old_car_ruin_blue_L0",
+      "x": 2800,
+      "y": -2700,
+      "yaw": 32
+    },
+    {
+      "label": "SL_SE_CourtWall",
+      "asset_path": "/58695045-4906-996c-7fd9-229905072c99/SCBK_metal_wall_door_window_L0.SCBK_metal_wall_door_window_L0",
+      "x": 3600,
+      "y": -2200,
+      "yaw": 145
+    },
+    {
+      "label": "SL_SE_ExteriorWall",
+      "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+      "x": 5350,
+      "y": -5400,
+      "yaw": 25
+    },
+    {
+      "label": "SL_SW_Container",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02",
+      "x": -4800,
+      "y": -4500,
+      "yaw": -8
+    },
+    {
+      "label": "SL_SW_AssemblyA",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLine01",
+      "x": -3850,
+      "y": -4300,
+      "yaw": 18
+    },
+    {
+      "label": "SL_SW_AssemblyB",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLine02",
+      "x": -3400,
+      "y": -3700,
+      "yaw": -5
+    },
+    {
+      "label": "SL_SW_ReservoirA",
+      "asset_path": "/feb4a3eb-46dc-0836-046e-deb77c8412af/SCBK_large_reservoir_01_L0.SCBK_large_reservoir_01_L0",
+      "x": -2800,
+      "y": -2800,
+      "yaw": 10
+    },
+    {
+      "label": "SL_SW_ReservoirB",
+      "asset_path": "/feb4a3eb-46dc-0836-046e-deb77c8412af/SCBK_large_reservoir_01_L0.SCBK_large_reservoir_01_L0",
+      "x": -3200,
+      "y": -2700,
+      "yaw": -20
+    },
+    {
+      "label": "SL_SW_Electrical",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalSupply_Switchboard01",
+      "x": -4700,
+      "y": -3100,
+      "yaw": 60
+    },
+    {
+      "label": "SL_SW_BackWallA",
+      "asset_path": "/a81776b6-460f-9380-688b-7b87e7645908/SCBK_metal_wall_clean_L0.SCBK_metal_wall_clean_L0",
+      "x": -5400,
+      "y": -2900,
+      "yaw": 90
+    },
+    {
+      "label": "SL_SW_BackWallB",
+      "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+      "x": -5400,
+      "y": -3450,
+      "yaw": 80
+    },
+    {
+      "label": "SL_Center_Machine",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_RecyclingMachine01",
+      "x": -950,
+      "y": -300,
+      "yaw": 40
+    },
+    {
+      "label": "SL_Center_Engine",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_EngineWithContainer",
+      "x": 800,
+      "y": 450,
+      "yaw": -20
+    },
+    {
+      "label": "SL_Center_Wreck",
+      "asset_path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "x": 1150,
+      "y": -200,
+      "yaw": 35
+    },
+    {
+      "label": "SL_Center_BarricadeA",
+      "asset_path": "/55097657-4856-c80d-e71c-06bea4444089/SCBK_concrete_barricade_1_L0.SCBK_concrete_barricade_1_L0",
+      "x": -700,
+      "y": 1250,
+      "yaw": 30
+    },
+    {
+      "label": "SL_Center_BarricadeB",
+      "asset_path": "/fa25e884-41c5-1ea3-3924-a29201c215ab/SCBK_concrete_barricade_01_damaged_L0.SCBK_concrete_barricade_01_damaged_L0",
+      "x": 450,
+      "y": -1000,
+      "yaw": 30
+    },
+    {
+      "label": "SL_North_Terminator",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01",
+      "x": -100,
+      "y": 5800,
+      "yaw": 90
+    },
+    {
+      "label": "SL_East_Terminator",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02",
+      "x": 5700,
+      "y": -300,
+      "yaw": 0
+    },
+    {
+      "label": "SL_South_Terminator",
+      "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01",
+      "x": -700,
+      "y": -5400,
+      "yaw": 75
+    },
+    {
+      "label": "SL_West_Terminator",
+      "asset_path": "/506cc01b-4757-3eda-7685-9ea806a93751/SCBK_old_car_ruin_blue_L0.SCBK_old_car_ruin_blue_L0",
+      "x": -5300,
+      "y": -500,
+      "yaw": 20
+    },
+    {
+      "label": "SL_Scenic_Silo",
+      "asset_path": "/77f96a17-4c96-f17d-a4ca-6cb45aa68ab4/SCBK_old_silo_medium_01_L0.SCBK_old_silo_medium_01_L0",
+      "x": -6600,
+      "y": -6200,
+      "yaw": 0
+    }
+  ]
+}

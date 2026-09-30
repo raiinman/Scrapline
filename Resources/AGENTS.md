@@ -10,6 +10,7 @@ This folder owns:
 - approved real-source visual reference boards and contact sheets,
 - frozen terrain input files,
 - provenance/index files that explain how those resources may be used.
+- construction placement plans and live verification exports, distinguished from pending requested settings.
 
 ## Local Contracts
 
@@ -18,6 +19,7 @@ This folder owns:
 - Composition studies are exploratory arrangements built from approved real assets. They are not final map layout.
 - Official Fab gallery images are pack-level context only. Exact UAsset/contact-sheet evidence outranks pack marketing media for asset-specific decisions.
 - Synthetic/generated lookalikes are not part of this authority set.
+- Placement plans are audit evidence, not replay scripts. Effective live readbacks outrank requested values; superseded transforms must be identified rather than silently treated as verified.
 - `Terrain/Scrapline_Terrain_v1_253x253_16bit.png` is the frozen terrain heightmap input referenced by the active one-shot prompt.
 
 ## Work Guidance

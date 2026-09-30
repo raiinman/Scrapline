@@ -1,0 +1,344 @@
+{
+  "island": {
+    "teams": {
+      "teamType": "FreeForAll",
+      "teamIndex": 1
+    },
+    "maxPlayers": 16,
+    "teamSize": "Solos",
+    "matchmaking_OvertimePlayerTarget": 12,
+    "totalRounds": 1,
+    "timeLimit": 645,
+    "roundTimeLimit": 10.75,
+    "roundTimeLimit_Override": true,
+    "eliminationsToEnd": 30,
+    "eliminationsToEnd_Override": true,
+    "roundWinCondition": "Eliminations",
+    "roundWinCondition_Override": true,
+    "bLastStandingEndsGame": false,
+    "spawnLocation": "SpawnPads",
+    "spawnPadSelection": "Random",
+    "respawnWaveType": "None",
+    "respawnTime": 3,
+    "spawnLimit_Override": false,
+    "bOnlyAllowRespawnIfSpawnPadsFound": true,
+    "bOverrideSpawnImmunityTime": true,
+    "spawnImmunityTime": 2,
+    "joinInProgressBehavior": "SpawnImmediately",
+    "startingHealthPercentage": 100,
+    "maxHealth": 100,
+    "startingShieldPercentage": 100,
+    "maxShields": 100,
+    "bAllowOvershield": false,
+    "allowHealthRecharge": false,
+    "allowShieldRecharge": false,
+    "healthSiphonValue": 50,
+    "allowBuilding": "None",
+    "environmentDamagePreset": "Off",
+    "pickaxeDestructionPreset": "None",
+    "pVPPickaxeDamagePreset": "Off",
+    "bDisableHarvestSlot": true,
+    "bInfiniteAmmo": true,
+    "bInfiniteMagazineAmmo": false,
+    "dropAllItemsOverride": "ForceDestroy",
+    "bAllowItemDrop": false,
+    "maximumEquipmentSlots": 3,
+    "maximumEquipmentSlots_Override": true,
+    "bAllowMantling": true,
+    "bAllowSprinting": true,
+    "bAllowSliding": true,
+    "bFallDamageV2": false,
+    "firstScoreboardColumn": "Eliminations",
+    "firstScoreboardColumn_Override": true,
+    "secondScoreboardColumn": "Eliminated",
+    "secondScoreboardColumn_Override": true,
+    "timeOfDayOverride": "Hour16"
+  },
+  "spawnPads": [
+    {
+      "id": 1,
+      "x": -6200,
+      "y": 4600,
+      "yaw": 53.426969021480666,
+      "cover": {
+        "x": -5838.60588729479,
+        "y": 4331.86888412194
+      },
+      "z": 310.3122615035898,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_3"
+      },
+      "label": "SP_01"
+    },
+    {
+      "id": 2,
+      "x": -6500,
+      "y": 1500,
+      "yaw": 77.0053832080835,
+      "cover": {
+        "x": -6061.523961937421,
+        "y": 1398.8132219855588
+      },
+      "z": 213.4635808949857,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_1"
+      },
+      "label": "SP_02"
+    },
+    {
+      "id": 3,
+      "x": -6200,
+      "y": -2000,
+      "yaw": 107.87869659584135,
+      "cover": {
+        "x": -5771.731122007752,
+        "y": -1861.8487490347588
+      },
+      "z": 62.52736767031878,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1317716557"
+      },
+      "label": "SP_03"
+    },
+    {
+      "id": 4,
+      "x": -5100,
+      "y": -5100,
+      "yaw": 135,
+      "cover": {
+        "x": -4781.801948466054,
+        "y": -4781.801948466054
+      },
+      "z": 124.29145997907844,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1317847562"
+      },
+      "label": "SP_04"
+    },
+    {
+      "id": 5,
+      "x": -2700,
+      "y": -6200,
+      "yaw": 156.46765143909897,
+      "cover": {
+        "x": -2520.329954724019,
+        "y": -5787.424340477377
+      },
+      "z": 283.00542881185925,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1317963567"
+      },
+      "label": "SP_05"
+    },
+    {
+      "id": 6,
+      "x": 350,
+      "y": -6500,
+      "yaw": 183.08218082452814,
+      "cover": {
+        "x": 325.804282013238,
+        "y": -6050.650951674419
+      },
+      "z": 160.07544633619742,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318066572"
+      },
+      "label": "SP_06"
+    },
+    {
+      "id": 7,
+      "x": 2900,
+      "y": -6100,
+      "yaw": 205.42687416958978,
+      "cover": {
+        "x": 2706.788544919311,
+        "y": -5693.589697933723
+      },
+      "z": 58.50525973479597,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318179577"
+      },
+      "label": "SP_07"
+    },
+    {
+      "id": 8,
+      "x": 5200,
+      "y": -5000,
+      "yaw": 226.12330271407544,
+      "cover": {
+        "x": 4875.625120794165,
+        "y": -4688.101077686697
+      },
+      "z": 128.7511962679728,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318290582"
+      },
+      "label": "SP_08"
+    },
+    {
+      "id": 9,
+      "x": 6300,
+      "y": -2000,
+      "yaw": 252.38742215707617,
+      "cover": {
+        "x": 5871.094079784956,
+        "y": -1863.8393904079226
+      },
+      "z": 124.6340569512829,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318387587"
+      },
+      "label": "SP_09"
+    },
+    {
+      "id": 10,
+      "x": 6500,
+      "y": 1400,
+      "yaw": -77.8450583027778,
+      "cover": {
+        "x": 6060.088198471867,
+        "y": 1305.2497658247098
+      },
+      "z": 112.89249514080905,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318483592"
+      },
+      "label": "SP_10"
+    },
+    {
+      "id": 11,
+      "x": 5700,
+      "y": 4300,
+      "yaw": -52.969610394321364,
+      "cover": {
+        "x": 5340.757711875273,
+        "y": 4028.9926598357324
+      },
+      "z": 217.64760563716706,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318579597"
+      },
+      "label": "SP_11"
+    },
+    {
+      "id": 12,
+      "x": 3850,
+      "y": 6000,
+      "yaw": -32.68693654101055,
+      "cover": {
+        "x": 3606.9782012499372,
+        "y": 5621.264729220681
+      },
+      "z": 150.11924265042433,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318676602"
+      },
+      "label": "SP_12"
+    },
+    {
+      "id": 13,
+      "x": 800,
+      "y": 6500,
+      "yaw": -7.016501744722916,
+      "cover": {
+        "x": 745.0301593955527,
+        "y": 6053.370045088866
+      },
+      "z": 115.96060838214763,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318781607"
+      },
+      "label": "SP_13"
+    },
+    {
+      "id": 14,
+      "x": -2200,
+      "y": 6300,
+      "yaw": 19.24952587268173,
+      "cover": {
+        "x": -2051.642725223482,
+        "y": 5875.158713139972
+      },
+      "z": 123.65610253336261,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318889612"
+      },
+      "label": "SP_14"
+    },
+    {
+      "id": 15,
+      "x": -4900,
+      "y": 5600,
+      "yaw": 41.18592516570964,
+      "cover": {
+        "x": -4603.672926459167,
+        "y": 5261.340487381905
+      },
+      "z": 254.88772805403403,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1319054617"
+      },
+      "label": "SP_15"
+    },
+    {
+      "id": 16,
+      "x": -2700,
+      "y": 800,
+      "yaw": 73.49563861824498,
+      "cover": {
+        "x": -2268.5408492812257,
+        "y": 672.1602516388817
+      },
+      "z": -63.11103722759733,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1319177622"
+      },
+      "label": "SP_16"
+    },
+    {
+      "id": 17,
+      "x": 2700,
+      "y": 900,
+      "yaw": -71.56505117707798,
+      "cover": {
+        "x": 2273.092515877269,
+        "y": 757.697505292423
+      },
+      "z": -96.84098513019828,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1321608627"
+      },
+      "label": "SP_17"
+    },
+    {
+      "id": 18,
+      "x": 1000,
+      "y": -2800,
+      "yaw": 199.65382405805332,
+      "cover": {
+        "x": 848.6486213508297,
+        "y": -2376.2161397823234
+      },
+      "z": -48.88202255017428,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1321807632"
+      },
+      "label": "SP_18"
+    },
+    {
+      "id": 19,
+      "x": -2800,
+      "y": -900,
+      "yaw": 107.81888891452277,
+      "cover": {
+        "x": -2371.587147421631,
+        "y": -762.2958688140957
+      },
+      "z": -88.02482286604399,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1321912637"
+      },
+      "label": "SP_19"
+    }
+  ]
+}

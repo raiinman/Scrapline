@@ -1,0 +1,506 @@
+[
+  {
+    "asset_path": "/1323a5be-433d-bad0-da94-55a78c147665/SCBK_huge_junk_pile_L0.SCBK_huge_junk_pile_L0",
+    "label": "SL_NW_JunkMass",
+    "location": {
+      "x": -5600,
+      "y": 3200,
+      "z": 252.42755126953125
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 18,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/506cc01b-4757-3eda-7685-9ea806a93751/SCBK_old_car_ruin_blue_L0.SCBK_old_car_ruin_blue_L0",
+    "label": "SL_NW_WreckA",
+    "location": {
+      "x": -3300,
+      "y": 2700,
+      "z": 22.4715576171875
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": -12,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+    "label": "SL_NW_WreckB",
+    "location": {
+      "x": -4800,
+      "y": 2000,
+      "z": 19.3916015625
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 80,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+    "label": "SL_NW_WreckC",
+    "location": {
+      "x": -3000,
+      "y": 5200,
+      "z": 59.699462890625
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 48,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/a81776b6-460f-9380-688b-7b87e7645908/SCBK_metal_wall_clean_L0.SCBK_metal_wall_clean_L0",
+    "label": "SL_NW_CornerWallA",
+    "location": {
+      "x": -5100,
+      "y": 4600,
+      "z": 140.041748046875
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 20,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/fb52d314-4460-782e-169b-b8af2d814b3d/SCBK_metal_wall_door_L0.SCBK_metal_wall_door_L0",
+    "label": "SL_NW_CornerWallB",
+    "location": {
+      "x": -4900,
+      "y": 5100,
+      "z": 177.694091796875
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 110,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "label": "SL_NW_ServiceWall",
+    "location": {
+      "x": -2800,
+      "y": 2400,
+      "z": -0.7071533203125
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 125,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01",
+    "label": "SL_NE_ContainerA",
+    "location": {
+      "x": 3100,
+      "y": 3500,
+      "z": 23.157623291015625
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 10,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02",
+    "label": "SL_NE_ContainerB",
+    "location": {
+      "x": 4800,
+      "y": 4800,
+      "z": 131.14077758789062
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 80,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01",
+    "label": "SL_NE_ContainerC",
+    "location": {
+      "x": 2400,
+      "y": 5600,
+      "z": 42.804595947265625
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": -15,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01",
+    "label": "SL_NE_ContainerD",
+    "location": {
+      "x": 5700,
+      "y": 2900,
+      "z": 104.94204711914062
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 15,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ForkLift",
+    "label": "SL_NE_Forklift",
+    "location": {
+      "x": 3650,
+      "y": 4300,
+      "z": 29.73297119140625
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": -40,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/a81776b6-460f-9380-688b-7b87e7645908/SCBK_metal_wall_clean_L0.SCBK_metal_wall_clean_L0",
+    "label": "SL_NE_WallA",
+    "location": {
+      "x": 5700,
+      "y": 5200,
+      "z": 311.6507568359375
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": -12,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "label": "SL_NE_WallB",
+    "location": {
+      "x": 6050,
+      "y": 4850,
+      "z": 335.17138671875
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 70,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01",
+    "label": "SL_SE_ServiceContainer",
+    "location": {
+      "x": 5500,
+      "y": -3100,
+      "z": 86.82131958007812
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 5,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/506cc01b-4757-3eda-7685-9ea806a93751/SCBK_old_car_ruin_blue_L0.SCBK_old_car_ruin_blue_L0",
+    "label": "SL_SE_CourtWreck",
+    "location": {
+      "x": 2800,
+      "y": -2700,
+      "z": 7.7686767578125
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 32,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/58695045-4906-996c-7fd9-229905072c99/SCBK_metal_wall_door_window_L0.SCBK_metal_wall_door_window_L0",
+    "label": "SL_SE_CourtWall",
+    "location": {
+      "x": 3600,
+      "y": -2200,
+      "z": 5.452880859375
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 145,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "label": "SL_SE_ExteriorWall",
+    "location": {
+      "x": 5350,
+      "y": -5400,
+      "z": 165.6920166015625
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 25,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02",
+    "label": "SL_SW_Container",
+    "location": {
+      "x": -4800,
+      "y": -4500,
+      "z": 61.356475830078125
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": -8,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLine01",
+    "label": "SL_SW_AssemblyA",
+    "location": {
+      "x": -3850,
+      "y": -4300,
+      "z": 29.504013061523438
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 18,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLine02",
+    "label": "SL_SW_AssemblyB",
+    "location": {
+      "x": -3400,
+      "y": -3700,
+      "z": 17.745590209960938
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": -5,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/feb4a3eb-46dc-0836-046e-deb77c8412af/SCBK_large_reservoir_01_L0.SCBK_large_reservoir_01_L0",
+    "label": "SL_SW_ReservoirA",
+    "location": {
+      "x": -2800,
+      "y": -2800,
+      "z": 9.511474609375
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 10,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/feb4a3eb-46dc-0836-046e-deb77c8412af/SCBK_large_reservoir_01_L0.SCBK_large_reservoir_01_L0",
+    "label": "SL_SW_ReservoirB",
+    "location": {
+      "x": -3200,
+      "y": -2700,
+      "z": 14.4869384765625
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": -20,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalSupply_Switchboard01",
+    "label": "SL_SW_Electrical",
+    "location": {
+      "x": -4700,
+      "y": -3100,
+      "z": 5.8871002197265625
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 60,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/a81776b6-460f-9380-688b-7b87e7645908/SCBK_metal_wall_clean_L0.SCBK_metal_wall_clean_L0",
+    "label": "SL_SW_BackWallA",
+    "location": {
+      "x": -5400,
+      "y": -2900,
+      "z": -3.745361328125
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 90,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "label": "SL_SW_BackWallB",
+    "location": {
+      "x": -5400,
+      "y": -3450,
+      "z": 4.57470703125
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 80,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_RecyclingMachine01",
+    "label": "SL_Center_Machine",
+    "location": {
+      "x": -950,
+      "y": -300,
+      "z": -184.2705535888672
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 40,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_EngineWithContainer",
+    "label": "SL_Center_Engine",
+    "location": {
+      "x": 800,
+      "y": 450,
+      "z": -158.43478393554688
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": -20,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+    "label": "SL_Center_Wreck",
+    "location": {
+      "x": 1150,
+      "y": -200,
+      "z": -225.5626220703125
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 35,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/55097657-4856-c80d-e71c-06bea4444089/SCBK_concrete_barricade_1_L0.SCBK_concrete_barricade_1_L0",
+    "label": "SL_Center_BarricadeA",
+    "location": {
+      "x": -700,
+      "y": 1250,
+      "z": -169.142822265625
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 30,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/fa25e884-41c5-1ea3-3924-a29201c215ab/SCBK_concrete_barricade_01_damaged_L0.SCBK_concrete_barricade_01_damaged_L0",
+    "label": "SL_Center_BarricadeB",
+    "location": {
+      "x": 450,
+      "y": -1000,
+      "z": -178.81333923339844
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 30,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01",
+    "label": "SL_North_Terminator",
+    "location": {
+      "x": -100,
+      "y": 5800,
+      "z": 38.281646728515625
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 90,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02",
+    "label": "SL_East_Terminator",
+    "location": {
+      "x": 5700,
+      "y": -300,
+      "z": 38.516510009765625
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 0,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01",
+    "label": "SL_South_Terminator",
+    "location": {
+      "x": -700,
+      "y": -5400,
+      "z": 18.981964111328125
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 75,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/506cc01b-4757-3eda-7685-9ea806a93751/SCBK_old_car_ruin_blue_L0.SCBK_old_car_ruin_blue_L0",
+    "label": "SL_West_Terminator",
+    "location": {
+      "x": -5300,
+      "y": -500,
+      "z": 38.8753662109375
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 20,
+      "roll": 0
+    }
+  },
+  {
+    "asset_path": "/77f96a17-4c96-f17d-a4ca-6cb45aa68ab4/SCBK_old_silo_medium_01_L0.SCBK_old_silo_medium_01_L0",
+    "label": "SL_Scenic_Silo",
+    "location": {
+      "x": -6600,
+      "y": -6200,
+      "z": 176.0712890625
+    },
+    "rotation": {
+      "pitch": 0,
+      "yaw": 0,
+      "roll": 0
+    }
+  }
+]
