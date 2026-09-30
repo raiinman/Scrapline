@@ -16,7 +16,7 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 
 ## Current Stage
 
-**Design/asset/gameplay handoff frozen; Astra construction ready for explicit user authorization.**
+**Design/asset/gameplay handoff frozen; GPT-6.1 Sol construction explicitly authorized. Active prompt: `docs/SOL61_ONE_SHOT_PROMPT.md`.**
 
 The macro map design, spatial skeleton, terrain specification, first-alpha gameplay baseline, implementation toolchain, production environment kit, grounded real-asset visual pass, physical-fit verification, and gameplay-device package are locked or verified. `SPATIAL_CONTRACT.md` freezes major anchors, orientation, routes, verticality, spawn regions, and lighting intent.
 
