@@ -56,6 +56,21 @@ The Scrapline toolchain is installed, activated, and verified against the live S
 - Landscape tools are permitted for terrain shaping and environmental integration.
 - Neither may be used to replace the approved asset-first environment with primitive or greybox art.
 
+## Red-Team Tool Reliability Findings — 2026-09-30
+
+Current Epic UEFN MCP documentation lists two relevant known issues:
+- Python toolsets currently expose **XYZ** transform format while UEFN uses **Left-Up-Forward (LUF)** conventions; agent-side coordinate translation can multiply spatial errors.
+- MCP tool calls can hitch or hang the editor.
+
+Scrapline one-shot safeguards:
+- treat `SPATIAL_CONTRACT.md` numeric coordinates as authority and **read back the resulting world transform after every major-anchor/assembly placement before dressing**,
+- visually verify the gantry, Garage, major district anchors, and route-facing orientation before propagating secondary props,
+- use short, bounded MCP calls and checkpoint durable state instead of launching duplicate operations after a transport timeout,
+- if a UEFN MCP Verse write reports failure while the live source is otherwise writable, do not assume the requested edit occurred and do not repeat blindly; inspect the actual live project file, use an approved local edit path if necessary, then immediately run `ValkyrieToolset.VerseToolset.BuildAll`,
+- mirror Verse to GitHub only after the live compiler accepts the same source.
+
+During the 2026-09-30 red team, Verse reads/builds worked while MCP `Replace` returned a write failure on the live source. The local source was writable; surgical local edits followed by live `BuildAll` produced zero diagnostics. Treat MCP write success/failure as a tool result that requires readback, not as proof of source state.
+
 ## One-Shot Rules
 
 - Codex must discover available MCP tools before beginning the primary build.
