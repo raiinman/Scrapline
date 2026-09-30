@@ -20,9 +20,14 @@ armory_catalog_item := class<concrete>:
     @editable
     DisplayName:string = ""
 
-    # 0 = Primary, 1 = Secondary, 2 = Sidearm
+    # Inventory slot: 0 = Primary, 1 = Secondary, 2 = Sidearm
     @editable
     Category:int = 0
+
+    # Browser category: 1 Pistols, 2 SMGs, 3 Shotguns, 4 ARs,
+    # 5 Marksman, 6 Snipers, 7 Special. Featured is a separate flag.
+    @editable
+    ShopCategory:int = 7
 
     @editable
     Price:int = 0
@@ -66,17 +71,30 @@ armory_player_state := class:
     var ShopDeadline:float = 0.0
 
 armory_ui_state := class:
+    Shell:UI.WBP_ScraplineArmory
     Root:canvas
+    HeaderText:text_block
     BankText:text_block
+    ContextText:text_block
     PrimaryText:text_block
     SecondaryText:text_block
     SidearmText:text_block
     TotalText:text_block
     CountdownText:text_block
     StatusText:text_block
-    ReadyButton:button_loud
-    RebuyButton:button_loud
+    PageText:text_block
+    CategoryTexts:[]text_block
+    CardNameTexts:[]text_block
+    CardPriceTexts:[]text_block
+    ReadyText:text_block
+    RebuyText:text_block
+    ClearText:text_block
+    PrevText:text_block
+    NextText:text_block
     ClosedEvent:event() = event(){}
+    var ActiveCategory:int = 0
+    var Page:int = 0
+    var CardCatalogIndices:[]int = array{-1,-1,-1,-1,-1,-1,-1,-1}
 
 scrapline_armory_device := class(creative_device):
 
@@ -87,14 +105,15 @@ scrapline_armory_device := class(creative_device):
 
     @editable
     Catalog:[]armory_catalog_item = array{
-        armory_catalog_item{StableId := "pistol", DisplayName := "Pistol", Category := 2, Price := 0, ItemIndex := 0, SortOrder := 0},
-        armory_catalog_item{StableId := "suppressed_pistol", DisplayName := "Suppressed Pistol", Category := 2, Price := 500, ItemIndex := 1, SortOrder := 1},
-        armory_catalog_item{StableId := "stinger_smg", DisplayName := "Stinger SMG", Category := 1, Price := 1000, ItemIndex := 2, SortOrder := 2},
-        armory_catalog_item{StableId := "thunder_shotgun", DisplayName := "Thunder Shotgun", Category := 0, Price := 1400, ItemIndex := 3, SortOrder := 3},
-        armory_catalog_item{StableId := "assault_rifle", DisplayName := "Assault Rifle", Category := 0, Price := 1700, ItemIndex := 4, SortOrder := 4},
-        armory_catalog_item{StableId := "infantry_rifle", DisplayName := "Infantry Rifle", Category := 0, Price := 2100, ItemIndex := 5, SortOrder := 5},
-        armory_catalog_item{StableId := "bolt_sniper", DisplayName := "Bolt-Action Sniper Rifle", Category := 0, Price := 3800, ItemIndex := 6, Featured := true, SeasonalTag := "PREMIUM", SortOrder := 6}
+        armory_catalog_item{StableId := "core_pistol", DisplayName := "Core Pistol", Category := 2, ShopCategory := 1, Price := 0, ItemIndex := 0, SortOrder := 0},
+        armory_catalog_item{StableId := "premium_pistol", DisplayName := "Premium Pistol", Category := 2, ShopCategory := 1, Price := 500, ItemIndex := 1, SortOrder := 1},
+        armory_catalog_item{StableId := "core_smg", DisplayName := "Core SMG", Category := 1, ShopCategory := 2, Price := 1000, ItemIndex := 2, Featured := true, SortOrder := 2},
+        armory_catalog_item{StableId := "pump_shotgun", DisplayName := "Pump Shotgun", Category := 0, ShopCategory := 3, Price := 1400, ItemIndex := 3, Featured := true, SortOrder := 3},
+        armory_catalog_item{StableId := "core_ar", DisplayName := "Core AR", Category := 0, ShopCategory := 4, Price := 1700, ItemIndex := 4, Featured := true, SortOrder := 4},
+        armory_catalog_item{StableId := "red_dot_ar", DisplayName := "Red-Dot AR", Category := 0, ShopCategory := 4, Price := 2100, ItemIndex := 5, Featured := true, SortOrder := 5},
+        armory_catalog_item{StableId := "core_sniper", DisplayName := "Core Sniper", Category := 0, ShopCategory := 6, Price := 3800, ItemIndex := 6, Featured := true, SeasonalTag := "PREMIUM", SortOrder := 6}
     }
+
 
     @editable
     StarterPrimaryCatalogIndex:int = 4
@@ -415,9 +434,11 @@ scrapline_armory_device := class(creative_device):
         return "—"
 
     GrantCommittedLoadout(Player:player, State:armory_player_state):void=
-        GrantCatalogSelection(Player, State.PreviousPrimary)
-        GrantCatalogSelection(Player, State.PreviousSecondary)
+        # Grant primary last because IG_Armory equips each successful grant.
+        # This leaves the player holding the primary when the life begins.
         GrantCatalogSelection(Player, State.PreviousSidearm)
+        GrantCatalogSelection(Player, State.PreviousSecondary)
+        GrantCatalogSelection(Player, State.PreviousPrimary)
         set State.NeedsGrant = false
 
     GrantCatalogSelection(Player:player, CatalogIndex:int):void=
@@ -481,192 +502,283 @@ scrapline_armory_device := class(creative_device):
         if (State := PlayerStates[Player], PlayerUI := GetPlayerUI[Player]):
             RemoveArmoryUI(Player)
 
-            UI := CreateArmoryUI(Player, State)
-            PlayerUI.AddWidget(UI.Root, player_ui_slot{InputMode := ui_input_mode.All})
+            ArmoryView := CreateArmoryUI(Player, State)
+            GetPlayspace().GetHUDController().HideElementsForPlayer(Player, array{creative_hud_identifier_all{}})
+            PlayerUI.AddWidget(ArmoryView.Shell, player_ui_slot{InputMode := ui_input_mode.All, ZOrder := 0})
+            PlayerUI.AddWidget(ArmoryView.Root, player_ui_slot{ZOrder := 1})
+            PlayerUI.SetFocus(ArmoryView.Shell)
 
-            if (set PlayerUIs[Player] = UI):
+            if (set PlayerUIs[Player] = ArmoryView):
                 RefreshArmoryUI(Player)
-                spawn{AwaitReady(Player, UI)}
-                spawn{AwaitRebuy(Player, UI)}
-                spawn{RunCountdown(Player, UI)}
+                spawn{AwaitUMGAction(Player, ArmoryView, 0, ArmoryView.Shell.ReadyEvent)}
+                spawn{AwaitUMGAction(Player, ArmoryView, 1, ArmoryView.Shell.RebuyEvent)}
+                spawn{AwaitUMGAction(Player, ArmoryView, 2, ArmoryView.Shell.ClearEvent)}
+                spawn{AwaitUMGAction(Player, ArmoryView, 3, ArmoryView.Shell.PrevPageEvent)}
+                spawn{AwaitUMGAction(Player, ArmoryView, 4, ArmoryView.Shell.NextPageEvent)}
+                spawn{AwaitUMGCategory(Player, ArmoryView, 0, ArmoryView.Shell.CategoryFeaturedEvent)}
+                spawn{AwaitUMGCategory(Player, ArmoryView, 1, ArmoryView.Shell.CategoryPistolsEvent)}
+                spawn{AwaitUMGCategory(Player, ArmoryView, 2, ArmoryView.Shell.CategorySMGEvent)}
+                spawn{AwaitUMGCategory(Player, ArmoryView, 3, ArmoryView.Shell.CategoryShotgunsEvent)}
+                spawn{AwaitUMGCategory(Player, ArmoryView, 4, ArmoryView.Shell.CategoryAREvent)}
+                spawn{AwaitUMGCategory(Player, ArmoryView, 5, ArmoryView.Shell.CategoryMarksmanEvent)}
+                spawn{AwaitUMGCategory(Player, ArmoryView, 6, ArmoryView.Shell.CategorySnipersEvent)}
+                spawn{AwaitUMGCategory(Player, ArmoryView, 7, ArmoryView.Shell.CategorySpecialEvent)}
+                spawn{AwaitUMGCard(Player, ArmoryView, 0, ArmoryView.Shell.Card1Event)}
+                spawn{AwaitUMGCard(Player, ArmoryView, 1, ArmoryView.Shell.Card2Event)}
+                spawn{AwaitUMGCard(Player, ArmoryView, 2, ArmoryView.Shell.Card3Event)}
+                spawn{AwaitUMGCard(Player, ArmoryView, 3, ArmoryView.Shell.Card4Event)}
+                spawn{AwaitUMGCard(Player, ArmoryView, 4, ArmoryView.Shell.Card5Event)}
+                spawn{AwaitUMGCard(Player, ArmoryView, 5, ArmoryView.Shell.Card6Event)}
+                spawn{AwaitUMGCard(Player, ArmoryView, 6, ArmoryView.Shell.Card7Event)}
+                spawn{AwaitUMGCard(Player, ArmoryView, 7, ArmoryView.Shell.Card8Event)}
+                spawn{RunCountdown(Player, ArmoryView)}
 
     RemoveArmoryUI(Player:player):void=
-        if (UI := PlayerUIs[Player]):
-            UI.ClosedEvent.Signal()
+        if (ArmoryView := PlayerUIs[Player]):
+            ArmoryView.ClosedEvent.Signal()
 
             if (PlayerUI := GetPlayerUI[Player]):
-                PlayerUI.RemoveWidget(UI.Root)
+                PlayerUI.RemoveWidget(ArmoryView.Root)
+                PlayerUI.RemoveWidget(ArmoryView.Shell)
+
+            GetPlayspace().GetHUDController().ResetElementsForPlayer(Player, array{creative_hud_identifier_all{}})
 
             var NewUIs:[player]armory_ui_state = map{}
             for (Key -> Value : PlayerUIs, Key <> Player):
                 set NewUIs = ConcatenateMaps(NewUIs, map{Key => Value})
             set PlayerUIs = NewUIs
 
+    MakeOverlaySlot(Widget:widget, X:float, Y:float):canvas_slot=
+        return canvas_slot:
+            Widget := Widget
+            Anchors := anchors{Minimum := vector2{X := 0.0, Y := 0.0}, Maximum := vector2{X := 0.0, Y := 0.0}}
+            Offsets := margin{Left := X, Top := Y}
+            Alignment := vector2{X := 0.0, Y := 0.0}
+            SizeToContent := true
+
+    MakeLabel(Text:string, Size:float, Color:color):text_block=
+        return text_block{
+            DefaultText := ArmoryText(Text),
+            DefaultTextColor := Color,
+            DefaultTextSize := Size,
+            DefaultShadowColor := MakeColorFromHex("000000"),
+            DefaultShadowOpacity := 0.55,
+            DefaultShadowOffset := option{vector2{X := 1.0, Y := 1.0}}
+        }
+
+    CategoryLabelX(Index:int):float=
+        if (Index = 0):
+            return 224.0
+        if (Index = 1):
+            return 330.0
+        if (Index = 2):
+            return 436.0
+        if (Index = 3):
+            return 542.0
+        if (Index = 4):
+            return 648.0
+        if (Index = 5):
+            return 754.0
+        if (Index = 6):
+            return 860.0
+        return 966.0
+
+    CardLabelX(Index:int):float=
+        if (Index = 0):
+            return 220.0
+        if (Index = 4):
+            return 220.0
+        if (Index = 1):
+            return 375.0
+        if (Index = 5):
+            return 375.0
+        if (Index = 2):
+            return 530.0
+        if (Index = 6):
+            return 530.0
+        return 685.0
+
+    CardNameY(Index:int):float=
+        if (Index < 4):
+            return 302.0
+        return 482.0
+
+    CardPriceY(Index:int):float=
+        if (Index < 4):
+            return 326.0
+        return 506.0
+
     CreateArmoryUI(Player:player, State:armory_player_state):armory_ui_state=
-        BankText := text_block{DefaultText := ArmoryText("SCRAP")}
-        PrimaryText := text_block{DefaultText := ArmoryText("PRIMARY")}
-        SecondaryText := text_block{DefaultText := ArmoryText("SECONDARY")}
-        SidearmText := text_block{DefaultText := ArmoryText("SIDEARM")}
-        TotalText := text_block{DefaultText := ArmoryText("CART")}
-        CountdownText := text_block{DefaultText := ArmoryText("")}
-        StatusText := text_block{DefaultText := ArmoryText(GetReasonText(State.ShopReason))}
+        Shell := UI.WBP_ScraplineArmory{}
+        White := MakeColorFromHex("E8EDF0")
+        Muted := MakeColorFromHex("89949D")
+        Accent := MakeColorFromHex("9DBB69")
+        Money := MakeColorFromHex("C2D987")
+        Weapon := MakeColorFromHex("B9D4E8")
 
-        ReadyLabel := if (State.ShopReason = 4) then "QUEUE NEXT LOADOUT" else if (State.ShopReason = 1) then "READY" else "DEPLOY"
-        ReadyButton := button_loud{DefaultText := ArmoryText(ReadyLabel)}
-        RebuyButton := button_loud{DefaultText := ArmoryText("REBUY LAST LOADOUT")}
+        HeaderText := MakeLabel("SCRAPLINE // ARMORY", 21.0, White)
+        BankText := MakeLabel("SCRAP 0", 18.0, Money)
+        ContextText := MakeLabel(GetReasonText(State.ShopReason), 12.0, Muted)
+        CountdownText := MakeLabel("", 17.0, White)
+        PrimaryText := MakeLabel("PRIMARY -", 14.0, Weapon)
+        SecondaryText := MakeLabel("SECONDARY -", 14.0, Weapon)
+        SidearmText := MakeLabel("SIDEARM -", 14.0, Weapon)
+        TotalText := MakeLabel("LOADOUT 0", 14.0, Money)
+        StatusText := MakeLabel("", 11.0, Muted)
+        PageText := MakeLabel("PAGE 1", 11.0, Muted)
+        ReadyText := MakeLabel("READY", 14.0, White)
+        RebuyText := MakeLabel("RE-BUY", 11.0, White)
+        ClearText := MakeLabel("CLEAR", 11.0, White)
+        PrevText := MakeLabel("< PREV", 10.0, White)
+        NextText := MakeLabel("NEXT >", 10.0, White)
 
-        PrimaryList := stack_box{Orientation := orientation.Vertical}
-        SecondaryList := stack_box{Orientation := orientation.Vertical}
-        SidearmList := stack_box{Orientation := orientation.Vertical}
+        CategoryTexts := array:
+            MakeLabel("FEATURED", 10.0, White)
+            MakeLabel("PISTOLS", 10.0, White)
+            MakeLabel("SMGs", 10.0, White)
+            MakeLabel("SHOTGUNS", 10.0, White)
+            MakeLabel("ARs", 10.0, White)
+            MakeLabel("MARKSMAN", 10.0, White)
+            MakeLabel("SNIPERS", 10.0, White)
+            MakeLabel("SPECIAL", 10.0, White)
 
-        PrimaryList.AddWidget(stack_box_slot{Widget := text_block{DefaultText := ArmoryText("PRIMARY")}})
-        SecondaryList.AddWidget(stack_box_slot{Widget := text_block{DefaultText := ArmoryText("SECONDARY")}})
-        SidearmList.AddWidget(stack_box_slot{Widget := text_block{DefaultText := ArmoryText("SIDEARM")}})
+        CardNameTexts := array:
+            MakeLabel("", 12.0, White), MakeLabel("", 12.0, White), MakeLabel("", 12.0, White), MakeLabel("", 12.0, White),
+            MakeLabel("", 12.0, White), MakeLabel("", 12.0, White), MakeLabel("", 12.0, White), MakeLabel("", 12.0, White)
+        CardPriceTexts := array:
+            MakeLabel("", 11.0, Money), MakeLabel("", 11.0, Money), MakeLabel("", 11.0, Money), MakeLabel("", 11.0, Money),
+            MakeLabel("", 11.0, Money), MakeLabel("", 11.0, Money), MakeLabel("", 11.0, Money), MakeLabel("", 11.0, Money)
 
-        Categories := stack_box:
-            Orientation := orientation.Horizontal
-            Slots := array:
-                stack_box_slot:
-                    Widget := PrimaryList
-                    Padding := margin{Right := 24.0}
-                stack_box_slot:
-                    Widget := SecondaryList
-                    Padding := margin{Left := 24.0, Right := 24.0}
-                stack_box_slot:
-                    Widget := SidearmList
-                    Padding := margin{Left := 24.0}
+        var Slots:[]canvas_slot = array:
+            MakeOverlaySlot(HeaderText, 210.0, 80.0),
+            MakeOverlaySlot(BankText, 870.0, 82.0),
+            MakeOverlaySlot(CountdownText, 980.0, 82.0),
+            MakeOverlaySlot(ContextText, 210.0, 102.0),
+            MakeOverlaySlot(PrimaryText, 855.0, 225.0),
+            MakeOverlaySlot(SecondaryText, 855.0, 285.0),
+            MakeOverlaySlot(SidearmText, 855.0, 345.0),
+            MakeOverlaySlot(TotalText, 855.0, 425.0),
+            MakeOverlaySlot(StatusText, 855.0, 455.0),
+            MakeOverlaySlot(PageText, 610.0, 543.0),
+            MakeOverlaySlot(ReadyText, 920.0, 558.0),
+            MakeOverlaySlot(RebuyText, 875.0, 607.0),
+            MakeOverlaySlot(ClearText, 980.0, 607.0),
+            MakeOverlaySlot(PrevText, 545.0, 543.0),
+            MakeOverlaySlot(NextText, 650.0, 543.0)
 
-        Summary := stack_box:
-            Orientation := orientation.Vertical
-            Slots := array:
-                stack_box_slot{Widget := BankText}
-                stack_box_slot{Widget := PrimaryText}
-                stack_box_slot{Widget := SecondaryText}
-                stack_box_slot{Widget := SidearmText}
-                stack_box_slot{Widget := TotalText}
-                stack_box_slot{Widget := CountdownText}
-                stack_box_slot{Widget := StatusText}
+        for (Index -> Label : CategoryTexts):
+            set Slots += array{MakeOverlaySlot(Label, CategoryLabelX(Index), 136.0)}
 
-        Actions := stack_box:
-            Orientation := orientation.Horizontal
-            Slots := array:
-                stack_box_slot:
-                    Widget := ReadyButton
-                    Padding := margin{Right := 10.0}
-                stack_box_slot:
-                    Widget := RebuyButton
-                    Padding := margin{Left := 10.0}
+        for (Index -> Label : CardNameTexts):
+            set Slots += array{MakeOverlaySlot(Label, CardLabelX(Index), CardNameY(Index))}
 
-        MainStack := stack_box:
-            Orientation := orientation.Vertical
-            Slots := array:
-                stack_box_slot:
-                    Widget := text_block{DefaultText := ArmoryText("SCRAPLINE // ARMORY")}
-                    HorizontalAlignment := horizontal_alignment.Center
-                    Padding := margin{Bottom := 14.0}
-                stack_box_slot:
-                    Widget := Summary
-                    Padding := margin{Bottom := 16.0}
-                stack_box_slot:
-                    Widget := Categories
-                    Padding := margin{Bottom := 18.0}
-                stack_box_slot:
-                    Widget := Actions
-                    HorizontalAlignment := horizontal_alignment.Center
+        for (Index -> Label : CardPriceTexts):
+            set Slots += array{MakeOverlaySlot(Label, CardLabelX(Index), CardPriceY(Index))}
 
-        Backdrop := color_block:
-            DefaultColor := NamedColors.Black
-            DefaultOpacity := 0.88
-            DefaultDesiredSize := vector2{X := 1220.0, Y := 760.0}
+        Root := canvas{Slots := Slots}
 
-        Panel := overlay:
-            Slots := array:
-                overlay_slot:
-                    Widget := Backdrop
-                overlay_slot:
-                    Widget := MainStack
-                    Padding := margin{Left := 36.0, Top := 28.0, Right := 36.0, Bottom := 28.0}
-
-        Root := canvas:
-            Slots := array:
-                canvas_slot:
-                    Widget := Panel
-                    Anchors := anchors{
-                        Minimum := vector2{X := 0.5, Y := 0.5},
-                        Maximum := vector2{X := 0.5, Y := 0.5}
-                    }
-                    Alignment := vector2{X := 0.5, Y := 0.5}
-                    SizeToContent := true
-
-        UI := armory_ui_state:
+        return armory_ui_state:
+            Shell := Shell
             Root := Root
+            HeaderText := HeaderText
             BankText := BankText
+            ContextText := ContextText
             PrimaryText := PrimaryText
             SecondaryText := SecondaryText
             SidearmText := SidearmText
             TotalText := TotalText
             CountdownText := CountdownText
             StatusText := StatusText
-            ReadyButton := ReadyButton
-            RebuyButton := RebuyButton
+            PageText := PageText
+            CategoryTexts := CategoryTexts
+            CardNameTexts := CardNameTexts
+            CardPriceTexts := CardPriceTexts
+            ReadyText := ReadyText
+            RebuyText := RebuyText
+            ClearText := ClearText
+            PrevText := PrevText
+            NextText := NextText
 
-        for (CatalogIndex -> Entry : Catalog, Entry.Enabled?):
-            ButtonPrefix := if (Entry.Featured?) then "FEATURED // " else ""
-            ItemButton := button_loud{DefaultText := ArmoryText("{ButtonPrefix}{Entry.DisplayName} — {Entry.Price} SCRAP")}
-
-            if (Entry.Category = 0):
-                PrimaryList.AddWidget(stack_box_slot{Widget := ItemButton, Padding := margin{Top := 4.0, Bottom := 4.0}})
-                spawn{AwaitCatalogSelection(Player, UI, ItemButton, CatalogIndex)}
-            else if (Entry.Category = 1):
-                SecondaryList.AddWidget(stack_box_slot{Widget := ItemButton, Padding := margin{Top := 4.0, Bottom := 4.0}})
-                spawn{AwaitCatalogSelection(Player, UI, ItemButton, CatalogIndex)}
-            else if (Entry.Category = 2):
-                SidearmList.AddWidget(stack_box_slot{Widget := ItemButton, Padding := margin{Top := 4.0, Bottom := 4.0}})
-                spawn{AwaitCatalogSelection(Player, UI, ItemButton, CatalogIndex)}
-
-        return UI
-
-    AwaitCatalogSelection(Player:player, UI:armory_ui_state, Button:button_loud, CatalogIndex:int)<suspends>:void=
+    AwaitUMGAction(Player:player, ArmoryView:armory_ui_state, Action:int, Source:event(tuple()))<suspends>:void=
         race:
-            UI.ClosedEvent.Await()
+            ArmoryView.ClosedEvent.Await()
             loop:
-                Message := Button.OnClick().Await()
-                if (Message.Player = Player):
-                    ToggleCatalogSelection(Player, CatalogIndex)
-
-    AwaitReady(Player:player, UI:armory_ui_state)<suspends>:void=
-        race:
-            UI.ClosedEvent.Await()
-            loop:
-                Message := UI.ReadyButton.OnClick().Await()
-                if (Message.Player = Player):
+                Source.Await()
+                if (Action = 0):
                     HandleReady(Player)
-                    return
-
-    AwaitRebuy(Player:player, UI:armory_ui_state)<suspends>:void=
-        race:
-            UI.ClosedEvent.Await()
-            loop:
-                Message := UI.RebuyButton.OnClick().Await()
-                if (Message.Player = Player):
+                else if (Action = 1):
                     HandleRebuy(Player)
-                    return
+                else if (Action = 2):
+                    ClearPendingCart(Player)
+                else if (Action = 3):
+                    ChangePage(Player, -1)
+                else if (Action = 4):
+                    ChangePage(Player, 1)
 
-    RunCountdown(Player:player, UI:armory_ui_state)<suspends>:void=
+    AwaitUMGCategory(Player:player, ArmoryView:armory_ui_state, Category:int, Source:event(tuple()))<suspends>:void=
         race:
-            UI.ClosedEvent.Await()
+            ArmoryView.ClosedEvent.Await()
+            loop:
+                Source.Await()
+                set ArmoryView.ActiveCategory = Category
+                set ArmoryView.Page = 0
+                RefreshArmoryUI(Player)
+
+    AwaitUMGCard(Player:player, ArmoryView:armory_ui_state, SlotIndex:int, Source:event(tuple()))<suspends>:void=
+        race:
+            ArmoryView.ClosedEvent.Await()
+            loop:
+                Source.Await()
+                if (CatalogIndex := ArmoryView.CardCatalogIndices[SlotIndex]):
+                    if (CatalogIndex >= 0):
+                        ToggleCatalogSelection(Player, CatalogIndex)
+
+    RunCountdown(Player:player, ArmoryView:armory_ui_state)<suspends>:void=
+        race:
+            ArmoryView.ClosedEvent.Await()
             loop:
                 if (State := PlayerStates[Player]):
                     if (State.ShopDeadline > 0.0):
                         Remaining := State.ShopDeadline - GetSimulationElapsedTime()
                         if (Remaining <= 0.0):
-                            UI.CountdownText.SetText(ArmoryText("TIME: 0"))
+                            ArmoryView.CountdownText.SetText(ArmoryText("TIME 0"))
                         else:
                             Seconds := Ceil[Remaining] or 0
-                            UI.CountdownText.SetText(ArmoryText("TIME: {Seconds}s"))
+                            ArmoryView.CountdownText.SetText(ArmoryText("TIME {Seconds}s"))
                     else:
-                        UI.CountdownText.SetText(ArmoryText(""))
+                        ArmoryView.CountdownText.SetText(ArmoryText(""))
                 Sleep(1.0)
+
+    GetFilteredCatalogIndices(Category:int):[]int=
+        var Results:[]int = array{}
+        for (Index -> Entry : Catalog, Entry.Enabled?):
+            if (Category = 0):
+                if (Entry.Featured?):
+                    set Results += array{Index}
+            else if (Entry.ShopCategory = Category):
+                set Results += array{Index}
+        return Results
+
+    ChangePage(Player:player, Delta:int):void=
+        if (ArmoryView := PlayerUIs[Player]):
+            Filtered := GetFilteredCatalogIndices(ArmoryView.ActiveCategory)
+            if (Delta < 0):
+                if (ArmoryView.Page > 0):
+                    set ArmoryView.Page -= 1
+                    RefreshArmoryUI(Player)
+            else:
+                NextStart := (ArmoryView.Page + 1) * 8
+                if (Unused := Filtered[NextStart]):
+                    set ArmoryView.Page += 1
+                    RefreshArmoryUI(Player)
+
+    ClearPendingCart(Player:player):void=
+        if (State := PlayerStates[Player]):
+            set State.PendingPrimary = -1
+            set State.PendingSecondary = -1
+            set State.PendingSidearm = -1
+            SetArmoryStatus(Player, "CART CLEARED")
+            RefreshArmoryUI(Player)
 
     ToggleCatalogSelection(Player:player, CatalogIndex:int):void=
         if (State := PlayerStates[Player], Entry := Catalog[CatalogIndex], Entry.Enabled?):
@@ -754,20 +866,69 @@ scrapline_armory_device := class(creative_device):
             if (not Committed?):
                 SetArmoryStatus(Player, "You cannot afford your previous loadout. Change the cart.")
 
+    RefreshCardPage(Player:player, State:armory_player_state, ArmoryView:armory_ui_state):void=
+        Filtered := GetFilteredCatalogIndices(ArmoryView.ActiveCategory)
+        Start := ArmoryView.Page * 8
+        var NewIndices:[]int = array{}
+
+        for (Slot := 0..7):
+            var CatalogIndex:int = -1
+            if (FoundIndex := Filtered[Start + Slot]):
+                set CatalogIndex = FoundIndex
+
+            set NewIndices += array{CatalogIndex}
+
+            if (NameText := ArmoryView.CardNameTexts[Slot], PriceText := ArmoryView.CardPriceTexts[Slot]):
+                if (CatalogIndex >= 0, Entry := Catalog[CatalogIndex]):
+                    Prefix := if (Entry.Featured?) then "★ " else ""
+                    NameText.SetText(ArmoryText("{Prefix}{Entry.DisplayName}"))
+                    PriceLabel := if (Entry.Price = 0) then "FREE" else "{Entry.Price} SCRAP"
+                    PriceText.SetText(ArmoryText(PriceLabel))
+
+                    if (CatalogIndex = State.PendingPrimary or CatalogIndex = State.PendingSecondary or CatalogIndex = State.PendingSidearm):
+                        NameText.SetTextColor(MakeColorFromHex("A9D778"))
+                        PriceText.SetTextColor(MakeColorFromHex("A9D778"))
+                    else if (Entry.Price > State.Bank):
+                        NameText.SetTextColor(MakeColorFromHex("68727A"))
+                        PriceText.SetTextColor(MakeColorFromHex("68727A"))
+                    else:
+                        NameText.SetTextColor(MakeColorFromHex("E8EDF0"))
+                        PriceText.SetTextColor(MakeColorFromHex("C2D987"))
+                else:
+                    NameText.SetText(ArmoryText(""))
+                    PriceText.SetText(ArmoryText(""))
+
+        set ArmoryView.CardCatalogIndices = NewIndices
+        ArmoryView.PageText.SetText(ArmoryText("PAGE {ArmoryView.Page + 1}"))
+
+        for (Index -> CategoryText : ArmoryView.CategoryTexts):
+            if (Index = ArmoryView.ActiveCategory):
+                CategoryText.SetTextColor(MakeColorFromHex("A9D778"))
+            else:
+                CategoryText.SetTextColor(MakeColorFromHex("E8EDF0"))
+
     RefreshArmoryUI(Player:player):void=
-        if (State := PlayerStates[Player], UI := PlayerUIs[Player]):
+        if (State := PlayerStates[Player], ArmoryView := PlayerUIs[Player]):
             Total := GetPendingTotal(State)
             Projected := State.Bank - Total
 
-            UI.BankText.SetText(ArmoryText("SCRAP: {State.Bank}"))
-            UI.PrimaryText.SetText(ArmoryText("PRIMARY: {GetCatalogName(State.PendingPrimary)}"))
-            UI.SecondaryText.SetText(ArmoryText("SECONDARY: {GetCatalogName(State.PendingSecondary)}"))
-            UI.SidearmText.SetText(ArmoryText("SIDEARM: {GetCatalogName(State.PendingSidearm)}"))
-            UI.TotalText.SetText(ArmoryText("CART: {Total} // AFTER PURCHASE: {Projected}"))
+            ArmoryView.BankText.SetText(ArmoryText("SCRAP {State.Bank}"))
+            ArmoryView.ContextText.SetText(ArmoryText(GetReasonText(State.ShopReason)))
+            ArmoryView.PrimaryText.SetText(ArmoryText("PRIMARY  {GetCatalogName(State.PendingPrimary)}"))
+            ArmoryView.SecondaryText.SetText(ArmoryText("SECONDARY  {GetCatalogName(State.PendingSecondary)}"))
+            ArmoryView.SidearmText.SetText(ArmoryText("SIDEARM  {GetCatalogName(State.PendingSidearm)}"))
+
+            if (State.ShopReason = 4):
+                ArmoryView.TotalText.SetText(ArmoryText("NEXT LOADOUT  {Total} SCRAP"))
+                ArmoryView.StatusText.SetText(ArmoryText("CHARGED ON NEXT SPAWN // BANK NOW {State.Bank}"))
+            else:
+                ArmoryView.TotalText.SetText(ArmoryText("LOADOUT  {Total} // REMAINING {Projected}"))
+
+            RefreshCardPage(Player, State, ArmoryView)
 
     SetArmoryStatus(Player:player, Text:string):void=
-        if (UI := PlayerUIs[Player]):
-            UI.StatusText.SetText(ArmoryText(Text))
+        if (ArmoryView := PlayerUIs[Player]):
+            ArmoryView.StatusText.SetText(ArmoryText(Text))
 
     GetReasonText(Reason:int):string=
         if (Reason = 1):

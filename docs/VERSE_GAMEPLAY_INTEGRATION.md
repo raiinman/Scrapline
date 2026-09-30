@@ -333,7 +333,12 @@ That rejected package remains historical evidence. Do not use it as the Armory i
 - the candidate was refactored to discover the three required classic devices through Verse Tag Markup (`armory_granter_tag`, `armory_economy_tag`, `armory_input_tag`) instead of brittle device `@editable` references; native Spawn Pads remain completely outside Verse ownership,
 - the tag-discovery refactor also passes live `ValkyrieToolset.VerseToolset.BuildAll` with **0 diagnostics**,
 - the testbench `IG_Armory`, `EM_Economy`, and `IT_Armory` actors have the generated tag classes applied and saved,
-- runtime tag discovery, first-release Item Granter registration/index wiring, and multiplayer runtime tests remain pending, so this is **not yet production-authoritative**.
+- runtime tag discovery and the first-release 7-item Item Granter index wiring have been exercised in the live testbench; indexed grants and the opening 45-second gate were observed in Fortnite,
+- production presentation has moved to `/Scrapline/UI/WBP_ScraplineArmory`: 8 category tabs, 8 reusable paged weapon-card controls, Prev/Next, Ready, Re-buy, and Clear,
+- UMG Custom Button `OnButtonClicked` events are bound through generated Verse `event(tuple())` fields; the one-file Armory device instantiates `UI.WBP_ScraplineArmory{}` and subscribes to those events,
+- live `ValkyrieToolset.VerseToolset.BuildAll` remains **0 diagnostics** after the UMG integration,
+- a forbidden `DefaultContentWidgetClass = None` styling experiment was rejected by UEFN validation and removed from the production direction; the validator-safe design preserves Epic's required button content, uses transparent button hitboxes, and draws Scrapline's flat card surfaces beneath them,
+- the final validator-safe UMG pass still needs a fresh live-session visual/runtime test after UEFN re-authenticates; the current editor lost its Epic Connect token (`EOS_EpicConnect_TokenIsNoLongerValid`), so this is **not yet production-authoritative**.
 
 The verified text mirror is tracked in `verse/scrapline_armory_device.verse`.
 
