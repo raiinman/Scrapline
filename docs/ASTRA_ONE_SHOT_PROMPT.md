@@ -1,5 +1,7 @@
 # Scrapline — Astra One-Shot Execution Prompt
 
+> **SUPERSEDED 2026-09-30:** the active worker changed to GPT-6.1 Sol. Do not execute this historical prompt. Use `docs/SOL61_ONE_SHOT_PROMPT.md`, which adds allowance discipline, transient-compute recovery, durable `BUILD_RUN_STATE.md` checkpoints, and broader first-class Power Tools usage.
+
 > **EXECUTION AUTHORIZED BY THE USER — 2026-09-30.** The hostile pre-Astra red team is closed GREEN in `docs/RED_TEAM_REPORT.md`. Its old “do not invoke Astra” stop condition was the pre-authorization gate and is now satisfied by this explicit authorization. Execute the one-shot construction pass described here. Do not reinterpret this authorization as permission to redesign frozen map/gameplay contracts or to reopen broad asset acquisition.
 
 ## Execution bootstrap
