@@ -2,13 +2,13 @@
 
 ## Status
 
-**PASS FOR ASTRA HANDOFF — spatial/design/gameplay authority is unambiguous; final Armory presentation/runtime acceptance is an explicit Astra build task.**
+**PASS AFTER HOSTILE RED TEAM — no remaining pre-Astra design/authority blocker; listed runtime acceptance risks remain explicit Astra build/post-build obligations.**
 
 This audit asks a hostile question: *If Astra wanted to misunderstand the design while technically following the docs, where could it do so?*
 
 The original spatial/design ambiguity purge remains valid. Feature Freeze v2 added the Scrapline Armory / match economy, and the authority boundary is now frozen across `ARMORY_ECONOMY_SPEC.md`, `ARMORY_UI_SPEC.md`, and `VERSE_GAMEPLAY_INTEGRATION.md`.
 
-The current Armory Verse/UMG scaffold is compile-clean enough for handoff. Final `WBP_ScraplineArmory` presentation plus the full lifecycle/economy/multiplayer matrix are intentionally **not pre-Astra blockers**; they are explicit Astra construction/post-build acceptance tasks.
+The red-team-hardened Armory Verse/UMG scaffold is live-compiler clean after catalog-range, protected-shop-input, and victim-death lifecycle fixes. Final `WBP_ScraplineArmory` presentation plus the full lifecycle/economy/multiplayer matrix are intentionally **not pre-Astra blockers**; they are explicit Astra construction/post-build acceptance tasks.
 
 This document does **not** itself authorize Astra construction. Explicit user authorization is still required.
 
@@ -95,6 +95,19 @@ After the first rewrite pass, the governing handoff/design documents were search
 
 No remaining matches were found in the audited handoff/design set.
 
+## 2026-09-30 hostile red-team delta
+
+The red team found and closed several implementation/handoff traps without reopening the frozen map:
+- `IT_Armory` was promoted to an explicit required exact-one production role; missing/duplicate tagged Armory devices now have clear fail-closed handoff instructions,
+- Item Granter catalog mappings are range-checked against the verified 7-item / index 0–6 live contract before `GrantItemIndex`,
+- protected opening/JIP/death shops can no longer be converted into deadline-free live `Next Loadout` mode by the Armory hotkey,
+- victim recovery/shop lifecycle is separated from eliminator income: `EM_Economy` stays Valid On Self Elimination = Off and only supplies `EliminationEvent`; one long-lived per-player `fort_character.EliminatedEvent()` watcher handles victim/self/environment deaths,
+- stale Player Spawn Pad `SpawnedEvent` subscription wording was removed; pads remain native-only,
+- the MCP Verse write failure fallback is documented: inspect/read back, edit the live source through an authorized local path if required, then prove the result with live `BuildAll`,
+- three 8192 Propane/Gas Cylinder source textures remain health warnings, but the current LOD/streaming configuration passed the 2026-09-30 UEFN local validation/content-cook path; finished-map memory and Creator Portal checks remain required.
+
+No red-team correction changes the frozen spatial skeleton, asset selection, economy values, or native score/spawn/end authority.
+
 ## Feature Freeze v2 gameplay contradiction sweep
 
 The spatial/design checks above remain valid. The gameplay **authority/hand-off closeout passes**: the Armory mechanic, native-vs-custom ownership boundary, and UI responsibility are all explicit. Runtime production acceptance remains a build/post-build test obligation rather than a pre-Astra ambiguity.
@@ -109,13 +122,15 @@ Production acceptance during/after the Astra pass must verify all of the followi
 - no manual Tracker increment is used for normal eliminations,
 - no production End Game device or match-authority Timer is introduced,
 - `IG_Armory` replaces the fixed `IG_Loadout` path only after live validation,
-- `EM_Economy` is used only as an eliminator/eliminated event source and drops no economy items,
+- `EM_Economy` is used only as the eliminator-income event source, keeps Valid On Self Elimination = Off, and drops no economy items; victim recovery/shop state comes from the single per-player character death watcher,
 - Armory Verse owns only Scrap, catalog/cart/loadout state, UI, buy gates, granting, and cleanup,
 - Armory Verse does not own elimination score, victory, native timeout, spawn selection, sustain, terrain, layout, lighting, VFX, or asset placement,
 - starting Scrap = **3,000**, cap = **5,000**, elimination reward = **150**, recovery ladder = **1,500 / 1,750 / 2,000**,
 - purchases charge once per life and rewards fire once per event,
 - free fallback prevents a player from becoming unable to spawn,
-- JIP / leave / repeated death / UI open-close do not duplicate subscriptions, grants, or currency events,
+- JIP / leave / repeated death / UI open-close do not duplicate death watchers/subscriptions, grants, or currency events,
+- self/manual/environmental deaths receive victim recovery/shop handling without +150 self-income,
+- protected shop input cannot erase or bypass its opening/JIP/death deadline,
 - Infinite Reserve Ammo = On / Infinite Magazine Ammo = Off remains explicit,
 - the rejected UEFN Central five-file package appears only as labeled evidence,
 - accepted Armory code compiles with live UEFN at zero diagnostics,
@@ -134,7 +149,7 @@ Before Astra may execute:
 During Astra construction/post-build:
 1. finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md`,
 2. verify the final Item Granter catalog/index wiring,
-3. run the critical lifecycle/economy/JIP/leave/duplicate-subscription/multiplayer matrix from `ARMORY_ECONOMY_SPEC.md`,
+3. run the critical lifecycle/economy/JIP/leave/self-death/trade/duplicate-watcher/multiplayer matrix from `ARMORY_ECONOMY_SPEC.md`,
 4. preserve native spawn/score/end authority and fall back to the native control if the custom layer proves less reliable.
 
 Do not reopen the spatial design while completing those runtime tasks.
