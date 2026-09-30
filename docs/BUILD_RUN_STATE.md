@@ -20,8 +20,9 @@ This file exists so transient model/runtime interruptions do not force the worke
   - Power Tools command surface: 30 commands
   - Power Tools health: 0 errors / 3 warnings
   - accepted Verse baseline: live `ValkyrieToolset.VerseToolset.BuildAll` 0 diagnostics
-- Last completed phase: pre-build handoff preparation
-- Next action: GPT-6.1 Sol execution bootstrap from `docs/SOL61_ONE_SHOT_PROMPT.md`
+- Last completed phase: pre-build handoff preparation + GitHub visual-authority packaging
+- Next action: GPT-6.1 Sol execution bootstrap, then **mandatory real-visual preflight** from `docs/SOL61_ONE_SHOT_PROMPT.md` before any environment mutation
+- Visual authority: committed in `Resources/Reference/RealAssets/`; frozen terrain input committed in `Resources/Terrain/`
 - Active blocker: none
 
 ## Update Contract
