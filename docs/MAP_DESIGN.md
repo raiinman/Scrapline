@@ -16,7 +16,7 @@ The playable envelope, player-density target, combat districts, route network, t
 - Central combat yard: approximately **42 m across**.
 - Outer broken flank route: approximately **10–14 m wide**.
 - Longest intentional combat sightlines: approximately **50–65 m**.
-- Spawn candidates: **18–20** distributed positions.
+- Spawn candidates: **19 frozen candidate regions** distributed around the arena.
 - Normal terrain center depression: approximately **1.5–2.5 m below the surrounding yard**.
 - Perimeter terrain rise: approximately **3–5 m above the main yard**.
 - Secondary playable elevation: approximately **+4–6 m**.
@@ -127,7 +127,7 @@ Avoid:
 
 ## Spawning
 
-Plan **18–20 spawn candidates** around the outer and middle bands.
+Use the **19 frozen spawn candidate regions** around the outer and middle bands; do not add or remove regions during the one-shot without a demonstrated spawn failure.
 
 Spawns should:
 - place hard cover within a few seconds,
