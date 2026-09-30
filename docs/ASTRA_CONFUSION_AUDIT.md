@@ -2,15 +2,15 @@
 
 ## Status
 
-**PASS AFTER HOSTILE RED TEAM — no remaining pre-Astra design/authority blocker; listed runtime acceptance risks remain explicit Astra build/post-build obligations.**
+**PASS AFTER HOSTILE RED TEAM — no remaining pre-construction design/authority blocker; listed runtime acceptance risks remain explicit GPT-6.1 Sol build/post-build obligations.**
 
 This audit asks a hostile question: *If Astra wanted to misunderstand the design while technically following the docs, where could it do so?*
 
 The original spatial/design ambiguity purge remains valid. Feature Freeze v2 added the Scrapline Armory / match economy, and the authority boundary is now frozen across `ARMORY_ECONOMY_SPEC.md`, `ARMORY_UI_SPEC.md`, and `VERSE_GAMEPLAY_INTEGRATION.md`.
 
-The red-team-hardened Armory Verse/UMG scaffold is live-compiler clean after catalog-range, protected-shop-input, and victim-death lifecycle fixes. Final `WBP_ScraplineArmory` presentation plus the full lifecycle/economy/multiplayer matrix are intentionally **not pre-Astra blockers**; they are explicit Astra construction/post-build acceptance tasks.
+The red-team-hardened Armory Verse/UMG scaffold is live-compiler clean after catalog-range, protected-shop-input, and victim-death lifecycle fixes. Final `WBP_ScraplineArmory` presentation plus the full lifecycle/economy/multiplayer matrix are intentionally **not pre-construction blockers**; they are explicit GPT-6.1 Sol construction/post-build acceptance tasks.
 
-This document did **not** itself authorize Astra construction at red-team closeout. **That gate was subsequently satisfied when the user explicitly authorized the one-shot on 2026-09-30.**
+This document did **not** itself authorize construction at red-team closeout. **That gate was subsequently satisfied when the user explicitly authorized the one-shot on 2026-09-30. The active worker is GPT-6.1 Sol.**
 
 ## Authority created
 
@@ -25,7 +25,7 @@ This document did **not** itself authorize Astra construction at red-team closeo
 - lighting/time-of-day concept,
 - implementation freedom versus prohibited redesign.
 
-The final Astra prompt must read it before the softer composition/design documents.
+The active GPT-6.1 Sol prompt must read it before the softer composition/design documents.
 
 ## Ambiguities found and closed
 
@@ -55,9 +55,9 @@ The final Astra prompt must read it before the softer composition/design documen
 | UEFN Central generated 16 spawn pads + five Verse files + Timer/End Game paths | Astra could mix a rejected architecture into the active package | Generator result remains quarantined. Feature Freeze v2 authorizes only the narrow Armory Verse boundary; 19 pads and Island Settings score/end authority remain frozen. |
 | Armory UI polish stalled in ChatGPT remote-editor mode | Astra could think the current scaffold is visually final, or conversely refuse to build until it is already perfect | `ARMORY_UI_SPEC.md` explicitly makes final UMG presentation an Astra construction task; the current `WBP_ScraplineArmory` is a scaffold/reference, not a visual-finish mandate. |
 
-## Spatial decisions Astra no longer owns
+## Spatial decisions the build worker no longer owns
 
-Astra is **not** asked to invent:
+GPT-6.1 Sol is **not** asked to invent:
 - where the five major combat spaces are,
 - which asset is the hero,
 - gantry orientation,
@@ -110,9 +110,9 @@ No red-team correction changes the frozen spatial skeleton, asset selection, eco
 
 ## Feature Freeze v2 gameplay contradiction sweep
 
-The spatial/design checks above remain valid. The gameplay **authority/hand-off closeout passes**: the Armory mechanic, native-vs-custom ownership boundary, and UI responsibility are all explicit. Runtime production acceptance remains a build/post-build test obligation rather than a pre-Astra ambiguity.
+The spatial/design checks above remain valid. The gameplay **authority/hand-off closeout passes**: the Armory mechanic, native-vs-custom ownership boundary, and UI responsibility are all explicit. Runtime production acceptance remains a build/post-build test obligation rather than a pre-construction ambiguity.
 
-Production acceptance during/after the Astra pass must verify all of the following:
+Production acceptance during/after the GPT-6.1 Sol pass must verify all of the following:
 - playable/scenic envelopes and all frozen anchors remain unchanged,
 - all **19** spawn regions remain authoritative,
 - Armory Verse never chooses spawn coordinates or moves spawn pads,
@@ -134,19 +134,19 @@ Production acceptance during/after the Astra pass must verify all of the followi
 - Infinite Reserve Ammo = On / Infinite Magazine Ammo = Off remains explicit,
 - the rejected UEFN Central five-file package appears only as labeled evidence,
 - accepted Armory code compiles with live UEFN at zero diagnostics,
-- exact first-release catalog Item Granter index contract is documented and final production indexes are verified during the Astra pass,
-- `ARMORY_UI_SPEC.md` makes final presentation/pagination/loadout-rail ownership an explicit Astra task,
+- exact first-release catalog Item Granter index contract is documented and final production indexes are verified during the GPT-6.1 Sol pass,
+- `ARMORY_UI_SPEC.md` makes final presentation/pagination/loadout-rail ownership an explicit GPT-6.1 Sol task,
 - `ONE_SHOT_PROMPT_DRAFT.md` no longer contains stale native-only fixed-loadout or pre-Astra-UMG-blocker instructions.
 
 ## Current blockers
 
-There are **no remaining design/confusion blockers** to an Astra handoff.
+There are **no remaining design/confusion blockers** to the GPT-6.1 Sol handoff.
 
-Before Astra executes:
+Before GPT-6.1 Sol executes:
 1. keep the compile-clean Armory scaffold and frozen docs synchronized,
 2. **authorization gate: SATISFIED 2026-09-30**.
 
-During Astra construction/post-build:
+During GPT-6.1 Sol construction/post-build:
 1. finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md`,
 2. verify the final Item Granter catalog/index wiring,
 3. run the critical lifecycle/economy/JIP/leave/self-death/trade/duplicate-watcher/multiplayer matrix from `ARMORY_ECONOMY_SPEC.md`,
@@ -156,11 +156,11 @@ Do not reopen the spatial design while completing those runtime tasks.
 
 ## Final handoff rule
 
-Before Astra is allowed to execute the one-shot:
+Before GPT-6.1 Sol executes the one-shot:
 - read `SPATIAL_CONTRACT.md` first among spatial/design documents,
 - read `ARMORY_ECONOMY_SPEC.md` and `ARMORY_UI_SPEC.md` before gameplay/UI wiring,
 - keep Layer 1 spatial rules separate from Layer 2 art freedom,
 - keep native match authority separate from Armory Verse authority,
-- treat final Armory UMG presentation/runtime validation as part of the Astra pass rather than a reason to redesign the mechanic,
+- treat final Armory UMG presentation/runtime validation as part of the GPT-6.1 Sol pass rather than a reason to redesign the mechanic,
 - require every deviation/fallback to be reported,
-- authorization was explicitly granted on 2026-09-30; execute through `docs/ASTRA_ONE_SHOT_PROMPT.md`.
+- authorization was explicitly granted on 2026-09-30; execute through `docs/SOL61_ONE_SHOT_PROMPT.md`. Use `docs/BUILD_RUN_STATE.md` for interruption recovery.
