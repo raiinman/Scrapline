@@ -14,12 +14,19 @@ Before changing the level:
    Discover/verify the live editor state instead of blindly assuming the path.
 3. Re-read the full applicable AGENTS.md / DOX chain.
 4. Read `docs/RED_TEAM_REPORT.md` **before** this prompt's design/build sections. Its remaining MEDIUM findings are mandatory runtime acceptance checks, not permission to redesign.
-5. Verify the live project still contains the exact-one tagged Armory roles `IG_Armory`, `EM_Economy`, and `IT_Armory`, the Verse controller, and `WBP_ScraplineArmory`. Reuse the existing actors; do not duplicate tagged exact-one roles.
-6. Run live `ValkyrieToolset.VerseToolset.BuildAll` before environment construction. Baseline must have zero Error-severity diagnostics. If not, repair the existing accepted architecture rather than replacing it.
-7. Tool/polling rule: if a long MCP/editor call times out, **inspect the existing editor/session/log state before retrying**. Never launch a duplicate cook, import, placement batch, or session merely because the transport timed out.
-8. Verse-write rule: if MCP Verse write reports failure, read back the actual live source. If it is writable, use the approved local edit path and immediately prove the result with live `BuildAll`. Mirror Verse to GitHub only after the live compiler accepts the same source.
-9. Work autonomously through the complete primary build and repair pass. Do not stop for cosmetic choices already covered by Layer 2 freedom. Stop only for a true hard blocker where proceeding would require violating a frozen contract or destroying unrelated/project-history data.
-10. After construction and validation, perform the DOX closeout and synchronize verified durable state back to GitHub.
+5. **Trashbyrd's UEFN Power Tools is mandatory for this build.** Canonical upstream reference: `https://github.com/Corsair-Studios/trashbyrds-uefn-power-tools/tree/main`. It is already installed as MCP server key `powertools` and is designed to run beside Epic's `unreal-mcp`. Before touching the level:
+   - call `uefn_status` and require a real Scrapline level name + nonzero actor count,
+   - call `uefn_list_commands` and treat its returned command list as the current Power Tools authority,
+   - call `uefn_get_level_info`, `uefn_list_devices`, and `uefn_health_scan` to capture the starting editor/project baseline.
+   If `uefn_status` cannot reach the bridge, start/reload it in UEFN with `import pt` or `import importlib, uefn_bridge; importlib.reload(uefn_bridge)` before construction.
+6. Verify the live project still contains the exact-one tagged Armory roles `IG_Armory`, `EM_Economy`, and `IT_Armory`, the Verse controller, and `WBP_ScraplineArmory`. Use Power Tools device/tag/audit reads plus Epic MCP where useful. Reuse the existing actors; do not duplicate tagged exact-one roles.
+7. Run live `ValkyrieToolset.VerseToolset.BuildAll` before environment construction. Baseline must have zero Error-severity diagnostics. If not, repair the existing accepted architecture rather than replacing it.
+8. **Construction-tool split:** use Power Tools actively for high-volume asset discovery, classic actor spawning/duplication/transforms, batch location/property work, and audits/scans. Use Epic `unreal-mcp` for supported first-party/specialized editor actions, Creative/Verse/UMG tooling, sessions, `BuildAll`, and authoritative validation. Do not manually repeat dozens of actor operations one-by-one if a reliable Power Tools batch/duplicate flow can do them safely.
+9. **Coordinate rule:** Power Tools can report both XYZ and UEFN LUF locations. Never mix them. After every major-anchor/assembly placement, read back the resulting world transform before duplicating/dressing around it.
+10. Tool/polling rule: if a long MCP/editor call times out, **inspect the existing editor/session/log state before retrying**. Never launch a duplicate cook, import, placement batch, or session merely because the transport timed out.
+11. Verse-write rule: if MCP Verse write reports failure, read back the actual live source. If it is writable, use the approved local edit path and immediately prove the result with live `BuildAll`. Mirror Verse to GitHub only after the live compiler accepts the same source.
+12. Work autonomously through the complete primary build and repair pass. Do not stop for cosmetic choices already covered by Layer 2 freedom. Stop only for a true hard blocker where proceeding would require violating a frozen contract or destroying unrelated/project-history data.
+13. After construction and validation, perform the DOX closeout and synchronize verified durable state back to GitHub.
 
 **Do not invoke another design phase. Do not ask whether to proceed between normal build stages. The user has authorized this one-shot execution.**
 
@@ -118,8 +125,8 @@ The map should look irregular and accumulated, but its combat skeleton must rema
 - Do not install experimental AI/editor bridges during the one-shot.
 - Use the frozen asset manifest as the source of truth.
 - Keep Fab Referenced Content read-only unless a specific implementation failure proves one asset must be modified.
-- Use Epic UEFN MCP for supported first-party editor operations.
-- Use Power Tools for bulk inspection, placement support, diagnostics, dependency/material/texture checks, and health scans where useful.
+- **Use Trashbyrd Power Tools as the primary bulk construction/inspection accelerator**, not just as a health checker. Prefer its asset listing/inspection, actor spawn/duplicate/transform, batch reads/locations/sets, device/tag audits, and project scans when those tools fit the operation.
+- Use Epic UEFN MCP beside it for first-party/specialized editor operations, Creative/Verse/UMG work, sessions, and live compiler/validator authority.
 - Use Omni-Verse/compiler diagnostics for Verse repair, not guessed APIs.
 - Test after the primary construction pass unless a blocking editor/runtime error prevents progress.
 - If a frozen major anchor cannot satisfy its documented role, follow the emergency fallback rule in `SPATIAL_CONTRACT.md` and report the deviation. Do not silently redesign.
@@ -204,24 +211,25 @@ Tune exposure/intensity for player readability.
 ## Environment build order
 
 1. Read the full authority chain and refresh the current GitHub branch before trusting the local documentation copy.
-2. Verify the required frozen assets resolve in the live project; **do not perform a new asset-selection pass**.
-3. **Run the Armory preflight before environment construction:** confirm live Verse compiles at zero diagnostics; inventory the existing tagged runtime roles; confirm exactly one `IG_Armory`, one `EM_Economy`, and one `IT_Armory`; confirm the Verse controller is present; reuse those actors instead of placing duplicates. If any exact-one role is missing or duplicated, fix that wiring before continuing.
-4. Import/create Landscape from the staged heightmap.
-5. Establish the basin, shoulders, district pads, drainage cuts, and service-road contours.
-6. Place the frozen Factory gantry assembly at its locked anchor/orientation.
-7. Place the Garage, Box Truck, Campervan, Factory containers, and major Machinery/Power anchors in their frozen districts.
-8. Establish all required center, neighbor, and broken-flank routes.
-9. Establish controlled vertical routes within the catwalk/height budget.
-10. Run the spatial-contract acceptance check **before** dressing.
-11. Add hard cover and sightline blockers while preserving route widths.
-12. Place spawn devices inside the **19 frozen candidate regions** and validate LOS/cover; configure a non-`None` Enemy Range Check and tune it against the real geometry rather than inventing new spawn regions.
-13. Add secondary props, debris, utilities, signs, restrained VFX, and cross-district Scrapyard glue.
-14. Apply the frozen daylight treatment and tune readability.
-15. Integrate the frozen Armory/native gameplay package from `ARMORY_ECONOMY_SPEC.md` and `VERSE_GAMEPLAY_INTEGRATION.md`; preserve native score/end/spawn authority.
-16. Finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md`, using the existing UMG/Verse event scaffold when useful and replacing it when cleaner.
-17. Run the Armory lifecycle/economy/JIP/leave/multiplayer acceptance matrix against the real level/devices.
-18. Run health/collision/dependency/material/performance checks, then run the cooked memory calculation and realistic runtime profiling.
-19. Save and perform the DOX closeout.
+2. Use Power Tools `uefn_list_assets`, `uefn_inspect_asset`, and/or `uefn_asset_sweep` to verify the required frozen assets resolve in the live project; **do not perform a new asset-selection pass**.
+3. Establish a Power Tools construction baseline: preserve the results of `uefn_get_level_info`, `uefn_list_devices`, `uefn_health_scan`, and relevant asset/device audits before mass placement.
+4. **Run the Armory preflight before environment construction:** confirm live Verse compiles at zero diagnostics; inventory the existing tagged runtime roles; confirm exactly one `IG_Armory`, one `EM_Economy`, and one `IT_Armory`; confirm the Verse controller is present; reuse those actors instead of placing duplicates. If any exact-one role is missing or duplicated, fix that wiring before continuing.
+5. Import/create Landscape from the staged heightmap.
+6. Establish the basin, shoulders, district pads, drainage cuts, and service-road contours.
+7. Place the frozen Factory gantry assembly at its locked anchor/orientation. Use the most reliable editor tool for the anchor, then immediately read back its world transform; use Power Tools batch/location reads to verify related/repeated placements.
+8. Place the Garage, Box Truck, Campervan, Factory containers, and major Machinery/Power anchors in their frozen districts. Use Power Tools spawn/duplicate/transform and batch operations for repeated classic-actor work where reliable instead of serial manual placement.
+9. Establish all required center, neighbor, and broken-flank routes.
+10. Establish controlled vertical routes within the catwalk/height budget.
+11. Run the spatial-contract acceptance check **before** dressing, using Power Tools location/batch/audit reads to catch drift.
+12. Add hard cover and sightline blockers while preserving route widths.
+13. Place spawn devices inside the **19 frozen candidate regions** and validate LOS/cover; configure a non-`None` Enemy Range Check and tune it against the real geometry rather than inventing new spawn regions. Use Power Tools device/location auditing to verify the complete set after placement.
+14. Add secondary props, debris, utilities, signs, restrained VFX, and cross-district Scrapyard glue. Use Power Tools duplication/batch transforms for repeated dressing only when the result still looks intentionally irregular.
+15. Apply the frozen daylight treatment and tune readability.
+16. Integrate the frozen Armory/native gameplay package from `ARMORY_ECONOMY_SPEC.md` and `VERSE_GAMEPLAY_INTEGRATION.md`; preserve native score/end/spawn authority.
+17. Finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md`, using the existing UMG/Verse event scaffold when useful and replacing it when cleaner.
+18. Run the Armory lifecycle/economy/JIP/leave/multiplayer acceptance matrix against the real level/devices.
+19. Run Power Tools `uefn_run_audit`, `uefn_health_scan`, dependency/material/texture/Niagara scans as relevant, then run Epic/UEFN authoritative validation, cooked memory calculation, and realistic runtime profiling.
+20. Save and perform the DOX closeout.
 
 If the skeleton fails an acceptance check, fix it before proceeding to micro-props, VFX, lighting polish, or gameplay wiring.
 
