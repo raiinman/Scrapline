@@ -34,6 +34,8 @@ Final `WBP_ScraplineArmory` visual polish plus the full lifecycle/economy/multip
 - `ASSET_MANIFEST.md` is **Frozen for One-Shot**.
 - `ENVIRONMENT_COMPOSITION_BOARD.md` maps the frozen kit to district, traversal, and atmosphere roles.
 - `REAL_ASSET_VISUAL_STUDIES.md` records the grounded real-asset visual pass and read-only referenced-content rule.
+- **27 curated real-source visual references are now committed in GitHub** under `Resources/Reference/RealAssets/`, including exact Factory/Garage contact sheets, Scrapyard/Deserted referenced-content boards, VFX/signage boards, grounded synthesis boards, and all four district composition studies.
+- The frozen terrain heightmap is now committed at `Resources/Terrain/Scrapline_Terrain_v1_253x253_16bit.png`, removing the last required local-only build input from the handoff.
 - Exact staged visual captures cover the frozen Factory, Vehicle V2, Garage, Pipe, and Warning Sign choices.
 - Representative live UEFN captures cover Scrapyard and Deserted Props referenced-content vocabulary.
 - Talisman / Deserted VFX systems are inventoried through live Niagara browse and represented with real-source reference media.
@@ -160,11 +162,12 @@ Assigned to GPT-6.1 Sol construction/post-build rather than the pre-construction
 6. **Satisfied 2026-09-30:** user explicitly authorized the one-shot.
 
 ### Authorized GPT-6.1 Sol execution
-1. Verify both MCP stacks first: Epic `unreal-mcp`, then Power Tools `uefn_status` + `uefn_list_commands` + `uefn_get_level_info`; use Power Tools throughout the primary construction pass as a general UEFN control/inspection/construction layer, not only for bulk asset/actor/batch work.
-2. Finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md` while preserving the frozen economy contract.
-3. Wire/verify the production Armory devices and real 19 spawn pads without giving Verse spawn-selection authority.
-4. Run the full Armory lifecycle/economy/multiplayer acceptance matrix.
-5. Test and repair after the primary construction pass unless blocked earlier.
+1. Refresh the active branch and pass the mandatory real-visual preflight from `SOL61_ONE_SHOT_PROMPT.md`; actually open the committed boards/contact sheets and record the visual takeaway in `BUILD_RUN_STATE.md`.
+2. Verify both MCP stacks first: Epic `unreal-mcp`, then Power Tools `uefn_status` + `uefn_list_commands` + `uefn_get_level_info`; use Power Tools throughout the primary construction pass as a general UEFN control/inspection/construction layer, not only for bulk asset/actor/batch work.
+3. Finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md` while preserving the frozen economy contract.
+4. Wire/verify the production Armory devices and real 19 spawn pads without giving Verse spawn-selection authority.
+5. Run the full Armory lifecycle/economy/multiplayer acceptance matrix.
+6. Test and repair after the primary construction pass unless blocked earlier.
 
 ## Do Not Reopen Without a Specific Reason
 
