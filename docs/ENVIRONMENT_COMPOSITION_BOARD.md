@@ -4,6 +4,8 @@
 
 Translate the frozen asset manifest into district-level art/composition guidance without generating new art or importing reserve packs. `ASSET_MANIFEST.md` remains the approval/source authority and `SPATIAL_CONTRACT.md` controls the map skeleton, major anchors, orientation, routes, and tolerances.
 
+The committed real-source visual authority lives under `Resources/Reference/RealAssets/`. This document is not a substitute for opening those images. GPT-6.1 Sol must pass the visual-preflight gate in `SOL61_ONE_SHOT_PROMPT.md` before using this board for implementation.
+
 ## Global visual rule
 
 The mounted Post-Apocalyptic Scrapyard pack is the visual glue. Factory, Garage, Deserted Props, and the curated pipe kit are role-specific additions, not separate theme zones.
@@ -100,7 +102,7 @@ Live Niagara inventory confirms Talisman `NS_Dustmotes_01`, five spark systems, 
 
 Live UEFN captures confirm that Scrapyard and Deserted Props referenced assets are usable production content even when their source editors are read-only. Do not duplicate a referenced pack merely to make it editable. Promote only a specific asset that implementation proves must be modified.
 
-See `REAL_ASSET_VISUAL_STUDIES.md` for the grounded visual evidence and representative captured assets.
+See `REAL_ASSET_VISUAL_STUDIES.md` and `Resources/Reference/RealAssets/REAL_ASSET_VISUAL_INDEX.md` for the grounded visual evidence. The exact Factory/Garage contact sheets, Scrapyard/Deserted referenced boards, VFX board, grounded synthesis boards, and four district composition studies are committed in GitHub.
 
 ## Verified physical-fit constraints
 
