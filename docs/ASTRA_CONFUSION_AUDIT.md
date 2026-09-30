@@ -10,7 +10,7 @@ The original spatial/design ambiguity purge remains valid. Feature Freeze v2 add
 
 The red-team-hardened Armory Verse/UMG scaffold is live-compiler clean after catalog-range, protected-shop-input, and victim-death lifecycle fixes. Final `WBP_ScraplineArmory` presentation plus the full lifecycle/economy/multiplayer matrix are intentionally **not pre-Astra blockers**; they are explicit Astra construction/post-build acceptance tasks.
 
-This document does **not** itself authorize Astra construction. Explicit user authorization is still required.
+This document did **not** itself authorize Astra construction at red-team closeout. **That gate was subsequently satisfied when the user explicitly authorized the one-shot on 2026-09-30.**
 
 ## Authority created
 
@@ -142,9 +142,9 @@ Production acceptance during/after the Astra pass must verify all of the followi
 
 There are **no remaining design/confusion blockers** to an Astra handoff.
 
-Before Astra may execute:
+Before Astra executes:
 1. keep the compile-clean Armory scaffold and frozen docs synchronized,
-2. obtain explicit user authorization.
+2. **authorization gate: SATISFIED 2026-09-30**.
 
 During Astra construction/post-build:
 1. finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md`,
@@ -163,4 +163,4 @@ Before Astra is allowed to execute the one-shot:
 - keep native match authority separate from Armory Verse authority,
 - treat final Armory UMG presentation/runtime validation as part of the Astra pass rather than a reason to redesign the mechanic,
 - require every deviation/fallback to be reported,
-- obtain explicit user authorization.
+- authorization was explicitly granted on 2026-09-30; execute through `docs/ASTRA_ONE_SHOT_PROMPT.md`.
