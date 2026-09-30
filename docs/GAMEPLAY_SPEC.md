@@ -132,6 +132,7 @@ Required:
 - 1 × Item Granter (`IG_Armory`) containing the active catalog in stable index order,
 - 1 × Tracker (`TR_Eliminations`),
 - 1 × Elimination Manager (`EM_Economy`) as an economy event source only,
+- 1 × Input Trigger (`IT_Armory`) for the Armory open/reopen action,
 - 1 × Verse creative device (`scrapline_armory_device`).
 
 Not required for match authority:
@@ -172,7 +173,7 @@ The rejected UEFN Central five-file manager package remains quarantined and is n
 The Armory lifecycle must:
 - initialize all players already present when the Verse device begins,
 - subscribe once to playspace PlayerAddedEvent / PlayerRemovedEvent,
-- subscribe once to the 19 Player Spawn Pad SpawnedEvent sources,
+- **do not** subscribe the Armory to Player Spawn Pad `SpawnedEvent` sources; native pads own spawn selection and the Armory waits for the player's active `fort_character` after native spawning,
 - use `EM_Economy` Eliminator/Eliminated events instead of per-character respawn-sensitive elimination subscriptions,
 - provide protected first-buy handling for JIP,
 - remove player UI and match-local economy/loadout state on leave,
