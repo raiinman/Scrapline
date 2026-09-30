@@ -78,6 +78,7 @@ Candidate production device set:
 - **1 × Tracker — `TR_Eliminations`**
 - **1 × Item Granter — `IG_Armory`**
 - **1 × Elimination Manager — `EM_Economy`**
+- **1 × Input Trigger — `IT_Armory`**
 - **1 × Verse creative device — `scrapline_armory_device`**
 
 No production End Game device.
@@ -145,6 +146,12 @@ Register the first-release weapons in a stable editor-visible order. Keep unused
 The Armory Verse grants a specific selection using the current Epic API:
 - `item_granter_device.GrantItemIndex(Agent, ItemIndex)`.
 
+Current live first-release contract, verified 2026-09-30:
+- `IG_Armory` has exactly **7** registered items at indices **0..6**,
+- Verse `RegisteredItemCount` is **7**,
+- catalog `ItemIndex` values outside that range are invalid and must be rejected before `GrantItemIndex`,
+- changing the registered item count or order requires updating the catalog/index contract and recompiling before runtime testing.
+
 Configuration intent:
 - items go directly to the receiving player's inventory,
 - drops at the player location are disabled,
@@ -165,12 +172,33 @@ Required Verse event surfaces:
 - `EliminationEvent` — sends the eliminator agent; award +150 Scrap and reset that player's recovery tier.
 - `EliminatedEvent` — sends the eliminated agent; apply that player's death-recovery payment and advance the recovery tier.
 
+Required production setting:
+- **Valid on Self-Elimination = On.** A self-elimination must still enter the death-recovery / protected-buy lifecycle instead of respawning with native inventory cleanup but no Armory transition.
+- During Astra runtime acceptance, explicitly verify that a self-elimination does **not** incorrectly award the +150 eliminator reward or reset the recovery tier. If the device reports the self-eliminated player through both event surfaces, suppress that reward path without adding a competing score/end system.
+
 Do not configure `EM_Economy` to spawn/drop reward items.
 
 This avoids per-character elimination subscriptions that must be recreated after every respawn.
 
 Current Epic reference:
 - https://dev.epicgames.com/documentation/fortnite/verse-api/fortnitedotcom/devices/elimination_manager_device
+
+## `IT_Armory`
+
+Use exactly one Input Trigger for the Armory open/reopen action.
+
+Current live testbench contract, verified 2026-09-30:
+- actor label: `IT_Armory`,
+- Creative Input Action: **Custom 14 (Toggle Inventory)**,
+- Consume Input: **On**,
+- Show on HUD: **On**,
+- HUD Description: **ARMORY {input}**,
+- Enabled at Game Start: **On**.
+
+The Verse device discovers `IG_Armory`, `EM_Economy`, and `IT_Armory` by their generated Verse tags and intentionally requires **exactly one** object for each role. Missing or duplicate tagged roles make `OnBegin` abort instead of guessing.
+
+Astra must therefore inventory and reuse the existing tagged live roles before creating devices. Do not place a second production `IG_Armory`, `EM_Economy`, or `IT_Armory` while the tagged testbench actor still exists.
+
 ## Catalog contract
 
 Prefer one Verse file for the first implementation unless live compiler/UI constraints justify a small helper.
