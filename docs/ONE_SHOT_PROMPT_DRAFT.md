@@ -274,11 +274,11 @@ The currently frozen candidate architecture is:
 - **19 × Player Spawn Pad**,
 - **1 × `TR_Eliminations` Tracker** for HUD only,
 - **1 × `IG_Armory` Item Granter** containing catalog weapons in stable index order,
-- **1 × `EM_Economy` Elimination Manager** used only as eliminator/eliminated event source,
+- **1 × `EM_Economy` Elimination Manager** used only as the eliminator-income event source,
 - **1 × `IT_Armory` Input Trigger** used only for Armory open/reopen input,
 - **1 × `scrapline_armory_device` Verse device**.
 
-`IG_Armory` should grant exact selected items by registered index. `EM_Economy` must not drop reward items. `TR_Eliminations` must not increment manually or end the round.
+`IG_Armory` should grant exact selected items by registered index. `EM_Economy` must not drop reward items and must keep **Valid On Self Elimination = Off**. Victim recovery/shop state comes from the per-player `fort_character.EliminatedEvent()` watcher, not `EM_Economy.EliminatedEvent`. `TR_Eliminations` must not increment manually or end the round.
 
 The old fixed `IG_Loadout` + direct Spawn Pad → Grant Item path is retired only after the Armory implementation validates.
 
@@ -290,8 +290,8 @@ During this build Astra must:
 - preserve Island Settings as sole score/end authority and native Player Spawn Pads as sole spawn-selection authority,
 - **reuse the existing tagged `IG_Armory`, `EM_Economy`, and `IT_Armory` actors; do not create a second tagged copy of any exact-one role,**
 - verify the live first-release `IG_Armory` still contains exactly 7 registered items at indices 0..6 and keep Verse `RegisteredItemCount = 7` synchronized with that device before testing,
-- set production `EM_Economy` **Valid on Self-Elimination = On**, then test that a self-death enters recovery/protected-buy without incorrectly earning +150 Scrap or resetting recovery,
-- test simultaneous/trade eliminations for one reward, one death payment, and deterministic recovery-tier behavior,
+- keep production `EM_Economy` **Valid On Self Elimination = Off**; verify the one-per-player death watcher handles self/manual/environmental deaths with recovery/protected-buy and that none of those deaths earn +150 Scrap or reset recovery,
+- test simultaneous/trade eliminations for one eliminator reward per qualifying kill, one victim death payment per eliminated player, and deterministic recovery-tier behavior,
 - verify native ~2-second spawn immunity is not shortened by Armory stasis/vulnerability release,
 - keep the narrow Armory Verse ownership boundary,
 - finish or rebuild `WBP_ScraplineArmory` to the approved scalable browser in `ARMORY_UI_SPEC.md`,
@@ -299,7 +299,7 @@ During this build Astra must:
 - avoid the earlier oversized pure-Verse/debug menu and avoid dominant default Fortnite pill-button presentation,
 - preserve UEFN validation requirements; do not use restricted K2 Blueprint graph content,
 - if Custom Button styling is constrained, keep Epic's required content class and use validator-safe transparent hitboxes over Scrapline-owned flat card surfaces,
-- validate mouse/controller interaction, Ready, Re-buy, Clear, category/page navigation, Next Loadout, JIP, respawn, leave cleanup, duplicate subscriptions, and economy bounds,
+- validate mouse/controller interaction, Ready, Re-buy, Clear, category/page navigation, Next Loadout, JIP, respawn, self/manual/environmental death, leave cleanup, duplicate watchers/subscriptions, protected-shop input deadlines, and economy bounds,
 - compile accepted Verse with live Epic UEFN at zero diagnostics,
 - document exact final catalog Item Granter indexes and editor wiring.
 
