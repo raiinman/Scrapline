@@ -127,6 +127,11 @@ scrapline_armory_device := class(creative_device):
     @editable
     FallbackSidearmCatalogIndex:int = 0
 
+    # IG_Armory currently registers exactly seven weapon entries (indices 0..6).
+    # Keep this synchronized with the device item list; never let GrantItemIndex
+    # clamp/wrap an invalid catalog mapping into a different weapon.
+    RegisteredItemCount:int = 7
+
     StartingBank:int = 3000
     BankCap:int = 5000
     EliminationReward:int = 150
@@ -268,6 +273,19 @@ scrapline_armory_device := class(creative_device):
 
     OnArmoryPressed(Agent:agent):void=
         if (Player := player[Agent], State := PlayerStates[Player]):
+            # A protected opening/JIP/death shop already owns this life gate.
+            # Reopen that shop without changing its reason or deadline; otherwise
+            # the combat hotkey could convert it to Next Loadout and defeat the
+            # hard timeout while the player remains held in stasis.
+            if (State.HoldForShop?):
+                OpenArmory(Player)
+                return
+
+            # A committed loadout is waiting for the next active FortCharacter.
+            # Do not let an input press mutate cart state during that handoff.
+            if (State.NeedsGrant?):
+                return
+
             if (OpeningPhaseActive?):
                 set State.ShopReason = 1
             else:
@@ -416,7 +434,7 @@ scrapline_armory_device := class(creative_device):
 
     IsValidCatalogSelection(CatalogIndex:int, RequiredCategory:int):logic=
         if (Entry := Catalog[CatalogIndex]):
-            if (Entry.Enabled?, Entry.Category = RequiredCategory, Entry.Price >= 0, Entry.ItemIndex >= 0):
+            if (Entry.Enabled?, Entry.Category = RequiredCategory, Entry.Price >= 0, Entry.ItemIndex >= 0, Entry.ItemIndex < RegisteredItemCount):
                 return true
         return false
 
@@ -448,6 +466,7 @@ scrapline_armory_device := class(creative_device):
             Entry := Catalog[CatalogIndex]
             Entry.Enabled?
             Entry.ItemIndex >= 0
+            Entry.ItemIndex < RegisteredItemCount
         then:
             Granter.GrantItemIndex(Player, Entry.ItemIndex)
 
