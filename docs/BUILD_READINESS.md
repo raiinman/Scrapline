@@ -105,14 +105,14 @@ Latest live checks:
 - Map Check: **0 errors / 0 warnings**.
 - Power Tools Project Health: **0 errors / 3 warnings**.
 - Health scanner saw approximately **504 files / 2.60 GB**.
-- The only warnings are three pre-existing oversized Gas Cylinder / Propane Tank texture files.
+- The only Power Tools health warnings are three pre-existing 8192 × 8192 Gas Cylinder / Propane Tank source textures. They use mip generation, streaming, and `LODBias = 3`; the 2026-09-30 Launch Session flow completed local EditorAssetValidation/ContentSentryValidation and entered content cooking without rejecting them. Final cooked-memory / Creator Portal validation still belongs after the finished map exists.
 - Representative Factory, Vehicle, Garage, Pipe, and Warning Sign assets all load successfully through the UEFN Asset Registry/Power Tools bridge.
 - Read-only badges on Fab Referenced Content are expected source-lock behavior, not an asset failure. Those assets remain valid for placement.
 - The original native gameplay wiring remains a validated control/fallback in `VERSE_GAMEPLAY_INTEGRATION.md`. The Armory replacement architecture is frozen, live-compiler clean, and ready for Astra handoff; final production acceptance occurs during the Astra build/post-build test matrix.
 - Current live device catalog confirmed Player Spawn Pad, Item Granter, and Tracker identities.
 - Optional local siphon Verse candidate was removed after native `Health Granted on Elimination = 50` was validated as the simpler supported path.
 - UEFN Central run `6e9b9891-1848-5b65-8289-50521fc26c9b` completed but was marked **Not validated**; its five generated files were audited and quarantined rather than staged into Scrapline.
-- Feature Freeze v2 Armory now consists of one production Verse candidate plus `WBP_ScraplineArmory`. The widget provides a scalable 8-card paged category browser and generated UMG→Verse event bindings; the Verse layer owns the economy, lifecycle, catalog filtering, cart/loadout state, countdowns, and indexed grants. The current Verse file passes live `ValkyrieToolset.VerseToolset.BuildAll` with **0 diagnostics**. Final validator-safe UMG presentation and runtime interaction verification are intentionally assigned to Astra during construction/post-build.
+- Feature Freeze v2 Armory now consists of one production Verse candidate plus `WBP_ScraplineArmory`. The widget provides a scalable 8-card paged category browser and generated UMG→Verse event bindings; the Verse layer owns the economy, lifecycle, catalog filtering, cart/loadout state, countdowns, indexed grants, and one long-lived victim/death watcher per initialized player. The red-team-hardened Verse file passes live `ValkyrieToolset.VerseToolset.BuildAll` with **0 diagnostics** after catalog-range, protected-shop-input, and self/environment-death fixes. Final validator-safe UMG presentation and full multiplayer interaction verification remain Astra construction/post-build acceptance work.
 
 ## Asset Intake — Closed
 
@@ -131,8 +131,9 @@ Frozen candidate architecture:
 - 19 Player Spawn Pads continue to own native spawn selection.
 - one `TR_Eliminations` Tracker remains HUD-only.
 - one `IG_Armory` Item Granter backs the editor-configurable weapon catalog.
-- one `EM_Economy` Elimination Manager provides eliminator/eliminated events only.
-- one `scrapline_armory_device` custom Verse layer owns only the Armory/economy boundary from `ARMORY_ECONOMY_SPEC.md`.
+- one `EM_Economy` Elimination Manager provides eliminator income only, with Valid On Self Elimination = Off.
+- one `IT_Armory` Input Trigger owns only the Armory open/reopen input.
+- one `scrapline_armory_device` custom Verse layer owns only the Armory/economy boundary from `ARMORY_ECONOMY_SPEC.md`, including exactly one per-player victim/death watcher based on `fort_character.EliminatedEvent()`.
 - no End Game device or match-authority Timer is introduced.
 
 Still gated before explicit Astra authorization:
