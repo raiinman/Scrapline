@@ -20,7 +20,7 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 
 The macro map design, spatial skeleton, terrain specification, first-alpha gameplay baseline, implementation toolchain, production environment kit, grounded real-asset visual pass, physical-fit verification, and gameplay-device package are locked or verified. `SPATIAL_CONTRACT.md` freezes major anchors, orientation, routes, verticality, spawn regions, and lighting intent.
 
-The native gameplay package remains the control for spawn selection, scoring, match end, sustain, movement, and destruction. Feature Freeze v2 adds a narrow compile-clean Armory Verse layer plus the `WBP_ScraplineArmory` UMG scaffold for match-local Scrap, adaptive per-life loadouts, JIP buy handling, and a scalable seasonal catalog. Final Armory visual polish and full lifecycle/multiplayer acceptance testing are explicitly deferred to Astra during the real construction/post-build pass. The rejected UEFN Central five-file package remains evidence only. Astra does not start automatically; explicit user authorization is required.
+The native gameplay package remains the control for spawn selection, scoring, match end, sustain, movement, and destruction. Feature Freeze v2 adds a narrow compile-clean Armory Verse layer plus the `WBP_ScraplineArmory` UMG scaffold for match-local Scrap, adaptive per-life loadouts, JIP buy handling, and a scalable seasonal catalog. Final Armory visual polish and full lifecycle/multiplayer acceptance testing are assigned to GPT-6.1 Sol during the authorized construction/post-build pass. The rejected UEFN Central five-file package remains evidence only.
 
 ## Documentation
 
@@ -29,9 +29,9 @@ The native gameplay package remains the control for spawn selection, scoring, ma
 - `docs/ASSET_GAP_MATRIX.md` — final required-family coverage and closed intake decision
 - `docs/VERSE_GAMEPLAY_INTEGRATION.md` — **native authority + Armory Verse integration contract, device wiring, and compiler record**
 - `docs/ARMORY_ECONOMY_SPEC.md` — frozen Scrap economy and lifecycle contract
-- `docs/ARMORY_UI_SPEC.md` — approved scalable Armory UX and Astra presentation task
+- `docs/ARMORY_UI_SPEC.md` — approved scalable Armory UX and GPT-6.1 Sol presentation task
 - `docs/SPATIAL_CONTRACT.md` — **frozen one-shot spatial skeleton and placement authority**
-- `docs/ASTRA_CONFUSION_AUDIT.md` — ambiguity attack/closeout for the Astra handoff
+- `docs/ASTRA_CONFUSION_AUDIT.md` — historical ambiguity attack/closeout; active execution uses GPT-6.1 Sol
 - `docs/ENVIRONMENT_COMPOSITION_BOARD.md` — district-level real-asset art/composition guidance
 - `docs/REAL_ASSET_VISUAL_STUDIES.md` — grounded visual-study findings and read-only referenced-content rule
 - `docs/PHYSICAL_FIT_VERIFICATION.md` — verified local bounds, collision, LOD/Nanite, gameplay fit, and restrictions
