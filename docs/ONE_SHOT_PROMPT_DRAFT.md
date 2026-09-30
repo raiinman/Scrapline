@@ -1,6 +1,6 @@
 # Scrapline — Astra One-Shot Prompt Draft
 
-> **SUPERSEDED:** execution was explicitly authorized on 2026-09-30. Use `docs/ASTRA_ONE_SHOT_PROMPT.md` as the active Astra execution prompt. This file remains as pre-authorization history.
+> **SUPERSEDED:** execution was explicitly authorized on 2026-09-30. The active worker is GPT-6.1 Sol; use `docs/SOL61_ONE_SHOT_PROMPT.md`. This file remains as pre-authorization history.
 
 > **READY FOR EXPLICIT USER AUTHORIZATION — DO NOT EXECUTE AUTOMATICALLY.** Feature Freeze v2 added the Scrapline Armory / match economy after the previous native-only closeout. The spatial/design/asset freeze remains valid. The Armory mechanic and Verse/UMG scaffold are compile-clean enough for handoff; final Armory presentation and the full runtime/multiplayer acceptance matrix are explicit Astra construction/post-build responsibilities. The rejected UEFN Central five-file package remains evidence only and must not be imported.
 
