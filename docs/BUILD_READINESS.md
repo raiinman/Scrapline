@@ -2,13 +2,13 @@
 
 ## Current State
 
-Scrapline is **design-frozen, asset-complete, physical-fit verified, red-team GREEN, and explicitly authorized for the Astra one-shot construction pass**. Armory presentation/runtime acceptance remains assigned to construction/post-build.
+Scrapline is **design-frozen, asset-complete, physical-fit verified, red-team GREEN, and explicitly authorized for the GPT-6.1 Sol one-shot construction pass**. Armory presentation/runtime acceptance remains assigned to construction/post-build.
 
 The map design, spatial contract, terrain specification, toolchain, production asset pool, real-asset reference pass, physical-fit gate, and original UEFN Central comparison remain locked or verified. The asset manifest is frozen and the intake stop rule has fired.
 
 The Scrapline Armory / match economy is frozen in `ARMORY_ECONOMY_SPEC.md`. The custom Armory Verse/device scaffold is live-compiler clean and the approved scalable UX is frozen in `ARMORY_UI_SPEC.md`. The previous native-only package remains the control case and fallback.
 
-Final `WBP_ScraplineArmory` visual polish plus the full lifecycle/economy/multiplayer matrix are intentionally deferred to Astra during the real construction/post-build pass. They are no longer pre-Astra blockers. **User authorization was received on 2026-09-30.**
+Final `WBP_ScraplineArmory` visual polish plus the full lifecycle/economy/multiplayer matrix are intentionally assigned to GPT-6.1 Sol during the real construction/post-build pass. They are no longer pre-construction blockers. **User authorization was received on 2026-09-30.**
 
 ## Ready
 
@@ -16,7 +16,7 @@ Final `WBP_ScraplineArmory` visual polish plus the full lifecycle/economy/multip
 - Lore is enabled and preserved.
 - Root and documentation DOX contracts are present locally and in GitHub.
 - Epic UEFN MCP is configured and verified.
-- Trashbyrd UEFN Power Tools bridge is installed, live, and designated as a **required bulk-construction/inspection layer** for Astra. Canonical upstream: `https://github.com/Corsair-Studios/trashbyrds-uefn-power-tools/tree/main`.
+- Trashbyrd UEFN Power Tools bridge is installed, live, and designated as a **required first-class UEFN construction/control/inspection layer** for GPT-6.1 Sol, not a bulk-only tool. Canonical upstream: `https://github.com/Corsair-Studios/trashbyrds-uefn-power-tools/tree/main`.
 - Omni-Verse is installed, authenticated, and the VS Code workspace is trusted.
 - UEFN Central Project Generator was run through the authenticated browser as agreed. Its successful five-file result was marked **Not validated**, fully captured in `UEFN_CENTRAL_GENERATOR_RESULT.md`, and rejected after comparison with the native control. It remains quarantined and is not the Armory implementation base.
 - Macro map layout is locked.
@@ -108,11 +108,11 @@ Latest live checks:
 - The only Power Tools health warnings are three pre-existing 8192 × 8192 Gas Cylinder / Propane Tank source textures. They use mip generation, streaming, and `LODBias = 3`; the 2026-09-30 Launch Session flow completed local EditorAssetValidation/ContentSentryValidation and entered content cooking without rejecting them. Final cooked-memory / Creator Portal validation still belongs after the finished map exists.
 - Representative Factory, Vehicle, Garage, Pipe, and Warning Sign assets all load successfully through the UEFN Asset Registry/Power Tools bridge.
 - Read-only badges on Fab Referenced Content are expected source-lock behavior, not an asset failure. Those assets remain valid for placement.
-- The original native gameplay wiring remains a validated control/fallback in `VERSE_GAMEPLAY_INTEGRATION.md`. The Armory replacement architecture is frozen, live-compiler clean, and ready for Astra handoff; final production acceptance occurs during the Astra build/post-build test matrix.
+- The original native gameplay wiring remains a validated control/fallback in `VERSE_GAMEPLAY_INTEGRATION.md`. The Armory replacement architecture is frozen, live-compiler clean, and ready for GPT-6.1 Sol handoff; final production acceptance occurs during the Sol build/post-build test matrix.
 - Current live device catalog confirmed Player Spawn Pad, Item Granter, and Tracker identities.
 - Optional local siphon Verse candidate was removed after native `Health Granted on Elimination = 50` was validated as the simpler supported path.
 - UEFN Central run `6e9b9891-1848-5b65-8289-50521fc26c9b` completed but was marked **Not validated**; its five generated files were audited and quarantined rather than staged into Scrapline.
-- Feature Freeze v2 Armory now consists of one production Verse candidate plus `WBP_ScraplineArmory`. The widget provides a scalable 8-card paged category browser and generated UMG→Verse event bindings; the Verse layer owns the economy, lifecycle, catalog filtering, cart/loadout state, countdowns, indexed grants, and one long-lived victim/death watcher per initialized player. The red-team-hardened Verse file passes live `ValkyrieToolset.VerseToolset.BuildAll` with **0 diagnostics** after catalog-range, protected-shop-input, and self/environment-death fixes. Final validator-safe UMG presentation and full multiplayer interaction verification remain Astra construction/post-build acceptance work.
+- Feature Freeze v2 Armory now consists of one production Verse candidate plus `WBP_ScraplineArmory`. The widget provides a scalable 8-card paged category browser and generated UMG→Verse event bindings; the Verse layer owns the economy, lifecycle, catalog filtering, cart/loadout state, countdowns, indexed grants, and one long-lived victim/death watcher per initialized player. The red-team-hardened Verse file passes live `ValkyrieToolset.VerseToolset.BuildAll` with **0 diagnostics** after catalog-range, protected-shop-input, and self/environment-death fixes. Final validator-safe UMG presentation and full multiplayer interaction verification remain GPT-6.1 Sol construction/post-build acceptance work.
 
 ## Asset Intake — Closed
 
@@ -136,31 +136,31 @@ Frozen candidate architecture:
 - one `scrapline_armory_device` custom Verse layer owns only the Armory/economy boundary from `ARMORY_ECONOMY_SPEC.md`, including exactly one per-player victim/death watcher based on `fort_character.EliminatedEvent()`.
 - no End Game device or match-authority Timer is introduced.
 
-Still gated before explicit Astra authorization:
-- final contradiction/confusion closeout,
-- Astra one-shot environment construction,
-- irreversible map construction,
-- new asset acquisition or bulk reserve import,
-- synthetic image generation,
-- redesign of the frozen spatial contract.
+Authorization state:
+- contradiction/confusion closeout: **PASSED**,
+- one-shot environment construction: **AUTHORIZED for GPT-6.1 Sol**,
+- irreversible map construction inside the frozen contract: **AUTHORIZED**,
+- new asset acquisition or bulk reserve import: still closed unless a demonstrated implementation failure justifies reopening,
+- synthetic image generation as an environment substitute: still closed,
+- redesign of the frozen spatial contract: still closed.
 
-Assigned to Astra construction/post-build rather than the pre-Astra gate:
+Assigned to GPT-6.1 Sol construction/post-build rather than the pre-construction gate:
 - final `WBP_ScraplineArmory` presentation/polish,
 - final production device wiring/catalog index verification,
 - full lifecycle/economy/JIP/leave/duplicate-subscription/multiplayer tests.
 
 ## Remaining Build Gates
 
-### Pre-Astra gate
+### Pre-construction gate — satisfied
 1. Armory economy/authority contract frozen.
 2. Live UEFN `ValkyrieToolset.VerseToolset.BuildAll`: **0 accepted-code diagnostics**.
 3. Current Armory Verse/UMG scaffold synchronized into the handoff.
-4. One-shot prompt explicitly assigns final Armory UI/runtime acceptance to Astra.
+4. One-shot prompt explicitly assigns final Armory UI/runtime acceptance to GPT-6.1 Sol.
 5. Final contradiction/confusion closeout: **PASS for handoff**.
-6. **Satisfied 2026-09-30:** user explicitly authorized the Astra one-shot.
+6. **Satisfied 2026-09-30:** user explicitly authorized the one-shot.
 
-### After explicit Astra one-shot authorization
-1. Verify both MCP stacks first: Epic `unreal-mcp`, then Power Tools `uefn_status` + `uefn_list_commands` + `uefn_get_level_info`; use Power Tools throughout the primary construction pass for bulk asset/actor/batch work.
+### Authorized GPT-6.1 Sol execution
+1. Verify both MCP stacks first: Epic `unreal-mcp`, then Power Tools `uefn_status` + `uefn_list_commands` + `uefn_get_level_info`; use Power Tools throughout the primary construction pass as a general UEFN control/inspection/construction layer, not only for bulk asset/actor/batch work.
 2. Finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md` while preserving the frozen economy contract.
 3. Wire/verify the production Armory devices and real 19 spawn pads without giving Verse spawn-selection authority.
 4. Run the full Armory lifecycle/economy/multiplayer acceptance matrix.
@@ -182,6 +182,6 @@ Assigned to Astra construction/post-build rather than the pre-Astra gate:
 
 ## Immediate Next Step
 
-**AUTHORIZED — EXECUTE `docs/ASTRA_ONE_SHOT_PROMPT.md` IN THE DEDICATED ASTRA CONSTRUCTION CHAT.**
+**AUTHORIZED — EXECUTE `docs/SOL61_ONE_SHOT_PROMPT.md` WITH GPT-6.1 SOL.**
 
-Do not reopen the design phase. Preserve the red-team-hardened compile-clean scaffold and frozen authority contracts. Astra owns the one-shot environment construction, final Armory presentation, repair pass, and runtime acceptance matrix.
+Do not reopen the design phase. Preserve the red-team-hardened compile-clean scaffold and frozen authority contracts. GPT-6.1 Sol owns the one-shot environment construction, final Armory presentation, repair pass, and runtime acceptance matrix. Use `docs/BUILD_RUN_STATE.md` for interruption recovery and durable phase checkpoints.
