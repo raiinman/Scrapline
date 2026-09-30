@@ -131,7 +131,7 @@ Required:
 - 19 × Player Spawn Pad,
 - 1 × Item Granter (`IG_Armory`) containing the active catalog in stable index order,
 - 1 × Tracker (`TR_Eliminations`),
-- 1 × Elimination Manager (`EM_Economy`) as an economy event source only,
+- 1 × Elimination Manager (`EM_Economy`) as the **eliminator-income** event source only,
 - 1 × Input Trigger (`IT_Armory`) for the Armory open/reopen action,
 - 1 × Verse creative device (`scrapline_armory_device`).
 
@@ -174,7 +174,9 @@ The Armory lifecycle must:
 - initialize all players already present when the Verse device begins,
 - subscribe once to playspace PlayerAddedEvent / PlayerRemovedEvent,
 - **do not** subscribe the Armory to Player Spawn Pad `SpawnedEvent` sources; native pads own spawn selection and the Armory waits for the player's active `fort_character` after native spawning,
-- use `EM_Economy` Eliminator/Eliminated events instead of per-character respawn-sensitive elimination subscriptions,
+- subscribe once to `EM_Economy.EliminationEvent` for the eliminator's +150 Scrap/reset only,
+- keep `EM_Economy` **Valid On Self Elimination = Off** so self-deaths cannot create kill income,
+- start exactly one suspending death watcher per initialized player; it awaits that player's current active `fort_character.EliminatedEvent()`, handles victim recovery/shop state, then re-arms only after the next native-spawned active character exists,
 - provide protected first-buy handling for JIP,
 - remove player UI and match-local economy/loadout state on leave,
 - prevent duplicate grants/rewards across repeated death, respawn, JIP, and UI-open cycles.
@@ -211,6 +213,7 @@ After the primary construction pass:
 - Scrap charges/rewards happen exactly once and respect the 0–5,000 bounds.
 - Recovery tiers step 1,500 → 1,750 → 2,000 and reset after an elimination.
 - Rebuy and queued Next Loadout behave correctly across death/respawn.
+- Self/manual/environmental death receives recovery + next-life Armory handling but never +150 eliminator income.
 - The 45-second opening phase leaves approximately 10 minutes of combat.
 - Leaving players clean up Armory state without disturbing native scoring/end conditions.
 - No Armory event path can create a second score or end-game authority.
