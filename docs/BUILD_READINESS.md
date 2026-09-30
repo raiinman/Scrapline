@@ -16,7 +16,7 @@ Final `WBP_ScraplineArmory` visual polish plus the full lifecycle/economy/multip
 - Lore is enabled and preserved.
 - Root and documentation DOX contracts are present locally and in GitHub.
 - Epic UEFN MCP is configured and verified.
-- Trashbyrd UEFN Power Tools bridge is installed and verified.
+- Trashbyrd UEFN Power Tools bridge is installed, live, and designated as a **required bulk-construction/inspection layer** for Astra. Canonical upstream: `https://github.com/Corsair-Studios/trashbyrds-uefn-power-tools/tree/main`.
 - Omni-Verse is installed, authenticated, and the VS Code workspace is trusted.
 - UEFN Central Project Generator was run through the authenticated browser as agreed. Its successful five-file result was marked **Not validated**, fully captured in `UEFN_CENTRAL_GENERATOR_RESULT.md`, and rejected after comparison with the native control. It remains quarantined and is not the Armory implementation base.
 - Macro map layout is locked.
@@ -104,7 +104,7 @@ Latest live checks:
 - Project opens successfully.
 - Map Check: **0 errors / 0 warnings**.
 - Power Tools Project Health: **0 errors / 3 warnings**.
-- Health scanner saw approximately **504 files / 2.60 GB**.
+- Latest direct Power Tools preflight saw **512 files / 2579.1 MB**, with `status=running`, `level_name=Scrapline`, **16 actors / 5 Creative devices**, and 30 callable bridge commands.
 - The only Power Tools health warnings are three pre-existing 8192 × 8192 Gas Cylinder / Propane Tank source textures. They use mip generation, streaming, and `LODBias = 3`; the 2026-09-30 Launch Session flow completed local EditorAssetValidation/ContentSentryValidation and entered content cooking without rejecting them. Final cooked-memory / Creator Portal validation still belongs after the finished map exists.
 - Representative Factory, Vehicle, Garage, Pipe, and Warning Sign assets all load successfully through the UEFN Asset Registry/Power Tools bridge.
 - Read-only badges on Fab Referenced Content are expected source-lock behavior, not an asset failure. Those assets remain valid for placement.
@@ -160,7 +160,7 @@ Assigned to Astra construction/post-build rather than the pre-Astra gate:
 6. **Satisfied 2026-09-30:** user explicitly authorized the Astra one-shot.
 
 ### After explicit Astra one-shot authorization
-1. Run the primary construction pass.
+1. Verify both MCP stacks first: Epic `unreal-mcp`, then Power Tools `uefn_status` + `uefn_list_commands` + `uefn_get_level_info`; use Power Tools throughout the primary construction pass for bulk asset/actor/batch work.
 2. Finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md` while preserving the frozen economy contract.
 3. Wire/verify the production Armory devices and real 19 spawn pads without giving Verse spawn-selection authority.
 4. Run the full Armory lifecycle/economy/multiplayer acceptance matrix.
