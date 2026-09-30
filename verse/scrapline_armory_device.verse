@@ -1,5 +1,6 @@
 using { /Fortnite.com/Devices }
 using { /Fortnite.com/Characters }
+using { /Fortnite.com/Game }
 using { /Fortnite.com/UI }
 using { /Verse.org/Simulation }
 using { /Verse.org/Simulation/Tags }
@@ -163,8 +164,10 @@ scrapline_armory_device := class(creative_device):
         GetPlayspace().PlayerRemovedEvent().Subscribe(OnPlayerRemoved)
 
         if (Economy := EconomyEliminations?):
+            # EM_Economy owns eliminator rewards only. Victim/death lifecycle is
+            # observed from each active fort_character so self/environment deaths
+            # still receive recovery without ever creating self-elimination income.
             Economy.EliminationEvent.Subscribe(OnElimination)
-            Economy.EliminatedEvent.Subscribe(OnEliminated)
 
         spawn{OpeningPhaseTimer()}
 
@@ -223,6 +226,7 @@ scrapline_armory_device := class(creative_device):
         if (set PlayerStates[Player] = State):
             if (Input := ArmoryInput?):
                 Input.Register(Player)
+            spawn{WatchPlayerDeaths(Player)}
             HoldPlayer(Player)
             spawn{HoldCharacterWhenReady(Player)}
             spawn{OpenArmorySoon(Player)}
@@ -252,8 +256,19 @@ scrapline_armory_device := class(creative_device):
             set State.DeathStreak = 0
             RefreshArmoryUI(Player)
 
-    OnEliminated(Agent:agent):void=
-        if (Player := player[Agent], State := PlayerStates[Player]):
+    WatchPlayerDeaths(Player:player)<suspends>:void=
+        loop:
+            if (PlayerStates[Player]):
+                if (FortChar := Player.GetFortCharacter[], FortChar.IsActive[]):
+                    FortChar.EliminatedEvent().Await()
+                    HandlePlayerDeath(Player)
+                else:
+                    Sleep(0.1)
+            else:
+                return
+
+    HandlePlayerDeath(Player:player):void=
+        if (State := PlayerStates[Player]):
             AddDeathRecovery(State)
 
             HadQueued := State.HasQueued
