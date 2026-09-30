@@ -2,7 +2,7 @@
 
 ## Status
 
-**APPROVED UX DIRECTION — FINAL PRESENTATION DEFERRED TO ASTRA CONSTRUCTION.**
+**APPROVED UX DIRECTION — FINAL PRESENTATION ASSIGNED TO GPT-6.1 SOL CONSTRUCTION.**
 
 This document owns the presentation/navigation contract for the Scrapline Armory. It does not change the economy rules in `ARMORY_ECONOMY_SPEC.md` or the gameplay authority split in `VERSE_GAMEPLAY_INTEGRATION.md`.
 
@@ -12,13 +12,13 @@ The earlier pure-Verse shop is a **functional test harness only**. It proved the
 
 The current ChatGPT/remote-editor mode is **not the authority for final Armory visual implementation**. It successfully established the mechanic, UMG/Verse event bridge, paged browser architecture, and compile-clean scaffold, but repeated UEFN editor/validation/session friction made continued visual iteration inefficient.
 
-**Astra owns final Armory presentation during the primary level-construction pass.**
+**GPT-6.1 Sol owns final Armory presentation during the primary level-construction pass.**
 
-Astra may:
+GPT-6.1 Sol may:
 - keep and repair the existing `WBP_ScraplineArmory` scaffold, or
 - rebuild that widget cleanly if doing so is faster/safer.
 
-Astra must preserve the approved UX contract in this document and the economy/lifecycle contract in `ARMORY_ECONOMY_SPEC.md`. It must not replace the Armory with the earlier oversized pure-Verse/debug menu.
+GPT-6.1 Sol must preserve the approved UX contract in this document and the economy/lifecycle contract in `ARMORY_ECONOMY_SPEC.md`. It must not replace the Armory with the earlier oversized pure-Verse/debug menu.
 
 ## Reference synthesis
 
