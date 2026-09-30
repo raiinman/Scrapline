@@ -1,0 +1,344 @@
+{
+  "assets": [
+    {
+      "path": "/a81776b6-460f-9380-688b-7b87e7645908/SCBK_metal_wall_clean_L0.SCBK_metal_wall_clean_L0",
+      "lods": 0,
+      "nanite": false,
+      "materials": [
+        {
+          "refPath": "/dbff0959-42be-b7b5-1c9d-ea86446f13bc/MI_modular_metal_wall_01_set_walloutside.MI_modular_metal_wall_01_set_walloutside"
+        },
+        {
+          "refPath": "/f432cb3d-4828-9ea2-132c-80a10bca6799/MI_modular_metal_wall_01_set_wallinside.MI_modular_metal_wall_01_set_wallinside"
+        }
+      ],
+      "collision": {
+        "mode": "CTF_UseDefault",
+        "hulls": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      },
+      "bounds": {
+        "min": {
+          "x": -255.96453857421875,
+          "y": -11.999980926513672,
+          "z": 0
+        },
+        "max": {
+          "x": 265.94525146484375,
+          "y": 17.43048095703125,
+          "z": 393.3443298339844
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/fc34d07e-43df-2019-d982-ec9eac8a72d2/SCBK_straight_corrugated_plates.SCBK_straight_corrugated_plates",
+      "lods": 0,
+      "nanite": false,
+      "materials": [
+        {
+          "refPath": "/ddc0ab58-4162-a8c9-6f87-a0b9f5d8b25e/MI_straight_corrugated_plates.MI_straight_corrugated_plates"
+        }
+      ],
+      "collision": {
+        "mode": "CTF_UseDefault",
+        "hulls": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      },
+      "bounds": {
+        "min": {
+          "x": -255.21736907958984,
+          "y": -172.95233917236328,
+          "z": 5.487266540527344
+        },
+        "max": {
+          "x": 254.2203140258789,
+          "y": 164.03667449951172,
+          "z": 39.353275299072266
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/b694e9bf-4b21-7c23-6d8e-3b92754d5975/SCBK_retaining_concrete_panel_01.SCBK_retaining_concrete_panel_01",
+      "lods": 0,
+      "nanite": false,
+      "materials": [
+        {
+          "refPath": "/11435da5-41b8-90c5-8810-898a0d6a6d3f/MI_retaining_concrete_panel_01.MI_retaining_concrete_panel_01"
+        }
+      ],
+      "collision": {
+        "mode": "CTF_UseDefault",
+        "hulls": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      },
+      "bounds": {
+        "min": {
+          "x": -128,
+          "y": -17.99556255340576,
+          "z": 0
+        },
+        "max": {
+          "x": 128,
+          "y": 19.04539966583252,
+          "z": 768
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/e034adff-43d0-d0c1-ca22-3a8edc0fe7a6/SCBK_modular_scrapyard_metal_fence_01_256.SCBK_modular_scrapyard_metal_fence_01_256",
+      "lods": 0,
+      "nanite": false,
+      "materials": [
+        {
+          "refPath": "/405245f7-4ebd-1292-d675-4e891fbd3256/MI_modular_scrapyard_metal_fence_set_01.MI_modular_scrapyard_metal_fence_set_01"
+        }
+      ],
+      "collision": {
+        "mode": "CTF_UseDefault",
+        "hulls": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      },
+      "bounds": {
+        "min": {
+          "x": -128.00001525878906,
+          "y": -5.383183121681213,
+          "z": 0
+        },
+        "max": {
+          "x": 128.00001525878906,
+          "y": 3.5664552450180054,
+          "z": 144.048828125
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/12583ac6-4762-e362-4629-c283b6ae9c8c/SCBK_warning_sign_01_L0.SCBK_warning_sign_01_L0",
+      "lods": 0,
+      "nanite": false,
+      "materials": [
+        {
+          "refPath": "/683ca7c9-45fe-19d4-67ff-d3b866ffd2bf/MI_warning_sign_01.MI_warning_sign_01"
+        }
+      ],
+      "collision": {
+        "mode": "CTF_UseDefault",
+        "hulls": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      },
+      "bounds": {
+        "min": {
+          "x": -56.0447998046875,
+          "y": -5.049789667129517,
+          "z": -0.00000762939453125
+        },
+        "max": {
+          "x": 56.62890625,
+          "y": 4.9800450801849365,
+          "z": 110.88714599609375
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/7c68db61-4ab4-634c-f616-43a0de100209/SCBK_warning_sign_02_L0.SCBK_warning_sign_02_L0",
+      "lods": 0,
+      "nanite": false,
+      "materials": [
+        {
+          "refPath": "/47ec3f91-402d-3891-2769-5294d31b84f5/MI_warning_sign_02.MI_warning_sign_02"
+        }
+      ],
+      "collision": {
+        "mode": "CTF_UseDefault",
+        "hulls": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 5,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      },
+      "bounds": {
+        "min": {
+          "x": -90.06019973754883,
+          "y": -35.31969451904297,
+          "z": -0.467498779296875
+        },
+        "max": {
+          "x": 89.52915573120117,
+          "y": 11.36749267578125,
+          "z": 132.39874267578125
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/2ac78ffa-4c99-3257-30bd-63bb34f937ca/SCBK_metal_barrel_02_L0.SCBK_metal_barrel_02_L0",
+      "lods": 0,
+      "nanite": false,
+      "materials": [
+        {
+          "refPath": "/a8ab4d64-471b-8387-1d15-0886e684ab34/MI_metal_barrel_02.MI_metal_barrel_02"
+        }
+      ],
+      "collision": {
+        "mode": "CTF_UseDefault",
+        "hulls": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      },
+      "bounds": {
+        "min": {
+          "x": -39.26879119873047,
+          "y": -38.85369873046875,
+          "z": 0.0024566650390625
+        },
+        "max": {
+          "x": 39.147010803222656,
+          "y": 39.22754669189453,
+          "z": 94.95082092285156
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/0e5529e2-4964-6b4a-6f99-ec99f146e5b9/SCBK_old_tires_01_01_L0.SCBK_old_tires_01_01_L0",
+      "lods": 0,
+      "nanite": false,
+      "materials": [
+        {
+          "refPath": "/0fe60dfc-479c-50a7-ac0c-1ead4a953014/MI_old_tires_01.MI_old_tires_01"
+        }
+      ],
+      "collision": {
+        "mode": "CTF_UseDefault",
+        "hulls": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 5,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      },
+      "bounds": {
+        "min": {
+          "x": -111.10676956176758,
+          "y": -50.08305358886719,
+          "z": -1.0312957763671875
+        },
+        "max": {
+          "x": 82.6607780456543,
+          "y": 82.57109069824219,
+          "z": 68.68858337402344
+        },
+        "isValid": true
+      }
+    },
+    {
+      "path": "/c6baffa3-4f96-ac6f-95c0-b89faf19f7da/SCBK_metal_corner_pillar_short.SCBK_metal_corner_pillar_short",
+      "lods": 0,
+      "nanite": false,
+      "materials": [
+        {
+          "refPath": "/dbff0959-42be-b7b5-1c9d-ea86446f13bc/MI_modular_metal_wall_01_set_walloutside.MI_modular_metal_wall_01_set_walloutside"
+        },
+        {
+          "refPath": "/f432cb3d-4828-9ea2-132c-80a10bca6799/MI_modular_metal_wall_01_set_wallinside.MI_modular_metal_wall_01_set_wallinside"
+        }
+      ],
+      "collision": {
+        "mode": "CTF_UseDefault",
+        "hulls": {
+          "sphereElems": 0,
+          "boxElems": 0,
+          "sphylElems": 0,
+          "convexElems": 1,
+          "taperedCapsuleElems": 0,
+          "levelSetElems": 0,
+          "skinnedLevelSetElems": 0,
+          "mLLevelSetElems": 0,
+          "skinnedTriangleMeshElems": 0
+        }
+      },
+      "bounds": {
+        "min": {
+          "x": -50.25242614746094,
+          "y": -27.31226921081543,
+          "z": 0.071929931640625
+        },
+        "max": {
+          "x": 7.7537384033203125,
+          "y": 31.44032859802246,
+          "z": 135.5173797607422
+        },
+        "isValid": true
+      }
+    }
+  ],
+  "limitations": "Mounted LOD accessor returns0; runtime LOD/memory not certified."
+}

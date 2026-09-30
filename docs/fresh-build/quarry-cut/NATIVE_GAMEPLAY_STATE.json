@@ -1,0 +1,1193 @@
+{
+  "devices": {
+    "IG_Armory": {
+      "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_ItemGranter_V2_C_UAID_D85ED304C013B20603_1713036634"
+    },
+    "EM_Economy": {
+      "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_EliminationManager_V3_C_UAID_D85ED304C013B20603_1714580635"
+    },
+    "IT_Armory": {
+      "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_InputTrigger_C_UAID_D85ED304C013B20603_1715659636"
+    },
+    "TR_Eliminations": {
+      "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Tracker_V2_C_UAID_D85ED304C013B20603_1716692637"
+    },
+    "QC_Armory": {
+      "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.VerseDevice_C_UAID_D85ED304C013B20603_1717772638"
+    }
+  },
+  "spawns": [
+    {
+      "label": "QC_Spawn01_Dispatch",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1451599842"
+      },
+      "position": {
+        "x": -5860.371730599335,
+        "y": -776.8602175945571,
+        "z": -250.9910888671875,
+        "eye_z": -85.9910888671875,
+        "anchor": 21,
+        "hit_center_cm": 363.7840881347656,
+        "cover_offset": 350,
+        "yaw": 7.551193929605528
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn02_Dispatch",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1490447857"
+      },
+      "position": {
+        "x": -5479.614856190986,
+        "y": 803.114260001101,
+        "z": -283.4345703125,
+        "eye_z": -118.4345703125,
+        "anchor": 22,
+        "hit_center_cm": 446.5942687988281,
+        "cover_offset": 350,
+        "yaw": -8.338132883497082
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn03_Dispatch",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1491768872"
+      },
+      "position": {
+        "x": -4704.186691033604,
+        "y": 1318.5632661377902,
+        "z": -314.4500732421875,
+        "eye_z": -149.4500732421875,
+        "anchor": 23,
+        "hit_center_cm": 2137.072021484375,
+        "cover_offset": 350,
+        "yaw": -15.657955498692306
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn04_Dispatch",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1493001887"
+      },
+      "position": {
+        "x": -4820.970408863739,
+        "y": -2130.1962271723496,
+        "z": -181.6014404296875,
+        "eye_z": -16.6014404296875,
+        "anchor": 24,
+        "hit_center_cm": 427.6006774902344,
+        "cover_offset": 350,
+        "yaw": 23.838740183171723
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn05_Dispatch",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1494236902"
+      },
+      "position": {
+        "x": -3918.9843947126387,
+        "y": -1135.6643317363616,
+        "z": -143.2200927734375,
+        "eye_z": 21.7799072265625,
+        "anchor": 25,
+        "hit_center_cm": 459.4756164550781,
+        "cover_offset": 350,
+        "yaw": 16.16081480258824
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn06_Receiving",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1495457917"
+      },
+      "position": {
+        "x": 5038.320009949207,
+        "y": -1850.7166368131373,
+        "z": -98.473388671875,
+        "eye_z": 66.526611328125,
+        "anchor": 32,
+        "hit_center_cm": 895.6176147460938,
+        "cover_offset": 500,
+        "yaw": 159.8302964326352
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn07_Receiving",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1496659932"
+      },
+      "position": {
+        "x": 5318.28035614425,
+        "y": 553.9875370983593,
+        "z": -12.9007568359375,
+        "eye_z": 152.0992431640625,
+        "anchor": 33,
+        "hit_center_cm": 386.1336975097656,
+        "cover_offset": 350,
+        "yaw": -174.05313694602648
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn08_Receiving",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1497891947"
+      },
+      "position": {
+        "x": 6019.343439509302,
+        "y": 1833.085666714004,
+        "z": 59.6885986328125,
+        "eye_z": 224.6885986328125,
+        "anchor": 34,
+        "hit_center_cm": 449.45672607421875,
+        "cover_offset": 350,
+        "yaw": -163.06280374863582
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn09_Receiving",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1499150962"
+      },
+      "position": {
+        "x": 4781.868631733744,
+        "y": 3517.610588154814,
+        "z": 94.1392822265625,
+        "eye_z": 259.1392822265625,
+        "anchor": 35,
+        "hit_center_cm": 558.3516235351562,
+        "cover_offset": 350,
+        "yaw": -143.66127133360084
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn10_Receiving",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1500404977"
+      },
+      "position": {
+        "x": 5157.83579160566,
+        "y": 2635.3790082491623,
+        "z": 123.3431396484375,
+        "eye_z": 288.3431396484375,
+        "anchor": 51,
+        "hit_center_cm": 415.14849853515625,
+        "cover_offset": 350,
+        "yaw": -152.9353906670426
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn11_Workshop",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1501637992"
+      },
+      "position": {
+        "x": -3048.784333785369,
+        "y": 2804.8815870825397,
+        "z": -381.119873046875,
+        "eye_z": -216.119873046875,
+        "anchor": 27,
+        "hit_center_cm": 559.1567993164062,
+        "cover_offset": 425,
+        "yaw": -42.61405596961119
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn12_Workshop",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1502857007"
+      },
+      "position": {
+        "x": -1855.1013953241484,
+        "y": 3023.33621816675,
+        "z": -284.1199951171875,
+        "eye_z": -119.1199951171875,
+        "anchor": 28,
+        "hit_center_cm": 387.1820983886719,
+        "cover_offset": 350,
+        "yaw": -58.46696547325595
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn13_Workshop",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1504054022"
+      },
+      "position": {
+        "x": 1677.6326349084773,
+        "y": 3032.8871685972595,
+        "z": -84.3021240234375,
+        "eye_z": 80.6978759765625,
+        "anchor": 29,
+        "hit_center_cm": 682.0595703125,
+        "cover_offset": 350,
+        "yaw": -118.94904623938393
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn14_Workshop",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1505282037"
+      },
+      "position": {
+        "x": 3967.689165903421,
+        "y": 3691.8678541774657,
+        "z": 114.079345703125,
+        "eye_z": 279.079345703125,
+        "anchor": 11,
+        "hit_center_cm": 723.0150756835938,
+        "cover_offset": 500,
+        "yaw": -137.0623348630051
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn15_Drain",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1506557052"
+      },
+      "position": {
+        "x": -4490,
+        "y": -3300,
+        "z": -257.4085693359375,
+        "eye_z": -92.4085693359375,
+        "anchor": 37,
+        "hit_center_cm": 230.87918090820312,
+        "cover_offset": 350,
+        "yaw": 36.31464365524796
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn16_Drain",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1507850067"
+      },
+      "position": {
+        "x": -3207.1234285674705,
+        "y": -4352.5246530558525,
+        "z": -320.6876220703125,
+        "eye_z": -155.6876220703125,
+        "anchor": 38,
+        "hit_center_cm": 463.191162109375,
+        "cover_offset": 350,
+        "yaw": 53.615648184164115
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn17_Drain",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1509078082"
+      },
+      "position": {
+        "x": -928.0617827310707,
+        "y": -4292.285745131202,
+        "z": -286.2730712890625,
+        "eye_z": -121.2730712890625,
+        "anchor": 39,
+        "hit_center_cm": 461.0317687988281,
+        "cover_offset": 350,
+        "yaw": 77.79953127261922
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn18_Power",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1510325097"
+      },
+      "position": {
+        "x": 3411.8905465437965,
+        "y": -974.8258704410848,
+        "z": -42.4696044921875,
+        "eye_z": 122.5303955078125,
+        "anchor": 31,
+        "hit_center_cm": 482.2042541503906,
+        "cover_offset": 350,
+        "yaw": 164.05460409907712
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    },
+    {
+      "label": "QC_Spawn19_Power",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1511600112"
+      },
+      "position": {
+        "x": 3369.7076209999873,
+        "y": -3301.809339841463,
+        "z": -210.8604736328125,
+        "eye_z": -45.8604736328125,
+        "anchor": 54,
+        "hit_center_cm": 811.3214721679688,
+        "cover_offset": 350,
+        "yaw": 135.58309836601106
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      }
+    }
+  ],
+  "barriers": [
+    {
+      "label": "QC_B001_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B20603_1983243639"
+      },
+      "location": {
+        "x": 6700,
+        "y": 0,
+        "z": -800
+      },
+      "yaw": 90,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B002_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1532677127"
+      },
+      "location": {
+        "x": 6471.703036136758,
+        "y": 1475.2685570843682,
+        "z": -800
+      },
+      "yaw": 107.48222885474642,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B003_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1534961128"
+      },
+      "location": {
+        "x": 5802.370205355739,
+        "y": 2849.9999999999995,
+        "z": -800
+      },
+      "yaw": 124.1623763752672,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B004_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1536120129"
+      },
+      "location": {
+        "x": 4737.615433949869,
+        "y": 4030.508652763321,
+        "z": -800
+      },
+      "yaw": 139.61064931866062,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B005_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1537257130"
+      },
+      "location": {
+        "x": 3350.000000000001,
+        "y": 4936.3448015713,
+        "z": -800
+      },
+      "yaw": 153.8407176218694,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B006_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1538396131"
+      },
+      "location": {
+        "x": 1734.087602186889,
+        "y": 5505.777209847689,
+        "z": -800
+      },
+      "yaw": 167.15847136763685,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B007_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1539516132"
+      },
+      "location": {
+        "x": 4.102566777143633e-13,
+        "y": 5700,
+        "z": -800
+      },
+      "yaw": 180,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B008_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1540672133"
+      },
+      "location": {
+        "x": -1734.0876021868883,
+        "y": 5505.777209847689,
+        "z": -800
+      },
+      "yaw": -167.15847136763688,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B009_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1541800134"
+      },
+      "location": {
+        "x": -3349.9999999999986,
+        "y": 4936.3448015713,
+        "z": -800
+      },
+      "yaw": -153.8407176218694,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B010_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1542951135"
+      },
+      "location": {
+        "x": -4737.615433949868,
+        "y": 4030.508652763321,
+        "z": -800
+      },
+      "yaw": -139.61064931866062,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B011_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1544118136"
+      },
+      "location": {
+        "x": -5802.370205355739,
+        "y": 2849.9999999999995,
+        "z": -800
+      },
+      "yaw": -124.1623763752672,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B012_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1545243137"
+      },
+      "location": {
+        "x": -6471.703036136757,
+        "y": 1475.2685570843698,
+        "z": -800
+      },
+      "yaw": -107.48222885474644,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B013_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1546370138"
+      },
+      "location": {
+        "x": -6700,
+        "y": 6.980486755139914e-13,
+        "z": -800
+      },
+      "yaw": -90.00000000000001,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B014_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1547504139"
+      },
+      "location": {
+        "x": -6471.703036136758,
+        "y": -1475.2685570843685,
+        "z": -800
+      },
+      "yaw": -72.51777114525359,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B015_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1548639140"
+      },
+      "location": {
+        "x": -5802.37020535574,
+        "y": -2849.9999999999986,
+        "z": -800
+      },
+      "yaw": -55.83762362473282,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B016_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1549776141"
+      },
+      "location": {
+        "x": -4737.615433949871,
+        "y": -4030.5086527633184,
+        "z": -800
+      },
+      "yaw": -40.38935068133942,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B017_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1550900142"
+      },
+      "location": {
+        "x": -3350.000000000003,
+        "y": -4936.344801571299,
+        "z": -800
+      },
+      "yaw": -26.159282378130644,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B018_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1552025143"
+      },
+      "location": {
+        "x": -1734.0876021868883,
+        "y": -5505.777209847689,
+        "z": -800
+      },
+      "yaw": -12.84152863236314,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B019_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1553157144"
+      },
+      "location": {
+        "x": -1.23077003314309e-12,
+        "y": -5700,
+        "z": -800
+      },
+      "yaw": -8.954158880966148e-15,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B020_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1554280145"
+      },
+      "location": {
+        "x": 1734.087602186886,
+        "y": -5505.77720984769,
+        "z": -800
+      },
+      "yaw": 12.841528632363124,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B021_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1555408146"
+      },
+      "location": {
+        "x": 3350.000000000001,
+        "y": -4936.3448015713,
+        "z": -800
+      },
+      "yaw": 26.15928237813062,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B022_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1556545147"
+      },
+      "location": {
+        "x": 4737.615433949867,
+        "y": -4030.5086527633216,
+        "z": -800
+      },
+      "yaw": 40.38935068133938,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B023_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1557663148"
+      },
+      "location": {
+        "x": 5802.370205355737,
+        "y": -2850.0000000000027,
+        "z": -800
+      },
+      "yaw": 55.837623624732764,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    },
+    {
+      "label": "QC_B024_OuterBoundary",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Device_Barrier_V2_Placed_C_UAID_D85ED304C013B30603_1558777149"
+      },
+      "location": {
+        "x": 6471.703036136756,
+        "y": -1475.268557084373,
+        "z": -800
+      },
+      "yaw": 72.51777114525353,
+      "settings": {
+        "barrierMaterial": null,
+        "zoneShape": "Box",
+        "barrierWidth": 3.7,
+        "barrierDepth": 0.1,
+        "barrierHeight": 8,
+        "blockWeaponFire": false,
+        "enabledOnPhase": "Always"
+      }
+    }
+  ],
+  "catalog": [
+    "/Game/Athena/Items/Weapons/WID_Pistol_SemiAuto_Athena_C_Ore_T02.WID_Pistol_SemiAuto_Athena_C_Ore_T02",
+    "/Game/Athena/Items/Weapons/WID_Pistol_SemiAuto_Athena_R_Ore_T03.WID_Pistol_SemiAuto_Athena_R_Ore_T03",
+    "/Game/Athena/Items/Weapons/WID_SMG_Compact_Athena_UC.WID_SMG_Compact_Athena_UC",
+    "/Game/Athena/Items/Weapons/WID_Shotgun_Standard_Athena_UC_Ore_T03.WID_Shotgun_Standard_Athena_UC_Ore_T03",
+    "/Game/Athena/Items/Weapons/WID_Assault_Auto_Athena_UC_Ore_T03.WID_Assault_Auto_Athena_UC_Ore_T03",
+    "/FlipperGameplay/Items/Weapons/RedDotAR/WID_Assault_RedDotAR_Athena_R.WID_Assault_RedDotAR_Athena_R",
+    "/Game/Athena/Items/Weapons/WID_Sniper_BoltAction_Scope_Athena_R_Ore_T03.WID_Sniper_BoltAction_Scope_Athena_R_Ore_T03"
+  ],
+  "island_intended": {
+    "maxPlayers": 16,
+    "teams": {
+      "teamType": "FreeForAll",
+      "teamIndex": 1
+    },
+    "totalRounds": 1,
+    "timeLimit": 645,
+    "roundTimeLimit": 10.75,
+    "eliminationsToEnd": 30,
+    "roundWinCondition": "Eliminations",
+    "spawnLocation": "SpawnPads",
+    "spawnPadSelection": "Random",
+    "respawnWaveType": "None",
+    "respawnTime": 3,
+    "spawnImmunityTime": 2,
+    "bOverrideSpawnImmunityTime": true,
+    "spawnLimit": 0,
+    "joinInProgressBehavior": "SpawnImmediately",
+    "startingHealthPercentage": 100,
+    "maxHealth": 100,
+    "startingShieldPercentage": 100,
+    "maxShields": 100,
+    "allowHealthRecharge": false,
+    "allowShieldRecharge": false,
+    "bAllowOvershield": false,
+    "allowBuilding": "None",
+    "bInfiniteAmmo": true,
+    "bInfiniteMagazineAmmo": false,
+    "bAllowItemDrop": false,
+    "dropAllItemsOverride": "ForceDestroy",
+    "maximumEquipmentSlots": 3,
+    "maximumEquipmentSlots_Override": true,
+    "bLimitMaxItemSlots": true,
+    "bDisableHarvestSlot": true,
+    "healthSiphonValue": 50,
+    "bAllowMantling": true,
+    "bAllowSprinting": true,
+    "bAllowSliding": true,
+    "bFallDamage": false,
+    "environmentDamagePreset": "Off",
+    "weaponDestructionPreset": "Percentage",
+    "weaponDestructionPercentage": 0,
+    "pickaxeDestructionPreset": "None",
+    "maxTrackersOnHUD": 1,
+    "bLastStandingEndsGame": false,
+    "timeOfDayOverride": "Hour11"
+  },
+  "runtime_status": "NOT TESTED"
+}

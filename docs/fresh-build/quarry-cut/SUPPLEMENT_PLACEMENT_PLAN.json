@@ -1,0 +1,810 @@
+{
+  "salvage": [
+    {
+      "path": "/1323a5be-433d-bad0-da94-55a78c147665/SCBK_huge_junk_pile_L0.SCBK_huge_junk_pile_L0",
+      "x": -76,
+      "y": -12,
+      "yaw": 10,
+      "scale": 1,
+      "embed": 100,
+      "folder": "QuarryCut/Perimeter"
+    },
+    {
+      "path": "/1323a5be-433d-bad0-da94-55a78c147665/SCBK_huge_junk_pile_L0.SCBK_huge_junk_pile_L0",
+      "x": -68,
+      "y": 43,
+      "yaw": 85,
+      "scale": 1,
+      "embed": 100,
+      "folder": "QuarryCut/Perimeter"
+    },
+    {
+      "path": "/1323a5be-433d-bad0-da94-55a78c147665/SCBK_huge_junk_pile_L0.SCBK_huge_junk_pile_L0",
+      "x": 17,
+      "y": 70,
+      "yaw": 135,
+      "scale": 1,
+      "embed": 100,
+      "folder": "QuarryCut/Perimeter"
+    },
+    {
+      "path": "/1323a5be-433d-bad0-da94-55a78c147665/SCBK_huge_junk_pile_L0.SCBK_huge_junk_pile_L0",
+      "x": 74,
+      "y": 25,
+      "yaw": 250,
+      "scale": 1,
+      "embed": 100,
+      "folder": "QuarryCut/Perimeter"
+    },
+    {
+      "path": "/1323a5be-433d-bad0-da94-55a78c147665/SCBK_huge_junk_pile_L0.SCBK_huge_junk_pile_L0",
+      "x": 57,
+      "y": -60,
+      "yaw": 220,
+      "scale": 1,
+      "embed": 100,
+      "folder": "QuarryCut/Perimeter"
+    },
+    {
+      "path": "/1323a5be-433d-bad0-da94-55a78c147665/SCBK_huge_junk_pile_L0.SCBK_huge_junk_pile_L0",
+      "x": -18,
+      "y": -70,
+      "yaw": 45,
+      "scale": 1,
+      "embed": 100,
+      "folder": "QuarryCut/Perimeter"
+    },
+    {
+      "path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "x": -57,
+      "y": -18,
+      "yaw": 25,
+      "scale": 1,
+      "embed": 3,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "x": -55,
+      "y": 15,
+      "yaw": 100,
+      "scale": 1,
+      "embed": 3,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "x": -38,
+      "y": 36,
+      "yaw": 70,
+      "scale": 1,
+      "embed": 3,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "x": -31,
+      "y": -34,
+      "yaw": 40,
+      "scale": 1,
+      "embed": 3,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "x": -14,
+      "y": -27,
+      "yaw": 110,
+      "scale": 1,
+      "embed": 3,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "x": 4,
+      "y": -33,
+      "yaw": 55,
+      "scale": 1,
+      "embed": 3,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "x": 46,
+      "y": -32,
+      "yaw": 20,
+      "scale": 1,
+      "embed": 3,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "x": 55,
+      "y": -4,
+      "yaw": 75,
+      "scale": 1,
+      "embed": 3,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "x": 38,
+      "y": 37,
+      "yaw": 125,
+      "scale": 1,
+      "embed": 3,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0",
+      "x": -37,
+      "y": -1,
+      "yaw": 15,
+      "scale": 1,
+      "embed": 3,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": -52,
+      "y": -2.6,
+      "yaw": 0,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": -45.6,
+      "y": 9,
+      "yaw": 61,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": -39.40959619593244,
+      "y": 16.348346360241507,
+      "yaw": 122,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": -39.65165363975849,
+      "y": -18.409596195932437,
+      "yaw": 183,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": -31.409596195932437,
+      "y": -7.651653639758493,
+      "yaw": 244,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": -21.651653639758493,
+      "y": 7.590403804067563,
+      "yaw": 305,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": -21.6,
+      "y": 23,
+      "yaw": 6,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": -14.590403804067563,
+      "y": 29.348346360241507,
+      "yaw": 67,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": 15.348346360241507,
+      "y": 25.590403804067563,
+      "yaw": 128,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": 20.590403804067563,
+      "y": 11.348346360241507,
+      "yaw": 189,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": 31.284147809382834,
+      "y": -7.1200152466514295,
+      "yaw": 250,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": 42.70367047465796,
+      "y": -10.612938026488065,
+      "yaw": 311,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": 51.34834636024151,
+      "y": 5.590403804067563,
+      "yaw": 12,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": 53.29632952534204,
+      "y": 21.387061973511933,
+      "yaw": 73,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": 45.4,
+      "y": 32,
+      "yaw": 134,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": -44.71585219061717,
+      "y": 33.87998475334857,
+      "yaw": 195,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": -41.70367047465796,
+      "y": -30.612938026488067,
+      "yaw": 256,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": -24.6,
+      "y": -38,
+      "yaw": 317,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": -8.590403804067563,
+      "y": -33.65165363975849,
+      "yaw": 18,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    },
+    {
+      "path": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0",
+      "x": 20.284147809382834,
+      "y": -35.12001524665143,
+      "yaw": 79,
+      "scale": 1,
+      "embed": 5,
+      "folder": "QuarryCut/Salvage"
+    }
+  ],
+  "quarry": [
+    {
+      "name": "QC_R001",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": 84,
+      "y": 1.2,
+      "yaw": 0,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R002",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": 69.57048430583858,
+      "y": 7.201669137126473,
+      "yaw": 47,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R003",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": 67.27950924239606,
+      "y": 14.48595131601239,
+      "yaw": 94,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R004",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": 78.10042291323819,
+      "y": 29.853461771362173,
+      "yaw": 141,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R005",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": 59.977890763310185,
+      "y": 29.32539995942966,
+      "yaw": 188,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R006",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": 56.315079228575,
+      "y": 34.91003847662278,
+      "yaw": 235,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R007",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": 58.49578492354399,
+      "y": 54.04563333947005,
+      "yaw": 282,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R008",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": 43.61728679685371,
+      "y": 46.97193173903228,
+      "yaw": 329,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R009",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": 33.91330596559206,
+      "y": 49.94630744689382,
+      "yaw": 16,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R010",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": 33.293059432752955,
+      "y": 70.0833449882394,
+      "yaw": 63,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R011",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": 16.93169520826502,
+      "y": 57.4793222252311,
+      "yaw": 110,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R012",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": 10.33672768753234,
+      "y": 57.29529382938125,
+      "yaw": 157,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R013",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": -1.1901346241317339,
+      "y": 75.5090148088044,
+      "yaw": 204,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R014",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": -7.980278991862708,
+      "y": 59.27155000784918,
+      "yaw": 251,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R015",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": -19.217159014675204,
+      "y": 55.83449671147875,
+      "yaw": 298,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R016",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": -31.12432408922658,
+      "y": 69.47606667821162,
+      "yaw": 345,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R017",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": -35.921905593588384,
+      "y": 52.0965668558897,
+      "yaw": 32,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R018",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": -41.809025019598394,
+      "y": 45.78956274744135,
+      "yaw": 79,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R019",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": -60.06751647829193,
+      "y": 52.87945216143818,
+      "yaw": 126,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R020",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": -55.01133611408907,
+      "y": 37.06301268437129,
+      "yaw": 173,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R021",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": -60.98755101023337,
+      "y": 28.69967432601728,
+      "yaw": 220,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R022",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": -77.40505389058472,
+      "y": 28.221275049395718,
+      "yaw": 267,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R023",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": -67.64666922506353,
+      "y": 16.47013563142597,
+      "yaw": 314,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R024",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": -69.53888207270656,
+      "y": 7.1824318071213336,
+      "yaw": 1,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R025",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": -83.69541196468556,
+      "y": -0.7681732073630304,
+      "yaw": 48,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R026",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": -69.86647825865805,
+      "y": -6.543086106792518,
+      "yaw": 95,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R027",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": -66.99803369304973,
+      "y": -15.465912598003573,
+      "yaw": 142,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R028",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": -78.36174632407744,
+      "y": -29.696429226817507,
+      "yaw": 189,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R029",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": -59.741949880822766,
+      "y": -28.476135870732882,
+      "yaw": 236,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R030",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": -56.52091522434345,
+      "y": -35.773908148975934,
+      "yaw": 283,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R031",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": -58.32417362334935,
+      "y": -54.17590416548923,
+      "yaw": 330,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R032",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": -43.7512386001344,
+      "y": -45.99963848239456,
+      "yaw": 17,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R033",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": -33.81969470547882,
+      "y": -50.625270146766404,
+      "yaw": 64,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R034",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": -33.34445651969114,
+      "y": -70.49054188550613,
+      "yaw": 111,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R035",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": -16.923541007546355,
+      "y": -56.46145212405978,
+      "yaw": 158,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R036",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": -10.301475795648596,
+      "y": -57.73526377735126,
+      "yaw": 205,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R037",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": 1.1121822065013267,
+      "y": -76.16070070592866,
+      "yaw": 252,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R038",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": 8.099371717070857,
+      "y": -58.28918601085789,
+      "yaw": 299,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R039",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": 19.059309623593993,
+      "y": -56.00042615372597,
+      "yaw": 346,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R040",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": 31.317770789545026,
+      "y": -70.3203286502405,
+      "yaw": 33,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R041",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": 35.69673342105479,
+      "y": -51.22796351588874,
+      "yaw": 80,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R042",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": 42.06141584178288,
+      "y": -45.668233839723854,
+      "yaw": 127,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R043",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": 59.792958610478514,
+      "y": -53.84903678369588,
+      "yaw": 174,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R044",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": 55.302565749940285,
+      "y": -36.377362445454224,
+      "yaw": 221,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R045",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": 60.68547856948596,
+      "y": -28.300752059565877,
+      "yaw": 268,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    },
+    {
+      "name": "QC_R046",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs",
+      "x": 77.71192315427291,
+      "y": -29.23894576673672,
+      "yaw": 315,
+      "s": 1.7,
+      "minz": -14.994186401367188,
+      "embed": 15
+    },
+    {
+      "name": "QC_R047",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi",
+      "x": 67.34114512883373,
+      "y": -16.022056998541178,
+      "yaw": 2,
+      "s": 1.2,
+      "minz": -1.2771594524383545,
+      "embed": 15
+    },
+    {
+      "name": "QC_R048",
+      "path": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf",
+      "x": 69.83694593461465,
+      "y": -6.537694100979064,
+      "yaw": 49,
+      "s": 1.2,
+      "minz": -3.400599241256714,
+      "embed": 15
+    }
+  ]
+}

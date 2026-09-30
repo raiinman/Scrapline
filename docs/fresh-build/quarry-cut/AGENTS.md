@@ -4,7 +4,7 @@
 Own the clean Scrapline-derived map design, real-asset visual package and Sol 6.1 handoff.
 
 ## Ownership
-Fresh design/specification/inventory, camera reference index, gauntlet prompt, preparation/build recovery records and native asset inspection evidence in NATIVE_ASSET_AUDIT.json. Visual/terrain evidence lives under Resources/FreshBuild/QuarryCut.
+Fresh design/specification/inventory, camera reference index, gauntlet prompt, preparation/build recovery records and native asset inspection evidence in NATIVE_ASSET_AUDIT.json/NATIVE_DETAIL_AUDIT.json, placement plans, NATIVE_GAMEPLAY_STATE.json and SPAWN_RAY_AUDIT.json. Visual/terrain evidence lives under Resources/FreshBuild/QuarryCut.
 
 ## Local Contracts
 - User's 2026-09-30 clean rebuild supersedes old spatial freeze/hold, old level layout and terrain/placement inputs. Preserve history; reuse real assets and native FFA/narrow Armory identity.
@@ -25,4 +25,3 @@ Fresh design/specification/inventory, camera reference index, gauntlet prompt, p
 
 ## Child DOX Index
 No children.
-

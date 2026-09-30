@@ -38,4 +38,3 @@ This folder owns:
 ## Child DOX Index
 
 - `FreshBuild/QuarryCut/AGENTS.md` — owns the new real-asset camera renders, boards, native evidence and independent terrain inputs.
-

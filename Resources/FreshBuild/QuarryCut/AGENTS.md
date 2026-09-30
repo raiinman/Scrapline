@@ -11,4 +11,3 @@ Use docs/fresh-build/quarry-cut/CONCEPT_REFERENCE_INDEX.md and DESIGN_SPEC.md. P
 Check visual index coverage, 16-bit heightmap hashes, all evidence files and explicit source provenance. terrain_footprints.json records source, hash and31 measured asset-bound pad refinements; derivative reimport is verified through native collision samples in the run ledger.
 ## Child DOX Index
 No children.
-

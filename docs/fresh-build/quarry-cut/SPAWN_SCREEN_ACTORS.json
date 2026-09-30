@@ -1,0 +1,870 @@
+[
+  {
+    "guid": "8B1F5AC5-4D18-3499-B9F2-878FFD5F4D80",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1339612816",
+    "label": "QC_Screen001",
+    "bounds": {
+      "min": {
+        "x": -5935.949331847627,
+        "y": -482.74917640688443,
+        "z": -250.3294677734375
+      },
+      "max": {
+        "x": -5627.381715366031,
+        "y": -392.21785018414687,
+        "z": -14.322869873046898
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1339612816",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "64DF8254-49E8-530F-3662-6681E9CA5D0B",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1340889817",
+    "label": "QC_Screen002",
+    "bounds": {
+      "min": {
+        "x": -5775.353750541819,
+        "y": -1153.696556903724,
+        "z": -251.1844482421875
+      },
+      "max": {
+        "x": -5516.246788720915,
+        "y": -948.9512052717507,
+        "z": -15.177850341796898
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1340889817",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "CC4B9880-4B02-C705-7B33-BC8CDE23CB72",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1341919818",
+    "label": "QC_Screen003",
+    "bounds": {
+      "min": {
+        "x": -4299.235579868609,
+        "y": -1230.8656412246926,
+        "z": -163.600830078125
+      },
+      "max": {
+        "x": -4224.960075234832,
+        "y": -919.7255111687193,
+        "z": 72.4057678222656
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1341919818",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "D8FF815C-4B71-81FE-77B5-3DAA44316BBA",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1342928819",
+    "label": "QC_Screen004",
+    "bounds": {
+      "min": {
+        "x": -5725.890363614429,
+        "y": -1361.7706584107104,
+        "z": -257.82666015625
+      },
+      "max": {
+        "x": -5442.283767481079,
+        "y": -1196.7977867644745,
+        "z": -21.820062255859398
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1342928819",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "EF096198-472C-63AB-92BE-DB8842EED836",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1343939820",
+    "label": "QC_Screen005",
+    "bounds": {
+      "min": {
+        "x": -5356.360681371097,
+        "y": -1078.6165688836568,
+        "z": -238.256103515625
+      },
+      "max": {
+        "x": -5256.700945172487,
+        "y": -771.9090901792388,
+        "z": -2.2495056152343977
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1343939820",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "85A304D4-4707-5D14-E7D6-E480C8EBE3B9",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1344961821",
+    "label": "QC_Screen006",
+    "bounds": {
+      "min": {
+        "x": -4179.809664827228,
+        "y": -860.8945877401154,
+        "z": -177.4317626953125
+      },
+      "max": {
+        "x": -3876.1757845113452,
+        "y": -748.6534521417123,
+        "z": 58.5748352050781
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1344961821",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "C56A1629-4B55-1522-B547-72A9325E5B5E",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1345971822",
+    "label": "QC_Screen007",
+    "bounds": {
+      "min": {
+        "x": -4446.530009624778,
+        "y": 1531.3426243974636,
+        "z": -354.5966796875
+      },
+      "max": {
+        "x": -4224.182925576516,
+        "y": 1776.1471995929155,
+        "z": -118.5900817871094
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1345971822",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "6638CDB7-484C-9FC2-2C7F-BEBA5D372A41",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1347003823",
+    "label": "QC_Screen008",
+    "bounds": {
+      "min": {
+        "x": -4856.393441699161,
+        "y": -1862.5390547699942,
+        "z": -157.7816162109375
+      },
+      "max": {
+        "x": -4555.7060257630665,
+        "y": -1740.0861067816147,
+        "z": 78.2249816894531
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1347003823",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "3C346702-4F54-C8F1-EC14-9696DA57E477",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1348007824",
+    "label": "QC_Screen009",
+    "bounds": {
+      "min": {
+        "x": -4876.310904815142,
+        "y": -2515.71490893361,
+        "z": -203.691650390625
+      },
+      "max": {
+        "x": -4570.185571179296,
+        "y": -2413.4722575946134,
+        "z": 32.3149475097656
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1348007824",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "B7FC9CAF-4F9C-F025-BF5E-D08981FF23B7",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1349026825",
+    "label": "QC_Screen010",
+    "bounds": {
+      "min": {
+        "x": -3796.9314711819416,
+        "y": -1500.5877291967495,
+        "z": -157.423095703125
+      },
+      "max": {
+        "x": -3557.4728481994553,
+        "y": -1272.388480937258,
+        "z": 78.5835021972656
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1349026825",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "BC8748A7-4E0D-6BF8-C03E-A6BBECC9CC7E",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1350041826",
+    "label": "QC_Screen011",
+    "bounds": {
+      "min": {
+        "x": 2981.8514770547854,
+        "y": -3358.036660645632,
+        "z": -253.093017578125
+      },
+      "max": {
+        "x": 3087.986438031482,
+        "y": -3052.8359139062222,
+        "z": -17.086419677734398
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1350041826",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "2E52AE87-4052-8443-2D20-CFA116F398B4",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1351052827",
+    "label": "QC_Screen012",
+    "bounds": {
+      "min": {
+        "x": 4945.107483692038,
+        "y": -1307.7223652757066,
+        "z": -83.4384765625
+      },
+      "max": {
+        "x": 5258.1945084473955,
+        "y": -1253.9700902117947,
+        "z": 152.5681213378906
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1351052827",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "38F0BB28-4542-3299-866F-56A9EDE889D4",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1352121828",
+    "label": "QC_Screen013",
+    "bounds": {
+      "min": {
+        "x": 5721.114614512576,
+        "y": 1229.4306334756768,
+        "z": 32.5484619140625
+      },
+      "max": {
+        "x": 6028.258308910995,
+        "y": 1327.0786690431084,
+        "z": 268.5550598144531
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1352121828",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "08B4076B-43A4-086E-94A5-16BC63F7EE4E",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1353140829",
+    "label": "QC_Screen014",
+    "bounds": {
+      "min": {
+        "x": 5341.547582554822,
+        "y": 777.9239229207518,
+        "z": -1.6229248046875
+      },
+      "max": {
+        "x": 5624.6391199920945,
+        "y": 943.9172313832343,
+        "z": 234.3836730957031
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1353140829",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "AD6410B2-4F0C-1FE3-B438-10BEFB830027",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1354203830",
+    "label": "QC_Screen015",
+    "bounds": {
+      "min": {
+        "x": 5546.063834512295,
+        "y": 2193.5877655870245,
+        "z": 69.8155517578125
+      },
+      "max": {
+        "x": 5808.886380508047,
+        "y": 2393.211919592196,
+        "z": 305.8221496582031
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1354203830",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "488BB13A-4A6B-7DE8-8A86-E0AB85DB4BB8",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1355234831",
+    "label": "QC_Screen016",
+    "bounds": {
+      "min": {
+        "x": 4803.101205881513,
+        "y": 3059.8000031349948,
+        "z": 101.9156494140625
+      },
+      "max": {
+        "x": 5098.101905245782,
+        "y": 3198.8104795720674,
+        "z": 337.9222473144531
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1355234831",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "9D6DD626-4A63-5194-3255-D99449AE86FA",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1356265832",
+    "label": "QC_Screen017",
+    "bounds": {
+      "min": {
+        "x": 4399.183670618048,
+        "y": 3432.6392891072187,
+        "z": 113.421875
+      },
+      "max": {
+        "x": 4481.988627556016,
+        "y": 3742.5459036998323,
+        "z": 349.4284729003906
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1356265832",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "217FFA02-486A-866C-62B1-2B9BFB6EC82F",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1357255833",
+    "label": "QC_Screen018",
+    "bounds": {
+      "min": {
+        "x": 4443.269571458678,
+        "y": 2842.446197864594,
+        "z": 121.7095947265625
+      },
+      "max": {
+        "x": 4747.948338545605,
+        "y": 2950.678271649027,
+        "z": 357.7161926269531
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1357255833",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "69F79C2E-4FFE-E9D3-AE10-1EBB153D790F",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1358275834",
+    "label": "QC_Screen019",
+    "bounds": {
+      "min": {
+        "x": -1516.797118431201,
+        "y": 2857.593027275997,
+        "z": -279
+      },
+      "max": {
+        "x": -1496.7502328562964,
+        "y": 3196.884869342999,
+        "z": -23.326185607910134
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1358275834",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "6F7CBCD3-4335-876E-F100-13B91632C607",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1359256835",
+    "label": "QC_Screen020",
+    "bounds": {
+      "min": {
+        "x": 3004.4453675054256,
+        "y": -451.2523699159042,
+        "z": -46.969970703125
+      },
+      "max": {
+        "x": 3298.8501710764704,
+        "y": -310.6832073610765,
+        "z": 189.0366271972656
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1359256835",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "6F9F7237-4B01-7055-34F0-A493D75ADC97",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1360267836",
+    "label": "QC_Screen021",
+    "bounds": {
+      "min": {
+        "x": 3302.4682264908924,
+        "y": -581.3560085368402,
+        "z": -39.9639892578125
+      },
+      "max": {
+        "x": 3615.5048557325044,
+        "y": -526.7880158404527,
+        "z": 196.0426086425781
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1360267836",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "B208CA65-4AA0-A6AF-AE87-BFAEA621EAEF",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1361254837",
+    "label": "QC_Screen022",
+    "bounds": {
+      "min": {
+        "x": -4324.9125569430535,
+        "y": -3645.297845253048,
+        "z": -267.38525390625
+      },
+      "max": {
+        "x": -4112.6376816513575,
+        "y": -3392.0042403938487,
+        "z": -31.378656005859398
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1361254837",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "D8375F1A-45BF-6175-5A5D-CE9AC8D735DA",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1362260838",
+    "label": "QC_Screen023",
+    "bounds": {
+      "min": {
+        "x": -2871.916379596743,
+        "y": -4497.0783104973725,
+        "z": -308.4227294921875
+      },
+      "max": {
+        "x": -2845.9902571009575,
+        "y": -4183.57519348528,
+        "z": -72.4161315917969
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1362260838",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "3E0441B7-42A8-667F-5114-1AA449253D9D",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1363277839",
+    "label": "QC_Screen024",
+    "bounds": {
+      "min": {
+        "x": -755.2089816323073,
+        "y": -4208.097618530867,
+        "z": -297.52880859375
+      },
+      "max": {
+        "x": -551.0074373504044,
+        "y": -3948.5872185031903,
+        "z": -61.5222106933594
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1363277839",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "7AF8CC56-4998-0452-54F1-639ECCCA3A22",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1364450840",
+    "label": "QC_Screen025",
+    "bounds": {
+      "min": {
+        "x": 3251.8628903838994,
+        "y": -1334.8592977999574,
+        "z": -67.4544677734375
+      },
+      "max": {
+        "x": 3565.277376817185,
+        "y": -1311.528230301191,
+        "z": 168.5521301269531
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1364450840",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "F5D17C60-4889-B202-F479-A8A0A7A263C1",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1450304841",
+    "label": "QC_Screen026_DeckScreenNorthEast",
+    "bounds": {
+      "min": {
+        "x": 1309.8156496116928,
+        "y": 2833.73399418121,
+        "z": -158.7608642578125
+      },
+      "max": {
+        "x": 1350.030838962174,
+        "y": 3251.869257124928,
+        "z": 155.91459960937505
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1450304841",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "711D3C8C-4FCA-5933-6920-4395F2D89DCC",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1642579150",
+    "label": "QC_Screen027_DeckScreenWest",
+    "bounds": {
+      "min": {
+        "x": -3703.6439813219713,
+        "y": -880.6347798503817,
+        "z": -171.538330078125
+      },
+      "max": {
+        "x": -3461.7983330397983,
+        "y": -655.0050784283445,
+        "z": 64.4682678222656
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1642579150",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  },
+  {
+    "guid": "60806F7D-418C-7519-8BCB-A5BB97475213",
+    "nativeClass": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "class": {
+      "refPath": "/Script/FortniteGame.FortStaticMeshActor"
+    },
+    "name": "FortStaticMeshActor_UAID_D85ED304C013B30603_1643842151",
+    "label": "QC_Screen028_DeckScreenEast",
+    "bounds": {
+      "min": {
+        "x": 5162.244982547073,
+        "y": 195.69696772344108,
+        "z": -33.361083984375
+      },
+      "max": {
+        "x": 5475.505053820286,
+        "y": 215.51168702674616,
+        "z": 202.6455139160156
+      },
+      "isValid": true
+    },
+    "runtimeGrid": "None",
+    "bIsSpatiallyLoaded": false,
+    "bActorIsEditorOnly": false,
+    "actorPackage": "None",
+    "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B30603_1643842151",
+    "folderPath": "None",
+    "dataLayerAssets": []
+  }
+]

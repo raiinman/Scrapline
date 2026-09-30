@@ -107,4 +107,3 @@ Default section order:
 - `verse/AGENTS.md` — owns reviewable custom Verse source mirrors synchronized from the live Scrapline UEFN project.
 - `Resources/AGENTS.md` — owns committed non-code build resources: real visual authority and frozen terrain inputs.
 - `README.md` remains governed by this root contract.
-
