@@ -39,6 +39,8 @@ The root `AGENTS.md` owns repository-wide rules.
 - Prefer concise operational documents over brainstorming transcripts.
 - When a design decision changes, update the owning document instead of appending contradictory history.
 - Mark unapproved candidates clearly.
+- `SOL61_ONE_SHOT_PROMPT.md` is the active authorized execution prompt; `ASTRA_ONE_SHOT_PROMPT.md` is superseded historical handoff material.
+- `BUILD_RUN_STATE.md` is the concise recovery ledger for resuming long runs after transient interruptions.
 
 ## Verification
 
