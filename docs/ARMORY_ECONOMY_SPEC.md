@@ -315,6 +315,6 @@ The Armory design is frozen by this document.
 
 The Armory design/architecture phase is complete enough for Astra handoff: the candidate code is live-compiler clean and the responsibility boundaries are frozen.
 
-Final production acceptance still requires the critical lifecycle/economy tests above, but those tests are now part of the **Astra construction/post-build validation pass**, when the real 19-spawn level and final UMG widget exist.
+Final production acceptance still requires the critical lifecycle/economy tests above, but those tests are now part of the **GPT-6.1 Sol construction/post-build validation pass**, when the real 19-spawn level and final UMG widget exist.
 
 Do not start Astra automatically; explicit user authorization is still required.
