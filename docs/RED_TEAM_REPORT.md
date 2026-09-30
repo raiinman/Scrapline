@@ -119,37 +119,37 @@ Verified on 2026-09-30 against `automation/overnight-refinement` and the live Sc
 
 **Status:** CLOSED.
 
-## MEDIUM findings — explicit Astra acceptance obligations
+## MEDIUM findings — explicit construction acceptance obligations
 
 ### M1 — Simultaneous/trade elimination ordering is not runtime-proven
 
 The hardened architecture prevents duplicate score/end authority, but Epic does not document cross-player callback ordering tightly enough to prove the recovery-tier result for a true trade from static analysis alone.
 
-**Astra obligation:** run repeated trade/simultaneous elimination tests. Verify one +150 reward per qualifying killer, one death payment per victim, and deterministic recovery-tier state afterward. If event ordering exposes a tier inconsistency, repair the Armory state machine without touching native score/end authority.
+**Build-worker obligation:** run repeated trade/simultaneous elimination tests. Verify one +150 reward per qualifying killer, one death payment per victim, and deterministic recovery-tier state afterward. If event ordering exposes a tier inconsistency, repair the Armory state machine without touching native score/end authority.
 
 ### M2 — Final UMG/controller/input acceptance is intentionally unfinished
 
 `WBP_ScraplineArmory` is a validator-aware scaffold, not final presentation.
 
-**Astra obligation:** finish/rebuild to `ARMORY_UI_SPEC.md`; test mouse + controller category/card/page/Ready/Re-buy/Clear/Next Loadout navigation, HUD restoration, and per-player isolation.
+**Build-worker obligation:** finish/rebuild to `ARMORY_UI_SPEC.md`; test mouse + controller category/card/page/Ready/Re-buy/Clear/Next Loadout navigation, HUD restoration, and per-player isolation.
 
 ### M3 — JIP / 12–16 player / repeated-lifecycle matrix is not pre-Astra runtime-proven
 
 The code compiles and ownership is explicit, but the real level does not yet exist for the full multiplayer matrix.
 
-**Astra obligation:** run opening JIP, combat JIP, leave/rejoin, repeated death/reopen, all 19 spawn regions, 12-player target, and 16-player ceiling smoke tests.
+**Build-worker obligation:** run opening JIP, combat JIP, leave/rejoin, repeated death/reopen, all 19 spawn regions, 12-player target, and 16-player ceiling smoke tests.
 
 ### M4 — Spatial combat safety can only be fully measured after real placement
 
 Physical fit is verified, but actual sightlines, roof/gantry dominance, route pinch, and spawn LOS depend on the completed real-asset layout.
 
-**Astra obligation:** run `SPATIAL_CONTRACT.md` acceptance before dressing and again after hard cover/spawns are placed.
+**Build-worker obligation:** run `SPATIAL_CONTRACT.md` acceptance before dressing and again after hard cover/spawns are placed.
 
 ### M5 — Final memory/publishing budget remains unmeasured
 
 Do not infer runtime memory from the approximately 2.60 GB project-file footprint. Current UEFN uses cooked data for memory calculation.
 
-**Astra obligation:** after the finished environment exists, run the official memory calculation/performance pass and Creator Portal/private-version validation as required.
+**Build-worker obligation:** after the finished environment exists, run the official memory calculation/performance pass and Creator Portal/private-version validation as required.
 
 ## LOW findings
 
@@ -192,7 +192,7 @@ Verified fallback: inspect actual source state, edit through the authorized loca
 - `docs/MAP_DESIGN.md`
 - live UEFN workspace documentation synchronized from the durable branch after closeout.
 
-## Exact remaining Astra obligations
+## Exact remaining build-worker obligations
 
 1. Preserve the frozen spatial/asset skeleton.
 2. Inventory/reuse the existing exact-one tagged `IG_Armory`, `EM_Economy`, and `IT_Armory` roles.
@@ -207,10 +207,10 @@ Verified fallback: inspect actual source state, edit through the authorized loca
 
 ## One-shot prompt disposition
 
-`docs/ASTRA_ONE_SHOT_PROMPT.md` is the frozen **authorized execution prompt**. The user explicitly authorized the Astra one-shot on 2026-09-30 after this red-team closeout.
+`docs/SOL61_ONE_SHOT_PROMPT.md` is the active **authorized execution prompt** for GPT-6.1 Sol. The user explicitly authorized the one-shot on 2026-09-30 after this red-team closeout. `docs/ASTRA_ONE_SHOT_PROMPT.md` is retained only as superseded historical handoff material.
 
 The prompt distinguishes frozen design from implementation freedom, preserves native authority, names the exact Armory roles, carries the red-team lifecycle/index safeguards, and places unresolved runtime checks in the correct construction/post-build phase.
 
 ## Authorization addendum
 
-Red-team closeout completed before construction authorization. The historical stop condition was subsequently satisfied: **the user explicitly authorized the Astra one-shot on 2026-09-30.** Execute only through `docs/ASTRA_ONE_SHOT_PROMPT.md`; the frozen design constraints remain in force.
+Red-team closeout completed before construction authorization. The historical stop condition was subsequently satisfied: **the user explicitly authorized the one-shot on 2026-09-30.** The active worker is GPT-6.1 Sol and execution must use `docs/SOL61_ONE_SHOT_PROMPT.md`; the frozen design constraints remain in force.
