@@ -2,9 +2,13 @@
 
 ## Current State
 
-Scrapline is **ready to move from asset preparation into Verse/final one-shot handoff work**.
+Scrapline is **design-frozen, asset-complete, physical-fit verified, red-team GREEN, and explicitly authorized for the GPT-6.1 Sol one-shot construction pass**. Armory presentation/runtime acceptance remains assigned to construction/post-build.
 
-The map design, gameplay baseline, terrain specification, toolchain, and production asset pool are locked or verified. The asset manifest is frozen and the intake stop rule has fired.
+The map design, spatial contract, terrain specification, toolchain, production asset pool, real-asset reference pass, physical-fit gate, and original UEFN Central comparison remain locked or verified. The asset manifest is frozen and the intake stop rule has fired.
+
+The Scrapline Armory / match economy is frozen in `ARMORY_ECONOMY_SPEC.md`. The custom Armory Verse/device scaffold is live-compiler clean and the approved scalable UX is frozen in `ARMORY_UI_SPEC.md`. The previous native-only package remains the control case and fallback.
+
+Final `WBP_ScraplineArmory` visual polish plus the full lifecycle/economy/multiplayer matrix are intentionally assigned to GPT-6.1 Sol during the real construction/post-build pass. They are no longer pre-construction blockers. **User authorization was received on 2026-09-30.**
 
 ## Ready
 
@@ -12,10 +16,12 @@ The map design, gameplay baseline, terrain specification, toolchain, and product
 - Lore is enabled and preserved.
 - Root and documentation DOX contracts are present locally and in GitHub.
 - Epic UEFN MCP is configured and verified.
-- Trashbyrd UEFN Power Tools bridge is installed and verified.
+- Trashbyrd UEFN Power Tools bridge is installed, live, and designated as a **required first-class UEFN construction/control/inspection layer** for GPT-6.1 Sol, not a bulk-only tool. Canonical upstream: `https://github.com/Corsair-Studios/trashbyrds-uefn-power-tools/tree/main`.
 - Omni-Verse is installed, authenticated, and the VS Code workspace is trusted.
-- UEFN Central Studio access is available.
+- UEFN Central Project Generator was run through the authenticated browser as agreed. Its successful five-file result was marked **Not validated**, fully captured in `UEFN_CENTRAL_GENERATOR_RESULT.md`, and rejected after comparison with the native control. It remains quarantined and is not the Armory implementation base.
 - Macro map layout is locked.
+- `SPATIAL_CONTRACT.md` freezes major anchor positions/orientations, route topology, verticality/catwalk limits, spawn-region distribution, outer-flank behavior, and the daylight concept.
+- `ASTRA_CONFUSION_AUDIT.md` preserves the passed spatial/design ambiguity audit but is temporarily reopened for gameplay because Feature Freeze v2 changed the loadout/economy architecture.
 - Terrain/environment specification is locked.
 - First-alpha FFA gameplay baseline is locked.
 - 14 approved Fab referenced-content items are present.
@@ -23,9 +29,18 @@ The map design, gameplay baseline, terrain specification, toolchain, and product
 - African Slate Quarry is curated and verified.
 - Scrapline terrain heightmap v1 is staged under `Resources/Terrain/`.
 - LookoutTower is removed/blacklisted.
+- Warehouse Essentials is quarantined and excluded from required coverage.
 - Final donor curation is complete.
 - `ASSET_MANIFEST.md` is **Frozen for One-Shot**.
-- Hero landmark is frozen to the Factory crane composition.
+- `ENVIRONMENT_COMPOSITION_BOARD.md` maps the frozen kit to district, traversal, and atmosphere roles.
+- `REAL_ASSET_VISUAL_STUDIES.md` records the grounded real-asset visual pass and read-only referenced-content rule.
+- **27 curated real-source visual references are now committed in GitHub** under `Resources/Reference/RealAssets/`, including exact Factory/Garage contact sheets, Scrapyard/Deserted referenced-content boards, VFX/signage boards, grounded synthesis boards, and all four district composition studies.
+- The frozen terrain heightmap is now committed at `Resources/Terrain/Scrapline_Terrain_v1_253x253_16bit.png`, removing the last required local-only build input from the handoff.
+- Exact staged visual captures cover the frozen Factory, Vehicle V2, Garage, Pipe, and Warning Sign choices.
+- Representative live UEFN captures cover Scrapyard and Deserted Props referenced-content vocabulary.
+- Talisman / Deserted VFX systems are inventoried through live Niagara browse and represented with real-source reference media.
+- Hero landmark is frozen to the Factory crane composition, now understood as a long horizontal industrial gantry assembly rather than a tall skyline crane.
+- Read-only physical-fit verification is complete for the Factory crane assembly, Garage assembly, Box Truck, Campervan, Factory containers, and representative metal/wood Scrapyard catwalk modules. Live UEFN and UE 5.6 staged measurements matched exactly for the curated imported meshes.
 
 ## Final Curated Live Imports
 
@@ -91,9 +106,15 @@ Latest live checks:
 - Project opens successfully.
 - Map Check: **0 errors / 0 warnings**.
 - Power Tools Project Health: **0 errors / 3 warnings**.
-- Health scanner saw approximately **504 files / 2.60 GB**.
-- The only warnings are three pre-existing oversized Gas Cylinder / Propane Tank texture files.
+- Latest direct Power Tools preflight saw **512 files / 2579.1 MB**, with `status=running`, `level_name=Scrapline`, **16 actors / 5 Creative devices**, and 30 callable bridge commands.
+- The only Power Tools health warnings are three pre-existing 8192 × 8192 Gas Cylinder / Propane Tank source textures. They use mip generation, streaming, and `LODBias = 3`; the 2026-09-30 Launch Session flow completed local EditorAssetValidation/ContentSentryValidation and entered content cooking without rejecting them. Final cooked-memory / Creator Portal validation still belongs after the finished map exists.
 - Representative Factory, Vehicle, Garage, Pipe, and Warning Sign assets all load successfully through the UEFN Asset Registry/Power Tools bridge.
+- Read-only badges on Fab Referenced Content are expected source-lock behavior, not an asset failure. Those assets remain valid for placement.
+- The original native gameplay wiring remains a validated control/fallback in `VERSE_GAMEPLAY_INTEGRATION.md`. The Armory replacement architecture is frozen, live-compiler clean, and ready for GPT-6.1 Sol handoff; final production acceptance occurs during the Sol build/post-build test matrix.
+- Current live device catalog confirmed Player Spawn Pad, Item Granter, and Tracker identities.
+- Optional local siphon Verse candidate was removed after native `Health Granted on Elimination = 50` was validated as the simpler supported path.
+- UEFN Central run `6e9b9891-1848-5b65-8289-50521fc26c9b` completed but was marked **Not validated**; its five generated files were audited and quarantined rather than staged into Scrapline.
+- Feature Freeze v2 Armory now consists of one production Verse candidate plus `WBP_ScraplineArmory`. The widget provides a scalable 8-card paged category browser and generated UMG→Verse event bindings; the Verse layer owns the economy, lifecycle, catalog filtering, cart/loadout state, countdowns, indexed grants, and one long-lived victim/death watcher per initialized player. The red-team-hardened Verse file passes live `ValkyrieToolset.VerseToolset.BuildAll` with **0 diagnostics** after catalog-range, protected-shop-input, and self/environment-death fixes. Final validator-safe UMG presentation and full multiplayer interaction verification remain GPT-6.1 Sol construction/post-build acceptance work.
 
 ## Asset Intake — Closed
 
@@ -103,13 +124,49 @@ Do not import Junkyard, City Street Props, Construction Site, Wasteland, Dark Ru
 
 The intake may reopen only for a specific demonstrated implementation failure.
 
+## Gameplay Integration — Reopened for Armory
+
+The original native control is validated, but Feature Freeze v2 intentionally reopened gameplay integration.
+
+Frozen candidate architecture:
+- Island Settings owns native scoring, first-to-30 victory, 10:45 total round clock, spawning rules, health/shields, movement, destruction, ammo/drop behavior, and 50-point elimination sustain.
+- 19 Player Spawn Pads continue to own native spawn selection.
+- one `TR_Eliminations` Tracker remains HUD-only.
+- one `IG_Armory` Item Granter backs the editor-configurable weapon catalog.
+- one `EM_Economy` Elimination Manager provides eliminator income only, with Valid On Self Elimination = Off.
+- one `IT_Armory` Input Trigger owns only the Armory open/reopen input.
+- one `scrapline_armory_device` custom Verse layer owns only the Armory/economy boundary from `ARMORY_ECONOMY_SPEC.md`, including exactly one per-player victim/death watcher based on `fort_character.EliminatedEvent()`.
+- no End Game device or match-authority Timer is introduced.
+
+Authorization state:
+- contradiction/confusion closeout: **PASSED**,
+- one-shot environment construction: **AUTHORIZED for GPT-6.1 Sol**,
+- irreversible map construction inside the frozen contract: **AUTHORIZED**,
+- new asset acquisition or bulk reserve import: still closed unless a demonstrated implementation failure justifies reopening,
+- synthetic image generation as an environment substitute: still closed,
+- redesign of the frozen spatial contract: still closed.
+
+Assigned to GPT-6.1 Sol construction/post-build rather than the pre-construction gate:
+- final `WBP_ScraplineArmory` presentation/polish,
+- final production device wiring/catalog index verification,
+- full lifecycle/economy/JIP/leave/duplicate-subscription/multiplayer tests.
+
 ## Remaining Build Gates
 
-1. Run the prepared UEFN Central Project Generator request.
-2. Validate generated Verse with Omni-Verse / Epic compiler tooling.
-3. Update the gameplay/device paths and wiring in `ONE_SHOT_PROMPT_DRAFT.md`.
-4. Finalize the one-shot prompt against the frozen asset manifest.
-5. Run the primary build pass.
+### Pre-construction gate — satisfied
+1. Armory economy/authority contract frozen.
+2. Live UEFN `ValkyrieToolset.VerseToolset.BuildAll`: **0 accepted-code diagnostics**.
+3. Current Armory Verse/UMG scaffold synchronized into the handoff.
+4. One-shot prompt explicitly assigns final Armory UI/runtime acceptance to GPT-6.1 Sol.
+5. Final contradiction/confusion closeout: **PASS for handoff**.
+6. **Satisfied 2026-09-30:** user explicitly authorized the one-shot.
+
+### Authorized GPT-6.1 Sol execution
+1. Refresh the active branch and pass the mandatory real-visual preflight from `SOL61_ONE_SHOT_PROMPT.md`; actually open the committed boards/contact sheets and record the visual takeaway in `BUILD_RUN_STATE.md`.
+2. Verify both MCP stacks first: Epic `unreal-mcp`, then Power Tools `uefn_status` + `uefn_list_commands` + `uefn_get_level_info`; use Power Tools throughout the primary construction pass as a general UEFN control/inspection/construction layer, not only for bulk asset/actor/batch work.
+3. Finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md` while preserving the frozen economy contract.
+4. Wire/verify the production Armory devices and real 19 spawn pads without giving Verse spawn-selection authority.
+5. Run the full Armory lifecycle/economy/multiplayer acceptance matrix.
 6. Test and repair after the primary construction pass unless blocked earlier.
 
 ## Do Not Reopen Without a Specific Reason
@@ -118,15 +175,16 @@ The intake may reopen only for a specific demonstrated implementation failure.
 - 12-player primary FFA target
 - 16-player test ceiling
 - four overlapping industrial districts plus central kill yard
-- 30-elimination / 10-minute alpha baseline
+- 30-elimination / approximately 10-minute combat baseline, preceded by the frozen 45-second Armory phase
 - Factory crane central landmark direction
 - frozen production asset pool
 - asset-first visual construction rule
 - no visible greybox substitute art
+- controlled verticality budget
 - LookoutTower rejection
 
 ## Immediate Next Step
 
-**Verse generation and validation.**
+**AUTHORIZED — EXECUTE `docs/SOL61_ONE_SHOT_PROMPT.md` WITH GPT-6.1 SOL.**
 
-The asset hunt is over. Do not spend one-shot time browsing Fab or staging more packs.
+Do not reopen the design phase. Preserve the red-team-hardened compile-clean scaffold and frozen authority contracts. GPT-6.1 Sol owns the one-shot environment construction, final Armory presentation, repair pass, and runtime acceptance matrix. Use `docs/BUILD_RUN_STATE.md` for interruption recovery and durable phase checkpoints.

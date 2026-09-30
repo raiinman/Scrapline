@@ -1,0 +1,423 @@
+{
+  "status": "effective actor properties read back after save; legacy timeLimit remains 300, session clock pending",
+  "island": {
+    "teams": {
+      "teamType": "FreeForAll",
+      "teamIndex": 1
+    },
+    "maxPlayers": 16,
+    "teamSize": "Solos",
+    "matchmaking_OvertimePlayerTarget": 12,
+    "totalRounds": 1,
+    "timeLimit": 300,
+    "roundTimeLimit": 10.75,
+    "roundTimeLimit_Override": true,
+    "eliminationsToEnd": 30,
+    "eliminationsToEnd_Override": true,
+    "roundWinCondition": "Eliminations",
+    "roundWinCondition_Override": false,
+    "bLastStandingEndsGame": false,
+    "spawnLocation": "SpawnPads",
+    "spawnPadSelection": "Random",
+    "respawnWaveType": "None",
+    "respawnTime": 3,
+    "spawnLimit_Override": false,
+    "bOnlyAllowRespawnIfSpawnPadsFound": true,
+    "bOverrideSpawnImmunityTime": true,
+    "spawnImmunityTime": 2,
+    "joinInProgressBehavior": "SpawnImmediately",
+    "startingHealthPercentage": 100,
+    "maxHealth": 100,
+    "startingShieldPercentage": 100,
+    "maxShields": 100,
+    "bAllowOvershield": false,
+    "allowHealthRecharge": false,
+    "allowShieldRecharge": false,
+    "healthSiphonValue": 50,
+    "allowBuilding": "None",
+    "environmentDamagePreset": "Off",
+    "pickaxeDestructionPreset": "None",
+    "pVPPickaxeDamagePreset": "Off",
+    "bDisableHarvestSlot": true,
+    "bInfiniteAmmo": true,
+    "bInfiniteMagazineAmmo": false,
+    "dropAllItemsOverride": "ForceDestroy",
+    "bAllowItemDrop": false,
+    "maximumEquipmentSlots": 3,
+    "maximumEquipmentSlots_Override": true,
+    "bAllowMantling": true,
+    "bAllowSprinting": true,
+    "bAllowSliding": true,
+    "bFallDamageV2": false,
+    "firstScoreboardColumn": "Eliminations",
+    "firstScoreboardColumn_Override": false,
+    "secondScoreboardColumn": "Eliminated",
+    "secondScoreboardColumn_Override": false,
+    "timeOfDayOverride": "Hour16"
+  },
+  "pads": [
+    {
+      "id": 1,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_3"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 2,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_1"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 3,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1317716557"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 4,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1317847562"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 5,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1317963567"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 6,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318066572"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 7,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318179577"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 8,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318290582"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 9,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318387587"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 10,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318483592"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 11,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318579597"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 12,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318676602"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 13,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318781607"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 14,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1318889612"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 15,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1319054617"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 16,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1319177622"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 17,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1321608627"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 18,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1321807632"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    },
+    {
+      "id": 19,
+      "actor": {
+        "refPath": "/Scrapline/Scrapline.Scrapline:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013A00603_1321912637"
+      },
+      "properties": {
+        "enemyRangeCheck": 1000,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "bRespawnAlivePlayers": false,
+        "priorityGroup_Override": true,
+        "enabledDuringPhase": "Always",
+        "useAsIslandStart": true
+      }
+    }
+  ],
+  "spawnLOSCenter": [
+    {
+      "id": 1,
+      "distance": 438.9144287109375
+    },
+    {
+      "id": 2,
+      "distance": 438.795654296875
+    },
+    {
+      "id": 3,
+      "distance": 438.3258361816406
+    },
+    {
+      "id": 4,
+      "distance": 424.6706848144531
+    },
+    {
+      "id": 5,
+      "distance": 439.06475830078125
+    },
+    {
+      "id": 6,
+      "distance": 438.6286315917969
+    },
+    {
+      "id": 7,
+      "distance": 438.2934875488281
+    },
+    {
+      "id": 8,
+      "distance": 438.4241638183594
+    },
+    {
+      "id": 9,
+      "distance": 438.4922180175781
+    },
+    {
+      "id": 10,
+      "distance": 438.45068359375
+    },
+    {
+      "id": 11,
+      "distance": 438.7091064453125
+    },
+    {
+      "id": 12,
+      "distance": 438.4947204589844
+    },
+    {
+      "id": 13,
+      "distance": 438.4740295410156
+    },
+    {
+      "id": 14,
+      "distance": 438.4798889160156
+    },
+    {
+      "id": 15,
+      "distance": 438.7779541015625
+    },
+    {
+      "id": 16,
+      "distance": 438.4361267089844
+    },
+    {
+      "id": 17,
+      "distance": 438.2286376953125
+    },
+    {
+      "id": 18,
+      "distance": 438.48480224609375
+    },
+    {
+      "id": 19,
+      "distance": 438.257080078125
+    }
+  ]
+}

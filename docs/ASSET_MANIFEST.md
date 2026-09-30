@@ -15,7 +15,8 @@ Latest live UEFN checks:
 - Scrapline project opens successfully.
 - Map Check: **0 errors / 0 warnings**.
 - Power Tools Project Health: **0 errors / 3 warnings**.
-- The 3 health warnings are pre-existing oversized Gas Cylinder / Propane Tank textures; they are not failures in the new curated imports.
+- The 3 health warnings are pre-existing Gas Cylinder / Propane Tank texture-size warnings; they are not failures in the new curated imports.
+- Live inspection on 2026-09-30 confirmed all three source textures are **8192 × 8192**, `NeverStream = false`, mip generation enabled, and `LODBias = 3`. A fresh UEFN Launch Session flow completed local `EditorAssetValidation` + `ContentSentryValidation` and proceeded through content cooking without a texture-validation rejection; the edit server later shut down because no game client remained connected. This is **not** a Creator Portal publish result. Keep these warnings visible for the finished-map memory/publish pass; do not reopen asset selection merely because Power Tools reports them.
 - Health scan saw approximately **504 project files / 2.60 GB**.
 - Representative new assets were loaded individually inside UEFN with no unreadable properties/errors:
   - Factory crane
@@ -25,6 +26,18 @@ Latest live UEFN checks:
   - Garage workbench
   - Industrial pipe valve
   - Warning-sign material instance
+
+## Physical Fit — Verified
+
+Read-only live UEFN bounds/collision probes are complete. Exact measurements and gameplay implications are recorded in `PHYSICAL_FIT_VERIFICATION.md`.
+
+Durable selection results:
+- Factory crane assembly remains the primary hero at approximately **5.685 × 26.895 × 5.448 m** shared-pivot envelope. Preserve shared pivots; the cable has no simple collision and extends below the main crane's lowest bound, so do not ground the assembly from the cable minimum.
+- Garage shell/roof remains the Ruined Workshop anchor at approximately **16.541 × 9.375 × 7.970 m**. Roof access is intentional/rare, not default traversal.
+- Box Truck and Campervan remain approved full-cover vehicle forms; each uses one convex simple-collision primitive, so do not depend on fine wheel-well/undercarriage traversal.
+- Factory containers remain approved at approximately **6.0 × 2.8 × 3.0 m**. `SM_Container01_01` uses one box primitive and is preferred for routine gameplay cover; `_02` uses one convex primitive as the visual variant.
+- Representative Scrapyard metal catwalk modules fit the +4–6 m traversal budget and remain the primary elevated kit. Wooden catwalks remain rare Wreck Yard accents.
+- No physical-fit result requires replacement, reserve intake, or promotion of read-only referenced content.
 
 ## Mounted Referenced Content
 
@@ -46,6 +59,8 @@ The project contains **14 approved Fab reference files**:
 - Metal Manhole Cover
 
 The previously mounted OldWest Vol. 6 reference remains outside the active project.
+
+Referenced Content may remain read-only when Scrapline only needs to place/use it. Do not duplicate or promote a referenced pack merely to make it editable. Promote only an individual asset that implementation proves must be modified.
 
 ## Visual Authority
 
@@ -97,7 +112,9 @@ Roles:
 Primary central landmark:
 `/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_Crane01`
 
-Compose it with the verified cabin/cable pieces and surrounding scrap/industrial cover. It must not become an uncontested full-map perch.
+Real staged captures show that the hero crane is a long horizontal industrial gantry/bridge assembly, not a tall skyline construction crane.
+
+Compose it with `SM_CraneCabin01` and `SM_CraneCable01` while preserving the assembly's original shared pivots. Do not independently ground those parts. Use the gantry's long horizontal silhouette to frame central movement and keep its playable access controlled so it does not become an uncontested full-map elevated lane.
 
 Secondary hero/support anchors:
 - `SM_RecyclingMachine01`
@@ -141,6 +158,8 @@ Approved meshes:
 
 Role: Ruined Workshop structure, repair/workbench dressing, shelving, traversal pieces, and workshop identity.
 
+Real staged captures confirm that `SM_Garage_1` and `SM_Garage_1_roof` are a shared assembly. Preserve their original relative pivots when grounding or placing them.
+
 The donor's bundled ThirdPerson demo/gameplay content is explicitly **not approved** and was not migrated.
 
 ### Modular Industrial Pipe Set
@@ -163,21 +182,21 @@ Role: Machinery / Power Yard, service infrastructure, lane framing, sightline br
 - Live namespace: `/Scrapline/Imported/WarningSignsSource/`
 - Live inventory: **52 assets total / 12 selected MaterialInstanceConstants**
 
-Approved decal instances:
-- `MI_WarningSign_V1_11`
-- `MI_WarningSign_V1_12`
-- `MI_WarningSign_V1_14`
-- `MI_WarningSign_V1_30`
-- `MI_WarningSign_V1_31`
-- `MI_WarningSign_V1_34`
-- `MI_WarningSign_V1_35`
-- `MI_WarningSign_V1_36`
-- `MI_WarningSign_V1_37`
-- `MI_WarningSign_V1_40`
-- `MI_WarningSign_V1_51`
-- `MI_WarningSign_V1_54`
+Approved decal instances and verified visual meaning:
+- `MI_WarningSign_V1_11` — biohazard
+- `MI_WarningSign_V1_12` — radiation
+- `MI_WarningSign_V1_14` — POISON / skull
+- `MI_WarningSign_V1_30` — TOXIC / skull
+- `MI_WarningSign_V1_31` — TOXIC / biohazard
+- `MI_WarningSign_V1_34` — biohazard symbol
+- `MI_WarningSign_V1_35` — radiation
+- `MI_WarningSign_V1_36` — left arrow
+- `MI_WarningSign_V1_37` — right arrow
+- `MI_WarningSign_V1_40` — CRASH
+- `MI_WarningSign_V1_51` — machinery/explosion-style hazard
+- `MI_WarningSign_V1_54` — skull-and-crossbones warning
 
-Selection rule: industrial hazard, toxic/biohazard/radiation/explosion, directional, and crash language only. The novelty filler from the 60-decal donor set is not part of the one-shot pool.
+Each selected instance has its matching Albedo, Normal, and ORM texture set present in the live project. Selection rule: industrial hazard, toxic/biohazard/radiation/explosion, directional, and crash language only. The novelty filler from the 60-decal donor set is not part of the one-shot pool.
 
 ## Existing Local Modifiable Fab Content
 
@@ -187,9 +206,12 @@ Verified under `Content/Fab`:
 - Gas Cylinder 03 / Propane Tank
 - Industrial Rubble
 - Rubble Pack
-- Warehouse Essentials Pack
 
-These remain approved production content. The oversized propane source textures are the only current Project Health warnings.
+These remain approved production content. The Propane/Gas Cylinder textures are the only current Power Tools Project Health warnings. Their current LOD/streaming configuration survived the 2026-09-30 UEFN local validation/content-cook path, but final cooked memory and Creator Portal publish validation remain required after the finished environment is assembled.
+
+### Warehouse Essentials — Quarantined
+
+Warehouse Essentials is physically present but is **not approved for the one-shot**. Current UEFN logs show its single live mesh requesting five missing material packages (`Materials/_1` through `Materials/_5`). Those packages do not exist in the live project. Do not use or repair this asset during the one-shot unless it is explicitly revalidated; no required Scrapline role depends on it.
 
 ## African Slate Quarry
 

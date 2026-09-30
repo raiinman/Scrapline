@@ -1,0 +1,1038 @@
+[
+  {
+    "label": "SL_Boundary_North_1",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -6912,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_2",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -6400,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_3",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -5888,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_4",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -5376,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_5",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -4864,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_6",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -4352,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_7",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -3840,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_8",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -3328,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_9",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -2816,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_10",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -2304,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_11",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -1792,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_12",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -1280,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_13",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -768,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_14",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -256,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_15",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 256,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_16",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 768,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_17",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 1280,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_18",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 1792,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_19",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 2304,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_20",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 2816,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_21",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 3328,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_22",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 3840,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_23",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 4352,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_24",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 4864,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_25",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 5376,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_26",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 5888,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_27",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 6400,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_North_28",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 6912,
+    "y": 7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_1",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -6912,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_2",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -6400,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_3",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -5888,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_4",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -5376,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_5",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -4864,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_6",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -4352,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_7",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -3840,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_8",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -3328,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_9",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -2816,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_10",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -2304,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_11",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -1792,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_12",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -1280,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_13",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -768,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_14",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -256,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_15",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 256,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_16",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 768,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_17",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 1280,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_18",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 1792,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_19",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 2304,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_20",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 2816,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_21",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 3328,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_22",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 3840,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_23",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 4352,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_24",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 4864,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_25",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 5376,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_26",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 5888,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_27",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 6400,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_South_28",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 6912,
+    "y": -7000,
+    "yaw": 0
+  },
+  {
+    "label": "SL_Boundary_East_1",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -6912,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_2",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -6400,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_3",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -5888,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_4",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -5376,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_5",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -4864,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_6",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -4352,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_7",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -3840,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_8",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -3328,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_9",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -2816,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_10",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -2304,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_11",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -1792,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_12",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -1280,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_13",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -768,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_14",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": -256,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_15",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 256,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_16",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 768,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_17",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 1280,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_18",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 1792,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_19",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 2304,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_20",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 2816,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_21",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 3328,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_22",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 3840,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_23",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 4352,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_24",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 4864,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_25",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 5376,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_26",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 5888,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_27",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 6400,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_East_28",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": 7000,
+    "y": 6912,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_1",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -6912,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_2",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -6400,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_3",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -5888,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_4",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -5376,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_5",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -4864,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_6",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -4352,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_7",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -3840,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_8",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -3328,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_9",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -2816,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_10",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -2304,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_11",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -1792,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_12",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -1280,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_13",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -768,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_14",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": -256,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_15",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 256,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_16",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 768,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_17",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 1280,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_18",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 1792,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_19",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 2304,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_20",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 2816,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_21",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 3328,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_22",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 3840,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_23",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 4352,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_24",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 4864,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_25",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 5376,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_26",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 5888,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_27",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 6400,
+    "yaw": 90
+  },
+  {
+    "label": "SL_Boundary_West_28",
+    "asset_path": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big",
+    "x": -7000,
+    "y": 6912,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_North_-3500_0",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -3500,
+    "y": 6000,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_North_-3500_1",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -3500,
+    "y": 6512,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_North_-3500_2",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -3500,
+    "y": 7024,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_North_0_0",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 0,
+    "y": 6000,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_North_0_1",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 0,
+    "y": 6512,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_North_0_2",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 0,
+    "y": 7024,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_North_3500_0",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 3500,
+    "y": 6000,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_North_3500_1",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 3500,
+    "y": 6512,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_North_3500_2",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 3500,
+    "y": 7024,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_South_-3500_0",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -3500,
+    "y": -6000,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_South_-3500_1",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -3500,
+    "y": -6512,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_South_-3500_2",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -3500,
+    "y": -7024,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_South_0_0",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 0,
+    "y": -6000,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_South_0_1",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 0,
+    "y": -6512,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_South_0_2",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 0,
+    "y": -7024,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_South_3500_0",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 3500,
+    "y": -6000,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_South_3500_1",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 3500,
+    "y": -6512,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_South_3500_2",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 3500,
+    "y": -7024,
+    "yaw": 90
+  },
+  {
+    "label": "SL_FlankBreak_East_-3500_0",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 6000,
+    "y": -3500,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_East_-3500_1",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 6512,
+    "y": -3500,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_East_-3500_2",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 7024,
+    "y": -3500,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_East_0_0",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 6000,
+    "y": 0,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_East_0_1",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 6512,
+    "y": 0,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_East_0_2",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 7024,
+    "y": 0,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_East_3500_0",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 6000,
+    "y": 3500,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_East_3500_1",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 6512,
+    "y": 3500,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_East_3500_2",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": 7024,
+    "y": 3500,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_West_-3500_0",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -6000,
+    "y": -3500,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_West_-3500_1",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -6512,
+    "y": -3500,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_West_-3500_2",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -7024,
+    "y": -3500,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_West_0_0",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -6000,
+    "y": 0,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_West_0_1",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -6512,
+    "y": 0,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_West_0_2",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -7024,
+    "y": 0,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_West_3500_0",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -6000,
+    "y": 3500,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_West_3500_1",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -6512,
+    "y": 3500,
+    "yaw": 0
+  },
+  {
+    "label": "SL_FlankBreak_West_3500_2",
+    "asset_path": "/0200c1dd-4cc5-5773-26b2-3c971b4eaa4f/SCBK_metal_wall_same_sides_L0.SCBK_metal_wall_same_sides_L0",
+    "x": -7024,
+    "y": 3500,
+    "yaw": 0
+  }
+]

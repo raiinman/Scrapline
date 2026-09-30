@@ -11,7 +11,7 @@ The goal is a believable, compact industrial scrapyard arena built directly from
 - Arena center: approximately **X=0, Y=0**.
 - Primary playable boundary: approximately **-7,000 to +7,000 cm** on X and Y.
 - Scenic / landscape boundary: approximately **-8,500 to +8,500 cm**.
-- Treat coordinates in this document as planning anchors. Final transforms may move to fit real asset dimensions and collision.
+- Treat district coordinates here as planning anchors. Major-asset transforms must stay within the placement/orientation tolerances in `SPATIAL_CONTRACT.md`; only small terrain-fit and micro-cover adjustments may move freely within those contracts.
 
 ## Heightmap / Landscape Baseline
 
@@ -121,18 +121,11 @@ Every high position must be exposed to multiple counter-angles and must not over
 
 ## Central Landmark
 
-The center requires one large industrial silhouette selected from assets actually available in Scrapline.
+The central landmark is **already selected**: the Factory shared-pivot gantry assembly led by `SM_Crane01`, with `SM_CraneCabin01` and `SM_CraneCable01`.
 
-Preferred classes:
-- damaged crane,
-- gantry,
-- processing machine,
-- heavy mechanical assembly,
-- equivalent industrial hero structure.
+Place and orient it exactly within the tolerances in `SPATIAL_CONTRACT.md`. Preserve shared pivots and ground from the structural crane rather than the lower cable bound.
 
-Build supporting wreckage and cover around it rather than leaving it isolated on an empty floor.
-
-The landmark should be recognizable from most districts but should not itself become an unbeatable firing perch.
+Build lower supporting wreckage/machinery/cover around it without closing both ends. The landmark should be recognizable from most districts but must not become a safe full-length elevated firing perch.
 
 ## Candidate Spawn Bands
 
@@ -152,7 +145,7 @@ Before placing environment art:
 
 1. Inventory the assets actually present in the Scrapline project using Unreal MCP and Power Tools.
 2. Group usable assets by architecture, vehicles/wrecks, barriers, machinery, debris, utilities, signage, VFX, and landmarks.
-3. Choose a coherent subset for each district.
+3. Use the frozen district/major-anchor assignments from `SPATIAL_CONTRACT.md` and `ENVIRONMENT_COMPOSITION_BOARD.md`; choose only approved secondary/micro variants inside those assignments.
 4. Prefer real asset dimensions over arbitrary scaling.
 5. Do not create visible substitute boxes when a suitable asset is available.
 6. Keep unrelated visual styles out even if they are technically available.
@@ -162,14 +155,14 @@ Before placing environment art:
 1. Inspect project assets and identify the strongest asset families.
 2. Generate the 253 x 253 terrain heightmap and import/create the Landscape.
 3. Establish the central basin, perimeter shoulders, district pads, drainage cuts, and service-road contours.
-4. Select and place the central landmark composition.
+4. Place the frozen Factory gantry assembly using the anchor/orientation test in `SPATIAL_CONTRACT.md`.
 5. Establish each district with its largest structures first.
 6. Create center routes, cross-district links, and the broken outer flank route.
 7. Establish vertical routes and counter-angles.
 8. Add hard cover and sightline blockers.
 9. Place provisional spawn devices and validate their visibility relationships.
 10. Add secondary props, debris, utilities, signage, and restrained VFX.
-11. Establish readable lighting and atmospheric treatment.
+11. Establish the frozen readable overcast/hazy late-afternoon daylight treatment from `SPATIAL_CONTRACT.md`; tune exposure/intensity for gameplay readability rather than selecting a different time-of-day concept.
 12. Run collision, asset, dependency, material/texture, and performance-oriented audits.
 13. Only after the environment is coherent, wire the final gameplay devices and Verse behavior.
 

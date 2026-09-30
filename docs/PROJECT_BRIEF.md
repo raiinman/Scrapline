@@ -2,21 +2,33 @@
 
 ## Status
 
-**Final pre-build / asset manifest frozen.**
+**Feature Freeze v2 frozen for handoff — Armory mechanic compile-clean; final presentation/runtime acceptance assigned to GPT-6.1 Sol build/post-build.**
 
-The macro map design, terrain specification, first-alpha gameplay baseline, UEFN/Codex toolchain, and production asset pool are locked or verified. Selective reserve/donor intake is complete and the intake stop rule has fired.
+The macro map design, spatial contract, terrain specification, implementation toolchain, physical-fit verification, and production asset pool remain frozen. The user reopened only the gameplay layer before construction to add the Scrapline Armory / match economy defined in `ARMORY_ECONOMY_SPEC.md`; that layer is now frozen and GPT-6.1 Sol construction is authorized.
 
-Remaining gates:
-- generate and validate the small Verse gameplay package,
-- finalize the Codex one-shot prompt with frozen asset paths/device wiring,
-- execute the primary build,
-- test and repair after the primary pass unless a blocking runtime/editor issue appears earlier.
+The previously validated native package remains the control for spawn selection, elimination scoring, match end, JIP participation, health/shields, 50-point elimination sustain, movement, destruction, and inventory cleanup. A narrowly scoped custom Verse layer is now authorized only for match-local Scrap, buy/sell UI, adaptive next-life loadouts, catalog configuration, Armory phase gating, JIP first-buy handling, and cleanup.
+
+Current gate state:
+- Armory economy/authority contract: frozen,
+- live-compiler-clean Verse/UMG scaffold: synchronized,
+- contradiction/confusion closeout: complete,
+- construction authorization: **granted 2026-09-30**,
+- active worker: **GPT-6.1 Sol** using `SOL61_ONE_SHOT_PROMPT.md`.
+
+Still closed unless separately justified:
+- broad asset acquisition,
+- synthetic image generation as an environment substitute,
+- redesign of the frozen spatial contract.
+
+Not a pre-construction blocker:
+- final Armory UMG visual polish,
+- full 19-spawn/JIP/leave/multiplayer economy acceptance testing. Those are now GPT-6.1 Sol construction/post-build responsibilities.
 
 ## Objective
 
 Create a simple, polished Free For All map in UEFN using a deliberately curated set of real Fab/UEFN assets.
 
-Scrapline is intentionally testing an asset-first one-shot workflow: research and lock the environment kit first, then give Codex a sufficiently complete specification to assemble the playable map without falling back to blank boxes or improvised placeholder art.
+Scrapline is intentionally testing an asset-first one-shot workflow: research and lock the environment kit and spatial skeleton first, then give the implementation agent a sufficiently explicit specification to assemble the playable map without redesigning the arena or falling back to blank boxes/improvised placeholder art.
 
 ## Core Experience
 
@@ -74,17 +86,37 @@ Completed:
 3. Selectively import useful FBX and Unreal Engine donor content.
 4. Re-scan the live asset pool, choose the hero landmark, and freeze the asset manifest.
 
-Next:
-5. Generate and validate the Verse gameplay package through UEFN Central / Omni-Verse.
-6. Assemble the final implementation specification for Codex.
-7. Execute the one-shot build.
-8. Test after the primary build pass unless a blocking editor/runtime failure requires earlier validation.
+Completed:
+5. Resolve and validate the native first-alpha control package.
+6. Complete and audit the original UEFN Central generator experiment; reject its five-file architecture.
+7. Freeze the Scrapline Armory / match-economy design in `ARMORY_ECONOMY_SPEC.md`.
+
+Completed for handoff:
+8. Build the smallest Armory candidate and validate current APIs/live UEFN compilation.
+9. Integrate the Armory wiring plus scalable UMG scaffold into the handoff.
+
+Active before Astra:
+10. Complete the contradiction/confusion closeout with final Armory presentation/runtime validation explicitly delegated to Astra.
+
+Then — gated on explicit user authorization:
+11. Execute the one-shot build, including final `WBP_ScraplineArmory` implementation/polish.
+12. Run the full Armory lifecycle/economy/multiplayer acceptance matrix after the real devices/spawns exist.
 
 ## Remaining Pre-Build Decisions
 
-- choose final lighting/time-of-day treatment during environment composition
-- refine exact spawn transforms after structures and cover are placed
-- generate/validate the Verse package
-- finalize and approve the Codex one-shot build prompt
+The map skeleton no longer has open design decisions.
+
+Remaining execution preparation:
+- keep the first-release catalog/index contract documented,
+- update the Astra handoff with the current compile-clean Armory scaffold and explicit UMG presentation task,
+- close the final contradiction/confusion audit,
+- obtain explicit user authorization before the Astra one-shot begins.
+
+During Astra construction/post-build:
+- finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md`,
+- resolve final spawn transforms **inside the frozen spawn regions** after real cover/collision exists,
+- run the full Armory lifecycle/economy/multiplayer acceptance matrix.
+
+Lighting/time-of-day concept, hero landmark, district placement, route network, verticality budget, major traversal rules, and major asset roles remain frozen in `SPATIAL_CONTRACT.md`.
 
 Do **not** reopen broad Fab/library acquisition unless implementation proves a specific frozen category is unusable.

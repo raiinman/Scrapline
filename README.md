@@ -16,25 +16,36 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 
 ## Current Stage
 
-**Asset manifest frozen for the one-shot.**
+**Design/asset/gameplay handoff frozen; GPT-6.1 Sol construction explicitly authorized. Active prompt: `docs/SOL61_ONE_SHOT_PROMPT.md`.**
 
-The macro map design, terrain specification, first-alpha gameplay baseline, UEFN/Codex toolchain, and production environment kit are now locked or verified. The final live curation pass added Factory machinery/hero pieces, two vehicle silhouettes, Garage/workshop assets, a complete modular pipe vocabulary, and a restrained industrial warning-decal subset.
+The macro map design, spatial skeleton, terrain specification, first-alpha gameplay baseline, implementation toolchain, production environment kit, grounded real-asset visual pass, physical-fit verification, and gameplay-device package are locked or verified. `SPATIAL_CONTRACT.md` freezes major anchors, orientation, routes, verticality, spawn regions, and lighting intent.
 
-The next gates are Verse generation/validation, finalizing the Codex one-shot handoff, executing the primary build, and then testing/repair.
+The curated real-source visual authority is now committed under `Resources/Reference/RealAssets/`, and the frozen terrain heightmap is committed under `Resources/Terrain/`. The active Sol Gauntlet requires actual image inspection before environment construction.
+
+The native gameplay package remains the control for spawn selection, scoring, match end, sustain, movement, and destruction. Feature Freeze v2 adds a narrow compile-clean Armory Verse layer plus the `WBP_ScraplineArmory` UMG scaffold for match-local Scrap, adaptive per-life loadouts, JIP buy handling, and a scalable seasonal catalog. Final Armory visual polish and full lifecycle/multiplayer acceptance testing are assigned to GPT-6.1 Sol during the authorized construction/post-build pass. The rejected UEFN Central five-file package remains evidence only.
 
 ## Documentation
 
 - `docs/PROJECT_BRIEF.md` — product intent and non-negotiable build rules
 - `docs/ASSET_MANIFEST.md` — **frozen** approved asset sources and implementation-visible paths
 - `docs/ASSET_GAP_MATRIX.md` — final required-family coverage and closed intake decision
+- `docs/VERSE_GAMEPLAY_INTEGRATION.md` — **native authority + Armory Verse integration contract, device wiring, and compiler record**
+- `docs/ARMORY_ECONOMY_SPEC.md` — frozen Scrap economy and lifecycle contract
+- `docs/ARMORY_UI_SPEC.md` — approved scalable Armory UX and GPT-6.1 Sol presentation task
+- `docs/SPATIAL_CONTRACT.md` — **frozen one-shot spatial skeleton and placement authority**
+- `docs/ASTRA_CONFUSION_AUDIT.md` — historical ambiguity attack/closeout; active execution uses GPT-6.1 Sol
+- `docs/ENVIRONMENT_COMPOSITION_BOARD.md` — district-level real-asset art/composition guidance
+- `docs/REAL_ASSET_VISUAL_STUDIES.md` — grounded visual-study findings and read-only referenced-content rule
+- `docs/PHYSICAL_FIT_VERIFICATION.md` — verified local bounds, collision, LOD/Nanite, gameplay fit, and restrictions
 - `docs/MAP_DESIGN.md` — locked macro combat-space and layout direction
 - `docs/TERRAIN_ENVIRONMENT_SPEC.md` — implementation-facing terrain and environment plan
 - `docs/GAMEPLAY_SPEC.md` — first-alpha FFA gameplay baseline
-- `docs/UEFN_CENTRAL_PROMPT.md` — prepared Verse Project Generator request
+- `docs/UEFN_CENTRAL_GENERATOR_RESULT.md` — full completed Project Generator capture, independent audit, and rejection decision
+- `docs/UEFN_CENTRAL_PROMPT.md` — exact generator request/control overlay retained for provenance and future gap-specific reuse
 - `docs/TOOLING.md` — approved Codex/UEFN build toolchain and activation checklist
 - `docs/ASSET_PIPELINE.md` — referenced/FBX/donor-project intake workflow and safety rules
 - `docs/FAB_LIBRARY_AUDIT.md` — 160-product ownership audit and final intake disposition
 - `docs/ASSET_RECOVERY.md` — recovered Fab payloads and repaired UE 5.6 staging workflow
-- `docs/BUILD_READINESS.md` — current one-shot readiness snapshot
-- `docs/ONE_SHOT_PROMPT_DRAFT.md` — finalize after Verse generation/validation
+- `docs/BUILD_READINESS.md` — current pre-Astra readiness snapshot
+- `docs/ONE_SHOT_PROMPT_DRAFT.md` — hardened Astra handoff, ready for explicit one-shot authorization
 - `AGENTS.md` — repository-wide DOX contract
