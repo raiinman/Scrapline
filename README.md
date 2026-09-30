@@ -16,18 +16,20 @@ Build a polished, immediately playable FFA arena in one focused implementation p
 
 ## Current Stage
 
-**Design/asset/gameplay integration complete; Astra construction ready for explicit authorization and still gated.**
+**Design/asset/gameplay handoff frozen; Astra construction ready for explicit user authorization.**
 
 The macro map design, spatial skeleton, terrain specification, first-alpha gameplay baseline, implementation toolchain, production environment kit, grounded real-asset visual pass, physical-fit verification, and gameplay-device package are locked or verified. `SPATIAL_CONTRACT.md` freezes major anchors, orientation, routes, verticality, spawn regions, and lighting intent.
 
-The validated first-alpha gameplay layer is native-device only: Island Settings + 19 Player Spawn Pads + `IG_Loadout` Item Granter + `TR_Eliminations` Tracker. The agreed UEFN Central Project Generator experiment is complete; its five-file result was marked **Not validated** and rejected after direct comparison with the native control. The live UEFN Verse build remains clean with no production custom Verse files. Astra one-shot construction, synthetic image generation, bulk reserve import, and irreversible map construction remain gated until explicitly authorized.
+The native gameplay package remains the control for spawn selection, scoring, match end, sustain, movement, and destruction. Feature Freeze v2 adds a narrow compile-clean Armory Verse layer plus the `WBP_ScraplineArmory` UMG scaffold for match-local Scrap, adaptive per-life loadouts, JIP buy handling, and a scalable seasonal catalog. Final Armory visual polish and full lifecycle/multiplayer acceptance testing are explicitly deferred to Astra during the real construction/post-build pass. The rejected UEFN Central five-file package remains evidence only. Astra does not start automatically; explicit user authorization is required.
 
 ## Documentation
 
 - `docs/PROJECT_BRIEF.md` — product intent and non-negotiable build rules
 - `docs/ASSET_MANIFEST.md` — **frozen** approved asset sources and implementation-visible paths
 - `docs/ASSET_GAP_MATRIX.md` — final required-family coverage and closed intake decision
-- `docs/VERSE_GAMEPLAY_INTEGRATION.md` — **validated native gameplay package, exact device settings/wiring, and compiler record**
+- `docs/VERSE_GAMEPLAY_INTEGRATION.md` — **native authority + Armory Verse integration contract, device wiring, and compiler record**
+- `docs/ARMORY_ECONOMY_SPEC.md` — frozen Scrap economy and lifecycle contract
+- `docs/ARMORY_UI_SPEC.md` — approved scalable Armory UX and Astra presentation task
 - `docs/SPATIAL_CONTRACT.md` — **frozen one-shot spatial skeleton and placement authority**
 - `docs/ASTRA_CONFUSION_AUDIT.md` — ambiguity attack/closeout for the Astra handoff
 - `docs/ENVIRONMENT_COMPOSITION_BOARD.md` — district-level real-asset art/composition guidance

@@ -2,23 +2,28 @@
 
 ## Status
 
-**Feature Freeze v2 active — Armory/economy design frozen; implementation validation pending.**
+**Feature Freeze v2 frozen for handoff — Armory mechanic compile-clean; final presentation/runtime acceptance assigned to Astra build/post-build.**
 
 The macro map design, spatial contract, terrain specification, implementation toolchain, physical-fit verification, and production asset pool remain frozen. The user reopened only the gameplay layer before Astra construction to add the Scrapline Armory / match economy defined in `ARMORY_ECONOMY_SPEC.md`.
 
 The previously validated native package remains the control for spawn selection, elimination scoring, match end, JIP participation, health/shields, 50-point elimination sustain, movement, destruction, and inventory cleanup. A narrowly scoped custom Verse layer is now authorized only for match-local Scrap, buy/sell UI, adaptive next-life loadouts, catalog configuration, Armory phase gating, JIP first-buy handling, and cleanup.
 
 Current gate:
-- implement and live-validate the Armory candidate,
-- rerun the Astra contradiction/confusion closeout,
-- then obtain explicit user authorization before Astra executes the primary construction pass.
+- keep the Armory economy/authority contract frozen,
+- keep the current live-compiler-clean Verse/UMG scaffold synchronized in the handoff,
+- complete the contradiction/confusion closeout with the UI work explicitly assigned to Astra,
+- obtain explicit user authorization before Astra executes the primary construction pass.
 
-Still gated:
+Still gated until that authorization:
 - Astra environment construction,
 - irreversible map construction,
 - broad asset acquisition,
 - synthetic image generation,
 - redesign of the frozen spatial contract.
+
+Not a pre-Astra blocker:
+- final Armory UMG visual polish,
+- full 19-spawn/JIP/leave/multiplayer economy acceptance testing. Those are now Astra construction/post-build responsibilities.
 
 ## Objective
 
@@ -87,25 +92,31 @@ Completed:
 6. Complete and audit the original UEFN Central generator experiment; reject its five-file architecture.
 7. Freeze the Scrapline Armory / match-economy design in `ARMORY_ECONOMY_SPEC.md`.
 
+Completed for handoff:
+8. Build the smallest Armory candidate and validate current APIs/live UEFN compilation.
+9. Integrate the Armory wiring plus scalable UMG scaffold into the handoff.
+
 Active before Astra:
-8. Build the smallest Armory candidate, validate current APIs in live UEFN, and run the required lifecycle/economy tests.
-9. Integrate the verified Armory wiring into the Astra handoff and rerun the contradiction/confusion audit.
+10. Complete the contradiction/confusion closeout with final Armory presentation/runtime validation explicitly delegated to Astra.
 
 Then — gated on explicit user authorization:
-10. Execute the one-shot build.
-11. Test after the primary build pass unless a blocking editor/runtime failure requires earlier validation.
+11. Execute the one-shot build, including final `WBP_ScraplineArmory` implementation/polish.
+12. Run the full Armory lifecycle/economy/multiplayer acceptance matrix after the real devices/spawns exist.
 
 ## Remaining Pre-Build Decisions
 
 The map skeleton no longer has open design decisions.
 
 Remaining execution preparation:
-- implement and live-validate the Armory/economy candidate from `ARMORY_ECONOMY_SPEC.md`,
-- lock the first-release catalog entries and Item Granter indexes,
-- update `VERSE_GAMEPLAY_INTEGRATION.md` and `ONE_SHOT_PROMPT_DRAFT.md` with verified production wiring,
-- rerun the final contradiction/confusion audit,
-- resolve final spawn transforms **inside the frozen spawn regions** after real cover/collision exists,
+- keep the first-release catalog/index contract documented,
+- update the Astra handoff with the current compile-clean Armory scaffold and explicit UMG presentation task,
+- close the final contradiction/confusion audit,
 - obtain explicit user authorization before the Astra one-shot begins.
+
+During Astra construction/post-build:
+- finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md`,
+- resolve final spawn transforms **inside the frozen spawn regions** after real cover/collision exists,
+- run the full Armory lifecycle/economy/multiplayer acceptance matrix.
 
 Lighting/time-of-day concept, hero landmark, district placement, route network, verticality budget, major traversal rules, and major asset roles remain frozen in `SPATIAL_CONTRACT.md`.
 

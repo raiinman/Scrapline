@@ -1,6 +1,6 @@
 # Scrapline — Astra One-Shot Prompt Draft
 
-> **BLOCKED — DO NOT EXECUTE.** Feature Freeze v2 added the Scrapline Armory / match economy after the previous native-only closeout. The spatial/design/asset freeze remains valid, but the Astra handoff is not executable until the Armory candidate passes live UEFN compile/lifecycle validation and the contradiction/confusion audit returns to PASS. The rejected UEFN Central five-file package remains evidence only and must not be imported.
+> **READY FOR EXPLICIT USER AUTHORIZATION — DO NOT EXECUTE AUTOMATICALLY.** Feature Freeze v2 added the Scrapline Armory / match economy after the previous native-only closeout. The spatial/design/asset freeze remains valid. The Armory mechanic and Verse/UMG scaffold are compile-clean enough for handoff; final Armory presentation and the full runtime/multiplayer acceptance matrix are explicit Astra construction/post-build responsibilities. The rejected UEFN Central five-file package remains evidence only and must not be imported.
 
 ## Mission
 
@@ -23,12 +23,13 @@ Read these before changing anything:
 7. `docs/ENVIRONMENT_COMPOSITION_BOARD.md`
 8. `docs/PHYSICAL_FIT_VERIFICATION.md`
 9. `docs/ARMORY_ECONOMY_SPEC.md` — **Armory/economy authority**
-10. `docs/GAMEPLAY_SPEC.md`
-11. `docs/VERSE_GAMEPLAY_INTEGRATION.md` — **gameplay/device-wiring authority**
-12. `docs/ASSET_MANIFEST.md` — **asset-approval authority**
-13. `docs/ASSET_PIPELINE.md`
-14. `docs/TOOLING.md`
-15. `docs/BUILD_READINESS.md`
+10. `docs/ARMORY_UI_SPEC.md` — **Armory presentation/navigation authority**
+11. `docs/GAMEPLAY_SPEC.md`
+12. `docs/VERSE_GAMEPLAY_INTEGRATION.md` — **gameplay/device-wiring authority**
+13. `docs/ASSET_MANIFEST.md` — **asset-approval authority**
+14. `docs/ASSET_PIPELINE.md`
+15. `docs/TOOLING.md`
+16. `docs/BUILD_READINESS.md`
 
 If softer or older prose conflicts with `SPATIAL_CONTRACT.md`, the spatial contract wins for layout, orientation, route, verticality, and placement tolerance. Do not use ambiguity as permission to redesign.
 
@@ -194,15 +195,17 @@ Tune exposure/intensity for player readability.
 11. Place spawn devices inside the frozen candidate regions and validate LOS/cover.
 12. Add secondary props, debris, utilities, signs, restrained VFX, and cross-district Scrapyard glue.
 13. Apply the frozen daylight treatment and tune readability.
-14. Wire only the **live-validated** Armory/native gameplay package from `ARMORY_ECONOMY_SPEC.md` and `VERSE_GAMEPLAY_INTEGRATION.md`. Do not execute this step while those documents still mark Armory validation pending.
-15. Run health/collision/dependency/material/performance checks.
-16. Save and perform the DOX closeout.
+14. Integrate the frozen Armory/native gameplay package from `ARMORY_ECONOMY_SPEC.md` and `VERSE_GAMEPLAY_INTEGRATION.md`; preserve native score/end/spawn authority.
+15. Finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md`, using the existing UMG/Verse event scaffold when useful and replacing it when cleaner.
+16. Run the Armory lifecycle/economy/JIP/leave/multiplayer acceptance matrix against the real level/devices.
+17. Run health/collision/dependency/material/performance checks.
+18. Save and perform the DOX closeout.
 
 If the skeleton fails an acceptance check, fix it before proceeding to micro-props, VFX, lighting polish, or gameplay wiring.
 
 ## Gameplay — Feature Freeze v2
 
-**Do not execute this section while Armory validation is pending.** The final implementation must match the live-validated package recorded in `ARMORY_ECONOMY_SPEC.md` and `VERSE_GAMEPLAY_INTEGRATION.md`.
+Use the compile-clean Armory scaffold as the implementation baseline, but treat final UMG presentation and runtime acceptance as part of this Astra pass. The final implementation must match the frozen authority/economy contracts in `ARMORY_ECONOMY_SPEC.md`, `ARMORY_UI_SPEC.md`, and `VERSE_GAMEPLAY_INTEGRATION.md`.
 
 Locked player-facing target:
 - FFA.
@@ -277,13 +280,21 @@ The currently frozen candidate architecture is:
 
 The old fixed `IG_Loadout` + direct Spawn Pad → Grant Item path is retired only after the Armory implementation validates.
 
-### Validation prerequisite
+### Astra Armory completion task
 
-Before this prompt may become executable, the accepted Armory implementation must:
-- compile with live Epic UEFN `ValkyrieToolset.VerseToolset.BuildAll` at zero diagnostics,
-- pass the opening-phase, rebuy, next-loadout, recovery, JIP, leave, duplicate-subscription, invalid-catalog, simultaneous-elimination, and 12/16-player tests in `ARMORY_ECONOMY_SPEC.md`,
-- document exact catalog Item Granter indexes and editor wiring,
-- preserve Island Settings as sole score/end authority.
+The current Armory logic/event scaffold is a starting point, not a visual-finish requirement.
+
+During this build Astra must:
+- preserve Island Settings as sole score/end authority and native Player Spawn Pads as sole spawn-selection authority,
+- keep the narrow Armory Verse ownership boundary,
+- finish or rebuild `WBP_ScraplineArmory` to the approved scalable browser in `ARMORY_UI_SPEC.md`,
+- use category tabs + an approximately 8-card paged weapon browser + a separate loadout/cart rail,
+- avoid the earlier oversized pure-Verse/debug menu and avoid dominant default Fortnite pill-button presentation,
+- preserve UEFN validation requirements; do not use restricted K2 Blueprint graph content,
+- if Custom Button styling is constrained, keep Epic's required content class and use validator-safe transparent hitboxes over Scrapline-owned flat card surfaces,
+- validate mouse/controller interaction, Ready, Re-buy, Clear, category/page navigation, Next Loadout, JIP, respawn, leave cleanup, duplicate subscriptions, and economy bounds,
+- compile accepted Verse with live Epic UEFN at zero diagnostics,
+- document exact final catalog Item Granter indexes and editor wiring.
 
 The rejected UEFN Central five-file package remains comparison evidence only and must not be imported.
 
@@ -305,7 +316,9 @@ The primary pass is complete only when:
 - verticality respects the catwalk/perch budget,
 - no unintended dominant Garage-roof or gantry-top position exists,
 - spawn devices remain distributed through the frozen regions,
-- gameplay/economy wiring matches the **live-validated** Armory/native package,
+- gameplay/economy wiring matches the frozen Armory/native authority contract,
+- `WBP_ScraplineArmory` meets `ARMORY_UI_SPEC.md` and passes the required in-game interaction checks,
+- the Armory lifecycle/economy/multiplayer acceptance matrix passes,
 - accepted Armory Verse code compiles with zero live UEFN diagnostics,
 - the level saves cleanly,
 - available health/dependency/material checks show no blocking errors.

@@ -2,7 +2,7 @@
 
 ## Status
 
-**Feature Freeze v2 locked; Armory implementation validation pending.**
+**Feature Freeze v2 locked for Astra handoff; final Armory presentation/runtime acceptance is part of the Astra build/post-build pass.**
 
 These values are derived from the locked ~140 m × 140 m arena and 12-player density target. Testing may tune economy numbers later, but implementation must use the frozen alpha rules rather than inventing new mechanics.
 

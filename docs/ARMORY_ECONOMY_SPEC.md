@@ -2,17 +2,20 @@
 
 ## Status
 
-**FEATURE FREEZE V2 — design locked; live UEFN implementation validation pending.**
+**FEATURE FREEZE V2 — design locked; compile-clean implementation scaffold established; final runtime validation moves into Astra build/post-build.**
 
 The Armory is now a core Scrapline mechanic. It intentionally reopens a **small custom Verse surface** because the native fixed-loadout control case cannot provide the desired per-player buy/sell economy and adaptive next-life loadouts cleanly.
 
 This change does **not** reopen map design. `SPATIAL_CONTRACT.md` remains authoritative for terrain, districts, routes, spawn regions, major anchors, verticality, lighting, and environment construction.
 
-Astra construction remains blocked until the Armory candidate:
-- compiles in live UEFN,
-- passes the lifecycle/economy test matrix in this document,
-- is reflected in `VERSE_GAMEPLAY_INTEGRATION.md` and `ONE_SHOT_PROMPT_DRAFT.md`,
-- and the Astra contradiction/confusion audit returns to PASS.
+The Armory mechanic is no longer a pre-Astra presentation blocker. The current candidate compiles in live UEFN and is documented as the implementation baseline.
+
+When Astra is explicitly authorized to build the level, Astra must:
+- preserve this frozen economy contract,
+- finish/repair the Armory presentation using `ARMORY_UI_SPEC.md`,
+- wire the final production devices,
+- run the lifecycle/economy test matrix in this document during/after construction,
+- keep the native control case available as the fallback if the custom layer proves materially less reliable.
 
 ## Core loop
 
@@ -201,10 +204,11 @@ Use `IG_Armory.GrantItemIndex(Agent, ItemIndex)` for specific catalog selections
 The Armory Verse may subscribe once to:
 - playspace PlayerAddedEvent,
 - playspace PlayerRemovedEvent,
-- each of the 19 SpawnedEvent sources,
 - EM_Economy EliminationEvent,
 - EM_Economy EliminatedEvent,
-- its own active UI widget events.
+- Armory input/UI widget events.
+
+**Do not bind the Armory to the 19 Player Spawn Pads.** Native Spawn Pads remain the sole spawn-selection authority. The Armory reacts to player/character readiness after native spawning rather than choosing or driving spawn pads.
 
 Do not subscribe per-respawn to `fort_character.EliminatedEvent` when `EM_Economy` already provides the required global eliminator/eliminated event surface.
 
@@ -300,4 +304,8 @@ Do not trust UEFN Central or standalone verse-lsp validation over the live Epic 
 
 The Armory design is frozen by this document.
 
-The implementation phase exits only after the candidate code/device wiring is live-compiler valid and the critical lifecycle/economy tests pass. Until then, **STOP before Astra environment construction**.
+The Armory design/architecture phase is complete enough for Astra handoff: the candidate code is live-compiler clean and the responsibility boundaries are frozen.
+
+Final production acceptance still requires the critical lifecycle/economy tests above, but those tests are now part of the **Astra construction/post-build validation pass**, when the real 19-spawn level and final UMG widget exist.
+
+Do not start Astra automatically; explicit user authorization is still required.

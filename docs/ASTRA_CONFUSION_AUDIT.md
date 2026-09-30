@@ -2,13 +2,15 @@
 
 ## Status
 
-**REOPENED — spatial/design audit still passes; Feature Freeze v2 gameplay audit pending.**
+**PASS FOR ASTRA HANDOFF — spatial/design/gameplay authority is unambiguous; final Armory presentation/runtime acceptance is an explicit Astra build task.**
 
 This audit asks a hostile question: *If Astra wanted to misunderstand the design while technically following the docs, where could it do so?*
 
-The original spatial/design ambiguity purge remains valid. Feature Freeze v2 intentionally changed the gameplay architecture by adding the Scrapline Armory / match economy, so the previous native-only gameplay closeout is no longer final. The new Armory design is frozen in `ARMORY_ECONOMY_SPEC.md`, but the audit cannot return to PASS until accepted Armory code/wiring is live-validated and synchronized into the one-shot handoff.
+The original spatial/design ambiguity purge remains valid. Feature Freeze v2 added the Scrapline Armory / match economy, and the authority boundary is now frozen across `ARMORY_ECONOMY_SPEC.md`, `ARMORY_UI_SPEC.md`, and `VERSE_GAMEPLAY_INTEGRATION.md`.
 
-This document does **not** authorize Astra construction.
+The current Armory Verse/UMG scaffold is compile-clean enough for handoff. Final `WBP_ScraplineArmory` presentation plus the full lifecycle/economy/multiplayer matrix are intentionally **not pre-Astra blockers**; they are explicit Astra construction/post-build acceptance tasks.
+
+This document does **not** itself authorize Astra construction. Explicit user authorization is still required.
 
 ## Authority created
 
@@ -51,6 +53,7 @@ The final Astra prompt must read it before the softer composition/design documen
 | Implementation freedom was not bounded | “Artistic judgment” could mutate combat geometry | Allowed micro choices and forbidden macro redesign are listed separately |
 | Handoff draft still spoke to Codex generically | Model-specific execution intent was unclear | One-shot draft now addresses Astra as the implementation model |
 | UEFN Central generated 16 spawn pads + five Verse files + Timer/End Game paths | Astra could mix a rejected architecture into the active package | Generator result remains quarantined. Feature Freeze v2 authorizes only the narrow Armory Verse boundary; 19 pads and Island Settings score/end authority remain frozen. |
+| Armory UI polish stalled in ChatGPT remote-editor mode | Astra could think the current scaffold is visually final, or conversely refuse to build until it is already perfect | `ARMORY_UI_SPEC.md` explicitly makes final UMG presentation an Astra construction task; the current `WBP_ScraplineArmory` is a scaffold/reference, not a visual-finish mandate. |
 
 ## Spatial decisions Astra no longer owns
 
@@ -94,9 +97,9 @@ No remaining matches were found in the audited handoff/design set.
 
 ## Feature Freeze v2 gameplay contradiction sweep
 
-The spatial/design checks above remain valid. The gameplay closeout is now deliberately **pending** until the Armory implementation is real rather than merely designed.
+The spatial/design checks above remain valid. The gameplay **authority/hand-off closeout passes**: the Armory mechanic, native-vs-custom ownership boundary, and UI responsibility are all explicit. Runtime production acceptance remains a build/post-build test obligation rather than a pre-Astra ambiguity.
 
-The next PASS must verify all of the following:
+Production acceptance during/after the Astra pass must verify all of the following:
 - playable/scenic envelopes and all frozen anchors remain unchanged,
 - all **19** spawn regions remain authoritative,
 - Armory Verse never chooses spawn coordinates or moves spawn pads,
@@ -116,30 +119,33 @@ The next PASS must verify all of the following:
 - Infinite Reserve Ammo = On / Infinite Magazine Ammo = Off remains explicit,
 - the rejected UEFN Central five-file package appears only as labeled evidence,
 - accepted Armory code compiles with live UEFN at zero diagnostics,
-- exact first-release catalog Item Granter indexes are documented,
-- `ONE_SHOT_PROMPT_DRAFT.md` no longer contains stale native-only fixed-loadout instructions.
+- exact first-release catalog Item Granter index contract is documented and final production indexes are verified during the Astra pass,
+- `ARMORY_UI_SPEC.md` makes final presentation/pagination/loadout-rail ownership an explicit Astra task,
+- `ONE_SHOT_PROMPT_DRAFT.md` no longer contains stale native-only fixed-loadout or pre-Astra-UMG-blocker instructions.
 
 ## Current blockers
 
-Gameplay handoff clarity is intentionally not closed yet.
+There are **no remaining design/confusion blockers** to an Astra handoff.
 
 Before Astra may execute:
-1. implement the smallest Armory candidate,
-2. validate it with live Epic UEFN,
-3. run the critical lifecycle/economy matrix from `ARMORY_ECONOMY_SPEC.md`,
-4. lock the initial catalog/index wiring,
-5. harden the one-shot prompt against the verified implementation,
-6. rerun this audit and return it to **PASS**,
-7. obtain explicit user authorization.
+1. keep the compile-clean Armory scaffold and frozen docs synchronized,
+2. obtain explicit user authorization.
 
-Do not reopen the spatial design while closing this gameplay gate.
+During Astra construction/post-build:
+1. finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md`,
+2. verify the final Item Granter catalog/index wiring,
+3. run the critical lifecycle/economy/JIP/leave/duplicate-subscription/multiplayer matrix from `ARMORY_ECONOMY_SPEC.md`,
+4. preserve native spawn/score/end authority and fall back to the native control if the custom layer proves less reliable.
+
+Do not reopen the spatial design while completing those runtime tasks.
 
 ## Final handoff rule
 
 Before Astra is allowed to execute the one-shot:
 - read `SPATIAL_CONTRACT.md` first among spatial/design documents,
-- read `ARMORY_ECONOMY_SPEC.md` before gameplay wiring,
+- read `ARMORY_ECONOMY_SPEC.md` and `ARMORY_UI_SPEC.md` before gameplay/UI wiring,
 - keep Layer 1 spatial rules separate from Layer 2 art freedom,
 - keep native match authority separate from Armory Verse authority,
+- treat final Armory UMG presentation/runtime validation as part of the Astra pass rather than a reason to redesign the mechanic,
 - require every deviation/fallback to be reported,
-- do not authorize the run while this document remains REOPENED/PENDING.
+- obtain explicit user authorization.

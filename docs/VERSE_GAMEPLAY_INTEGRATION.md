@@ -2,7 +2,7 @@
 
 ## Status
 
-**REOPENED FOR FEATURE FREEZE V2 — Armory implementation validation pending.**
+**FEATURE FREEZE V2 HANDOFF READY — compile-clean Armory scaffold frozen; final UMG/runtime acceptance assigned to Astra construction/post-build.**
 
 The original native-first control case was validated on 2026-09-29 and remains the baseline for everything native UEFN already solves correctly. The later UEFN Central five-file manager package was rejected and remains quarantined in `UEFN_CENTRAL_GENERATOR_RESULT.md`.
 
@@ -10,7 +10,7 @@ The user has now intentionally added a requirement the fixed native loadout does
 
 That requirement authorizes a **narrow custom Verse layer**. It does not authorize a custom FFA manager.
 
-Astra environment construction remains blocked until the Armory candidate compiles in live UEFN, passes the critical lifecycle/economy tests, and the final contradiction/confusion audit returns to PASS.
+The Armory is no longer a pre-Astra presentation blocker. The current candidate compiles in live UEFN and defines the frozen gameplay authority boundary. Final UMG presentation plus the critical lifecycle/economy multiplayer matrix are explicit Astra construction/post-build tasks. Astra still requires explicit user authorization.
 
 ## Governing authorities
 
@@ -18,14 +18,15 @@ Read before gameplay implementation:
 1. `AGENTS.md`
 2. `docs/AGENTS.md`
 3. `docs/ARMORY_ECONOMY_SPEC.md` — **Armory/economy authority**
-4. `docs/GAMEPLAY_SPEC.md`
-5. this document — **implementation/wiring authority**
-6. `docs/SPATIAL_CONTRACT.md`
-7. `docs/ASSET_MANIFEST.md`
-8. `docs/PHYSICAL_FIT_VERIFICATION.md`
-9. `docs/TOOLING.md`
-10. `docs/ONE_SHOT_PROMPT_DRAFT.md`
-11. `docs/BUILD_READINESS.md`
+4. `docs/ARMORY_UI_SPEC.md` — **Armory presentation/navigation authority**
+5. `docs/GAMEPLAY_SPEC.md`
+6. this document — **implementation/wiring authority**
+7. `docs/SPATIAL_CONTRACT.md`
+8. `docs/ASSET_MANIFEST.md`
+9. `docs/PHYSICAL_FIT_VERIFICATION.md`
+10. `docs/TOOLING.md`
+11. `docs/ONE_SHOT_PROMPT_DRAFT.md`
+12. `docs/BUILD_READINESS.md`
 
 Gameplay integration must not reopen map design. `SPATIAL_CONTRACT.md` remains placement authority.
 ## Architecture rule
@@ -222,11 +223,11 @@ At `OnBegin`:
 - initialize every player already returned by `GetPlayspace().GetPlayers()`,
 - subscribe once to `PlayerAddedEvent`,
 - subscribe once to `PlayerRemovedEvent`,
-- subscribe once to each of the 19 `SpawnedEvent` sources,
 - subscribe once to `EM_Economy.EliminationEvent`,
-- subscribe once to `EM_Economy.EliminatedEvent`.
+- subscribe once to `EM_Economy.EliminatedEvent`,
+- subscribe once to the Armory input and active UMG event surfaces.
 
-Current Epic references confirm `GetPlayers`, PlayerAddedEvent, PlayerRemovedEvent, and Player Spawn Pad SpawnedEvent.
+**Do not subscribe the Armory to Player Spawn Pad events.** Native Player Spawn Pads remain the sole spawn-selection authority. The Armory waits for the native-spawned character/player state to become ready, then grants/releases the committed loadout.
 
 Do not subscribe a new elimination callback every respawn.
 
@@ -381,15 +382,16 @@ Armory Verse must not own:
 
 ## Phase exit
 
-**PENDING.**
+**HANDOFF READY; PRODUCTION ACCEPTANCE DEFERRED TO ASTRA BUILD/POST-BUILD.**
 
-The design is frozen, but production Armory code is not yet validated.
+The design/authority contract and compile-clean Armory scaffold are frozen. Final visual/runtime production acceptance is intentionally part of the Astra pass.
 
-The phase returns to PASS only when:
-- the smallest accepted Armory implementation compiles in live UEFN,
-- the critical lifecycle/economy tests pass,
-- exact editor wiring/catalog indexes are documented,
-- `ONE_SHOT_PROMPT_DRAFT.md` reflects verified reality,
-- `ASTRA_CONFUSION_AUDIT.md` returns to PASS.
+The integration architecture is ready for Astra handoff when:
+- the accepted Armory implementation compiles in live UEFN,
+- the authority boundary and catalog/device contract are documented,
+- `ONE_SHOT_PROMPT_DRAFT.md` explicitly assigns final UMG presentation and runtime acceptance to Astra,
+- `ASTRA_CONFUSION_AUDIT.md` confirms there is no contradiction about who owns those tasks.
 
-Until then, stop before Astra construction.
+Final production PASS still requires the critical lifecycle/economy matrix, but that matrix now runs during/after Astra construction against the real 19-spawn level and final `WBP_ScraplineArmory`.
+
+Do not start Astra automatically; explicit user authorization is still required.

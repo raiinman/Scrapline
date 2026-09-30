@@ -2,11 +2,23 @@
 
 ## Status
 
-**APPROVED UX DIRECTION — 2026-09-29.**
+**APPROVED UX DIRECTION — FINAL PRESENTATION DEFERRED TO ASTRA CONSTRUCTION.**
 
 This document owns the presentation/navigation contract for the Scrapline Armory. It does not change the economy rules in `ARMORY_ECONOMY_SPEC.md` or the gameplay authority split in `VERSE_GAMEPLAY_INTEGRATION.md`.
 
 The earlier pure-Verse shop is a **functional test harness only**. It proved the economy, catalog, countdown, indexed grants, and next-loadout interaction path, but its default Fortnite button styling is not production presentation.
+
+### Execution disposition
+
+The current ChatGPT/remote-editor mode is **not the authority for final Armory visual implementation**. It successfully established the mechanic, UMG/Verse event bridge, paged browser architecture, and compile-clean scaffold, but repeated UEFN editor/validation/session friction made continued visual iteration inefficient.
+
+**Astra owns final Armory presentation during the primary level-construction pass.**
+
+Astra may:
+- keep and repair the existing `WBP_ScraplineArmory` scaffold, or
+- rebuild that widget cleanly if doing so is faster/safer.
+
+Astra must preserve the approved UX contract in this document and the economy/lifecycle contract in `ARMORY_ECONOMY_SPEC.md`. It must not replace the Armory with the earlier oversized pure-Verse/debug menu.
 
 ## Reference synthesis
 
@@ -160,7 +172,7 @@ Death/JIP:
 
 ## Acceptance gate
 
-The production Armory UI is not accepted until:
+The production Armory UI is an **Astra build/post-build acceptance item**, not a pre-Astra blocker. It is not accepted until:
 1. `WBP_ScraplineArmory` compiles.
 2. Verse can open/close it for one player without affecting others.
 3. Scrap, timer, category, weapon-card, loadout, and projected-balance state update correctly.
@@ -190,5 +202,7 @@ Validation lesson:
 - the accepted approach is to keep the required Custom Button content, make the button itself visually transparent, and render Scrapline's flat card/image surface beneath it,
 - the failed `WBP_EventProbe` experiment that created a restricted K2 Blueprint node was deleted.
 
-The last live play-session refresh was blocked by an expired Epic Connect token (`EOS_EpicConnect_TokenIsNoLongerValid`). Runtime visual validation of the validator-safe transparent-hitbox pass remains pending after UEFN re-authenticates.
+The last live play-session refresh was blocked by an expired Epic Connect token (`EOS_EpicConnect_TokenIsNoLongerValid`). A later UEFN relaunch refreshed authentication, but the Home-panel/session workflow remained inefficient in this control mode.
+
+**Disposition:** stop iterating the final UMG presentation here. The current widget/event bridge is a scaffold and evidence package for Astra. Astra must finish the visual implementation and run the acceptance gate above as part of the real level build.
 

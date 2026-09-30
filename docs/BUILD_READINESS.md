@@ -2,13 +2,13 @@
 
 ## Current State
 
-Scrapline is **design-frozen, asset-complete, physical-fit verified, with Feature Freeze v2 gameplay validation reopened**.
+Scrapline is **design-frozen, asset-complete, physical-fit verified, and ready for explicit Astra construction authorization with Armory presentation/runtime acceptance assigned to the build/post-build pass**.
 
 The map design, spatial contract, terrain specification, toolchain, production asset pool, real-asset reference pass, physical-fit gate, and original UEFN Central comparison remain locked or verified. The asset manifest is frozen and the intake stop rule has fired.
 
-The user has added the Scrapline Armory / match economy before construction. Its design is frozen in `ARMORY_ECONOMY_SPEC.md`, but the new custom Armory Verse/device package has **not yet passed live UEFN validation**. The previous native-only build remains the control case; it is no longer the final gameplay package.
+The Scrapline Armory / match economy is frozen in `ARMORY_ECONOMY_SPEC.md`. The custom Armory Verse/device scaffold is live-compiler clean and the approved scalable UX is frozen in `ARMORY_UI_SPEC.md`. The previous native-only package remains the control case and fallback.
 
-Astra one-shot construction is blocked until the Armory implementation validates and the final contradiction/confusion audit returns to PASS.
+Final `WBP_ScraplineArmory` visual polish plus the full lifecycle/economy/multiplayer matrix are intentionally deferred to Astra during the real construction/post-build pass. They are no longer pre-Astra blockers. Astra still requires explicit user authorization.
 
 ## Ready
 
@@ -108,11 +108,11 @@ Latest live checks:
 - The only warnings are three pre-existing oversized Gas Cylinder / Propane Tank texture files.
 - Representative Factory, Vehicle, Garage, Pipe, and Warning Sign assets all load successfully through the UEFN Asset Registry/Power Tools bridge.
 - Read-only badges on Fab Referenced Content are expected source-lock behavior, not an asset failure. Those assets remain valid for placement.
-- The original native gameplay wiring remains a validated control in `VERSE_GAMEPLAY_INTEGRATION.md`. The Armory replacement wiring is frozen in design but still pending live UEFN validation before it can become final.
+- The original native gameplay wiring remains a validated control/fallback in `VERSE_GAMEPLAY_INTEGRATION.md`. The Armory replacement architecture is frozen, live-compiler clean, and ready for Astra handoff; final production acceptance occurs during the Astra build/post-build test matrix.
 - Current live device catalog confirmed Player Spawn Pad, Item Granter, and Tracker identities.
 - Optional local siphon Verse candidate was removed after native `Health Granted on Elimination = 50` was validated as the simpler supported path.
 - UEFN Central run `6e9b9891-1848-5b65-8289-50521fc26c9b` completed but was marked **Not validated**; its five generated files were audited and quarantined rather than staged into Scrapline.
-- Feature Freeze v2 Armory now consists of one production Verse candidate plus `WBP_ScraplineArmory`. The widget provides a scalable 8-card paged category browser and generated UMG→Verse event bindings; the Verse layer owns the economy, lifecycle, catalog filtering, cart/loadout state, countdowns, and indexed grants. The current Verse file passes live `ValkyrieToolset.VerseToolset.BuildAll` with **0 diagnostics**. The final validator-safe transparent-hitbox UMG styling pass still needs live runtime verification after UEFN re-authenticates; the current editor session lost its Epic Connect token.
+- Feature Freeze v2 Armory now consists of one production Verse candidate plus `WBP_ScraplineArmory`. The widget provides a scalable 8-card paged category browser and generated UMG→Verse event bindings; the Verse layer owns the economy, lifecycle, catalog filtering, cart/loadout state, countdowns, and indexed grants. The current Verse file passes live `ValkyrieToolset.VerseToolset.BuildAll` with **0 diagnostics**. Final validator-safe UMG presentation and runtime interaction verification are intentionally assigned to Astra during construction/post-build.
 
 ## Asset Intake — Closed
 
@@ -135,30 +135,35 @@ Frozen candidate architecture:
 - one `scrapline_armory_device` custom Verse layer owns only the Armory/economy boundary from `ARMORY_ECONOMY_SPEC.md`.
 - no End Game device or match-authority Timer is introduced.
 
-Still gated:
-- Armory live compiler/runtime validation,
-- exact first-release catalog/index lock,
-- post-Armory contradiction/confusion closeout,
+Still gated before explicit Astra authorization:
+- final contradiction/confusion closeout,
 - Astra one-shot environment construction,
 - irreversible map construction,
 - new asset acquisition or bulk reserve import,
 - synthetic image generation,
 - redesign of the frozen spatial contract.
 
+Assigned to Astra construction/post-build rather than the pre-Astra gate:
+- final `WBP_ScraplineArmory` presentation/polish,
+- final production device wiring/catalog index verification,
+- full lifecycle/economy/JIP/leave/duplicate-subscription/multiplayer tests.
+
 ## Remaining Build Gates
 
 ### Pre-Astra gate
-1. Implement the smallest Armory candidate.
-2. Live UEFN `ValkyrieToolset.VerseToolset.BuildAll`: **must pass with zero accepted-code diagnostics**.
-3. Run the critical economy/lifecycle matrix in `ARMORY_ECONOMY_SPEC.md`.
-4. Lock exact catalog Item Granter indexes and editor wiring.
-5. Update the one-shot prompt with verified reality.
-6. Final contradiction/confusion closeout: **must return to PASS**.
-7. Stop and obtain explicit user authorization for the one-shot.
+1. Armory economy/authority contract frozen.
+2. Live UEFN `ValkyrieToolset.VerseToolset.BuildAll`: **0 accepted-code diagnostics**.
+3. Current Armory Verse/UMG scaffold synchronized into the handoff.
+4. One-shot prompt explicitly assigns final Armory UI/runtime acceptance to Astra.
+5. Final contradiction/confusion closeout: **PASS for handoff**.
+6. Stop and obtain explicit user authorization for the one-shot.
 
 ### After explicit Astra one-shot authorization
 1. Run the primary construction pass.
-2. Test and repair after the primary construction pass unless blocked earlier.
+2. Finish or rebuild `WBP_ScraplineArmory` to `ARMORY_UI_SPEC.md` while preserving the frozen economy contract.
+3. Wire/verify the production Armory devices and real 19 spawn pads without giving Verse spawn-selection authority.
+4. Run the full Armory lifecycle/economy/multiplayer acceptance matrix.
+5. Test and repair after the primary construction pass unless blocked earlier.
 
 ## Do Not Reopen Without a Specific Reason
 
@@ -176,6 +181,6 @@ Still gated:
 
 ## Immediate Next Step
 
-**STOP before Astra construction.**
+**READY FOR FINAL HANDOFF CLOSEOUT, THEN EXPLICIT ASTRA AUTHORIZATION.**
 
-Implement and live-validate the frozen Armory/economy package first. The Astra one-shot is not authorization-ready again until that gate and the final confusion audit pass.
+Do not continue burning time on final Armory UMG polish in this control mode. Preserve the current compile-clean scaffold and approved UI spec, close the handoff contradiction audit, then stop for explicit user authorization. Astra owns the final Armory presentation and runtime acceptance during the real level build.

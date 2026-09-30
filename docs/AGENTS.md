@@ -17,7 +17,7 @@ This folder owns:
 - one-shot readiness and build-gate status
 - blocked/final implementation handoff prompt documentation
 - UEFN Central generator experiment capture, audit, and native-vs-generated disposition
-- Armory / match-economy design, catalog contract, lifecycle rules, and implementation validation
+- Armory / match-economy design, catalog contract, lifecycle rules, UMG presentation contract, and implementation validation
 
 The root `AGENTS.md` owns repository-wide rules.
 
@@ -45,7 +45,7 @@ The root `AGENTS.md` owns repository-wide rules.
 - Before a build handoff, verify that every required asset is either already present in the project or explicitly listed as a prerequisite.
 - Verify that the final build document does not depend on unapproved placeholder or custom-modeled environment geometry.
 - Before implementation, verify Epic UEFN MCP and Power Tools are reachable from Codex in the actual Scrapline UEFN project.
-- The Armory has reopened a narrow custom Verse surface. Any accepted Armory code must pass live UEFN `ValkyrieToolset.VerseToolset.BuildAll` and lifecycle/economy tests before the Astra gate can close; standalone digest/LSP or generator validation is not authoritative.
+- The Armory uses a narrow custom Verse surface. The handoff baseline must pass live UEFN `ValkyrieToolset.VerseToolset.BuildAll` before Astra authorization; final UMG presentation and the full lifecycle/economy multiplayer matrix are Astra construction/post-build acceptance work. Standalone digest/LSP or generator validation is not authoritative.
 
 ## Child DOX Index
 
