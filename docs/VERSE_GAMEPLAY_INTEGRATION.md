@@ -2,7 +2,7 @@
 
 ## Status
 
-**FEATURE FREEZE V2 HANDOFF READY — compile-clean Armory scaffold frozen; final UMG/runtime acceptance assigned to Astra construction/post-build.**
+**FEATURE FREEZE V2 HANDOFF READY — compile-clean Armory scaffold frozen; final UMG/runtime acceptance assigned to GPT-6.1 Sol construction/post-build.**
 
 The original native-first control case was validated on 2026-09-29 and remains the baseline for everything native UEFN already solves correctly. The later UEFN Central five-file manager package was rejected and remains quarantined in `UEFN_CENTRAL_GENERATOR_RESULT.md`.
 
@@ -10,7 +10,7 @@ The user has now intentionally added a requirement the fixed native loadout does
 
 That requirement authorizes a **narrow custom Verse layer**. It does not authorize a custom FFA manager.
 
-The Armory is no longer a pre-Astra presentation blocker. The current candidate compiles in live UEFN and defines the frozen gameplay authority boundary. Final UMG presentation plus the critical lifecycle/economy multiplayer matrix are explicit Astra construction/post-build tasks. Astra still requires explicit user authorization.
+The Armory is no longer a pre-construction presentation blocker. The current candidate compiles in live UEFN and defines the frozen gameplay authority boundary. Final UMG presentation plus the critical lifecycle/economy multiplayer matrix are explicit GPT-6.1 Sol construction/post-build tasks. Construction authorization was granted on 2026-09-30.
 
 ## Governing authorities
 
@@ -25,7 +25,7 @@ Read before gameplay implementation:
 8. `docs/ASSET_MANIFEST.md`
 9. `docs/PHYSICAL_FIT_VERIFICATION.md`
 10. `docs/TOOLING.md`
-11. `docs/ONE_SHOT_PROMPT_DRAFT.md`
+11. `docs/SOL61_ONE_SHOT_PROMPT.md`
 12. `docs/BUILD_READINESS.md`
 
 Gameplay integration must not reopen map design. `SPATIAL_CONTRACT.md` remains placement authority.
@@ -419,6 +419,6 @@ The integration architecture is ready for Astra handoff when:
 - `ONE_SHOT_PROMPT_DRAFT.md` explicitly assigns final UMG presentation and runtime acceptance to Astra,
 - `ASTRA_CONFUSION_AUDIT.md` confirms there is no contradiction about who owns those tasks.
 
-Final production PASS still requires the critical lifecycle/economy matrix, but that matrix now runs during/after Astra construction against the real 19-spawn level and final `WBP_ScraplineArmory`.
+Final production PASS still requires the critical lifecycle/economy matrix, but that matrix now runs during/after GPT-6.1 Sol construction against the real 19-spawn level and final `WBP_ScraplineArmory`.
 
 Do not start Astra automatically; explicit user authorization is still required.
