@@ -31,7 +31,7 @@ The root `AGENTS.md` owns repository-wide rules.
 - Keep implementation-facing instructions concrete enough that another agent can execute without reconstructing prior chat context.
 - The approved one-shot toolchain is documented in `TOOLING.md`; do not silently replace or remove an installed integration.
 - `SPATIAL_CONTRACT.md` is the implementation authority for macro layout, major anchor placement/orientation, route connectivity, verticality limits, spawn-region distribution, and lighting concept. Softer older prose must not override it.
-- Before final one-shot approval, run the Astra confusion audit and remove or narrow stale wording that asks the implementation model to re-select a frozen design decision.
+- Before final one-shot approval, run the confusion audit (`ASTRA_CONFUSION_AUDIT.md`, historical filename) and remove or narrow stale wording that asks the implementation model to re-select a frozen design decision.
 - For the locked first alpha, native gameplay authority remains in `VERSE_GAMEPLAY_INTEGRATION.md`, while `ARMORY_ECONOMY_SPEC.md` now owns the authorized match-economy extension. Keep Island Settings authoritative for score, 30-elimination victory, timeout, respawn rules, sustain, and spawn selection. Custom Verse may own only the Armory responsibilities listed in `ARMORY_ECONOMY_SPEC.md`. The completed UEFN Central five-file result in `UEFN_CENTRAL_GENERATOR_RESULT.md` remains quarantined evidence and must not be revived as the implementation architecture.
 
 ## Work Guidance
@@ -46,7 +46,7 @@ The root `AGENTS.md` owns repository-wide rules.
 
 - Before a build handoff, verify that every required asset is either already present in the project or explicitly listed as a prerequisite.
 - Verify that the final build document does not depend on unapproved placeholder or custom-modeled environment geometry.
-- Before implementation, verify Epic UEFN MCP and Power Tools are reachable from Codex in the actual Scrapline UEFN project.
+- Before implementation, verify Epic UEFN MCP and Power Tools are reachable from the active GPT-6.1 Sol execution environment in the actual Scrapline UEFN project.
 - The Armory uses a narrow custom Verse surface. The handoff baseline passed live UEFN `ValkyrieToolset.VerseToolset.BuildAll` before construction authorization; final UMG presentation and the full lifecycle/economy multiplayer matrix are GPT-6.1 Sol construction/post-build acceptance work. Standalone digest/LSP or generator validation is not authoritative.
 
 ## Child DOX Index
