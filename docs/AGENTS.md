@@ -47,7 +47,7 @@ The root `AGENTS.md` owns repository-wide rules.
 - Before a build handoff, verify that every required asset is either already present in the project or explicitly listed as a prerequisite.
 - Verify that the final build document does not depend on unapproved placeholder or custom-modeled environment geometry.
 - Before implementation, verify Epic UEFN MCP and Power Tools are reachable from Codex in the actual Scrapline UEFN project.
-- The Armory uses a narrow custom Verse surface. The handoff baseline must pass live UEFN `ValkyrieToolset.VerseToolset.BuildAll` before Astra authorization; final UMG presentation and the full lifecycle/economy multiplayer matrix are Astra construction/post-build acceptance work. Standalone digest/LSP or generator validation is not authoritative.
+- The Armory uses a narrow custom Verse surface. The handoff baseline passed live UEFN `ValkyrieToolset.VerseToolset.BuildAll` before construction authorization; final UMG presentation and the full lifecycle/economy multiplayer matrix are GPT-6.1 Sol construction/post-build acceptance work. Standalone digest/LSP or generator validation is not authoritative.
 
 ## Child DOX Index
 
