@@ -1,0 +1,505 @@
+{
+  "level": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut",
+  "capture_method": "Native UEFN High Resolution Screenshot, multiplier1, immersive Game View, Grid disabled for standing views",
+  "shots": [
+    {
+      "id": "01_establishing",
+      "eye": [
+        -91,
+        -98,
+        84
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "description": "High oblique / complete basin",
+      "fov_degrees": 65,
+      "file": "native_01_establishing.png",
+      "native_source_file": "HighresScreenshot00000.png",
+      "sha256": "22bd1f280d8c14a9d5a222984547d87ce4e1ddbd0d8a047e722192ae3fc6d0ba",
+      "bytes": 3463414,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "02_near_overhead",
+      "eye": [
+        0,
+        -15,
+        125
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "description": "Near overhead / lane network",
+      "fov_degrees": 65,
+      "file": "native_02_near_overhead.png",
+      "native_source_file": "HighresScreenshot00001.png",
+      "sha256": "96698cca56d6ddc40394118923ed11f1384ac25a5afbfc69f5eea46da6444882",
+      "bytes": 3957296,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "03_dispatch_spawn",
+      "eye": [
+        -55,
+        0,
+        -0.8641142528624932
+      ],
+      "target": [
+        0,
+        0,
+        1
+      ],
+      "description": "West dispatch start toward center",
+      "fov_degrees": 65,
+      "file": "native_03_dispatch_spawn.png",
+      "native_source_file": "HighresScreenshot00002.png",
+      "sha256": "ab3e3882a2d3d125811ab520180cf1138e2e2d6288e82ea089e8ddba58cbf624",
+      "bytes": 3040894,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "04_receiving_spawn",
+      "eye": [
+        55,
+        7,
+        1.6157985445448848
+      ],
+      "target": [
+        0,
+        0,
+        1
+      ],
+      "description": "East receiving start toward center",
+      "fov_degrees": 65,
+      "file": "native_04_receiving_spawn.png",
+      "native_source_file": "HighresScreenshot00003.png",
+      "sha256": "8c30587c055bc5b89971d75d7817fc23c4799e8e078314e0932047a077659513",
+      "bytes": 2839916,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "05_center_west",
+      "eye": [
+        -20,
+        -3,
+        -0.9077295311507012
+      ],
+      "target": [
+        3,
+        2,
+        3
+      ],
+      "description": "Center from west / machinery rhythm",
+      "fov_degrees": 65,
+      "file": "native_05_center_west.png",
+      "native_source_file": "HighresScreenshot00004.png",
+      "sha256": "7f8ce9636c65658818275b1b3695dbf701cde6406d8a65bafeb6a28879118cae",
+      "bytes": 3012030,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "06_center_east",
+      "eye": [
+        23,
+        -1,
+        1.32151847826087
+      ],
+      "target": [
+        -2,
+        2,
+        2
+      ],
+      "description": "Center from opposing east angle",
+      "original_eye": [
+        23,
+        -1,
+        -0.1
+      ],
+      "adjustment": "Standing camera raised to 1.7m above saved AccessFit landscape; original XY and target retained.",
+      "fov_degrees": 65,
+      "file": "native_06_center_east.png",
+      "native_source_file": "HighresScreenshot00007.png",
+      "sha256": "30bbe571b0777c484cc203db22e4d89b3495352e8130adb823a9cf91bb361f71",
+      "bytes": 3053683,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "07_workshop_inward",
+      "eye": [
+        21,
+        34,
+        1.9340045368619991
+      ],
+      "target": [
+        0,
+        0,
+        1
+      ],
+      "description": "North workshop flank toward center",
+      "original_eye": [
+        21,
+        34,
+        0.5715565974442127
+      ],
+      "adjustment": "Standing camera raised to 1.7m above saved AccessFit landscape; original XY and target retained.",
+      "fov_degrees": 65,
+      "file": "native_07_workshop_inward.png",
+      "native_source_file": "HighresScreenshot00008.png",
+      "sha256": "e5f07684eb82bee9072e3c645b406dcd4e7e687be6a6a5c88a4048bf732e65df",
+      "bytes": 2996971,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "08_workshop_back",
+      "eye": [
+        -8,
+        28,
+        -0.7965165510871894
+      ],
+      "target": [
+        -52,
+        4,
+        1
+      ],
+      "description": "North flank back toward dispatch",
+      "fov_degrees": 65,
+      "file": "native_08_workshop_back.png",
+      "native_source_file": "HighresScreenshot00009.png",
+      "sha256": "6d0bb2b353ac6ed00d5ba360ff5a9b7e52944b2126bb32853c05157ab5f52dbb",
+      "bytes": 2879882,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "09_drain_inward",
+      "eye": [
+        -21,
+        -29,
+        -1.1398027906674166
+      ],
+      "target": [
+        1,
+        0,
+        1
+      ],
+      "description": "South drain flank toward center",
+      "fov_degrees": 65,
+      "file": "native_09_drain_inward.png",
+      "native_source_file": "HighresScreenshot00010.png",
+      "sha256": "3355e987ac9b3e7ee9af1676dc4436eb9968fe6a9b2e31fce93602733d530858",
+      "bytes": 3103868,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "10_drain_back",
+      "eye": [
+        16,
+        -28,
+        -1.7017713119980782
+      ],
+      "target": [
+        53,
+        6,
+        1
+      ],
+      "description": "South flank back toward receiving",
+      "fov_degrees": 65,
+      "file": "native_10_drain_back.png",
+      "native_source_file": "HighresScreenshot00011.png",
+      "sha256": "c586d54b62652cc84c9ad0791191cb220a9da2feef16f2067f7f1c65017be0f9",
+      "bytes": 3279672,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "11_exterior_west",
+      "eye": [
+        -93,
+        -47,
+        9.480690353280005
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "description": "Exterior cut shoulder facing inward",
+      "fov_degrees": 65,
+      "file": "native_11_exterior_west.png",
+      "native_source_file": "HighresScreenshot00012.png",
+      "sha256": "57d926d4139930c2ecc47993198e122153768902d226404444be5acf6ab2b55a",
+      "bytes": 3079412,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "12_exterior_east",
+      "eye": [
+        88,
+        45,
+        10.251082980486082
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "description": "Exterior spoil mound facing inward",
+      "fov_degrees": 65,
+      "file": "native_12_exterior_east.png",
+      "native_source_file": "HighresScreenshot00013.png",
+      "sha256": "630fa72a3110946107f80d50835d8e1ef52e79467d2c23be2c6da26cd956bc47",
+      "bytes": 3121083,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "13_exterior_north",
+      "eye": [
+        -15,
+        93,
+        12.877170036446277
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "description": "Outer ridge framing entire arena",
+      "fov_degrees": 65,
+      "file": "native_13_exterior_north.png",
+      "native_source_file": "HighresScreenshot00014.png",
+      "sha256": "c1110bba412936e3e3d655bbd439bf305671432512ace6645d3a5a32fe46fd58",
+      "bytes": 3165282,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "14_low_loading",
+      "eye": [
+        -36,
+        6,
+        -1.284251676781554
+      ],
+      "target": [
+        -8,
+        0,
+        1
+      ],
+      "description": "Low gameplay / staggered hard cover",
+      "fov_degrees": 65,
+      "file": "native_14_low_loading.png",
+      "native_source_file": "HighresScreenshot00015.png",
+      "sha256": "9273df14988e943ddaacbb2c1d40d2d6f765058e53ade0119ce91ff8d9d9f81f",
+      "bytes": 2786162,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "15_low_power",
+      "eye": [
+        37,
+        -21,
+        0.18884347412956592
+      ],
+      "target": [
+        8,
+        -7,
+        1
+      ],
+      "description": "Low gameplay / machinery and pipes",
+      "fov_degrees": 65,
+      "file": "native_15_low_power.png",
+      "native_source_file": "HighresScreenshot00016.png",
+      "sha256": "322536ab1af66ec142c80ba4d560d30ff8e4768dd27df2e7564d2820bd8ea5f3",
+      "bytes": 3051377,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    },
+    {
+      "id": "16_low_workshop",
+      "eye": [
+        22,
+        17,
+        1.5887979239264614
+      ],
+      "target": [
+        30,
+        28,
+        3
+      ],
+      "description": "Low gameplay / workshop service court",
+      "fov_degrees": 65,
+      "file": "native_16_low_workshop.png",
+      "native_source_file": "HighresScreenshot00017.png",
+      "sha256": "487ce78e79b6f03fd3c070aac7b0b1f85133b1e1d8850d74503dbece220f45de",
+      "bytes": 3595400,
+      "dimensions": [
+        1920,
+        1000
+      ]
+    }
+  ],
+  "height_review": [
+    {
+      "id": "01_establishing",
+      "eye_m": 84,
+      "ground_m": 7.700371030245747,
+      "eye_above_ground_m": 76.29962896975425,
+      "standing_eye_m": 9.300371030245747
+    },
+    {
+      "id": "02_near_overhead",
+      "eye_m": 125,
+      "ground_m": -1.771875,
+      "eye_above_ground_m": 126.771875,
+      "standing_eye_m": -0.171875
+    },
+    {
+      "id": "03_dispatch_spawn",
+      "eye_m": -0.8641142528624932,
+      "ground_m": -2.5186684782608695,
+      "eye_above_ground_m": 1.6545542253983763,
+      "standing_eye_m": -0.9186684782608694
+    },
+    {
+      "id": "04_receiving_spawn",
+      "eye_m": 1.6157985445448848,
+      "ground_m": -0.08735916824196666,
+      "eye_above_ground_m": 1.7031577127868514,
+      "standing_eye_m": 1.5126408317580333
+    },
+    {
+      "id": "05_center_west",
+      "eye_m": -0.9077295311507012,
+      "ground_m": -2.6071573724007564,
+      "eye_above_ground_m": 1.6994278412500552,
+      "standing_eye_m": -1.0071573724007563
+    },
+    {
+      "id": "06_center_east",
+      "eye_m": -0.1,
+      "ground_m": -0.37848152173912997,
+      "eye_above_ground_m": 0.27848152173913,
+      "standing_eye_m": 1.2215184782608701
+    },
+    {
+      "id": "07_workshop_inward",
+      "eye_m": 0.5715565974442127,
+      "ground_m": 0.23400453686199915,
+      "eye_above_ground_m": 0.33755206058221354,
+      "standing_eye_m": 1.8340045368619993
+    },
+    {
+      "id": "08_workshop_back",
+      "eye_m": -0.7965165510871894,
+      "ground_m": -2.6284154536862,
+      "eye_above_ground_m": 1.8318989025990107,
+      "standing_eye_m": -1.0284154536862
+    },
+    {
+      "id": "09_drain_inward",
+      "eye_m": -1.1398027906674166,
+      "ground_m": -2.839407419659735,
+      "eye_above_ground_m": 1.6996046289923183,
+      "standing_eye_m": -1.2394074196597349
+    },
+    {
+      "id": "10_drain_back",
+      "eye_m": -1.7017713119980782,
+      "ground_m": -3.343494565217391,
+      "eye_above_ground_m": 1.6417232532193127,
+      "standing_eye_m": -1.7434945652173908
+    },
+    {
+      "id": "11_exterior_west",
+      "eye_m": 9.480690353280005,
+      "ground_m": 7.477887334593573,
+      "eye_above_ground_m": 2.002803018686432,
+      "standing_eye_m": 9.077887334593573
+    },
+    {
+      "id": "12_exterior_east",
+      "eye_m": 10.251082980486082,
+      "ground_m": 8.249395793950852,
+      "eye_above_ground_m": 2.0016871865352304,
+      "standing_eye_m": 9.849395793950851
+    },
+    {
+      "id": "13_exterior_north",
+      "eye_m": 12.877170036446277,
+      "ground_m": 10.875977551984876,
+      "eye_above_ground_m": 2.0011924844614004,
+      "standing_eye_m": 12.475977551984876
+    },
+    {
+      "id": "14_low_loading",
+      "eye_m": -1.284251676781554,
+      "ground_m": -3.0360278355387518,
+      "eye_above_ground_m": 1.7517761587571978,
+      "standing_eye_m": -1.4360278355387517
+    },
+    {
+      "id": "15_low_power",
+      "eye_m": 0.18884347412956592,
+      "ground_m": -1.5051914461247637,
+      "eye_above_ground_m": 1.6940349202543297,
+      "standing_eye_m": 0.09480855387523635
+    },
+    {
+      "id": "16_low_workshop",
+      "eye_m": 1.5887979239264614,
+      "ground_m": -0.11144508506616305,
+      "eye_above_ground_m": 1.7002430089926244,
+      "standing_eye_m": 1.488554914933837
+    }
+  ],
+  "limits": [
+    "Editor images do not certify runtime traversal or gameplay.",
+    "04 receiving and08 workshop-back immediate sightlines intersect actual full-height cover; retained as matching-camera evidence.",
+    "Native lighting/materials differ from Blender reference. Material shader/cook and inherited texture memory require native validation."
+  ]
+}
