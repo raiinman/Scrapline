@@ -1,0 +1,602 @@
+{
+  "saved": [
+    {
+      "label": "QC_D001_SCBK_huge_junk_pile_L0",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B10603_1725273287"
+      },
+      "actual": {
+        "location": {
+          "x": -7600,
+          "y": -1200,
+          "z": -191.08852772039768
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 10.000000000000002,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_D002_SCBK_huge_junk_pile_L0",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B10603_1726506288"
+      },
+      "actual": {
+        "location": {
+          "x": -6800,
+          "y": 4300,
+          "z": -306.098188694754
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 85,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_D003_SCBK_huge_junk_pile_L0",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B10603_1727505289"
+      },
+      "actual": {
+        "location": {
+          "x": 1700,
+          "y": 7000,
+          "z": -98.90915576412317
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 134.99999999999997,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_D004_SCBK_huge_junk_pile_L0",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B10603_1728504290"
+      },
+      "actual": {
+        "location": {
+          "x": 7400,
+          "y": 2500,
+          "z": 161.9297238776613
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -110.00000000000007,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_D005_SCBK_huge_junk_pile_L0",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B10603_1729496291"
+      },
+      "actual": {
+        "location": {
+          "x": 5700,
+          "y": -6000,
+          "z": 241.44591934260632
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -139.99999999999997,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_D006_SCBK_huge_junk_pile_L0",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B10603_1730497292"
+      },
+      "actual": {
+        "location": {
+          "x": -1800,
+          "y": -7000,
+          "z": -166.17357886200642
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 45.00000000000003,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P001_barrel",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1459612689"
+      },
+      "actual": {
+        "location": {
+          "x": -203.47640991210938,
+          "y": -1253.5837936401367,
+          "z": -181.49559844252832
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P002_tire",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1461619690"
+      },
+      "actual": {
+        "location": {
+          "x": -276.4764099121094,
+          "y": 1246.4162063598633,
+          "z": -178.71121074252372
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P003_barrel",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1462639691"
+      },
+      "actual": {
+        "location": {
+          "x": 2982.9147663116455,
+          "y": 2199.9999237060547,
+          "z": 51.947046166144595
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 180,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P004_tire",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1463672692"
+      },
+      "actual": {
+        "location": {
+          "x": 3644.887159347534,
+          "y": 2199.9992294311523,
+          "z": 62.521742477353854
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 180,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P005_barrel",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1464690693"
+      },
+      "actual": {
+        "location": {
+          "x": 2108.3001901371913,
+          "y": 2501.483967879896,
+          "z": 47.9375
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 69.99999999999993,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P006_barrel",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1465729694"
+      },
+      "actual": {
+        "location": {
+          "x": 1739.1058883666992,
+          "y": 2393.436420440674,
+          "z": -72.29971956308437
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 89.99999999999999,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P007_barrel",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1466771695"
+      },
+      "actual": {
+        "location": {
+          "x": 3274.8153877817194,
+          "y": 2094.035211412837,
+          "z": 68.21620374432146
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 54.00000000000001,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P008_tire",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1467801696"
+      },
+      "actual": {
+        "location": {
+          "x": 2969.9822984933853,
+          "y": 3300,
+          "z": 48.024482155193226
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P009_tire",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1468866697"
+      },
+      "actual": {
+        "location": {
+          "x": -4623.5533447265625,
+          "y": 896.4162063598633,
+          "z": -316.79246421996277
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 13.000000000000002,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P010_barrel",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1469890698"
+      },
+      "actual": {
+        "location": {
+          "x": -4031.8039600174448,
+          "y": 1098.9925347287206,
+          "z": -350.2263314976618
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 80,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P011_tire",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1471041699"
+      },
+      "actual": {
+        "location": {
+          "x": -4027.7239356874697,
+          "y": -1851.990104765339,
+          "z": -145.92454456832795
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 23.000000000000014,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P012_barrel",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1472108700"
+      },
+      "actual": {
+        "location": {
+          "x": -3231.8039600174448,
+          "y": -1301.0074652712794,
+          "z": -166.96140192227065
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 80,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P013_tire",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1473315701"
+      },
+      "actual": {
+        "location": {
+          "x": -2771.653792771682,
+          "y": 648.4610274888645,
+          "z": -307.10322838230593
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 10.000000000000005,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P014_barrel",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1474347702"
+      },
+      "actual": {
+        "location": {
+          "x": -2703.4466857910156,
+          "y": 2300.000274658203,
+          "z": -347.06658249096586
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P015_tire",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1475388703"
+      },
+      "actual": {
+        "location": {
+          "x": -1348.4610274888641,
+          "y": 2328.346207228318,
+          "z": -273.324145626078
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 100.0000000000001,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P016_tire",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1476899704"
+      },
+      "actual": {
+        "location": {
+          "x": 1951.9952663047998,
+          "y": 527.7532082323745,
+          "z": -37.09924175055116
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 80,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P017_barrel",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1477921705"
+      },
+      "actual": {
+        "location": {
+          "x": 2604.3844346730975,
+          "y": -856.1252489474398,
+          "z": -54.90785310277279
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 14.999999999999998,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P018_tire",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1479002706"
+      },
+      "actual": {
+        "location": {
+          "x": 5279.473649365263,
+          "y": 1524.2633181015563,
+          "z": 74.9587981025971
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 85,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P019_barrel",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1480042707"
+      },
+      "actual": {
+        "location": {
+          "x": -3978.698299426758,
+          "y": -2847.6398688686627,
+          "z": -214.57992871248553
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 98.00000000000006,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_P020_barrel",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B60603_1481057708"
+      },
+      "actual": {
+        "location": {
+          "x": 3885.836018585842,
+          "y": -3403.0144689377466,
+          "z": -188.6096051396337
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 85,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    }
+  ]
+}

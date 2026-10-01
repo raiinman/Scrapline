@@ -27,10 +27,7 @@
         "y": -776.8602175945571,
         "z": -250.9910888671875,
         "eye_z": -85.9910888671875,
-        "anchor": 21,
-        "hit_center_cm": 363.7840881347656,
-        "cover_offset": 350,
-        "yaw": 7.551193929605528
+        "yaw": -57.44880607039442
       },
       "settings": {
         "enabledDuringPhase": "Always",
@@ -47,6 +44,33 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
+      },
+      "initial_position": {
+        "x": -5860.371730599335,
+        "y": -776.8602175945571,
+        "z": -250.9910888671875,
+        "eye_z": -85.9910888671875,
+        "anchor": 21,
+        "hit_center_cm": 363.7840881347656,
+        "cover_offset": 350,
+        "yaw": 7.551193929605528
+      },
+      "transform": {
+        "location": {
+          "x": -5860.371730599335,
+          "y": -776.8602175945571,
+          "z": -250.9910888671875
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -57.44880607039442,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -59,10 +83,7 @@
         "y": 803.114260001101,
         "z": -283.4345703125,
         "eye_z": -118.4345703125,
-        "anchor": 22,
-        "hit_center_cm": 446.5942687988281,
-        "cover_offset": 350,
-        "yaw": -8.338132883497082
+        "yaw": -73.33813288349705
       },
       "settings": {
         "enabledDuringPhase": "Always",
@@ -79,6 +100,33 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
+      },
+      "initial_position": {
+        "x": -5479.614856190986,
+        "y": 803.114260001101,
+        "z": -283.4345703125,
+        "eye_z": -118.4345703125,
+        "anchor": 22,
+        "hit_center_cm": 446.5942687988281,
+        "cover_offset": 350,
+        "yaw": -8.338132883497082
+      },
+      "transform": {
+        "location": {
+          "x": -5479.614856190986,
+          "y": 803.114260001101,
+          "z": -283.4345703125
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -73.33813288349705,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -87,6 +135,29 @@
         "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1491768872"
       },
       "position": {
+        "x": -4500,
+        "y": 1600,
+        "z": -342.6715028355388,
+        "eye_z": -177.67150283553877,
+        "yaw": -80.65795549869226
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      },
+      "initial_position": {
         "x": -4704.186691033604,
         "y": 1318.5632661377902,
         "z": -314.4500732421875,
@@ -96,21 +167,22 @@
         "cover_offset": 350,
         "yaw": -15.657955498692306
       },
-      "settings": {
-        "enabledDuringPhase": "Always",
-        "playerTeam": {
-          "teamType": "Any",
-          "teamIndex": 1
+      "transform": {
+        "location": {
+          "x": -4500,
+          "y": 1600,
+          "z": -342.6715028355388
         },
-        "playerClass": {
-          "classType": "Any",
-          "classSlot": 1
+        "rotation": {
+          "pitch": 0,
+          "yaw": -80.65795549869226,
+          "roll": 0
         },
-        "useAsIslandStart": true,
-        "visibleInGame": false,
-        "priorityGroup": 1,
-        "priorityGroup_Override": true,
-        "enemyRangeCheck": 1000
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -123,10 +195,7 @@
         "y": -2130.1962271723496,
         "z": -181.6014404296875,
         "eye_z": -16.6014404296875,
-        "anchor": 24,
-        "hit_center_cm": 427.6006774902344,
-        "cover_offset": 350,
-        "yaw": 23.838740183171723
+        "yaw": -41.161259816828256
       },
       "settings": {
         "enabledDuringPhase": "Always",
@@ -143,6 +212,33 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
+      },
+      "initial_position": {
+        "x": -4820.970408863739,
+        "y": -2130.1962271723496,
+        "z": -181.6014404296875,
+        "eye_z": -16.6014404296875,
+        "anchor": 24,
+        "hit_center_cm": 427.6006774902344,
+        "cover_offset": 350,
+        "yaw": 23.838740183171723
+      },
+      "transform": {
+        "location": {
+          "x": -4820.970408863739,
+          "y": -2130.1962271723496,
+          "z": -181.6014404296875
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -41.161259816828256,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -155,10 +251,7 @@
         "y": -1135.6643317363616,
         "z": -143.2200927734375,
         "eye_z": 21.7799072265625,
-        "anchor": 25,
-        "hit_center_cm": 459.4756164550781,
-        "cover_offset": 350,
-        "yaw": 16.16081480258824
+        "yaw": -48.839185197411716
       },
       "settings": {
         "enabledDuringPhase": "Always",
@@ -175,6 +268,33 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
+      },
+      "initial_position": {
+        "x": -3918.9843947126387,
+        "y": -1135.6643317363616,
+        "z": -143.2200927734375,
+        "eye_z": 21.7799072265625,
+        "anchor": 25,
+        "hit_center_cm": 459.4756164550781,
+        "cover_offset": 350,
+        "yaw": 16.16081480258824
+      },
+      "transform": {
+        "location": {
+          "x": -3918.9843947126387,
+          "y": -1135.6643317363616,
+          "z": -143.2200927734375
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -48.839185197411716,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -183,6 +303,29 @@
         "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1495457917"
       },
       "position": {
+        "x": 5050,
+        "y": -2000,
+        "z": -140,
+        "eye_z": 25,
+        "yaw": 94.8302964326353
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      },
+      "initial_position": {
         "x": 5038.320009949207,
         "y": -1850.7166368131373,
         "z": -98.473388671875,
@@ -192,21 +335,22 @@
         "cover_offset": 500,
         "yaw": 159.8302964326352
       },
-      "settings": {
-        "enabledDuringPhase": "Always",
-        "playerTeam": {
-          "teamType": "Any",
-          "teamIndex": 1
+      "transform": {
+        "location": {
+          "x": 5050,
+          "y": -2000,
+          "z": -140
         },
-        "playerClass": {
-          "classType": "Any",
-          "classSlot": 1
+        "rotation": {
+          "pitch": 0,
+          "yaw": 94.8302964326353,
+          "roll": 0
         },
-        "useAsIslandStart": true,
-        "visibleInGame": false,
-        "priorityGroup": 1,
-        "priorityGroup_Override": true,
-        "enemyRangeCheck": 1000
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -219,10 +363,7 @@
         "y": 553.9875370983593,
         "z": -12.9007568359375,
         "eye_z": 152.0992431640625,
-        "anchor": 33,
-        "hit_center_cm": 386.1336975097656,
-        "cover_offset": 350,
-        "yaw": -174.05313694602648
+        "yaw": 120.94686305397354
       },
       "settings": {
         "enabledDuringPhase": "Always",
@@ -239,6 +380,33 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
+      },
+      "initial_position": {
+        "x": 5318.28035614425,
+        "y": 553.9875370983593,
+        "z": -12.9007568359375,
+        "eye_z": 152.0992431640625,
+        "anchor": 33,
+        "hit_center_cm": 386.1336975097656,
+        "cover_offset": 350,
+        "yaw": -174.05313694602648
+      },
+      "transform": {
+        "location": {
+          "x": 5318.28035614425,
+          "y": 553.9875370983593,
+          "z": -12.9007568359375
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 120.94686305397354,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -247,6 +415,29 @@
         "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1497891947"
       },
       "position": {
+        "x": 5950,
+        "y": 1800,
+        "z": 65.62706994328909,
+        "eye_z": 230.6270699432891,
+        "yaw": 131.93719625136418
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      },
+      "initial_position": {
         "x": 6019.343439509302,
         "y": 1833.085666714004,
         "z": 59.6885986328125,
@@ -256,21 +447,22 @@
         "cover_offset": 350,
         "yaw": -163.06280374863582
       },
-      "settings": {
-        "enabledDuringPhase": "Always",
-        "playerTeam": {
-          "teamType": "Any",
-          "teamIndex": 1
+      "transform": {
+        "location": {
+          "x": 5950,
+          "y": 1800,
+          "z": 65.62706994328909
         },
-        "playerClass": {
-          "classType": "Any",
-          "classSlot": 1
+        "rotation": {
+          "pitch": 0,
+          "yaw": 131.93719625136418,
+          "roll": 0
         },
-        "useAsIslandStart": true,
-        "visibleInGame": false,
-        "priorityGroup": 1,
-        "priorityGroup_Override": true,
-        "enemyRangeCheck": 1000
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -283,10 +475,7 @@
         "y": 3517.610588154814,
         "z": 94.1392822265625,
         "eye_z": 259.1392822265625,
-        "anchor": 35,
-        "hit_center_cm": 558.3516235351562,
-        "cover_offset": 350,
-        "yaw": -143.66127133360084
+        "yaw": 151.33872866639925
       },
       "settings": {
         "enabledDuringPhase": "Always",
@@ -303,6 +492,33 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
+      },
+      "initial_position": {
+        "x": 4781.868631733744,
+        "y": 3517.610588154814,
+        "z": 94.1392822265625,
+        "eye_z": 259.1392822265625,
+        "anchor": 35,
+        "hit_center_cm": 558.3516235351562,
+        "cover_offset": 350,
+        "yaw": -143.66127133360084
+      },
+      "transform": {
+        "location": {
+          "x": 4781.868631733744,
+          "y": 3517.610588154814,
+          "z": 94.1392822265625
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 151.33872866639925,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -315,10 +531,7 @@
         "y": 2635.3790082491623,
         "z": 123.3431396484375,
         "eye_z": 288.3431396484375,
-        "anchor": 51,
-        "hit_center_cm": 415.14849853515625,
-        "cover_offset": 350,
-        "yaw": -152.9353906670426
+        "yaw": 142.06460933295745
       },
       "settings": {
         "enabledDuringPhase": "Always",
@@ -335,6 +548,33 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
+      },
+      "initial_position": {
+        "x": 5157.83579160566,
+        "y": 2635.3790082491623,
+        "z": 123.3431396484375,
+        "eye_z": 288.3431396484375,
+        "anchor": 51,
+        "hit_center_cm": 415.14849853515625,
+        "cover_offset": 350,
+        "yaw": -152.9353906670426
+      },
+      "transform": {
+        "location": {
+          "x": 5157.83579160566,
+          "y": 2635.3790082491623,
+          "z": 123.3431396484375
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 142.06460933295745,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -343,6 +583,29 @@
         "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1501637992"
       },
       "position": {
+        "x": -3250,
+        "y": 2550,
+        "z": -376.5647684310019,
+        "eye_z": -211.56476843100188,
+        "yaw": -107.61405596961119
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      },
+      "initial_position": {
         "x": -3048.784333785369,
         "y": 2804.8815870825397,
         "z": -381.119873046875,
@@ -352,21 +615,22 @@
         "cover_offset": 425,
         "yaw": -42.61405596961119
       },
-      "settings": {
-        "enabledDuringPhase": "Always",
-        "playerTeam": {
-          "teamType": "Any",
-          "teamIndex": 1
+      "transform": {
+        "location": {
+          "x": -3250,
+          "y": 2550,
+          "z": -376.5647684310019
         },
-        "playerClass": {
-          "classType": "Any",
-          "classSlot": 1
+        "rotation": {
+          "pitch": 0,
+          "yaw": -107.61405596961119,
+          "roll": 0
         },
-        "useAsIslandStart": true,
-        "visibleInGame": false,
-        "priorityGroup": 1,
-        "priorityGroup_Override": true,
-        "enemyRangeCheck": 1000
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -379,10 +643,7 @@
         "y": 3023.33621816675,
         "z": -284.1199951171875,
         "eye_z": -119.1199951171875,
-        "anchor": 28,
-        "hit_center_cm": 387.1820983886719,
-        "cover_offset": 350,
-        "yaw": -58.46696547325595
+        "yaw": -123.46696547325587
       },
       "settings": {
         "enabledDuringPhase": "Always",
@@ -399,6 +660,33 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
+      },
+      "initial_position": {
+        "x": -1855.1013953241484,
+        "y": 3023.33621816675,
+        "z": -284.1199951171875,
+        "eye_z": -119.1199951171875,
+        "anchor": 28,
+        "hit_center_cm": 387.1820983886719,
+        "cover_offset": 350,
+        "yaw": -58.46696547325595
+      },
+      "transform": {
+        "location": {
+          "x": -1855.1013953241484,
+          "y": 3023.33621816675,
+          "z": -284.1199951171875
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -123.46696547325587,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -407,6 +695,29 @@
         "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1504054022"
       },
       "position": {
+        "x": 1500,
+        "y": 3450,
+        "z": -182.00543478260875,
+        "eye_z": -17.005434782608745,
+        "yaw": 176.0509537606161
+      },
+      "settings": {
+        "enabledDuringPhase": "Always",
+        "playerTeam": {
+          "teamType": "Any",
+          "teamIndex": 1
+        },
+        "playerClass": {
+          "classType": "Any",
+          "classSlot": 1
+        },
+        "useAsIslandStart": true,
+        "visibleInGame": false,
+        "priorityGroup": 1,
+        "priorityGroup_Override": true,
+        "enemyRangeCheck": 1000
+      },
+      "initial_position": {
         "x": 1677.6326349084773,
         "y": 3032.8871685972595,
         "z": -84.3021240234375,
@@ -416,6 +727,36 @@
         "cover_offset": 350,
         "yaw": -118.94904623938393
       },
+      "transform": {
+        "location": {
+          "x": 1500,
+          "y": 3450,
+          "z": -182.00543478260875
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 176.0509537606161,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_Spawn14_Workshop",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1505282037"
+      },
+      "position": {
+        "x": 3800,
+        "y": 3950,
+        "z": 41.620770321361,
+        "eye_z": 206.620770321361,
+        "yaw": 157.93766513699495
+      },
       "settings": {
         "enabledDuringPhase": "Always",
         "playerTeam": {
@@ -431,14 +772,8 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
-      }
-    },
-    {
-      "label": "QC_Spawn14_Workshop",
-      "actor": {
-        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1505282037"
       },
-      "position": {
+      "initial_position": {
         "x": 3967.689165903421,
         "y": 3691.8678541774657,
         "z": 114.079345703125,
@@ -448,21 +783,22 @@
         "cover_offset": 500,
         "yaw": -137.0623348630051
       },
-      "settings": {
-        "enabledDuringPhase": "Always",
-        "playerTeam": {
-          "teamType": "Any",
-          "teamIndex": 1
+      "transform": {
+        "location": {
+          "x": 3800,
+          "y": 3950,
+          "z": 41.620770321361
         },
-        "playerClass": {
-          "classType": "Any",
-          "classSlot": 1
+        "rotation": {
+          "pitch": 0,
+          "yaw": 157.93766513699495,
+          "roll": 0
         },
-        "useAsIslandStart": true,
-        "visibleInGame": false,
-        "priorityGroup": 1,
-        "priorityGroup_Override": true,
-        "enemyRangeCheck": 1000
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -473,12 +809,9 @@
       "position": {
         "x": -4490,
         "y": -3300,
-        "z": -257.4085693359375,
-        "eye_z": -92.4085693359375,
-        "anchor": 37,
-        "hit_center_cm": 230.87918090820312,
-        "cover_offset": 350,
-        "yaw": 36.31464365524796
+        "z": -249.23113516068042,
+        "eye_z": -84.23113516068042,
+        "yaw": -28.685356344752005
       },
       "settings": {
         "enabledDuringPhase": "Always",
@@ -495,6 +828,33 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
+      },
+      "initial_position": {
+        "x": -4490,
+        "y": -3300,
+        "z": -257.4085693359375,
+        "eye_z": -92.4085693359375,
+        "anchor": 37,
+        "hit_center_cm": 230.87918090820312,
+        "cover_offset": 350,
+        "yaw": 36.31464365524796
+      },
+      "transform": {
+        "location": {
+          "x": -4490,
+          "y": -3300,
+          "z": -249.23113516068042
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -28.685356344752005,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -507,10 +867,7 @@
         "y": -4352.5246530558525,
         "z": -320.6876220703125,
         "eye_z": -155.6876220703125,
-        "anchor": 38,
-        "hit_center_cm": 463.191162109375,
-        "cover_offset": 350,
-        "yaw": 53.615648184164115
+        "yaw": -11.384351815835828
       },
       "settings": {
         "enabledDuringPhase": "Always",
@@ -527,6 +884,33 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
+      },
+      "initial_position": {
+        "x": -3207.1234285674705,
+        "y": -4352.5246530558525,
+        "z": -320.6876220703125,
+        "eye_z": -155.6876220703125,
+        "anchor": 38,
+        "hit_center_cm": 463.191162109375,
+        "cover_offset": 350,
+        "yaw": 53.615648184164115
+      },
+      "transform": {
+        "location": {
+          "x": -3207.1234285674705,
+          "y": -4352.5246530558525,
+          "z": -320.6876220703125
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -11.384351815835828,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -539,10 +923,7 @@
         "y": -4292.285745131202,
         "z": -286.2730712890625,
         "eye_z": -121.2730712890625,
-        "anchor": 39,
-        "hit_center_cm": 461.0317687988281,
-        "cover_offset": 350,
-        "yaw": 77.79953127261922
+        "yaw": 12.79953127261923
       },
       "settings": {
         "enabledDuringPhase": "Always",
@@ -559,6 +940,33 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
+      },
+      "initial_position": {
+        "x": -928.0617827310707,
+        "y": -4292.285745131202,
+        "z": -286.2730712890625,
+        "eye_z": -121.2730712890625,
+        "anchor": 39,
+        "hit_center_cm": 461.0317687988281,
+        "cover_offset": 350,
+        "yaw": 77.79953127261922
+      },
+      "transform": {
+        "location": {
+          "x": -928.0617827310707,
+          "y": -4292.285745131202,
+          "z": -286.2730712890625
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 12.79953127261923,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -571,10 +979,7 @@
         "y": -974.8258704410848,
         "z": -42.4696044921875,
         "eye_z": 122.5303955078125,
-        "anchor": 31,
-        "hit_center_cm": 482.2042541503906,
-        "cover_offset": 350,
-        "yaw": 164.05460409907712
+        "yaw": 99.0546040990772
       },
       "settings": {
         "enabledDuringPhase": "Always",
@@ -591,6 +996,33 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
+      },
+      "initial_position": {
+        "x": 3411.8905465437965,
+        "y": -974.8258704410848,
+        "z": -42.4696044921875,
+        "eye_z": 122.5303955078125,
+        "anchor": 31,
+        "hit_center_cm": 482.2042541503906,
+        "cover_offset": 350,
+        "yaw": 164.05460409907712
+      },
+      "transform": {
+        "location": {
+          "x": 3411.8905465437965,
+          "y": -974.8258704410848,
+          "z": -42.4696044921875
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 99.0546040990772,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     },
     {
@@ -603,10 +1035,7 @@
         "y": -3301.809339841463,
         "z": -210.8604736328125,
         "eye_z": -45.8604736328125,
-        "anchor": 54,
-        "hit_center_cm": 811.3214721679688,
-        "cover_offset": 350,
-        "yaw": 135.58309836601106
+        "yaw": 70.58309836601101
       },
       "settings": {
         "enabledDuringPhase": "Always",
@@ -623,6 +1052,33 @@
         "priorityGroup": 1,
         "priorityGroup_Override": true,
         "enemyRangeCheck": 1000
+      },
+      "initial_position": {
+        "x": 3369.7076209999873,
+        "y": -3301.809339841463,
+        "z": -210.8604736328125,
+        "eye_z": -45.8604736328125,
+        "anchor": 54,
+        "hit_center_cm": 811.3214721679688,
+        "cover_offset": 350,
+        "yaw": 135.58309836601106
+      },
+      "transform": {
+        "location": {
+          "x": 3369.7076209999873,
+          "y": -3301.809339841463,
+          "z": -210.8604736328125
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 70.58309836601101,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
       }
     }
   ],
@@ -1189,5 +1645,6 @@
     "bLastStandingEndsGame": false,
     "timeOfDayOverride": "Hour11"
   },
-  "runtime_status": "NOT TESTED"
+  "runtime_status": "NOT TESTED",
+  "effective_EM_target": "Players Only: ANY(Creative.EliminationManager.EnemyType.Player); deprecated target Type AllTypes is not effective"
 }

@@ -1,0 +1,42 @@
+{
+  "output": "QuarryCut_253_CompactedTracks_8bit.png",
+  "sha256": "ec55860447387418df2d8f6f5f7f07af6a07facf531d46c747ec626e581c516b",
+  "dimensions": [
+    253,
+    253
+  ],
+  "encoding": "8-bit weight, row0 negativeY, same native Landscape alignment",
+  "target": "Layer1",
+  "source": "Measured 0.5m route model path samples; 1.2m margins, 1.8m smoothstep feather, maximum209/255",
+  "native_import": "SAVED Layer1 only; native viewport paths observed; height/visibility/otherlayers unchecked",
+  "native_readback": {
+    "saved_landscape": [
+      {
+        "label": "Landscape",
+        "guid": "82F4A5B6-423C-3C92-4006-CDB30388F3B6",
+        "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.Landscape_UAID_D85ED304C013B00603_1712227030"
+      },
+      {
+        "label": "LandscapeStreamingProxy_0_0_0",
+        "guid": "CF8F9F7C-4947-422C-B7A3-0CB83FE3DE62",
+        "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.LandscapeStreamingProxy_AKSHXKRBT5NL7A2VV351SZ50Q_126_0_0_0"
+      },
+      {
+        "label": "LandscapeStreamingProxy_1_0_0",
+        "guid": "653EC4C8-45FF-141C-E782-688DB7D3F03B",
+        "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.LandscapeStreamingProxy_AKSHXKRBT5NL7A2VV351SZ50Q_126_1_0_0"
+      },
+      {
+        "label": "LandscapeStreamingProxy_0_1_0",
+        "guid": "0782025A-4D98-0B9A-35E4-D0BA5D0FB64C",
+        "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.LandscapeStreamingProxy_AKSHXKRBT5NL7A2VV351SZ50Q_126_0_1_0"
+      },
+      {
+        "label": "LandscapeStreamingProxy_1_1_0",
+        "guid": "FB20BDD8-4F73-559D-C980-31856638469B",
+        "actorPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.LandscapeStreamingProxy_AKSHXKRBT5NL7A2VV351SZ50Q_126_1_1_0"
+      }
+    ],
+    "layer_info": "{\"layerName\":\"Layer1\",\"blendMethod\":\"None\"}"
+  }
+}

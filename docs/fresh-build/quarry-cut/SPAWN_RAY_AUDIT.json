@@ -321,5 +321,6 @@
     "pair_count": 171,
     "runtime_status": "NOT TESTED"
   },
-  "note": "Latest rays predate Screen026 scale .8 and added Screen027/028; rerun pending. Terrain changes require resampling eyes and rays. Two exits/widths/multiplayer not yet certified."
+  "note": "Latest rays predate Screen026 scale .8 and added Screen027/028; rerun pending. Terrain changes require resampling eyes and rays. Two exits/widths/multiplayer not yet certified.",
+  "status": "Historical initial audit; transforms superseded by NATIVE_GAMEPLAY_STATE and NATIVE_CLEARANCE_AUDIT"
 }

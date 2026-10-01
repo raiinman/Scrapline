@@ -2,7 +2,7 @@
 
 ## Status
 
-The Scrapline toolchain is installed, activated, and verified against the live Scrapline editor session. Epic Unreal MCP is responding to real editor reads, Python is enabled, and Trashbyrd Power Tools reports `status=running`, `level_name=Scrapline`, and a nonzero actor count. No Codex build credits were used for this verification.
+The Scrapline toolchain is installed and verified against the live asset-bearing project. Epic Unreal MCP responds to editor reads, Python is enabled, and Power Tools returns the actual active level and actor count. For the fresh run, verify `Fresh_QuarryCut`; historical verification against `Scrapline` does not establish the current target.
 
 ## Required Build Stack
 
@@ -48,6 +48,8 @@ Division of labor:
 
 Coordinate rule:
 - Power Tools may report both traditional **XYZ** and UEFN **Left-Up-Forward (LUF)** locations. Never feed values from one convention into an operation expecting the other. For major Scrapline anchors, read back the actual world transform after placement before propagating duplicates.
+- Epic ActorTools transform writes in this editor have reset omitted rotation/scale to identity despite their documented preservation behavior. Supply complete location/rotation/scale, read back and save.
+- Native Landscape import gizmos are editor helpers, not external actor assets; save actual Landscape/proxies individually or save the level.
 
 This Scrapline project uses its existing live Python bridge location at `Content/Python/`; do not relocate the working bridge during the one-shot. `UEFN_PROJECTS_ROOT` is already configured for this nonstandard project location.
 
@@ -72,7 +74,7 @@ Upstream installation/reference docs are `README.md` and `INSTALL.md` in the can
 ### Unreal Engine Donor Staging
 
 - Unreal Engine 5.8 is installed for general donor/staging work.
-- Unreal Engine 5.6 is being installed because some Fab sample projects expose creation only for their packaged engine version.
+- Unreal Engine 5.6 and ScrapStage56 are installed and have been used for read-only native asset inspection and supported selective migration.
 - Donor projects are source libraries only; do not treat their demo maps, Blueprints, cinematics, or project settings as Scrapline content.
 - The durable donor/FBX/referenced-content workflow is documented in `ASSET_PIPELINE.md`.
 
