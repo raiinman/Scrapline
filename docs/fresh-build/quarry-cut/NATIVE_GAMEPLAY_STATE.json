@@ -303,10 +303,10 @@
         "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.BP_Creative_Player_Spawner_Prop_C_UAID_D85ED304C013B30603_1495457917"
       },
       "position": {
-        "x": 5050,
+        "x": 5800,
         "y": -2000,
-        "z": -140,
-        "eye_z": 25,
+        "z": -133.47405482041586,
+        "eye_z": 31.52594517958414,
         "yaw": 94.8302964326353
       },
       "settings": {
@@ -337,9 +337,9 @@
       },
       "transform": {
         "location": {
-          "x": 5050,
+          "x": 5800,
           "y": -2000,
-          "z": -140
+          "z": -133.47405482041586
         },
         "rotation": {
           "pitch": 0,

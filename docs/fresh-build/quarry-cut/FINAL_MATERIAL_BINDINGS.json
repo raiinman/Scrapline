@@ -1,0 +1,1087 @@
+{
+  "used_meshes": [
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_01.SM_Container01_01"
+      },
+      "materials": [
+        {
+          "slot": "06 - Default",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_Container01.MI_Container01"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_BaseMaterial.M_BaseMaterial",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Container01_BC.T_Container01_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Container01_Mask.T_Container01_Mask",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Container01_N.T_Container01_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Container01_ORM.T_Container01_ORM"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_Crane01.SM_Crane01"
+      },
+      "materials": [
+        {
+          "slot": "SM_crane_01",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_Crane01.MI_Crane01"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_3ColorsMaskBase.M_3ColorsMaskBase",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Crane01_BC.T_Crane01_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Crane01_MSK.T_Crane01_MSK",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Crane01_N.T_Crane01_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Crane01_ORM.T_Crane01_ORM"
+          ]
+        },
+        {
+          "slot": "fire",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_FireEquipmentBox.MI_FireEquipmentBox"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_ConcretePillar01_Master.M_ConcretePillar01_Master",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_FireEquipmentBox01_BC.T_FireEquipmentBox01_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_FireEquipmentBox01_N.T_FireEquipmentBox01_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_FireEquipmentBox01_ORM.T_FireEquipmentBox01_ORM"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCabin01.SM_CraneCabin01"
+      },
+      "materials": [
+        {
+          "slot": "SM_CraneCabin01",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_Cranecabin01.MI_Cranecabin01"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_3ColorsMaskBase.M_3ColorsMaskBase",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_CraneCabin01_BC.T_CraneCabin01_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_CraneCabin01_Mask.T_CraneCabin01_Mask",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_CraneCabin01_N.T_CraneCabin01_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_CraneCabin01_ORM.T_CraneCabin01_ORM"
+          ]
+        },
+        {
+          "slot": "04 - Default",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_BaseGlass01.MI_BaseGlass01"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_BaseGlass.M_BaseGlass"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/Crane/SM_CraneCable01.SM_CraneCable01"
+      },
+      "materials": [
+        {
+          "slot": "SM_ElectricMotor01",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_ElectricMotor01.MI_ElectricMotor01"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_3ColorsMaskBase.M_3ColorsMaskBase",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricMotor01_BC.T_ElectricMotor01_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricMotor01_MSK.T_ElectricMotor01_MSK",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricMotor01_N.T_ElectricMotor01_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricMotor01_ORM.T_ElectricMotor01_ORM"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_EngineWithContainer.SM_EngineWithContainer"
+      },
+      "materials": [
+        {
+          "slot": "ContainerEngine_mtl",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_ContainerEngine.MI_ContainerEngine"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_BaseMaterial.M_BaseMaterial",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ContainerEngine_BC.T_ContainerEngine_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ContainerEngine_MSK.T_ContainerEngine_MSK",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ContainerEngine_N.T_ContainerEngine_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ContainerEngine_ORM.T_ContainerEngine_ORM"
+          ]
+        },
+        {
+          "slot": "24 - Default",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_TruckEngine.MI_TruckEngine"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_ConcretePillar01_Master.M_ConcretePillar01_Master",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Engine_BC.T_Engine_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Engine_N.T_Engine_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Engine_ORM.T_Engine_ORM"
+          ]
+        },
+        {
+          "slot": "21 - Default",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/M_BaseMetal.M_BaseMetal"
+          },
+          "dependencies": []
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_RecyclingMachine01.SM_RecyclingMachine01"
+      },
+      "materials": [
+        {
+          "slot": "RecyclingMachine01",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_RecyclingMachine01.MI_RecyclingMachine01"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_LampSet_01.M_LampSet_01",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_RecyclingMachine01_BC.T_RecyclingMachine01_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_RecyclingMachine01_E.T_RecyclingMachine01_E",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_RecyclingMachine01_N.T_RecyclingMachine01_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_RecyclingMachine01_ORM.T_RecyclingMachine01_ORM"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ForkLift.SM_ForkLift"
+      },
+      "materials": [
+        {
+          "slot": "ForkLift",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_ForkLift2.MI_ForkLift2"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_LampSet_01.M_LampSet_01",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ForkLift_BC.T_ForkLift_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ForkLift_Emissive.T_ForkLift_Emissive",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ForkLift_N.T_ForkLift_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ForkLift_ORM.T_ForkLift_ORM"
+          ]
+        },
+        {
+          "slot": "ForkLiftDetails",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_ForkLiftDetails.MI_ForkLiftDetails"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_ConcretePillar01_Master.M_ConcretePillar01_Master",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ForkLiftDetails_BC.T_ForkLiftDetails_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ForkLiftDetails_N.T_ForkLiftDetails_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ForkLiftDetails_ORM.T_ForkLiftDetails_ORM"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLine01.SM_AssemblyLine01"
+      },
+      "materials": [
+        {
+          "slot": "07 - Default",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_AssemblyLineColor02.MI_AssemblyLineColor02"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_3ColorsMaskBase.M_3ColorsMaskBase",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLine01_BC.T_AssemblyLine01_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLine01_MSK.T_AssemblyLine01_MSK",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLine01_N.T_AssemblyLine01_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLine01_ORM.T_AssemblyLine01_ORM"
+          ]
+        },
+        {
+          "slot": "Body",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/Mi_3ColorsMaskBase_UniqueForward.Mi_3ColorsMaskBase_UniqueForward"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_3ColorsMaskBase_Unique.M_3ColorsMaskBase_Unique",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLineRoll01_BC.T_AssemblyLineRoll01_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLineRoll01_N.T_AssemblyLineRoll01_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLineRoll01_ORM.T_AssemblyLineRoll01_ORM"
+          ]
+        },
+        {
+          "slot": "Roll",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/Mi_3ColorsMaskBase_UniqueForward.Mi_3ColorsMaskBase_UniqueForward"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_3ColorsMaskBase_Unique.M_3ColorsMaskBase_Unique",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLineRoll01_BC.T_AssemblyLineRoll01_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLineRoll01_N.T_AssemblyLineRoll01_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLineRoll01_ORM.T_AssemblyLineRoll01_ORM"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_AssemblyLineTable01.SM_AssemblyLineTable01"
+      },
+      "materials": [
+        {
+          "slot": "07 - Default",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_AssemblyLineColor02.MI_AssemblyLineColor02"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_3ColorsMaskBase.M_3ColorsMaskBase",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLine01_BC.T_AssemblyLine01_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLine01_MSK.T_AssemblyLine01_MSK",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLine01_N.T_AssemblyLine01_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_AssemblyLine01_ORM.T_AssemblyLine01_ORM"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1.SM_Garage_1"
+      },
+      "materials": [
+        {
+          "slot": "Material",
+          "material": {
+            "refPath": "/Scrapline/Imported/GarageSource/Materials/M_Garage_1.M_Garage_1"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/GarageSource/Textures/T_Garage_1_BC.T_Garage_1_BC",
+            "/Scrapline/Imported/GarageSource/Textures/T_Garage_1_HRM.T_Garage_1_HRM",
+            "/Scrapline/Imported/GarageSource/Textures/T_Garage_1_Normal.T_Garage_1_Normal"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Garage_1_roof.SM_Garage_1_roof"
+      },
+      "materials": [
+        {
+          "slot": "Material",
+          "material": {
+            "refPath": "/Scrapline/Imported/GarageSource/Materials/M_Garage_1_roof.M_Garage_1_roof"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/GarageSource/Textures/T_Garage_1_roof_BC.T_Garage_1_roof_BC",
+            "/Scrapline/Imported/GarageSource/Textures/T_Garage_1_roof_HRM.T_Garage_1_roof_HRM",
+            "/Scrapline/Imported/GarageSource/Textures/T_Garage_1_roof_Normal.T_Garage_1_roof_Normal"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Workbench.SM_Workbench"
+      },
+      "materials": [
+        {
+          "slot": "Material_001",
+          "material": {
+            "refPath": "/Scrapline/Imported/GarageSource/Materials/M_Workbench.M_Workbench"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/GarageSource/Textures/T_Workbench_BC.T_Workbench_BC",
+            "/Scrapline/Imported/GarageSource/Textures/T_Workbench_HRM.T_Workbench_HRM",
+            "/Scrapline/Imported/GarageSource/Textures/T_Workbench_Normal.T_Workbench_Normal"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Shelf.SM_Shelf"
+      },
+      "materials": [
+        {
+          "slot": "Material_001",
+          "material": {
+            "refPath": "/Scrapline/Imported/GarageSource/Materials/M_Shelf.M_Shelf"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/GarageSource/Textures/T_Shelf_BC.T_Shelf_BC",
+            "/Scrapline/Imported/GarageSource/Textures/T_Shelf_HRM.T_Shelf_HRM",
+            "/Scrapline/Imported/GarageSource/Textures/T_Shelf_Normal.T_Shelf_Normal"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Cart.SM_Cart"
+      },
+      "materials": [
+        {
+          "slot": "Material_001",
+          "material": {
+            "refPath": "/Scrapline/Imported/GarageSource/Materials/M_Cart.M_Cart"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/GarageSource/Textures/T_Cart_BC.T_Cart_BC",
+            "/Scrapline/Imported/GarageSource/Textures/T_Cart_HRM.T_Cart_HRM",
+            "/Scrapline/Imported/GarageSource/Textures/T_Cart_Normal.T_Cart_Normal"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Pallet.SM_Pallet"
+      },
+      "materials": [
+        {
+          "slot": "Material",
+          "material": {
+            "refPath": "/Scrapline/Imported/GarageSource/Materials/M_Pallet.M_Pallet"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/GarageSource/Textures/T_Pallet_BC.T_Pallet_BC",
+            "/Scrapline/Imported/GarageSource/Textures/T_Pallet_HRM.T_Pallet_HRM",
+            "/Scrapline/Imported/GarageSource/Textures/T_Pallet_Normal.T_Pallet_Normal"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Stairs.SM_Stairs"
+      },
+      "materials": [
+        {
+          "slot": "Material",
+          "material": {
+            "refPath": "/Scrapline/Imported/GarageSource/Materials/M_Stairs.M_Stairs"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/GarageSource/Textures/T_Stairs_BC.T_Stairs_BC",
+            "/Scrapline/Imported/GarageSource/Textures/T_Stairs_HRM.T_Stairs_HRM",
+            "/Scrapline/Imported/GarageSource/Textures/T_Stairs_Normal.T_Stairs_Normal"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Railings.SM_Railings"
+      },
+      "materials": [
+        {
+          "slot": "Material",
+          "material": {
+            "refPath": "/Scrapline/Imported/GarageSource/Materials/M_Railings.M_Railings"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/GarageSource/Textures/T_Railings_BC.T_Railings_BC",
+            "/Scrapline/Imported/GarageSource/Textures/T_Railings_HRM.T_Railings_HRM",
+            "/Scrapline/Imported/GarageSource/Textures/T_Railings_Normal.T_Railings_Normal"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Wheel.SM_Wheel"
+      },
+      "materials": [
+        {
+          "slot": "ATV_F2",
+          "material": {
+            "refPath": "/Scrapline/Imported/GarageSource/Materials/M_Wheel.M_Wheel"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/GarageSource/Textures/T_Wheel_BC.T_Wheel_BC",
+            "/Scrapline/Imported/GarageSource/Textures/T_Wheel_HRM.T_Wheel_HRM",
+            "/Scrapline/Imported/GarageSource/Textures/T_Wheel_Normal.T_Wheel_Normal"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/GarageSource/Meshes/SM_Ventilation.SM_Ventilation"
+      },
+      "materials": [
+        {
+          "slot": "Material",
+          "material": {
+            "refPath": "/Scrapline/Imported/GarageSource/Materials/M_Ventilation.M_Ventilation"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/GarageSource/Textures/T_Ventilation_BC.T_Ventilation_BC",
+            "/Scrapline/Imported/GarageSource/Textures/T_Ventilation_HRM.T_Ventilation_HRM",
+            "/Scrapline/Imported/GarageSource/Textures/T_Ventilation_Normal.T_Ventilation_Normal"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_Container01_02.SM_Container01_02"
+      },
+      "materials": [
+        {
+          "slot": "06 - Default",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_Container01.MI_Container01"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_BaseMaterial.M_BaseMaterial",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Container01_BC.T_Container01_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Container01_Mask.T_Container01_Mask",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Container01_N.T_Container01_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_Container01_ORM.T_Container01_ORM"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_BoxTruck_01a.SM_BoxTruck_01a"
+      },
+      "materials": [
+        {
+          "slot": "M_Truck_Interior01",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/BoxTruck/Mi_BoxTruck_Interior_01a.Mi_BoxTruck_Interior_01a"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Master.M_Master",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_DIF_21.TX_BoxTruck_DIF_21",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_NRM_22.TX_BoxTruck_NRM_22",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_ORM_23.TX_BoxTruck_ORM_23"
+          ]
+        },
+        {
+          "slot": "M_Truck_ExteriorDetailing",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/BoxTruck/Mi_BoxTruck_ExteriorDetailing_01a.Mi_BoxTruck_ExteriorDetailing_01a"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Master.M_Master",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_DIF_16.TX_BoxTruck_DIF_16",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_NRM_17.TX_BoxTruck_NRM_17",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_ORM_18.TX_BoxTruck_ORM_18"
+          ]
+        },
+        {
+          "slot": "M_Planes",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/BoxTruck/Mi_GlassPlanes_01a.Mi_GlassPlanes_01a"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_DIF_11.TX_BoxTruck_DIF_11",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_NRM_7.TX_BoxTruck_NRM_7",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_ORM_13.TX_BoxTruck_ORM_13",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Glass.M_Glass",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_OPC_15.TX_BoxTruck_OPC_15"
+          ]
+        },
+        {
+          "slot": "M_Exterior_01b",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/BoxTruck/Mi_BoxTruck_Exterior_01b.Mi_BoxTruck_Exterior_01b"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Master.M_Master",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_DIF_1.TX_BoxTruck_DIF_1",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_NRM_2.TX_BoxTruck_NRM_2",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_ORM_3.TX_BoxTruck_ORM_3"
+          ]
+        },
+        {
+          "slot": "M_Exterior_01a",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/BoxTruck/Mi_BoxTruck_Exterior_01a.Mi_BoxTruck_Exterior_01a"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Master.M_Master",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_DIF.TX_BoxTruck_DIF",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_NRM.TX_BoxTruck_NRM",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_ORM.TX_BoxTruck_ORM",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Default/TX_Default_Grey.TX_Default_Grey"
+          ]
+        },
+        {
+          "slot": "M_Exterior_01c",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/BoxTruck/Mi_BoxTruck_Exterior_01c.Mi_BoxTruck_Exterior_01c"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Master.M_Master",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_DIF_6.TX_BoxTruck_DIF_6",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_NRM_7.TX_BoxTruck_NRM_7",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_ORM_8.TX_BoxTruck_ORM_8"
+          ]
+        },
+        {
+          "slot": "M_Truck_Interior02",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/BoxTruck/Mi_BoxTruck_Interior_01b.Mi_BoxTruck_Interior_01b"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Master.M_Master",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_DIF_26.TX_BoxTruck_DIF_26",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_NRM_27.TX_BoxTruck_NRM_27",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/BoxTruck/TX_BoxTruck_ORM_28.TX_BoxTruck_ORM_28",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Default/TX_Default_Grey.TX_Default_Grey"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Meshes/SM_Campervan_01a.SM_Campervan_01a"
+      },
+      "materials": [
+        {
+          "slot": "M_InteriorWall",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Camper/Mi_InteriorWall_01a.Mi_InteriorWall_01a"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Master.M_Master",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Default/TX_Default_Grey.TX_Default_Grey",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_WoodWithCoving_DIF.TX_WoodWithCoving_DIF",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_WoodWithCoving_NRM.TX_WoodWithCoving_NRM"
+          ]
+        },
+        {
+          "slot": "M_InteriorCarpet",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Camper/Mi_CarpetFloor_01a.Mi_CarpetFloor_01a"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Master.M_Master",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Default/TX_Default_Grey.TX_Default_Grey",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_CarpetFloor01b_DIF.TX_CarpetFloor01b_DIF",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_CarpetFloor_NRM.TX_CarpetFloor_NRM",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_CarpetFloor_ORM.TX_CarpetFloor_ORM"
+          ]
+        },
+        {
+          "slot": "M_Interior_01a",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Camper/Mi_Camper_InteriorFront_01a.Mi_Camper_InteriorFront_01a"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Master.M_Master",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Default/TX_Default_Grey.TX_Default_Grey",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_CampervanInterior_DIF.TX_CampervanInterior_DIF",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_CampervanInterior_NRM.TX_CampervanInterior_NRM",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_CampervanInterior_ORM.TX_CampervanInterior_ORM"
+          ]
+        },
+        {
+          "slot": "M_Campervan_Pieces_01a",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Camper/Mi_Camper_BodyPieces_01a.Mi_Camper_BodyPieces_01a"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Master.M_Master",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_DIF_1.TX_Campervan_DIF_1",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_NRM_2.TX_Campervan_NRM_2",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_ORM_3.TX_Campervan_ORM_3",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_MASK_2.TX_Campervan_MASK_2"
+          ]
+        },
+        {
+          "slot": "M_Campervan_RearCab_01a",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Camper/Mi_CamperRear_01a.Mi_CamperRear_01a"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Master.M_Master",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_DIF_6.TX_Campervan_DIF_6",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_NRM_7.TX_Campervan_NRM_7",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_ORM_8.TX_Campervan_ORM_8",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_MASK_1.TX_Campervan_MASK_1"
+          ]
+        },
+        {
+          "slot": "M_Campervan_Undercarriage_01a",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Camper/Mi_CamperChassis_01a.Mi_CamperChassis_01a"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Master.M_Master",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Default/TX_Default_Grey.TX_Default_Grey",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_DIF_11.TX_Campervan_DIF_11",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_NRM_12.TX_Campervan_NRM_12",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_ORM_13.TX_Campervan_ORM_13"
+          ]
+        },
+        {
+          "slot": "M_Campervan_Body_01a",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Camper/Mi_Camper_Body_01a.Mi_Camper_Body_01a"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Master.M_Master",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_DIF.TX_Campervan_DIF",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_NRM.TX_Campervan_NRM",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_ORM.TX_Campervan_ORM",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_MASK.TX_Campervan_MASK"
+          ]
+        },
+        {
+          "slot": "M_Campervan_Windows_01a",
+          "material": {
+            "refPath": "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Camper/Mi_Camper_Glass_01a.Mi_Camper_Glass_01a"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Materials/Master/M_Glass.M_Glass",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_DIF_16.TX_Campervan_DIF_16",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_NRM_17.TX_Campervan_NRM_17",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_ORM_18.TX_Campervan_ORM_18",
+            "/Scrapline/Imported/VehicleVarietyV2Curated/Textures/Camper/TX_Campervan_OPC_20.TX_Campervan_OPC_20"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalPanel_01.SM_ElectricalPanel_01"
+      },
+      "materials": [
+        {
+          "slot": "07 - Default",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_ElectricalBox_01.MI_ElectricalBox_01"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_ConcretePillar01_Master.M_ConcretePillar01_Master",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricalBox_BC.T_ElectricalBox_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricalBox_N.T_ElectricalBox_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricalBox_ORM.T_ElectricalBox_ORM"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/FactoryCurated/Meshes/SM_ElectricalSupply_Switchboard01.SM_ElectricalSupply_Switchboard01"
+      },
+      "materials": [
+        {
+          "slot": "ElectricalSupply",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_ElectricalSupply.MI_ElectricalSupply"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_ConcretePillar01_Master.M_ConcretePillar01_Master",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricalSupply_BC.T_ElectricalSupply_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricalSupply_N.T_ElectricalSupply_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricalSupply_ORM.T_ElectricalSupply_ORM"
+          ]
+        },
+        {
+          "slot": "ElectricalSupply_Details",
+          "material": {
+            "refPath": "/Scrapline/Imported/FactoryCurated/Materials/MI_ElectricalSupply_Details.MI_ElectricalSupply_Details"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/FactoryCurated/Materials/M_LampSet_01.M_LampSet_01",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricalSupply_Details_BC.T_ElectricalSupply_Details_BC",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricalSupply_Details_Emissive.T_ElectricalSupply_Details_Emissive",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricalSupply_Details_N.T_ElectricalSupply_Details_N",
+            "/Scrapline/Imported/FactoryCurated/Textures/T_ElectricalSupply_Details_ORM.T_ElectricalSupply_Details_ORM"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_l300_00.pipe_m_l300_00"
+      },
+      "materials": [
+        {
+          "slot": "01 - Default",
+          "material": {
+            "refPath": "/Scrapline/Imported/IndustrialPipesSource/materials/pipes_m_skin0.pipes_m_skin0"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/IndustrialPipesSource/textures/pipes_m_diffuse_skin0.pipes_m_diffuse_skin0",
+            "/Scrapline/Imported/IndustrialPipesSource/textures/pipes_m_normal_skin0.pipes_m_normal_skin0",
+            "/Scrapline/Imported/IndustrialPipesSource/textures/pipes_m_roughness_skin0.pipes_m_roughness_skin0"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/IndustrialPipesSource/models/pipe_m_valve_00.pipe_m_valve_00"
+      },
+      "materials": [
+        {
+          "slot": "pipes_m",
+          "material": {
+            "refPath": "/Scrapline/Imported/IndustrialPipesSource/materials/pipes_m_skin0.pipes_m_skin0"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/IndustrialPipesSource/textures/pipes_m_diffuse_skin0.pipes_m_diffuse_skin0",
+            "/Scrapline/Imported/IndustrialPipesSource/textures/pipes_m_normal_skin0.pipes_m_normal_skin0",
+            "/Scrapline/Imported/IndustrialPipesSource/textures/pipes_m_roughness_skin0.pipes_m_roughness_skin0"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/1323a5be-433d-bad0-da94-55a78c147665/SCBK_huge_junk_pile_L0.SCBK_huge_junk_pile_L0"
+      },
+      "materials": [
+        {
+          "slot": "MI_huge_pile",
+          "material": {
+            "refPath": "/54859bb6-4f7f-b860-d960-2fb771db87e8/MI_huge_pile.MI_huge_pile"
+          },
+          "dependencies": [
+            "/54859bb6-4f7f-b860-d960-2fb771db87e8/T_huge_pile_D.T_huge_pile_D",
+            "/54859bb6-4f7f-b860-d960-2fb771db87e8/T_huge_pile_N.T_huge_pile_N",
+            "/54859bb6-4f7f-b860-d960-2fb771db87e8/T_huge_pile_S.T_huge_pile_S"
+          ]
+        },
+        {
+          "slot": "MI_rubble_01",
+          "material": {
+            "refPath": "/cd6ca98d-4e2b-e7dd-8365-209c51d01ed8/MI_rubble_01.MI_rubble_01"
+          },
+          "dependencies": [
+            "/cd6ca98d-4e2b-e7dd-8365-209c51d01ed8/T_rubble_01_D.T_rubble_01_D",
+            "/cd6ca98d-4e2b-e7dd-8365-209c51d01ed8/T_rubble_01_N.T_rubble_01_N",
+            "/cd6ca98d-4e2b-e7dd-8365-209c51d01ed8/T_rubble_01_S.T_rubble_01_S"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/449ff258-4b26-8bfa-89e8-94bb1587a463/SCBK_old_car_ruin_L0.SCBK_old_car_ruin_L0"
+      },
+      "materials": [
+        {
+          "slot": "MI_old_car_ruin",
+          "material": {
+            "refPath": "/787acacd-4227-cb12-8f39-9081917d85e8/MI_old_car_ruin.MI_old_car_ruin"
+          },
+          "dependencies": []
+        },
+        {
+          "slot": "MI_old_car_ruin_2",
+          "material": {
+            "refPath": "/f6f64240-45c0-273f-014a-96b878d6b58a/MI_old_car_ruin_2.MI_old_car_ruin_2"
+          },
+          "dependencies": [
+            "/f6f64240-45c0-273f-014a-96b878d6b58a/T_old_car_ruin_2_D.T_old_car_ruin_2_D"
+          ]
+        },
+        {
+          "slot": "MI_old_car_ruin_3",
+          "material": {
+            "refPath": "/4bd89e59-40c0-5ad0-66e5-469e776bb40d/MI_old_car_ruin_3.MI_old_car_ruin_3"
+          },
+          "dependencies": [
+            "/4bd89e59-40c0-5ad0-66e5-469e776bb40d/T_old_car_ruin_3_D.T_old_car_ruin_3_D",
+            "/4bd89e59-40c0-5ad0-66e5-469e776bb40d/T_old_car_ruin_3_N.T_old_car_ruin_3_N",
+            "/4bd89e59-40c0-5ad0-66e5-469e776bb40d/T_old_car_ruin_3_S.T_old_car_ruin_3_S"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/81794dd8-456c-e528-528c-7d9b5a82a800/SCBK_junk_pile_02_L0.SCBK_junk_pile_02_L0"
+      },
+      "materials": [
+        {
+          "slot": "MI_junk_pile_2",
+          "material": {
+            "refPath": "/4d4323f1-4503-2550-88a1-53a6f2490089/MI_junk_pile_2.MI_junk_pile_2"
+          },
+          "dependencies": [
+            "/4d4323f1-4503-2550-88a1-53a6f2490089/T_junk_pile_02_D_2.T_junk_pile_02_D_2",
+            "/4d4323f1-4503-2550-88a1-53a6f2490089/T_junk_pile_02_N_2.T_junk_pile_02_N_2",
+            "/4d4323f1-4503-2550-88a1-53a6f2490089/T_junk_pile_02_S_2.T_junk_pile_02_S_2"
+          ]
+        },
+        {
+          "slot": "MI_junk_pile",
+          "material": {
+            "refPath": "/5721da49-44e6-887a-5715-e884e0154922/MI_junk_pile.MI_junk_pile"
+          },
+          "dependencies": [
+            "/5721da49-44e6-887a-5715-e884e0154922/T_junk_pile_02_D.T_junk_pile_02_D",
+            "/5721da49-44e6-887a-5715-e884e0154922/T_junk_pile_02_N.T_junk_pile_02_N",
+            "/5721da49-44e6-887a-5715-e884e0154922/T_junk_pile_02_S.T_junk_pile_02_S"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjajs.ASQ_xckjajs"
+      },
+      "materials": [
+        {
+          "slot": "MatID_1",
+          "material": {
+            "refPath": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Materials/MI_ASQ_xckjajs.MI_ASQ_xckjajs"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/AfricanSlateQuarry/Materials/M_ASQ_Master.M_ASQ_Master",
+            "/Scrapline/Imported/AfricanSlateQuarry/Curated/Textures/xckjajs/T_ASQ_xckjajs_AO.T_ASQ_xckjajs_AO",
+            "/Scrapline/Imported/AfricanSlateQuarry/Curated/Textures/xckjajs/T_ASQ_xckjajs_BaseColor.T_ASQ_xckjajs_BaseColor",
+            "/Scrapline/Imported/AfricanSlateQuarry/Curated/Textures/xckjajs/T_ASQ_xckjajs_Normal.T_ASQ_xckjajs_Normal",
+            "/Scrapline/Imported/AfricanSlateQuarry/Curated/Textures/xckjajs/T_ASQ_xckjajs_Roughness.T_ASQ_xckjajs_Roughness"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xckjagi.ASQ_xckjagi"
+      },
+      "materials": [
+        {
+          "slot": "MatID_1",
+          "material": {
+            "refPath": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Materials/MI_ASQ_xckjagi.MI_ASQ_xckjagi"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/AfricanSlateQuarry/Materials/M_ASQ_Master.M_ASQ_Master",
+            "/Scrapline/Imported/AfricanSlateQuarry/Curated/Textures/xckjagi/T_ASQ_xckjagi_AO.T_ASQ_xckjagi_AO",
+            "/Scrapline/Imported/AfricanSlateQuarry/Curated/Textures/xckjagi/T_ASQ_xckjagi_BaseColor.T_ASQ_xckjagi_BaseColor",
+            "/Scrapline/Imported/AfricanSlateQuarry/Curated/Textures/xckjagi/T_ASQ_xckjagi_Normal.T_ASQ_xckjagi_Normal",
+            "/Scrapline/Imported/AfricanSlateQuarry/Curated/Textures/xckjagi/T_ASQ_xckjagi_Roughness.T_ASQ_xckjagi_Roughness"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Meshes/ASQ_xb5ebhf.ASQ_xb5ebhf"
+      },
+      "materials": [
+        {
+          "slot": "MatID_1",
+          "material": {
+            "refPath": "/Scrapline/Imported/AfricanSlateQuarry/Curated/Materials/MI_ASQ_xb5ebhf.MI_ASQ_xb5ebhf"
+          },
+          "dependencies": [
+            "/Scrapline/Imported/AfricanSlateQuarry/Materials/M_ASQ_Master.M_ASQ_Master",
+            "/Scrapline/Imported/AfricanSlateQuarry/Curated/Textures/xb5ebhf/T_ASQ_xb5ebhf_AO.T_ASQ_xb5ebhf_AO",
+            "/Scrapline/Imported/AfricanSlateQuarry/Curated/Textures/xb5ebhf/T_ASQ_xb5ebhf_BaseColor.T_ASQ_xb5ebhf_BaseColor",
+            "/Scrapline/Imported/AfricanSlateQuarry/Curated/Textures/xb5ebhf/T_ASQ_xb5ebhf_Normal.T_ASQ_xb5ebhf_Normal",
+            "/Scrapline/Imported/AfricanSlateQuarry/Curated/Textures/xb5ebhf/T_ASQ_xb5ebhf_Roughness.T_ASQ_xb5ebhf_Roughness"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/c72a2b13-4052-9f3d-966f-78851bd48a4b/SCBK_modular_wire_fence_big.SCBK_modular_wire_fence_big"
+      },
+      "materials": [
+        {
+          "slot": "MI_modular_wire_fence_set_net",
+          "material": {
+            "refPath": "/38c93e50-469d-9308-6ea1-26951ee67ae6/MI_modular_wire_fence_set_net.MI_modular_wire_fence_set_net"
+          },
+          "dependencies": [
+            "/38c93e50-469d-9308-6ea1-26951ee67ae6/T_modular_wire_fence_set_net_D.T_modular_wire_fence_set_net_D",
+            "/38c93e50-469d-9308-6ea1-26951ee67ae6/T_modular_wire_fence_set_net_N.T_modular_wire_fence_set_net_N",
+            "/38c93e50-469d-9308-6ea1-26951ee67ae6/T_modular_wire_fence_set_net_S.T_modular_wire_fence_set_net_S"
+          ]
+        },
+        {
+          "slot": "MI_modular_wire_fence_set_2",
+          "material": {
+            "refPath": "/c7328f55-4368-116f-9b4c-e3ad21a7bc9a/MI_modular_wire_fence_set_2.MI_modular_wire_fence_set_2"
+          },
+          "dependencies": [
+            "/c7328f55-4368-116f-9b4c-e3ad21a7bc9a/T_modular_wire_fence_set_2_D.T_modular_wire_fence_set_2_D",
+            "/c7328f55-4368-116f-9b4c-e3ad21a7bc9a/T_modular_wire_fence_set_2_N.T_modular_wire_fence_set_2_N",
+            "/c7328f55-4368-116f-9b4c-e3ad21a7bc9a/T_modular_wire_fence_set_2_S.T_modular_wire_fence_set_2_S"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/4c7f3e05-4bdc-a0d7-e655-0290a6f5921a/SCBK_metal_catwalk_set_01_01_L0.SCBK_metal_catwalk_set_01_01_L0"
+      },
+      "materials": [
+        {
+          "slot": "MI_metal_catwalk_set_01_2",
+          "material": {
+            "refPath": "/e0d77449-4fca-b9f4-7825-6db4a715767f/MI_metal_catwalk_set_01_2.MI_metal_catwalk_set_01_2"
+          },
+          "dependencies": [
+            "/e0d77449-4fca-b9f4-7825-6db4a715767f/T_metal_catwalk_set_01_2_D.T_metal_catwalk_set_01_2_D",
+            "/e0d77449-4fca-b9f4-7825-6db4a715767f/T_metal_catwalk_set_01_2_N.T_metal_catwalk_set_01_2_N",
+            "/e0d77449-4fca-b9f4-7825-6db4a715767f/T_metal_catwalk_set_01_2_S.T_metal_catwalk_set_01_2_S"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/85827e89-4c9f-09e4-5c37-fbaea2b6811c/SCBK_metal_catwalk_set_01_07_L0.SCBK_metal_catwalk_set_01_07_L0"
+      },
+      "materials": [
+        {
+          "slot": "MI_metal_catwalk_set_01_2",
+          "material": {
+            "refPath": "/e0d77449-4fca-b9f4-7825-6db4a715767f/MI_metal_catwalk_set_01_2.MI_metal_catwalk_set_01_2"
+          },
+          "dependencies": [
+            "/e0d77449-4fca-b9f4-7825-6db4a715767f/T_metal_catwalk_set_01_2_D.T_metal_catwalk_set_01_2_D",
+            "/e0d77449-4fca-b9f4-7825-6db4a715767f/T_metal_catwalk_set_01_2_N.T_metal_catwalk_set_01_2_N",
+            "/e0d77449-4fca-b9f4-7825-6db4a715767f/T_metal_catwalk_set_01_2_S.T_metal_catwalk_set_01_2_S"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/a81776b6-460f-9380-688b-7b87e7645908/SCBK_metal_wall_clean_L0.SCBK_metal_wall_clean_L0"
+      },
+      "materials": [
+        {
+          "slot": "MI_modular_metal_wall_01_set_walloutside",
+          "material": {
+            "refPath": "/dbff0959-42be-b7b5-1c9d-ea86446f13bc/MI_modular_metal_wall_01_set_walloutside.MI_modular_metal_wall_01_set_walloutside"
+          },
+          "dependencies": [
+            "/dbff0959-42be-b7b5-1c9d-ea86446f13bc/T_modular_metal_wall_01_set_walloutside_D.T_modular_metal_wall_01_set_walloutside_D",
+            "/dbff0959-42be-b7b5-1c9d-ea86446f13bc/T_modular_metal_wall_01_set_walloutside_N.T_modular_metal_wall_01_set_walloutside_N",
+            "/dbff0959-42be-b7b5-1c9d-ea86446f13bc/T_modular_metal_wall_01_set_walloutside_S.T_modular_metal_wall_01_set_walloutside_S"
+          ]
+        },
+        {
+          "slot": "MI_modular_metal_wall_01_set_wallinside",
+          "material": {
+            "refPath": "/f432cb3d-4828-9ea2-132c-80a10bca6799/MI_modular_metal_wall_01_set_wallinside.MI_modular_metal_wall_01_set_wallinside"
+          },
+          "dependencies": [
+            "/f432cb3d-4828-9ea2-132c-80a10bca6799/T_modular_metal_wall_01_set_wallinside_D.T_modular_metal_wall_01_set_wallinside_D",
+            "/f432cb3d-4828-9ea2-132c-80a10bca6799/T_modular_metal_wall_01_set_wallinside_N.T_modular_metal_wall_01_set_wallinside_N",
+            "/f432cb3d-4828-9ea2-132c-80a10bca6799/T_modular_metal_wall_01_set_wallinside_S.T_modular_metal_wall_01_set_wallinside_S"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/2ac78ffa-4c99-3257-30bd-63bb34f937ca/SCBK_metal_barrel_02_L0.SCBK_metal_barrel_02_L0"
+      },
+      "materials": [
+        {
+          "slot": "MI_metal_barrel_02",
+          "material": {
+            "refPath": "/a8ab4d64-471b-8387-1d15-0886e684ab34/MI_metal_barrel_02.MI_metal_barrel_02"
+          },
+          "dependencies": [
+            "/a8ab4d64-471b-8387-1d15-0886e684ab34/T_metal_barrel_02_D.T_metal_barrel_02_D",
+            "/a8ab4d64-471b-8387-1d15-0886e684ab34/T_metal_barrel_02_N.T_metal_barrel_02_N",
+            "/a8ab4d64-471b-8387-1d15-0886e684ab34/T_metal_barrel_02_S.T_metal_barrel_02_S"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/0e5529e2-4964-6b4a-6f99-ec99f146e5b9/SCBK_old_tires_01_01_L0.SCBK_old_tires_01_01_L0"
+      },
+      "materials": [
+        {
+          "slot": "MI_old_tires_01",
+          "material": {
+            "refPath": "/0fe60dfc-479c-50a7-ac0c-1ead4a953014/MI_old_tires_01.MI_old_tires_01"
+          },
+          "dependencies": [
+            "/0fe60dfc-479c-50a7-ac0c-1ead4a953014/T_old_tires_01_D.T_old_tires_01_D",
+            "/0fe60dfc-479c-50a7-ac0c-1ead4a953014/T_old_tires_01_N.T_old_tires_01_N",
+            "/0fe60dfc-479c-50a7-ac0c-1ead4a953014/T_old_tires_01_S.T_old_tires_01_S"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+      },
+      "materials": [
+        {
+          "slot": "Grass",
+          "material": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Materials/Plants/MTL_MWAM_PlantsGrass.MTL_MWAM_PlantsGrass"
+          },
+          "dependencies": [
+            "/Scrapline/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_CoverFoliage_MASTER.MTL_MWAM_CoverFoliage_MASTER",
+            "/Scrapline/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_nrm.TEX_MWAM_Grass_nrm",
+            "/Scrapline/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_col.TEX_MWAM_Grass_col"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/12583ac6-4762-e362-4629-c283b6ae9c8c/SCBK_warning_sign_01_L0.SCBK_warning_sign_01_L0"
+      },
+      "materials": [
+        {
+          "slot": "MI_warning_sign_01",
+          "material": {
+            "refPath": "/683ca7c9-45fe-19d4-67ff-d3b866ffd2bf/MI_warning_sign_01.MI_warning_sign_01"
+          },
+          "dependencies": [
+            "/683ca7c9-45fe-19d4-67ff-d3b866ffd2bf/T_warning_sign_01_D.T_warning_sign_01_D",
+            "/683ca7c9-45fe-19d4-67ff-d3b866ffd2bf/T_warning_sign_01_N.T_warning_sign_01_N",
+            "/683ca7c9-45fe-19d4-67ff-d3b866ffd2bf/T_warning_sign_01_S.T_warning_sign_01_S"
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": {
+        "refPath": "/7c68db61-4ab4-634c-f616-43a0de100209/SCBK_warning_sign_02_L0.SCBK_warning_sign_02_L0"
+      },
+      "materials": [
+        {
+          "slot": "MI_warning_sign_02",
+          "material": {
+            "refPath": "/47ec3f91-402d-3891-2769-5294d31b84f5/MI_warning_sign_02.MI_warning_sign_02"
+          },
+          "dependencies": [
+            "/47ec3f91-402d-3891-2769-5294d31b84f5/T_warning_sign_02_D.T_warning_sign_02_D",
+            "/47ec3f91-402d-3891-2769-5294d31b84f5/T_warning_sign_02_N.T_warning_sign_02_N",
+            "/47ec3f91-402d-3891-2769-5294d31b84f5/T_warning_sign_02_S.T_warning_sign_02_S"
+          ]
+        }
+      ]
+    }
+  ]
+}

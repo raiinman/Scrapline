@@ -4,7 +4,7 @@
 Own the clean Scrapline-derived map design, real-asset visual package and Sol 6.1 handoff.
 
 ## Ownership
-Fresh design/specification/inventory, camera reference index, gauntlet, recovery records, native asset audits, placement plans, NATIVE_GAMEPLAY_STATE.json, NATIVE_CLEARANCE_AUDIT.json and DETAIL_FOOTING_READBACK.json. SPAWN_RAY_AUDIT.json preserves the superseded initial audit. Visual/terrain evidence lives under Resources/FreshBuild/QuarryCut.
+Fresh design/specification/inventory, camera reference index, gauntlet, recovery records, native asset audits, placement plans, NATIVE_GAMEPLAY_STATE.json, NATIVE_CLEARANCE_AUDIT.json DETAIL_FOOTING_READBACK.json and MARGIN_READBACK.json, FINAL_STATIC_CLEARANCE.json and FINAL_ROUTE_AUDIT.json and FINAL_EXIT_READBACK.json, FINAL_TURN_AUDIT.json and FINAL_MATERIAL_BINDINGS.json. SPAWN_RAY_AUDIT.json preserves the superseded initial audit. Visual/terrain evidence lives under Resources/FreshBuild/QuarryCut.
 
 ## Local Contracts
 - User's 2026-09-30 clean rebuild supersedes old spatial freeze/hold, old level layout and terrain/placement inputs. Preserve history; reuse real assets and native FFA/narrow Armory identity.

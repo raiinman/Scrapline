@@ -1,0 +1,379 @@
+{
+  "method": "0.5m native-bound envelope, at least4m diameter at route junctions; center relocation up to4m explicitly recorded. Actual native pawn turning NOT TESTED.",
+  "turns": [
+    {
+      "name": "Dispatch",
+      "status": "4M_ENVELOPE_TURN_FOUND",
+      "requested_m": [
+        -36,
+        0
+      ],
+      "actual_m": [
+        -34,
+        1,
+        -2.642432325141778
+      ],
+      "relocation_m": 2.23606797749979,
+      "envelope_diameter_m": 4.025276481162072,
+      "grade_deg": 4.679455948319157
+    },
+    {
+      "name": "Receiving",
+      "status": "4M_ENVELOPE_TURN_FOUND",
+      "requested_m": [
+        38,
+        0
+      ],
+      "actual_m": [
+        38,
+        0,
+        -0.24480978260869557
+      ],
+      "relocation_m": 0,
+      "envelope_diameter_m": 6,
+      "grade_deg": 2.112656329199708
+    },
+    {
+      "name": "WestCourt",
+      "status": "4M_ENVELOPE_TURN_FOUND",
+      "requested_m": [
+        -10,
+        0
+      ],
+      "actual_m": [
+        -10,
+        0,
+        -2.3741032608695654
+      ],
+      "relocation_m": 0,
+      "envelope_diameter_m": 6,
+      "grade_deg": 3.1701540623163025
+    },
+    {
+      "name": "EastCourt",
+      "status": "4M_ENVELOPE_TURN_FOUND",
+      "requested_m": [
+        10,
+        0
+      ],
+      "actual_m": [
+        10,
+        0,
+        -0.9952173913043477
+      ],
+      "relocation_m": 0,
+      "envelope_diameter_m": 6,
+      "grade_deg": 4.359894147851285
+    },
+    {
+      "name": "NorthWest",
+      "status": "4M_ENVELOPE_TURN_FOUND",
+      "requested_m": [
+        -34,
+        24
+      ],
+      "actual_m": [
+        -34,
+        24,
+        -3.835725141776938
+      ],
+      "relocation_m": 0,
+      "envelope_diameter_m": 6,
+      "grade_deg": 2.7998080743850253
+    },
+    {
+      "name": "NorthCross",
+      "status": "4M_ENVELOPE_TURN_FOUND",
+      "requested_m": [
+        -8,
+        20
+      ],
+      "actual_m": [
+        -8,
+        20,
+        -2.2020333175803404
+      ],
+      "relocation_m": 0,
+      "envelope_diameter_m": 6,
+      "grade_deg": 5.255147773047057
+    },
+    {
+      "name": "NorthService",
+      "status": "4M_ENVELOPE_TURN_FOUND",
+      "requested_m": [
+        18,
+        18
+      ],
+      "actual_m": [
+        18,
+        18,
+        -0.5242644612476358
+      ],
+      "relocation_m": 0,
+      "envelope_diameter_m": 5.620048755858498,
+      "grade_deg": 8.910615245121624
+    },
+    {
+      "name": "NorthEast",
+      "status": "4M_ENVELOPE_TURN_FOUND",
+      "requested_m": [
+        40,
+        18
+      ],
+      "actual_m": [
+        40,
+        18,
+        1.1999931474480166
+      ],
+      "relocation_m": 0,
+      "envelope_diameter_m": 6,
+      "grade_deg": 4.311670942206757
+    },
+    {
+      "name": "DrainWest",
+      "status": "4M_ENVELOPE_TURN_FOUND",
+      "requested_m": [
+        -35,
+        -25
+      ],
+      "actual_m": [
+        -35.5,
+        -23.5,
+        -1.93421190926276
+      ],
+      "relocation_m": 1.5811388300841898,
+      "envelope_diameter_m": 4.160749821778498,
+      "grade_deg": 5.890841236981347
+    },
+    {
+      "name": "DrainCrossWest",
+      "status": "4M_ENVELOPE_TURN_FOUND",
+      "requested_m": [
+        -21,
+        -18
+      ],
+      "actual_m": [
+        -21,
+        -18,
+        -2.3708430056710776
+      ],
+      "relocation_m": 0,
+      "envelope_diameter_m": 6,
+      "grade_deg": 6.690506258335377
+    },
+    {
+      "name": "DrainCrossEast",
+      "status": "4M_ENVELOPE_TURN_FOUND",
+      "requested_m": [
+        16,
+        -18
+      ],
+      "actual_m": [
+        16,
+        -18,
+        -2.2300055765595466
+      ],
+      "relocation_m": 0,
+      "envelope_diameter_m": 6,
+      "grade_deg": 11.46767945754859
+    },
+    {
+      "name": "Power",
+      "status": "4M_ENVELOPE_TURN_FOUND",
+      "requested_m": [
+        37,
+        -23
+      ],
+      "actual_m": [
+        37,
+        -23,
+        -1.828952173913044
+      ],
+      "relocation_m": 0,
+      "envelope_diameter_m": 6,
+      "grade_deg": 12.113552175348214
+    }
+  ],
+  "native_minimum_check": {
+    "diameter_m": 4,
+    "junction_count": 12,
+    "traces": 768,
+    "hits": [],
+    "pawn_turning": "NOT TESTED"
+  },
+  "native_upper_range_probes": {
+    "samples": [
+      {
+        "name": "Dispatch",
+        "x": -3400,
+        "y": 100,
+        "z": -264.2432325141778,
+        "r": 201.26382405810358
+      },
+      {
+        "name": "Receiving",
+        "x": 3800,
+        "y": 0,
+        "z": -24.480978260869556,
+        "r": 300
+      },
+      {
+        "name": "WestCourt",
+        "x": -1000,
+        "y": 0,
+        "z": -237.41032608695653,
+        "r": 300
+      },
+      {
+        "name": "EastCourt",
+        "x": 1000,
+        "y": 0,
+        "z": -99.52173913043477,
+        "r": 300
+      },
+      {
+        "name": "NorthWest",
+        "x": -3400,
+        "y": 2400,
+        "z": -383.5725141776938,
+        "r": 300
+      },
+      {
+        "name": "NorthCross",
+        "x": -800,
+        "y": 2000,
+        "z": -220.20333175803404,
+        "r": 300
+      },
+      {
+        "name": "NorthService",
+        "x": 1800,
+        "y": 1800,
+        "z": -52.42644612476358,
+        "r": 281.0024377929249
+      },
+      {
+        "name": "NorthEast",
+        "x": 4000,
+        "y": 1800,
+        "z": 119.99931474480165,
+        "r": 300
+      },
+      {
+        "name": "DrainWest",
+        "x": -3550,
+        "y": -2350,
+        "z": -193.421190926276,
+        "r": 208.0374910889249
+      },
+      {
+        "name": "DrainCrossWest",
+        "x": -2100,
+        "y": -1800,
+        "z": -237.08430056710776,
+        "r": 300
+      },
+      {
+        "name": "DrainCrossEast",
+        "x": 1600,
+        "y": -1800,
+        "z": -223.00055765595465,
+        "r": 300
+      },
+      {
+        "name": "Power",
+        "x": 3700,
+        "y": -2300,
+        "z": -182.8952173913044,
+        "r": 300
+      }
+    ],
+    "traces": 768,
+    "hits": [
+      {
+        "name": "NorthService",
+        "h": 45,
+        "angle": 4,
+        "distance": 268.762451171875
+      },
+      {
+        "name": "NorthService",
+        "h": 45,
+        "angle": 5,
+        "distance": 277.4219665527344
+      },
+      {
+        "name": "DrainCrossEast",
+        "h": 45,
+        "angle": 3,
+        "distance": 283.09588623046875
+      },
+      {
+        "name": "DrainCrossEast",
+        "h": 45,
+        "angle": 4,
+        "distance": 255.06304931640625
+      },
+      {
+        "name": "DrainCrossEast",
+        "h": 45,
+        "angle": 5,
+        "distance": 240.37710571289062
+      },
+      {
+        "name": "DrainCrossEast",
+        "h": 45,
+        "angle": 6,
+        "distance": 235.94696044921875
+      },
+      {
+        "name": "DrainCrossEast",
+        "h": 45,
+        "angle": 7,
+        "distance": 240.7620391845703
+      },
+      {
+        "name": "DrainCrossEast",
+        "h": 45,
+        "angle": 8,
+        "distance": 256.51898193359375
+      },
+      {
+        "name": "DrainCrossEast",
+        "h": 45,
+        "angle": 9,
+        "distance": 287.99749755859375
+      },
+      {
+        "name": "Power",
+        "h": 45,
+        "angle": 5,
+        "distance": 280.1236267089844
+      },
+      {
+        "name": "Power",
+        "h": 45,
+        "angle": 6,
+        "distance": 256.4153747558594
+      },
+      {
+        "name": "Power",
+        "h": 45,
+        "angle": 7,
+        "distance": 253.38116455078125
+      },
+      {
+        "name": "Power",
+        "h": 45,
+        "angle": 8,
+        "distance": 263.8682556152344
+      },
+      {
+        "name": "Power",
+        "h": 45,
+        "angle": 9,
+        "distance": 297.5683288574219
+      }
+    ]
+  }
+}

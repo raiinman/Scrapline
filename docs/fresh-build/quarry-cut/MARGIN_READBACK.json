@@ -1,0 +1,801 @@
+{
+  "actors": [
+    {
+      "label": "QC_V001_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1178351885"
+      },
+      "actual": {
+        "location": {
+          "x": -6800,
+          "y": 800,
+          "z": -225.56602094517956
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_V002_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1180122886"
+      },
+      "actual": {
+        "location": {
+          "x": -6730,
+          "y": 819.9999999999999,
+          "z": -234.93963798865784
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 47.00000000000002,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2,
+          "z": 1.2
+        }
+      }
+    },
+    {
+      "label": "QC_V003_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1181593887"
+      },
+      "actual": {
+        "location": {
+          "x": -6850,
+          "y": 880.0000000000001,
+          "z": -216.37596325897925
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 94.00000000000003,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.8,
+          "y": 0.8,
+          "z": 0.8
+        }
+      }
+    },
+    {
+      "label": "QC_V004_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1182712888"
+      },
+      "actual": {
+        "location": {
+          "x": -5800,
+          "y": 4500,
+          "z": -255.22475440453672
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 53.000000000000014,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_V005_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1183829889"
+      },
+      "actual": {
+        "location": {
+          "x": -5730,
+          "y": 4520,
+          "z": -257.662412090737
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 100.00000000000004,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2,
+          "z": 1.2
+        }
+      }
+    },
+    {
+      "label": "QC_V006_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1185210890"
+      },
+      "actual": {
+        "location": {
+          "x": -5850,
+          "y": 4580,
+          "z": -236.44045191682423
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 147,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.8,
+          "y": 0.8,
+          "z": 0.8
+        }
+      }
+    },
+    {
+      "label": "QC_V007_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1186570891"
+      },
+      "actual": {
+        "location": {
+          "x": 900,
+          "y": 6100,
+          "z": -135.13917784499026
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 106.00000000000003,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_V008_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1187590892"
+      },
+      "actual": {
+        "location": {
+          "x": 969.9999999999999,
+          "y": 6120,
+          "z": -122.3119922419655
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 153,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2,
+          "z": 1.2
+        }
+      }
+    },
+    {
+      "label": "QC_V009_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1188625893"
+      },
+      "actual": {
+        "location": {
+          "x": 850,
+          "y": 6180,
+          "z": -116.36508329678634
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -160.00000000000003,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.8,
+          "y": 0.8,
+          "z": 0.8
+        }
+      }
+    },
+    {
+      "label": "QC_V010_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1189633894"
+      },
+      "actual": {
+        "location": {
+          "x": 6700,
+          "y": 900,
+          "z": 39.47432877126664
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 159,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_V011_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1190647895"
+      },
+      "actual": {
+        "location": {
+          "x": 6770,
+          "y": 919.9999999999999,
+          "z": 51.45208904347842
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -154,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2,
+          "z": 1.2
+        }
+      }
+    },
+    {
+      "label": "QC_V012_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1192046896"
+      },
+      "actual": {
+        "location": {
+          "x": 6650,
+          "y": 980.0000000000001,
+          "z": 36.21167190170139
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -107.00000000000009,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.8,
+          "y": 0.8,
+          "z": 0.8
+        }
+      }
+    },
+    {
+      "label": "QC_V013_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1193085897"
+      },
+      "actual": {
+        "location": {
+          "x": 4600,
+          "y": -4900,
+          "z": -0.6207373913044547
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -148.00000000000006,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_V014_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1194105898"
+      },
+      "actual": {
+        "location": {
+          "x": 4670,
+          "y": -4880,
+          "z": 13.727569572778982
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -101.00000000000003,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2,
+          "z": 1.2
+        }
+      }
+    },
+    {
+      "label": "QC_V015_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1195123899"
+      },
+      "actual": {
+        "location": {
+          "x": 4550,
+          "y": -4820,
+          "z": -33.38324114177678
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -53.99999999999999,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.8,
+          "y": 0.8,
+          "z": 0.8
+        }
+      }
+    },
+    {
+      "label": "QC_V016_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1196179900"
+      },
+      "actual": {
+        "location": {
+          "x": -3000,
+          "y": -5400,
+          "z": -293.49200393194735
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -95.00000000000001,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_V017_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1197186901"
+      },
+      "actual": {
+        "location": {
+          "x": -2930,
+          "y": -5380,
+          "z": -303.2953474404537
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -48.00000000000005,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.2,
+          "y": 1.2,
+          "z": 1.2
+        }
+      }
+    },
+    {
+      "label": "QC_V018_MarginGrass",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1198206902"
+      },
+      "actual": {
+        "location": {
+          "x": -3050,
+          "y": -5320,
+          "z": -313.3877987977316
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -1.0000000000000002,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.8,
+          "y": 0.8,
+          "z": 0.8
+        }
+      }
+    },
+    {
+      "label": "QC_W001_SafetySign",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1199221903"
+      },
+      "actual": {
+        "location": {
+          "x": 2400,
+          "y": 2100,
+          "z": 32.17008034026469
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 180,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_W002_SafetySign",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1200230904"
+      },
+      "actual": {
+        "location": {
+          "x": 4300,
+          "y": -1300,
+          "z": -74.96999999999998
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 145,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "label": "QC_W003_SafetySign",
+      "actor": {
+        "refPath": "/Scrapline/FreshBuild/QuarryCut/Fresh_QuarryCut.Fresh_QuarryCut:PersistentLevel.FortStaticMeshActor_UAID_D85ED304C013B70603_1201254905"
+      },
+      "actual": {
+        "location": {
+          "x": -3100,
+          "y": -1200,
+          "z": -166.43749999999997
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 14.999999999999998,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    }
+  ],
+  "grass_material_repair": {
+    "grass": [
+      {
+        "label": "QC_V001_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V002_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V003_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V004_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V005_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V006_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V007_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V008_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V009_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V010_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V011_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V012_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V013_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V014_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V015_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V016_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V017_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      },
+      {
+        "label": "QC_V018_MarginGrass",
+        "ok": true,
+        "saved": null,
+        "readback": {
+          "staticMesh": {
+            "refPath": "/Scrapline/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.SM_MWAM_GrassA"
+          },
+          "overrideMaterials": [
+            {
+              "refPath": "/Scrapline/FreshBuild/QuarryCut/Materials/MI_QuarryCut_MarginGrass.MI_QuarryCut_MarginGrass"
+            }
+          ]
+        }
+      }
+    ],
+    "material_saved": true
+  },
+  "texture_budget": {
+    "textures": [
+      {
+        "texture": {
+          "refPath": "/Scrapline/FreshBuild/QuarryCut/Textures/T_QuarryCut_Ground_Albedo.T_QuarryCut_Ground_Albedo"
+        },
+        "before": {
+          "maxTextureSize": 0,
+          "sRGB": true,
+          "compressionSettings": "TC_Default"
+        },
+        "after": {
+          "maxTextureSize": 2048,
+          "sRGB": true,
+          "compressionSettings": "TC_Default"
+        },
+        "set": true,
+        "saved": true
+      },
+      {
+        "texture": {
+          "refPath": "/Scrapline/FreshBuild/QuarryCut/Textures/T_QuarryCut_Ground_Normal.T_QuarryCut_Ground_Normal"
+        },
+        "before": {
+          "maxTextureSize": 0,
+          "sRGB": false,
+          "compressionSettings": "TC_Normalmap"
+        },
+        "after": {
+          "maxTextureSize": 2048,
+          "sRGB": false,
+          "compressionSettings": "TC_Normalmap"
+        },
+        "set": true,
+        "saved": true
+      }
+    ]
+  },
+  "native_visual": "Close native capture verified all three representative tufts render yellow-green after shader compilation; original MW foliage source retained. Final cook remains required."
+}
