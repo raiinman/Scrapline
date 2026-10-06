@@ -1,17 +1,17 @@
 # Scrapline
 
 <!-- project-header:start -->
-![SCRAPLINE — An industrial wasteland · UEFN / FFA](https://capsule-render.vercel.app/api?type=slice&color=0%3AC2410C%2C100%3A78350F&height=170&section=header&text=SCRAPLINE&fontSize=44&fontColor=FFFFFF&fontAlignY=40&desc=An%20industrial%20wasteland%20%C2%B7%20UEFN%20%2F%20FFA&descSize=17&descAlignY=70)
+![Scrapline — original generated project artwork](readme-banner.png)
 <!-- project-header:end -->
 
 <!-- project-badges:start -->
-[![platform: UEFN](https://img.shields.io/static/v1?label=platform&message=UEFN&color=C2410C&labelColor=18181B&style=for-the-badge)](https://github.com/raiinman/Scrapline)
-[![mode: free for all](https://img.shields.io/static/v1?label=mode&message=free%20for%20all&color=A16207&labelColor=18181B&style=for-the-badge)](https://github.com/raiinman/Scrapline)
-[![theme: industrial wasteland](https://img.shields.io/static/v1?label=theme&message=industrial%20wasteland&color=57534E&labelColor=18181B&style=for-the-badge)](https://github.com/raiinman/Scrapline)
+[![platform: UEFN](https://img.shields.io/badge/platform-UEFN-C2410C?labelColor=333333&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI%2BPHBhdGggZD0iTTEgMTVWN2w1LTN2NGw1LTN2NGg0djZIMXpNMyAxMHYyaDJ2LTJIM3ptNCAwdjJoMnYtMkg3em00IDF2Mmgydi0yaC0yek0xMiAxaDJ2NmgtMnoiIGZpbGw9IndoaXRlIi8%2BPC9zdmc%2B&logoColor=white)](https://github.com/raiinman/Scrapline)
+[![mode: free for all](https://img.shields.io/badge/mode-free_for_all-A16207?labelColor=333333)](https://github.com/raiinman/Scrapline)
+[![theme: industrial wasteland](https://img.shields.io/badge/theme-industrial_wasteland-57534E?labelColor=333333)](https://github.com/raiinman/Scrapline)
 <!-- project-badges:end -->
 
 <!-- project-live-badges:start -->
-[![last commit](https://img.shields.io/github/last-commit/raiinman/Scrapline/main?style=flat&labelColor=18181B&color=C2410C&logo=github&logoColor=white&label=updated)](https://github.com/raiinman/Scrapline/commits/main) [![open issues](https://img.shields.io/github/issues/raiinman/Scrapline?style=flat&labelColor=18181B&color=C2410C&logo=github&logoColor=white&label=issues)](https://github.com/raiinman/Scrapline/issues) [![stars](https://img.shields.io/github/stars/raiinman/Scrapline?style=flat&labelColor=18181B&color=C2410C&logo=github&logoColor=white&label=stars)](https://github.com/raiinman/Scrapline/stargazers)
+[![last commit](https://img.shields.io/github/last-commit/raiinman/Scrapline/main?labelColor=333333&color=C2410C&logo=github&logoColor=white&label=updated)](https://github.com/raiinman/Scrapline/commits/main) [![open issues](https://img.shields.io/github/issues/raiinman/Scrapline?labelColor=333333&color=C2410C&logo=github&logoColor=white&label=issues)](https://github.com/raiinman/Scrapline/issues) [![stars](https://badgen.net/github/stars/raiinman/Scrapline?icon=github&color=C2410C&labelColor=333333&label=stars)](https://github.com/raiinman/Scrapline/stargazers)
 <!-- project-live-badges:end -->
 
 Scrapline is a compact post-apocalyptic free-for-all map for Unreal Editor for Fortnite (UEFN), built from a deliberately curated Fab/UEFN production-asset pool.
