@@ -1,5 +1,11 @@
 # Scrapline
 
+<!-- project-badges:start -->
+[![platform: UEFN](https://img.shields.io/static/v1?label=platform&message=UEFN&color=C2410C&labelColor=18181B&style=for-the-badge)](https://github.com/raiinman/Scrapline)
+[![mode: free for all](https://img.shields.io/static/v1?label=mode&message=free%20for%20all&color=A16207&labelColor=18181B&style=for-the-badge)](https://github.com/raiinman/Scrapline)
+[![theme: industrial wasteland](https://img.shields.io/static/v1?label=theme&message=industrial%20wasteland&color=57534E&labelColor=18181B&style=for-the-badge)](https://github.com/raiinman/Scrapline)
+<!-- project-badges:end -->
+
 Scrapline is a compact post-apocalyptic free-for-all map for Unreal Editor for Fortnite (UEFN), built from a deliberately curated Fab/UEFN production-asset pool.
 
 ## Project Goal
